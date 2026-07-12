@@ -1,0 +1,32 @@
+# brutalist-art — Python dependencies.
+#   pip install -r requirements.txt
+# Pins are compatible-tested ranges. numpy is held < 2 on purpose: librosa/numba
+# and some Manim builds still break on numpy 2.x. The doctor (./setup) reports
+# which of these each feature needs, so you can install lazily if you prefer.
+
+# ── core: audio-first narration pipeline (needed by every narrated skill) ────
+requests>=2.31,<3          # ElevenLabs + HTTP
+mutagen>=1.47,<1.48        # real audio-duration measurement (the master clock)
+Pillow>=10.2,<11           # slates/request cards, previz, stills
+numpy>=1.26,<2             # held <2 for librosa/numba/manim compatibility
+
+# ── animation (Manim-based explainers, bio, code-walkthrough) ───────────────
+manim>=0.18,<0.19          # pulls manimpango, moderngl, etc.
+# manimpango is installed by manim; listed for visibility
+manimpango>=0.5,<0.6
+
+# ── audio analysis + captions (music-video, lyric-*, youtube-publisher) ─────
+librosa>=0.10,<0.11        # beat/onset grid
+soundfile>=0.12,<0.13      # librosa I/O
+faster-whisper>=1.0,<2     # forced alignment + transcript captions (local, no key)
+
+# ── vector line art (line-art-vectorizer) ───────────────────────────────────
+vtracer>=0.6,<0.7          # raster line art → SVG
+
+# ── YouTube publishing (youtube-publisher, video-inventory publish path) ────
+google-api-python-client>=2.130,<3
+google-auth-oauthlib>=1.2,<2
+google-auth-httplib2>=0.2,<0.3
+
+# ── optional / paid extras ───────────────────────────────────────────────────
+# fal-client>=0.5,<0.6     # fal.ai style-LoRA path — uncomment if you use FAL_KEY

@@ -1,0 +1,114 @@
+#!/usr/bin/env bash
+# setup — the doctor. Checks every dependency and key, prints a per-feature
+# readiness table, and tells you exactly what each missing piece unlocks.
+#
+#   ./setup            # check everything, print the readiness table
+#   ./setup --install  # try to install the core Python + Node deps first, then check
+#   ./setup <feature>  # check just one feature (e.g. ./setup explainer)
+#
+# Exit 0 if all CORE features are ready; exit 1 if a core dependency is missing.
+# Optional (paid) features never cause a non-zero exit — they degrade gracefully.
+set -uo pipefail
+HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "$HERE"
+[ -f .env ] && set -a && . ./.env 2>/dev/null && set +a || true
+
+g(){ printf '\033[32m%s\033[0m' "$1"; }   # green
+r(){ printf '\033[31m%s\033[0m' "$1"; }   # red
+y(){ printf '\033[33m%s\033[0m' "$1"; }   # yellow
+b(){ printf '\033[1m%s\033[0m' "$1"; }    # bold
+
+have(){ command -v "$1" >/dev/null 2>&1; }
+pymod(){ python3 -c "import $1" >/dev/null 2>&1; }
+keyset(){ [ -n "${!1:-}" ]; }
+node_ge(){ have node && [ "$(node -p 'process.versions.node.split(".")[0]' 2>/dev/null||echo 0)" -ge "$1" ]; }
+
+# ── optional install pass ────────────────────────────────────────────────────
+if [ "${1:-}" = "--install" ]; then
+  b "Installing core Python deps…"; echo
+  python3 -m pip install --break-system-packages -r requirements.txt || \
+    echo "$(y '  pip install had errors — see above; re-run ./setup to see what resolved')"
+  echo
+  b "Node deps are per-Remotion-project. Install where you render, e.g.:"; echo
+  echo "  (cd runtime/remotion && npm install)"
+  echo "  (cd skills/make/component-showcase/remotion && npm install)"
+  echo; shift
+fi
+
+# ── individual checks (name → status + hint) ─────────────────────────────────
+declare -A OK MISS
+check(){ # check <id> <test-expr> <fix-hint>
+  if eval "$2" >/dev/null 2>&1; then OK[$1]=1; else OK[$1]=0; MISS[$1]="$3"; fi
+}
+check ffmpeg   'have ffmpeg && have ffprobe'  'install ffmpeg (brew install ffmpeg / apt install ffmpeg)'
+check python   'have python3'                 'install Python 3.10+'
+check node20   'node_ge 20'                    'install Node ≥ 20 (nodejs.org / nvm)'
+check latex    'have pdflatex && (have dvisvgm || have latex)' 'install a LaTeX + dvisvgm (MacTeX / TeX Live) — only for Manim math'
+check jq       'have jq'                       'install jq (brew/apt) — for the higgsfield CLI response parsing'
+check higgsfield 'have higgsfield'            'install the higgsfield CLI and run: higgsfield auth login'
+# python modules
+check py_pillow 'pymod PIL'                    'pip install Pillow  (slates / request cards / previz)'
+check py_core  'pymod PIL && pymod requests && pymod mutagen && pymod numpy' 'pip install -r requirements.txt (Pillow requests mutagen numpy — the narration pipeline)'
+check py_manim 'pymod manim'                   'pip install "manim<0.19"'
+check py_audio 'pymod librosa && pymod soundfile' 'pip install "librosa<0.11" soundfile'
+check py_whisper 'pymod faster_whisper'        'pip install "faster-whisper<2"'
+check py_vtrace 'pymod vtracer'                'pip install "vtracer<0.7"'
+check py_yt    'pymod googleapiclient'         'pip install google-api-python-client google-auth-oauthlib google-auth-httplib2'
+# keys
+check k_eleven 'keyset ELEVENLABS_API_KEY'     'set ELEVENLABS_API_KEY in .env (elevenlabs.io) — PAID'
+check k_ai     'have higgsfield || keyset HIGGSFIELD_API_KEY || keyset MINIMAX_API_KEY' 'higgsfield auth login (or set HIGGSFIELD_API_KEY/MINIMAX_API_KEY) — PAID'
+check k_yt     '[ -f "${ART_YOUTUBE_CLIENT_SECRET:-./client_secret.json}" ]' 'download YouTube OAuth client_secret.json (GCP → YouTube Data API v3)'
+
+status(){ [ "${OK[$1]:-0}" = 1 ] && g "ok" || r "MISSING"; }
+
+# ── features: id | tier(core|paid) | "human-readable needs list" | required check-ids ──
+FEATURES=(
+ "previz|core|no keys — ffmpeg + Pillow (renders slates/request cards)|ffmpeg py_pillow"
+ "slate-cut|core|no keys — the zero-key first pass; every ungeneratable beat becomes a request card|ffmpeg py_pillow"
+ "sketch-explainer (silent)|core|Manim + ffmpeg, no keys|ffmpeg py_pillow py_manim"
+ "sketch-explainer (narrated)|paid|+ ELEVENLABS_API_KEY|ffmpeg py_core py_manim k_eleven"
+ "math-explainer|paid|Manim + LaTeX + narration|ffmpeg py_core py_manim latex k_eleven"
+ "explainer|paid|Manim + Remotion + narration (AI-video beats need the higgsfield CLI)|ffmpeg py_core py_manim node20 k_eleven"
+ "bio|paid|Manim + narration (photoreal footage needs the higgsfield CLI)|ffmpeg py_core py_manim k_eleven"
+ "code-walkthrough|paid|Manim + Remotion + narration|ffmpeg py_core py_manim node20 k_eleven"
+ "recitation-film|paid|Manim + Remotion + narration + alignment|ffmpeg py_core py_manim node20 py_whisper k_eleven"
+ "kids-video|paid|Manim + narration|ffmpeg py_core py_manim k_eleven"
+ "music-video|core|bring your own WAV — librosa beat grid + Remotion (no API key)|ffmpeg py_core py_audio node20"
+ "lyric-overlay|core|Remotion + faster-whisper over a finished video (no API key)|ffmpeg py_core py_whisper node20"
+ "lyric-resync|paid|higgsfield CLI (Hailuo image-to-video) + ffmpeg|ffmpeg py_core jq k_ai"
+ "dance-video|paid|higgsfield CLI (Seedance) + ffmpeg|ffmpeg py_core jq k_ai"
+ "story-film|paid|narration + higgsfield CLI video|ffmpeg py_core k_eleven k_ai"
+ "ai-asset-gen|paid|the higgsfield CLI (images/video/3D/audio)|jq k_ai"
+ "line-art-vectorizer|core|vtracer + Pillow (no key)|py_core py_vtrace"
+ "figure-planner|core|Node + sharp for SVG→PNG (no key)|node20"
+ "youtube-publisher|paid|faster-whisper + Remotion + Google OAuth (free quota)|ffmpeg py_core py_whisper py_yt node20 k_yt"
+)
+
+want="${1:-}"
+echo; b "brutalist-art — readiness"; echo; echo
+printf '  %-30s %-9s %s\n' "FEATURE" "STATUS" "NEEDS"
+printf '  %-30s %-9s %s\n' "-------" "------" "----"
+core_fail=0
+for row in "${FEATURES[@]}"; do
+  IFS='|' read -r name tier needs reqs <<<"$row"
+  [ -n "$want" ] && [ "$want" != "$name" ] && { case "$name" in "$want"*) ;; *) continue;; esac; }
+  missing=""
+  for id in $reqs; do [ "${OK[$id]:-0}" = 1 ] || missing="$missing $id"; done
+  if [ -z "$missing" ]; then
+    printf '  %-30s %b       %s\n' "$name" "$(g '✅ ready')" "$needs"
+  else
+    hints=""
+    for id in $missing; do hints="$hints\n        · ${MISS[$id]}"; done
+    if [ "$tier" = core ]; then
+      printf '  %-30s %b   %s' "$name" "$(r '❌ core')" "$needs"; core_fail=1
+    else
+      printf '  %-30s %b %s' "$name" "$(y '⚠ needs key/dep')" "$needs"
+    fi
+    printf '%b\n' "$hints"
+  fi
+done
+echo
+b "Legend:"; echo "  ✅ ready   ⚠ optional/paid feature missing a key or dep   ❌ a core (free) feature is blocked"
+echo "Keys live in .env (copy .env.example). AI image/video uses the external 'higgsfield' CLI login."
+[ "$core_fail" = 1 ] && { echo; r "One or more CORE (no-key) features are blocked — see ❌ rows above."; echo; exit 1; }
+echo; g "All core features are ready."; echo
