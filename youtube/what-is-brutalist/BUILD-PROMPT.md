@@ -2,6 +2,16 @@ You are Claude Code, building ONE video end to end. Work only inside this repo. 
 fix your own errors, and follow the render contract below. Do not ask for confirmation between
 steps — this is an unattended build.
 
+SCOPE: work ONLY inside `brutalist-art/`. Do NOT reach outside it (no `../vox/`, no
+`../unreal-reels/`, no `~/…`, no `books/…`). Keys are in `brutalist-art/.env`. If you need
+something that is not in this folder, do NOT resolve it against a parent repo — write a line
+`MISSING: <what> — was at <where, if known> — blocks <beat/step>` to the BUILD-LOG and stop that
+thread; the human will vendor it in. First read `EXAMPLES-CAMPAIGN.md` for the campaign rules.
+
+LOG EVERYTHING to `youtube/what-is-brutalist/BUILD-LOG.md` (append-only): every command, every
+error, every fix (with the file changed), every `MISSING:`, and the final result (beats rendered /
+beats left for the human).
+
 REPO: the `brutalist-art` toolkit (you are at its root).
 VIDEO FOLDER: `youtube/what-is-brutalist/` — a self-contained reel folder.
 SPEC: `youtube/what-is-brutalist/beat_sheet.json` is the heart. Read it first. Also read
