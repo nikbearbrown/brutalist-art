@@ -86,7 +86,7 @@ Legend: 🔑 keys needed · 📁 existing folder to rebuild-and-verify · ✨ ne
 ### Tier 0 — no keys (ffmpeg + Pillow; Manim/Node where noted). Fixes the core `./art run`/`fill-in`.
 | # | Video | Skill | Folder | Status | Notes |
 |---|---|---|---|---|---|
-| 1 | **What is Brutalist?** | explainer + terminal | ✨ `youtube/what-is-brutalist` | ⬜ | intro; has `beat_sheet.json` + `BUILD-PROMPT.md`. Silent path is no-key; narration adds ElevenLabs. **First.** |
+| 1 | **What is Brutalist?** | explainer + terminal | ✨ `youtube/what-is-brutalist` | ✅ | **DONE** — 16/16 beats rendered (174s, narrated); 0 MISSING; **5 toolkit bugs found & fixed** (commit `50df886`). 3 beats flagged for pacing review (B11/B06/B02). |
 | 2 | **Key check (free)** | `./art keys` | — (a gate, not a video) | ⬜ | **Run `./art keys` BEFORE any paid build.** Free live probes (ElevenLabs `/user`+`/voices`, higgsfield `account status`, YouTube `channels.list`=1 unit). Confirms every key/voice is valid + shows quota/credits. No spend. Fix any ❌ before Tier 1+. |
 | 3 | slate-cut | (compile) | 📁 `examples/slate-cut--base-rate` | ⬜ | the no-key first pass; verify `./art run` + request cards |
 | 4 | previz | (fill_slates) | ✨ `youtube/previz-*` | ⬜ | any beat sheet → all-slate timing pass |

@@ -55,7 +55,7 @@ type, not an optional extra. See the lead P0 in Theme 3; this reverses D4.
 - **Repo:** brutalist-art
 - **Evidence:** `runtime/scripts/run.sh:15-18` calls Gates A/W/B from `$QC="$ROOT/tmp/qc-tooling"` (`static_scene_check.py`, `wcag_margin_check.py`, `manim_layout_audit.py`); `repo/tmp/` does not exist, so all QC silently skips. `manim_layout_audit.py` actually lives at `skills/make/sketch-explainer/scripts/`.
 - **Why:** Docs promise pre-flight/pixel QC on every render; nothing is checked. A user believes broken layouts are gated when they aren't.
-- **RESOLVED (live-verified):** the three gate scripts were located at `vox/tmp/qc-tooling/` and are now vendored to `runtime/qc/` (`static_scene_check.py`, `wcag_margin_check.py`, `manim_layout_audit.py`); `run.sh` `$QC` repointed to `runtime/qc`. Remaining: confirm Gates A/W/B pass on a real reel end-to-end.
+- **RESOLVED (live-verified + build-tested):** the three gate scripts were vendored to `runtime/qc/`; `run.sh` `$QC` repointed. Build #1 exercised **Gate A on a real reel and found+fixed a bug** (it false-alarmed on every per-beat class by comparing single-scene shape-states vs the reel's total n_beats — commit `50df886`). Remaining: confirm Gates W/B on a real reel.
 - **Effort:** M (mostly done)
 
 ### [P0] Author `skills/figures/figure-planner/SKILL.md` (D5 half-done)
