@@ -36,13 +36,13 @@ Always preview first (spends no quota, doesn't even touch the channel):
 ```
 ai
 cd ~/Documents/Cowork/Manim
-python ../bears-doodles/scripts/youtube_publish.py --root . --which landscape --dry-run
+python ../sketch-explainer/scripts/youtube_publish.py --root . --which landscape --dry-run
 ```
 
 Then upload + schedule for real (4-hour cadence = 6/day, appended after anything already scheduled):
 
 ```
-python ../bears-doodles/scripts/youtube_publish.py --root . --which landscape
+python ../sketch-explainer/scripts/youtube_publish.py --root . --which landscape
 ```
 
 Useful flags: `--which {landscape,short,both}` (Shorts upload as separate videos), `--interval-hours 3`, `--start 2026-07-01T09:00:00` (first slot if nothing is scheduled yet; naive time = your local time), `--privacy {private,unlisted}`, `--category 27` (Education).

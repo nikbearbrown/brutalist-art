@@ -1,0 +1,389 @@
+{
+ "_comment": "Full-video beat sheet — a belt-tour of onda's data-viz corner (4 of 59 templates), per RIFFING.md. Frames @30fps, absolute across the whole timeline. Each segment carries CONFORMED props (timing slowed so beats have room) + a computed event schedule + beats. Motifs recur across segments (the AI+Human spine + the outlier line). Templates render teardown; the accent (red) lands on each fixture's subject. Regenerate per-segment via schedule.ts as the extractor scales.",
+ "title": "The Remotion Tool Belt — Data-Viz Corner",
+ "series": "The Remotion Tool Belt",
+ "fps": 30,
+ "total_frames": 2040,
+ "inventory": {
+  "onda": 59,
+  "bench_keepers": 367,
+  "shown_here": 4,
+  "corner": "data-viz"
+ },
+ "motifs": {
+  "spine": "you didn't write it — you recognized you needed it",
+  "outlier": "the eye finds the one that's wrong before you read a label"
+ },
+ "segments": [
+  {
+   "id": "intro",
+   "template": null,
+   "start_frame": 0,
+   "visual": "title card — THE REMOTION TOOL BELT (teardown)",
+   "beats": [
+    {
+     "type": "reactive",
+     "frame": 20,
+     "hold": 55,
+     "deixis": true,
+     "text": "here's the tool belt",
+     "actual_duration_s": 1.28,
+     "audio_file": "audio/intro-0.mp3"
+    },
+    {
+     "type": "analytic",
+     "frame": 90,
+     "hold": 115,
+     "tier": "stoppage",
+     "text": "onda alone gives you fifty-nine of these. the whole belt runs to three hundred and sixty-seven.",
+     "actual_duration_s": 5.51,
+     "audio_file": "audio/intro-1.mp3"
+    },
+    {
+     "type": "analytic",
+     "frame": 210,
+     "hold": 60,
+     "motif": "spine",
+     "text": "you won't write one of them. AI does that in a breath. knowing they exist is the job now.",
+     "actual_duration_s": 5.67,
+     "audio_file": "audio/intro-2.mp3"
+    },
+    {
+     "type": "reactive",
+     "frame": 278,
+     "hold": 55,
+     "text": "today, the data-viz corner. four now — we'll walk them all.",
+     "actual_duration_s": 4.41,
+     "audio_file": "audio/intro-3.mp3"
+    }
+   ]
+  },
+  {
+   "id": "bar-chart",
+   "template": "onda:bar-chart",
+   "start_frame": 340,
+   "props": {
+    "duration": 60,
+    "stagger": 24,
+    "note": "Citations settles at local frame 132"
+   },
+   "fixture": "fabrication rate by task; Citations 66 = max = red",
+   "events": [
+    {
+     "id": "E1",
+     "frame": 340,
+     "desc": "bars empty"
+    },
+    {
+     "id": "E2",
+     "frame": 400,
+     "desc": "first bar (Code) settles low"
+    },
+    {
+     "id": "E3",
+     "frame": 472,
+     "desc": "Citations settles — tallest, red (the outlier)"
+    }
+   ],
+   "beats": [
+    {
+     "type": "reactive",
+     "frame": 352,
+     "hold": 46,
+     "deixis": true,
+     "text": "the bar chart. watch these fill",
+     "actual_duration_s": 2.22,
+     "audio_file": "audio/bar-chart-0.mp3"
+    },
+    {
+     "type": "predict",
+     "frame": 445,
+     "hold": 27,
+     "text": "the last one should worry you",
+     "actual_duration_s": 1.67,
+     "audio_file": "audio/bar-chart-1.mp3"
+    },
+    {
+     "type": "event",
+     "frame": 472,
+     "hold": 0,
+     "text": "",
+     "actual_duration_s": 0.0,
+     "audio_file": "audio/bar-chart-2.mp3"
+    },
+    {
+     "type": "resolve",
+     "frame": 481,
+     "hold": 55,
+     "deixis": true,
+     "text": "there it is — citations. two-thirds, made up",
+     "actual_duration_s": 3.58,
+     "audio_file": "audio/bar-chart-3.mp3"
+    },
+    {
+     "type": "analytic",
+     "frame": 540,
+     "hold": 120,
+     "tier": "reset",
+     "summon": true,
+     "text": "one accent, one focal point — the eye finds the tall bar first. reach for it when the winner or loser IS the story, and you have a handful of bars. twelve categories? that's a ranking, not this.",
+     "actual_duration_s": 13.87,
+     "audio_file": "audio/bar-chart-4.mp3"
+    }
+   ]
+  },
+  {
+   "id": "count-up",
+   "template": "onda:count-up",
+   "start_frame": 700,
+   "props": {
+    "from": 0,
+    "to": 41,
+    "suffix": "",
+    "duration": 120,
+    "note": "number lands at local frame 120"
+   },
+   "fixture": "confident-but-wrong answers per 100 — the number ticks up and lands red",
+   "events": [
+    {
+     "id": "E1",
+     "frame": 700,
+     "desc": "counter at 0"
+    },
+    {
+     "id": "E2",
+     "frame": 820,
+     "desc": "counter lands on 41 — the sting"
+    }
+   ],
+   "beats": [
+    {
+     "type": "reactive",
+     "frame": 712,
+     "hold": 46,
+     "deixis": true,
+     "text": "the count-up. one number, climbing",
+     "actual_duration_s": 2.46,
+     "audio_file": "audio/count-up-0.mp3"
+    },
+    {
+     "type": "predict",
+     "frame": 793,
+     "hold": 27,
+     "text": "guess where it stops",
+     "actual_duration_s": 1.44,
+     "audio_file": "audio/count-up-1.mp3"
+    },
+    {
+     "type": "event",
+     "frame": 820,
+     "hold": 0,
+     "text": "",
+     "actual_duration_s": 0.0,
+     "audio_file": "audio/count-up-2.mp3"
+    },
+    {
+     "type": "resolve",
+     "frame": 829,
+     "hold": 55,
+     "text": "forty-one. confidently wrong, two times in five",
+     "actual_duration_s": 3.71,
+     "audio_file": "audio/count-up-3.mp3"
+    },
+    {
+     "type": "analytic",
+     "frame": 888,
+     "hold": 118,
+     "tier": "reset",
+     "summon": true,
+     "motif": "spine",
+     "text": "a rising number pulls the eye and lands a beat on the value. reach for it when one figure should sting — never for context, it needs a label doing the work. and notice: you didn't build the tween. you asked for a number that climbs.",
+     "actual_duration_s": 14.71,
+     "audio_file": "audio/count-up-4.mp3"
+    }
+   ]
+  },
+  {
+   "id": "line-chart",
+   "template": "onda:line-chart",
+   "start_frame": 1060,
+   "props": {
+    "data": [
+     61,
+     58,
+     60,
+     54,
+     49,
+     44,
+     39,
+     34
+    ],
+    "duration": 120,
+    "note": "line completes at local frame 120"
+   },
+   "fixture": "accuracy across a long reasoning chain — it drifts down",
+   "events": [
+    {
+     "id": "E1",
+     "frame": 1060,
+     "desc": "line begins at the left, high"
+    },
+    {
+     "id": "E2",
+     "frame": 1180,
+     "desc": "line reaches the right — the low point"
+    }
+   ],
+   "beats": [
+    {
+     "type": "reactive",
+     "frame": 1072,
+     "hold": 46,
+     "deixis": true,
+     "text": "the line chart. watch it draw",
+     "actual_duration_s": 1.8,
+     "audio_file": "audio/line-chart-0.mp3"
+    },
+    {
+     "type": "predict",
+     "frame": 1150,
+     "hold": 30,
+     "text": "it starts strong — it won't stay there",
+     "actual_duration_s": 2.04,
+     "audio_file": "audio/line-chart-1.mp3"
+    },
+    {
+     "type": "event",
+     "frame": 1180,
+     "hold": 0,
+     "text": "",
+     "actual_duration_s": 0.0,
+     "audio_file": "audio/line-chart-2.mp3"
+    },
+    {
+     "type": "resolve",
+     "frame": 1189,
+     "hold": 55,
+     "text": "down a third by the end of the chain",
+     "actual_duration_s": 1.93,
+     "audio_file": "audio/line-chart-3.mp3"
+    },
+    {
+     "type": "analytic",
+     "frame": 1248,
+     "hold": 120,
+     "tier": "reset",
+     "summon": true,
+     "text": "a line shows the SHAPE of change — direction and rate, not just endpoints. reach for it when the movement is the point. one value? use the count-up. five tangled series? you'll get spaghetti.",
+     "actual_duration_s": 13.32,
+     "audio_file": "audio/line-chart-4.mp3"
+    }
+   ]
+  },
+  {
+   "id": "pie-reveal",
+   "template": "onda:pie-reveal",
+   "start_frame": 1420,
+   "props": {
+    "value": 38,
+    "duration": 120,
+    "note": "wedge completes at local frame 120"
+   },
+   "fixture": "share of wrong answers a model will still defend — one red wedge",
+   "events": [
+    {
+     "id": "E1",
+     "frame": 1420,
+     "desc": "empty ring"
+    },
+    {
+     "id": "E2",
+     "frame": 1540,
+     "desc": "wedge sweeps to 38% — the share"
+    }
+   ],
+   "beats": [
+    {
+     "type": "reactive",
+     "frame": 1432,
+     "hold": 46,
+     "deixis": true,
+     "text": "the pie reveal. one share, sweeping in",
+     "actual_duration_s": 2.69,
+     "audio_file": "audio/pie-reveal-0.mp3"
+    },
+    {
+     "type": "predict",
+     "frame": 1512,
+     "hold": 27,
+     "text": "how big is the part that digs in?",
+     "actual_duration_s": 1.75,
+     "audio_file": "audio/pie-reveal-1.mp3"
+    },
+    {
+     "type": "event",
+     "frame": 1540,
+     "hold": 0,
+     "text": "",
+     "actual_duration_s": 0.0,
+     "audio_file": "audio/pie-reveal-2.mp3"
+    },
+    {
+     "type": "resolve",
+     "frame": 1549,
+     "hold": 55,
+     "text": "thirty-eight percent — it'll defend a wrong answer",
+     "actual_duration_s": 3.06,
+     "audio_file": "audio/pie-reveal-3.mp3"
+    },
+    {
+     "type": "analytic",
+     "frame": 1608,
+     "hold": 120,
+     "tier": "reset",
+     "summon": true,
+     "motif": "outlier",
+     "text": "one wedge against the whole reads as 'part of a whole' faster than any bar. reach for it for a SINGLE share. never to compare slices — the eye can't judge angles against each other.",
+     "actual_duration_s": 10.76,
+     "audio_file": "audio/pie-reveal-4.mp3"
+    }
+   ]
+  },
+  {
+   "id": "outro",
+   "template": null,
+   "start_frame": 1780,
+   "beats": [
+    {
+     "type": "analytic",
+     "frame": 1790,
+     "hold": 90,
+     "motif": "spine",
+     "text": "four templates. you wrote none of them — you learned they exist. that's the whole move: not typing, choosing.",
+     "actual_duration_s": 6.82,
+     "audio_file": "audio/outro-0.mp3"
+    },
+    {
+     "type": "outro-topic",
+     "frame": 1885,
+     "hold": 75,
+     "render": "remotion",
+     "source": "ABOUT.MD",
+     "text": "The Remotion Tool Belt — fifty-five more in onda, and the belt keeps going",
+     "actual_duration_s": 4.21,
+     "audio_file": "audio/outro-1.mp3"
+    },
+    {
+     "type": "outro-channel",
+     "frame": 1965,
+     "hold": 75,
+     "render": "remotion",
+     "source": "AUTHOR.MD",
+     "text": "Nik Bear Brown — the next corner of the belt is next",
+     "actual_duration_s": 2.87,
+     "audio_file": "audio/outro-2.mp3"
+    }
+   ]
+  }
+ ]
+}

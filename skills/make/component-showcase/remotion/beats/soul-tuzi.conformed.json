@@ -1,0 +1,240 @@
+{
+ "_comment": "Authored mp4 riff — Higgsfield Soul ID character 'tuzi'. Body segments reference a clip in public/clips/ (staged by mp4_prep.py); outro segments render a Remotion brutalist card. riff_audio.py voices each beat, riff_conform.py lays them end-to-end and writes soul-tuzi.conformed.json (the render's source of truth). Facts are sourced (higgsfield.ai Soul ID blog); the consistency read is from all 12 clips.",
+ "title": "Same Person? — Higgsfield Soul ID, riffed",
+ "series": "Brutalist Riffs",
+ "fps": 30,
+ "voice": "nikbearbrown",
+ "clips_dir": "../higgsfield/character-tuzi",
+ "segments": [
+  {
+   "id": "open",
+   "clip": "braocmkcpvg.mp4",
+   "beats": [
+    {
+     "type": "reactive",
+     "text": "Look at her. One face. Hold that thought.",
+     "actual_duration_s": 2.32,
+     "audio_file": "audio/open-0.mp3",
+     "frame": 0,
+     "hold": 70
+    },
+    {
+     "type": "analytic",
+     "text": "Brutalist rule: the AI generates, you make the calls. So make one. Twelve clips, one Higgsfield Soul ID, a character called tuzi. Same person? Every time?",
+     "actual_duration_s": 11.23,
+     "audio_file": "audio/open-1.mp3",
+     "frame": 74,
+     "hold": 337
+    }
+   ],
+   "start_frame": 0
+  },
+  {
+   "id": "claim",
+   "clip": "qbbcwylwoxa.mp4",
+   "beats": [
+    {
+     "type": "analytic",
+     "text": "Higgsfield says yes. Soul ID locks a face and carries it across every generation. Train it once, reuse it forever.",
+     "actual_duration_s": 7.55,
+     "audio_file": "audio/claim-0.mp3",
+     "frame": 425,
+     "hold": 226
+    }
+   ],
+   "start_frame": 425
+  },
+  {
+   "id": "how1",
+   "clip": "dyjhgcipdkl.mp4",
+   "beats": [
+    {
+     "type": "analytic",
+     "text": "The mechanism: twenty-plus photos of one person, many angles, good light, one full-height shot. Three to five minutes later you have a trained identity layer. A face the model remembers, not a prompt you retype.",
+     "actual_duration_s": 13.4,
+     "audio_file": "audio/how1-0.mp3",
+     "frame": 665,
+     "hold": 402
+    }
+   ],
+   "start_frame": 665
+  },
+  {
+   "id": "how2",
+   "clip": "etikyejfxlj.mp4",
+   "beats": [
+    {
+     "type": "analytic",
+     "text": "Then you generate off presets and change everything around the face while the identity holds. Street, black and white, neon, runway. Same person, new world.",
+     "actual_duration_s": 9.61,
+     "audio_file": "audio/how2-0.mp3",
+     "frame": 1081,
+     "hold": 288
+    }
+   ],
+   "start_frame": 1081
+  },
+  {
+   "id": "predict",
+   "clip": "fgsprjjquas.mp4",
+   "beats": [
+    {
+     "type": "predict",
+     "text": "So it should be one woman in twelve outfits. Let's check the tape.",
+     "actual_duration_s": 3.79,
+     "audio_file": "audio/predict-0.mp3",
+     "frame": 1383,
+     "hold": 114
+    }
+   ],
+   "start_frame": 1383
+  },
+  {
+   "id": "match",
+   "clip": "xrcjtfzyvob.mp4",
+   "beats": [
+    {
+     "type": "reactive",
+     "deixis": true,
+     "text": "This shot and the last one, dead ringers. Braids, freckles, that open smile. Soul ID nailed it.",
+     "actual_duration_s": 7.94,
+     "audio_file": "audio/match-0.mp3",
+     "frame": 1511,
+     "hold": 238
+    }
+   ],
+   "start_frame": 1511
+  },
+  {
+   "id": "casting",
+   "clip": "kymqqumklle.mp4",
+   "beats": [
+    {
+     "type": "reactive",
+     "text": "Still her. The hoops, the sun, the braids carry the casting even into magenta fur and diner neon.",
+     "actual_duration_s": 6.45,
+     "audio_file": "audio/casting-0.mp3",
+     "frame": 1763,
+     "hold": 194
+    }
+   ],
+   "start_frame": 1763
+  },
+  {
+   "id": "drift1",
+   "clip": "falrymvycif.mp4",
+   "beats": [
+    {
+     "type": "predict",
+     "deixis": true,
+     "text": "Then it slips. The proportions stretch, watch the neck, and the face reads a different ethnicity than the freckled cut. Same type, not the same skull.",
+     "actual_duration_s": 9.09,
+     "audio_file": "audio/drift1-0.mp3",
+     "frame": 1971,
+     "hold": 273
+    }
+   ],
+   "start_frame": 1971
+  },
+  {
+   "id": "drift2",
+   "clip": "iurqmmgxdom.mp4",
+   "beats": [
+    {
+     "type": "predict",
+     "text": "Bury the face in a full body pull and the lock goes thin. Less face, less identity to hold.",
+     "actual_duration_s": 6.11,
+     "audio_file": "audio/drift2-0.mp3",
+     "frame": 2258,
+     "hold": 183
+    }
+   ],
+   "start_frame": 2258
+  },
+  {
+   "id": "drift3",
+   "clip": "xymdkhllztl.mp4",
+   "beats": [
+    {
+     "type": "predict",
+     "text": "Same when a flowered helmet swallows the frame. The identity thins out exactly where the face gets rare.",
+     "actual_duration_s": 6.09,
+     "audio_file": "audio/drift3-0.mp3",
+     "frame": 2455,
+     "hold": 183
+    }
+   ],
+   "start_frame": 2455
+  },
+  {
+   "id": "verdict",
+   "clip": "ylkomvfuxcj.mp4",
+   "beats": [
+    {
+     "type": "resolve",
+     "deixis": true,
+     "text": "So, same person? Yes, and no. Soul ID keeps the casting. You'd swear one model booked all twelve shoots. But it's identity as preset, not a clone.",
+     "actual_duration_s": 10.89,
+     "audio_file": "audio/verdict-0.mp3",
+     "frame": 2652,
+     "hold": 327
+    }
+   ],
+   "start_frame": 2652
+  },
+  {
+   "id": "fineprint",
+   "clip": "jvqbizywiam.mp4",
+   "beats": [
+    {
+     "type": "analytic",
+     "text": "And that's Higgsfield's own fine print: extreme angles and style shifts still introduce drift. The machine made twelve. Deciding which ones hold is still your job.",
+     "actual_duration_s": 10.03,
+     "audio_file": "audio/fineprint-0.mp3",
+     "frame": 2993,
+     "hold": 301
+    }
+   ],
+   "start_frame": 2993
+  },
+  {
+   "id": "outro-topic",
+   "card": {
+    "title": "CONSISTENCY ENGINE,\nNOT A CLONE",
+    "sub": "HIGGSFIELD SOUL ID"
+   },
+   "beats": [
+    {
+     "type": "outro-topic",
+     "sub": "BRUTALIST · RIFFS",
+     "text": "Higgsfield Soul ID. A consistency engine, not a clone machine.",
+     "actual_duration_s": 3.71,
+     "audio_file": "audio/outro-topic-0.mp3",
+     "frame": 3308,
+     "hold": 111
+    }
+   ],
+   "start_frame": 3308
+  },
+  {
+   "id": "outro-channel",
+   "card": {
+    "title": "Nik Bear Brown",
+    "sub": "@NikBearBrown"
+   },
+   "beats": [
+    {
+     "type": "outro-channel",
+     "text": "Nik Bear Brown. Riffing what the machine makes.",
+     "actual_duration_s": 2.95,
+     "audio_file": "audio/outro-channel-0.mp3",
+     "frame": 3433,
+     "hold": 88
+    }
+   ],
+   "start_frame": 3433
+  }
+ ],
+ "total_frames": 3535,
+ "conformed": true
+}

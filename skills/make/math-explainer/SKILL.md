@@ -59,8 +59,8 @@ do the other.
 - `../bears-doodles/templates/beat_sheet.schema.json` — the beat-sheet contract
   (shared; brownblue overrides only `metadata` defaults — see style.md).
 
-Scripts are **shared with bears-doodles** (`../bears-doodles/scripts/`, run with
-the `~/ai` venv active): `new_video.py`, `generate_audio.py`,
+Scripts are **shared with bears-doodles** (`../sketch-explainer/scripts/`, run with
+the `${ART_VENV:-./.venv}` venv active): `new_video.py`, `generate_audio.py`,
 `manim_template.py` + `bn_layout.py`, `manim_layout_audit.py`, `assemble.py`,
 `package_video.py`. Do not copy them into this folder; call them in place.
 (`svg_doodles.py`, `composite_doodles.py`, `enhance_suggest.py` are
@@ -143,7 +143,7 @@ book*, not in the animation scratch dir:
 - **Publishing is run from `Manim/`** (so it finds the token/ledger) with an
   **explicit path** to the book's video folder — or from anywhere with explicit
   `--token/--client/--ledger` flags. Example (full paths, works from any terminal):
-  `python /Users/nik/Documents/Cowork/quantum-mechanics-vol1/youtube/scripts/youtube_publish.py /Users/nik/Documents/Cowork/quantum-mechanics-vol1/youtube/<slug>-bb --token /Users/nik/Documents/Cowork/Manim/youtube_token.json --ledger /Users/nik/Documents/Cowork/Manim/youtube_publish_ledger.json --client /Users/nik/Documents/Cowork/Manim/client_secret.json ...`
+  `python ${ART_PUBLISH_WORKSPACE:-./publish-workspace}/quantum-mechanics-vol1/youtube/scripts/youtube_publish.py ${ART_PUBLISH_WORKSPACE:-./publish-workspace}/quantum-mechanics-vol1/youtube/<slug>-bb --token ${ART_YOUTUBE_TOKEN:-./youtube_token.json} --ledger ${ART_PUBLISH_LEDGER:-./youtube_publish_ledger.json} --client ${ART_YOUTUBE_CLIENT_SECRET:-./client_secret.json} ...`
   Every pipeline script already takes a folder path and works folder-relative.
 
 ## Commands
@@ -158,7 +158,7 @@ Read `reference/style.md`. Derive the kebab-case slug (append `-bb` when a
 same-concept doodle already owns the plain slug). **Resolve the target book from
 the source chapter and create the folder at `<book-repo>/youtube/<slug>/`** (make
 `youtube/` if absent) — never in `Manim/`. Run
-`../bears-doodles/scripts/new_video.py` with that path, then patch the skeleton's
+`../sketch-explainer/scripts/new_video.py` with that path, then patch the skeleton's
 `metadata` to brownblue defaults (series, voice, style, fonts — style.md has the
 block; also set `playlist`/`playlist_short` per the book's queue). Copy the EB
 Garamond TTFs into the video's `fonts/`. Report the path. No content yet.
@@ -195,12 +195,12 @@ derived duration. No dollar estimates. Ask approval. Stop. (Gate 2.)
 
 ### `audio`
 Confirm `ELEVENLABS_API_KEY` and `mutagen`. Run
-`python ../bears-doodles/scripts/generate_audio.py <folder>`. Voice is Bear
+`python ../sketch-explainer/scripts/generate_audio.py <folder>`. Voice is Bear
 Brown (`TyW6NH39JcFb5M3xdIIk`) from metadata; settings in style.md. Report
 total + per-beat durations. Confirm before rendering. (Gate 3.)
 
 ### `manim`
-Copy `../bears-doodles/scripts/manim_template.py` into the folder as
+Copy `../sketch-explainer/scripts/manim_template.py` into the folder as
 `<slug_underscored>.py` **and copy `bn_layout.py` alongside it**. Set the style
 constants from style.md (`dark` unless metadata says `light`). Fill one draw
 function per beat honoring transform-don't-cut. Scene is silent; `assemble`
@@ -232,7 +232,7 @@ equation per zone.
 
 ```
 manim -qh <scene>.py BearsDoodlesVideo
-python ../bears-doodles/scripts/assemble.py <folder> --mode manim              # → <slug>.mp4
+python ../sketch-explainer/scripts/assemble.py <folder> --mode manim              # → <slug>.mp4
 ```
 
 Then the 9:16 Short — **gated at 3:00 first**:
@@ -240,7 +240,7 @@ Then the 9:16 Short — **gated at 3:00 first**:
 ```
 python scripts/short_guard.py <folder>                                        # must exit 0 (< 3:00)
 manim -r 1080,1920 --fps 60 --disable_caching --flush_cache <scene>.py BearsDoodlesVideo
-python ../bears-doodles/scripts/assemble.py <folder> --mode manim --portrait   # → <slug>-short.mp4
+python ../sketch-explainer/scripts/assemble.py <folder> --mode manim --portrait   # → <slug>-short.mp4
 ```
 
 If `short_guard.py` blocks (audio total ≥ 180s), do **not** render the Short.

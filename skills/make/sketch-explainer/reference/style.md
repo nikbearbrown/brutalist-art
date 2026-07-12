@@ -117,9 +117,9 @@ Render + assemble both:
 
 ```
 manim -qh <scene>.py BearsDoodlesVideo                  # 16:9
-python ../../bears-doodles/scripts/assemble.py . --mode manim
+python ../../sketch-explainer/scripts/assemble.py . --mode manim
 manim -r 1080,1920 --fps 60 --disable_caching --flush_cache <scene>.py BearsDoodlesVideo     # 9:16 (NOT -qh: it forces 1920x1080 and overrides -r)
-python ../../bears-doodles/scripts/assemble.py . --mode manim --portrait   # → <slug>-short.mp4
+python ../../sketch-explainer/scripts/assemble.py . --mode manim --portrait   # → <slug>-short.mp4
 ```
 
 **Fallback for not-yet-converted scenes:** `scripts/make_short.py <folder>` wraps the finished 16:9 master in a branded 9:16 white card (brand + title + channel) with no re-render. Universal, but dual-panel content stays small — prefer the native portrait re-render above.
@@ -149,11 +149,11 @@ shared/
 
 ## Machine setup (one time)
 
-The project Python lives in a venv at `~/ai` to avoid the Anaconda/x86 numpy
+The project Python lives in a venv at `${ART_VENV:-./.venv}` to avoid the Anaconda/x86 numpy
 conflict on Apple Silicon. Activate it with the `ai` alias before running scripts:
 
 ```bash
-ai                       # alias for: source ~/ai/bin/activate
+ai                       # alias for: source ${ART_VENV:-./.venv}/bin/activate
 pip install manim requests mutagen
 ```
 

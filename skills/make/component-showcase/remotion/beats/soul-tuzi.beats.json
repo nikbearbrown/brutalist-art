@@ -1,0 +1,55 @@
+{
+ "_comment": "Authored mp4 riff — Higgsfield Soul ID character 'tuzi'. Body segments reference a clip in public/clips/ (staged by mp4_prep.py); outro segments render a Remotion brutalist card. riff_audio.py voices each beat, riff_conform.py lays them end-to-end and writes soul-tuzi.conformed.json (the render's source of truth). Facts are sourced (higgsfield.ai Soul ID blog); the consistency read is from all 12 clips.",
+ "title": "Same Person? — Higgsfield Soul ID, Riffed",
+ "series": "Brutalist Riffs",
+ "hashtags": ["Higgsfield", "SoulID", "AICharacter", "CharacterConsistency", "AIVideo", "Brutalist", "NikBearBrown"],
+ "youtube_description": "Higgsfield's Soul ID promises one thing: train a character once and it stays the same face across every generation. So we tested it — twelve AI clips of one Soul ID character (\"tuzi\"), one question: is it really the same person, every time?\n\nThe honest answer is yes at the casting level, no at the forensic level. Soul ID keeps the braids, the hoop earrings, the sun-kissed smile — you'd swear one model booked all twelve shoots. But push the angle, the styling, or the crop and it drifts: proportions stretch, the face reads a different ethnicity, the identity thins out where there's less face to hold. That's not a knock — it's Higgsfield's own stated limit: extreme angles and style shifts still introduce drift.\n\nA Brutalist riff: the AI generates, you make the calls. This one is the call.\n\nHow Soul ID works: https://higgsfield.ai/blog/Soul-ID-AI-Character-Consistency",
+ "fps": 30,
+ "voice": "nikbearbrown",
+ "clips_dir": "../higgsfield/character-tuzi",
+ "segments": [
+  {"id": "open", "clip": "braocmkcpvg.mp4", "beats": [
+    {"type": "reactive", "text": "Look at her. One face. Hold that thought."},
+    {"type": "analytic", "text": "Brutalist rule: the AI generates, you make the calls. So make one. Twelve clips, one Higgsfield Soul ID, a character called tuzi. Same person? Every time?"}
+  ]},
+  {"id": "claim", "clip": "qbbcwylwoxa.mp4", "beats": [
+    {"type": "analytic", "text": "Higgsfield says yes. Soul ID locks a face and carries it across every generation. Train it once, reuse it forever."}
+  ]},
+  {"id": "how1", "clip": "dyjhgcipdkl.mp4", "beats": [
+    {"type": "analytic", "text": "The mechanism: twenty-plus photos of one person, many angles, good light, one full-height shot. Three to five minutes later you have a trained identity layer. A face the model remembers, not a prompt you retype."}
+  ]},
+  {"id": "how2", "clip": "etikyejfxlj.mp4", "beats": [
+    {"type": "analytic", "text": "Then you generate off presets and change everything around the face while the identity holds. Street, black and white, neon, runway. Same person, new world."}
+  ]},
+  {"id": "predict", "clip": "fgsprjjquas.mp4", "beats": [
+    {"type": "predict", "text": "So it should be one woman in twelve outfits. Let's check the tape."}
+  ]},
+  {"id": "match", "clip": "xrcjtfzyvob.mp4", "beats": [
+    {"type": "reactive", "deixis": true, "text": "This shot and the last one, dead ringers. Braids, freckles, that open smile. Soul ID nailed it."}
+  ]},
+  {"id": "casting", "clip": "kymqqumklle.mp4", "beats": [
+    {"type": "reactive", "text": "Still her. The hoops, the sun, the braids carry the casting even into magenta fur and diner neon."}
+  ]},
+  {"id": "drift1", "clip": "falrymvycif.mp4", "beats": [
+    {"type": "predict", "deixis": true, "text": "Then it slips. The proportions stretch, watch the neck, and the face reads a different ethnicity than the freckled cut. Same type, not the same skull."}
+  ]},
+  {"id": "drift2", "clip": "iurqmmgxdom.mp4", "beats": [
+    {"type": "predict", "text": "Bury the face in a full body pull and the lock goes thin. Less face, less identity to hold."}
+  ]},
+  {"id": "drift3", "clip": "xymdkhllztl.mp4", "beats": [
+    {"type": "predict", "text": "Same when a flowered helmet swallows the frame. The identity thins out exactly where the face gets rare."}
+  ]},
+  {"id": "verdict", "clip": "ylkomvfuxcj.mp4", "beats": [
+    {"type": "resolve", "deixis": true, "text": "So, same person? Yes, and no. Soul ID keeps the casting. You'd swear one model booked all twelve shoots. But it's identity as preset, not a clone."}
+  ]},
+  {"id": "fineprint", "clip": "jvqbizywiam.mp4", "beats": [
+    {"type": "analytic", "text": "And that's Higgsfield's own fine print: extreme angles and style shifts still introduce drift. The machine made twelve. Deciding which ones hold is still your job."}
+  ]},
+  {"id": "outro-topic", "card": {"title": "CONSISTENCY ENGINE,\nNOT A CLONE", "sub": "HIGGSFIELD SOUL ID"}, "beats": [
+    {"type": "outro-topic", "sub": "BRUTALIST · RIFFS", "text": "Higgsfield Soul ID. A consistency engine, not a clone machine."}
+  ]},
+  {"id": "outro-channel", "card": {"title": "Nik Bear Brown", "sub": "@NikBearBrown"}, "beats": [
+    {"type": "outro-channel", "text": "Nik Bear Brown. Riffing what the machine makes."}
+  ]}
+ ]
+}

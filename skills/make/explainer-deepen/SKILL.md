@@ -54,16 +54,16 @@ and either **certify** it is already Brown Blue depth or **rewrite** it into a
 the doodle; your job is to give it the depth, arc, and register Brown Blue
 requires.
 
-This skill is a thin front-end on **brownblue** (`../brownblue/`). It adds the
+This skill is a thin front-end on **brownblue** (`../math-explainer/`). It adds the
 *audit* (is this already deep enough?) and the *lift* (doodle → deep script);
 everything downstream — beats, audio, manim, assemble — is brownblue's, unchanged.
 
 ## Read before acting
 
-- `../brownblue/reference/pedagogy.md` — the 3b1b arc and Gate-1/Gate-2 rules the
+- `../math-explainer/reference/pedagogy.md` — the 3b1b arc and Gate-1/Gate-2 rules the
   rewrite must satisfy. **Read before every convert.**
-- `../brownblue/reference/style.md` — palette, fonts, motion, intro/outro.
-- `../brownblue/reference/equations.md` — the equation-tangent rule; every
+- `../math-explainer/reference/style.md` — palette, fonts, motion, intro/outro.
+- `../math-explainer/reference/equations.md` — the equation-tangent rule; every
   equation the deep version lands fires a tangent.
 - `scripts/audit.py` — the runnable scorecard this skill is built around.
 

@@ -117,16 +117,16 @@ video looks great.
 ### `build` — render the cut (16:9 AND a 9:16 Short)
 **16:9 (landscape):**
 ```
-python ../../bears-doodles/scripts/generate_audio.py .          # narration (silent/reuse aware)
+python ../../sketch-explainer/scripts/generate_audio.py .          # narration (silent/reuse aware)
 manim -qh <slug>.py BearsDoodlesVideo                            # cards + placeholders
-python ../../bears-doodles/scripts/composite_clips.py .          # footage full-frame into clip windows
-python ../../bears-doodles/scripts/assemble.py . --mode manim --manim-mp4 mp4/_composited.mp4
+python ../../sketch-explainer/scripts/composite_clips.py .          # footage full-frame into clip windows
+python ../../sketch-explainer/scripts/assemble.py . --mode manim --manim-mp4 mp4/_composited.mp4
 ```
 **9:16 (Short) — same audio, no new footage generation:**
 ```
 manim -r 1080,1920 --fps 60 --disable_caching --flush_cache <slug>.py BearsDoodlesVideo
-python ../../bears-doodles/scripts/composite_clips.py . --portrait
-python ../../bears-doodles/scripts/assemble.py . --mode manim --portrait --manim-mp4 mp4/_composited-short.mp4
+python ../../sketch-explainer/scripts/composite_clips.py . --portrait
+python ../../sketch-explainer/scripts/assemble.py . --mode manim --portrait --manim-mp4 mp4/_composited-short.mp4
 ```
 A Short is best reserved for short/medium bios; a 5-minute bio is a long-form piece, not a
 Short. Make the 16:9 first; the Short reuses its footage.
@@ -145,7 +145,7 @@ from the figure and the story, not hardcoded to a field. It's a draft — refine
 line before posting, and verify the facts.
 
 ## Dependencies
-Reuses the Bear's Notes engine in `../bears-doodles/scripts/`: `generate_audio.py`
+Reuses the Bear's Notes engine in `../sketch-explainer/scripts/`: `generate_audio.py`
 (audio-first TTS; per-beat `voice_id`, `reuse_audio`, and silent beats), `composite_clips.py`
 (full-frame footage overlay at beat windows, freezes a short clip's last frame to fill),
 and `assemble.py` (mux). Keep `mini-bio/` a sibling of `bears-doodles/` in the workspace.

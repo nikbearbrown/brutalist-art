@@ -14,7 +14,7 @@ Usage:
                               [--interval-hours 4] [--start ISO8601]
                               [--privacy private|unlisted]
 
-The publish workspace defaults to /Users/nik/Documents/Cowork/Manim
+The publish workspace defaults to ${ART_PUBLISH_WORKSPACE:-./publish-workspace}
 (override with env BB_PUBLISH_WORKSPACE or --workspace).
 Idempotent: the ledger skips anything already uploaded, so re-running after
 a partial failure is safe.
@@ -27,7 +27,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 DEFAULT_WORKSPACE = Path(os.getenv("BB_PUBLISH_WORKSPACE",
-                                   "/Users/nik/Documents/Cowork/Manim"))
+                                   "${ART_PUBLISH_WORKSPACE:-./publish-workspace}"))
 
 
 def main():

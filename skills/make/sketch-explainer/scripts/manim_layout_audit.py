@@ -24,7 +24,7 @@ Run on ONE video folder (cd into it, or pass --scene):
 
     ai
     cd ~/Documents/Cowork/Manim/energy-levels-arent-evenly-spaced
-    python ../../bears-doodles/scripts/manim_layout_audit.py energy_levels_arent_evenly_spaced.py
+    python ../../sketch-explainer/scripts/manim_layout_audit.py energy_levels_arent_evenly_spaced.py
 
 Outputs (next to the scene):
     layout_audit.json   machine-readable findings

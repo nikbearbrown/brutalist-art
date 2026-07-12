@@ -16,7 +16,7 @@ These are fixed. Copy them verbatim; do not invent variants.
 - Pronunciation: send the literal word "Medhavy" to TTS. In narration text, spell out
   "A-I" (not "AI") so it's read as letters, and "dot com" (not ".com").
 
-## Remotion bookends (project: books/vox/aspects/remotion-pass/remotion, src/index.ts)
+## Remotion bookends (project: runtime/remotion, src/index.ts)
 - **MedhavyOpen** (intro). Props:
   - `topic`: string (short, upper-case topic line)
   - `lines`: string[] (brand + video/chapter lines)

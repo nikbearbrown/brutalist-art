@@ -28,10 +28,10 @@ Timing: pull each beat's run_time from `mp3/timings.json` (a `dur(beat_id)` help
 ```
 ai
 cd ~/Documents/Cowork/Manim/energy-levels-n-squared-worked
-python ../../bears-doodles/scripts/generate_audio.py .
+python ../../sketch-explainer/scripts/generate_audio.py .
 manim -qh energy_levels_n_squared_worked.py BearsDoodlesVideo
-python ../../bears-doodles/scripts/manim_layout_audit.py energy_levels_n_squared_worked.py
-python ../../bears-doodles/scripts/assemble.py . --mode manim
+python ../../sketch-explainer/scripts/manim_layout_audit.py energy_levels_n_squared_worked.py
+python ../../sketch-explainer/scripts/assemble.py . --mode manim
 open mp4/energy-levels-n-squared-worked.mp4
 ```
 - Confirm MacTeX is installed (MathTex needs it): `brew install --cask mactex-no-gui` if a LaTeX error appears.
@@ -41,8 +41,8 @@ open mp4/energy-levels-n-squared-worked.mp4
 ## Publish IF good (only after you've watched it)
 This is a deep 16:9-only video, so it is exempt from the both-formats publish gate — publish it on its own:
 ```
-python ../../bears-doodles/scripts/youtube_publish.py . --which landscape --allow-partial --dry-run   # preview the slot
-python ../../bears-doodles/scripts/youtube_publish.py . --which landscape --allow-partial             # schedule it
+python ../../sketch-explainer/scripts/youtube_publish.py . --which landscape --allow-partial --dry-run   # preview the slot
+python ../../sketch-explainer/scripts/youtube_publish.py . --which landscape --allow-partial             # schedule it
 ```
 It uploads private with a scheduled `publishAt` (drip). **Do not publish if** the math is wrong, MathTex failed to render, the audit shows errors, or it just looks sloppy — fix first.
 

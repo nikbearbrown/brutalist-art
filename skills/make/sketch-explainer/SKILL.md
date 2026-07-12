@@ -40,7 +40,7 @@ current step; do not restate them at the user.
 - `reference/routing.md` — which tool renders which beat, and cost math.
 - `templates/beat_sheet.schema.json` — the JSON contract every beat sheet obeys.
 
-Scripts (run with the project's `~/ai` venv active — see style.md):
+Scripts (run with the project's `${ART_VENV:-./.venv}` venv active — see style.md):
 
 - `scripts/new_video.py` — scaffold a video folder from a slug + title.
 - `scripts/generate_audio.py` — ElevenLabs TTS for every beat → `mp3/` + `mp3/timings.json` (this is the ground-truth timing).

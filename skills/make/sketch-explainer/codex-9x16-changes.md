@@ -92,11 +92,11 @@ Intro / hooks / outro: in portrait, split `band()` into rows and `fit()` each bl
 ```
 # 16:9
 manim -qh <scene>.py BearsDoodlesVideo
-python ../../bears-doodles/scripts/assemble.py . --mode manim                  # -> <slug>.mp4
+python ../../sketch-explainer/scripts/assemble.py . --mode manim                  # -> <slug>.mp4
 # 9:16  (note: -r, NOT -qh; flush cache after geometry changes)
 manim -r 1080,1920 --fps 60 --disable_caching --flush_cache <scene>.py BearsDoodlesVideo
-python ../../bears-doodles/scripts/manim_layout_audit.py <scene>.py --png       # audit portrait
-python ../../bears-doodles/scripts/assemble.py . --mode manim --portrait        # -> <slug>-short.mp4
+python ../../sketch-explainer/scripts/manim_layout_audit.py <scene>.py --png       # audit portrait
+python ../../sketch-explainer/scripts/assemble.py . --mode manim --portrait        # -> <slug>-short.mp4
 ```
 
 `assemble.py --portrait` picks the 9:16 render (it probes each render's real dimensions, so it can't grab the landscape one) and writes `mp4/<slug>-short.mp4`, muxing the same narration + the 1s freeze-frame tail.

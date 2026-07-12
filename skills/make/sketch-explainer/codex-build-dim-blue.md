@@ -24,8 +24,8 @@ Folder: `~/Documents/Cowork/Manim/dim-blue-beats-blinding-red/`, scene `dim_blue
 3. Render + audit + assemble the Short:
    ```
    manim -r 1080,1920 --fps 60 --disable_caching --flush_cache dim_blue_beats_blinding_red.py BearsDoodlesVideo
-   python ../../bears-doodles/scripts/manim_layout_audit.py dim_blue_beats_blinding_red.py
-   python ../../bears-doodles/scripts/assemble.py . --mode manim --portrait
+   python ../../sketch-explainer/scripts/manim_layout_audit.py dim_blue_beats_blinding_red.py
+   python ../../sketch-explainer/scripts/assemble.py . --mode manim --portrait
    ```
    Fix every audit ERROR before moving on.
 
@@ -44,10 +44,10 @@ Arc (reuse intuition → idea→math → worked example → predicts → recap),
 Build it like the energy-levels deep: `beat_sheet.json` with a `math_tex` field per math beat, then the scene (left panel = metal plate + photons of two colours hitting it / an electron ejecting; right column = the formula chain assembling to a boxed `K_{\max}=hf-\phi`; worked numbers slotting in beside a tiny "ejects / doesn't" indicator). Then:
 ```
 cd ~/Documents/Cowork/Manim/photoelectric-effect-worked
-python ../../bears-doodles/scripts/generate_audio.py .
+python ../../sketch-explainer/scripts/generate_audio.py .
 manim -qh photoelectric_effect_worked.py BearsDoodlesVideo
-python ../../bears-doodles/scripts/manim_layout_audit.py photoelectric_effect_worked.py
-python ../../bears-doodles/scripts/assemble.py . --mode manim
+python ../../sketch-explainer/scripts/manim_layout_audit.py photoelectric_effect_worked.py
+python ../../sketch-explainer/scripts/assemble.py . --mode manim
 ```
 
 ---

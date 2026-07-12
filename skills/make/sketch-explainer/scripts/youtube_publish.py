@@ -14,7 +14,7 @@ the YouTube Data API enabled, an OAuth "Desktop app" client (client_secret.json)
 and — important — a YouTube API audit, or uploads stay locked to private and the
 publishAt will not surface them publicly.
 
-Install (in the ~/ai venv):
+Install (in the ${ART_VENV:-./.venv} venv):
     pip install google-api-python-client google-auth-oauthlib google-auth-httplib2
 
 Usage:

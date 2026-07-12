@@ -1,0 +1,23 @@
+{
+  "_comment": "Emitted by src/schedule/schedule.ts from the conformed bar-chart fixture. Frames @30fps. The event schedule is computed from the props (bar i finishes at delay + i*stagger + duration); the beats pin to those events with lead/lag in ms. This is the reference the previz renders — regenerated whenever the fixture timing changes.",
+  "target": "onda:bar-chart",
+  "clock": "sacred-events",
+  "fps": 30,
+  "conform": { "delay": 0, "stagger": 24, "duration": 60, "note": "slowed from onda default 24f/4f so beats have room" },
+  "accent": { "index": 3, "label": "Citations", "value": 66, "rule": "largest value earns the red accent — the riff's subject" },
+  "events": [
+    { "id": "E1", "frame": 0, "desc": "bars empty, labels set" },
+    { "id": "E2", "frame": 60, "desc": "first bar (Code) settles" },
+    { "id": "E3", "frame": 132, "desc": "Citations settles — the outlier, red, tallest" }
+  ],
+  "motifs": ["confidence isn't accuracy", "the eye finds the outlier"],
+  "beats": [
+    { "type": "reactive", "frame": 12, "hold": 52, "deixis": true, "pin": "E2 lead -1600ms", "text": "watch these fill in" },
+    { "type": "predict", "frame": 105, "hold": 30, "pin": "E3 lead -900ms", "text": "the last one should worry you" },
+    { "type": "event", "frame": 132, "hold": 0, "pin": "E3", "text": "" },
+    { "type": "resolve", "frame": 141, "hold": 60, "deixis": true, "pin": "E3 lag +300ms", "text": "there it is — citations. two-thirds, made up" },
+    { "type": "analytic", "frame": 162, "hold": 100, "tier": "reset", "text": "Horizontal bars grow from zero on a calm spring; the biggest bar earns the one accent, the rest stay ink. Dies past ~8 bars — it becomes a table pretending to be a chart." },
+    { "type": "outro-topic", "frame": 267, "hold": 70, "render": "remotion", "source": "ABOUT.MD", "text": "computational skepticism — the series" },
+    { "type": "outro-channel", "frame": 342, "hold": 70, "render": "remotion", "source": "AUTHOR.MD", "text": "Nik Bear Brown — more teardowns next" }
+  ]
+}

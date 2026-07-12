@@ -16,7 +16,7 @@ What the scaffold gives you for free:
     just play their audio over the current frame
 
 Render:
-    ai                                  # activate the ~/ai venv
+    ai                                  # activate the ${ART_VENV:-./.venv} venv
     manim -pqh <slug_underscored>.py BearsDoodlesVideo      # 1080p
     manim -pql <slug_underscored>.py BearsDoodlesVideo      # fast preview
 

@@ -42,7 +42,7 @@ _PALETTES = {
 }
 _PAL = _os.environ.get("VOX_PALETTE", "teardown")
 GROUND, INK, TEAL, CRIMSON, SLATE, GOLD, HAIRLINE = _PALETTES.get(_PAL, _PALETTES["teardown"])
-# TEAL = good/kept/true, CRIMSON = bad/lost/broken (see books/vox/DESIGN.md). In teardown/neu
+# TEAL = good/kept/true, CRIMSON = bad/lost/broken (see runtime/design/DESIGN.md). In teardown/neu
 # TEAL == INK (good is plain ink; the KEPT/LOST label + side carry it — red is the one accent).
 # GOLD = highlighter fill ONLY (never text); in teardown it is a wash of the one accent. SLATE = structure.
 NEU_RED = "#C8102E"   # NEU brand/emphasis/primary-series only — never "state" (Northeastern brand law)
@@ -50,7 +50,7 @@ NEU_RED = "#C8102E"   # NEU brand/emphasis/primary-series only — never "state"
 NAVY = TEAL          # navy dropped -> renders the good/kept accent now
 BLUE = SLATE         # dusty-blue dropped -> slate
 TERRA = CRIMSON      # terracotta dropped -> crimson
-# type system — fonts live in books/vox/fonts/, resolved by family name via fontconfig.
+# type system — fonts live in runtime/fonts/, resolved by family name via fontconfig.
 # NEU overrides ALL type to Lato (Northeastern brand law); every other palette keeps the house type.
 if _PAL == "neu":
     DISPLAY = SANS = SERIF = "Lato"   # NEU: regular-weight headings, sentence case (brand law)

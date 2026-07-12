@@ -20,7 +20,7 @@ export const NEU_RED = '#C8102E';
 export const NEU_SERIES = ['#C8102E', '#000000', '#545454', '#787878', '#C4C4C4'] as const;
 
 // NEU type override — Lato (required by brand), regular-weight headings, sentence case.
-// Bundle the Lato TTFs in books/vox/fonts/Lato/ so Manim/Pango resolves the family.
+// Bundle the Lato TTFs in runtime/fonts/Lato/ so Manim/Pango resolves the family.
 export const FONT_NEU = {
   display: 'Lato, "Helvetica Neue", Arial, sans-serif',
   serif: 'Lato, "Helvetica Neue", Arial, sans-serif', // NEU has no editorial serif — Lato throughout

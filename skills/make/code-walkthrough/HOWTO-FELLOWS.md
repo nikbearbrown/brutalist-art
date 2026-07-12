@@ -73,7 +73,7 @@ Then open `vox/.env` and replace `your-elevenlabs-api-key` with your real key. T
 
 ```bash
 brew install node
-cd ~/books/vox/aspects/remotion-pass/remotion && npm install
+cd ~/runtime/remotion && npm install
 ```
 
 ---

@@ -129,7 +129,7 @@ def main():
     print(f"[ok] composited → {out}")
     if missing:
         print(f"[note] still placeholders (no footage yet): {missing}")
-    print("[next] assemble: python ../../bears-doodles/scripts/assemble.py . --mode manim "
+    print("[next] assemble: python ../../sketch-explainer/scripts/assemble.py . --mode manim "
           f"--manim-mp4 {out.relative_to(folder)}")
     return 0
 

@@ -39,10 +39,10 @@ HERE = Path(__file__).resolve().parent
 REPO = HERE.parents[2] if len(HERE.parents) >= 3 else HERE
 DEFAULT_SCRIPTS = os.environ.get(
     "MEDHAVY_SCRIPTS_DIR",
-    str(REPO / "books/unreal-reels/aspects/explainer/bears-doodles/scripts"))
+    str(REPO / "skills/make/sketch-explainer/scripts"))
 DEFAULT_REMOTION = os.environ.get(
     "MEDHAVY_REMOTION_DIR",
-    str(REPO / "books/vox/aspects/remotion-pass/remotion"))
+    str(REPO / "runtime/remotion"))
 
 
 def sh(cmd: list[str]) -> None:

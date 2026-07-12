@@ -48,8 +48,8 @@ These run on a machine with network access (not the sandbox). Confirm/install:
 Reused-tool locations default to the repo layout; override with `--scripts-dir` /
 `--remotion-dir` or the env vars `MEDHAVY_SCRIPTS_DIR` / `MEDHAVY_REMOTION_DIR`:
 
-- generate_audio.py → `books/unreal-reels/aspects/explainer/bears-doodles/scripts/`
-- Remotion project → `books/vox/aspects/remotion-pass/remotion/` (has `src/index.ts`, `MedhavyOpen`, `MedhavyOutro`)
+- generate_audio.py → `skills/make/sketch-explainer/scripts/`
+- Remotion project → `runtime/remotion/` (has `src/index.ts`, `MedhavyOpen`, `MedhavyOutro`)
 
 The Medhavy voice, palette, and brand strings are fixed constants — see
 `references/medhavy-brand.md`. Don't guess them.

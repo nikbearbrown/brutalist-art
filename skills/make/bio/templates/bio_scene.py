@@ -15,10 +15,10 @@ Palette: white on near-black, grey for secondary. No accent colour. Montserrat t
 
 Run:
     ai
-    python ../../bears-doodles/scripts/generate_audio.py .
+    python ../../sketch-explainer/scripts/generate_audio.py .
     manim -qh bio_max_planck.py BearsDoodlesVideo
-    python ../../bears-doodles/scripts/composite_clips.py .
-    python ../../bears-doodles/scripts/assemble.py . --mode manim --manim-mp4 mp4/_composited.mp4
+    python ../../sketch-explainer/scripts/composite_clips.py .
+    python ../../sketch-explainer/scripts/assemble.py . --mode manim --manim-mp4 mp4/_composited.mp4
 """
 import json
 from pathlib import Path

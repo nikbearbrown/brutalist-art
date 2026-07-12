@@ -23,11 +23,11 @@ audio/timings file is needed.
 
 Usage:
     python svg_doodles.py <video-folder>
-    python svg_doodles.py <video-folder> --icons ~/ai/assets/validated
+    python svg_doodles.py <video-folder> --icons ${ART_ASSETS:-./assets}/validated
     python svg_doodles.py <video-folder> --transparent      # render .mov w/ alpha
     python svg_doodles.py <video-folder> --include-brands    # don't skip logo packs
 
-Default icon search order: --icons, else ~/ai/assets/validated, else
+Default icon search order: --icons, else ${ART_ASSETS:-./assets}/validated, else
 ~/Documents/Codex/Manim/shared/svg.
 """
 from __future__ import annotations
@@ -238,7 +238,7 @@ def main(argv=None) -> int:
     if args.icons:
         candidates.append(Path(args.icons).expanduser())
     candidates += [Path("~/Documents/Cowork/Manim/shared/svg").expanduser(),
-                   Path("~/ai/assets/validated").expanduser(),
+                   Path("${ART_ASSETS:-./assets}/validated").expanduser(),
                    Path("~/Documents/Codex/Manim/shared/svg").expanduser()]
     icon_dir, index = None, []
     for c in candidates:
