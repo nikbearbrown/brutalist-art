@@ -244,7 +244,14 @@ type, not an optional extra. See the lead P0 in Theme 3; this reverses D4.
 - **Acceptance:** title + body use `animated_graphics.py`/`compile.py`/`runtime/…`; `grep -rn "vox" runtime/` returns only a labeled lineage note; Root.tsx checklist matches the 3-bookend flow.
 - **Effort:** S
 
-### [P2] Reconcile palette fragmentation into one registry
+### [P1] Reconcile the palette registry to the 5 canonical design palettes (live-verified)
+- **Repo:** brutalist-art
+- **Evidence:** the current design system has FIVE palettes — `brutalist, hai, medhavy, neu, nikbearbrown` — but the toolkit stores them under inconsistent, stale keys across two surfaces. Manim `runtime/manim/animated_graphics.py:35` `_PALETTES` has keys `teardown, newsprint, neu, medhavy, humanitarians` (5) — it uses `teardown` for nikbearbrown and `humanitarians` for hai, and **has no `brutalist` key at all**. Remotion `runtime/remotion/src/tokens/` has `brutalist, humanitarians, medhavy, neu, newsprint, teardown, vox` (7). `teardown.ts` re-exports `vox` and comments "the NikBearBrown default palette"; `brutalist.ts` is a SEPARATE terminal/dark palette (`#ea580c` orange, `#080808` bg) — Remotion-only.
+- **Why:** (1) a Manim scene cannot render in the `brutalist` palette (missing from the registry); (2) three names for one palette (nikbearbrown = teardown = vox) and hai = humanitarians make `metadata.palette` ambiguous; (3) Manim (5) and Remotion (7) disagree on the set, so the same reel can look different in its Manim vs Remotion beats.
+- **Acceptance:** canonical keys `brutalist, hai, medhavy, neu, nikbearbrown` resolve identically in Manim `_PALETTES` and Remotion `tokens/`; **add a `brutalist` entry to the Manim registry**; keep `teardown`→nikbearbrown, `humanitarians`→hai, `vox`→nikbearbrown, `newsprint` as back-compat aliases; DESIGN.md's table uses the canonical five. `ART_PALETTE=brutalist` renders both a Manim and a Remotion beat in the same look.
+- **Effort:** M
+
+### [P2] (superseded) Reconcile palette fragmentation into one registry
 - **Repo:** all
 - **Evidence:** D3 book uses "hai palette" (parchment `#F5EBE0`/espresso `#3B1A07`, `brutalist-d3-x-claude/chapters/49-ohlc-chart.md:30`); slides book uses NEU red `#C8102E`; toolkit default `teardown` = `#FFFFFF/#2A1A0E/#C8102E` (`runtime/design/DESIGN.md:26`). Three surfaces, three palettes, three token vocabularies, no shared source.
 - **Why:** a reader moving between books/tool gets a different "Brutalist look" each time.
