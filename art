@@ -6,6 +6,7 @@
 #   ./art <skill> <target> ...   run a skill (old house names resolve via GLOSSARY.md)
 #   ./art todo <reel> [flags]    per-video beat ledger (which beats need filling, how)
 #   ./art run <reel> [flags]     compile a reel (wraps runtime/scripts/run.sh)
+#   ./art keys                   validate every key LIVE and FREE (no spend)
 #   ./art doctor                 dependency + key readiness (Phase 4)
 #
 # Old names still work: `./art vox-explainer ...` dispatches to `explainer`.
@@ -53,6 +54,9 @@ case "$cmd" in
     ;;
   todo)
     exec python3 "$ART_HOME/runtime/scripts/todo.py" "$@"
+    ;;
+  keys)
+    exec python3 "$ART_HOME/runtime/scripts/check_keys.py" "$@"
     ;;
   run)
     exec bash "$ART_HOME/runtime/scripts/run.sh" "$@"

@@ -6,7 +6,7 @@ at what's broken; building a real video of every type *finds* what's actually br
 construction.** Each example is simultaneously the acceptance test for its video type *and* the
 shipped example that teaches it. Fixes are discovered by building, not guessed up front.
 
-Every video here is **meta**: made *by* the toolkit, *about* the toolkit — the
+**Keys are validated free first.** Step 2 is `./art keys` — a no-spend live probe of every key/voice before any paid build (see the table). Every video here is **meta**: made *by* the toolkit, *about* the toolkit — the
 "Brutalist — Claude for Video Production" playlist. The first is **"What is Brutalist?"**
 
 ## Where this runs
@@ -64,11 +64,12 @@ Legend: 🔑 keys needed · 📁 existing folder to rebuild-and-verify · ✨ ne
 | # | Video | Skill | Folder | Status | Notes |
 |---|---|---|---|---|---|
 | 1 | **What is Brutalist?** | explainer + terminal | ✨ `youtube/what-is-brutalist` | ⬜ | intro; has `beat_sheet.json` + `BUILD-PROMPT.md`. Silent path is no-key; narration adds ElevenLabs. **First.** |
-| 2 | slate-cut | (compile) | 📁 `examples/slate-cut--base-rate` | ⬜ | the no-key first pass; verify `./art run` + request cards |
-| 3 | previz | (fill_slates) | ✨ `youtube/previz-*` | ⬜ | any beat sheet → all-slate timing pass |
-| 4 | line-art-vectorizer | line-art-vectorizer | ✨ `youtube/*` | ⬜ | vtracer, no key |
-| 5 | figure-planner | figure-planner | ✨ `youtube/*` | ⬜ | **author its SKILL.md first** (D5), then a figure |
-| 6 | sketch-explainer (silent) | sketch-explainer | ✨ `youtube/*` | ⬜ | Manim only, no key |
+| 2 | **Key check (free)** | `./art keys` | — (a gate, not a video) | ⬜ | **Run `./art keys` BEFORE any paid build.** Free live probes (ElevenLabs `/user`+`/voices`, higgsfield `account status`, YouTube `channels.list`=1 unit). Confirms every key/voice is valid + shows quota/credits. No spend. Fix any ❌ before Tier 1+. |
+| 3 | slate-cut | (compile) | 📁 `examples/slate-cut--base-rate` | ⬜ | the no-key first pass; verify `./art run` + request cards |
+| 4 | previz | (fill_slates) | ✨ `youtube/previz-*` | ⬜ | any beat sheet → all-slate timing pass |
+| 5 | line-art-vectorizer | line-art-vectorizer | ✨ `youtube/*` | ⬜ | vtracer, no key |
+| 6 | figure-planner | figure-planner | ✨ `youtube/*` | ⬜ | **author its SKILL.md first** (D5), then a figure |
+| 7 | sketch-explainer (silent) | sketch-explainer | ✨ `youtube/*` | ⬜ | Manim only, no key |
 
 ### Tier 1 — ElevenLabs (narration)
 | # | Video | Skill | Folder | Status |

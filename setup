@@ -110,5 +110,6 @@ done
 echo
 b "Legend:"; echo "  ✅ ready   ⚠ optional/paid feature missing a key or dep   ❌ a core (free) feature is blocked"
 echo "Keys live in .env (copy .env.example). AI image/video uses the external 'higgsfield' CLI login."
+echo "Validate keys LIVE and FREE (no spend): ./art keys"
 [ "$core_fail" = 1 ] && { echo; r "One or more CORE (no-key) features are blocked — see ❌ rows above."; echo; exit 1; }
 echo; g "All core features are ready."; echo
