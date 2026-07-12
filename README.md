@@ -56,6 +56,37 @@ human can get; the machine supplies everything else.
 
 The boundary is enforced, not suggested. That's what makes it hold when you're in a hurry.
 
+## Why the split — the two things machines and people are each bad at ignoring
+
+The division isn't a compromise. It comes from a real asymmetry, and the two ways of getting it
+wrong both make bad videos.
+
+**Claude cannot watch the video.** It can't tell whether a joke lands, whether an opening is
+interesting or just competent, whether a cut has rhythm, whether an explanation actually made the
+idea click. It has never felt bored. It can't hear the wrong note. Taste, humor, judgment about
+what's *interesting* — deciding whether the thing is any good — is not a step Claude can do
+faster or slower; it's a step it can't do at all, because doing it requires being an audience.
+That is your job, and it doesn't get smaller as the models get better.
+
+**Claude is superhuman at the build.** It writes Remotion and Manim faster and more correctly than
+you ever will. A human spending twenty hours hunting a render bug, fighting a compositing quirk, or
+hand-timing captions to audio is twenty hours thrown away — that is exactly the labor the machine
+is best at, and it will close that gap in minutes. Asking a person to do it is as wasteful as
+asking Claude to decide what's funny.
+
+So the two failure modes sit at the extremes. Push the work toward the human and you get someone
+debugging TypeScript at 2 a.m. to ship a video whose ideas were ready hours ago. Push it toward the
+machine and you get **AI slop** — technically clean, perfectly rendered, and dead on arrival,
+because nobody with taste ever decided whether any of it was worth watching. Fully automated video
+trends toward slop for a structural reason, not a quality-of-model reason: no one was in the
+audience.
+
+Brutalist holds the line in the middle. Think of it as conducting rather than playing every
+instrument: you decide what the piece *is*, you listen for the wrong note, you own the result — and
+the machine, which is an extraordinary player, performs every part on request, in order, one beat at
+a time. The score is yours. The playing is its. Neither of you does the other's job, and that is
+precisely why the result is neither a time-sink nor slop.
+
 ## Quickstart
 
 ```bash
