@@ -1,6 +1,7 @@
 # script-writer (formerly `teardown-script`) — `script`
 
-Turn **any text** into the *script* for an explainer video: narration in the
+Turn **any text** — a chapter, lecture notes, a paper, a tweet, a YouTube transcript, a pasted
+block — into the *script* for an explainer video: narration in the
 **Teardown voice** (`voices/teardown/VOICE.md`), sequenced by the **Brown Blue
 pedagogical constitution** (`reference/pedagogy.md`). The output is
 **style-agnostic** — a script document plus a vox `beat_sheet.json` whose beats
@@ -14,7 +15,7 @@ or spend anything. Hand the finished folder to `slate cut` / `remotion pass` /
 `generate_audio.py` when you want to build it.
 
 ## Trigger
-`script <text | file.md | chapter | pasted block>  [--out <dir>]  [silent]`
+`script <text | file.md | chapter | lecture-notes | tweet | transcript | pasted block>  [--out <dir>]  [silent]`
 
 Also fires on: "make an explainer script from this", "teardown script for …",
 "turn this into a video script in the teardown voice."
