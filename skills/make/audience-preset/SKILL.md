@@ -22,7 +22,7 @@ and remain the authoritative spec for each brand.
 
 ## The flow (identical for every brand)
 
-1. **Fork the sheet** — `python3 runtime/scripts/vox_variant.py <REEL> <brand>`
+1. **Fork the sheet** — `python3 runtime/scripts/brand_variant.py <REEL> <brand>`
    scaffolds `beat_sheet.<brand>.json` from the canonical sheet. The canonical
    `beat_sheet.json` is NEVER modified.
 2. **Rewrite the register** — narration rewritten in the brand's register
@@ -50,5 +50,5 @@ They apply only when `<brand> = neu` and are specified in `brands/neu.md`.
 ## Adding a brand
 
 Add `brands/<name>.md` with the same fields (register, voice env, palette key,
-outro, tangent flavor, any brand laws). No code changes — `vox_variant.py`
+outro, tangent flavor, any brand laws). No code changes — `brand_variant.py`
 takes the brand name as an argument.

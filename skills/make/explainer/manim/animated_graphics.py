@@ -1,4 +1,4 @@
-"""vox_graphics.py — the vox-explainer Manim graphics library.
+"""animated_graphics.py — the vox-explainer Manim graphics library.
 
 Renders GRAPHIC-type beats as per-beat fragments that drop into a reel's
 manim/<beat>.mp4 slot (the compiler picks them up by filename). Every scene is
@@ -6,7 +6,7 @@ rendered TO THE BEAT'S MEASURED DURATION — pass it via the BEAT env pair or
 edit the fixture scenes at the bottom.
 
 Render (on the user's machine, local, free):
-  manim -qh --fps 24 -r 1920,1080 vox_graphics.py B07_HouseSenate
+  manim -qh --fps 24 -r 1920,1080 animated_graphics.py B07_HouseSenate
   mv media/videos/.../B07_HouseSenate.mp4 reels/<slug>/manim/B07.mp4
 
 Design tokens (from the vox/ reference frames — keep in sync with SKILL.md):
@@ -650,7 +650,7 @@ class B22_End(Scene):              # ~4s
 # Demographic parity, straight from the bundled EQUATIONS.md authoring
 # schema. One scene per tangent beat; durations are placeholders until a
 # reel's beat_sheet.json supplies measured audio. Render any of them:
-#   manim -qh --fps 24 -r 1920,1080 vox_graphics.py EQT_Glossary
+#   manim -qh --fps 24 -r 1920,1080 animated_graphics.py EQT_Glossary
 
 _DEMO_TANGENT = EquationTangent({
     "eyebrow": "Metric 01 · equation · tangent",

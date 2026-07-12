@@ -6,7 +6,7 @@ description: >
   prompt→read→run→check→change loop; the chapter concept is the running example.
   Use when the user types `simulation <book>` or `simulation <chapter>` or asks to
   make a Claude Code + Manim sim reel. Register: Medhavy (Wonder). Output: a
-  beat_sheet.json + vox_scenes.py ready for `vox_run.sh`.
+  beat_sheet.json + scenes.py ready for `vox_run.sh`.
 ---
 
 # simulation — the Claude Code + Manim workflow reel
@@ -88,10 +88,10 @@ scaffolding; that line is where an error hides.
 it against a reference before running. The read step costs 30 seconds and catches
 errors before a wasted render. This is not optional.
 
-#### Act 3 — RUN (Manim scene, `vox_scenes.py`)
+#### Act 3 — RUN (Manim scene, `scenes.py`)
 The running simulation. Show it for real; no placeholder.
 
-The Manim scene is in `vox_scenes.py` (class `B{N}_<ConceptRun>`). It must:
+The Manim scene is in `scenes.py` (class `B{N}_<ConceptRun>`). It must:
 - Encode the physics correctly (gate below).
 - Follow `VISUAL-RULES.md`: short tags only, spectral colors for light, safe-area
   margins, no sentence-length labels.
@@ -132,7 +132,7 @@ audio step. Gate A / W / B gate the Manim render. All must pass.
 
 ## Visual gate (summary)
 
-From `VISUAL-RULES.md` — apply to every `vox_scenes.py` scene:
+From `VISUAL-RULES.md` — apply to every `scenes.py` scene:
 
 - **LESS TEXT:** labels are short tags (`Na`, `E = 1.77 eV`, `e⁻`). No sentences.
 - **SPECTRAL COLORS:** light objects use wavelength → RGB (700 nm=red, 546 nm=green,
@@ -154,7 +154,7 @@ From `VISUAL-RULES.md` — apply to every `vox_scenes.py` scene:
 | `static_scene_check.py` | `tmp/qc-tooling/` | Gate A |
 | `wcag_margin_check.py` | `tmp/qc-tooling/` | Gate W |
 | `manim_layout_audit.py` | `tmp/qc-tooling/` | Gate B |
-| `vox_graphics.py` | `aspects/explainer/vox-explainer/manim/` | Manim palette + components |
+| `animated_graphics.py` | `aspects/explainer/vox-explainer/manim/` | Manim palette + components |
 | Onda terminal/code-block | `aspects/remotion-pass/remotion/` | MedhavyTerminalAsk, MedhavyCodeBlock |
 | `REGISTERS.md` | `vox/` | outro lookup + tts substitution table |
 | `PRONUNCIATION.md` | `vox/` | pronunciation dictionary |
@@ -179,11 +179,11 @@ Same as above, restricted to that chapter.
 After the plan is approved:
 1. Write `FACTCHECK.md`, `SHOTLIST.md`, `PEDAGOGY.md` (with `VERDICT: PASS`).
 2. Write `beat_sheet.json` (B00 Medhavy intro → content beats → B_last Medhavy outro).
-3. Write `vox_scenes.py` (one class per Manim beat, named `B{N}_<ConceptRun>`).
+3. Write `scenes.py` (one class per Manim beat, named `B{N}_<ConceptRun>`).
 4. Run Gate A + W (pre-flight): `VOX_FACTS=0 bash vox/scripts/vox_run.sh <reel>`.
 5. Fix gate failures. Cap at 3 attempts; stop and report if still failing.
 6. Generate audio: `python3 vox/scripts/generate_audio.py <reel>`.
 7. Run full build: `bash vox/scripts/vox_run.sh <reel>`.
 8. Deliver: `<reel>/<slug>-review.mp4`.
 
-For the 9:16 Short: run `python3 vox/scripts/vox_short.py <reel> --only <segment-beats> --handle @MedhavyAI --no-endcard`, write `short/vox_scenes.py` for portrait Manim beats, re-run gates on `short/`.
+For the 9:16 Short: run `python3 vox/scripts/vox_short.py <reel> --only <segment-beats> --handle @MedhavyAI --no-endcard`, write `short/scenes.py` for portrait Manim beats, re-run gates on `short/`.

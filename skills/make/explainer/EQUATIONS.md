@@ -2,7 +2,7 @@
      unreal-reels/brutalist/EQUATIONS.md, copied 2026-07-08 so this folder
      stays self-contained. The Vox translation of this template (colors,
      fonts, beat-group form) lives in SKILL.md -> "The equation tangent";
-     the components live in manim/vox_graphics.py (EquationTangent, EQT_*
+     the components live in manim/animated_graphics.py (EquationTangent, EQT_*
      fixtures). If doctrine changes, THIS copy is the live one for vox. -->
 
 # EQUATIONS.md — the equation tangent (a fixed template)

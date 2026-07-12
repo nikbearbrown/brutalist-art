@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# vox-preflight.sh — verify a machine can build vox simulation videos.
+# preflight.sh — verify a machine can build vox simulation videos.
 # Run it from the folder that holds vox/ (your books/ parent), or pass that path:
-#   bash vox-preflight.sh                 # uses the current folder
-#   bash vox-preflight.sh /path/to/books  # explicit
+#   bash preflight.sh                 # uses the current folder
+#   bash preflight.sh /path/to/books  # explicit
 # It only READS and runs a no-network Gate A. It installs nothing and spends nothing.
 
 set -u
@@ -50,11 +50,11 @@ else
 fi
 
 info "6. Gate A smoke test on the bundled example (no network, no render)"
-EX="$VOX/reels/_example-comma-orphan/vox_scenes.py"
+EX="$VOX/reels/_example-comma-orphan/scenes.py"
 if [ -f "$EX" ]; then
   T=$(mktemp -d); cp "$EX" "$T/"
   if PYTHONPATH="$VOX/aspects/explainer/vox-explainer/manim" \
-       python3 "$VOX/tmp/qc-tooling/static_scene_check.py" "$T/vox_scenes.py" --class B04_TwoTables >/dev/null 2>&1; then
+       python3 "$VOX/tmp/qc-tooling/static_scene_check.py" "$T/scenes.py" --class B04_TwoTables >/dev/null 2>&1; then
     ok "Gate A passed on the example scene"
   else
     bad "Gate A errored — the QC toolchain isn't wired up (check PYTHONPATH / deps above)"

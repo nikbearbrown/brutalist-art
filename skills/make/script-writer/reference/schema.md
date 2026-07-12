@@ -49,7 +49,7 @@ BOUNDARY    what this video did NOT teach + one viewer exercise (fused with the 
 
 ## Dressing it in a style later
 `shot.source:null` is the whole point. To render:
-- **House / Manim** → `slate cut <dir>`: writes `vox_scenes.py`, sets each content
+- **House / Manim** → `slate cut <dir>`: writes `scenes.py`, sets each content
   beat `source:"manim"`, wraps with the nbb Remotion open/outro.
 - **Remotion** → `remotion pass <dir>`: fills beats carrying a `shot.remotion.pattern`.
 - **Pure 3b1b** → set every beat `source:"manim"`, no bookends.

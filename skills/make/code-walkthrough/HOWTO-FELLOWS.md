@@ -80,13 +80,13 @@ cd ~/books/vox/aspects/remotion-pass/remotion && npm install
 
 ## Part 1 — Build the install check (do this first)
 
-Before building anything, prove the whole toolchain end-to-end. Save the preflight script (delivered alongside this guide as `vox-preflight.sh`) into your `books/` folder and run it there:
+Before building anything, prove the whole toolchain end-to-end. Save the preflight script (delivered alongside this guide as `preflight.sh`) into your `books/` folder and run it there:
 
 **Step 7 — run the preflight from your `books/` parent folder:**
 
 ```bash
 cd ~/books
-bash vox-preflight.sh
+bash preflight.sh
 ```
 
 It checks, in order: vox sits beside your books · Python 3 + `manim, PIL, numpy, requests, mutagen` all import · `ffmpeg` present · **all four fonts** registered · `vox/.env` has a real key (not the placeholder) · Node + the Remotion `node_modules` installed · and finally it runs **Gate A** (a no-network layout check) on vox's bundled example scene.
@@ -122,7 +122,7 @@ The files that define a reel (copy these as your template):
 | File | What it is |
 |---|---|
 | `beat_sheet.json` | the single source of truth — every beat, its duration, its `tts` (spoken) and `text` (on-screen), and props |
-| `vox_scenes.py` | the Manim scenes — one class per rendered beat, named `B{N}_<ConceptRun>` |
+| `scenes.py` | the Manim scenes — one class per rendered beat, named `B{N}_<ConceptRun>` |
 | `FACTCHECK.md` | every formula and number verified against a source (gates the audio spend) |
 | `PEDAGOGY.md` | the teaching audit — must end `VERDICT: PASS` or `generate_audio.py` refuses to run |
 | `SHOTLIST.md` / `PROMPTS.md` | per-beat shot notes and the generation prompts |
@@ -169,7 +169,7 @@ Review what it proposes, then approve the build:
 **Step 11 — build the approved reel (paste into Claude Code; set your slug):**
 
 ```
-simulation build <slug> — write FACTCHECK.md, SHOTLIST.md, and PEDAGOGY.md (ending VERDICT: PASS), then beat_sheet.json (B00 Medhavy intro -> the four-act segments -> Medhavy outro) and vox_scenes.py. Run Gate A + W pre-flight, fix any failures (cap 3 attempts), generate the audio, then run the full build. Follow every rule in MEDHAVY.md and VISUAL-RULES.md, keep the physics correct against FACTCHECK.md, and give me the open command for the review mp4 when it's done.
+simulation build <slug> — write FACTCHECK.md, SHOTLIST.md, and PEDAGOGY.md (ending VERDICT: PASS), then beat_sheet.json (B00 Medhavy intro -> the four-act segments -> Medhavy outro) and scenes.py. Run Gate A + W pre-flight, fix any failures (cap 3 attempts), generate the audio, then run the full build. Follow every rule in MEDHAVY.md and VISUAL-RULES.md, keep the physics correct against FACTCHECK.md, and give me the open command for the review mp4 when it's done.
 ```
 
 Under the hood that runs the two pipeline commands (you can also run them yourself for one reel):
@@ -197,4 +197,4 @@ Build the 9:16 Short for quantum-mechanics-vol1/youtube/<slug>: run vox_short.py
 
 ## The whole thing in one breath
 
-Clone `vox` + a book as siblings → install Python/ffmpeg/fonts/key + Node → run `vox-preflight.sh` until it says **Ready** → open the `medhavy-ch1-classical-sims` example → launch Claude Code from `books/` → scout, approve, `simulation build <slug>`, then the 9:16 Short. The loop the video teaches — prompt, read, run, check, change — is the same loop you'll be running to build it.
+Clone `vox` + a book as siblings → install Python/ffmpeg/fonts/key + Node → run `preflight.sh` until it says **Ready** → open the `medhavy-ch1-classical-sims` example → launch Claude Code from `books/` → scout, approve, `simulation build <slug>`, then the 9:16 Short. The loop the video teaches — prompt, read, run, check, change — is the same loop you'll be running to build it.

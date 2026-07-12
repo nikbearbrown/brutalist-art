@@ -42,5 +42,5 @@ never modified** — the variant is a sibling file.
 The build step needs `generate_audio.py` / `vox_compile.py` to accept an `--audience`
 so outputs namespace (`mp3.medhavy/`, `media.medhavy/`, `<slug>.medhavy-review.mp4`) and
 the render selects the audience palette tokens (`tokens/medhavy.ts`; a Manim parallel of
-the Okabe-Ito set for `vox_graphics.py`), plus the Remotion outro compositions. Until
+the Okabe-Ito set for `animated_graphics.py`), plus the Remotion outro compositions. Until
 that lands, steps 1–4 (the variant beat sheet) are fully usable; step 5 is manual.

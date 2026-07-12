@@ -1,4 +1,4 @@
-# Layout audit — vox_scenes
+# Layout audit — scenes
 
 - snapshots inspected: **5**
 - errors: **0**  ·  warnings: **0**

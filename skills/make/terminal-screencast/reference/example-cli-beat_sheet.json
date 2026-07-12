@@ -46,7 +46,7 @@
    "narration_text": "Run it. On the left, the weights: the crimson reconstruction rides right on top of the original — two-hundred-forty-nine distinct levels, error you'd never notice. On the right, the same scale on the activation sine, and the wave flattens onto two levels. Same eight bits. One tensor is fine; the other is gone.",
    "visual_intent": "Manim: weights curve with dequantized staircase hugging it (249 levels), activation sine snapping onto ~2 levels and collapsing to bars (2 levels mash)",
    "shot": {"type": "GRAPHIC", "source": "manim", "motion": "fade",
-     "manim": {"scene_class": "B04_QuantMash", "file": "vox_scenes.py"}},
+     "manim": {"scene_class": "B04_QuantMash", "file": "scenes.py"}},
    "estimated_duration_s": 17},
 
   {"beat_id": "B05", "act": "CHANGE — check & revise", "role_note": "terminal (Onda) — the REQUIRED revision",
@@ -61,7 +61,7 @@
    "narration_text": "Re-run. The activation sine comes back — two-hundred-fifty-five levels, the curve recovered. Nothing about the tensor changed; only the scale it was measured against did.",
    "visual_intent": "Manim: the same activation sine, now quantized per-channel, reconstructed faithfully — '255 levels recovered'",
    "shot": {"type": "GRAPHIC", "source": "manim", "motion": "fade",
-     "manim": {"scene_class": "B06_PerChannel", "file": "vox_scenes.py"}},
+     "manim": {"scene_class": "B06_PerChannel", "file": "scenes.py"}},
    "estimated_duration_s": 12},
 
   {"beat_id": "B07", "act": "SUMMARY", "role_note": "the lesson — one beat",

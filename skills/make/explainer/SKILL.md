@@ -71,7 +71,7 @@ swaps free.
 | STILL | treated image, `hold` or `kenburns` | archive download / FLUX / nano-banana → compile animates |
 | FOOTAGE | moving clip fills the beat | PD film / Higgsfield i2v from the slot's still (key action early — tail trims) |
 | DOCUMENT | scan/quote, annotation-driven motion | archive scan + Remotion highlight/underline/zoom keyed to words |
-| GRAPHIC | isotype grid, bars, map, cards | **Manim fragment** (`manim/vox_graphics.py`) rendered to the beat's measured duration |
+| GRAPHIC | isotype grid, bars, map, cards | **Manim fragment** (`manim/animated_graphics.py`) rendered to the beat's measured duration |
 | COMPOSITE | treated plate + annotation collage | plate like STILL; annotation on the Remotion plane |
 | CARD | title/section/end | Remotion typography, design system only |
 
@@ -144,14 +144,14 @@ the disclosure line). It warns on clips shorter than their beat, undersized
 stills, and source-axis contradictions. After intake: set `shot.focus` per
 still, fill the sidecars, rerun `vox_run`.
 
-## The Manim graphics library (`manim/vox_graphics.py`)
+## The Manim graphics library (`manim/animated_graphics.py`)
 
 `IsotypeDotGrid` (count-up reveal, lag_ratio 0.003–0.01, duration = the
 beat's audio window), `IsotypeFraction`, `StateCardPair` (slate-teal cards,
 serif labels, figure lines), `QuoteCard` (highlighter sweep timed to words),
 `LabelChip`, hand-drawn `AnnotationRing`/`StrikeX` strokes. Transparent or
 newsprint-ground renders at beat duration:
-`manim -qh --fps 24 vox_graphics.py <Scene> -o <beat>.mp4`. Counts are claims
+`manim -qh --fps 24 animated_graphics.py <Scene> -o <beat>.mp4`. Counts are claims
 — `viz.note` records what to verify before render.
 
 ## The equation tangent (rule owner: `EQUATIONS.md`, bundled beside this file)
@@ -183,7 +183,7 @@ only ("…and that's demographic parity. Back to …").
   ground + ink serif; KaTeX → **MathTex** (italic variables, roman operators;
   `_math()` falls back to italic serif where LaTeX is absent). Data numbers
   mono, never the equation.
-- Components in `vox_graphics.py`: `EquationTangent` (+ `EquationCard`,
+- Components in `animated_graphics.py`: `EquationTangent` (+ `EquationCard`,
   `SentencePair`, `GlossaryTable`, `WorkedExample`, `ValuesClaim`); fixture
   scenes `EQT_*` carry the demographic-parity demo.
 - Audit per tangent: sentences before symbols and the relation read as a
@@ -237,7 +237,7 @@ slot rebuilds.
 When the user says **`slate cut <candidate card | chapter | concept>`**, run the
 whole chain end-to-end and STOP at the finished review cut: plan → SHOTLIST →
 factcheck (FACTCHECK.md) → audio (ask before TTS spend) → reel-local
-`vox_scenes.py` (one Scene per GRAPHIC/CARD/DOCUMENT beat — never the shared
+`scenes.py` (one Scene per GRAPHIC/CARD/DOCUMENT beat — never the shared
 fixture file) → `vox_run.sh`. The deliverable is a complete watchable film with
 slates in every human media slot; the user fills `media/` later (directly or
 via `pantry`) and reruns — only changed slots recompile. A slate cut is a
@@ -290,7 +290,7 @@ hairline, the Next: line inherited from the dropped outro), stay under the
 
 THE COMPOSITION LOGIC: 16:9 lays out SIDE BY SIDE; 9:16 stacks TOP AND
 BOTTOM. Portrait relayouts re-band the same content vertically — they never
-merely scale the landscape composition down. (Machinery note: vox_graphics
+merely scale the landscape composition down. (Machinery note: animated_graphics
 syncs frame_width to the real pixel aspect at import — Manim CE does not —
 so portrait scenes truly get the 4.5×8 frame they compose for.) `python3 scripts/vox_short.py reels/<slug> --drop B14 B16`
 writes `short/` with symlinked slots (nothing re-renders), the endcard, and
@@ -305,7 +305,7 @@ graphics beats read as native portrait layouts. Then compile `short/` with
 `python3 scripts/vox_convert.py physics/<slug>` → `reels/vox-<slug>/` with the
 source narration, mp3 references, and measured durations carried per beat, every
 visual re-planned: heuristic shot types (all `needs_review`), a conversion
-SHOTLIST (old visual → assigned type), and a per-reel `vox_scenes.py` scaffold
+SHOTLIST (old visual → assigned type), and a per-reel `scenes.py` scaffold
 that `vox_run.sh` picks up automatically. Old Manim scenes are NOT ported —
 convert first, then let the QC gates audit only what survives. Narration is
 per-beat `keep` (reuse mp3, free) or `rewrite` (Vox-register rewrites are

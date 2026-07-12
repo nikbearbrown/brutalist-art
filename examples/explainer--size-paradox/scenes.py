@@ -1,4 +1,4 @@
-"""vox_scenes.py — The Smaller Nanoparticle That Accumulates Less but Cures More
+"""scenes.py — The Smaller Nanoparticle That Accumulates Less but Cures More
 (vox-size-paradox, slate cut, 16:9)
 
 One Scene per GRAPHIC/CARD/DOCUMENT/COMPOSITE beat with source='own'.
@@ -18,12 +18,12 @@ Gate A: single-method .animate only; every scene has real shape motion.
 """
 import json, os, sys, pathlib
 # Resolve the vox toolkit's manim library from this file's location.
-# This file lives at books/<book>/youtube/<slug>/vox_scenes.py.
+# This file lives at books/<book>/youtube/<slug>/scenes.py.
 # parents[3] = books/, so the toolkit is books/vox/aspects/explainer/vox-explainer/manim
 _VOX_MANIM = pathlib.Path(__file__).resolve().parents[3] / "vox" / "aspects" / "explainer" / "vox-explainer" / "manim"
 sys.path.insert(0, str(_VOX_MANIM))
-from vox_graphics import *  # noqa: F401,F403
-from vox_graphics import _quote_scene
+from animated_graphics import *  # noqa: F401,F403
+from animated_graphics import _quote_scene
 import numpy as np
 
 # ── DUR dict ─────────────────────────────────────────────────────────────────

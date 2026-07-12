@@ -14,7 +14,7 @@ does, and flags. Media, `node_modules`, and `.git` were excluded at gather time.
   `hai` + `medhavy` + `neu` → `audience-preset` (originals now `audience-preset/brands/*.md`);
   `mini-bio` + `voxbio` → `bio` (voxbio's SKILL.md kept as `bio/reference/collage-style.md`).
 - **Deleted:** `vox-explainer-unreal` (older duplicate of `explainer`: pre-palette-registry
-  `vox_graphics.py`, plus stray `layout_audit*` QC artifacts), `greybox` (scrapbook previz,
+  `animated_graphics.py`, plus stray `layout_audit*` QC artifacts), `greybox` (scrapbook previz,
   superseded by the slate+pantry flow — REFRACTOR-PLAN §6a), `voxbio/HANDOFF.md` (stray
   working file). Nothing deleted from git history; removed trees were moved to
   `CoWork/_to_delete/phase2-removed/` on disk.
@@ -34,8 +34,8 @@ does, and flags. Media, `node_modules`, and `.git` were excluded at gather time.
 |---|---|---|---|
 | `script-writer` | `books/vox/aspects/teardown-script` | Turns any text into a style-agnostic script + `beat_sheet.json` (shot.source left open). Upstream of the builders. | Ships `reference/example/beat_sheet.json`. |
 | `terminal-screencast` | `books/vox/aspects/cli` | CLI video — terminal in, moving output out; fixed spine (INTRO→PROBLEM→ASK→CODE→OUTPUT→…→OUTRO). | Ships `reference/example-cli-beat_sheet.json`. |
-| `code-walkthrough` | `books/vox/aspects/simulation` | "Build it with Claude Code + Manim" workflow reel. | Emits `beat_sheet.json` + `vox_scenes.py`. |
-| `explainer` | `books/vox/aspects/explainer/vox-explainer` | The flagship: per-beat best-tool mp4 (Manim + Ken Burns + AI video + Remotion annotation plane), composited at the end. Two-axis shot system, slot contract. | Absorbed `vox-explainer-unreal` (deleted; older `vox_graphics.py` without the palette registry). |
+| `code-walkthrough` | `books/vox/aspects/simulation` | "Build it with Claude Code + Manim" workflow reel. | Emits `beat_sheet.json` + `scenes.py`. |
+| `explainer` | `books/vox/aspects/explainer/vox-explainer` | The flagship: per-beat best-tool mp4 (Manim + Ken Burns + AI video + Remotion annotation plane), composited at the end. Two-axis shot system, slot contract. | Absorbed `vox-explainer-unreal` (deleted; older `animated_graphics.py` without the palette registry). |
 | `sketch-explainer` | `books/unreal-reels/aspects/explainer/bears-doodles` | ~1-min-style MinutePhysics progressive-disclosure sketch explainer. | |
 | `math-explainer` | `books/unreal-reels/aspects/explainer/brownblue` | 3–8 min pure-Manim 3Blue1Brown-style explainer. | Reuses sketch-explainer scripts. |
 | `explainer-deepen` | `books/unreal-reels/aspects/explainer/brownblue-convert` | Audits a sketch vs math-explainer depth; rewrites into a deeper version. | Ships `scripts/audit.py`. |
@@ -61,7 +61,7 @@ does, and flags. Media, `node_modules`, and `.git` were excluded at gather time.
 |---|---|---|---|
 | `slate-filler` | `books/vox/aspects/remotion-pass` | Fills slate beats (no mp4) with palette-matched Remotion motion graphics. | Ships a Remotion project. |
 | `reel-updater` | `books/vox/aspects/update` | Brings built reels up to latest specs (migrate outro, regen stale audio). Dry-run by default. | |
-| `audience-preset` | `books/vox/aspects/{hai,medhavy,neu}` | Brand variant of a reel → `beat_sheet.<brand>.json`. Never touches the canonical sheet. Brands: `brands/{hai,medhavy,neu}.md`. | Merge of three skills; runtime is `vox_variant.py`. |
+| `audience-preset` | `books/vox/aspects/{hai,medhavy,neu}` | Brand variant of a reel → `beat_sheet.<brand>.json`. Never touches the canonical sheet. Brands: `brands/{hai,medhavy,neu}.md`. | Merge of three skills; runtime is `brand_variant.py`. |
 | `component-showcase` | `books/brutalist/remotion/SKILL.md` | Renders a visual unit with a themed example and critiques it; compilation bench. | **SKILL.md only** — runtime (`brutalist/remotion/`) vendored in Phase 3. |
 
 ## skills/upload — status + publish
@@ -107,7 +107,7 @@ plus rebuild READMEs.
 
 ## Next (Phase 3, per REFRACTOR-PLAN)
 1. Vendor the shared runtime (`vox/scripts/` spine — vox is canonical, it is the newer toolkit
-   derived from unreal-reels; `vox_graphics.py`; DESIGN.md; voices/; fonts/; Medhavy bookends
+   derived from unreal-reels; `animated_graphics.py`; DESIGN.md; voices/; fonts/; Medhavy bookends
    Remotion project; the component-showcase runtime from `brutalist/remotion/`).
 2. Path-hygiene sweep (no `/Users/...`, `~/ai`, or `books/...` reach-outs).
 3. The `art` dispatcher + shared `--help` + shared `beat_sheet.json` schema.

@@ -42,5 +42,5 @@ the charter `HAI.md` and register `voices/pragmatist/VOICE.md`. **The canonical
 The build step needs `generate_audio.py` / `vox_compile.py` to accept an `--audience`
 so outputs namespace (`mp3.hai/`, `media.hai/`, `<slug>.hai-review.mp4`) and the render
 selects the audience palette tokens (`tokens/humanitarians.ts`; a Manim parallel for
-`vox_graphics.py`), plus the Remotion outro compositions. Until that lands, steps 1–4
+`animated_graphics.py`), plus the Remotion outro compositions. Until that lands, steps 1–4
 (the variant beat sheet) are fully usable; step 5 is manual.

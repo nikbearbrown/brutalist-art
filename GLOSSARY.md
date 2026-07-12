@@ -65,6 +65,31 @@ rows — they are the jargon there — but not as a skill's identity.
 |---|---|---|
 | `from-ai1-cli/` (cajal et al.) | `figure-planner` | Figure planning + rendering library (SKILL.md authored in Phase 3). |
 
+## runtime files ("vox" is a trademark — removed from all file and scene names)
+
+Renamed in-repo at Gate 2; the rest of the spine gets these names as it is vendored in Phase 3.
+
+| Old | New |
+|---|---|
+| `vox_graphics.py` | `animated_graphics.py` — per beat, decides whether Remotion or Manim can animate the concept; if neither fits, emits a request card asking the human for 5–10 s of generative-AI video **with a suggested prompt** (behavior lands in Phase 3) |
+| `vox_scenes.py` (per-reel) | `scenes.py` |
+| `vox-preflight.sh` | `preflight.sh` |
+| `vox_run.sh` | `run.sh` |
+| `vox_compile.py` | `compile.py` |
+| `vox_align.py` | `align.py` |
+| `vox_outro.py` | `outro.py` |
+| `vox_pantry.py` | `pantry.py` |
+| `vox_short.py` | `shorts.py` |
+| `vox_emit.py` | `stage_publish.py` |
+| `vox_convert.py` | `convert.py` |
+| `vox_fill_slates.py` | `fill_slates.py` |
+| `vox_remotion.py` | `remotion_scenes.py` |
+| `vox_variant.py` | `brand_variant.py` |
+| `vox_update.py` | `update_reels.py` |
+| `vox_audit.py` | `inventory.py` |
+| `VOX_PALETTE` / `VOX_NO_DRAWTEXT` / `VOX_CHROME(_MODE)` | `ART_PALETTE` / `ART_NO_DRAWTEXT` / `ART_CHROME(_MODE)` (old accepted as fallback during Phase 3 transition) |
+| "vox slate" / "vox reel" | "slate" / "reel" |
+
 ## examples
 
 | Old | New |

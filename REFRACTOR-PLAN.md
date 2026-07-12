@@ -79,6 +79,40 @@ Evidence for the twin merge: same 4-file skeleton, same command grammar, `scan_b
 
 Alias policy: `GLOSSARY.md` gets one row per rename (old → new → one-liner); the Phase 3 dispatcher resolves every old name; SKILL.md frontmatter keeps old names in the trigger text so muscle memory and external references still work.
 
+### 2b. Runtime-file name map (Gate-2 addition — "vox" is a trademark, remove it everywhere)
+
+Applied to files already in this repo at Gate 2; applied to the rest as they are vendored in
+Phase 3 (each vendor copy is renamed on arrival, all references swept in the same commit).
+
+| Old runtime name | New name |
+|---|---|
+| `vox_graphics.py` | **`animated_graphics.py`** (see spec below) |
+| `vox_scenes.py` (per-reel scene file) | `scenes.py` |
+| `vox-preflight.sh` | `preflight.sh` |
+| `vox_run.sh` | `run.sh` (wrapped by `art run`) |
+| `vox_compile.py` | `compile.py` |
+| `vox_align.py` | `align.py` |
+| `vox_outro.py` | `outro.py` |
+| `vox_pantry.py` | `pantry.py` |
+| `vox_short.py` | `shorts.py` |
+| `vox_emit.py` | `stage_publish.py` |
+| `vox_convert.py` | `convert.py` |
+| `vox_fill_slates.py` | `fill_slates.py` |
+| `vox_remotion.py` | `remotion_scenes.py` |
+| `vox_variant.py` | `brand_variant.py` |
+| `vox_update.py` | `update_reels.py` |
+| `vox_audit.py` | `inventory.py` |
+| `VOX_PALETTE`, `VOX_NO_DRAWTEXT`, `VOX_CHROME(_MODE)` | `ART_PALETTE`, `ART_NO_DRAWTEXT`, `ART_CHROME(_MODE)` — old names accepted as fallback during the Phase 3 transition |
+| "vox slate", "vox reel" (terminology in docs and slate-card text) | "slate", "reel" |
+
+**`animated_graphics.py` spec (Phase 3 behavior upgrade, per Gate-2 feedback):** for each beat
+it looks at the concept and decides whether **Remotion or Manim** can animate it; if one can,
+it renders. If neither tool fits, it does not emit a bare pipeline slate — it replaces the
+placeholder with a **request card addressed to the human**: "generate 5–10 seconds of video
+with a generative-AI tool," **plus a suggested prompt** written for that beat. The slate text
+("PIPELINE → render vox_graphics.py scene B06_*") becomes that human-readable request; the
+pantry contract (§6a) then conforms whatever the human drops in.
+
 ---
 
 ## 3. Dedup list (Gate 1 approval item)

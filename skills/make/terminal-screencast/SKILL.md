@@ -72,7 +72,7 @@ swap `shot.remotion.pattern`.
 ## Output beats — a MOVING slot (never a still)
 The output beat is a **video**, never a static image. Set `shot.source` to null and
 fill it ONE of these ways:
-1. **Manim** → `shot.source:"manim"`, add the scene to `vox_scenes.py` → `manim/<BID>.mp4`.
+1. **Manim** → `shot.source:"manim"`, add the scene to `scenes.py` → `manim/<BID>.mp4`.
    Best for a parametric/data animation (a curve drawing, a value snapping onto a grid).
 2. **Remotion** → `shot.remotion.pattern` → `media/<BID>.mp4`. Typographic/UI motion.
 3. **d3 (animated)** → render a d3 animation to mp4, drop as `media/<BID>.mp4`.
@@ -90,7 +90,7 @@ FABRICATION. Forbidden phrases per `voices/teardown/VOICE.md`.
 
 ## Build & render (reuses the vox pipeline unchanged)
 1. Emit `beat_sheet.json` in the required spine above — INTRO, PROBLEM, the CLI loop
-   with ≥1 revision, SUMMARY, NEXT STEPS, OUTRO. Add `vox_scenes.py` for Manim outputs.
+   with ≥1 revision, SUMMARY, NEXT STEPS, OUTRO. Add `scenes.py` for Manim outputs.
 2. `python3 scripts/generate_audio.py <reel>` — Teardown-voice narration (spends).
 3. `bash scripts/vox_run.sh <reel>` — renders terminal/brand beats, renders Manim
    outputs, leaves un-filled output beats as slates, compiles the review cut.

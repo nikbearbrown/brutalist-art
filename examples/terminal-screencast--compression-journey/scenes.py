@@ -1,8 +1,8 @@
-"""vox_scenes.py -- embedded-ai/youtube/cli-compression-journey
+"""scenes.py -- embedded-ai/youtube/cli-compression-journey
 Reel: The MobileNetV2-0.5 That Almost Fit
 Palette: teardown (white ground, ink originals, crimson = over-ceiling/error)
 
-teardown token mapping (from vox_graphics.py):
+teardown token mapping (from animated_graphics.py):
   GROUND  #FFFFFF  background
   INK     #2A1A0E  originals, axes, all text
   CRIMSON #C8102E  over-ceiling / order-penalty
@@ -23,8 +23,8 @@ import sys, json, pathlib, os, numpy as np
 os.environ.setdefault("VOX_PALETTE", "teardown")
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[3]
     / "vox/aspects/explainer/vox-explainer/manim"))
-from vox_graphics import *
-from vox_graphics import _quote_scene
+from animated_graphics import *
+from animated_graphics import _quote_scene
 
 DUR: dict = {}
 try:

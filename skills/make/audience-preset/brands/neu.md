@@ -56,7 +56,7 @@ another professor should create or choose their own voice, set `ELEVENLABS_VOICE
 ## Pending wiring (shared with `medhavy` / `hai`)
 The build step needs `generate_audio.py` / `vox_compile.py` to accept an `--audience`
 so outputs namespace (`mp3.neu/`, `media.neu/`, `<slug>.neu-review.mp4`) and the render
-selects the NEU tokens (`tokens/neu.ts`; Manim reads `VOX_PALETTE=neu` in `vox_graphics.py`),
+selects the NEU tokens (`tokens/neu.ts`; Manim reads `VOX_PALETTE=neu` in `animated_graphics.py`),
 plus the Remotion outro compositions. NEU additionally needs **Lato bundled in
 `fonts/Lato/`** and registered with fontconfig. Until that lands, steps 1–4 (the variant
 beat sheet) are fully usable; step 5 is manual.

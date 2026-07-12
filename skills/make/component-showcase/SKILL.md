@@ -17,7 +17,7 @@ is the point (principles 4 + 5 + 6). Project state + the audited contract: `PROJ
 ## Inputs (three adapters, one riff format)
 - **mp4** → ffmpeg frame-grab (a couple of representative frames), then riff.
 - **Remotion scene** → render with fixture props via the harness, then riff. *(v1 target.)*
-- **Manim scene** → render via `vox_graphics.py` with an example, then riff. *(later.)*
+- **Manim scene** → render via `animated_graphics.py` with an example, then riff. *(later.)*
 
 ## Phases (audio-first, phase-gated — the vox spine)
 1. **Select** — resolve the target list: a functional-category batch, one scene, or a path.

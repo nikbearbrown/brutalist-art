@@ -1,4 +1,4 @@
-"""vox_scenes.py — Why Your 0.68 Is Really a 0.40
+"""scenes.py — Why Your 0.68 Is Really a 0.40
 (vox-base-rate, slate cut, 16:9).
 
 One Scene per GRAPHIC/CARD/DOCUMENT/COMPOSITE-manim beat. B02 is the only
@@ -20,8 +20,8 @@ deliberate line-on-text (strike/ring) is marked `_qc_intentional = True`.
 import sys, json, pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).resolve()
                        .parents[2] / "aspects/explainer/vox-explainer/manim"))
-from vox_graphics import *   # noqa: F401,F403  (re-exports manim + vox components)
-from vox_graphics import _quote_scene
+from animated_graphics import *   # noqa: F401,F403  (re-exports manim + vox components)
+from animated_graphics import _quote_scene
 import numpy as np
 
 GREY = "#D8D2C4"           # the silent majority of non-sponsors

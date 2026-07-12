@@ -34,7 +34,7 @@ self-contained**. The vox skills still call the *shared* vox runtime that was NO
 (it is infrastructure, not a per-skill file):
 
 - `vox/scripts/` — `vox_run.sh`, `generate_audio.py`, `vox_compile.py`
-- `vox/manim/vox_graphics.py`, `vox/DESIGN.md`, `vox/voices/`, `vox/reference/pedagogy.md`, `vox/.env`
+- `vox/manim/animated_graphics.py`, `vox/DESIGN.md`, `vox/voices/`, `vox/reference/pedagogy.md`, `vox/.env`
 - the unreal-reels shared scripts, `bearbrown/`, and Remotion projects
 
 The unreal-reels and ai1-cli skills likewise depend on their toolkits' shared scripts and
