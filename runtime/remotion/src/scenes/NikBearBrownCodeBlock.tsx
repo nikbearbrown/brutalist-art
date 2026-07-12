@@ -14,6 +14,8 @@ export const nikBearBrownCodeBlockSchema = z.object({
   segment:  z.string().default('SIMULATION'),
   topic:    z.string().default('QUANTUM MECHANICS'),
   code:     z.string().default('# code'),
+  language: z.string().optional(),
+  caption:  z.string().optional(),
 });
 export type NikBearBrownCodeBlockProps = z.infer<typeof nikBearBrownCodeBlockSchema>;
 
@@ -23,8 +25,10 @@ const COMMENT_CLR = '#6B7280';
 const OUTPUT_CLR  = '#4D4D4D';
 
 export const NikBearBrownCodeBlock: React.FC<NikBearBrownCodeBlockProps> = ({
-  filename, segment, topic, code,
+  filename, segment, topic, code, language, caption,
 }) => {
+  const displaySegment = caption ?? segment;
+  const displayLanguage = language ?? 'python';
   const frame = useCurrentFrame();
   const {fps, width, height} = useVideoConfig();
 
@@ -71,7 +75,7 @@ export const NikBearBrownCodeBlock: React.FC<NikBearBrownCodeBlockProps> = ({
         opacity: segIn,
         transform: `translateY(${(1 - segIn) * 10}px)`,
       }}>
-        {segment}
+        {displaySegment}
       </div>
 
       {/* Code block */}
@@ -121,7 +125,7 @@ export const NikBearBrownCodeBlock: React.FC<NikBearBrownCodeBlockProps> = ({
             letterSpacing: 2,
             textTransform: 'uppercase',
           }}>
-            python
+            {displayLanguage}
           </span>
         </div>
 

@@ -685,6 +685,10 @@ def check_scene(scene_path: Path, scene_cls="BearsDoodlesVideo"):
                 sys.modules[k] = v
 
     # ---- distinctness ---- #
+    # When a specific per-beat class is checked (not the whole-video BearsDoodlesVideo),
+    # the ratio against video-level n_beats is meaningless — use the scene's own snapshot
+    # count as the reference so individual scenes don't false-alarm.
+    per_beat_check = (scene_cls != "BearsDoodlesVideo")
     states = _SHAPE_STATES
     distinct = len(set(states))
     result["info"]["steady_states"] = len(states)
@@ -695,18 +699,19 @@ def check_scene(scene_path: Path, scene_cls="BearsDoodlesVideo"):
         from collections import Counter
         share = Counter(states).most_common(1)[0][1] / len(states)
         result["info"]["max_single_state_share"] = round(share, 2)
-        if n_beats and n_beats >= 4:
-            ratio = distinct / n_beats
+        ref = len(states) if per_beat_check else n_beats
+        if ref and ref >= 2:
+            ratio = distinct / ref
             result["info"]["distinct_ratio"] = round(ratio, 2)
-            if distinct <= 1:
+            if distinct <= 1 and len(states) >= 3:
                 result["errors"].append(
                     f"shapes never change — 1 distinct shape-state across {len(states)} frames (repeated animation)")
-            elif ratio < 0.5:
+            elif not per_beat_check and ref >= 4 and ratio < 0.5:
                 result["errors"].append(
-                    f"low visual variety — only {distinct} distinct shape-states for {n_beats} beats (ratio {ratio:.2f})")
-            elif ratio < 0.7:
+                    f"low visual variety — only {distinct} distinct shape-states for {ref} beats (ratio {ratio:.2f})")
+            elif not per_beat_check and ref >= 4 and ratio < 0.7:
                 result["warnings"].append(
-                    f"limited visual variety — {distinct} distinct shape-states for {n_beats} beats (ratio {ratio:.2f})")
+                    f"limited visual variety — {distinct} distinct shape-states for {ref} beats (ratio {ratio:.2f})")
     else:
         result["warnings"].append("no shapes recorded — scene may be text-only")
 

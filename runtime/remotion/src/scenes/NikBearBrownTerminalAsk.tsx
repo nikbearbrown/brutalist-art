@@ -14,6 +14,7 @@ export const nikBearBrownTerminalAskSchema = z.object({
   topic:       z.string().default('CLAUDE CODE · MANIM'),
   segment:     z.string().default('PHOTOELECTRIC EFFECT'),
   runningText: z.string().default('running simulation…'),
+  output:      z.array(z.string()).optional(),
 });
 export type NikBearBrownTerminalAskProps = z.infer<typeof nikBearBrownTerminalAskSchema>;
 
@@ -23,7 +24,7 @@ const TEXT_CLR = '#E8E8EC';
 const MONO = '"PT Mono", "SF Mono", Menlo, monospace';
 
 export const NikBearBrownTerminalAsk: React.FC<NikBearBrownTerminalAskProps> = ({
-  command, topic, segment, runningText,
+  command, topic, segment, runningText, output,
 }) => {
   const frame = useCurrentFrame();
   const {fps, width, height} = useVideoConfig();
@@ -158,6 +159,24 @@ export const NikBearBrownTerminalAsk: React.FC<NikBearBrownTerminalAskProps> = (
           }}>
             {`▶  ${runningText}`}
           </div>
+
+          {/* Optional multi-line output block */}
+          {output && output.map((line, i) => {
+            const lineStart = RUN_START + 18 + i * 10;
+            const lineOpacity = interpolate(frame, [lineStart, lineStart + 6], [0, 1], {
+              extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
+            });
+            return (
+              <div key={i} style={{
+                whiteSpace: 'pre',
+                color: TEXT_CLR,
+                fontSize: MONO_SZ * 0.85,
+                opacity: lineOpacity,
+              }}>
+                {line}
+              </div>
+            );
+          })}
         </div>
       </div>
 

@@ -61,7 +61,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="BrutalistTerminalOpen"
         component={BrutalistTerminalOpen}
-        durationInFrames={360}
+        durationInFrames={600}
         fps={30}
         width={1920}
         height={1080}
@@ -118,7 +118,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="BrutalistCommentCTA"
         component={BrutalistCommentCTA}
-        durationInFrames={180}
+        durationInFrames={450}
         fps={30}
         width={1920}
         height={1080}

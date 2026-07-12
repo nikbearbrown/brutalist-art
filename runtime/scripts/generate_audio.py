@@ -119,7 +119,11 @@ def main() -> int:
     sheet = json.loads(sheet_path.read_text())
     # Voice: from the beat sheet's metadata.voice_id, else the ELEVENLABS_VOICE_ID env var.
     # No personal default is baked in — set your own (your cloned voice or a stock voice).
-    voice_id = sheet["metadata"].get("voice_id") or os.getenv("ELEVENLABS_VOICE_ID", "")
+    # voice_id: from beat sheet → voice_env indirection → ELEVENLABS_VOICE_ID fallback
+    voice_id = sheet["metadata"].get("voice_id", "")
+    if not voice_id:
+        voice_env = sheet["metadata"].get("voice_env", "ELEVENLABS_VOICE_ID")
+        voice_id = os.getenv(voice_env) or os.getenv("ELEVENLABS_VOICE_ID", "")
     beats = sheet["beats"]
     if not beats:
         print("[err] beat sheet has no beats. Run the `beats` command first.", file=sys.stderr)
