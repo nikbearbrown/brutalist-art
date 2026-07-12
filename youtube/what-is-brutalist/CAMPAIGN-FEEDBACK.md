@@ -38,3 +38,27 @@ overflowed when the VGroup(tool_name + role_name) exceeded 2.4 units wide. Same 
 in this repo. Any card/label helper should call it instead of hardcoding a Rectangle size.
 
 ---
+
+## 2026-07-12 — Review label explainer beat (B00B)
+
+### Feedback (verbatim)
+> "Keep the review labels in this video. Add an early beat that explains what the review label is
+> and what it does. One beat, early — right after the intro."
+
+### New beat B00B (act=INTRO)
+- Position: after B00, before B01
+- narration: "One quick thing before we start. You'll notice a small grey label in the corner of
+  every shot. That's the review label…" (NikBearBrown voice, 23.07s actual)
+- Scene: mock video frame + label chip → highlight ring → zoomed chip with 5 field callouts
+  (beat id, engine, status, start time, duration) — all callout boxes use `auto_box()`
+- Render: manim/B00B.mp4 ✓ (slowed 2.61× — see human-review note below)
+
+### Human review note
+B00B clip (8.8s) slowed 2.61× to fill 23.07s audio. Animations play at 38% speed — check
+whether pacing feels natural or whether the narration should be trimmed.
+
+### Recompile
+- 18/18 beats filled · 215.0s narrated cut
+- Deliverable: `what-is-brutalist-review.mp4`
+
+---

@@ -170,3 +170,44 @@ All assets, keys, and tools were inside `brutalist-art/`. No MISSING: lines adde
 - Duration: 174.4s → 191.9s
 - The conductor-loop feedback beat is live in the video; box overflow is fixed toolkit-wide.
 
+---
+
+## HUMAN FEEDBACK — 2026-07-12
+
+> "Keep the review labels in this video. Add an early beat that explains what the review label is
+> and what it does. One beat, early — right after the intro."
+
+Adding beat B00B (act=INTRO) immediately after B00, before B01. The beat shows a real review-label
+frame in the corner, draws a highlight ring around it, then decodes its fields with callouts:
+beat id · shot type · engine (Manim/Remotion/AI) · start time · duration.
+
+---
+
+## REFACTOR FEEDBACK — 2026-07-12 (B00B review label beat)
+
+### New beat B00B
+- Position: immediately after B00, before B01 (index 1 in beats array)
+- narration: 23.07s (ElevenLabs NikBearBrown) — longer than estimated 17s
+- Scene: mock frame + label chip in corner → highlight ring → chip zoomed to center-left
+  → 5 callout lines labeled: beat id / engine / status / start time / duration
+- Audio: `mp3/beat-B00B.mp3` (23.07s)
+- Render: `manim/B00B.mp4` ✓ (8.8s clip, slowed 2.61× to fill 23.1s audio)
+  NOTE FOR HUMAN REVIEW: 2.61× slowdown is significant; animations play at 38% speed.
+  If pacing feels too slow, shorten the narration_text or add more self.wait() to the scene.
+  Gate A: PASS (10 distinct states, 18 beats)
+
+### Recompile result
+- 18/18 beats filled
+- Deliverable: `what-is-brutalist-review.mp4` (215.0s, narrated, PIL overlays)
+- Slots: B00:VIDEO B00B:MANIM B01:MANIM B02:MANIM B03:MANIM B04:VIDEO B05:MANIM B06:MANIM
+         B07:MANIM B08:MANIM B08B:MANIM B09:MANIM B10:VIDEO B11:MANIM B12:VIDEO B13:VIDEO
+         B14:MANIM B99:VIDEO
+
+### DEPS
+All assets inside `brutalist-art/`. No MISSING: lines.
+
+### RESULT
+- Beats: 17 → 18
+- Duration: 191.9s → 215.0s
+- Review label beat is live; viewer sees the machinery while narrator explains it.
+

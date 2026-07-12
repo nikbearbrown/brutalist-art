@@ -1,7 +1,7 @@
 """scenes.py — Manim scenes for 'What is Brutalist?' (what-is-brutalist)
 
 One Scene subclass per GRAPHIC beat with shot.source == 'own'.
-Beats: B01, B02, B03, B05, B06, B07, B08, B09, B11, B14.
+Beats: B00B, B01, B02, B03, B05, B06, B07, B08, B08B, B09, B11, B14.
 Palette: teardown — flat white GROUND, ink INK, red CRIMSON, teal TEAL.
 """
 import sys, pathlib
@@ -13,6 +13,113 @@ import numpy as np
 # GROUND = "#FFFFFF" · INK = "#2A1A0E" · CRIMSON = "#C8102E" · TEAL = "#1F6F5C" (in teardown TEAL==INK)
 # Per the palette registry: TEAL = "#2A1A0E" in teardown. We use the beat-sheet teal #1F6F5C as ACCENT_TEAL.
 ACCENT_TEAL = "#1F6F5C"   # "good/kept" — only for beats that call for it
+
+
+# ──────────────────────────────────────────────────────────
+# B00B — REVIEW LABEL (17s)
+# Explains the small review label visible in every beat.
+# ──────────────────────────────────────────────────────────
+class B00B_ReviewLabel(Scene):
+    LABEL_STR = "B01  MANIM  FILLED   9.5s  +9.4s"
+
+    def construct(self):
+        # Section chip (UL)
+        section = LabelChip("REVIEW LABEL", accent=ACCENT_TEAL, size=17)
+        section.to_corner(UL, buff=0.55)
+        self.play(FadeIn(section), run_time=0.5)
+
+        # Mock video-frame border — represents one beat's clip
+        frame = Rectangle(
+            width=10.2, height=5.75,
+            fill_color="#F5F5F5", fill_opacity=1,
+            stroke_color="#BBBBBB", stroke_width=1.5,
+        ).move_to(ORIGIN + DOWN * 0.15)
+        frame_label = Text("(video frame)", font=SERIF, color="#BBBBBB", font_size=22)
+        frame_label.move_to(frame.get_center())
+        self.play(FadeIn(frame), FadeIn(frame_label), run_time=0.6)
+
+        # Review label chip — dark semi-transparent, white text, lower-left of frame
+        lbl_txt = Text(self.LABEL_STR, font=MONO, font_size=17, color=WHITE)
+        lbl_bg = Rectangle(
+            width=lbl_txt.width + 0.26,
+            height=lbl_txt.height + 0.18,
+            fill_color="#000000", fill_opacity=0.62,
+            stroke_width=0,
+        )
+        lbl_bg.move_to(lbl_txt)
+        chip = VGroup(lbl_bg, lbl_txt)
+        chip.move_to(
+            frame.get_corner(DL)
+            + RIGHT * (chip.width / 2 + 0.18)
+            + UP   * (chip.height / 2 + 0.18)
+        )
+        self.play(FadeIn(chip), run_time=0.5)
+        self.wait(0.4)
+
+        # Highlight ring around the chip
+        ring = Ellipse(
+            width=chip.width + 0.52, height=chip.height + 0.48,
+            stroke_color=CRIMSON, stroke_width=3, fill_opacity=0,
+        ).move_to(chip)
+        self.play(Create(ring), run_time=0.7)
+        self.wait(0.3)
+
+        # Fade out the mock frame; bring chip + ring to center-left for callout phase
+        target_center = LEFT * 1.8 + UP * 1.4
+        chip_target = chip.copy().scale(1.55).move_to(target_center)
+        ring_target = ring.copy().scale(1.55).move_to(target_center)
+        self.play(
+            FadeOut(frame), FadeOut(frame_label), FadeOut(section),
+            Transform(chip, chip_target),
+            Transform(ring, ring_target),
+            run_time=0.7,
+        )
+        self.wait(0.2)
+
+        # Callout boxes: each field in the label explained
+        # Fields: "B01" | "MANIM" | "FILLED" | "9.5s" | "+9.4s"
+        callout_data = [
+            ("beat id",          CRIMSON,      LEFT * 1.8 + DOWN * 0.4),
+            ("engine\n(Manim / Remotion / AI)", ACCENT_TEAL, LEFT * 4.5 + UP * 0.6),
+            ("status",           INK,           RIGHT * 0.6 + UP * 0.0),
+            ("start on\ntimeline", "#7A5A3A",  RIGHT * 2.8 + UP * 0.8),
+            ("beat\nduration",   "#7A5A3A",    RIGHT * 4.0 + DOWN * 0.4),
+        ]
+
+        anchors_x = [-3.45, -2.35, -1.15, -0.1, 0.85]
+        chip_y_bottom = chip.get_bottom()[1]
+
+        callout_groups = []
+        for i, (caption, color, box_pos) in enumerate(callout_data):
+            cap_text = Text(caption, font=SERIF, font_size=20, color=color,
+                            line_spacing=0.9)
+            cap_box = auto_box(cap_text, h_pad=0.22, v_pad=0.14,
+                               fill_color=GROUND, stroke_color=color, stroke_width=2)
+            cap_box.move_to(box_pos)
+            cap_text.move_to(cap_box)
+
+            anchor = np.array([anchors_x[i], chip_y_bottom, 0])
+            box_top = cap_box.get_top()
+            line = Line(
+                anchor, box_top,
+                stroke_color=color, stroke_width=1.5,
+            )
+            grp = VGroup(line, cap_box, cap_text)
+            callout_groups.append(grp)
+            self.play(
+                Create(line),
+                FadeIn(cap_box, shift=UP * 0.12),
+                FadeIn(cap_text, shift=UP * 0.12),
+                run_time=0.45,
+            )
+
+        self.wait(0.8)
+
+        # Summary serif line
+        summary = SerifLabel("every beat · labelled · every frame", accent=INK, size=22)
+        summary.to_edge(DOWN, buff=0.55)
+        self.play(FadeIn(summary), run_time=0.7)
+        self.wait(1.2)
 
 
 # ──────────────────────────────────────────────────────────

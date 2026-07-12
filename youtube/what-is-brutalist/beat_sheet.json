@@ -11,7 +11,7 @@
     "palette": "teardown",
     "playlist": "Brutalist — Claude for Video Production",
     "url": "https://www.brutalist.art/",
-    "total_estimated_duration_seconds": 191.89
+    "total_estimated_duration_seconds": 214.96
   },
   "beats": [
     {
@@ -42,6 +42,25 @@
       "estimated_duration_s": 9,
       "audio_file": "mp3/beat-B00.mp3",
       "actual_duration_s": 15.46
+    },
+    {
+      "beat_id": "B00B",
+      "act": "INTRO",
+      "title": "What is a review label?",
+      "narration_text": "One quick thing before we start. You'll notice a small grey label in the corner of every shot. That's the review label. It names each beat — its number, whether it's a Manim animation, a Remotion graphic, or AI video, where it falls on the timeline, and how long it holds. I normally strip it from the finished cut. I'm leaving it in this one, so you can watch the machinery while I explain it.",
+      "estimated_duration_s": 17,
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own"
+      },
+      "graphic": {
+        "manim": "B00B_ReviewLabel"
+      },
+      "metadata": {
+        "voice_env": "ELEVENLABS_VOICE_NIKBEARBROWN"
+      },
+      "audio_file": "mp3/beat-B00B.mp3",
+      "actual_duration_s": 23.07
     },
     {
       "beat_id": "B01",
