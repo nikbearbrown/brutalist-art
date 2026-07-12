@@ -64,10 +64,10 @@ cp vox/fonts/*/static/*.ttf vox/fonts/PT_Mono/*.ttf ~/Library/Fonts/
 **Step 5 — your ElevenLabs key (this is the only thing that ever spends money — narration audio):**
 
 ```bash
-cp vox/.env.example vox/.env
+cp .env.example .env
 ```
 
-Then open `vox/.env` and replace `your-elevenlabs-api-key` with your real key. The three voice IDs (NikBearBrown, Medhavy, Humanitarians) are already filled in — leave them. `.env` is gitignored, so **your key stays on your machine; never commit it or paste it to anyone.**
+Then open `.env` and replace `your-elevenlabs-api-key` with your real key. The three voice IDs (NikBearBrown, Medhavy, Humanitarians) are already filled in — leave them. `.env` is gitignored, so **your key stays on your machine; never commit it or paste it to anyone.**
 
 **Step 6 — Node lane.** A simulation reel opens with an Onda **terminal** beat and shows the generated code in an Onda **code-block** beat. Those are rendered by the Remotion project, which is the *only* part of vox that needs Node. Install Node, then the project's deps:
 
@@ -89,7 +89,7 @@ cd ~/books
 bash preflight.sh
 ```
 
-It checks, in order: vox sits beside your books · Python 3 + `manim, PIL, numpy, requests, mutagen` all import · `ffmpeg` present · **all four fonts** registered · `vox/.env` has a real key (not the placeholder) · Node + the Remotion `node_modules` installed · and finally it runs **Gate A** (a no-network layout check) on vox's bundled example scene.
+It checks, in order: vox sits beside your books · Python 3 + `manim, PIL, numpy, requests, mutagen` all import · `ffmpeg` present · **all four fonts** registered · `the repo-root .env` has a real key (not the placeholder) · Node + the Remotion `node_modules` installed · and finally it runs **Gate A** (a no-network layout check) on vox's bundled example scene.
 
 Every line prints `OK` or `FAIL`. If it ends with **`Ready.`**, your machine can build reels. If anything says `FAIL`, fix that one line — the message names the install step — and re-run. Don't move to Part 2 until it's green.
 

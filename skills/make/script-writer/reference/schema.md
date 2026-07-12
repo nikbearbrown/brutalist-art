@@ -12,7 +12,7 @@ sheet commits to *content*, not *renderer*. Downstream (`slate cut`,
 | `slug` | kebab-case id | folder name |
 | `register` | `"Teardown"` | the gate expects this |
 | `voice` | `"NikBearBrown"` | audience/charter |
-| `voice_id` | `"${ELEVENLABS_VOICE_NIKBEARBROWN}"` | resolved from `vox/.env` at audio time |
+| `voice_id` | `"${ELEVENLABS_VOICE_NIKBEARBROWN}"` | resolved from the repo-root `.env` at audio time |
 | `palette` | `"teardown"` | **default**, overridable per style |
 | `style_preset` | `"nikbearbrown"` | **default**, overridable per style |
 | `pedagogy` | `"brownblue"` | marks the arc it was built against |

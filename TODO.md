@@ -111,9 +111,17 @@ type, not an optional extra. See the lead P0 in Theme 3; this reverses D4.
 - **Acceptance:** each gets a CAPABILITIES row + `./setup <name>` readiness row (or an explicit "helper, not a standalone type" note).
 - **Effort:** M
 
+### [P1] Standardize env loading on ONE repo-root `.env` (live reconciliation)
+- **Repo:** brutalist-art
+- **Evidence:** a live check (`.env` reconciliation, 2026-07-12) confirmed the toolkit's `.env.example` variable set is COMPLETE — nothing used by the live pipelines is missing. But env *loading* is inconsistent: the live pipelines variously (a) use `os.getenv` only (shell must be pre-sourced — `runtime/scripts/generate_audio.py:104`), (b) hard-fall-back to a parent `.env` (the live `cancer-*/…/make_audio.py` reads `unreal-reels/.env` by absolute path), and (c) the vendored `component-showcase/…/riff_audio.py` fell back to `../../vox/.env`. The Phase-3 path sweep caught `books/vox` and `../vox/scripts` but MISSED `vox/.env` — five references survived (riff_audio.py, AUTORUN-soul-tuzi.md, code-walkthrough HOWTO + preflight.sh, script-writer/schema.md).
+- **Why:** without one convention a user who put keys in the repo-root `.env` finds some scripts don't see them (they only read the shell env or a stale parent file), so audio silently fails or uses the wrong key.
+- **Status:** the `vox/.env` reach-outs are now FIXED (repointed to the repo-root `.env`), and `./art` + `run.sh` now auto-load the repo-root `.env`. Remaining: make the standalone Python scripts (`generate_audio.py`, `silent_run.py`, the lecture `make_audio.py` when vendored) load the repo-root `.env` too via a shared helper, so direct invocation matches `./art`.
+- **Acceptance:** every audio/render script resolves keys as: shell env → repo-root `.env`; no script references `vox/.env`/`unreal-reels/.env`; running with keys only in `brutalist-art/.env` (no shell export) produces audio.
+- **Effort:** S
+
 ### [P1] Fix the `.env.example` key drift
 - **Repo:** brutalist-art
-- **Evidence:** **Dead keys** (no consumer): `FAL_KEY`, `ELEVENLABS_MODEL_ID`. **Checked-but-not-consumed**: `HIGGSFIELD_API_KEY`/`MINIMAX_API_KEY` (only `setup:59`; scripts use the `higgsfield` CLI). **Used but undocumented**: `ART_QC`, `ART_FACTS` (`run.sh`), `BB_PUBLISH_WORKSPACE` (`math-explainer/scripts/silent_publish.py:29`, legacy `bb-` namespace), `RIFF_PROJECT` (`component-showcase/remotion/remotion.config.ts:23`).
+- **Evidence:** **Dead in the toolkit** (no vendored consumer): `FAL_KEY`; `ELEVENLABS_MODEL_ID` is dead *here* but live in `ai1-cli/remotion` (not vendored) — keep it commented, not removed. **Checked-but-not-consumed**: `HIGGSFIELD_API_KEY`/`MINIMAX_API_KEY` (only `setup:59`; scripts use the `higgsfield` CLI). **Used but undocumented**: `ART_QC`, `ART_FACTS` (`run.sh`), `BB_PUBLISH_WORKSPACE` (`math-explainer/scripts/silent_publish.py:29`, legacy `bb-` namespace), `RIFF_PROJECT` (`component-showcase/remotion/remotion.config.ts:23`).
 - **Why:** users set keys that do nothing, and can't discover real toggles; `BB_` breaks the `ART_` convention.
 - **Acceptance:** dead keys removed or marked "reserved"; `ART_QC`/`ART_FACTS`/`RIFF_PROJECT` documented; `BB_PUBLISH_WORKSPACE`→`ART_PUBLISH_WORKSPACE`; the `k_ai` doctor check reflects actual `higgsfield` login state.
 - **Effort:** M

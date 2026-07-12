@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import os
 """riff_audio.py — audio-first TTS for a riff beat sheet (the NikBearBrown voice).
 
 Reads a riff beat sheet (segments[].beats[] with `text`), generates ONE ElevenLabs MP3
@@ -12,7 +13,7 @@ the sheet is the single source of truth. That measured duration is GROUND TRUTH 
 conform pass — never estimate timing from word count.
 
 Reuses vox's ElevenLabs call verbatim (model eleven_multilingual_v2, mp3_44100_128).
-Voice + key are read from the environment, then --env, then ../../vox/.env by default.
+Voice + key are read from the environment, then --env, then the repo-root .env by default.
 
 Requires:  pip install mutagen   ·   ffmpeg on PATH (for `event` silences)
 Usage:
@@ -41,9 +42,17 @@ def measure(path: Path) -> float:
 
 
 def load_env(explicit: str | None) -> dict:
-    """Parse a .env for keys. Order: current env wins; then explicit; then ../../vox/.env."""
+    """Parse a .env for keys. Order: current env wins; then explicit; then the repo-root .env."""
     vals = {}
-    candidates = [Path(explicit)] if explicit else [HERE / ".env", HERE.parents[1] / "vox" / ".env"]
+    def _repo_root():
+        d = HERE
+        for _ in range(8):
+            if (d / "art").exists() and (d / "runtime").is_dir():
+                return d
+            d = d.parent
+        return HERE.parents[4] if len(HERE.parents) > 4 else HERE
+    root = pathlib.Path(os.environ.get("ART_HOME") or _repo_root())
+    candidates = [Path(explicit)] if explicit else [HERE / ".env", root / ".env"]
     for env in candidates:
         if env and env.exists():
             for line in env.read_text().splitlines():
@@ -87,7 +96,7 @@ def main() -> int:
     api_key = a.api_key or env.get("ELEVENLABS_API_KEY")
     voice = a.voice or env.get("ELEVENLABS_VOICE_NIKBEARBROWN")
     if not a.dry_run and not api_key:
-        print("[err] no ELEVENLABS_API_KEY (env, --api-key, or ../../vox/.env)", file=sys.stderr); return 1
+        print("[err] no ELEVENLABS_API_KEY (env, --api-key, or the repo-root .env)", file=sys.stderr); return 1
     if not a.dry_run and not voice:
         print("[err] no NBB voice id (ELEVENLABS_VOICE_NIKBEARBROWN)", file=sys.stderr); return 1
 

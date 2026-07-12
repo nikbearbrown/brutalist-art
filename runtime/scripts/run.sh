@@ -21,6 +21,7 @@ if [ "$1" = "--height" ]; then HEIGHT="$2"; fi
 ART_QC="${ART_QC:-1}"
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"          # toolkit home — assets live here
+REPO="$(dirname "$ROOT")"; [ -f "$REPO/.env" ] && set -a && . "$REPO/.env" 2>/dev/null && set +a || true   # load repo-root .env; shell wins
 # resolve the reel to an absolute path wherever it lives (its parent must exist)
 REEL_DIR="$(cd "$(dirname "$REEL_IN")" 2>/dev/null && pwd)/$(basename "$REEL_IN")"
 if [ ! -d "$REEL_DIR" ]; then

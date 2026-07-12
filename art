@@ -13,6 +13,8 @@ set -euo pipefail
 
 ART_HOME="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 export ART_HOME
+# load .env (repo-root) so every dispatched skill sees the keys — shell still wins
+[ -f "$ART_HOME/.env" ] && set -a && . "$ART_HOME/.env" 2>/dev/null && set +a || true
 SKILLS="$ART_HOME/skills"
 GLOSSARY="$ART_HOME/GLOSSARY.md"
 

@@ -33,12 +33,12 @@ done
 info "4. ElevenLabs key (narration)"
 if [ -f "$VOX/.env" ]; then
   if grep -q '^ELEVENLABS_API_KEY=' "$VOX/.env" && ! grep -q '^ELEVENLABS_API_KEY=your-elevenlabs-api-key' "$VOX/.env"; then
-    ok "vox/.env has ELEVENLABS_API_KEY set"
+    ok ".env has ELEVENLABS_API_KEY set"
   else
-    bad "vox/.env exists but ELEVENLABS_API_KEY is still the placeholder"
+    bad ".env exists but ELEVENLABS_API_KEY is still the placeholder"
   fi
 else
-  bad "no vox/.env  (cp vox/.env.example vox/.env, then add your key)"
+  bad "no the repo-root .env  (cp .env.example .env, then add your key)"
 fi
 
 info "5. Node lane (the Onda terminal + code-block beats that a sim reel uses)"

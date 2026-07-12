@@ -10,7 +10,7 @@ criterion holds. Absolute paths only.**
 ## Pipeline
 1. Stage the clips into `public/clips/` (Remotion only serves files under `public/`):
    `python3 $PROJECT/scripts/mp4_prep.py $PROJECT/beats/soul-tuzi.beats.json`
-2. Voice the beats (ElevenLabs, NBB voice — key from `../../vox/.env`):
+2. Voice the beats (ElevenLabs, NBB voice — key from the repo-root `.env`):
    `python3 $PROJECT/scripts/riff_audio.py $PROJECT/beats/soul-tuzi.beats.json`
 3. Conform to measured audio (writes `beats/soul-tuzi.conformed.json`, overwriting the placeholder):
    `python3 $PROJECT/scripts/riff_conform.py $PROJECT/beats/soul-tuzi.beats.json`
