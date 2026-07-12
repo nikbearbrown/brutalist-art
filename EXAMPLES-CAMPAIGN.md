@@ -125,7 +125,7 @@ Legend: 🔑 keys needed · 📁 existing folder to rebuild-and-verify · ✨ ne
 ### Final
 | # | Video | Skill | Folder | Status |
 |---|---|---|---|---|
-| 23 | youtube-publisher | youtube-publisher | (publishes the built playlist) | ⬜ | OAuth; publishes everything above as the real playlist |
+| 23 | youtube-publisher | youtube-publisher | (publishes the built playlist) | ⬜ | OAuth; publishes everything above as the real playlist. **API quota: ~6 uploads/day** — the default 10,000 units/day ÷ 1,600 units per `videos.insert` = ~6, NOT the console's "100 uploads/day" (that limit never binds). So ~23 videos = ~4 days via API, unless you request a quota increase (adjustable, needs audit) or upload some manually via Studio (web uploads don't touch the API quota). |
 
 ### Helpers to exercise along the way (not videos; no dedicated example)
 `scout`, `cli-scout`, `script-writer`, `audience-preset`, `shot-planner`, `duration-planner`,
