@@ -1,0 +1,42 @@
+<svg viewBox="0 0 560 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t-fis">
+  <title id="t-fis">Induced nuclear fission</title>
+  <desc>An incident neutron, in red, strikes a heavy nucleus, which deforms and splits into two fragments while releasing several neutrons.</desc>
+  <defs>
+    <marker id="far" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#121212"/></marker>
+    <marker id="farR" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#C8102E"/></marker>
+  </defs>
+  <rect x="0" y="0" width="560" height="400" fill="#FFFFFF"/>
+  <text x="280" y="34" text-anchor="middle" font-family="'EB Garamond','Garamond',Georgia,serif" font-size="17" fill="#121212">Induced nuclear fission</text>
+
+  <!-- stage labels -->
+  <text x="95" y="372" text-anchor="middle" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">1 · capture</text>
+  <text x="280" y="372" text-anchor="middle" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">2 · deform</text>
+  <text x="468" y="372" text-anchor="middle" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">3 · split</text>
+
+  <!-- stage 1: neutron -> nucleus -->
+  <circle cx="110" cy="180" r="30" fill="#F5F5F5" stroke="#121212" stroke-width="1.25"/>
+  <text x="110" y="184" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#545454">²³⁵U</text>
+  <circle cx="36" cy="180" r="6" fill="#C8102E"/>
+  <line x1="44" y1="180" x2="76" y2="180" stroke="#C8102E" stroke-width="1.5" marker-end="url(#farR)"/>
+  <text x="40" y="208" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#C8102E">neutron</text>
+
+  <line x1="150" y1="180" x2="196" y2="180" stroke="#121212" stroke-width="1.5" marker-end="url(#far)"/>
+
+  <!-- stage 2: deformed (peanut) -->
+  <path d="M 246 180 C 246 150 268 150 280 158 C 292 150 314 150 314 180 C 314 210 292 210 280 202 C 268 210 246 210 246 180 Z" fill="#F5F5F5" stroke="#121212" stroke-width="1.25"/>
+  <text x="280" y="184" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="10" fill="#545454">²³⁶U*</text>
+  <line x1="330" y1="180" x2="376" y2="180" stroke="#121212" stroke-width="1.5" marker-end="url(#far)"/>
+
+  <!-- stage 3: two fragments + neutrons -->
+  <circle cx="450" cy="146" r="22" fill="#F5F5F5" stroke="#121212" stroke-width="1.25"/>
+  <circle cx="486" cy="214" r="25" fill="#F5F5F5" stroke="#121212" stroke-width="1.25"/>
+  <text x="450" y="150" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="9" fill="#545454">Kr</text>
+  <text x="486" y="218" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="9" fill="#545454">Ba</text>
+  <!-- released neutrons (neutral) -->
+  <circle cx="516" cy="120" r="5" fill="#121212"/><line x1="500" y1="130" x2="513" y2="123" stroke="#121212" stroke-width="1.25" marker-end="url(#far)"/>
+  <circle cx="534" cy="170" r="5" fill="#121212"/><line x1="510" y1="176" x2="529" y2="171" stroke="#121212" stroke-width="1.25" marker-end="url(#far)"/>
+  <circle cx="520" cy="262" r="5" fill="#121212"/><line x1="503" y1="246" x2="516" y2="257" stroke="#121212" stroke-width="1.25" marker-end="url(#far)"/>
+  <text x="540" y="300" text-anchor="end" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">+ free neutrons + energy</text>
+
+  <text x="280" y="392" text-anchor="middle" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10" fill="#545454" letter-spacing="0.08em">REDRAWN IN HOUSE STYLE · REF: WIKIMEDIA COMMONS "NUCLEAR FISSION"</text>
+</svg>

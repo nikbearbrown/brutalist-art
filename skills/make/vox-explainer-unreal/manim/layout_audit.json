@@ -1,0 +1,39 @@
+{
+  "scene": "vox_graphics",
+  "snapshots": 6,
+  "errors": 1,
+  "warnings": 1,
+  "safe_area": [
+    6.3,
+    3.4
+  ],
+  "min_overlap": 0.12,
+  "findings": [
+    {
+      "type": "TEXT_ON_CURVE",
+      "severity": "ERROR",
+      "text": "<Paragraph>",
+      "t": 2.53,
+      "snap": 2,
+      "box": [
+        -5.46,
+        -0.73,
+        5.46,
+        1.93
+      ]
+    },
+    {
+      "type": "OFF_SAFE_AREA",
+      "severity": "WARN",
+      "text": "Source:AlexanderKeyssar",
+      "t": 2.93,
+      "snap": 3,
+      "box": [
+        -6.61,
+        -3.5,
+        -3.31,
+        -3.23
+      ]
+    }
+  ]
+}

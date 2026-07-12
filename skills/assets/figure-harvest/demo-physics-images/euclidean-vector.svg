@@ -1,0 +1,43 @@
+<svg viewBox="0 0 520 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t-vec">
+  <title id="t-vec">A Euclidean vector and its x and y components</title>
+  <desc>A vector from the origin to point B drawn on a grid, decomposed into horizontal and vertical components; the vector itself is in red.</desc>
+  <defs>
+    <marker id="var" markerWidth="9" markerHeight="7" refX="7" refY="3.5" orient="auto"><polygon points="0 0, 9 3.5, 0 7" fill="#121212"/></marker>
+    <marker id="varR" markerWidth="9" markerHeight="7" refX="7" refY="3.5" orient="auto"><polygon points="0 0, 9 3.5, 0 7" fill="#C8102E"/></marker>
+  </defs>
+  <rect x="0" y="0" width="520" height="400" fill="#FFFFFF"/>
+  <text x="260" y="34" text-anchor="middle" font-family="'EB Garamond','Garamond',Georgia,serif" font-size="17" fill="#121212">A vector and its components</text>
+
+  <!-- plot region -->
+  <rect x="70" y="60" width="380" height="300" fill="#F5F5F5" stroke="#D4D4D4" stroke-width="0.75"/>
+  <!-- gridlines -->
+  <g stroke="#D4D4D4" stroke-width="0.75">
+    <line x1="146" y1="60" x2="146" y2="360"/><line x1="222" y1="60" x2="222" y2="360"/>
+    <line x1="298" y1="60" x2="298" y2="360"/><line x1="374" y1="60" x2="374" y2="360"/>
+    <line x1="70" y1="136" x2="450" y2="136"/><line x1="70" y1="212" x2="450" y2="212"/>
+    <line x1="70" y1="288" x2="450" y2="288"/>
+  </g>
+  <!-- axes -->
+  <line x1="70" y1="330" x2="450" y2="330" stroke="#121212" stroke-width="1.25" marker-end="url(#var)"/>
+  <line x1="110" y1="360" x2="110" y2="70" stroke="#121212" stroke-width="1.25" marker-end="url(#var)"/>
+  <text x="446" y="350" text-anchor="end" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#545454">x</text>
+  <text x="120" y="78" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#545454">y</text>
+
+  <!-- origin A and point B -->
+  <circle cx="110" cy="330" r="3.5" fill="#121212"/>
+  <text x="100" y="346" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">A</text>
+  <circle cx="358" cy="140" r="3.5" fill="#121212"/>
+  <text x="366" y="136" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="11" fill="#545454">B</text>
+
+  <!-- components (neutral) -->
+  <line x1="110" y1="330" x2="358" y2="330" stroke="#787878" stroke-width="1.25" stroke-dasharray="5 4"/>
+  <line x1="358" y1="330" x2="358" y2="140" stroke="#787878" stroke-width="1.25" stroke-dasharray="5 4"/>
+  <text x="234" y="348" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#545454">vₓ</text>
+  <text x="372" y="240" font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="11" fill="#545454">v_y</text>
+
+  <!-- the vector itself (RED accent = the one thing to look at) -->
+  <line x1="110" y1="330" x2="354" y2="143" stroke="#C8102E" stroke-width="2.25" marker-end="url(#varR)"/>
+  <text x="214" y="222" font-family="'EB Garamond','Garamond',Georgia,serif" font-size="15" fill="#C8102E" font-style="italic">v</text>
+
+  <text x="260" y="388" text-anchor="middle" font-family="'Inter',-apple-system,'Helvetica Neue',sans-serif" font-size="10" fill="#545454" letter-spacing="0.08em">REDRAWN IN HOUSE STYLE · REF: WIKIMEDIA COMMONS "VECTOR FROM A TO B"</text>
+</svg>
