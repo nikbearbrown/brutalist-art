@@ -1,0 +1,120 @@
+# Examples campaign — the toolkit tests itself by building every video
+
+**The principle: you can't test the system without testing the system.** Static inspection guesses
+at what's broken; building a real video of every type *finds* what's actually broken. So the old
+"Phase 4.5 (fix first) then Phase 5 (build examples)" collapses into one loop — **validation by
+construction.** Each example is simultaneously the acceptance test for its video type *and* the
+shipped example that teaches it. Fixes are discovered by building, not guessed up front.
+
+Every video here is **meta**: made *by* the toolkit, *about* the toolkit — the
+"Brutalist — Claude for Video Production" playlist. The first is **"What is Brutalist?"**
+
+## Where this runs
+
+On **your machine, in Claude Code** — it has the ElevenLabs key, the `higgsfield` CLI, Manim,
+Playwright/Chromium, Node/Remotion. (This cloud session set the campaign up; it can't render.)
+Run unattended is fine (`claude --dangerously-skip-permissions`) — the render contract holds
+(retry ≤5×, skip, human redoes).
+
+## Scope: confined to `brutalist-art/` — report-and-add (the self-containment test)
+
+Claude Code operates **only inside `brutalist-art/`**. It may NOT reach outside the folder — no
+`../vox/`, no `../unreal-reels/`, no absolute paths to `books/…`, no `~/…`. Keys come from
+`brutalist-art/.env` (already copied from `vox/.env`).
+
+This is deliberate: it turns the "clone-and-go" goal into an enforced test. When a build needs
+something that isn't in the folder, Claude Code does NOT quietly resolve it against a parent repo —
+it **stops and reports** in the BUILD-LOG:
+
+```
+MISSING: <what it needed> — was at <where it used to live, if known> — blocks <which beat/step>
+```
+
+Then **we add it** — vendor the file/asset into `brutalist-art/` (a script → `runtime/scripts/`,
+a shared asset → `runtime/`, a font → `runtime/fonts/`, brand media → the folder or an `ART_*`
+path) — and re-run. Every `MISSING` report is one more reach-out eliminated. When the campaign
+finishes with zero `MISSING` left, the toolkit is genuinely self-contained: a fresh clone builds
+every video type with nothing but `brutalist-art/` + `.env`.
+
+(This is why the campaign is the real acceptance test for the whole refactor: a reach-out that
+static inspection missed becomes a loud `MISSING` the moment a real build needs it.)
+
+## The loop (per video type)
+
+1. **Build** it with Claude Code (start from the type's `BUILD-PROMPT.md`; `what-is-brutalist`
+   already has one). One self-contained folder under `youtube/<slug>/`.
+2. **Log everything** to `youtube/<slug>/BUILD-LOG.md`: every command run, every error hit, the
+   fix applied, and the final result (beats rendered / beats left for human). Append-only.
+3. **If something doesn't work, fix it** — in the *toolkit*, not just the example. A broken script,
+   a stale path, a missing SKILL.md, a palette gap → fix in `runtime/`/`skills/`, commit with a
+   message naming the video that surfaced it. **If the thing is simply not in the folder, log a
+   `MISSING:` line and stop that thread** — the human vendors it in (report-and-add), then continue.
+   The fix is the point; the example proved it was needed.
+4. **Ship the example** — the finished folder stays as the CAPABILITIES/LEARN example for that type.
+5. **Mark verified** in the table below (⬜ → ✅), note the commit(s) that fixed anything.
+
+A type isn't "done" until its example builds end-to-end (minus genuinely-human beats) and every
+breakage it hit is fixed and committed.
+
+## Build order — climb the key ladder (no-key first, so core-pipeline breakage surfaces first)
+
+Legend: 🔑 keys needed · 📁 existing folder to rebuild-and-verify · ✨ new folder to create.
+
+### Tier 0 — no keys (ffmpeg + Pillow; Manim/Node where noted). Fixes the core `./art run`/`fill-in`.
+| # | Video | Skill | Folder | Status | Notes |
+|---|---|---|---|---|---|
+| 1 | **What is Brutalist?** | explainer + terminal | ✨ `youtube/what-is-brutalist` | ⬜ | intro; has `beat_sheet.json` + `BUILD-PROMPT.md`. Silent path is no-key; narration adds ElevenLabs. **First.** |
+| 2 | slate-cut | (compile) | 📁 `examples/slate-cut--base-rate` | ⬜ | the no-key first pass; verify `./art run` + request cards |
+| 3 | previz | (fill_slates) | ✨ `youtube/previz-*` | ⬜ | any beat sheet → all-slate timing pass |
+| 4 | line-art-vectorizer | line-art-vectorizer | ✨ `youtube/*` | ⬜ | vtracer, no key |
+| 5 | figure-planner | figure-planner | ✨ `youtube/*` | ⬜ | **author its SKILL.md first** (D5), then a figure |
+| 6 | sketch-explainer (silent) | sketch-explainer | ✨ `youtube/*` | ⬜ | Manim only, no key |
+
+### Tier 1 — ElevenLabs (narration)
+| # | Video | Skill | Folder | Status |
+|---|---|---|---|---|
+| 7 | sketch-explainer (narrated) | sketch-explainer | ✨ | ⬜ |
+| 8 | math-explainer | math-explainer | ✨ (+LaTeX) | ⬜ |
+| 9 | explainer | explainer | 📁 `examples/explainer--size-paradox` | ⬜ |
+| 10 | terminal-screencast | terminal-screencast | 📁 `examples/terminal-screencast--compression-journey` | ⬜ |
+| 11 | bio | bio | ✨ (`--length` 3:00) | ⬜ |
+| 12 | code-walkthrough | code-walkthrough | ✨ | ⬜ |
+| 13 | kids-video | kids-video | ✨ | ⬜ |
+| 14 | recitation-film | recitation-film | ✨ (+faster-whisper) | ⬜ |
+| 15 | **deck-lecture** | deck-lecture | ✨ (vendor `animated-deck`; +Playwright) | ⬜ | restore one of the 34 lectures as the example |
+| 16 | story-film (narration) | story-film | 📁 `examples/00-story-film-demos` | ⬜ |
+
+### Tier 2 — higgsfield CLI (AI image/video)
+| # | Video | Skill | Folder | Status |
+|---|---|---|---|---|
+| 17 | lyric-resync | lyric-resync | ✨ | ⬜ |
+| 18 | dance-video | dance-video | ✨ | ⬜ |
+| 19 | ai-asset-gen | ai-asset-gen | ✨ | ⬜ |
+| 20 | collage-ads | collage-ads | ✨ | ⬜ |
+
+### Tier 3 — local audio (bring a WAV)
+| # | Video | Skill | Folder | Status |
+|---|---|---|---|---|
+| 21 | music-video | music-video | 📁 `examples/music-video--c-is-for-cookie` | ⬜ |
+| 22 | lyric-overlay | lyric-overlay | ✨ | ⬜ |
+
+### Final
+| # | Video | Skill | Folder | Status |
+|---|---|---|---|---|
+| 23 | youtube-publisher | youtube-publisher | (publishes the built playlist) | ⬜ | OAuth; publishes everything above as the real playlist |
+
+### Helpers to exercise along the way (not videos; no dedicated example)
+`scout`, `cli-scout`, `script-writer`, `audience-preset`, `shot-planner`, `duration-planner`,
+`explainer-deepen`, `reel-updater`, `remotion-explainer`, `component-showcase` (riff), `slate-filler`
+— each gets used in service of the builds above; log any breakage the same way.
+
+## Known fixes this campaign will force (from the TODO scan — expect to hit these early)
+
+- `examples/*/scenes.py` import a dead `aspects/…` path → repoint to `runtime/manim` (Tier-0 #2/#9/#10).
+- GATE F needs `PROMPTS.md`; QC gates now in `runtime/qc/` — verify they pass.
+- `./art fill-in` doesn't exist yet — build it when the first Tier-0 video needs it.
+- `figure-planner` has no SKILL.md (#5). No `LICENSE`. Manim registry missing `brutalist`+`musinique`.
+- `deck-lecture` (#15) needs `animated-deck` vendored + Playwright.
+
+Each of these should surface *as a build failure with a log entry*, get fixed in the toolkit, and
+get a commit. That's the campaign working as intended: the videos find the bugs.
