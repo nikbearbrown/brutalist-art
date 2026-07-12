@@ -2,6 +2,7 @@
 
 *Phase 1 deliverable (Audit & Plan) per `REFACTOR-BRIEF.md`. Filename spelling kept as the brief specifies.*
 *Status: **AWAITING HUMAN SIGN-OFF (Gate 1)** — nothing below has been executed yet.*
+*Rev 2 — amended with Gate-1 feedback: (a) all keys live in `.env`, including blank `HIGGSFIELD_API_KEY` / `MINIMAX_API_KEY` placeholders, docs note the passthrough; (b) `vox/` is the more recent toolkit (derived from `unreal-reels/`) → canonical for all spine reconciliation; (c) the previz story is the slate-placeholder + pantry contract, not "greybox paper" (retired — see D10).*
 *Audit method: every claim in this plan was verified against the code — the full skill tree in this repo plus code snapshots of the five parent toolkits (`vox/`, `unreal-reels/`, `ai1-cli/`, `brutalist/`, `higgsfield/`). Diffs by `md5sum`/`diff`; env vars by grepping `os.environ` / `process.env` / API hosts.*
 
 ---
@@ -12,7 +13,7 @@
 - **The repo has no git history yet.** Branch `main`, zero commits, remote `github.com/nikbearbrown/brutalist-art` (empty). "Preserve history via `git mv`" therefore starts from a clean slate: Phase 1 makes the **baseline commit** of the gathered state, so every later rename diffs against it.
 - **The skills are not runnable in isolation**, exactly as the brief warns. The dominant gap is the **vox script spine** (`vox_run.sh` + 15 `vox_*.py` scripts) — referenced by at least 12 skills, present in this repo **zero** times, and existing in **two divergent parallel copies** in the parents (`vox/scripts/` and `unreal-reels/scripts/`).
 - **Hardcoded machine paths will break any clone**: `/Users/nik/...` (brownblue publish, greybox fonts, voxbio HANDOFF), `/Users/bear/...` (remotion-pass README), `~/ai` venv assumptions (bears-doodles, greybox, brownblue), and `books/vox` / `books/unreal-reels` repo-relative reach-outs (notebooklm-youtube `pipeline.py`, simulation docs).
-- **The brief's key list was wrong in three important ways** (verified from code — see §4): there is no `HIGGSFIELD_API_KEY` or `MINIMAX_API_KEY` anywhere (AI image/video goes through the external `higgsfield` CLI's own login); YouTube auth is file-based OAuth (`client_secret.json` + `youtube_token.json`), not an env var; and no skill in this repo calls the Anthropic API at all — the driving CLI *is* the LLM runtime.
+- **The brief's key list differed from the code in three ways** (verified — see §4): no *script* reads `HIGGSFIELD_API_KEY` or `MINIMAX_API_KEY` (AI image/video goes through the external `higgsfield` CLI's own auth); YouTube auth is file-based OAuth (`client_secret.json` + `youtube_token.json`), not an env var; and no skill in this repo calls the Anthropic API at all — the driving CLI *is* the LLM runtime. **Policy (per Gate-1 feedback): `.env` is still the single home for all keys** — `.env.example` ships blank `HIGGSFIELD_API_KEY` and `MINIMAX_API_KEY` placeholders and the docs explain how to supply them via the environment; the doctor treats the higgsfield CLI login OR the env var as "ready."
 - **⚠️ Real secrets are committed in the parent toolkits** (not in this repo): live `ELEVENLABS_API_KEY` and `FAL_KEY` values in `vox/.env`, `unreal-reels/.env`, and `ai1-cli/remotion/.env`. See §8, decision D7 — those keys should be rotated, and vendoring must never copy a `.env`.
 - **Examples cover only ~5 of ~20 video types**, and none has a rebuild README. The no-key ladder start (previz / silent sketch) has no example at all yet.
 
@@ -53,7 +54,7 @@ Evidence: `vox-scout` and `bears-doodles-scout` are near-twins — same 4-file s
 ### Decision helpers & ops
 | Old | New | Notes |
 |---|---|---|
-| `greybox` | **`previz`** | Already jargon — keep (brief-approved direction). |
+| `greybox` | **retire** *(D10)* | The "greybox paper" scrapbook look is superseded: previz is now the pipeline's own slate-placeholder + pantry flow (§6a). Skill folder deleted in Phase 2 (accounted in MANIFEST) or parked. |
 | `media-router` | **`shot-planner`** | Manim/Remotion/T2I/T2V per beat. |
 | `pacing` | **`duration-planner`** | Sizes video to content. |
 | `hai`, `medhavy`, `neu` | **`audience-preset`** (one skill + per-brand data files) | See dedup §3.3. Which brands survive → *(D3)*. |
@@ -105,7 +106,7 @@ What the code actually consumes — this drives `.env.example`, the `setup` doct
 |---|---|---|---|
 | `ELEVENLABS_API_KEY` | env var, POST `api.elevenlabs.io` | ALL narration: sketch/math/collage explainers, bios, kids, story-film, publisher audio | paid |
 | `ELEVENLABS_VOICE_*` (`NIKBEARBROWN`, `MEDHAVY`, `HUMANITARIANS`, `VOICE_ID`) | env vars (IDs, semi-sensitive) | which cloned voice speaks; audience presets | free (IDs) |
-| **Higgsfield / Minimax-Hailuo / Seedance / Kling** | **NOT an env var.** External `higgsfield` CLI binary with its own `higgsfield auth login`; scripts gate on `higgsfield account status` and parse with `jq` | AI image/video: lyric-resync, dance-video, bio photoreal, collage stills, ai-asset-gen | paid |
+| `HIGGSFIELD_API_KEY`, `MINIMAX_API_KEY` | Blank placeholders in `.env.example` (kept per Gate-1 feedback — the user's environment carries them and docs explain the passthrough). The scripts themselves shell out to the external `higgsfield` CLI (`higgsfield auth login`, gated on `account status`, parsed with `jq`); the doctor accepts either a CLI login or the env vars as "ready" | AI image/video: lyric-resync, dance-video, bio photoreal, collage stills, ai-asset-gen | paid |
 | **YouTube Data API** | **NOT an env var.** Desktop-app OAuth: `client_secret.json` (from GCP) + cached `youtube_token.json` | youtube-publisher, video-inventory publish path | free quota |
 | `ANTHROPIC_API_KEY` | **Not used by any skill in this repo** (the driving CLI is the LLM). Only ai1-cli batch scripts call `api.anthropic.com` | nothing in this toolkit directly | — |
 | `FAL_KEY` | fal.ai, optional style-LoRA path | optional image styling | paid, optional |
@@ -122,7 +123,7 @@ What the code actually consumes — this drives `.env.example`, the `setup` doct
 
 Everything below is **read-only copied from the parents into this repo** (never modifying the parents), landing in a new top-level `runtime/` unless noted. Order = priority.
 
-1. **The vox spine → `runtime/scripts/`** — from `vox/scripts/`: `vox_run.sh`, `vox_compile.py`, `generate_audio.py`, `vox_align.py`, `vox_outro.py`, `vox_pantry.py`, `vox_short.py`, `vox_emit.py`, `vox_convert.py`, `vox_fill_slates.py`, `vox_remotion.py`, `vox_variant.py`, `vox_update.py`, `vox_audit.py` (+ `brutalist_update.py`, teardown rerender pair). **Must be reconciled with the parallel divergent copy in `unreal-reels/scripts/`** — Phase 3 diffs each pair and keeps the superset, documenting each choice.
+1. **The vox spine → `runtime/scripts/`** — from `vox/scripts/`: `vox_run.sh`, `vox_compile.py`, `generate_audio.py`, `vox_align.py`, `vox_outro.py`, `vox_pantry.py`, `vox_short.py`, `vox_emit.py`, `vox_convert.py`, `vox_fill_slates.py`, `vox_remotion.py`, `vox_variant.py`, `vox_update.py`, `vox_audit.py` (+ `brutalist_update.py`, teardown rerender pair). **Reconciliation rule (per Gate-1 feedback): `vox/` is the more recent toolkit, derived from `unreal-reels/` — `vox/scripts/` is canonical wherever both carry a script**; the `unreal-reels/scripts/` copy is consulted only for scripts vox lacks (e.g. the songbird/dance generators), and each choice is still diff-verified and documented.
 2. **`runtime/manim/vox_graphics.py`** — single canonical copy (the 728-line palette-registry version); all skills import from here.
 3. **Design constitution → `runtime/design/`** — `vox/DESIGN.md`, `vox/voices/` (7 register dirs), `vox/fonts/` (96K TTFs — license check at D2). Note: the brief's expected `vox/reference/pedagogy.md` **does not exist** as one file; pedagogy lives per-aspect (`kids/`, `teardown-script/`) and is already vendored with those skills.
 4. **Medhavy bookends Remotion project → `runtime/remotion-bookends/`** — `vox/aspects/remotion-pass/remotion/` (280K, no node_modules); hard requirement of `youtube-publisher` and the upstream of `slate-filler`'s scenes.
@@ -139,11 +140,22 @@ Everything below is **read-only copied from the parents into this repo** (never 
 
 Single entry point at repo root — proposed name **`art`** *(D8)*: `./art <skill> <target> [--flags]`, with `./art --list`, `./art <skill> --help` in one shared format, alias resolution from `GLOSSARY.md`, and a shared `beat_sheet.json` schema (published as `runtime/schema/beat_sheet.schema.json` — the bears-doodles template schema is the seed; muzak/songbird beat variants become documented extensions). The audio-first, phase-gated discipline stays; gates become explicit named stops (`--gate` prints what the human must approve).
 
+### 6a. The slate-placeholder + pantry contract (the human/AI division, verbatim into every skill README)
+
+This is how the pipeline actually divides the work (per Gate-1 feedback; implemented today by `vox_compile.py` + `vox_pantry.py`):
+
+1. The tool **generates every piece of media it can** — Manim, Remotion, or any other local tool — and composites it per beat.
+2. For media it **cannot fake** (real captures, archival footage, a screen recording, a performance), it does not improvise a stand-in: it emits a **slate placeholder** for that beat, named for its slot.
+3. The human drops the real media into **`pantry/`**.
+4. The tool **checks the intake**, usually strips its sound, **cuts or extends it to fit the beat**, gives it the proper slot name, and copies it into place for the composite.
+
+So the human never touches timelines or naming — they supply context, approvals, and the captures the CLI can't produce; the tool does all conforming. This paragraph (adapted per skill) satisfies the brief's §1.6 "human/AI division is explicit" requirement, and it replaces the retired "greybox paper" previz: a first pass of any reel *is* the previz — slates standing in for exactly the media the human owes.
+
 ---
 
 ## 7. Examples & learning path (Phase 5 preview)
 
-Existing: `cli--compression-journey`, `vox-explainer--size-paradox`, `vox-slate--base-rate`, `muzak--c-is-for-cookie`, `00-unreal-reels-demos` (text seeds only). None has a rebuild README. Missing entirely: examples for previz **(the zero-key ladder start)**, sketch-explainer, math-explainer, lyric-resync, dance-video, kids-video, recitation-film, bios, code-animated-explainer, youtube-publisher. Phase 5 restores source inputs for one example per type from the parents' project folders and orders `LEARN.md`: previz (no keys) → silent sketch (no keys) → narrated sketch (ElevenLabs) → collage-explainer → AI-video types (higgsfield CLI) → publisher (OAuth).
+Existing: `cli--compression-journey`, `vox-explainer--size-paradox`, `vox-slate--base-rate`, `muzak--c-is-for-cookie`, `00-unreal-reels-demos` (text seeds only). None has a rebuild README. Missing entirely: examples for sketch-explainer, math-explainer, lyric-resync, dance-video, kids-video, recitation-film, bios, code-animated-explainer, youtube-publisher. Phase 5 restores source inputs for one example per type from the parents' project folders and orders `LEARN.md`. The zero-key ladder start is the **slate cut**: run a reel through the compiler with no keys and no pantry media — every ungeneratable beat renders as a named slate (`vox-slate--base-rate` is already this shape), teaching the pantry contract (§6a) before any key is bought. Ladder: slate cut (no keys) → silent sketch (no keys) → narrated sketch (ElevenLabs) → collage-explainer → AI-video types (higgsfield CLI / keys) → publisher (OAuth).
 
 ---
 
@@ -161,7 +173,10 @@ Existing: `cli--compression-journey`, `vox-explainer--size-paradox`, `vox-slate-
 | D6 | `product-photos` / `listing-cards` (non-video Higgsfield skills): keep, drop, or park in `skills/assets/` unlisted? | Park (keep folders, exclude from the front-door skill list) |
 | D7 | **Rotate the live `ELEVENLABS_API_KEY` + `FAL_KEY` committed in `vox/.env`, `unreal-reels/.env`, `ai1-cli/remotion/.env`** (parent repos — outside my write scope, flagged per brief) | Rotate now |
 | D8 | Entry-point command name: `art`? (alternatives: `reel`, `studio`) | `art` |
-| D9 | Approve Phase 1 baseline commit as described in §9 (repo currently has zero commits) | Approve |
+| D9 | ~~Baseline commit~~ — **done** (root commit `8cccb4e`, local only, nothing pushed; trivially undoable with `git reset`) | — |
+| D10 | `greybox`: **delete** the skill folder (accounted in MANIFEST) or park it unlisted? The scrapbook-paper previz is superseded by the slate+pantry flow (§6a) | Delete |
+
+**Resolved at Gate 1 (from your feedback):** all keys live in `.env` with blank `HIGGSFIELD_API_KEY`/`MINIMAX_API_KEY` placeholders and a documented env-var passthrough; `vox/scripts/` is canonical over `unreal-reels/scripts/` (vox is the newer, derived toolkit); the human/AI division is the slate-placeholder + pantry contract (§6a).
 
 ---
 
@@ -170,7 +185,7 @@ Existing: `cli--compression-journey`, `vox-explainer--size-paradox`, `vox-slate-
 | Phase | Work | Commit | Gate asks the human |
 |---|---|---|---|
 | **1 (this)** | Audit; this plan | **Baseline commit** of gathered state + this plan + minimal `.gitignore` (`.DS_Store`, `.env`, `node_modules/`, `out/`) | D1–D9 above |
-| **2** | Apply approved name map via `git mv`; delete `vox-explainer-unreal` + junk (§3.7); merge scouts/presets/bios per D1; write `GLOSSARY.md` with alias table; update `MANIFEST.md` names. **No behavior changes.** | "Phase 2: rename + dedup + aliases" | Spot-check names/aliases; confirm nothing lost (MANIFEST accounts for every merge/delete) |
+| **2** | Apply approved name map via `git mv`; delete `vox-explainer-unreal` + junk (§3.7) + `greybox` per D10; merge scouts/presets/bios per D1; write `GLOSSARY.md` with alias table; update `MANIFEST.md` names. **No behavior changes.** | "Phase 2: rename + dedup + aliases" | Spot-check names/aliases; confirm nothing lost (MANIFEST accounts for every merge/delete) |
 | **3** | Vendor runtime per §5 (reconciling the two vox-spine copies, documented per file); path-hygiene sweep (§5.9); shared-lib dedup (§3.5); `art` dispatcher + shared `--help` + shared schema. Skills run in isolation. | "Phase 3: vendored runtime + unified grammar" | Run one skill end-to-end from a fresh clone (no `../` reach-outs) |
 | **4** | `.env.example` (from §4, grouped by feature), `INSTALL.md` (pinned deps per OS), `setup` doctor with per-feature readiness table, `CAPABILITIES.md` | "Phase 4: setup + capability matrix" | `./setup` output reviewed on the human's machine |
 | **5** | One example per type with source inputs restored; per-example rebuild READMEs; `LEARN.md` ladder (§7); verify no-key examples rebuild | "Phase 5: examples-first learning path" | Human rebuilds the no-key + ElevenLabs examples |
@@ -180,4 +195,4 @@ Existing: `cli--compression-journey`, `vox-explainer--size-paradox`, `vox-slate-
 
 ---
 
-*Gate 1 is open: reply with approvals/edits to D1–D9 (or "approve all as recommended") and Phase 2 begins.*
+*Gate 1 is open: still needing your call — D1a/b/c (names), D2 (license), D3 (presets), D4 (deck/lecture), D5 (figures), D6 (product skills), D7 (key rotation), D8 (entry-point name), D10 (delete vs park greybox). Reply with edits or "approve all as recommended" and Phase 2 begins.*
