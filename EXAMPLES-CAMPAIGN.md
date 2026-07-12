@@ -56,6 +56,29 @@ static inspection missed becomes a loud `MISSING` the moment a real build needs 
 A type isn't "done" until its example builds end-to-end (minus genuinely-human beats) and every
 breakage it hit is fixed and committed.
 
+## The report that comes back to the refactor
+
+Each build must end by appending a **structured feedback block** to its `BUILD-LOG.md` AND to the
+shared **`CAMPAIGN-FEEDBACK.md`** at the repo root — so every build aggregates into one report the
+refactor consumes (to update TODO, INSTALL, the doctor, and the vendor list). Format, verbatim:
+
+```
+## REFACTOR FEEDBACK — <video slug> — <YYYY-MM-DD>
+MISSING (vendor into brutalist-art):
+  - <file/asset> — was at <source, if known> — needed for <step/beat>
+FIXED (toolkit bugs this build surfaced):
+  - <what was wrong> — <file changed> — commit <hash>
+DEPS (had to install / must be installed to build this type):
+  - <dep> — for <step>   (e.g. "remotion node_modules — cd runtime/remotion && npm install")
+STILL BLOCKED (needs a human decision / key / asset):
+  - <what> — <what it needs>
+RESULT: <N> beats rendered, <M> left for the human (list the M)
+```
+
+This block is the deliverable *to the refactor*. Paste `CAMPAIGN-FEEDBACK.md` back to the refactor
+session; it maps 1:1 onto: MISSING → vendor list, FIXED → confirmed regressions closed, DEPS →
+INSTALL.md + `./setup` rows, STILL BLOCKED → open gates.
+
 ## Build order — climb the key ladder (no-key first, so core-pipeline breakage surfaces first)
 
 Legend: 🔑 keys needed · 📁 existing folder to rebuild-and-verify · ✨ new folder to create.

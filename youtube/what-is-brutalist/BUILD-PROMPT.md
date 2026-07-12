@@ -88,3 +88,9 @@ STEP 6 — Report.
 
 Deliverable: `youtube/what-is-brutalist/` containing `scenes.py`, the three gate files, `manim/` +
 `media/` renders, `mp3/` (if narrated), the compiled cut, and an up-to-date `STATUS.md`.
+
+FINALLY — emit the refactor report. Append a `## REFACTOR FEEDBACK — what-is-brutalist — <date>`
+block (format in EXAMPLES-CAMPAIGN.md) to BOTH `youtube/what-is-brutalist/BUILD-LOG.md` and the
+repo-root `CAMPAIGN-FEEDBACK.md`: list MISSING (vendor), FIXED (with commit), DEPS (installs
+needed), STILL BLOCKED, and RESULT (beats rendered / left for human). This block is the report the
+refactor consumes — make it accurate.
