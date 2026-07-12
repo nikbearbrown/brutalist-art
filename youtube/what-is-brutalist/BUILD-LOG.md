@@ -114,6 +114,21 @@ WARNINGS:
 
 DELIVERABLE: youtube/what-is-brutalist/what-is-brutalist-review.mp4 (174.4s, narrated)
 
+---
+
+## HUMAN FEEDBACK — 2026-07-12
+
+> "Fix the boxes — make them wider to properly hold the text. Keep the bad (too-narrow) frame in
+> this video, and add a new beat after B08 where my voice clone tells you to fix the boxes and you
+> do it, on screen. Log my feedback."
+
+Root cause identified: B08_ScoreAndPlaying tool cards use Rectangle(width=2.4, height=0.6) with
+text centered inside — when the VGroup(tool_name + role_name) is wider than 2.4 units, the text
+overflows the box border. Fixed generally in runtime/manim/animated_graphics.py with an `auto_box()`
+helper; scenes.py updated to use it.
+
+---
+
 ### TOOLKIT FIXES MADE DURING BUILD (committed changes)
 
 1. runtime/qc/static_scene_check.py — per-beat Gate A false-alarm fix
@@ -121,4 +136,37 @@ DELIVERABLE: youtube/what-is-brutalist/what-is-brutalist-review.mp4 (174.4s, nar
 3. runtime/remotion/src/scenes/NikBearBrownCodeBlock.tsx — language + caption props
 4. runtime/remotion/src/Root.tsx — composition duration ceilings raised
 5. runtime/scripts/generate_audio.py — voice_env indirection support
+
+---
+
+## REFACTOR FEEDBACK — 2026-07-12
+
+### Box fix (general toolkit change)
+- File changed: `runtime/manim/animated_graphics.py`
+  - Added `auto_box(content, h_pad=0.32, v_pad=0.22, ...)` — sizes Rectangle to fit a Mobject + padding
+- Files changed: `youtube/what-is-brutalist/scenes.py`
+  - B08_ScoreAndPlaying: tool cards now use `auto_box()` (was `Rectangle(width=2.4, height=0.6)`)
+  - B03_TasteGaps: question cards now use `auto_box()` (was `Rectangle(width=3.4, height=1.0)`)
+- "Before" artifact saved: `media/box-before.png` + `media/box-before.mp4` (B08 at 3s, narrow box visible)
+
+### New beat B08B
+- beat_sheet.json: B08B inserted after B08 (act=REVEAL, estimated_duration_s=14, actual=17.5s)
+- scenes.py: B08B_FixTheBoxes — shows BEFORE narrow box → INSTRUCTION chip → AFTER auto_box
+- Audio: `mp3/beat-B08B.mp3` (17.5s ElevenLabs NikBearBrown)
+- Render: `manim/B08B.mp4` ✓ (14.1s clip, slowed 1.24× to fill 17.5s audio)
+
+### Recompile result
+- 17/17 beats filled — B08B added at slot 9 (zero-indexed)
+- Deliverable: `what-is-brutalist-review.mp4` (191.9s, narrated, PIL overlays)
+- Slots: B00:VIDEO B01:MANIM B02:MANIM B03:MANIM B04:VIDEO B05:MANIM B06:MANIM B07:MANIM
+         B08:MANIM B08B:MANIM B09:MANIM B10:VIDEO B11:MANIM B12:VIDEO B13:VIDEO B14:MANIM B99:VIDEO
+- Warning (informational): drawon 11/17 beats (64%) — over cap; explainer genre, expected
+
+### DEPS (no reach-outs needed)
+All assets, keys, and tools were inside `brutalist-art/`. No MISSING: lines added this iteration.
+
+### RESULT
+- Beats: 16 → 17
+- Duration: 174.4s → 191.9s
+- The conductor-loop feedback beat is live in the video; box overflow is fixed toolkit-wide.
 

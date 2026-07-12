@@ -11,7 +11,7 @@
     "palette": "teardown",
     "playlist": "Brutalist — Claude for Video Production",
     "url": "https://www.brutalist.art/",
-    "total_estimated_duration_seconds": 174.39
+    "total_estimated_duration_seconds": 191.89
   },
   "beats": [
     {
@@ -238,6 +238,31 @@
       "estimated_duration_s": 13,
       "audio_file": "mp3/beat-B08.mp3",
       "actual_duration_s": 14.99
+    },
+    {
+      "beat_id": "B08B",
+      "act": "REVEAL",
+      "narration_text": "Here's that loop — live, from building this very video. Look: that box was too narrow, the text spilled over the edge. I didn't open the code. I just said, 'make the boxes wider to hold the text.' And it did. I catch the wrong note; the machine fixes it.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "motion": "drawon"
+      },
+      "graphic": {
+        "manim": "B08B_FixTheBoxes",
+        "production_viz": {
+          "label": "before → instruction → after",
+          "mechanic": "show the real narrow-box before (text overflowing, red clipped-edge flag); my instruction appears as a line of text ('make the boxes wider to hold the text'); the box widens smoothly and the text now fits cleanly in ink.",
+          "colors": [
+            "#2A1A0E",
+            "#C8102E",
+            "#1F6F5C"
+          ]
+        }
+      },
+      "estimated_duration_s": 14,
+      "audio_file": "mp3/beat-B08B.mp3",
+      "actual_duration_s": 17.5
     },
     {
       "beat_id": "B09",

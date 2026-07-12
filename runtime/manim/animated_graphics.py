@@ -74,6 +74,29 @@ except Exception:
     pass
 
 
+# ---------------------------------------------------------------- utilities
+
+def auto_box(content, h_pad=0.32, v_pad=0.22, fill_color=GROUND, fill_opacity=1,
+             stroke_color=INK, stroke_width=2, **rect_kw):
+    """Return a Rectangle that fits *content* with consistent padding.
+    The box is centered on the content — compose with VGroup(box, content)
+    to get a unit you can move_to freely.
+
+    Surfaced by: what-is-brutalist (boxes too narrow for text).
+    """
+    box = Rectangle(
+        width=content.width + 2 * h_pad,
+        height=content.height + 2 * v_pad,
+        fill_color=fill_color,
+        fill_opacity=fill_opacity,
+        stroke_color=stroke_color,
+        stroke_width=stroke_width,
+        **rect_kw,
+    )
+    box.move_to(content)
+    return box
+
+
 # ---------------------------------------------------------------- mobjects
 
 class IsotypeGrid(VGroup):

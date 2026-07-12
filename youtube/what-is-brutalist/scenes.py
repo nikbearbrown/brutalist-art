@@ -120,13 +120,13 @@ class B03_TasteGaps(Scene):
         questions = ["funny?", "interesting?", "did it land?"]
         cards = VGroup()
         for q in questions:
-            box = Rectangle(width=3.4, height=1.0, fill_color=GROUND, fill_opacity=1,
-                            stroke_color=INK, stroke_width=2)
             checkbox = Square(side_length=0.32, stroke_color=INK, stroke_width=2,
                               fill_opacity=0)
-            checkbox.next_to(box.get_left(), RIGHT, buff=0.25)
             label = Text(q, font=SERIF, color=INK, font_size=32, slant=ITALIC)
-            label.next_to(checkbox, RIGHT, buff=0.25)
+            row = VGroup(checkbox, label).arrange(RIGHT, buff=0.25)
+            # auto_box: card grows to fit the question text
+            box = auto_box(row, h_pad=0.30, v_pad=0.26,
+                           fill_color=GROUND, stroke_color=INK, stroke_width=2)
             card = VGroup(box, checkbox, label)
             cards.add(card)
 
@@ -340,12 +340,13 @@ class B08_ScoreAndPlaying(Scene):
         tools = [("Manim", "animations"), ("Remotion", "graphics"), ("ffmpeg", "cuts")]
         tool_cards = VGroup()
         for i, (tool, role) in enumerate(tools):
-            card = Rectangle(width=2.4, height=0.6, fill_color="#F5F5F5", fill_opacity=1,
-                             stroke_color=INK, stroke_width=1)
             t = Text(tool, font=DISPLAY, color=INK, font_size=22, weight=BOLD)
             r = Text(role, font=SERIF, color=SLATE, font_size=18)
-            VGroup(t, r).arrange(RIGHT, buff=0.25).move_to(card)
-            tc = VGroup(card, t, r).shift(RIGHT * 3.2 + UP * (0.6 - i * 0.85))
+            content = VGroup(t, r).arrange(RIGHT, buff=0.25)
+            # auto_box sizes the card to fit the text — fixes the narrow-box bug
+            card = auto_box(content, h_pad=0.28, v_pad=0.16,
+                            fill_color="#F5F5F5", stroke_color=INK, stroke_width=1)
+            tc = VGroup(card, content).shift(RIGHT * 3.2 + UP * (0.6 - i * 0.85))
             tool_cards.add(tc)
 
         # Baton arrow from left to right
@@ -360,6 +361,110 @@ class B08_ScoreAndPlaying(Scene):
         self.wait(0.8)
         self.play(GrowArrow(baton_arrow), run_time=0.8)
         self.wait(7.0)
+
+
+# ──────────────────────────────────────────────────────────
+# B08B — FIX THE BOXES (14s)  ← the conductor loop, live
+# ──────────────────────────────────────────────────────────
+class B08B_FixTheBoxes(Scene):
+    """Demonstrates the conductor loop: human spots a wrong note (narrow box),
+    gives a plain-language instruction, machine fixes it on-screen."""
+
+    # Shared geometry for the "before" and "after" card
+    TOOL = "Remotion"
+    ROLE = "graphics"
+    FONT_SZ_TOOL = 22
+    FONT_SZ_ROLE = 18
+    # The old fixed width that caused the overflow
+    OLD_W = 2.4
+    OLD_H = 0.6
+
+    def construct(self):
+        # ── SECTION LABEL ──────────────────────────────────────
+        section = LabelChip("THE CONDUCTOR LOOP", accent=CRIMSON, size=18)
+        section.to_corner(UL, buff=0.6)
+        self.play(FadeIn(section, shift=DOWN * 0.1), run_time=0.4)
+
+        # ── BEFORE: narrow box, text overflowing ───────────────
+        before_lbl = SerifLabel("BEFORE", accent=CRIMSON, size=24)
+        before_lbl.move_to(LEFT * 3.8 + UP * 1.8)
+
+        t_before = Text(self.TOOL, font=DISPLAY, color=INK,
+                        font_size=self.FONT_SZ_TOOL, weight=BOLD)
+        r_before = Text(self.ROLE, font=SERIF, color=SLATE, font_size=self.FONT_SZ_ROLE)
+        content_before = VGroup(t_before, r_before).arrange(RIGHT, buff=0.25)
+        # The old fixed-width box — does NOT fit the text
+        narrow_box = Rectangle(width=self.OLD_W, height=self.OLD_H,
+                               fill_color="#F5F5F5", fill_opacity=1,
+                               stroke_color=INK, stroke_width=1)
+        narrow_box.move_to(LEFT * 3.8 + UP * 0.6)
+        content_before.move_to(narrow_box)
+
+        # Red overflow flags: short lines at the left/right edges where text bleeds
+        left_flag = Line(narrow_box.get_corner(UL) + LEFT * 0.05,
+                         narrow_box.get_corner(DL) + LEFT * 0.05,
+                         stroke_color=CRIMSON, stroke_width=4)
+        right_flag = Line(narrow_box.get_corner(UR) + RIGHT * 0.05,
+                          narrow_box.get_corner(DR) + RIGHT * 0.05,
+                          stroke_color=CRIMSON, stroke_width=4)
+        overflow_note = Text("text overflows", font=SERIF, color=CRIMSON,
+                             font_size=18, slant=ITALIC)
+        overflow_note.next_to(narrow_box, DOWN, buff=0.18)
+
+        before_group = VGroup(before_lbl, narrow_box, content_before,
+                              left_flag, right_flag, overflow_note)
+
+        self.play(FadeIn(before_lbl, shift=RIGHT * 0.2), run_time=0.5)
+        self.play(FadeIn(narrow_box), FadeIn(content_before), run_time=0.7)
+        self.wait(0.5)
+        self.play(Create(left_flag), Create(right_flag), run_time=0.6)
+        self.play(FadeIn(overflow_note), run_time=0.4)
+        self.wait(1.2)
+
+        # ── INSTRUCTION: human's spoken correction ─────────────
+        instruction_bg = Rectangle(width=8.5, height=0.72,
+                                   fill_color="#FFF8F8", fill_opacity=1,
+                                   stroke_color=CRIMSON, stroke_width=1.5)
+        instruction_bg.move_to(DOWN * 0.5)
+        instruction_txt = Text(
+            '"make the boxes wider to hold the text"',
+            font=SERIF, color=INK, font_size=24, slant=ITALIC,
+        )
+        instruction_txt.move_to(instruction_bg)
+        speaker_chip = LabelChip("CONDUCTOR", accent=CRIMSON, size=16)
+        speaker_chip.next_to(instruction_bg, LEFT, buff=0.2)
+
+        self.play(FadeIn(instruction_bg), FadeIn(instruction_txt),
+                  FadeIn(speaker_chip), run_time=0.8)
+        self.wait(1.5)
+
+        # ── AFTER: auto-sized box, text fits cleanly ────────────
+        after_lbl = SerifLabel("AFTER", accent=ACCENT_TEAL, size=24)
+        after_lbl.move_to(RIGHT * 3.8 + UP * 1.8)
+
+        t_after = Text(self.TOOL, font=DISPLAY, color=INK,
+                       font_size=self.FONT_SZ_TOOL, weight=BOLD)
+        r_after = Text(self.ROLE, font=SERIF, color=INK, font_size=self.FONT_SZ_ROLE)
+        content_after = VGroup(t_after, r_after).arrange(RIGHT, buff=0.25)
+        # auto_box: sizes to content with consistent padding
+        wide_box = auto_box(content_after, h_pad=0.28, v_pad=0.16,
+                            fill_color="#F5F5F5", stroke_color=ACCENT_TEAL, stroke_width=2)
+        wide_box.move_to(RIGHT * 3.8 + UP * 0.6)
+        content_after.move_to(wide_box)
+
+        ok_tick = Text("✓ fits", font=SERIF, color=ACCENT_TEAL, font_size=18)
+        ok_tick.next_to(wide_box, DOWN, buff=0.18)
+
+        self.play(FadeIn(after_lbl, shift=LEFT * 0.2), run_time=0.5)
+        self.play(FadeIn(wide_box), FadeIn(content_after), run_time=0.6)
+        self.play(FadeIn(ok_tick), run_time=0.4)
+        self.wait(1.2)
+
+        # ── SUMMARY LINE ────────────────────────────────────────
+        summary = SerifLabel("wrong note caught · machine fixed it", accent=INK, size=22)
+        summary.move_to(DOWN * 2.2)
+        self.play(FadeIn(summary, shift=UP * 0.1), run_time=0.7)
+        self.wait(4.0)
 
 
 # ──────────────────────────────────────────────────────────
