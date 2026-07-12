@@ -52,4 +52,27 @@ Agent fill loop:
 # beat's shot.type/source (+ prompt) in beat_sheet.json and re-run — card + ledger follow.
 ```
 
+## One folder = one video
+
+Every video is a single self-contained folder (typically under a book's or the toolkit's
+`youtube/<slug>/`): the `beat_sheet.json`, the rendered scenes (`manim/`, `media/`), audio
+(`mp3/`), the compiled cut, and the derived ledger (`todo.json`, `STATUS.md`). Builds happen in
+place; nothing reaches outside the folder except this shared `runtime/`. Copy the folder, point the
+pipeline at it, and it rebuilds.
+
+## The render contract — retry ≤5×, then move on, then the human redoes
+
+Claude Code runs the build; the human does not render scenes by hand. Per scene the base
+instruction is: **attempt the render, and on failure retry up to five times, fixing the error
+between attempts.** If a scene still fails after five tries, **skip it and continue to the next
+beat** — never stall the whole reel on one scene. The skipped beat stays a slate in the cut and
+`needs-fill` in the ledger.
+
+So a completed pass can contain a few unrendered or rough beats **on purpose**. The human is
+expected to review the cut and redo those specific beats — adjust the beat in `beat_sheet.json` (the
+heart) and re-run fill-in on it, or fix and re-render the scene. Running unattended (e.g.
+`claude --dangerously-skip-permissions`) is supported and fast; it just means the machine hands back
+a full draft with the hard beats flagged for your judgment. That review-and-redo pass is the
+conductor's work, not a failure of the build.
+
 Nothing here is called directly in normal use — go through `./art` at the repo root.
