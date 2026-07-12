@@ -19,7 +19,7 @@ deliberate line-on-text (strike/ring) is marked `_qc_intentional = True`.
 """
 import sys, json, pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).resolve()
-                       .parents[2] / "aspects/explainer/vox-explainer/manim"))
+                       .parents[2] / "aspects/explainer/explainer/manim"))
 from animated_graphics import *   # noqa: F401,F403  (re-exports manim + vox components)
 from animated_graphics import _quote_scene
 import numpy as np

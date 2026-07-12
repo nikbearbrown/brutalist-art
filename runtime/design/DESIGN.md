@@ -170,7 +170,7 @@ motion graphics are Montserrat. Don't set a whole graphic in serif out of habit.
 tracked-caps (was Inter mixed case); `SANS` (Inter) stays defined for backward compat
 with no live role. Existing reels pick up the new type on their next re-render.
 
-### Fonts are bundled in `books/vox/fonts/`
+### Fonts are bundled in `runtime/fonts/`
 ```
 fonts/EB_Garamond/   fonts/Inter/   fonts/Montserrat/   fonts/PT_Mono/   fonts/Lato/  (add for neu)
 ```
@@ -191,7 +191,7 @@ If a family is missing, Pango silently substitutes and the render looks wrong.
 - **`wcag_margin_check.py` (Gate W):** its `HEX` lock currently hard-codes the old
   default palette — make it **palette-aware** (read the active palette's tokens), or
   it flags every `teardown` reel as off-palette.
-- **`vox_compile.py` `find_font()`:** prefer bundled `books/vox/fonts/…`; add Lato.
+- **`compile.py` `find_font()`:** prefer bundled `runtime/fonts/…`; add Lato.
 - **Re-renders every reel** (color + default change). Cheap per reel — but all of them.
 
 **Open choice:** the `teardown` highlighter is a wash of the one accent (red @ ~14%).

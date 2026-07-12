@@ -22,7 +22,7 @@ Gate A rules (IMPORTANT):
 import sys, json, pathlib, os, numpy as np
 os.environ.setdefault("VOX_PALETTE", "teardown")
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[3]
-    / "vox/aspects/explainer/vox-explainer/manim"))
+    / "vox/aspects/explainer/explainer/manim"))
 from animated_graphics import *
 from animated_graphics import _quote_scene
 

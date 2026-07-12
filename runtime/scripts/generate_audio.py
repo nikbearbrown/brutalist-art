@@ -12,7 +12,7 @@ It also writes actual_duration_s and audio_file back into beat_sheet.json so the
 beat sheet stays the single source of truth. This duration is GROUND TRUTH for
 all downstream render timing — never estimate from word count.
 
-Requires:  pip install requests mutagen   (in the ~/ai venv)
+Requires:  pip install requests mutagen   (in your venv; see .env ART_VENV)
 Requires:  ELEVENLABS_API_KEY in the environment (or pass --api-key).
 
 Usage:
