@@ -55,8 +55,8 @@ type, not an optional extra. See the lead P0 in Theme 3; this reverses D4.
 - **Repo:** brutalist-art
 - **Evidence:** `runtime/scripts/run.sh:15-18` calls Gates A/W/B from `$QC="$ROOT/tmp/qc-tooling"` (`static_scene_check.py`, `wcag_margin_check.py`, `manim_layout_audit.py`); `repo/tmp/` does not exist, so all QC silently skips. `manim_layout_audit.py` actually lives at `skills/make/sketch-explainer/scripts/`.
 - **Why:** Docs promise pre-flight/pixel QC on every render; nothing is checked. A user believes broken layouts are gated when they aren't.
-- **Acceptance:** either vendor the three QC scripts into `runtime/` and repoint `$QC`, or `run.sh` + docs state QC is unavailable and fail loudly if `ART_QC=1` but tooling is absent.
-- **Effort:** M
+- **RESOLVED (live-verified):** the three gate scripts were located at `vox/tmp/qc-tooling/` and are now vendored to `runtime/qc/` (`static_scene_check.py`, `wcag_margin_check.py`, `manim_layout_audit.py`); `run.sh` `$QC` repointed to `runtime/qc`. Remaining: confirm Gates A/W/B pass on a real reel end-to-end.
+- **Effort:** M (mostly done)
 
 ### [P0] Author `skills/figures/figure-planner/SKILL.md` (D5 half-done)
 - **Repo:** brutalist-art
@@ -90,7 +90,7 @@ type, not an optional extra. See the lead P0 in Theme 3; this reverses D4.
 - **Repo:** brutalist-art
 - **Evidence:** `run.sh` REFUSED branch cites `reels/_example-comma-orphan/scenes.py` (no `reels/` dir); the outro branch guards on `$ROOT/bearbrown` which doesn't exist, so the "outro law" brand card never fires.
 - **Why:** The one actionable hint in the refusal path dead-ends; every reel ships without the mandated brand outro.
-- **Acceptance:** refusal points at `examples/slate-cut--base-rate/scenes.py`; `bearbrown/` vendored or the skip warns visibly.
+- **CORRECTION (live-verified):** the outro asset `vox/bearbrown/` is MEDIA (mp4 brand cards, 16x9 + 9x16) — the brief forbids committing large binaries, so it can't be vendored into git. Treat it like pantry media: `run.sh` should look for `$ART_BEARBROWN` (or `./bearbrown/`) and, if absent, print a visible 'outro skipped — set ART_BEARBROWN to your brand cards' warning instead of silently skipping. Refusal message repoint still applies.
 - **Effort:** S
 
 ---
@@ -148,6 +148,27 @@ type, not an optional extra. See the lead P0 in Theme 3; this reverses D4.
 
 ---
 
+### [P1] Add a silent-audio guard after narration (live failure mode)
+- **Repo:** brutalist-art
+- **Evidence:** live-verified failure — a revoked/wrong `ELEVENLABS_API_KEY` produces valid-SIZE mp3s at ~-91 dB (silent), not an error. The live fix was ad-hoc (`/tmp/regen_silent.py`) detecting via `ffmpeg -i <f> -af volumedetect` (mean_volume < -80 dB = silent). `runtime/scripts/generate_audio.py` has no such check.
+- **Why:** a whole reel can render with silent audio and look 'done'; the failure is invisible until playback.
+- **Acceptance:** `generate_audio.py` measures each mp3's mean volume and re-tries (or flags) any beat below -80 dB; a `--regen-silent` mode re-does only the silent ones.
+- **Effort:** S
+
+### [P2] Document the shell-key-overrides-.env footgun
+- **Repo:** brutalist-art
+- **Evidence:** live-verified — because scripts resolve `os.getenv` first (shell wins), a stale/revoked `ELEVENLABS_API_KEY` exported in the shell silently overrides the good value in `.env`; the live workaround was `unset ELEVENLABS_API_KEY` before running. Our `./art`/`run.sh` `.env` auto-load is also 'shell wins'.
+- **Why:** a user with an old key in their shell profile gets silent failures despite a correct `.env`.
+- **Acceptance:** the doctor warns when a key is set in BOTH the shell and `.env` with different values; INSTALL/README note the `unset` fix.
+- **Effort:** S
+
+### [P2] Coverage gap: only 2 of N pipelines are live-verified
+- **Repo:** all
+- **Evidence:** a live Claude Code session could describe only two pipelines end-to-end — `ch-lecture` (animated-deck) and `vox/youtube` (the vendored vox spine). The other video types (music-video, sketch-explainer, dance-video, lyric-*, story-film, etc.) were produced by **now-terminated sessions**; their process is only recoverable from the vendored source-skill scripts, not a live account.
+- **Why:** reconciliation is complete for 2 pipelines; the rest rest on the vendored artifacts being faithful (the gather was byte-identical, so likely fine, but unverified against a live run).
+- **Acceptance:** as each remaining type gets its Phase-5 example built + run once, mark it live-verified; note any script that doesn't actually run.
+- **Effort:** M
+
 ## Theme 3 — Toolkit: unbuilt features documented as present
 
 ### [P0] Build `./art fill-in <reel>` — auto-render every pipeline-makeable beat
@@ -161,8 +182,10 @@ type, not an optional extra. See the lead P0 in Theme 3; this reverses D4.
 - **Repo:** brutalist-art (missing) ← source in `unreal-reels/`
 - **Evidence:** the chapter → HTML deck → narrated lecture-video pipeline exists as two mature skills — `unreal-reels/skills/deck-lecture/` (13 scripts: `build_sections.py`, `extract_slides.py`, `align_captions.py`, `scaffold_remotion.py`, `prerender_deck.py`, … + a full Remotion template `src/Lecture.tsx`, `Doodle.tsx`, `EquationTangent.tsx`) and `unreal-reels/skills/lecture-assets/` + `unreal-reels/scripts/silent_run.py`. **34 finished lecture videos are shipped**: `cancer-nanomedicine/ch{01..12}-lecture` (12), `cancer-medicine/ch{01..11}-lecture` (11), `cancer-research/ch{01..11}-lecture` (11) — each folder carries `deck.html`, `beat_sheet.json`, `build_deck.py`, `make_audio.py`, `render.py`, `slides/`, and the rendered `.mp4`. `REFRACTOR-PLAN.md` D4 marked this "out of scope."
 - **Why:** this is the single most-produced video type in the family (34 outputs vs. a handful of others), it generates its own deliverable class (HTML lecture deck **and** narrated lecture video with idea-karaoke timing), and it is entirely absent from `./art --list`, CAPABILITIES, and the doctor. D4 was a scope error.
-- **Acceptance:** two first-class skills in the toolkit — a chapter→lecture-video pipeline and a deck→video pipeline (names TBD, e.g. `lecture-video` + `deck-video`) — vendored with their scripts + Remotion template under the de-vox'd runtime; a CAPABILITIES row + doctor row each; at least one of the 34 existing lectures restored as the example.
-- **Effort:** L (largest single addition; the code exists and works, so mostly vendoring + renaming + wiring)
+- **CORRECTION (live-verified 2026-07-12):** the pipeline that actually made the 34 lecture videos is **`skills/animated-deck/`**, NOT the Remotion `unreal-reels/skills/deck-lecture`. Real stack: per-chapter `make_audio.py` (stdlib urllib → ElevenLabs) → `skills/animated-deck/assets/build_deck_anim.py` (D3 + `d3.min.js` + `deck_anim.js`, emits self-contained `deck.html`) → `idea_align.py` (faster-whisper → `align.json` idea-karaoke timing) → `render_deck_video.py` (Playwright headless Chromium → per-slide clips → ffmpeg concat → mp4). Batch driver `books/batch_idea_highlight.py`. Artifacts: `anim.json` (D3 config), `align.json`, slides `S01..Snn` (a DIFFERENT schema than the vox `beat_sheet` B01..Bnn). `deck-lecture` (Remotion) is a separate/older variant — vendor `animated-deck`, the proven one.
+- **New deps this brings:** Playwright + headless Chromium, faster-whisper (already have), D3 (bundled `d3.min.js`). The `setup` doctor needs a `playwright` check + a lecture-video feature row.
+- **Acceptance:** vendor `skills/animated-deck/` (assets + the three scripts + batch driver) as a first-class `lecture-video` skill under the de-vox'd runtime; document the slide-schema deck `beat_sheet`; add a CAPABILITIES + doctor row (incl. Playwright); restore one of the 34 lectures as the example.
+- **Effort:** L
 
 
 ### [P1] `story-film` claims "built" scripts that were never vendored
@@ -259,6 +282,24 @@ type, not an optional extra. See the lead P0 in Theme 3; this reverses D4.
 - **Effort:** M
 
 ---
+
+## Theme 8 — QC & format coverage (live-verified 2026-07-12)
+
+### [P1] Add a general Remotion visual gate (parity with the Manim gates)
+- **Repo:** brutalist-art
+- **Evidence:** the visual gates in `runtime/qc/` (`static_scene_check`, `wcag_margin_check`, `manim_layout_audit`) parse `scenes.py` — they check **Manim** beats only. The only Remotion-side gate is `skills/make/component-showcase/remotion/scripts/riff_gate.py`, which is bench-specific, not a reel-beat check. So Remotion-rendered beats (terminal scenes, slate-filler, bookends) bypass contrast/overflow/layout QC that Manim beats get.
+- **Why:** a Remotion beat can ship with clipped text or off-palette color and nothing catches it, while the equivalent Manim beat would fail Gate W/B.
+- **Acceptance:** a Remotion visual gate — screenshot a rendered `media/<B>.mp4` (or the Remotion still) and run the same WCAG contrast + margin/overflow checks `wcag_margin_check.py` applies to Manim; wire it into `run.sh` for beats with `shot.type` REMOTION.
+- **Effort:** M
+
+### [P2] Surface the 16:9→9:16 converter through `./art`
+- **Repo:** brutalist-art
+- **Evidence:** the reformatter exists and is captured — `runtime/scripts/shorts.py` ("THE REFORMAT RULE (16:9 → 9:16)", crops to 1080×1920, only reformats slots that earn vertical time) — but `./art` has no `shorts` subcommand and CAPABILITIES/`setup` don't mention it, so a user can't discover it.
+- **Acceptance:** `./art shorts <reel>` runs `shorts.py`; a one-line CAPABILITIES note ("derive a 9:16 Shorts cut from any finished 16:9 reel").
+- **Effort:** S
+
+### [note] Script fact-checking is a GATE, not a tool (by design)
+- **Evidence:** `FACTCHECK.md` is a required, human-authored claims file that `run.sh` GATE F enforces (must exist alongside `SHOTLIST.md`/`PROMPTS.md`); there is no automated fact-checker script, and there shouldn't be — fact-checking is the human's accountability in the labor split. This is captured as-is; documented here so it isn't mistaken for a missing tool.
 
 ## Theme 7 — Examples & publishing
 

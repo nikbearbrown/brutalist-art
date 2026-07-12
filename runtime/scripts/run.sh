@@ -10,7 +10,7 @@
 #
 # Skips any beat whose slot is already filled (manim/<B>.mp4 or media/<B>.mp4).
 #
-# QC GATES (tmp/qc-tooling — advisory tools, wired here as hard gates):
+# QC GATES (qc/ — advisory tools, wired here as hard gates):
 #   Gate A (pre-flight, render-free): static_scene_check.py per pending scene.
 #   Gate B (post-render, pixel-true): manim_layout_audit.py --png per scene.
 #   Skip both with ART_QC=0.
@@ -42,7 +42,7 @@ elif [ "$(basename "$REEL_DIR")" != "vox-electoral-college" ]; then
   echo "[run] beat; see reels/_example-comma-orphan/scenes.py)."
   exit 2
 fi
-QC="$ROOT/tmp/qc-tooling"
+QC="$ROOT/qc"
 mkdir -p "$REEL_DIR/manim" "$REEL_DIR/media" "$REEL_DIR/pantry" "$REEL_DIR/images" "$REEL_DIR/mp4"
 
 SCENES=$(python3 -c "
