@@ -31,13 +31,13 @@ hai <input>
 
 ## Output directory convention
 
-| Source path | hai- output directory |
-|---|---|
-| `<book>/youtube/<slug>/` | `<book>/youtube/hai-<slug>/` |
-| `<book>/lectures/<chapter>-lecture/` | `<book>/hai-lectures/<chapter>-lecture/` |
+| Source path | hai- output directory | Beat sheet filename |
+|---|---|---|
+| `<book>/youtube/<slug>/` | `<book>/youtube/hai-<slug>/` | `beat_sheet.hai.json` |
+| `<book>/lectures/<chapter>-lecture/` | `<book>/hai-lectures/<chapter>-lecture/` | `beat_sheet.hai.json` |
 
 Inside that `hai-` directory:
-- `beat_sheet.json` — the HAI cut (NOT `beat_sheet.hai.json`)
+- `beat_sheet.hai.json` — the HAI cut
 - Lecture build scripts copied from source: `build_deck.py`, `make_audio*.py`, `render.py`
 
 ---
@@ -183,10 +183,10 @@ From the `hai-` directory, build is audience-namespaced:
 
 ```bash
 # Audio (Kokoro default)
-python3 runtime/scripts/generate_audio_kokoro.py <hai-dir>/beat_sheet.json
+python3 runtime/scripts/generate_audio_kokoro.py <hai-dir>/beat_sheet.hai.json
 
 # Audio (ElevenLabs override — set engine:"elevenlabs" first)
-python3 runtime/scripts/generate_audio.py <hai-dir>/beat_sheet.json
+python3 runtime/scripts/generate_audio.py <hai-dir>/beat_sheet.hai.json
 
 # Lectures: deck + render from the copied build scripts
 python3 <hai-dir>/build_deck.py

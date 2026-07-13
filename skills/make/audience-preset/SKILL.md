@@ -23,8 +23,10 @@ and remain the authoritative spec for each brand.
 ## The flow (identical for every brand)
 
 1. **Fork the sheet** — `python3 runtime/scripts/brand_variant.py <REEL> <brand>`
-   scaffolds `beat_sheet.<brand>.json` from the canonical sheet. The canonical
-   `beat_sheet.json` is NEVER modified.
+   scaffolds the variant from the canonical sheet. The canonical `beat_sheet.json`
+   is NEVER modified. For `hai` and `medhavy`: writes into a new `<brand>-<slug>/`
+   directory with `beat_sheet.<brand>.json` inside it + copies of lecture build
+   scripts. For other brands: writes `beat_sheet.<brand>.json` as a sibling file.
 2. **Rewrite the register** — narration rewritten in the brand's register
    (see `brands/<brand>.md`), same beats, same facts.
 3. **Optional tangent** — at most one brand-flavored tangent beat, if the brand

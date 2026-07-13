@@ -42,11 +42,11 @@ AUD = {
     "hai": {"suffix": "hai", "audience": "HAI", "voice_env": "ELEVENLABS_VOICE_HUMANITARIANS",
             "palette": "humanitarians", "register": "Pragmatist", "charter": "HAI.md",
             "author_section": "Humanitarians AI",
-            "engine": "kokoro", "voice_kokoro": "af_heart"},
+            "engine": "kokoro", "voice_kokoro": "af_heart", "use_dir": True},
     "medhavy": {"suffix": "medhavy", "audience": "MEDHAVY", "voice_env": "ELEVENLABS_VOICE_MEDHAVY",
                 "palette": "medhavy", "register": "Wonder", "charter": "MEDHAVY.md",
                 "author_section": "Medhavy.com",
-                "engine": "kokoro", "voice_kokoro": "af_kore"},
+                "engine": "kokoro", "voice_kokoro": "af_kore", "use_dir": True},
     "nbb": {"suffix": "nbb", "audience": "NikBearBrown", "voice_env": "ELEVENLABS_VOICE_NIKBEARBROWN",
             "palette": "teardown", "register": "Teardown", "charter": "NIKBEARBROWN.md",
             "author_section": "NikBearBrown"},
@@ -58,14 +58,14 @@ AUD = {
 }
 
 
-def get_hai_dir(reel: Path) -> Path:
-    """Return the hai- output directory for a reel or lecture source path."""
+def get_brand_dir(reel: Path, suffix: str) -> Path:
+    """Return the <suffix>- output directory for brands that use directory isolation."""
     parts = list(reel.parts)
     if 'lectures' in parts:
         idx = parts.index('lectures')
         book_dir = Path(*parts[:idx])
-        return book_dir / 'hai-lectures' / reel.name
-    return reel.parent / f'hai-{reel.name}'
+        return book_dir / f'{suffix}-lectures' / reel.name
+    return reel.parent / f'{suffix}-{reel.name}'
 
 
 def copy_build_scripts(src: Path, dst: Path) -> list:
@@ -102,10 +102,10 @@ def main():
     if not src.exists():
         sys.exit(f"[variant] no beat_sheet.json in {reel}")
 
-    # hai writes into a new hai- directory; all other brands use a sibling file
-    if a.audience == "hai":
-        out_dir = get_hai_dir(reel)
-        out = out_dir / "beat_sheet.json"
+    # hai + medhavy write into a new brand- directory; other brands use a sibling file
+    if cfg.get("use_dir"):
+        out_dir = get_brand_dir(reel, cfg["suffix"])
+        out = out_dir / f"beat_sheet.{cfg['suffix']}.json"
         if out.exists() and not a.force:
             sys.exit(f"[variant] {out} already exists (use --force to reset it from canonical)")
         out_dir.mkdir(parents=True, exist_ok=True)
@@ -180,18 +180,20 @@ def main():
     kokoro_note = (f"  engine={cfg['engine']}  voice_kokoro={cfg['voice_kokoro']}"
                    if cfg.get("engine") else "")
 
-    if a.audience == "hai":
+    if cfg.get("use_dir"):
         copied = copy_build_scripts(reel, out_dir)
         if copied:
             print(f"[variant] copied build scripts: {', '.join(sorted(copied))}")
         beat_count = len(sheet.get("beats", []))
         seg_count = len(sheet.get("segments", []))
         content_note = (f"{beat_count} beats" if beat_count else f"{seg_count} segments")
+        skill_ref = (f"skills/make/{a.audience}/SKILL.md"
+                     if a.audience == "hai"
+                     else f"audience-preset brands/{a.audience}.md")
         print(f"[variant] wrote {out}  audience={cfg['audience']}  register={cfg['register']}  "
               f"palette={cfg['palette']}  11labs_voice={voice_note}{kokoro_note}")
-        print(f"[variant] {content_note} to rewrite in Pragmatist — "
-              f"next: Claude Code follows skills/make/hai/SKILL.md "
-              f"(rewrite + tangent + CLI exercise + outro)")
+        print(f"[variant] {content_note} to rewrite in {cfg['register']} — "
+              f"next: Claude Code follows {skill_ref}")
     else:
         beat_count = len(sheet.get("beats", []))
         print(f"[variant] wrote {out.name}  audience={cfg['audience']}  register={cfg['register']}  "
