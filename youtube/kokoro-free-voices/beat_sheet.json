@@ -28,7 +28,7 @@
    "ElevenLabs",
    "Suno"
   ],
-  "total_estimated_duration_seconds": 154
+  "total_estimated_duration_seconds": 16.38
  },
  "beats": [
   {
@@ -59,8 +59,8 @@
    "estimated_duration_s": 15,
    "act": "INTRO",
    "t_start": 0.0,
-   "actual_duration_s": 0,
-   "audio_file": "",
+   "actual_duration_s": 16.38,
+   "audio_file": "mp3/beat-B00.mp3",
    "engine": "elevenlabs"
   },
   {
@@ -87,8 +87,8 @@
    "estimated_duration_s": 15,
    "act": "PUBLISH",
    "t_start": 15.0,
-   "actual_duration_s": 0,
-   "audio_file": "",
+   "actual_duration_s": 15.06,
+   "audio_file": "mp3/beat-B01.mp3",
    "engine": "kokoro",
    "voice": "af_bella"
   },
@@ -116,8 +116,8 @@
    "estimated_duration_s": 15,
    "act": "PUBLISH",
    "t_start": 30.0,
-   "actual_duration_s": 0,
-   "audio_file": "",
+   "actual_duration_s": 14.63,
+   "audio_file": "mp3/beat-B02.mp3",
    "engine": "kokoro",
    "voice": "af_sarah"
   },
@@ -145,8 +145,8 @@
    "estimated_duration_s": 16,
    "act": "PUBLISH",
    "t_start": 45.0,
-   "actual_duration_s": 0,
-   "audio_file": "",
+   "actual_duration_s": 12.74,
+   "audio_file": "mp3/beat-B03.mp3",
    "engine": "kokoro",
    "voice": "am_adam"
   },
@@ -180,8 +180,8 @@
    "estimated_duration_s": 13,
    "act": "PUBLISH",
    "t_start": 61.0,
-   "actual_duration_s": 0,
-   "audio_file": "",
+   "actual_duration_s": 12.44,
+   "audio_file": "mp3/beat-B04.mp3",
    "engine": "kokoro",
    "voice": "am_michael"
   },
@@ -196,7 +196,7 @@
     "engine": "manim",
     "production_viz": {
      "label": "Emma · B- · the roster",
-     "mechanic": "Name card: EMMA, grade chip B-, with a small Union Jack tick (British English). Behind it the full roster grid: ~28 voice tiles in two columns (American af_/am_, British bf_/bm_), each with its grade chip — A- to F+ visible at a glance, the four heard-so-far tiles highlighted. Caption: 'casting is taste — and taste is free.'",
+     "mechanic": "Name card: EMMA, grade chip B-, with a small Union Jack tick (British English). Behind it the English roster grid: 28 voice tiles (20 American af_/am_, 8 British bf_/bm_), each with its grade chip A- to F+, the four heard-so-far tiles highlighted. A footer strip lists the wider pack: 54 voices · 9 languages (JA 5 · ZH 8 · ES 3 · FR 1 · HI 4 · IT 2 · PT 3) with an honest small-print note: 'non-English support is thinner.' Caption: 'casting is taste — and taste is free.'",
      "colors": [
       "#FFFFFF",
       "#2A1A0E",
@@ -205,12 +205,12 @@
      ]
     }
    },
-   "narration_text": "I'm Emma — one of the British voices. There are about twenty-eight of us, American and British, graded from A to F by the pack itself. You've just heard an A minus, a C plus, and an F plus. Casting is taste — and now taste is free.",
-   "estimated_duration_s": 14,
+   "narration_text": "I'm Emma — one of the British voices. There are twenty-eight of us in English: twenty American, eight British, graded A to F by the pack itself. And the wider pack speaks nine languages — fifty-four voices in all. You've just heard an A minus, a C plus, and an F plus. Casting is taste — and now taste is free.",
+   "estimated_duration_s": 17,
    "act": "PUBLISH",
    "t_start": 74.0,
-   "actual_duration_s": 0,
-   "audio_file": "",
+   "actual_duration_s": 12.69,
+   "audio_file": "mp3/beat-B05.mp3",
    "engine": "kokoro",
    "voice": "bf_emma"
   },
@@ -238,8 +238,8 @@
    "estimated_duration_s": 13,
    "act": "PUBLISH",
    "t_start": 88.0,
-   "actual_duration_s": 0,
-   "audio_file": "",
+   "actual_duration_s": 13.67,
+   "audio_file": "mp3/beat-B06.mp3",
    "engine": "kokoro",
    "voice": "bm_george"
   },
@@ -267,8 +267,8 @@
    "estimated_duration_s": 14,
    "act": "PUBLISH",
    "t_start": 101.0,
-   "actual_duration_s": 0,
-   "audio_file": "",
+   "actual_duration_s": 11.29,
+   "audio_file": "mp3/beat-B07.mp3",
    "engine": "kokoro",
    "voice": "am_puck"
   },
@@ -296,8 +296,8 @@
    "estimated_duration_s": 9,
    "act": "PUBLISH",
    "t_start": 115.0,
-   "actual_duration_s": 0,
-   "audio_file": "",
+   "actual_duration_s": 5.85,
+   "audio_file": "mp3/beat-B08.mp3",
    "engine": "kokoro",
    "voice": "am_santa"
   },
@@ -325,8 +325,8 @@
    "estimated_duration_s": 17,
    "act": "PUBLISH",
    "t_start": 124.0,
-   "actual_duration_s": 0,
-   "audio_file": "",
+   "actual_duration_s": 16.6,
+   "audio_file": "mp3/beat-B09.mp3",
    "engine": "kokoro",
    "voice": "af_bella"
   },
@@ -354,8 +354,8 @@
    "estimated_duration_s": 13,
    "act": "OUTRO",
    "t_start": 141.0,
-   "actual_duration_s": 0,
-   "audio_file": "",
+   "actual_duration_s": 11.33,
+   "audio_file": "mp3/beat-B99.mp3",
    "engine": "kokoro",
    "voice": "bf_emma"
   }
