@@ -49,7 +49,7 @@ AUD = {
                 "engine": "kokoro", "voice_kokoro": "af_kore", "use_dir": True},
     "nbb": {"suffix": "nbb", "audience": "NikBearBrown", "voice_env": "ELEVENLABS_VOICE_NIKBEARBROWN",
             "palette": "teardown", "register": "Teardown", "charter": "NIKBEARBROWN.md",
-            "author_section": "NikBearBrown"},
+            "author_section": "NikBearBrown", "engine": "elevenlabs", "use_dir": True},
     "musinique": {"suffix": "musinique", "audience": "MUSINIQUE",
                   "voice_env": "ELEVENLABS_VOICE_MUSINIQUE",
                   "palette": "musinique", "register": "Teardown", "charter": "MUSINIQUE.md",
@@ -140,11 +140,13 @@ def main():
         meta["engine"] = cfg["engine"]
     if cfg.get("voice_kokoro"):
         meta["voice_kokoro"] = cfg["voice_kokoro"]
-    # HAI: record house typography in the sheet
+    # Record house typography for brands that use directory isolation
     if a.audience == "hai":
         meta["typography"] = {"serif": "EB Garamond", "sans": "Montserrat"}
+    elif a.audience == "nbb":
+        meta["typography"] = {"display": "Montserrat", "serif": "EB Garamond", "mono": "PT Mono"}
 
-    # variant_todo — hai has extra required steps (CLI exercise + outro)
+    # variant_todo — hai and nbb have brand-specific required beats
     if a.audience == "hai":
         meta["_variant_todo"] = [
             "rewrite every beat narration_text/text in the Pragmatist register "
@@ -157,6 +159,19 @@ def main():
             f"add/replace outro with Humanitarians AI outro from {meta['outro_source']} (LAST beat)",
             "verify ending order: body → [tangent] → [CLI exercise] → [outro]",
             "then build: generate_audio_kokoro.py → palette=humanitarians → compile",
+        ]
+    elif a.audience == "nbb":
+        meta["_variant_todo"] = [
+            "rewrite every beat narration_text/text in the Teardown register "
+            "(voices/teardown/VOICE.md + brands/nbb.md) — take it apart, explain how each piece "
+            "works, judge the design choices; voice only, facts unchanged",
+            "add LLM exercise as the SECOND-TO-LAST beat "
+            "(paste-ready prompt for Claude/ChatGPT/Gemini + dig-deeper follow-up; "
+            "see skills/make/nbb/SKILL.md §Step 3)",
+            f"add/replace outro with NikBearBrown outro from {meta['outro_source']} (LAST beat)",
+            "verify ending order: body → [LLM exercise] → [outro]",
+            "GATE P before audio spend — then build: generate_audio.py (ElevenLabs only, no Kokoro) "
+            "→ palette=teardown → compile",
         ]
     else:
         meta["_variant_todo"] = [
@@ -177,8 +192,12 @@ def main():
             b.pop("actual_duration_s", None)
 
     out.write_text(json.dumps(sheet, indent=1, ensure_ascii=False))
-    kokoro_note = (f"  engine={cfg['engine']}  voice_kokoro={cfg['voice_kokoro']}"
-                   if cfg.get("engine") else "")
+    if cfg.get("voice_kokoro"):
+        kokoro_note = f"  engine={cfg['engine']}  voice_kokoro={cfg['voice_kokoro']}"
+    elif cfg.get("engine"):
+        kokoro_note = f"  engine={cfg['engine']}"
+    else:
+        kokoro_note = ""
 
     if cfg.get("use_dir"):
         copied = copy_build_scripts(reel, out_dir)
@@ -188,7 +207,7 @@ def main():
         seg_count = len(sheet.get("segments", []))
         content_note = (f"{beat_count} beats" if beat_count else f"{seg_count} segments")
         skill_ref = (f"skills/make/{a.audience}/SKILL.md"
-                     if a.audience == "hai"
+                     if a.audience in ("hai", "nbb")
                      else f"audience-preset brands/{a.audience}.md")
         print(f"[variant] wrote {out}  audience={cfg['audience']}  register={cfg['register']}  "
               f"palette={cfg['palette']}  11labs_voice={voice_note}{kokoro_note}")
