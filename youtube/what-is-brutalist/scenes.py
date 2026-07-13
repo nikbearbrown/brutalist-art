@@ -579,14 +579,13 @@ class B08B_FixTheBoxes(Scene):
 # ──────────────────────────────────────────────────────────
 class B09_BeatSheetHeart(Scene):
     def construct(self):
-        # Central JSON "heart"
-        heart_box = Rectangle(width=3.6, height=1.8, fill_color=GROUND, fill_opacity=1,
-                              stroke_color=CRIMSON, stroke_width=3)
+        # Build text stack first — box sized to fit at render time
         heart_lbl = Text("beat_sheet.json", font="PT Mono", color=INK, font_size=28, weight=BOLD)
-        heart_lbl.move_to(heart_box.get_center() + UP * 0.3)
         beat_rows = Text("B01 · B02 · … · B14", font="PT Mono", color=CRIMSON, font_size=18)
-        beat_rows.move_to(heart_box.get_center() + DOWN * 0.3)
-        heart = VGroup(heart_box, heart_lbl, beat_rows)
+        text_stack = VGroup(heart_lbl, beat_rows).arrange(DOWN, buff=0.22)
+        heart_box = surround_box(text_stack, buff=0.32,
+                                 fill_color=GROUND, stroke_color=CRIMSON, stroke_width=3)
+        heart = VGroup(heart_box, text_stack)
 
         # Three derived views with arrows
         targets = [
@@ -597,7 +596,8 @@ class B09_BeatSheetHeart(Scene):
         arrows_and_lbls = VGroup()
         for pos, label, col in targets:
             direction = pos / np.linalg.norm(pos)
-            start = heart_box.get_center() + direction * 1.9
+            # 2.5 clears the box boundary for any plausible text width
+            start = heart_box.get_center() + direction * 2.5
             end = heart_box.get_center() + pos * 0.82
             arr = Arrow(start, end, stroke_color=col, stroke_width=2.5,
                         tip_length=0.22)
@@ -626,9 +626,7 @@ class B09_BeatSheetHeart(Scene):
 # ──────────────────────────────────────────────────────────
 class B11_RequestCardPantry(Scene):
     def construct(self):
-        # Step 1: Request card (unfilled beat placeholder)
-        card_box = Rectangle(width=3.8, height=2.0, fill_color="#FFF8F8", fill_opacity=1,
-                             stroke_color=CRIMSON, stroke_width=2.5, stroke_opacity=0.9)
+        # Step 1: Request card — arrange contents first, box sized to fit
         card_icon = Text("[ ? ]", font="PT Mono", color=CRIMSON, font_size=40)
         card_lbl = Text("REQUEST CARD", font=DISPLAY, color=CRIMSON, font_size=20, weight=BOLD)
         card_prompt = Text("suggested prompt:", font=SERIF, color=SLATE, font_size=18, slant=ITALIC)
@@ -636,7 +634,9 @@ class B11_RequestCardPantry(Scene):
                                  color=INK, font_size=16)
         card_contents = VGroup(card_icon, card_lbl, card_prompt, card_prompt_text)
         card_contents.arrange(DOWN, buff=0.18)
-        card_contents.move_to(card_box)
+        card_box = surround_box(card_contents, buff=0.30,
+                                fill_color="#FFF8F8", stroke_color=CRIMSON,
+                                stroke_width=2.5)
         request_card = VGroup(card_box, card_contents)
         request_card.shift(LEFT * 3.6 + UP * 0.3)
 

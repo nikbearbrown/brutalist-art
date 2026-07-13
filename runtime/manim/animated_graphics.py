@@ -97,6 +97,21 @@ def auto_box(content, h_pad=0.32, v_pad=0.22, fill_color=GROUND, fill_opacity=1,
     return box
 
 
+def surround_box(content, buff=0.28, fill_color=GROUND, fill_opacity=1,
+                 stroke_color=INK, stroke_width=2, **rect_kw):
+    """SurroundingRectangle sized to *content* at render time — use when the
+    content width/height is not known until Manim lays it out (e.g. a VGroup
+    of multiple text lines). Safer than auto_box for multi-line stacks.
+    Compose with: VGroup(surround_box(stack), stack).
+    """
+    return SurroundingRectangle(
+        content, buff=buff,
+        fill_color=fill_color, fill_opacity=fill_opacity,
+        stroke_color=stroke_color, stroke_width=stroke_width,
+        **rect_kw,
+    )
+
+
 # ---------------------------------------------------------------- mobjects
 
 class IsotypeGrid(VGroup):

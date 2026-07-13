@@ -183,6 +183,47 @@ beat id · shot type · engine (Manim/Remotion/AI) · start time · duration.
 
 ---
 
+## HUMAN FEEDBACK — 2026-07-12
+
+> "The box fix was discussed but not actually applied — B09 (beat_sheet.json) and B11 (request
+> card) still overflow. Make the text fit the boxes, or make the boxes wider. And verify the render
+> — don't tell me it's fixed until you've looked at the frame."
+
+Root cause: auto_box() was added and applied to B08/B03, but B09 and B11 were not updated —
+their boxes are still fixed-width Rectangles (3.6 and 3.8 units) sized to the header text only,
+not the full stacked VGroup. Fixing with SurroundingRectangle on the full content VGroup, and
+adding surround_box() to animated_graphics.py so the pattern is shared.
+
+---
+
+## REFACTOR FEEDBACK — 2026-07-12 (box overflow: real fix)
+
+### Toolkit change
+- `runtime/manim/animated_graphics.py`: added `surround_box(content, buff, ...)` — thin wrapper
+  around SurroundingRectangle with teardown-style fill/stroke defaults. Use whenever box must fit
+  a multi-line VGroup whose width is unknown until Manim lays it out.
+
+### Scenes fixed
+- **B09_BeatSheetHeart**: text_stack = VGroup(heart_lbl, beat_rows).arrange(DOWN);
+  heart_box = surround_box(text_stack). Arrow offsets increased to 2.5 to clear wider box.
+- **B11_RequestCardPantry**: card_contents arranged first; card_box = surround_box(card_contents).
+
+### Frame verification (mandatory — every box beat inspected)
+- B09 mid-frame (4s): "beat_sheet.json" + "B01 · B02 · … · B14" both inside red border. ✓
+- B11 mid-frame (7s): all 4 lines incl. `"archival aerial footage, city"` inside card. ✓
+- B08 mid-frame (5s): Manim/Remotion/ffmpeg tool cards — all text inside borders. ✓
+- B03 mid-frame (5s): "funny?" and "interesting?" question cards — clean. ✓
+
+### Recompile
+- 18/18 beats filled · 215.0s (unchanged — no audio re-gen needed)
+- Deliverable: `what-is-brutalist-review.mp4`
+
+### RESULT
+No text pixel crosses a box border on any beat. surround_box() is now the canonical card helper
+for multi-line stacks in this repo.
+
+---
+
 ## REFACTOR FEEDBACK — 2026-07-12 (B00B review label beat)
 
 ### New beat B00B

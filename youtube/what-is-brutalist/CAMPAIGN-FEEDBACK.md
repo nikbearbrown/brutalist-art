@@ -62,3 +62,31 @@ whether pacing feels natural or whether the narration should be trimmed.
 - Deliverable: `what-is-brutalist-review.mp4`
 
 ---
+
+## 2026-07-12 — Box overflow: real fix (B09 + B11)
+
+### Feedback (verbatim)
+> "The box fix was discussed but not actually applied — B09 (beat_sheet.json) and B11 (request
+> card) still overflow. Make the text fit the boxes, or make the boxes wider. And verify the render
+> — don't tell me it's fixed until you've looked at the frame."
+
+### Root cause
+B09 and B11 still had fixed-width Rectangles (3.6 and 3.8 units) from the original build.
+auto_box() was only applied to B08 and B03 in the previous iteration.
+
+### Fix
+- `animated_graphics.py`: added `surround_box()` — SurroundingRectangle with teardown defaults.
+  Canonical helper for any multi-line stack whose render width is unknown at code-write time.
+- `scenes.py B09`: text_stack arranged first, heart_box = surround_box(text_stack)
+- `scenes.py B11`: card_contents arranged first, card_box = surround_box(card_contents)
+
+### Frame verification
+- B09 @ 4s: both lines inside box ✓
+- B11 @ 7s: all 4 lines including quoted line inside box ✓
+- B08 @ 5s: all tool cards clean ✓
+- B03 @ 5s: all question cards clean ✓
+
+### Recompile
+- 18/18 beats · 215.0s · no audio re-gen needed
+
+---
