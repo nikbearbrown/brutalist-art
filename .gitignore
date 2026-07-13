@@ -27,3 +27,10 @@ examples/*/media/
 examples/*/clips/
 examples/*/mp3/
 examples/*/mp4/
+
+# YouTube OAuth credentials + per-channel ledger (secrets/state — never commit)
+youtube/credentials/
+youtube/*/images/
+examples/*/images/
+youtube/*/*.png
+examples/*/*.png

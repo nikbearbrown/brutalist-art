@@ -98,11 +98,12 @@ def main():
         row("higgsfield", "(CLI login)", "warn", f"status check failed: {e}")
 
     # ── YouTube OAuth (1 free quota unit) ────────────────────────────────────
-    cs = os.environ.get("ART_YOUTUBE_CLIENT_SECRET", "./client_secret.json")
-    tok = os.environ.get("ART_YOUTUBE_TOKEN", "./youtube_token.json")
-    cs_p, tok_p = (REPO / cs), (REPO / tok)
+    chan = os.environ.get("ART_YOUTUBE_CHANNEL", "nikbearbrown")
+    cred = REPO / "youtube" / "credentials" / chan
+    cs_p  = Path(os.environ["ART_YOUTUBE_CLIENT_SECRET"]) if os.environ.get("ART_YOUTUBE_CLIENT_SECRET") else cred / "client_secret.json"
+    tok_p = Path(os.environ["ART_YOUTUBE_TOKEN"]) if os.environ.get("ART_YOUTUBE_TOKEN") else cred / "youtube_token.json"
     if not cs_p.exists():
-        row("YouTube", "OAuth", "unset", f"no client_secret at {cs} (publishing disabled)")
+        row("YouTube", "OAuth", "unset", f"no client_secret at youtube/credentials/{chan}/ (publishing disabled)")
     else:
         try:
             from google.oauth2.credentials import Credentials  # type: ignore

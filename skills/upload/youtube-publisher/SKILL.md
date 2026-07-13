@@ -146,3 +146,11 @@ titles or by uploading in the intended order.
 
 See `references/medhavy-brand.md` for the fixed brand constants and
 `references/youtube-setup.md` for the one-time OAuth setup.
+
+## Credentials (per channel)
+
+OAuth credentials live in `youtube/credentials/<channel>/` (gitignored), each holding
+`client_secret.json`, `youtube_token.json`, and `youtube_publish_ledger.json`. Choose the channel
+with `ART_YOUTUBE_CHANNEL` (default `nikbearbrown`) or `publish_playlist.py --channel <name>`.
+Most people have one channel; add more folders for multiple. `./art keys` validates the selected
+channel's OAuth for free.

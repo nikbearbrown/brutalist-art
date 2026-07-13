@@ -35,7 +35,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
-import json
+import os, json
 import sys
 import time
 from pathlib import Path
@@ -153,9 +153,11 @@ def main() -> int:
     ap.add_argument("--root", help="scan this dir for video folders (each has beat_sheet.json)")
     ap.add_argument("--playlist", default="Quantum Mechanics Volume 1 (NotebookLM)")
     ap.add_argument("--privacy", choices=["unlisted", "public"], default="unlisted")
-    ap.add_argument("--client", default="client_secret.json")
-    ap.add_argument("--token", default="youtube_token.json")
-    ap.add_argument("--ledger", default="publish_ledger.json")
+    ap.add_argument("--channel", default=os.getenv("ART_YOUTUBE_CHANNEL", "nikbearbrown"),
+                    help="channel key → youtube/credentials/<channel>/ (default: $ART_YOUTUBE_CHANNEL or nikbearbrown)")
+    ap.add_argument("--client", default=None)
+    ap.add_argument("--token", default=None)
+    ap.add_argument("--ledger", default=None)
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
@@ -177,11 +179,18 @@ def main() -> int:
     if args.dry_run:
         print("[yt] dry-run — authenticating read-only preview")
 
-    youtube = get_service(Path(args.client).resolve(), Path(args.token).resolve())
+    _repo = Path(os.environ.get("ART_HOME") or Path(__file__).resolve().parents[3])
+    _cred = _repo / "youtube" / "credentials" / args.channel
+    client_p = Path(args.client).resolve() if args.client else _cred / "client_secret.json"
+    token_p  = Path(args.token).resolve()  if args.token  else _cred / "youtube_token.json"
+    if not client_p.exists():
+        sys.exit(f"[yt] no client_secret at {client_p} — put OAuth creds in "
+                 f"youtube/credentials/{args.channel}/ (see .env.example)")
+    youtube = get_service(client_p, token_p)
     playlist_id = find_or_create_playlist(youtube, args.playlist, args.privacy, args.dry_run)
     in_pl = already_in_playlist(youtube, playlist_id) if (playlist_id and not args.dry_run) else {}
 
-    ledger_path = Path(args.ledger).resolve()
+    ledger_path = (Path(args.ledger).resolve() if args.ledger else _cred / "youtube_publish_ledger.json")
     ledger = json.loads(ledger_path.read_text()) if ledger_path.exists() else {}
 
     for pos, folder in enumerate(folders):
