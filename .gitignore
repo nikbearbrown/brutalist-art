@@ -34,3 +34,8 @@ youtube/*/images/
 examples/*/images/
 youtube/*/*.png
 examples/*/*.png
+
+# scratch/bench dirs (session housekeeping)
+/_to_delete/
+/media/
+runtime/remotion/_bench/
