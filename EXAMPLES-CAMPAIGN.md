@@ -132,6 +132,7 @@ Legend: 🔑 keys needed · 📁 existing folder to rebuild-and-verify · ✨ ne
 | 17 | recitation-film | recitation-film | ✨ (+faster-whisper) | ⬜ |
 | 18 | **deck-lecture** | deck-lecture | ✨ (vendor `animated-deck`; +Playwright) | ⬜ | restore one of the 34 lectures as the example |
 | 19 | story-film (narration) | story-film | 📁 `examples/00-story-film-demos` | ⬜ |
+| 19a | **Suno vs 11 Labs Cost Test** | (voice-engine A/B) | ✨ `youtube/suno-vs-11-labs-cost-test` | ⬜ | THE VIDEO IS THE EXPERIMENT: its own narration voiced both ways (generate_audio.py vs ./art suno → pantry stem → ./art suno-slice), real credits/time in COST-LOG.md, human picks the voice that ships. BUILD-PROMPT.md ready. |
 
 ### Tier 2 — higgsfield CLI (AI image/video)
 | # | Video | Skill | Folder | Status |
