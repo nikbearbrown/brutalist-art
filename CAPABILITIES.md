@@ -35,12 +35,26 @@ narration · **$$** AI image/video (higgsfield CLI).
 | Layer | Default | Override |
 |---|---|---|
 | **TTS engine** | Kokoro (free, local — `generate_audio_kokoro.py`) | `metadata.engine:"elevenlabs"` → routes to `generate_audio.py` |
-| **Kokoro voice** | `am_onyx` (American English male) | `metadata.voice_kokoro` (any `--list-voices` name) or per-beat `beat.voice` |
+| **Kokoro voice** | `af_heart` (global fallback; brand scaffolders write per-brand voice) | `metadata.voice_kokoro` (any `--list-voices` name) or per-beat `beat.voice` |
 | **ElevenLabs voice** | `ELEVENLABS_VOICE_NIKBEARBROWN` env var | `metadata.voice_id` (any ElevenLabs voice ID) |
 | **Narration style** | Sardonic (`voices/sardonic/VOICE.md`) — dry, spare, capable-adult | `metadata.register:"Teardown"` for the full Feynman × MKBHD design-critic register |
 
 Per-beat overrides (`beat.engine`, `beat.voice`) always win over metadata defaults, so a sheet
 can mix engines and voices — e.g. one beat in the human's ElevenLabs clone, the rest in Kokoro.
+
+### Per-brand Kokoro voice defaults (written by `brand_variant.py`)
+
+| Brand | Kokoro voice | ElevenLabs override (env var) | Notes |
+|---|---|---|---|
+| **brutalist / nbb** | `am_onyx` | `ELEVENLABS_VOICE_NIKBEARBROWN` | NikBearBrown channel default |
+| **hai** (Humanitarians AI) | `af_heart` | `ELEVENLABS_VOICE_HUMANITARIANS` | Pragmatist register |
+| **medhavy** | `af_kore` | `ELEVENLABS_VOICE_MEDHAVY` | Wonder register |
+| **musinique** | `am_puck` | `ELEVENLABS_VOICE_MUSINIQUE` | Teardown register; monochrome/Inter palette |
+| **neu** | *(ElevenLabs only)* | `ELEVENLABS_VOICE_NEU` → NIKBEARBROWN fallback | Northeastern brand laws apply |
+
+The scaffolder (`brand_variant.py`) writes `engine:"kokoro"` + the brand's `voice_kokoro` into
+`beat_sheet.<brand>.json`. To switch a variant to ElevenLabs: set `metadata.engine:"elevenlabs"` —
+the `voice_id` field (from the env var) is already present as the override target.
 
 ## The human/AI division (every skill)
 

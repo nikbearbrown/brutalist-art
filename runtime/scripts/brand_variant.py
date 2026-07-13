@@ -12,8 +12,15 @@ register, audience). The creative half — rewriting each beat's narration into 
 register, the signature tangent, the audience outro — is done by Claude Code, guided by
 the hai / medhavy SKILL. No API calls, no spend.
 
+Default TTS engine per brand (written into metadata.engine + metadata.voice_kokoro):
+  nbb/brutalist  → kokoro / am_onyx  (override: engine="elevenlabs", use metadata.voice_id)
+  hai            → kokoro / af_heart (override: engine="elevenlabs", use metadata.voice_id)
+  medhavy        → kokoro / af_kore  (override: engine="elevenlabs", use metadata.voice_id)
+  musinique      → kokoro / am_puck  (override: engine="elevenlabs", use metadata.voice_id)
+  neu            → kokoro not set (NEU currently defaults to ElevenLabs voice_id)
+
 Usage:
-  python3 scripts/brand_variant.py <REEL> {neu|hai|medhavy}
+  python3 scripts/brand_variant.py <REEL> {neu|hai|medhavy|nbb|musinique}
 """
 import argparse, json, os, re, sys
 from pathlib import Path
@@ -27,13 +34,21 @@ AUD = {
             "author_section": "Northeastern"},
     "hai": {"suffix": "hai", "audience": "HAI", "voice_env": "ELEVENLABS_VOICE_HUMANITARIANS",
             "palette": "humanitarians", "register": "Pragmatist", "charter": "HAI.md",
-            "author_section": "Humanitarians AI"},
+            "author_section": "Humanitarians AI",
+            "engine": "kokoro", "voice_kokoro": "af_heart"},
     "medhavy": {"suffix": "medhavy", "audience": "MEDHAVY", "voice_env": "ELEVENLABS_VOICE_MEDHAVY",
                 "palette": "medhavy", "register": "Wonder", "charter": "MEDHAVY.md",
-                "author_section": "Medhavy.com"},
+                "author_section": "Medhavy.com",
+                "engine": "kokoro", "voice_kokoro": "af_kore"},
     "nbb": {"suffix": "nbb", "audience": "NikBearBrown", "voice_env": "ELEVENLABS_VOICE_NIKBEARBROWN",
             "palette": "teardown", "register": "Teardown", "charter": "NIKBEARBROWN.md",
-            "author_section": "NikBearBrown"},
+            "author_section": "NikBearBrown",
+            "engine": "kokoro", "voice_kokoro": "am_onyx"},
+    "musinique": {"suffix": "musinique", "audience": "MUSINIQUE",
+                  "voice_env": "ELEVENLABS_VOICE_MUSINIQUE",
+                  "palette": "musinique", "register": "Teardown", "charter": "MUSINIQUE.md",
+                  "author_section": "Musinique",
+                  "engine": "kokoro", "voice_kokoro": "am_puck"},
 }
 
 
@@ -83,7 +98,12 @@ def main():
     meta["palette"] = cfg["palette"]
     meta["outro_source"] = f"AUTHOR.MD :: {cfg['author_section']}"
     if voice_id:
-        meta["voice_id"] = voice_id
+        meta["voice_id"] = voice_id  # ElevenLabs override; change engine to "elevenlabs" to use it
+    # Kokoro defaults — brand-specific; override by setting engine="elevenlabs" in the sheet
+    if cfg.get("engine"):
+        meta["engine"] = cfg["engine"]
+    if cfg.get("voice_kokoro"):
+        meta["voice_kokoro"] = cfg["voice_kokoro"]
     # a checklist Claude Code works down (the creative half):
     meta["_variant_todo"] = [
         f"rewrite every beat narration_text in the {cfg['register']} register "
@@ -98,8 +118,10 @@ def main():
         b.get("shot", {}).pop("rendered", None) if isinstance(b.get("shot"), dict) else None
 
     out.write_text(json.dumps(sheet, indent=1, ensure_ascii=False))
+    kokoro_note = (f"  engine={cfg['engine']}  voice_kokoro={cfg['voice_kokoro']}"
+                   if cfg.get("engine") else "")
     print(f"[variant] wrote {out.name}  audience={cfg['audience']}  register={cfg['register']}  "
-          f"palette={cfg['palette']}  voice_id={voice_note}")
+          f"palette={cfg['palette']}  11labs_voice={voice_note}{kokoro_note}")
     print(f"[variant] {len(sheet.get('beats', []))} beats to rewrite in {cfg['register']} — "
           f"next: Claude Code follows the {a.audience} SKILL to rewrite narration + outro + tangent")
 

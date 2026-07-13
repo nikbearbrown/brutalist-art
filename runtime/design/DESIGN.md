@@ -28,6 +28,7 @@ so a scene retints by swapping the set, never by editing the scene.
 | **`neu`** | Northeastern brand | white | **label + position only** (red is brand, never state) | **Lato** | below + `neu.ts` |
 | `medhavy` | colorblind-safe | eggshell | two hues (Okabe-Ito) | same | `AUDIENCES.md` · `medhavy.ts` |
 | `humanitarians` | muted editorial | cream | two hues (warm/cool) | same | `AUDIENCES.md` · `humanitarians.ts` |
+| `musinique` | monochrome / SaaS-clean | white | **blue (#2563eb) as good; gray-700 as bad; label + position carry** | **Inter (humanist sans)** | `musinique-palette.md` · `musinique.ts` · `animated_graphics.py` |
 
 **Default flipped (2026-07):** the house default was `newsprint` (cream / teal /
 crimson / gold). It is now **`teardown`** — direct and minimalist, the NikBearBrown

@@ -1,6 +1,6 @@
 ---
 name: medhavy
-description: Convert a built reel into the MEDHAVY audience variant — beat_sheet.medhavy.json, the same reel rewritten in the Wonder register, in the MEDHAVY voice + Okabe-Ito palette, with a Medhavy.com outro. Use when the user types `medhavy <reel>`, asks to make the research-student / MEDHAVY cut of a reel, or to rewrite a beat sheet in Wonder for MEDHAVY. Never touches beat_sheet.json.
+description: Convert a built reel into the MEDHAVY audience variant — beat_sheet.medhavy.json, the same reel rewritten in the Wonder register, Kokoro voice af_kore (default) or MEDHAVY ElevenLabs clone (override) + Okabe-Ito palette, with a Medhavy.com outro. Use when the user types `medhavy <reel>`, asks to make the research-student / MEDHAVY cut of a reel, or to rewrite a beat sheet in Wonder for MEDHAVY. Never touches beat_sheet.json.
 ---
 
 # medhavy — the MEDHAVY audience variant
@@ -13,11 +13,13 @@ never modified** — the variant is a sibling file.
 ## Flow (per reel)
 1. **Scaffold (deterministic, no spend):**
    ```bash
-   python3 scripts/vox_variant.py <REEL> medhavy
+   python3 runtime/scripts/brand_variant.py <REEL> medhavy
    ```
    Creates `beat_sheet.medhavy.json` — a copy of the canonical with metadata set:
-   `audience: MEDHAVY`, `voice_id` = `ELEVENLABS_VOICE_MEDHAVY`, `palette: medhavy`,
-   `register: Wonder`, and a `_variant_todo` checklist. Stale durations are dropped.
+   `audience: MEDHAVY`, `engine: "kokoro"`, `voice_kokoro: "af_kore"` (default TTS),
+   `voice_id` = `ELEVENLABS_VOICE_MEDHAVY` (ElevenLabs override — change `engine` to
+   `"elevenlabs"` to activate it), `palette: medhavy`, `register: Wonder`, and a
+   `_variant_todo` checklist. Stale durations are dropped.
 2. **Rewrite the register (Claude Code — the real work).** Open
    `beat_sheet.medhavy.json` and rewrite **every beat's `narration_text` into the Wonder
    register** — first principles, wonder, intellectual honesty, no drills. Preserve beat

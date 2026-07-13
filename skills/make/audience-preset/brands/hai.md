@@ -1,6 +1,6 @@
 ---
 name: hai
-description: Convert a built reel into the HAI (Humanitarians AI) audience variant — beat_sheet.hai.json, the same reel rewritten in the Pragmatist register, in the HUMANITARIANS voice + muted-editorial palette, with a Humanitarians AI outro. Use when the user types `hai <reel>`, asks to make the Humanitarians / practitioner cut of a reel, or to rewrite a beat sheet in Pragmatist for HAI. Never touches beat_sheet.json.
+description: Convert a built reel into the HAI (Humanitarians AI) audience variant — beat_sheet.hai.json, the same reel rewritten in the Pragmatist register, Kokoro voice af_heart (default) or HUMANITARIANS ElevenLabs clone (override) + muted-editorial palette, with a Humanitarians AI outro. Use when the user types `hai <reel>`, asks to make the Humanitarians / practitioner cut of a reel, or to rewrite a beat sheet in Pragmatist for HAI. Never touches beat_sheet.json.
 ---
 
 # hai — the HAI (Humanitarians AI) audience variant
@@ -13,11 +13,13 @@ the charter `HAI.md` and register `voices/pragmatist/VOICE.md`. **The canonical
 ## Flow (per reel)
 1. **Scaffold (deterministic, no spend):**
    ```bash
-   python3 scripts/vox_variant.py <REEL> hai
+   python3 runtime/scripts/brand_variant.py <REEL> hai
    ```
    Creates `beat_sheet.hai.json` — a copy of the canonical with metadata set:
-   `audience: HAI`, `voice_id` = `ELEVENLABS_VOICE_HUMANITARIANS`, `palette: humanitarians`,
-   `register: Pragmatist`, and a `_variant_todo` checklist. Stale durations are dropped.
+   `audience: HAI`, `engine: "kokoro"`, `voice_kokoro: "af_heart"` (default TTS),
+   `voice_id` = `ELEVENLABS_VOICE_HUMANITARIANS` (ElevenLabs override — change `engine`
+   to `"elevenlabs"` to activate it), `palette: humanitarians`, `register: Pragmatist`,
+   and a `_variant_todo` checklist. Stale durations are dropped.
 2. **Rewrite the register (Claude Code — the real work).** Open `beat_sheet.hai.json`
    and rewrite **every beat's `narration_text` into the Pragmatist register** — method,
    when to use it, and (the main event for AI) **when NOT to and where it fails**;
@@ -31,7 +33,8 @@ the charter `HAI.md` and register `voices/pragmatist/VOICE.md`. **The canonical
 4. **Outro → Humanitarians AI.** Replace the outro with the HAI outro, content from the
    **Humanitarians AI** section of the book's `AUTHOR.MD` (not the default channel).
    Renders via the Remotion `OutroSeries` / `OutroCTA` once those exist.
-5. **Build (audience-namespaced).** Generate audio in the HUMANITARIANS voice, render
+5. **Build (audience-namespaced).** Generate audio in the Kokoro af_heart voice (default)
+   or the HUMANITARIANS ElevenLabs clone (set `engine: "elevenlabs"` to switch), render
    scenes in the muted-editorial palette, compile → the HAI slate cut. Only the variant's
    audio bills; GATE P still applies (a fresh `PEDAGOGY.md` pass before spend).
 6. **Handoff — the HAI Fellows.** HAI Fellows take the slate cut and further use Claude

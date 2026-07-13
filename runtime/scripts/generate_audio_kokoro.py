@@ -19,7 +19,7 @@ which engine spoke.
 
 VOICE SELECTION (mixed-engine sheets supported):
   - beat["voice"] = "af_bella" | "am_adam" | …  → that Kokoro voice
-  - metadata["voice_kokoro"]                    → folder default (else am_onyx)
+  - metadata["voice_kokoro"]                    → folder default (else af_heart fallback)
   - beat["engine"] = "elevenlabs" (or any non-"kokoro" value) → SKIPPED here;
     run generate_audio.py --only <those beats> for them. A sheet can open in
     the human's clone and hand the rest to the free cast.
@@ -55,7 +55,7 @@ from generate_audio import normalize_for_tts   # same spoken-form safety net
 
 FFMPEG = shutil.which("ffmpeg") or "ffmpeg"
 FFPROBE = shutil.which("ffprobe") or "ffprobe"
-DEFAULT_VOICE = "am_onyx"
+DEFAULT_VOICE = "af_heart"   # safe fallback for sheets with no metadata.voice_kokoro
 
 
 def model_paths():

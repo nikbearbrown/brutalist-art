@@ -29,7 +29,7 @@ except NameError:
 
 import os as _os
 # ---- palette registry (DESIGN.md). Same SIX role keys, different values; select with
-#      env ART_PALETTE=teardown|newsprint|neu|medhavy|humanitarians. Default = teardown
+#      env ART_PALETTE=teardown|newsprint|neu|medhavy|humanitarians|musinique. Default = teardown
 #      (NikBearBrown house look: minimalist white / ink / RED-ONLY; good = plain ink,
 #      carried by KEPT/LOST label + position — never a second hue).
 _PALETTES = {
@@ -39,11 +39,15 @@ _PALETTES = {
     "neu":           ("#FFFFFF", "#000000", "#000000", "#545454", "#545454", "#A4804A", "#E3E3E3"),
     "medhavy":       ("#F0EAD6", "#000000", "#009E73", "#D55E00", "#4D4D4D", "#F0E442", "#D4D4D4"),
     "humanitarians": ("#F3EBDD", "#2F2A26", "#1F4E5F", "#E4572E", "#29335C", "#F3A712", "#D4D4D4"),
+    # musinique: monochrome greys + blue-600 accent; see runtime/design/musinique-palette.md.
+    # TODO: lock GROUND/INK from site globals.css :root — using shadcn-neutral inferred values now.
+    "musinique":     ("#FFFFFF", "#111827", "#2563eb", "#374151", "#6b7280", "#f3f4f6", "#d1d5db"),
 }
 _PAL = _os.environ.get("ART_PALETTE", "teardown")
 GROUND, INK, TEAL, CRIMSON, SLATE, GOLD, HAIRLINE = _PALETTES.get(_PAL, _PALETTES["teardown"])
 # TEAL = good/kept/true, CRIMSON = bad/lost/broken (see runtime/design/DESIGN.md). In teardown/neu
 # TEAL == INK (good is plain ink; the KEPT/LOST label + side carry it — red is the one accent).
+# In musinique TEAL = blue-600 (the one non-neutral mark); CRIMSON = gray-700 (label carries it).
 # GOLD = highlighter fill ONLY (never text); in teardown it is a wash of the one accent. SLATE = structure.
 NEU_RED = "#C8102E"   # NEU brand/emphasis/primary-series only — never "state" (Northeastern brand law)
 # retired hues, aliased so legacy scenes + the electoral-college fixture don't crash:
@@ -51,9 +55,14 @@ NAVY = TEAL          # navy dropped -> renders the good/kept accent now
 BLUE = SLATE         # dusty-blue dropped -> slate
 TERRA = CRIMSON      # terracotta dropped -> crimson
 # type system — fonts live in runtime/fonts/, resolved by family name via fontconfig.
-# NEU overrides ALL type to Lato (Northeastern brand law); every other palette keeps the house type.
+# NEU overrides ALL type to Lato (Northeastern brand law).
+# MUSINIQUE overrides ALL type to Inter (humanist sans — the musinique type law).
+# Every other palette keeps the house type (Montserrat / EB Garamond / PT Mono).
 if _PAL == "neu":
-    DISPLAY = SANS = SERIF = "Lato"   # NEU: regular-weight headings, sentence case (brand law)
+    DISPLAY = SANS = SERIF = "Lato"      # NEU: regular-weight headings, sentence case (brand law)
+elif _PAL == "musinique":
+    DISPLAY = SANS = "Inter"             # MUSINIQUE: humanist sans throughout (type law)
+    SERIF   = "EB Garamond"             # keep for rare editorial moments
 else:
     DISPLAY = "Montserrat"    # titles / big display lines / LabelChip tracked caps
     SANS    = "Inter"         # reserved — no live component role (chips + annotation labels moved to DISPLAY/SERIF, 2026-07)

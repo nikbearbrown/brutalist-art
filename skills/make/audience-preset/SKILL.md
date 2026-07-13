@@ -37,11 +37,18 @@ and remain the authoritative spec for each brand.
 
 ## Brands
 
-| brand | register | voice env | palette | outro |
-|---|---|---|---|---|
-| `hai` | Pragmatist | `ELEVENLABS_VOICE_HUMANITARIANS` | humanitarians | Humanitarians AI |
-| `medhavy` | Wonder | `ELEVENLABS_VOICE_MEDHAVY` | medhavy (Okabe-Ito) | Medhavy.com |
-| `neu` | Lecture | `ELEVENLABS_VOICE_NEU` → NIKBEARBROWN fallback | neu (NU red/black/white/gold, Lato) | Northeastern |
+| brand | register | Kokoro default | ElevenLabs override env | palette | outro |
+|---|---|---|---|---|---|
+| `hai` | Pragmatist | `af_heart` | `ELEVENLABS_VOICE_HUMANITARIANS` | humanitarians | Humanitarians AI |
+| `medhavy` | Wonder | `af_kore` | `ELEVENLABS_VOICE_MEDHAVY` | medhavy (Okabe-Ito) | Medhavy.com |
+| `musinique` | Teardown | `am_puck` | `ELEVENLABS_VOICE_MUSINIQUE` | musinique (monochrome/Inter) | Musinique |
+| `nbb` | Teardown | `am_onyx` | `ELEVENLABS_VOICE_NIKBEARBROWN` | teardown | NikBearBrown |
+| `neu` | Lecture | *(ElevenLabs only)* | `ELEVENLABS_VOICE_NEU` → NIKBEARBROWN fallback | neu (NU red/black/white/gold, Lato) | Northeastern |
+
+Kokoro is the **default engine** for `hai`, `medhavy`, and `nbb` — `brand_variant.py`
+writes `engine:"kokoro"` + the brand's `voice_kokoro` into the variant sheet. To switch a
+variant to ElevenLabs, set `metadata.engine:"elevenlabs"` — the `voice_id` field (written
+from the brand's `ELEVENLABS_VOICE_*` env var) is already present as the override target.
 
 **NEU brand laws:** the `neu` brand carries extra guardrails (red is brand, never
 state; Lato only; no color-coded good/bad; gold rare; pre-render brand check).
