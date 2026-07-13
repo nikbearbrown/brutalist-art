@@ -26,7 +26,8 @@
    "cost",
    "video production"
   ],
-  "total_estimated_duration_seconds": 206
+  "total_estimated_duration_seconds": 206,
+  "voice_engine": "suno (vocal stem sliced via expected-duration DP merge)"
  },
  "beats": [
   {
@@ -57,8 +58,8 @@
    "estimated_duration_s": 14,
    "act": "INTRO",
    "t_start": 0.0,
-   "actual_duration_s": 0,
-   "audio_file": ""
+   "actual_duration_s": 13.8,
+   "audio_file": "mp3/beat-B00.mp3"
   },
   {
    "beat_id": "B01",
@@ -84,8 +85,8 @@
    "estimated_duration_s": 15,
    "act": "PUBLISH",
    "t_start": 14.0,
-   "actual_duration_s": 0,
-   "audio_file": ""
+   "actual_duration_s": 11.06,
+   "audio_file": "mp3/beat-B01.mp3"
   },
   {
    "beat_id": "B02",
@@ -111,8 +112,8 @@
    "estimated_duration_s": 17,
    "act": "PUBLISH",
    "t_start": 29.0,
-   "actual_duration_s": 0,
-   "audio_file": ""
+   "actual_duration_s": 14.74,
+   "audio_file": "mp3/beat-B02.mp3"
   },
   {
    "beat_id": "B03",
@@ -144,8 +145,8 @@
    "estimated_duration_s": 17,
    "act": "PUBLISH",
    "t_start": 46.0,
-   "actual_duration_s": 0,
-   "audio_file": ""
+   "actual_duration_s": 15.89,
+   "audio_file": "mp3/beat-B03.mp3"
   },
   {
    "beat_id": "B04",
@@ -171,8 +172,8 @@
    "estimated_duration_s": 16,
    "act": "PUBLISH",
    "t_start": 63.0,
-   "actual_duration_s": 0,
-   "audio_file": ""
+   "actual_duration_s": 12.22,
+   "audio_file": "mp3/beat-B04.mp3"
   },
   {
    "beat_id": "B05",
@@ -198,8 +199,8 @@
    "estimated_duration_s": 15,
    "act": "PUBLISH",
    "t_start": 79.0,
-   "actual_duration_s": 0,
-   "audio_file": ""
+   "actual_duration_s": 12.86,
+   "audio_file": "mp3/beat-B05.mp3"
   },
   {
    "beat_id": "B06",
@@ -231,8 +232,8 @@
    "estimated_duration_s": 16,
    "act": "PUBLISH",
    "t_start": 94.0,
-   "actual_duration_s": 0,
-   "audio_file": ""
+   "actual_duration_s": 14.42,
+   "audio_file": "mp3/beat-B06.mp3"
   },
   {
    "beat_id": "B07",
@@ -258,8 +259,8 @@
    "estimated_duration_s": 17,
    "act": "PUBLISH",
    "t_start": 110.0,
-   "actual_duration_s": 0,
-   "audio_file": ""
+   "actual_duration_s": 17.38,
+   "audio_file": "mp3/beat-B07.mp3"
   },
   {
    "beat_id": "B08",
@@ -285,8 +286,8 @@
    "estimated_duration_s": 18,
    "act": "PUBLISH",
    "t_start": 127.0,
-   "actual_duration_s": 0,
-   "audio_file": ""
+   "actual_duration_s": 16.97,
+   "audio_file": "mp3/beat-B08.mp3"
   },
   {
    "beat_id": "B09",
@@ -312,8 +313,8 @@
    "estimated_duration_s": 17,
    "act": "PUBLISH",
    "t_start": 145.0,
-   "actual_duration_s": 0,
-   "audio_file": ""
+   "actual_duration_s": 18.19,
+   "audio_file": "mp3/beat-B09.mp3"
   },
   {
    "beat_id": "B10",
@@ -339,8 +340,8 @@
    "estimated_duration_s": 19,
    "act": "PUBLISH",
    "t_start": 162.0,
-   "actual_duration_s": 0,
-   "audio_file": ""
+   "actual_duration_s": 18.86,
+   "audio_file": "mp3/beat-B10.mp3"
   },
   {
    "beat_id": "B11",
@@ -371,8 +372,8 @@
    "estimated_duration_s": 12,
    "act": "PUBLISH",
    "t_start": 181.0,
-   "actual_duration_s": 0,
-   "audio_file": ""
+   "actual_duration_s": 13.58,
+   "audio_file": "mp3/beat-B11.mp3"
   },
   {
    "beat_id": "B99",
@@ -398,8 +399,8 @@
    "estimated_duration_s": 13,
    "act": "OUTRO",
    "t_start": 193.0,
-   "actual_duration_s": 0,
-   "audio_file": ""
+   "actual_duration_s": 15.17,
+   "audio_file": "mp3/beat-B99.mp3"
   }
  ]
 }

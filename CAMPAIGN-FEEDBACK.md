@@ -96,6 +96,93 @@ RESULT: 16/16 beats rendered (262.1s, narrated). 0 slates.
   Rev-2 video: https://youtu.be/PE2Zv8hBDzc (unlisted, in Brutalist playlist).
   Standing rules #1–#4 followed exactly.
 
+## REFACTOR FEEDBACK — four-shorts build — 2026-07-13
+FIXED (toolkit bugs this build surfaced):
+
+  - RULE #4 VIOLATION — Remotion defaultProps silently override missing beat props:
+    Remotion MERGES --props JSON with Root.tsx defaultProps on a per-field basis.
+    If a beat's shot.remotion.props omits a schema field (e.g. `topic`), Remotion
+    uses the composition's defaultProps value — not the schema's .default() — so
+    "CANCER BIOLOGY" (the demo topic set in Root.tsx) appeared in every render that
+    was missing `topic`. Fix: what-is-brutalist beat props patched to include all
+    schema fields (topic, segment, runningText, filename). Future guard: remotion_scenes.py
+    should warn when props keys don't cover all schema-required fields, so a mismatch
+    fails loud rather than silently rendering another video's demo content.
+
+  - PORTRAIT TEXT CLIP — `whiteSpace: 'pre'` clips output/code lines in 9:16:
+    All four Onda components (BrutalistTerminalOpen, NikBearBrownTerminalAsk,
+    NikBearBrownCodeBlock, BrutalistCommentCTA) used `whiteSpace: 'pre'` on checklist,
+    output, and code lines. In 16:9 (1920px wide) all lines fit. In portrait (1080px wide
+    terminal body ≈ 800px), lines longer than ~24 monospace chars clipped mid-word.
+    Fix: changed to `whiteSpace: 'pre-wrap'` + `overflowWrap: 'break-word'` +
+    `paddingLeft: '2ch' / textIndent: '-2ch'` (hanging indent). Applies to both 16:9
+    and 916 renders — non-breaking since landscape lines are short enough never to wrap.
+
+  - MISSING 916 COMPOSITIONS — BrutalistTerminalOpen916 and BrutalistCommentCTA916
+    not in Root.tsx at start of session. Without them the ONDA CHECK flagged B00 and
+    B99 as BLOCKED across all four shorts. Added both as identical-component entries
+    with width=1080, height=1920 (same schema and props type as their 16:9 parents).
+    Rule: whenever a new Onda component is added for 16:9, a 916 entry must be added
+    to Root.tsx immediately — the ONDA CHECK requires it for any short derivative.
+
+  - STALE CENTER-CUT FILES — pre-patch shorts.py created <reel>/media/<bid>-916.mp4
+    for REMOTION beats (actual Remotion renders cropped 16:9→9:16). These are
+    auto-deleted garbage: delete any media/<bid>-916.mp4 whose beat has shot.type=REMOTION
+    before re-running shorts.py and remotion_scenes.py.
+
+  - surround_box() is TEXTISH in Gate A — the static-check stub adds positional Mob
+    args as submobjects; SurroundingRectangle(text_stack) causes the resulting rectangle
+    to be "textish" (invisible to the shape snapshot). Fix in scenes.py: replace
+    surround_box() with auto_box() (safe — uses explicit width/height kwargs) or a plain
+    Rectangle(width=..., height=...) for heart/highlight boxes.
+
+  - _qc_intentional must go on the STROKE, not on text — in Gate B the _collect_strokes()
+    walker checks for `_qc_intentional` on Lines/Arrows/curves. Setting the flag on the
+    adjacent Text object (the label) doesn't suppress the "label on line" detection.
+    Fix: `strikethrough._qc_intentional = True` on the Line object itself.
+
+  - PORTRAIT SAFE ZONE LESSONS — portrait frame is ±2.25 x / ±4.0 y but safe area
+    is ±1.95 x / ±3.4 y. Key patterns to avoid:
+    * Balance-scale pans at ±2.0 → rescale to ±1.5 for safe zone
+    * `to_edge(DOWN, buff=0.42)` puts bottom captions at y≈-3.58 (outside safe area);
+      use buff≥0.6 or accept the warning if intentional
+    * `next_to(stroke, DIRECTION, small_buff)` often triggers Gate B "label on curve";
+      prefer `move_to(explicit_coords)` that's clearly away from the stroke body
+
+STILL BLOCKED:
+  - ElevenLabs API key invalid (HTTP 401). B99 outro for all four shorts is a 16s
+    silence placeholder. Human must fix ELEVENLABS_API_KEY in .env, then run:
+    `python3 runtime/scripts/generate_audio.py brutalist-art/youtube/<reel>/short --only B99`
+    for all four reels before final compile and publish.
+
+RESULT: Four 9:16 review cuts compiled. 0 Gate B errors. ONDA CHECK: 0 BLOCKED.
+  All REMOTION beats render real beat content with portrait pre-wrap layout.
+
+## REFACTOR FEEDBACK — four-shorts publish — 2026-07-13
+FIXED (toolkit bugs this publish surfaced):
+  - generate_audio.py HTTP 404 from ElevenLabs: `output_format: "mp3_44100_128"` was
+    in the JSON body. ElevenLabs v1 API requires it as a QUERY PARAMETER, not a body
+    field. Fix: moved to URL — `API_URL = ".../text-to-speech/{voice_id}?output_format=mp3_44100_128"`.
+    Direct urllib test with same body (no output_format field) returned 200; adding the
+    field to the body caused the 404. File: runtime/scripts/generate_audio.py.
+  - Publisher expects mp4 at `<folder>/mp4/<slug>.mp4`; `art final` writes `<slug>-cut.mp4`
+    to the folder root. Fix: copy `<slug>-cut.mp4` → `mp4/<slug>.mp4` before publish.
+    Future: `art final` should write directly to `mp4/<slug>.mp4` or stage_publish.py
+    should be run as part of the shorts publish flow to create the symlink.
+  - Shorts had no SRT files. Publisher uploads `<slug>.srt` if present (CC ships with
+    every post per CLAUDE.md). Fix: generate SRTs from beat sheet `actual_duration_s`
+    + `narration_text` using same write_srt() logic as stage_publish.py.
+    Future: `art final` or `art publish` for shorts should auto-generate the SRT.
+DEPS: same as prior build.
+STILL BLOCKED: none.
+RESULT: Four 9:16 shorts published to "Shorts" playlist (unlisted).
+  what-is-brutalist-short → https://youtu.be/_3rOaPmqvok (unlisted)
+  installs-short          → https://youtu.be/igVBV4I2sBw (unlisted)
+  when-cowork-helps-claude-code-short → https://youtu.be/NTD76WPrMfU (unlisted)
+  posting-to-youtube-short → https://youtu.be/tb88NXJwWzs (unlisted)
+  All four: CC caption tracks uploaded. Public flip is manual Studio decision.
+  Standing rules #1–#4 followed exactly.
+
 ## HUMAN FEEDBACK — first shorts run — 2026-07-13
 
 - "Every time it uses Onda terminal or Onda code it is not reformatting the Onda
@@ -111,3 +198,19 @@ RESULT: 16/16 beats rendered (262.1s, narrated). 0 slates.
 - Toolkit lesson: media type is a property of the BEAT (sheet), not of the file's
   folder. Any rule keyed on directory ("media/ = croppable") breaks the moment
   two generators share an output directory.
+
+## FIRST SUNO STEM — suno-vs-11-labs-cost-test — 2026-07-13
+
+- Real stem (3:33, Bear's uploaded voice, vocal-only) over-split under silence
+  detection: 27 segments for 13 beats — Suno pauses mid-beat as long as it
+  pauses between beats. The refuse-gate worked as designed.
+- Fix shipped: the EXPECTED-DURATION MERGE in suno_slice.py — beats' narration
+  lengths give expected duration shares; a DP groups consecutive segments into
+  one window per beat (bonus for cutting at bigger silences); windows off by
+  > max(3s, 25%) still refuse. Model-free, no new deps. --strict disables.
+- This stem sliced clean: 13 windows, worst Δ −4.0s (pacing), boundaries on
+  the biggest gaps. Slices + measured durations written back; the sheet now
+  records voice_engine.
+- Backlog: a --align mode (faster-whisper forced alignment of the KNOWN
+  narration text, voxlit's recitation-clock pattern) as the gold path where
+  faster-whisper is installed.
