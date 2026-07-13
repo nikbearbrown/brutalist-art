@@ -1,0 +1,89 @@
+1
+00:00:00,000 --> 00:00:14,810
+You've made the videos. Now they have to
+go live — and how you post them matters as
+much as how you made them. This is posting
+
+2
+00:00:14,860 --> 00:00:33,280
+Here's the gap. A finished cut sitting on
+your disk is not on YouTube. Crossing that
+gap by hand — dragging each file into
+
+3
+00:00:33,330 --> 00:00:52,220
+So the toolkit posts through the YouTube
+API instead. And everything travels with
+the upload, straight from the beat sheet:
+
+4
+00:00:52,270 --> 00:01:04,780
+Each video needs three things, and the
+pipeline already made all three. The
+master to upload. The full description.
+
+5
+00:01:04,830 --> 00:01:23,850
+The publisher does three things. It finds,
+or creates, the Brutalist playlist by
+title. It uploads each master. And it adds
+
+6
+00:01:23,900 --> 00:01:37,830
+Always dry-run first. It prints the plan:
+chapter one, What is Brutalist. Chapter
+two, Installs. Chapter three, When Cowork
+
+7
+00:01:37,880 --> 00:01:47,340
+Then publish for real. Each upload comes
+back with its link, and each is added to
+the playlist in order. Three videos, live,
+
+8
+00:01:47,390 --> 00:02:06,980
+And here's the honest part. The first run
+uploaded video one, then crashed before
+the playlist insert. The playlist auto-
+
+9
+00:02:07,030 --> 00:02:27,900
+Privacy is where the audit lives. All
+three landed unlisted, exactly as asked —
+so unlisted needs no audit. Public is the
+
+10
+00:02:27,950 --> 00:02:42,480
+Quota is generous. Each upload costs
+sixteen hundred units against ten thousand
+a day — about six videos daily. Three was
+
+11
+00:02:42,530 --> 00:02:55,620
+Posting also wires the series together. By
+default, every short's description points
+to the intro video, and every long's
+
+12
+00:02:55,670 --> 00:03:09,650
+And there they are — the three this whole
+video is built from. What is Brutalist,
+posted as its review cut on purpose.
+
+13
+00:03:09,700 --> 00:03:30,260
+So here's the split, one more time. The
+machine does the mechanical publish a
+hand-upload loses — the description, the
+
+14
+00:03:30,310 --> 00:03:41,440
+And all of it — every command, every
+error, every fix — is in one honest log.
+Three uploaded, one bug found and fixed,
+
+15
+00:03:41,490 --> 00:03:55,780
+That's posting to YouTube. The machine
+posts; you decide what goes public.
+Subscribe to follow the series, and find

@@ -9,7 +9,10 @@ mp4/<slug>.mp4, and description.txt), this:
   2. finds — or creates — the target playlist by title,
   3. uploads any folder not already in the ledger, then
   4. inserts each into the playlist at the position given by its chapter_number,
-     so the playlist reads in chapter order regardless of upload order.
+     so the playlist reads in chapter order regardless of upload order, and
+  5. uploads <slug>.srt as an English caption track (CC data) when present —
+     idempotent (skips if the video already has a track), best-effort (a caption
+     failure never blocks the upload or playlist), disable with --no-captions.
 
 Videos upload as `unlisted` by default: a brand-new YouTube API project cannot make
 uploads public until Google approves an API audit, and forcing `public` before that
@@ -43,8 +46,14 @@ from pathlib import Path
 SCOPES = [
     "https://www.googleapis.com/auth/youtube.upload",
     "https://www.googleapis.com/auth/youtube",
+    "https://www.googleapis.com/auth/youtube.force-ssl",  # captions.insert
 ]
 EDU_CATEGORY = "27"
+
+# captions.insert intermittently 403s on freshly-uploaded videos until YouTube
+# finishes processing them — this backoff covers ~14.5 min. Already-live videos
+# get a single attempt (no waits).
+FRESH_CAPTION_WAITS = [20, 40, 60, 90, 120, 180, 180, 180]
 
 # ── Series anchors ───────────────────────────────────────────────────────────
 # The whole series funnels to one intro video and one master playlist. By DEFAULT
@@ -82,7 +91,13 @@ def get_service(client_secret: Path, token_path: Path):
 
     creds = None
     if token_path.exists():
-        creds = Credentials.from_authorized_user_file(str(token_path), SCOPES)
+        # A token minted before a scope was added (e.g. force-ssl for captions)
+        # would 403 on the new calls — force a fresh consent flow instead.
+        info = json.loads(token_path.read_text())
+        if set(SCOPES) - set(info.get("scopes") or []):
+            print("[yt] cached token is missing newly-required scope(s) — re-running OAuth consent")
+        else:
+            creds = Credentials.from_authorized_user_file(str(token_path), SCOPES)
     if not creds or not creds.valid:
         if creds and creds.expired and creds.refresh_token:
             creds.refresh(Request())
@@ -137,6 +152,41 @@ def already_in_playlist(youtube, playlist_id: str) -> dict:
             out[it["contentDetails"]["videoId"]] = it["id"]
         req = youtube.playlistItems().list_next(req, resp)
     return out
+
+
+def has_caption_track(youtube, video_id: str) -> bool:
+    """True if the video already has any caption track (re-runs stay idempotent)."""
+    resp = youtube.captions().list(part="snippet", videoId=video_id).execute()
+    return bool(resp.get("items"))
+
+
+def insert_caption(youtube, video_id: str, srt: Path, language="en", name="English",
+                   waits=None):
+    """Upload an .srt as a caption track (captions.insert; needs youtube.force-ssl).
+
+    Pass waits=FRESH_CAPTION_WAITS for a video uploaded this run (YouTube 403s
+    captions.insert until processing settles); already-live videos get one shot.
+    Best-effort at the call site — a failure never blocks upload/playlist."""
+    from googleapiclient.http import MediaFileUpload
+    body = {"snippet": {"videoId": video_id, "language": language,
+                        "name": name, "isDraft": False}}
+    waits = waits or []
+    last = None
+    for attempt in range(len(waits) + 1):
+        try:
+            media = MediaFileUpload(str(srt), mimetype="application/octet-stream",
+                                    resumable=False)
+            youtube.captions().insert(part="snippet", body=body,
+                                      media_body=media).execute()
+            return
+        except Exception as e:
+            last = e
+            if attempt >= len(waits):
+                break
+            print(f"      · captions attempt {attempt + 1} failed "
+                  f"(video likely still processing) — retrying in {waits[attempt]}s")
+            time.sleep(waits[attempt])
+    raise last
 
 
 def upload_video(youtube, folder: Path, privacy: str, kind: str = "long", add_anchor: bool = True):
@@ -195,6 +245,8 @@ def main() -> int:
                          "(auto-detected for short/ subfolders regardless)")
     ap.add_argument("--no-anchor", action="store_true",
                     help="do not append the default series cross-link to the description")
+    ap.add_argument("--no-captions", action="store_true",
+                    help="do NOT upload the <slug>.srt caption track with each video")
     args = ap.parse_args()
 
     folders = [Path(f).expanduser().resolve() for f in args.folders]
@@ -231,17 +283,21 @@ def main() -> int:
 
     for pos, folder in enumerate(folders):
         slug = json.loads((folder / "beat_sheet.json").read_text())["metadata"]["slug"]
+        fresh = False
         if slug in ledger:
             vid = ledger[slug]
             print(f"[yt] {slug} already uploaded → {vid}")
         elif args.dry_run:
             print(f"[yt] (dry-run) would upload {slug}")
+            if not args.no_captions and (folder / f"{slug}.srt").exists():
+                print(f"[yt] (dry-run) would upload caption track {slug}.srt")
             continue
         else:
             kind = folder_kind(folder, args.kind)
             vid = upload_video(youtube, folder, args.privacy, kind=kind, add_anchor=not args.no_anchor)
             ledger[slug] = vid
             ledger_path.write_text(json.dumps(ledger, indent=1))
+            fresh = True
 
         if playlist_id and not args.dry_run and vid not in in_pl:
             youtube.playlistItems().insert(
@@ -251,6 +307,24 @@ def main() -> int:
             ).execute()
             print(f"[yt] added {slug} to playlist at position {pos}")
             time.sleep(1)
+
+        # ── captions (CC data) — best-effort, idempotent, never blocks ──────
+        if not args.dry_run and not args.no_captions:
+            srt = folder / f"{slug}.srt"
+            if not srt.exists():
+                print(f"[yt] {slug}: no {slug}.srt — skipping captions")
+            else:
+                try:
+                    if has_caption_track(youtube, vid):
+                        print(f"[yt] {slug}: caption track already present — skipping")
+                    else:
+                        print(f"[yt] uploading captions {srt.name} …")
+                        insert_caption(youtube, vid, srt,
+                                       waits=FRESH_CAPTION_WAITS if fresh else None)
+                        print(f"[yt] {slug}: caption track added")
+                except Exception as e:
+                    print(f"[yt] WARNING: captions for {slug} failed "
+                          f"(video unaffected): {e}")
 
     print("[yt] done.")
     return 0
