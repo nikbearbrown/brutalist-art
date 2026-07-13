@@ -62,3 +62,37 @@ any slate/rough beat. Don't claim done if any beat is a slate.
 
 FINALLY — append a `## REFACTOR FEEDBACK — posting-to-youtube — <date>` block to BOTH this folder's
 BUILD-LOG.md and repo-root CAMPAIGN-FEEDBACK.md.
+
+---
+
+## REV 2 — the captions beat (2026-07-13)
+
+Human feedback: the video explains the tool, and CC upload is an important feature — clients want
+their captions right. The publisher now uploads `<slug>.srt` via `captions.insert` (commit
+`c3cac9b`). Two beats change in `beat_sheet.json` (already edited — do NOT re-author them):
+
+- **B03** (REMOTION, changed) — narration is now "four things" and `props.output` adds the
+  `installs.srt ← the caption track (CC)` line. `audio_file`/`actual_duration_s` are cleared →
+  re-record, re-render.
+- **B04A** (GRAPHIC, NEW, between B04 and B05) — "captions ship with the post". Write manim scene
+  `B04A_CaptionsRight` in `scenes.py` per `graphic.production_viz.mechanic` (house palette).
+
+Build steps (standing rules #1–#4 apply):
+
+1. Delete stale `mp3/beat-B03.mp3`. Generate ElevenLabs audio for B03 + B04A
+   (`ELEVENLABS_VOICE_NIKBEARBROWN`); fill each beat's `actual_duration_s` + `audio_file`.
+2. Render B04A via system manim → `manim/B04A.mp4`. Render B03 via
+   `runtime/scripts/remotion_scenes.py` (FOREGROUND — rule #3; props must match the component's
+   zod schema — rule #4).
+3. `./art run youtube/posting-to-youtube` → verify `qc-sheet.png` BY LOOKING (rule #2): B03 shows
+   the `.srt` line, B04A shows the srt-vs-auto-caption card, 16/16 filled, no placeholders.
+4. `./art final youtube/posting-to-youtube` → copy the clean master to `mp4/posting-to-youtube.mp4`.
+5. Regenerate `posting-to-youtube.srt` from the updated sheet (same cue logic as
+   `runtime/scripts/stage_publish.py::write_srt` — narration text on measured beat windows).
+6. Republish: remove the `"posting-to-youtube"` entry from
+   `youtube/credentials/nikbearbrown/youtube_publish_ledger.json`, then run
+   `skills/upload/youtube-publisher/scripts/publish_playlist.py youtube/posting-to-youtube`
+   (uploads the rev-2 master, adds to the playlist, uploads captions). The superseded video
+   https://youtu.be/5iadw1MET3Q (unlisted) is deleted by the human in Studio.
+7. Append the session to `youtube/PUBLISH-LOG.md`; log the build to `BUILD-LOG.md` and findings to
+   `CAMPAIGN-FEEDBACK.md`.

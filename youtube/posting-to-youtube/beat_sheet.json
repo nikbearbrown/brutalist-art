@@ -3,7 +3,7 @@
   "slug": "posting-to-youtube",
   "title": "Posting to YouTube",
   "topic": "POSTING TO YOUTUBE",
-  "purpose": "Video 4 of 'Brutalist — Claude for Video Production' on @NikBearBrown. The true record of publishing the first three videos via the YouTube Data API: why the API not Studio, what each video needs, the publisher's job, the honest gotchas (position=/manualSortRequired bug, unlisted-vs-audit privacy, quota, credential fix), the default cross-link funnel, and the machine/human split (the machine posts; you decide what goes public). Meta: built from youtube/PUBLISH-LOG.md, using the three published videos as the worked example. Basis doc: docs/posting-to-youtube.md.",
+  "purpose": "Video 4 of 'Brutalist — Claude for Video Production' on @NikBearBrown. The true record of publishing the first three videos via the YouTube Data API: why the API not Studio, what each video needs, the publisher's job, the honest gotchas (position=/manualSortRequired bug, unlisted-vs-audit privacy, quota, credential fix), the default cross-link funnel, and the machine/human split (the machine posts; you decide what goes public). Meta: built from youtube/PUBLISH-LOG.md, using the three published videos as the worked example. Basis doc: docs/posting-to-youtube.md. Rev 2 adds the CC beat: captions ship with every post — a source-text .srt built from the beat sheet, uploaded via captions.insert. Clients want their captions right.",
   "voice_env": "ELEVENLABS_VOICE_NIKBEARBROWN",
   "voice_id": "",
   "clock": "narration (ElevenLabs) — the master clock; every beat conforms to its measured audio",
@@ -130,6 +130,7 @@
        "mp4/installs.mp4        ← the master to upload",
        "description.txt         ← the full description",
        "beat_sheet.json         ← title · tags · chapter_number",
+       "installs.srt            ← the caption track (CC)",
        "chapter_number sets playlist order."
       ]
      },
@@ -139,12 +140,12 @@
      }
     }
    },
-   "narration_text": "Each video needs three things, and the pipeline already made all three. The master to upload. The full description. And the beat sheet's metadata — title, tags, and a chapter number that sets the playlist order.",
-   "estimated_duration_s": 13,
+   "narration_text": "Each video needs four things, and the pipeline already made all four. The master to upload. The full description. The beat sheet's metadata — title, tags, and a chapter number that sets the playlist order. And a captions file — the CC track, built from the beat sheet itself.",
+   "estimated_duration_s": 16,
    "act": "PUBLISH",
    "t_start": 46.0,
-   "actual_duration_s": 12.56,
-   "audio_file": "mp3/beat-B03.mp3"
+   "actual_duration_s": 0,
+   "audio_file": ""
   },
   {
    "beat_id": "B04",
@@ -172,6 +173,33 @@
    "t_start": 59.0,
    "actual_duration_s": 19.07,
    "audio_file": "mp3/beat-B04.mp3"
+  },
+  {
+   "beat_id": "B04A",
+   "shot": {
+    "type": "GRAPHIC",
+    "source": "own"
+   },
+   "graphic": {
+    "manim": "B04A_CaptionsRight",
+    "engine": "manim",
+    "production_viz": {
+     "label": "captions ship with the post",
+     "mechanic": "An .srt cue card (cue number, timecodes, two caption lines) with a teal arrow FROM beat_sheet.json labelled 'source text · measured timing'. Beside it, faded, an 'auto-generated' caption with a misheard phrase crossed out in red — the voice says 'h nu', auto-transcription writes 'h new', the source text shows 'E = hν'. Bottom caption: 'captions.insert — the CC track travels with the upload.' Clients want their captions right; the beat sheet already has them right.",
+     "colors": [
+      "#FFFFFF",
+      "#2A1A0E",
+      "#1F6F5C",
+      "#C8102E"
+     ]
+    }
+   },
+   "narration_text": "And there's a fourth job: captions. The beat sheet already knows every word of narration and exactly when it lands — so the publisher uploads a real caption track, built from the source text on measured timing. Not an auto-transcription guess. Clients want their captions right, and the machine already has them right.",
+   "estimated_duration_s": 18,
+   "act": "PUBLISH",
+   "t_start": 78.0,
+   "actual_duration_s": 0,
+   "audio_file": ""
   },
   {
    "beat_id": "B05",

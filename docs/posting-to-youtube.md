@@ -17,13 +17,16 @@ and chapter order. The automation is the point — it's exactly what Studio uplo
 
 ## What each video needs
 
-Three things per folder, all of which the pipeline already produced:
+Four things per folder, all of which the pipeline already produced:
 
 - `mp4/<slug>.mp4` — the master to upload. *What is Brutalist?* ships its **review** cut on purpose
   (it keeps the review label it explains); *Installs* and *When Cowork* ship their clean `-cut`
   finals.
 - `description.txt` — the full description.
 - `beat_sheet.json` metadata — `title`, `tags`, and `chapter_number`, which sets the playlist order.
+- `<slug>.srt` — the caption track (CC), written **from the beat sheet**: SOURCE narration text on
+  measured beat windows. The machine already knows every word and exactly when it lands, so the
+  captions are right by construction — not an auto-transcription guess.
 
 For this batch: `chapter_number` 1, 2, 3 → *What is Brutalist?* first, then *Installs*, then *When
 Cowork Can Help Claude Code*.
@@ -34,7 +37,9 @@ One command (`publish_playlist.py`, wrapped by the youtube-publisher skill): it 
 the **"Brutalist"** playlist by title, uploads each master with a resumable `videos.insert`, and adds
 each video to the playlist at its chapter position, so the playlist reads in order regardless of
 upload order. A small local **ledger** records each uploaded video's ID, so a re-run skips what's
-already up instead of double-posting.
+already up instead of double-posting. And it uploads each folder's `<slug>.srt` as an English
+caption track (`captions.insert`) — idempotent like everything else: a video that already carries a
+track is skipped, and a caption failure never blocks the upload or the playlist.
 
 ## What actually happened (the honest record)
 
@@ -50,6 +55,11 @@ already up instead of double-posting.
   day**. Three was comfortable; a longer run batches across days, and the ledger tracks the boundary.
 - **Credentials.** The publisher resolves `youtube/credentials/<channel>/` from the repo root
   automatically (a path bug that used to force `ART_HOME`/explicit flags is fixed).
+- **The caption gap.** The vendored publisher had silently dropped CC upload — the experiment
+  publishers shipped every video with an `.srt` caption track; the first series publish didn't. A
+  review caught it the same day: the `force-ssl` scope, `captions.insert`, and `.srt` emission were
+  restored, and caption tracks were backfilled onto the live videos. Clients want their captions
+  right — and captions from the beat sheet *are* right, because the machine already knows every word.
 
 ## Cross-links: the funnel
 
@@ -61,7 +71,7 @@ link is the part the API can automate.)
 ## The split
 
 The machine does the mechanical publish that a hand-upload loses — transcript-style description,
-chapter order, tags, playlist, the idempotent ledger. What it does **not** do is decide what the
+chapter order, tags, playlist, the caption track, the idempotent ledger. What it does **not** do is decide what the
 world sees: the videos sit unlisted until *you* watch them and flip them public. Posting is one more
 place the labor divides the same way the whole series argues it should — the machine plays every
 part; you own what ships.

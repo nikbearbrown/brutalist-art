@@ -61,3 +61,13 @@ STILL BLOCKED: none.
 RESULT: 16/16 beats rendered (233.9s, narrated). 0 slates. 0 beats need human review.
   Standing rules #3 and #4 followed exactly — Remotion rendered via remotion_scenes.py (foreground),
   props matched to schema, verified by looking at qc-sheet.png. No placeholder text found.
+
+## HUMAN FEEDBACK — posting-to-youtube rev 2 — 2026-07-13
+
+- "The video explains the tool and CC upload is an important feature — clients want their captions
+  right." → video 4 gets a rev 2: B03 becomes "four things" (adds the `.srt` line); new beat B04A
+  "captions ship with the post". Publisher caption parity restored in `c3cac9b` (force-ssl scope,
+  `captions.insert`, `.srt` emission — the vendored `publish_playlist.py` had dropped what the
+  ancestor `youtube_publish.py` had).
+- Toolkit lesson: **vendoring a script is a refactor — diff features against the ancestor before
+  first use.** The caption gap only surfaced because a human asked where the CC went.
