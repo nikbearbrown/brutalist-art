@@ -36,6 +36,7 @@ Usage:
     python3 suno_export.py path/to/<slug> --limit 4000 --tag "[spoken word]"
 """
 import argparse
+import re
 import json
 import sys
 from pathlib import Path
@@ -52,7 +53,11 @@ def narrated_beats(sheet):
 
 
 def beat_block(b, tag):
-    return f"{tag}\n{normalize_for_tts(b['narration_text'].strip())}"
+    text = normalize_for_tts(b["narration_text"].strip())
+    # the TTS map turns em-dashes into " , " for pause timing — tidy the
+    # spacing so the pasted lyrics read clean (", " not " ,  ")
+    text = re.sub(r"\s+,\s+", ", ", text)
+    return f"{tag}\n{text}"
 
 
 def chunk_beats(sheet, limit=DEFAULT_LIMIT, tag=DEFAULT_TAG):
@@ -95,6 +100,10 @@ def main():
         if not (ped.exists() and "VERDICT: PASS" in ped.read_text()):
             raise SystemExit("[suno] GATE P: PEDAGOGY.md with VERDICT: PASS required "
                              "before narration export (--no-gate to override)")
+
+    # the stems land here — make the drop target exist before the human needs it
+    (folder / "pantry").mkdir(exist_ok=True)
+    (folder / "mp3").mkdir(exist_ok=True)
 
     chunks = chunk_beats(sheet, a.limit, a.tag)
     for i, (text, beats) in enumerate(chunks, 1):
