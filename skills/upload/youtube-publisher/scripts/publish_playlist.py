@@ -46,6 +46,33 @@ SCOPES = [
 ]
 EDU_CATEGORY = "27"
 
+# ── Series anchors ───────────────────────────────────────────────────────────
+# The whole series funnels to one intro video and one master playlist. By DEFAULT
+# every SHORT's description points to the intro VIDEO ("What is Brutalist?"), and
+# every LONG's description points to the series PLAYLIST ("Brutalist"). Override
+# either in .env (blank disables that anchor); pass --no-anchor to skip entirely.
+ANCHOR_VIDEO_URL    = os.environ.get("ART_ANCHOR_VIDEO_URL",
+                                     "https://youtu.be/xXKgCXc1nm4")                       # What is Brutalist?
+ANCHOR_PLAYLIST_URL = os.environ.get("ART_ANCHOR_PLAYLIST_URL",
+                                     "https://www.youtube.com/playlist?list=PLG9H-C6rp5RU")  # Brutalist
+
+def anchor_block(kind: str) -> str:
+    if kind == "short":
+        return f"\n\n▶ Start the series — What is Brutalist?\n{ANCHOR_VIDEO_URL}" if ANCHOR_VIDEO_URL else ""
+    return f"\n\n▶ The full series playlist — Brutalist\n{ANCHOR_PLAYLIST_URL}" if ANCHOR_PLAYLIST_URL else ""
+
+def folder_kind(folder: Path, default: str) -> str:
+    """A short if it lives in a short/ subfolder or its metadata says so; else the CLI default."""
+    if folder.name == "short":
+        return "short"
+    try:
+        m = json.loads((folder / "beat_sheet.json").read_text()).get("metadata", {})
+    except Exception:
+        m = {}
+    if str(m.get("kind", "")).lower() == "short" or str(m.get("format", "")).lower() in ("short", "9:16", "vertical"):
+        return "short"
+    return default
+
 
 def get_service(client_secret: Path, token_path: Path):
     from google.auth.transport.requests import Request
@@ -112,7 +139,7 @@ def already_in_playlist(youtube, playlist_id: str) -> dict:
     return out
 
 
-def upload_video(youtube, folder: Path, privacy: str):
+def upload_video(youtube, folder: Path, privacy: str, kind: str = "long", add_anchor: bool = True):
     from googleapiclient.http import MediaFileUpload
     sheet = json.loads((folder / "beat_sheet.json").read_text())
     md = sheet["metadata"]
@@ -122,6 +149,10 @@ def upload_video(youtube, folder: Path, privacy: str):
         raise SystemExit(f"[yt] no master mp4: {mp4} (run sandwich.py first)")
     desc = (folder / "description.txt")
     description = desc.read_text() if desc.exists() else md.get("title", "")
+    if add_anchor:
+        link = ANCHOR_VIDEO_URL if kind == "short" else ANCHOR_PLAYLIST_URL
+        if link and link not in description:            # idempotent: don't double-append
+            description = description.rstrip() + anchor_block(kind)
 
     body = {
         "snippet": {
@@ -159,6 +190,11 @@ def main() -> int:
     ap.add_argument("--token", default=None)
     ap.add_argument("--ledger", default=None)
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--kind", choices=["long", "short"], default="long",
+                    help="long → description points to the series PLAYLIST; short → to the intro VIDEO "
+                         "(auto-detected for short/ subfolders regardless)")
+    ap.add_argument("--no-anchor", action="store_true",
+                    help="do not append the default series cross-link to the description")
     args = ap.parse_args()
 
     folders = [Path(f).expanduser().resolve() for f in args.folders]
@@ -179,7 +215,7 @@ def main() -> int:
     if args.dry_run:
         print("[yt] dry-run — authenticating read-only preview")
 
-    _repo = Path(os.environ.get("ART_HOME") or Path(__file__).resolve().parents[3])
+    _repo = Path(os.environ.get("ART_HOME") or Path(__file__).resolve().parents[4])  # repo root
     _cred = _repo / "youtube" / "credentials" / args.channel
     client_p = Path(args.client).resolve() if args.client else _cred / "client_secret.json"
     token_p  = Path(args.token).resolve()  if args.token  else _cred / "youtube_token.json"
@@ -202,14 +238,15 @@ def main() -> int:
             print(f"[yt] (dry-run) would upload {slug}")
             continue
         else:
-            vid = upload_video(youtube, folder, args.privacy)
+            kind = folder_kind(folder, args.kind)
+            vid = upload_video(youtube, folder, args.privacy, kind=kind, add_anchor=not args.no_anchor)
             ledger[slug] = vid
             ledger_path.write_text(json.dumps(ledger, indent=1))
 
         if playlist_id and not args.dry_run and vid not in in_pl:
             youtube.playlistItems().insert(
                 part="snippet",
-                body={"snippet": {"playlistId": playlist_id, "position": pos,
+                body={"snippet": {"playlistId": playlist_id,
                                   "resourceId": {"kind": "youtube#video", "videoId": vid}}},
             ).execute()
             print(f"[yt] added {slug} to playlist at position {pos}")

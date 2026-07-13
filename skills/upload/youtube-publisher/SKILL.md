@@ -154,3 +154,25 @@ OAuth credentials live in `youtube/credentials/<channel>/` (gitignored), each ho
 with `ART_YOUTUBE_CHANNEL` (default `nikbearbrown`) or `publish_playlist.py --channel <name>`.
 Most people have one channel; add more folders for multiple. `./art keys` validates the selected
 channel's OAuth for free.
+
+## Series cross-links (default ON)
+
+The whole series funnels to one intro video and one master playlist. When publishing, the description
+is automatically appended with a cross-link — no manual editing:
+
+- **Short** (`--kind short`, or any `short/` subfolder — auto-detected) → points to the intro **video**
+  "What is Brutalist?" (`ART_ANCHOR_VIDEO_URL`).
+- **Long** (default) → points to the series **playlist** "Brutalist" (`ART_ANCHOR_PLAYLIST_URL`), and
+  the video is also added to that playlist.
+
+Both anchors are set in `.env` (`ART_ANCHOR_VIDEO_URL`, `ART_ANCHOR_PLAYLIST_URL`); blank either to
+disable it, or pass `--no-anchor` to skip both. The append is idempotent — re-running won't duplicate
+the link.
+
+**Native Shorts "Related video" chip:** the YouTube Data API cannot set the native related-video link
+that appears on a Short; that's a YouTube Studio / mobile-app action. The description link above is the
+automatable funnel; set the native chip manually in Studio if you want it in addition.
+
+**Credentials resolution:** the publisher now resolves `youtube/credentials/<channel>/` from the repo
+root automatically (fixed a `parents[]` bug), so you no longer need `ART_HOME` set or `--client`/
+`--token`/`--ledger` passed when running the script directly from the repo root.
