@@ -65,8 +65,14 @@ ANCHOR_VIDEO_URL    = os.environ.get("ART_ANCHOR_VIDEO_URL",
 ANCHOR_PLAYLIST_URL = os.environ.get("ART_ANCHOR_PLAYLIST_URL",
                                      "https://www.youtube.com/playlist?list=PLG9H-C6rp5RU")  # Brutalist
 
-def anchor_block(kind: str) -> str:
+def anchor_block(kind: str, parent_url: str = "", parent_title: str = "") -> str:
     if kind == "short":
+        # THE FUNNEL: a short exists to send people to its 16:9 long. A derived
+        # short (metadata.derived_from) anchors to its PARENT LONG; a standalone
+        # short falls back to the series intro video.
+        if parent_url:
+            return (f"\n\n▶ Watch the full video — {parent_title or 'the long'}"
+                    f"\n{parent_url}")
         return f"\n\n▶ Start the series — What is Brutalist?\n{ANCHOR_VIDEO_URL}" if ANCHOR_VIDEO_URL else ""
     return f"\n\n▶ The full series playlist — Brutalist\n{ANCHOR_PLAYLIST_URL}" if ANCHOR_PLAYLIST_URL else ""
 
@@ -189,7 +195,8 @@ def insert_caption(youtube, video_id: str, srt: Path, language="en", name="Engli
     raise last
 
 
-def upload_video(youtube, folder: Path, privacy: str, kind: str = "long", add_anchor: bool = True):
+def upload_video(youtube, folder: Path, privacy: str, kind: str = "long", add_anchor: bool = True,
+                 ledger: dict | None = None):
     from googleapiclient.http import MediaFileUpload
     sheet = json.loads((folder / "beat_sheet.json").read_text())
     md = sheet["metadata"]
@@ -200,9 +207,17 @@ def upload_video(youtube, folder: Path, privacy: str, kind: str = "long", add_an
     desc = (folder / "description.txt")
     description = desc.read_text() if desc.exists() else md.get("title", "")
     if add_anchor:
-        link = ANCHOR_VIDEO_URL if kind == "short" else ANCHOR_PLAYLIST_URL
+        # a derived short funnels to its parent long (looked up in the ledger)
+        parent_url, parent_title = "", ""
+        if kind == "short":
+            parent = md.get("derived_from", "")
+            pvid = (ledger or {}).get(parent)
+            if pvid:
+                parent_url = f"https://youtu.be/{pvid}"
+                parent_title = md.get("title", "")
+        link = parent_url or (ANCHOR_VIDEO_URL if kind == "short" else ANCHOR_PLAYLIST_URL)
         if link and link not in description:            # idempotent: don't double-append
-            description = description.rstrip() + anchor_block(kind)
+            description = description.rstrip() + anchor_block(kind, parent_url, parent_title)
 
     body = {
         "snippet": {
@@ -232,7 +247,8 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("folders", nargs="*", help="explicit video folders")
     ap.add_argument("--root", help="scan this dir for video folders (each has beat_sheet.json)")
-    ap.add_argument("--playlist", default="Quantum Mechanics Volume 1 (NotebookLM)")
+    ap.add_argument("--playlist", default=os.getenv("ART_PLAYLIST", ""),
+                    help="playlist title to find-or-create (default: $ART_PLAYLIST env var; required)")
     ap.add_argument("--privacy", choices=["unlisted", "public"], default="unlisted")
     ap.add_argument("--channel", default=os.getenv("ART_YOUTUBE_CHANNEL", "nikbearbrown"),
                     help="channel key → youtube/credentials/<channel>/ (default: $ART_YOUTUBE_CHANNEL or nikbearbrown)")
@@ -258,6 +274,14 @@ def main() -> int:
                      ["metadata"].get("chapter_number") or 999)
     if not folders:
         sys.exit("[yt] no video folders found (need --root or explicit folders)")
+    if not args.playlist:
+        # SHORTS ALWAYS POST TO "Shorts": when every folder in the run is a
+        # short and no playlist was named, that rule fills it in.
+        if all(folder_kind(f, args.kind) == "short" for f in folders):
+            args.playlist = "Shorts"
+            print('[yt] all folders are shorts → playlist "Shorts" (the standing rule)')
+        else:
+            sys.exit("[yt] --playlist is required (or set $ART_PLAYLIST in .env)")
 
     print("[yt] publish order (by chapter):")
     for f in folders:
@@ -294,7 +318,8 @@ def main() -> int:
             continue
         else:
             kind = folder_kind(folder, args.kind)
-            vid = upload_video(youtube, folder, args.privacy, kind=kind, add_anchor=not args.no_anchor)
+            vid = upload_video(youtube, folder, args.privacy, kind=kind,
+                               add_anchor=not args.no_anchor, ledger=ledger)
             ledger[slug] = vid
             ledger_path.write_text(json.dumps(ledger, indent=1))
             fresh = True
