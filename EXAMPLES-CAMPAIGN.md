@@ -39,6 +39,15 @@ every video type with nothing but `brutalist-art/` + `.env`.
 (This is why the campaign is the real acceptance test for the whole refactor: a reach-out that
 static inspection missed becomes a loud `MISSING` the moment a real build needs it.)
 
+## Standing rules (every build, every iteration)
+
+1. **Log human feedback FIRST.** Before acting on any instruction I give, append it verbatim to the
+   video's `BUILD-LOG.md` under a `## HUMAN FEEDBACK — <date>` heading. This is automatic — I should
+   never have to ask for it.
+2. **Verify renders by LOOKING.** Never report a visual fix as done without extracting a frame and
+   checking it. "The box fits now" is only true if a mid-frame PNG shows the text inside the border.
+   A fix that was discussed but not visually verified is not a fix.
+
 ## The loop (per video type)
 
 1. **Build** it with Claude Code (start from the type's `BUILD-PROMPT.md`; `what-is-brutalist`

@@ -8,6 +8,8 @@ something that is not in this folder, do NOT resolve it against a parent repo �
 `MISSING: <what> — was at <where, if known> — blocks <beat/step>` to the BUILD-LOG and stop that
 thread; the human will vendor it in. First read `EXAMPLES-CAMPAIGN.md` for the campaign rules.
 
+VERIFY every visual fix by extracting a frame and looking — never report a box/layout fixed without confirming the text is inside the border in an actual rendered frame.
+
 LOG EVERYTHING to `youtube/what-is-brutalist/BUILD-LOG.md` (append-only): every command, every
 error, every fix (with the file changed), every `MISSING:`, and the final result (beats rendered /
 beats left for the human).
