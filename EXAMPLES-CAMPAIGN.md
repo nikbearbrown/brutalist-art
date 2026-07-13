@@ -109,47 +109,48 @@ Legend: 🔑 keys needed · 📁 existing folder to rebuild-and-verify · ✨ ne
 |---|---|---|---|---|---|
 | 1 | **What is Brutalist?** | explainer + terminal | ✨ `youtube/what-is-brutalist` | ✅ | **DONE** — 16/16 beats rendered (174s, narrated); 0 MISSING; **5 toolkit bugs found & fixed** (commit `50df886`). 3 beats flagged for pacing review (B11/B06/B02). |
 | 2 | **Installs, .env & credentials** | explainer + terminal | ✨ `youtube/installs` | ✅ | **DONE — 15/15 beats compiled (224.7s, narrated); all content verified on rendered frames.** Source doc `docs/Installs.md`. **2 toolkit bugs found & fixed** → standing rules #3/#4: (a) agent hand-rolled background `npx remotion render` + `ps` polling instead of `remotion_scenes.py` (burned hrs); (b) 6 Remotion beats rendered `Root.tsx` demo defaults until beat-sheet props were matched to each component's zod schema. Hero B11 CLONE YOUR VOICE. Watch: graphic 60% > cap; terminal beats center-cut to audio. |
-| 3 | **When Cowork Can Help Claude Code** | explainer + terminal | ✨ `youtube/when-cowork-helps-claude-code` | ⬜ | **The meta rescue story** — installs stalled ~1 hr ('just a couple more minutes'), the phantom 43-Chrome theory, a second set of eyes fixes it in 4 commands. 16 beats, Remotion props **pre-matched to the zod schema** (applies standing rules #3/#4); source doc `docs/cowork-and-claude-code.md`. **Build next.** |
-| 4 | slate-cut | (compile) | 📁 `examples/slate-cut--base-rate` | ⬜ | the no-key first pass; verify `./art run` + request cards |
-| 5 | previz | (fill_slates) | ✨ `youtube/previz-*` | ⬜ | any beat sheet → all-slate timing pass |
-| 6 | line-art-vectorizer | line-art-vectorizer | ✨ `youtube/*` | ⬜ | vtracer, no key |
-| 7 | figure-planner | figure-planner | ✨ `youtube/*` | ⬜ | **author its SKILL.md first** (D5), then a figure |
-| 8 | sketch-explainer (silent) | sketch-explainer | ✨ `youtube/*` | ⬜ | Manim only, no key |
+| 3 | **When Cowork Can Help Claude Code** | explainer + terminal | ✨ `youtube/when-cowork-helps-claude-code` | ✅ | **DONE** — 16/16 beats rendered (233.9s, narrated); 0 MISSING; 0 slates. Standing rules #3/#4 followed exactly (remotion_scenes.py foreground; props matched; qc-sheet verified). B14 hero (dark bg, EB Garamond, "A SECOND SET OF EYES") confirmed on qc-sheet. Source doc `docs/cowork-and-claude-code.md`. |
+| 4 | **Posting to YouTube** | explainer + terminal | ✨ `youtube/posting-to-youtube` | ⬜ | **The publish story** — publishing videos 1–3 via the YouTube Data API: why the API not Studio, the `position=`/`manualSortRequired` bug found & fixed, unlisted-vs-audit privacy, ~6/day quota, the cross-link funnel. Built from `youtube/PUBLISH-LOG.md`; 15 beats, props pre-matched to schema; source doc `docs/posting-to-youtube.md`. **Build next.** |
+| 5 | slate-cut | (compile) | 📁 `examples/slate-cut--base-rate` | ⬜ | the no-key first pass; verify `./art run` + request cards |
+| 6 | previz | (fill_slates) | ✨ `youtube/previz-*` | ⬜ | any beat sheet → all-slate timing pass |
+| 7 | line-art-vectorizer | line-art-vectorizer | ✨ `youtube/*` | ⬜ | vtracer, no key |
+| 8 | figure-planner | figure-planner | ✨ `youtube/*` | ⬜ | **author its SKILL.md first** (D5), then a figure |
+| 9 | sketch-explainer (silent) | sketch-explainer | ✨ `youtube/*` | ⬜ | Manim only, no key |
 
 **GATE — key check (free, not a video).** **Run `./art keys` BEFORE any paid build.** Free live probes (ElevenLabs `/user`+`/voices`, higgsfield `account status`, YouTube `channels.list`=1 unit). Confirms every key/voice is valid + shows quota/credits. No spend. Fix any ❌ before Tier 1+.
 
 ### Tier 1 — ElevenLabs (narration)
 | # | Video | Skill | Folder | Status |
 |---|---|---|---|---|
-| 9 | sketch-explainer (narrated) | sketch-explainer | ✨ | ⬜ |
-| 10 | math-explainer | math-explainer | ✨ (+LaTeX) | ⬜ |
-| 11 | explainer | explainer | 📁 `examples/explainer--size-paradox` | ⬜ |
-| 12 | terminal-screencast | terminal-screencast | 📁 `examples/terminal-screencast--compression-journey` | ⬜ |
-| 13 | bio | bio | ✨ (`--length` 3:00) | ⬜ |
-| 14 | code-walkthrough | code-walkthrough | ✨ | ⬜ |
-| 15 | kids-video | kids-video | ✨ | ⬜ |
-| 16 | recitation-film | recitation-film | ✨ (+faster-whisper) | ⬜ |
-| 17 | **deck-lecture** | deck-lecture | ✨ (vendor `animated-deck`; +Playwright) | ⬜ | restore one of the 34 lectures as the example |
-| 18 | story-film (narration) | story-film | 📁 `examples/00-story-film-demos` | ⬜ |
+| 10 | sketch-explainer (narrated) | sketch-explainer | ✨ | ⬜ |
+| 11 | math-explainer | math-explainer | ✨ (+LaTeX) | ⬜ |
+| 12 | explainer | explainer | 📁 `examples/explainer--size-paradox` | ⬜ |
+| 13 | terminal-screencast | terminal-screencast | 📁 `examples/terminal-screencast--compression-journey` | ⬜ |
+| 14 | bio | bio | ✨ (`--length` 3:00) | ⬜ |
+| 15 | code-walkthrough | code-walkthrough | ✨ | ⬜ |
+| 16 | kids-video | kids-video | ✨ | ⬜ |
+| 17 | recitation-film | recitation-film | ✨ (+faster-whisper) | ⬜ |
+| 18 | **deck-lecture** | deck-lecture | ✨ (vendor `animated-deck`; +Playwright) | ⬜ | restore one of the 34 lectures as the example |
+| 19 | story-film (narration) | story-film | 📁 `examples/00-story-film-demos` | ⬜ |
 
 ### Tier 2 — higgsfield CLI (AI image/video)
 | # | Video | Skill | Folder | Status |
 |---|---|---|---|---|
-| 19 | lyric-resync | lyric-resync | ✨ | ⬜ |
-| 20 | dance-video | dance-video | ✨ | ⬜ |
-| 21 | ai-asset-gen | ai-asset-gen | ✨ | ⬜ |
-| 22 | collage-ads | collage-ads | ✨ | ⬜ |
+| 20 | lyric-resync | lyric-resync | ✨ | ⬜ |
+| 21 | dance-video | dance-video | ✨ | ⬜ |
+| 22 | ai-asset-gen | ai-asset-gen | ✨ | ⬜ |
+| 23 | collage-ads | collage-ads | ✨ | ⬜ |
 
 ### Tier 3 — local audio (bring a WAV)
 | # | Video | Skill | Folder | Status |
 |---|---|---|---|---|
-| 23 | music-video | music-video | 📁 `examples/music-video--c-is-for-cookie` | ⬜ |
-| 24 | lyric-overlay | lyric-overlay | ✨ | ⬜ |
+| 24 | music-video | music-video | 📁 `examples/music-video--c-is-for-cookie` | ⬜ |
+| 25 | lyric-overlay | lyric-overlay | ✨ | ⬜ |
 
 ### Final
 | # | Video | Skill | Folder | Status |
 |---|---|---|---|---|
-| 25 | youtube-publisher | youtube-publisher | (publishes the built playlist) | ⬜ | OAuth; publishes everything above as the real playlist. **API quota: ~6 uploads/day** — the default 10,000 units/day ÷ 1,600 units per `videos.insert` = ~6, NOT the console's "100 uploads/day" (that limit never binds). So ~23 videos = ~4 days via API, unless you request a quota increase (adjustable, needs audit) or upload some manually via Studio (web uploads don't touch the API quota). **Chosen: publish via the API, batched ~6/day over ~4 days** (keeps the automation — transcript, chapters, description, playlist order, bookends — that Studio uploads lose). The API quota resets at **midnight Pacific (3:00 AM ET)**; the `ART_PUBLISH_LEDGER` tracks what's already up, so each daily run publishes the next unpublished batch until the playlist is complete. Can be a daily scheduled task. |
+| 26 | youtube-publisher | youtube-publisher | (publishes the built playlist) | ⬜ | OAuth; publishes everything above as the real playlist. **API quota: ~6 uploads/day** — the default 10,000 units/day ÷ 1,600 units per `videos.insert` = ~6, NOT the console's "100 uploads/day" (that limit never binds). So ~23 videos = ~4 days via API, unless you request a quota increase (adjustable, needs audit) or upload some manually via Studio (web uploads don't touch the API quota). **Chosen: publish via the API, batched ~6/day over ~4 days** (keeps the automation — transcript, chapters, description, playlist order, bookends — that Studio uploads lose). The API quota resets at **midnight Pacific (3:00 AM ET)**; the `ART_PUBLISH_LEDGER` tracks what's already up, so each daily run publishes the next unpublished batch until the playlist is complete. Can be a daily scheduled task. |
 
 ### Helpers to exercise along the way (not videos; no dedicated example)
 `scout`, `cli-scout`, `script-writer`, `audience-preset`, `shot-planner`, `duration-planner`,
