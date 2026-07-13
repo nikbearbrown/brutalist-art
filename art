@@ -6,6 +6,7 @@
 #   ./art <skill> <target> ...   run a skill (old house names resolve via GLOSSARY.md)
 #   ./art todo <reel> [flags]    per-video beat ledger (which beats need filling, how)
 #   ./art run <reel> [flags]     compile a reel (wraps runtime/scripts/run.sh)
+#   ./art final <reel>           clean master cut — no review label (→ <slug>-cut.mp4)
 #   ./art keys                   validate every key LIVE and FREE (no spend)
 #   ./art doctor                 dependency + key readiness (Phase 4)
 #
@@ -60,6 +61,13 @@ case "$cmd" in
     ;;
   run)
     exec bash "$ART_HOME/runtime/scripts/run.sh" "$@"
+    ;;
+  final)
+    # clean master (no --review label). Defaults to full-res 1080 unless the caller sets --height.
+    case " $* " in
+      *" --height "*) exec python3 "$ART_HOME/runtime/scripts/compile.py" "$@" ;;
+      *)              exec python3 "$ART_HOME/runtime/scripts/compile.py" "$@" --height 1080 ;;
+    esac
     ;;
   doctor)
     if [ -x "$ART_HOME/setup" ]; then exec "$ART_HOME/setup" "$@"; else
