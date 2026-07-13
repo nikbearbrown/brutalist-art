@@ -11,91 +11,115 @@ including this file. Where this disagrees with the files, the files win. Refresh
 Manim, and Remotion — audio-first, one self-contained folder per video (`youtube/<slug>/`, with
 `beat_sheet.json` as the heart). It is also producing a meta YouTube series, **"Brutalist — Claude
 for Video Production"** on @NikBearBrown: every video is made *by* the toolkit and *about* it. The
-human owns taste and judgement; the machine does the mechanical build. That split ("you are the
-conductor") is the series' running argument.
+human owns taste and judgement; the machine does the mechanical build.
 
-## Current state (from git + disk, 2026-07-13)
+## Current state (from git + disk, end of 2026-07-13)
 
-- Branch `main`. Today's commits: `fd8c6d7` (videos 3+4 gate files + publish log), `c3cac9b`
-  (caption restoration), `cc624dd` (video 4 rev-2 authoring), `714fc61` (shorts upgrade), plus the
-  session wrap-up commit after this file. Remote `origin/main` is still at `fe8fb19` — **everything
-  since is unpushed; `git push origin main` from the Mac sends it.**
-- **Videos 1–4 are all PUBLISHED unlisted** in the "Brutalist" playlist (`PLG9H-C6rp5RU`):
-  ch1 `xXKgCXc1nm4`, ch2 `7rUcwkFOhvM`, ch3 `AhdmP75PBY0`, ch4 `S7rmHr36C74` (rev 2 final,
-  16/16 beats, 261.5s, includes the captions beat). Full record: `youtube/PUBLISH-LOG.md`.
-- Video 4 went through **three uploads today**: rev 1 (`5iadw1MET3Q`, no captions beat), rev 2
-  review cut (`PE2Zv8hBDzc`, uploaded from a master staged before `./art final`), rev 2 final
-  (`S7rmHr36C74`, live and correct). The two superseded ones await Studio deletion.
+- Branch `main`, HEAD `d72cfc5`. `origin/main` is at `e7acb89` — **six commits unpushed**
+  (`596d860` Onda check, `b2725ab` Suno path, `abd6307` cost-test sheet, `ec6ea20` merge slicer,
+  `e8197f8` session skill, `d72cfc5` songbird). `git push origin main` from the Mac sends them.
+- **Substantial in-flight, UNCOMMITTED work from active Mac build sessions** — do not treat the last
+  commit as the full picture: the 916 portrait Remotion scenes are authored (`runtime/remotion/src/`
+  Root.tsx + BrutalistTerminalOpen/NikBearBrownTerminalAsk/NikBearBrownCodeBlock/BrutalistCommentCTA
+  modified), `shorts.py`/`generate_audio.py`/`art` carry session-side edits, all four series reels
+  have `short/` folders, and the cost-test reel has a compiled review cut + COST-LOG.md +
+  layout-audit artifacts. These commit when their builds pass their gates.
 
-## The series (this is the cursor)
+## The series (published)
 
-Playlist **"Brutalist"** — the four series videos plus ~13 earlier brutalist experiments; the series
-sits on top once the playlist is switched to manual sort (a pending Studio action). Full 26-item
-build order and per-video status: `/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/EXAMPLES-CAMPAIGN.md`.
-**Next up: video 5 = slate-cut** (Tier 0, the no-key first pass).
+Playlist **"Brutalist"** (`PLG9H-C6rp5RU`), all unlisted: ch1 `xXKgCXc1nm4`, ch2 `7rUcwkFOhvM`,
+ch3 `AhdmP75PBY0`, ch4 `S7rmHr36C74` (rev 2 final, 16/16, captions beat). Superseded video-4 uploads
+(`5iadw1MET3Q`, `PE2Zv8hBDzc`) and the accidental "Quantum Mechanics Volume 1 (NotebookLM)" playlist
+were queued for manual Studio deletion — verify in Studio whether that cleanup happened.
+Record: `/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/PUBLISH-LOG.md`.
 
-## Decisions and changes recorded today
+## In flight (three threads)
 
-- **CC ships with every post** (`c3cac9b`): the vendored publisher had dropped caption upload; the
-  ancestor `youtube_publish.py` had it. Restored — `youtube.force-ssl` scope (stale tokens force
-  re-consent), `captions.insert` with backoff, idempotent via `captions.list`, `--no-captions` flag.
-  `<slug>.srt` is written from the beat sheet (SOURCE narration text on measured beat windows, never
-  a transcription pass); all four series videos have one. The lesson, logged in
-  `CAMPAIGN-FEEDBACK.md`: *vendoring a script is a refactor — diff features against the ancestor.*
-- **Video 4 rev 2** (`cc624dd`): the video explains the tool, so the captions feature joined the
-  film — B03 became "four things" (adds the `.srt` line) and new beat B04A "captions ship with the
-  post". `docs/posting-to-youtube.md` carries the matching sections including "The caption gap" in
-  the honest record. Rebuild ran on the Mac per `youtube/posting-to-youtube/BUILD-PROMPT.md` REV 2.
-- **Shorts pipeline** (`714fc61`, `runtime/scripts/shorts.py` + publisher + `./art shorts`):
-  checks YouTube's hard 3:00 cap FIRST — at/under → full 16:9→9:16 reformat; over → auto-planned
-  derivative cut (longest unprotected middle beats drop; hook/hero/outro protected; `--drop`/
-  `--keep` override). A shortened cut rewrites the outro to say what was cut and send viewers to
-  the long — the ONLY regenerated audio in a short. `pantry/<bid>-916.*` is the human replacement
-  slot for center-cuts that don't work (wins over everything). Shorts always post to the "Shorts"
-  playlist; the publisher anchors a derived short's description to its PARENT LONG via the ledger.
-  **Not yet exercised end-to-end — the first real `./art shorts <reel>` run should be watched.**
-- **Publisher --playlist default** is `$ART_PLAYLIST` (empty = required flag) after the stale
-  hardcoded default created a wrong playlist mid-publish (fixed by the Mac build session).
-- **`books/CLAUDE.md` (one level up, not in this repo) was rewritten**: video work routes to
-  `brutalist-art/` from `books/`; a book's `youtube/` travels with that book; `brutalist-art/youtube/`
-  is the meta-series exception; standing rules referenced.
-- Standing rules #1–#4 unchanged (in `EXAMPLES-CAMPAIGN.md`); one addition from today's mixup:
-  the master is staged AFTER `./art final` — the `mp4/<slug>.mp4 -> ../<slug>-cut.mp4` symlink
-  convention prevents uploading a review cut.
+1. **Video 5 — "Suno vs 11 Labs Cost Test"** (`youtube/suno-vs-11-labs-cost-test/`): THE VIDEO IS
+   THE EXPERIMENT — its narration voiced both ways. The decision stands that **both voice versions
+   publish** (people compare; each description cross-links the other; the human picks only which is
+   PRIMARY = chapter 5). Suno take sliced (mp3-suno/), ElevenLabs take generated (mp3-11labs/),
+   review cut compiled, COST-LOG.md started, variant folder `youtube/suno-vs-11-labs-cost-test-11labs/`
+   created. Remaining: both reels through QC gates → both finals → publish with cross-links → the
+   music-bed version (needs the Suno **(Instrumental)** stem downloaded to pantry/; a continuous bed
+   muxed under the finished cut — music is never sliced per beat).
+2. **Shorts for videos 1–4**: `short/` folders exist in all four reels; the Onda-check cycle
+   (REMOTION beats rewired to `<pattern>916` compositions, portrait re-renders, no center-cuts of
+   generated media) was the active work. Gate: approval on four review cuts, then publish — shorts
+   always to the "Shorts" playlist, descriptions anchor to the parent long (publisher does both
+   automatically).
+3. **"She Walks in Beauty"** (`youtube/she-walks-in-beauty/pantry/`): Byron 1814, session-directed
+   Suno reading in Bear's voice, mastered wav + song.txt in pantry. Builds with the
+   **recitation-film** skill (performance = master clock, GATE 0 alignment, karaoke-as-CC). Note the
+   stanza breaks differ from Byron's printed 6/6/6 — the adaptation marker applies. Feeds video 19b.
+
+## Decisions and capabilities added 2026-07-13 (all in committed docs)
+
+- **The Suno voice path** (`b2725ab`, `ec6ea20`): `./art suno` exports narration as `.suno.N.txt`
+  (4000-char chunks, beats never split) + `.suno.style.txt` session notes + a chunk map; the human
+  generates in Suno and drops the VOCAL-ONLY stem in `pantry/`; `./art suno-slice` cuts it into
+  `mp3/beat-*.mp3` with measured durations — the same interface `generate_audio.py` produces, so
+  downstream never knows the engine. Over-split stems reconcile via the **expected-duration merge**
+  (DP on narration-length shares, cuts at the biggest silences; off-target refuses). GATE P applies.
+- **session is a skill** (`e8197f8`, `skills/make/session/`): direct the reading, don't label it —
+  style-box session notes + `[spoken word — delivery]` tags per beat (per-beat `"delivery"` field
+  overrides); the breath rule ("a full breath of silence between sections") is what keeps slicing
+  clean. Poems take the authored path; exact text; adaptation-marker duty downstream.
+- **songbird is a skill** (`d72cfc5`, `skills/make/songbird/`): THE SEQUENCING LAW (Entry–Beat–Exit,
+  visual + musical continuity lanes) for every generated-clip prompt chain; engine map (song/boogie →
+  music-video/dance-video authoring, `plug` → shorts-funnel cliffhanger, `169` → outpainting,
+  parameter rule → style strings verbatim on every prompt line).
+- **Shorts law** (`714fc61`, `596d860`, `runtime/scripts/shorts.py`): cap check first (≤3:00 → full
+  reformat; over → auto beat-drop plan, hook/hero/outro protected); shortened cuts rewrite the outro
+  to name the cuts and point to the long (the only regenerated audio); `pantry/<bid>-916.*` is the
+  human override slot; **THE ONDA CHECK** — REMOTION beats are typed by the sheet, never by folder,
+  rewired to `<pattern>916` compositions, never center-cut.
+- **Captions law** (`c3cac9b`): CC ships with every post — `<slug>.srt` from the beat sheet (source
+  text on measured windows), `captions.insert`, idempotent, `force-ssl` scope.
+- **Publisher**: `--playlist` defaults from `$ART_PLAYLIST` (stale hardcoded default caused a wrong
+  playlist mid-publish); all-shorts runs default to "Shorts"; derived shorts anchor to their parent
+  long via the ledger; masters are staged AFTER `./art final` (the rev-2 review-cut mixup lesson —
+  `mp4/<slug>.mp4 -> ../<slug>-cut.mp4` symlink convention).
+- **Campaign additions**: 19a cost test (in flight), 19b "Session, Karaoke & Audiogram"
+  (BUILD-PROMPT ready — session + `align.py` word clock + lyric-overlay audiogram, Byron threaded
+  through as the worked example).
 
 ## Working constraints
 
-- Claude Code builds are folder-scoped to `brutalist-art/` for meta-series videos; book videos
-  build into `<book>/youtube/<slug>/` per `books/CLAUDE.md`. Missing assets → log a `MISSING:` line.
-- Never commit secrets: `.env` and `youtube/credentials/` are gitignored; media renders too.
-- On the device mount, `git` cannot unlink `.git/index.lock` / `HEAD.lock` ("Operation not
-  permitted") — move the stale lock aside (`mv`) and retry.
-- Unlisted publishes via API need no audit; **public is a manual Studio flip — the human decides.**
+- Standing rules #1–#4 in `EXAMPLES-CAMPAIGN.md` govern every build (feedback logged first; verify
+  renders BY LOOKING; Remotion only via `remotion_scenes.py` foreground; props match zod or the beat
+  renders demo defaults — "CANCER BIOLOGY" on screen is the tell).
+- Audio-first: narration (either engine) is the master clock. One folder = one video.
+- `books/CLAUDE.md` (one level up) routes video work here; a book's `youtube/` travels with the book;
+  `brutalist-art/youtube/` is the meta-series exception.
+- Never commit secrets (`.env`, `youtube/credentials/`) or media renders. On the device mount, stale
+  `.git/*.lock` files can't be unlinked — move them aside and retry.
+- Unlisted publishes need no audit; public is a manual Studio flip — the human decides.
 
 ## Open items
 
-- `git push origin main` from the Mac (origin/main is behind at `fe8fb19`).
-- **Studio cleanup pass**: delete superseded videos `5iadw1MET3Q` + `PE2Zv8hBDzc`; delete the
-  accidental playlist "Quantum Mechanics Volume 1 (NotebookLM)" (`PLaOEYdBvYAog`); Brutalist
-  playlist → sort Manual → drag ch1–ch4 to the top (ch4 right after *When Cowork*); while there,
-  verify ch4's CC track and description anchor.
-- First real shorts run: `./art shorts youtube/<slug>` on a finished reel, review the auto-plan,
-  regenerate the funnel outro audio, compile at 1920, publish (defaults to the "Shorts" playlist).
-- Flip the series videos to Public in Studio when ready.
-- Video 5 = slate-cut (`EXAMPLES-CAMPAIGN.md` Tier 0). Longer-term backlog:
-  `/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/TODO.md` (+ candidate: `--pin-top N` playlist reorder;
-  `videos.update` description push).
+- `git push origin main` (six commits behind).
+- Cost-test thread: gates → two finals → publish both with cross-linked descriptions (human picks
+  the PRIMARY for chapter 5) → music-bed version (needs the Instrumental stem in pantry/).
+- Shorts thread: four review cuts through approval → publish to "Shorts".
+- Studio: verify the video-4 cleanup (two superseded deletions + wrong playlist) and the playlist
+  manual-sort drag (series ch1–ch5 on top) happened.
+- Byron: build `she-walks-in-beauty` with recitation-film; then video 19b.
+- Backlog candidates noted in feedback: `--plug` cliffhanger flag for the shorts outro; a
+  remotion_scenes.py guard that hard-fails when zod validation falls back to demo defaults; `--align`
+  forced-alignment mode for suno_slice; `--pin-top` playlist reorder; `videos.update` description
+  push. Longer list: `/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/TODO.md`.
 
 ## Key files (absolute paths)
 
-- `/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/EXAMPLES-CAMPAIGN.md` — campaign, per-video status, standing rules. **Start here.**
-- `/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/CAMPAIGN-FEEDBACK.md` — per-build refactor findings (incl. the vendoring lesson).
-- `/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/PUBLISH-LOG.md` — the honest publish record (three-upload rev history of video 4).
-- `/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/docs/` — per-video source docs; `docs/posting-to-youtube.md` includes the captions sections.
-- `/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/runtime/scripts/shorts.py` — the 9:16 law (cap check, auto-shorten, pantry overrides).
-- `/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/skills/upload/youtube-publisher/scripts/publish_playlist.py` — upload + playlist + captions + funnel anchors.
-- `/Users/bear/Documents/CoWork/bear-textbooks/books/CLAUDE.md` — the books-level routing rules (youtube travels with the book).
-- `/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/art`, `runtime/`, `skills/` — the toolkit itself.
+- `/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/EXAMPLES-CAMPAIGN.md` — campaign + standing rules. **Start here.**
+- `/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/CAMPAIGN-FEEDBACK.md` — per-build findings (vendoring lesson, Onda check, merge slicer).
+- `/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/PUBLISH-LOG.md` — the honest publish record.
+- `/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/runtime/scripts/` — `suno_export.py`, `suno_slice.py`, `shorts.py`, `align.py`, `generate_audio.py`, `stage_publish.py`.
+- `/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/skills/make/session/SKILL.md` and `skills/make/songbird/SKILL.md` — the new skills.
+- `/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/skills/upload/youtube-publisher/scripts/publish_playlist.py` — upload + playlist + captions + anchors.
+- `/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/suno-vs-11-labs-cost-test/` (+ `-11labs/` variant) and `/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/she-walks-in-beauty/` — the in-flight reels.
+- `/Users/bear/Documents/CoWork/bear-textbooks/books/CLAUDE.md` — books-level routing (youtube travels with the book).
 
 ---
 
