@@ -2,9 +2,9 @@
 """brand_variant.py — scaffold an audience variant beat sheet from the canonical one.
 
 Every reel starts with beat_sheet.json (the NikBearBrown / default cut). An audience
-variant is either:
-  - beat_sheet.<suffix>.json  (all brands EXCEPT hai)
-  - a new hai- directory with beat_sheet.json inside it  (hai only)
+variant is written as beat_sheet.<suffix>.json. Directory-isolated brands
+(use_dir: hai, medhavy, nbb) write that file inside a new <suffix>- directory;
+other brands write it as a sibling of the source beat_sheet.json.
 
 The canonical beat_sheet.json is NEVER modified.
 
@@ -13,10 +13,10 @@ This script does the DETERMINISTIC half — it sets audience metadata (voice_id 
 into the register, the signature tangent, the audience outro — is done by Claude Code,
 guided by the hai / medhavy SKILL. No API calls, no spend.
 
-HAI output directory convention (the source is never modified):
-  <book>/youtube/<slug>/              →  <book>/youtube/hai-<slug>/
-  <book>/lectures/<chapter>-lecture/  →  <book>/hai-lectures/<chapter>-lecture/
-Inside the hai- dir: beat_sheet.json + copies of any lecture build scripts found in source.
+Directory convention for use_dir brands (hai/medhavy/nbb; source never modified):
+  <book>/youtube/<slug>/              →  <book>/youtube/<suffix>-<slug>/
+  <book>/lectures/<chapter>-lecture/  →  <book>/<suffix>-lectures/<chapter>-lecture/
+Inside the <suffix>- dir: beat_sheet.<suffix>.json + copies of any lecture build scripts.
 
 Default TTS engine per brand (written into metadata.engine + metadata.voice_kokoro):
   nbb/brutalist  → ElevenLabs (ELEVENLABS_VOICE_NIKBEARBROWN) — the only paid brand default
@@ -102,7 +102,7 @@ def main():
     if not src.exists():
         sys.exit(f"[variant] no beat_sheet.json in {reel}")
 
-    # hai + medhavy write into a new brand- directory; other brands use a sibling file
+    # hai + medhavy + nbb (use_dir) write into a new brand- directory; other brands use a sibling file
     if cfg.get("use_dir"):
         out_dir = get_brand_dir(reel, cfg["suffix"])
         out = out_dir / f"beat_sheet.{cfg['suffix']}.json"

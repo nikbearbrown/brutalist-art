@@ -15,7 +15,7 @@ description: >
 # hai — the HAI (Humanitarians AI) cut
 
 Creates a **new `hai-` directory** from any source input and writes the HAI beat
-sheet as `beat_sheet.json` inside it. The canonical source (`beat_sheet.json`,
+sheet as `beat_sheet.hai.json` inside it. The canonical source (`beat_sheet.json`,
 build scripts, media) is **never modified**.
 
 ## Trigger
@@ -50,7 +50,7 @@ Inside that `hai-` directory:
 python3 runtime/scripts/brand_variant.py <INPUT_PATH> hai
 ```
 
-Creates the `hai-` directory and writes `beat_sheet.json` with audience metadata
+Creates the `hai-` directory and writes `beat_sheet.hai.json` with audience metadata
 pre-set and a `_variant_todo` checklist. For lectures, copies build scripts from
 the source dir. No API calls, no spend.
 
