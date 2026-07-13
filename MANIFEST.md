@@ -56,12 +56,17 @@ does, and flags. Media, `node_modules`, and `.git` were excluded at gather time.
 | `shot-planner` | `books/unreal-reels/skills/shared/media-router` | Recommends Manim/Remotion/T2I/T2V per beat to maximize learning (CTML + CLT). | |
 | `duration-planner` | `books/unreal-reels/skills/shared/pacing` | Sizes a video to its content, not a clock; consolidation floor, rejects padding. | |
 
+### Audience presets (brand variants)
+| Skill | Source | What it does | Flags |
+|---|---|---|---|
+| `hai` | `books/vox/aspects/hai` (promoted from `audience-preset/brands/hai.md`) | Creates a HAI (Humanitarians AI) cut — Pragmatist register, Kokoro af_heart, humanitarians palette. Writes into a **new `hai-` directory** (never a sibling file); adds CLI worked exercise (second-to-last) + Humanitarians AI outro (last). Brand spec: `audience-preset/brands/hai.md`. Runtime: `brand_variant.py hai`. | First-class skill; former `hai` (merged into `audience-preset` at Phase 2) re-promoted with directory convention + CLI exercise + outro beats. |
+| `audience-preset` | `books/vox/aspects/{hai,medhavy,neu}` | Brand variant of a reel → `beat_sheet.<brand>.json` for medhavy/neu/nbb/musinique; `hai-` directory for `hai`. Never touches the canonical sheet. Brands: `brands/{hai,medhavy,neu}.md`. | Merge of three skills; runtime is `brand_variant.py`. `hai` now delegates to `skills/make/hai/SKILL.md`. |
+
 ### Ops / maintenance
 | Skill | Source | What it does | Flags |
 |---|---|---|---|
 | `slate-filler` | `books/vox/aspects/remotion-pass` | Fills slate beats (no mp4) with palette-matched Remotion motion graphics. | Ships a Remotion project. |
 | `reel-updater` | `books/vox/aspects/update` | Brings built reels up to latest specs (migrate outro, regen stale audio). Dry-run by default. | |
-| `audience-preset` | `books/vox/aspects/{hai,medhavy,neu}` | Brand variant of a reel → `beat_sheet.<brand>.json`. Never touches the canonical sheet. Brands: `brands/{hai,medhavy,neu}.md`. | Merge of three skills; runtime is `brand_variant.py`. |
 | `component-showcase` | `books/brutalist/remotion/SKILL.md` | Renders a visual unit with a themed example and critiques it; compilation bench. | **SKILL.md only** — runtime (`brutalist/remotion/`) vendored in Phase 3. |
 
 ## skills/upload — status + publish

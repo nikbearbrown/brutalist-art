@@ -27,6 +27,7 @@ narration · **$$** AI image/video (higgsfield CLI).
 | **line-art-vectorizer** | Clean SVGs from B/W line art | none | vtracer | free | — | the line-art image |
 | **figure-planner** | Figure plans + SVG→PNG rendering | none | Node (sharp) | free | — | the chapter/prose to plan figures for |
 | **youtube-publisher** | Publishes to YouTube: transcript, timestamped description, bookends | YouTube OAuth (free quota) | faster-whisper, Node/Remotion | free | — | the finished mp4(s) + channel authorization |
+| **hai** | HAI (Humanitarians AI) cut of a reel or lecture — Pragmatist register, CLI worked exercise, Humanitarians AI outro; writes into `hai-` directory (source never modified) | *(none for scaffold)* | Kokoro (default) or ElevenLabs HUMANITARIANS (override) | free (scaffold) → $ (audio build) | `examples/explainer--size-paradox/` | source reel/lecture with `beat_sheet.json`; `AUTHOR.MD` Humanitarians AI section for outro |
 
 \* `sketch-explainer` runs **silent with no key**; narration adds `ELEVENLABS_API_KEY`.
 

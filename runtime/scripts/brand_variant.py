@@ -2,15 +2,21 @@
 """brand_variant.py — scaffold an audience variant beat sheet from the canonical one.
 
 Every reel starts with beat_sheet.json (the NikBearBrown / default cut). An audience
-variant is beat_sheet.<suffix>.json — the SAME reel rewritten in another voice: new
-register (narration), new narration voice, new palette, a different outro. The canonical
-beat_sheet.json is NEVER modified.
+variant is either:
+  - beat_sheet.<suffix>.json  (all brands EXCEPT hai)
+  - a new hai- directory with beat_sheet.json inside it  (hai only)
 
-This script does the DETERMINISTIC half — it creates beat_sheet.<suffix>.json as a copy
-of beat_sheet.json with the audience metadata set (voice_id read from the .env, palette,
-register, audience). The creative half — rewriting each beat's narration into the
-register, the signature tangent, the audience outro — is done by Claude Code, guided by
-the hai / medhavy SKILL. No API calls, no spend.
+The canonical beat_sheet.json is NEVER modified.
+
+This script does the DETERMINISTIC half — it sets audience metadata (voice_id from the
+.env, palette, register, audience). The creative half — rewriting each beat's narration
+into the register, the signature tangent, the audience outro — is done by Claude Code,
+guided by the hai / medhavy SKILL. No API calls, no spend.
+
+HAI output directory convention (the source is never modified):
+  <book>/youtube/<slug>/              →  <book>/youtube/hai-<slug>/
+  <book>/lectures/<chapter>-lecture/  →  <book>/hai-lectures/<chapter>-lecture/
+Inside the hai- dir: beat_sheet.json + copies of any lecture build scripts found in source.
 
 Default TTS engine per brand (written into metadata.engine + metadata.voice_kokoro):
   nbb/brutalist  → ElevenLabs (ELEVENLABS_VOICE_NIKBEARBROWN) — the only paid brand default
@@ -20,9 +26,9 @@ Default TTS engine per brand (written into metadata.engine + metadata.voice_koko
   neu            → kokoro / bm_fable (override: engine="elevenlabs", use metadata.voice_id)
 
 Usage:
-  python3 scripts/brand_variant.py <REEL> {neu|hai|medhavy|nbb|musinique}
+  python3 scripts/brand_variant.py <REEL_OR_LECTURE> {neu|hai|medhavy|nbb|musinique}
 """
-import argparse, json, os, re, sys
+import argparse, json, os, re, shutil, sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parents[1]          # runtime/
@@ -52,6 +58,26 @@ AUD = {
 }
 
 
+def get_hai_dir(reel: Path) -> Path:
+    """Return the hai- output directory for a reel or lecture source path."""
+    parts = list(reel.parts)
+    if 'lectures' in parts:
+        idx = parts.index('lectures')
+        book_dir = Path(*parts[:idx])
+        return book_dir / 'hai-lectures' / reel.name
+    return reel.parent / f'hai-{reel.name}'
+
+
+def copy_build_scripts(src: Path, dst: Path) -> list:
+    """Copy lecture build scripts (build_deck.py, make_audio*.py, render.py) if present."""
+    copied = []
+    for p in (list(src.glob('build_deck.py')) + list(src.glob('render.py'))
+              + list(src.glob('make_audio*.py'))):
+        shutil.copy2(p, dst / p.name)
+        copied.append(p.name)
+    return copied
+
+
 def read_env_voice(var):
     env = HERE / ".env"
     if not env.exists():
@@ -75,9 +101,19 @@ def main():
     src = reel / "beat_sheet.json"
     if not src.exists():
         sys.exit(f"[variant] no beat_sheet.json in {reel}")
-    out = reel / f"beat_sheet.{cfg['suffix']}.json"
-    if out.exists() and not a.force:
-        sys.exit(f"[variant] {out.name} already exists (use --force to reset it from canonical)")
+
+    # hai writes into a new hai- directory; all other brands use a sibling file
+    if a.audience == "hai":
+        out_dir = get_hai_dir(reel)
+        out = out_dir / "beat_sheet.json"
+        if out.exists() and not a.force:
+            sys.exit(f"[variant] {out} already exists (use --force to reset it from canonical)")
+        out_dir.mkdir(parents=True, exist_ok=True)
+    else:
+        out_dir = reel
+        out = reel / f"beat_sheet.{cfg['suffix']}.json"
+        if out.exists() and not a.force:
+            sys.exit(f"[variant] {out.name} already exists (use --force to reset it from canonical)")
 
     sheet = json.loads(src.read_text())
     meta = sheet.setdefault("metadata", {})
@@ -104,26 +140,64 @@ def main():
         meta["engine"] = cfg["engine"]
     if cfg.get("voice_kokoro"):
         meta["voice_kokoro"] = cfg["voice_kokoro"]
-    # a checklist Claude Code works down (the creative half):
-    meta["_variant_todo"] = [
-        f"rewrite every beat narration_text in the {cfg['register']} register "
-        f"(voices/{cfg['register'].lower()}/VOICE.md + {cfg['charter']}) — voice only, facts unchanged",
-        "signature tangent 0-1 per video, ONLY on a clear opportunity (see SKILL)",
-        f"swap the outro to the {cfg['audience']} outro from {meta['outro_source']}",
-        "then build audience-namespaced (audio in the new voice, scenes in the new palette)",
-    ]
+    # HAI: record house typography in the sheet
+    if a.audience == "hai":
+        meta["typography"] = {"serif": "EB Garamond", "sans": "Montserrat"}
+
+    # variant_todo — hai has extra required steps (CLI exercise + outro)
+    if a.audience == "hai":
+        meta["_variant_todo"] = [
+            "rewrite every beat narration_text/text in the Pragmatist register "
+            "(voices/pragmatist/VOICE.md + brands/hai.md) — method, when to use, "
+            "when NOT to/where it fails; voice only, facts unchanged",
+            "optional: add ONE Irreducibly-Human tangent beat (0-1 per video, ONLY on a clear opportunity)",
+            "add CLI worked exercise as the SECOND-TO-LAST beat "
+            "(cli-scout lane → paste-ready ASK→OUTPUT→CHANGE→OUTPUT, NEXT STEP; "
+            "see skills/make/hai/SKILL.md §Step 4)",
+            f"add/replace outro with Humanitarians AI outro from {meta['outro_source']} (LAST beat)",
+            "verify ending order: body → [tangent] → [CLI exercise] → [outro]",
+            "then build: generate_audio_kokoro.py → palette=humanitarians → compile",
+        ]
+    else:
+        meta["_variant_todo"] = [
+            f"rewrite every beat narration_text in the {cfg['register']} register "
+            f"(voices/{cfg['register'].lower()}/VOICE.md + {cfg['charter']}) — voice only, facts unchanged",
+            "signature tangent 0-1 per video, ONLY on a clear opportunity (see SKILL)",
+            f"swap the outro to the {cfg['audience']} outro from {meta['outro_source']}",
+            "then build audience-namespaced (audio in the new voice, scenes in the new palette)",
+        ]
+
     # durations will change with the rewrite; drop stale render stamps so they recompute
     for b in sheet.get("beats", []):
         b.pop("actual_duration_s", None)
         b.get("shot", {}).pop("rendered", None) if isinstance(b.get("shot"), dict) else None
+    # lecture format: segments with nested beats
+    for seg in sheet.get("segments", []):
+        for b in seg.get("beats", []):
+            b.pop("actual_duration_s", None)
 
     out.write_text(json.dumps(sheet, indent=1, ensure_ascii=False))
     kokoro_note = (f"  engine={cfg['engine']}  voice_kokoro={cfg['voice_kokoro']}"
                    if cfg.get("engine") else "")
-    print(f"[variant] wrote {out.name}  audience={cfg['audience']}  register={cfg['register']}  "
-          f"palette={cfg['palette']}  11labs_voice={voice_note}{kokoro_note}")
-    print(f"[variant] {len(sheet.get('beats', []))} beats to rewrite in {cfg['register']} — "
-          f"next: Claude Code follows the {a.audience} SKILL to rewrite narration + outro + tangent")
+
+    if a.audience == "hai":
+        copied = copy_build_scripts(reel, out_dir)
+        if copied:
+            print(f"[variant] copied build scripts: {', '.join(sorted(copied))}")
+        beat_count = len(sheet.get("beats", []))
+        seg_count = len(sheet.get("segments", []))
+        content_note = (f"{beat_count} beats" if beat_count else f"{seg_count} segments")
+        print(f"[variant] wrote {out}  audience={cfg['audience']}  register={cfg['register']}  "
+              f"palette={cfg['palette']}  11labs_voice={voice_note}{kokoro_note}")
+        print(f"[variant] {content_note} to rewrite in Pragmatist — "
+              f"next: Claude Code follows skills/make/hai/SKILL.md "
+              f"(rewrite + tangent + CLI exercise + outro)")
+    else:
+        beat_count = len(sheet.get("beats", []))
+        print(f"[variant] wrote {out.name}  audience={cfg['audience']}  register={cfg['register']}  "
+              f"palette={cfg['palette']}  11labs_voice={voice_note}{kokoro_note}")
+        print(f"[variant] {beat_count} beats to rewrite in {cfg['register']} — "
+              f"next: Claude Code follows the {a.audience} SKILL to rewrite narration + outro + tangent")
 
 
 if __name__ == "__main__":
