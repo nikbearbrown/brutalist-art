@@ -10,9 +10,10 @@ sheet commits to *content*, not *renderer*. Downstream (`slate cut`,
 |---|---|---|
 | `title` | the video's on-screen title | the answer, not the topic |
 | `slug` | kebab-case id | folder name |
-| `register` | `"Teardown"` | the gate expects this |
-| `voice` | `"NikBearBrown"` | audience/charter |
-| `voice_id` | `"${ELEVENLABS_VOICE_NIKBEARBROWN}"` | resolved from the repo-root `.env` at audio time |
+| `register` | `"Sardonic"` | **default** narration style; set `"Teardown"` to override |
+| `engine` | `"kokoro"` | **default** TTS engine (free, local); set `"elevenlabs"` to override |
+| `voice_kokoro` | `"am_onyx"` | **default** Kokoro voice; any `--list-voices` name works |
+| `voice_id` | `"${ELEVENLABS_VOICE_NIKBEARBROWN}"` | ElevenLabs override; unused when engine is kokoro |
 | `palette` | `"teardown"` | **default**, overridable per style |
 | `style_preset` | `"nikbearbrown"` | **default**, overridable per style |
 | `pedagogy` | `"brownblue"` | marks the arc it was built against |

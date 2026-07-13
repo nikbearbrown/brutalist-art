@@ -30,6 +30,18 @@ narration · **$$** AI image/video (higgsfield CLI).
 
 \* `sketch-explainer` runs **silent with no key**; narration adds `ELEVENLABS_API_KEY`.
 
+## Defaults (new pieces)
+
+| Layer | Default | Override |
+|---|---|---|
+| **TTS engine** | Kokoro (free, local — `generate_audio_kokoro.py`) | `metadata.engine:"elevenlabs"` → routes to `generate_audio.py` |
+| **Kokoro voice** | `am_onyx` (American English male) | `metadata.voice_kokoro` (any `--list-voices` name) or per-beat `beat.voice` |
+| **ElevenLabs voice** | `ELEVENLABS_VOICE_NIKBEARBROWN` env var | `metadata.voice_id` (any ElevenLabs voice ID) |
+| **Narration style** | Sardonic (`voices/sardonic/VOICE.md`) — dry, spare, capable-adult | `metadata.register:"Teardown"` for the full Feynman × MKBHD design-critic register |
+
+Per-beat overrides (`beat.engine`, `beat.voice`) always win over metadata defaults, so a sheet
+can mix engines and voices — e.g. one beat in the human's ElevenLabs clone, the rest in Kokoro.
+
 ## The human/AI division (every skill)
 
 The CLI does the technical build — it generates every piece of media it can (Manim,

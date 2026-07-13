@@ -2,13 +2,19 @@
 
 Turn **any text** — a chapter, lecture notes, a paper, a tweet, a YouTube transcript, a pasted
 block — into the *script* for an explainer video: narration in the
-**Teardown voice** (`voices/teardown/VOICE.md`), sequenced by the **Brown Blue
+**Sardonic voice** (`voices/sardonic/VOICE.md`) by default, sequenced by the **Brown Blue
 pedagogical constitution** (`reference/pedagogy.md`). The output is
 **style-agnostic** — a script document plus a vox `beat_sheet.json` whose beats
 carry role + narration + visual *intent* but leave `shot.source` open, so the
 same script can later be dressed as pure Manim, the @NikBearBrown house style, a
 Remotion cut, or a doodle. **The script is the substance; the style is applied
 downstream.**
+
+> **Default engine: Kokoro (free, local). Default voice: am_onyx.** Override with
+> `metadata.engine` / `metadata.voice_kokoro` (per sheet) or `beat.engine` /
+> `beat.voice` (per beat). To use ElevenLabs set `metadata.voice_id`. To use the
+> Teardown narration register instead, set `metadata.register:"Teardown"`.
+> All other engines and voices remain fully available as explicit overrides.
 
 This command writes and audits a script. It does **not** render, generate audio,
 or spend anything. Hand the finished folder to `slate cut` / `remotion pass` /
@@ -21,15 +27,17 @@ Also fires on: "make an explainer script from this", "teardown script for …",
 "turn this into a video script in the teardown voice."
 
 ## The two constitutions it fuses
-1. **Voice — Teardown** (`../../voices/teardown/VOICE.md`): Feynman × MKBHD.
-   Explain the actual machinery, strip jargon, name the trade-offs, judge the
-   design. **NO FABRICATION.** Forbidden phrases are hard-banned (see below).
+1. **Voice — Sardonic** (`../../voices/sardonic/VOICE.md`): dry, spare, capable-adult.
+   Economy and rigor; dry wit in footnotes; trusts the viewer to follow without
+   hand-holding. **NO FABRICATION.** Forbidden phrases are hard-banned (see below).
+   *(Override to Teardown by setting `metadata.register:"Teardown"` — the full
+   Feynman × MKBHD design-critic register in `voices/teardown/VOICE.md`.)*
 2. **Pedagogy — Brown Blue** (`reference/pedagogy.md`, a self-contained copy of
    the constitution): concrete-before-abstract, mystery-framed open, discovery
    narration, the HOOK→…→BOUNDARY arc, derived length, the boundary beat.
 
 When the two ever seem to conflict, **pedagogy owns structure, voice owns
-sentences.** The arc is Brown Blue; the words inside each beat are Teardown.
+sentences.** The arc is Brown Blue; the words inside each beat are Sardonic.
 
 ## The build loop (phases — never skip a gate)
 
@@ -49,7 +57,7 @@ two videos; which insight do you want, or split it?"* — don't quietly cram it.
   explicit approval). Never pad, never rush.
 - List **deferrals**: anything cut for scope goes under "deferred" (→ BOUNDARY).
 
-**Phase 2 · Write the narration** in the Teardown voice, beat by beat.
+**Phase 2 · Write the narration** in the Sardonic voice, beat by beat.
 - Explain the machinery; reveal what the design optimized for; name one trade-off.
 - **Discovery voice** (§3): "notice what just happened", "so we're stuck —
   unless—". Never "it can be shown that" — if it can be shown, the beat shows it.
@@ -97,10 +105,14 @@ Fix every FAIL and re-run. Warnings are advisory (forbidden-phrase hits, off-pac
 beats) — clear them unless you can defend keeping them.
 
 ## Output contract (style-agnostic beat_sheet)
-`metadata`: `title · slug · register:"Teardown" · voice:"NikBearBrown" ·
-voice_id:"${ELEVENLABS_VOICE_NIKBEARBROWN}" · palette:"teardown" ·
-style_preset:"nikbearbrown" · pedagogy:"brownblue" · key_case · tier ·
-source · total_estimated_duration_seconds · deferred[]`.
+`metadata`: `title · slug · register:"Sardonic" · engine:"kokoro" ·
+voice_kokoro:"am_onyx" · voice_id:"${ELEVENLABS_VOICE_NIKBEARBROWN}" ·
+palette:"teardown" · style_preset:"nikbearbrown" · pedagogy:"brownblue" ·
+key_case · tier · source · total_estimated_duration_seconds · deferred[]`.
+*(`voice_id` is the ElevenLabs override — unused when engine is kokoro but kept
+so switching engines requires no schema change. Set `register:"Teardown"` to
+override the narration style. Set `engine:"elevenlabs"` + remove `voice_kokoro`
+to route audio to generate_audio.py instead.)*
 `beats[]`: `beat_id · role · narration_text · visual_intent · on_screen_text? ·
 estimated_duration_s · lands_equation? · references_hook? · viewer_exercise? ·
 shot:{ type:"GRAPHIC", source:null, motion:"fade" }`.
@@ -108,12 +120,13 @@ shot:{ type:"GRAPHIC", source:null, motion:"fade" }`.
 the basis for any style. To dress it: `slate cut <dir>` (house/Manim),
 `remotion pass <dir>` (Remotion), or hand the roles to any other builder.
 
-## Forbidden phrases (Teardown — the gate warns on these)
+## Forbidden phrases (Sardonic — the gate warns on these)
 Never: "one could argue", "it seems as though", "it can be shown", "obviously",
-"clearly", "innovative"/"revolutionary" without saying what changed,
-"premium"/"sleek"/"seamless" without a functional definition, specs without
-context. Instead: "here's what's actually happening", "they optimized for X at
-the expense of Y", "this works if you value X; it fails if you need Y".
+"clearly", "isn't this amazing", "isn't it fascinating", "innovative"/"revolutionary"
+without saying what changed, "premium"/"sleek"/"seamless" without a functional
+definition, specs without context. The Sardonic voice is spare and dry — never
+gushing, never warm, never padding. Instead: state the fact and move on; let the
+reader work through the gap; put the wit in a footnote, not the main line.
 
 ## Silent modifier
 `script <text> silent` → skip intake and pushback, execute immediately. All
