@@ -22,10 +22,22 @@ THE REFORMAT RULE (16:9 → 9:16): captured/user media is CENTER-CUT (biased
 by shot.focus), written beside the source as <beat>-916.* — inspectable and
 replaceable. THE HUMAN IS EXPECTED TO REPLACE a center cut that doesn't
 work by adding a 9:16 version of the beat to the PANTRY:
-pantry/<beat>-916.mp4|png always wins over everything else (then hand-made
-media/ or manim/ -916 files, then the auto cut). GENERATED GRAPHICS ARE
-NEVER CUT: Manim/Remotion beats are RE-LAID-OUT for portrait in the short's
-own scenes.py and rendered by run on the short/ folder.
+pantry/<beat>-916.mp4|png always wins over everything else. GENERATED
+GRAPHICS ARE NEVER CUT — and that includes Remotion renders even though
+they live in media/:
+
+THE ONDA CHECK: Onda terminal / Onda code beats (all REMOTION beats) are
+used A LOT and a center cut chops their text mid-word. So every REMOTION
+beat is detected BY ITS SHEET (shot.type == REMOTION), never by which
+folder its render sits in. If Root.tsx has a portrait composition named
+<pattern>916, the short's sheet is REWIRED to it and the beat re-renders
+portrait via remotion_scenes.py on the short/ folder (props must still
+match the 916 composition's zod schema — standing rule #4). If no 916
+composition exists, the beat is flagged: add the composition to Root.tsx or
+drop a pantry/<beat>-916.mp4. Manim GRAPHIC beats are re-laid-out for
+portrait in the short's own scenes.py, as before. For generated beats the
+ONLY human override slot is pantry/ — a media/<beat>-916.mp4 next to a
+REMOTION render is assumed to be a stale auto-cut and is ignored.
 
 Usage:
   python3 scripts/shorts.py reels/<slug>                      # auto: cap check + plan
@@ -101,6 +113,27 @@ def endcard_png(out, handle, next_text, dark=True):
 
 def beat_dur(b):
     return float(b.get("actual_duration_s") or b.get("estimated_duration_s") or 0)
+
+
+def is_remotion(b):
+    shot = b.get("shot") or {}
+    return (str(shot.get("type", "")).upper() == "REMOTION"
+            or bool(shot.get("remotion")))
+
+
+def root_tsx_text():
+    """The Remotion composition registry (for the ONDA CHECK's 916 lookup)."""
+    p = Path(__file__).resolve().parents[2] / "runtime" / "remotion" / "src" / "Root.tsx"
+    try:
+        return p.read_text()
+    except Exception:
+        return ""
+
+
+def portrait_pattern(pattern, tsx):
+    """<pattern>916 if Root.tsx registers a portrait composition for it."""
+    cand = f"{pattern}916"
+    return cand if f'id="{cand}"' in tsx else None
 
 
 def beat_topic(b):
@@ -232,8 +265,11 @@ def main():
               f"points to the long (audio must be regenerated)")
 
     # ── 3. resolve each kept slot to a 9:16 source ───────────────────────
-    # precedence: pantry/<bid>-916.* (the human's replacement) → hand-made
-    # media|manim/<bid>-916.* → auto center-cut of the 16:9 winner
+    # precedence: pantry/<bid>-916.* (the human's replacement, wins always) →
+    # THE ONDA CHECK for REMOTION beats (916 composition rewire, never a crop) →
+    # portrait scenes for manim → auto center-cut for captured/user media only
+    tsx = root_tsx_text()
+    onda_rewired, onda_blocked = [], []
     for b in kept:
         bid = b["beat_id"]
         # narration link FIRST — every kept beat needs its audio regardless of
@@ -245,19 +281,47 @@ def main():
             if mp3.exists() and not mdst.exists():
                 mdst.symlink_to(Path("../..") / "mp3" / mp3.name)
         fx = float((b.get("shot", {}).get("focus") or [0.5, 0.5])[0])
+        generated = is_remotion(b) or bool(b.get("graphic"))
+
+        # pantry: the human's slot, wins over every path incl. the Onda check
         override = None
-        for sub, exts in (("pantry", (".mp4", ".png", ".jpg")),
-                          ("media", (".mp4", ".png", ".jpg")),
-                          ("manim", (".mp4",))):
-            for ext in exts:
-                p = folder / sub / f"{bid}-916{ext}"
-                if p.exists():
-                    override = (sub, p, ext)
-                    break
-            if override:
+        for ext in (".mp4", ".png", ".jpg"):
+            p = folder / "pantry" / f"{bid}-916{ext}"
+            if p.exists():
+                override = ("pantry", p, ext)
                 break
-        if override and override[0] == "pantry":
+        if override:
             print(f"[short] {bid}  pantry override → pantry/{override[1].name}")
+
+        # THE ONDA CHECK — REMOTION beats (Onda terminal/code etc.) are never
+        # cropped, no matter that their renders live in media/
+        if override is None and is_remotion(b):
+            pattern = ((b.get("shot") or {}).get("remotion") or {}).get("pattern", "")
+            p916 = portrait_pattern(pattern, tsx)
+            if p916:
+                b["shot"]["remotion"]["pattern"] = p916
+                b["shot"]["remotion"]["rendered"] = {"out": f"media/{bid}.mp4", "at": ""}
+                onda_rewired.append(bid)
+                print(f"[short] {bid}  ONDA CHECK: {pattern} → {p916} (portrait "
+                      f"re-render on short/; match the 916 zod schema — rule #4)")
+            else:
+                onda_blocked.append((bid, pattern))
+                print(f"[short] {bid}  ONDA CHECK ⚠ no {pattern}916 composition in "
+                      f"Root.tsx — add one, or drop pantry/{bid}-916.mp4")
+            continue    # never falls through to the crop path
+
+        # hand-made -916 beside the source (captured media only — for generated
+        # beats a media/<bid>-916.* is assumed to be a stale auto-cut)
+        if override is None and not generated:
+            for sub, exts in (("media", (".mp4", ".png", ".jpg")),
+                              ("manim", (".mp4",))):
+                for ext in exts:
+                    p = folder / sub / f"{bid}-916{ext}"
+                    if p.exists():
+                        override = (sub, p, ext)
+                        break
+                if override:
+                    break
         if override is None:
             # the parent slot's winner, per compile precedence
             src = None
@@ -271,7 +335,7 @@ def main():
             if src is None:
                 continue                        # slate — nothing to cut
             sub, p, ext = src
-            if sub == "manim":                  # NEVER cut generated graphics
+            if sub == "manim" or generated:     # NEVER cut generated graphics
                 print(f"[short] {bid}  GENERATED — no cut; needs a portrait "
                       f"scene in short/scenes.py (render via run), or add "
                       f"pantry/{bid}-916.mp4")
@@ -341,13 +405,28 @@ def main():
     tail_note = ("ends on the last beat (no endcard)" if a.no_endcard
                  else f"silent endcard {a.end_s}s")
     print(f"[short] dropped: {', '.join(drops) or 'none'} · {tail_note}")
+    if onda_rewired:
+        print(f"[short] ONDA CHECK: {len(onda_rewired)} REMOTION beat(s) rewired to "
+              f"916 compositions ({', '.join(onda_rewired)}) — they MUST be "
+              f"re-rendered portrait before compiling; any old center-cut "
+              f"media/<bid>-916.mp4 of a Remotion render is stale garbage (delete it).")
+    if onda_blocked:
+        print(f"[short] ONDA CHECK ⚠ BLOCKED: "
+              + "; ".join(f"{bid} needs {pat}916 in Root.tsx (or pantry/{bid}-916.mp4)"
+                          for bid, pat in onda_blocked))
     rel = folder.relative_to(folder.parents[1])
+    step = 1
     print("[short] next:")
     if outro_rewritten:
-        print(f"[short]   1. python3 runtime/scripts/generate_audio.py {rel}/short   "
+        print(f"[short]   {step}. python3 runtime/scripts/generate_audio.py {rel}/short   "
               f"# regenerates ONLY the rewritten outro (missing mp3)")
-    print(f"[short]   {'2' if outro_rewritten else '1'}. python3 runtime/scripts/compile.py {rel}/short --review --height 1920")
-    print(f"[short]   {'3' if outro_rewritten else '2'}. publish the short with --playlist \"Shorts\" "
+        step += 1
+    if onda_rewired or onda_blocked:
+        print(f"[short]   {step}. python3 runtime/scripts/remotion_scenes.py {rel}/short   "
+              f"# FOREGROUND (rule #3) — portrait renders for the 916-rewired beats")
+        step += 1
+    print(f"[short]   {step}. python3 runtime/scripts/compile.py {rel}/short --review --height 1920")
+    print(f"[short]   {step + 1}. publish the short with --playlist \"Shorts\" "
           f"(the funnel: its description links the parent long)")
 
 

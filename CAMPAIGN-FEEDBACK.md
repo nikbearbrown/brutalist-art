@@ -95,3 +95,19 @@ RESULT: 16/16 beats rendered (262.1s, narrated). 0 slates.
   SRT regenerated: 16 cues, 262s. Caption track uploaded via captions.insert. ✓
   Rev-2 video: https://youtu.be/PE2Zv8hBDzc (unlisted, in Brutalist playlist).
   Standing rules #1–#4 followed exactly.
+
+## HUMAN FEEDBACK — first shorts run — 2026-07-13
+
+- "Every time it uses Onda terminal or Onda code it is not reformatting the Onda
+  properly … if it did that for any MP4 it generated with Remotion, the Remotion
+  needs to be redone." → THE ONDA CHECK added to shorts.py: REMOTION beats are
+  detected BY THE SHEET (shot.type), never by folder — Remotion renders live in
+  media/ and were being treated as croppable captured footage, center-cutting
+  terminal/code text mid-word. Now: pantry/<bid>-916.* wins; else the short's
+  sheet is rewired to the <pattern>916 portrait composition from Root.tsx and the
+  beat re-renders portrait via remotion_scenes.py on short/; no 916 composition →
+  loud BLOCKED line (add the composition or a pantry file). Stale center-cut
+  -916 files of Remotion output are ignored and should be deleted.
+- Toolkit lesson: media type is a property of the BEAT (sheet), not of the file's
+  folder. Any rule keyed on directory ("media/ = croppable") breaks the moment
+  two generators share an output directory.
