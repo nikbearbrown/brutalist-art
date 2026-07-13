@@ -16,12 +16,14 @@ conductor") is the series' running argument.
 
 ## Current state (from git + disk)
 
-- Branch `main`, latest commit `464e88c`. Remote `origin` = github.com/nikbearbrown/brutalist-art —
-  **confirm whether `main` has actually been pushed** (origin is set; the push may not have run yet).
-- Uncommitted at last check: `EXAMPLES-CAMPAIGN.md`, `CAMPAIGN-FEEDBACK.md`, and
-  `youtube/posting-to-youtube/beat_sheet.json` modified; `youtube/PUBLISH-LOG.md` and the
-  `youtube/posting-to-youtube/` build outputs (BUILD-LOG.md, scenes.py, gate files) untracked. These
-  are the video-4 build's outputs — commit them when it's confirmed good.
+- Branch `main`, latest commit `d3b2e64` (this HANDOFF). Remote `origin` =
+  github.com/nikbearbrown/brutalist-art; `origin/main` is at `fe8fb19`, so **local is ahead — commits
+  `fe8fb19..d3b2e64` are unpushed** (a `git push origin main` from the Mac sends them).
+- Uncommitted: `EXAMPLES-CAMPAIGN.md`, `CAMPAIGN-FEEDBACK.md`, and
+  `youtube/posting-to-youtube/beat_sheet.json` modified; untracked build outputs for **videos 3 and 4**
+  (`youtube/when-cowork-helps-claude-code/` and `youtube/posting-to-youtube/`: BUILD-LOG.md, scenes.py,
+  gate files) plus `youtube/PUBLISH-LOG.md`. These are legitimate build/publish outputs — commit them
+  once the cuts are confirmed good.
 
 ## The series (this is the cursor)
 
@@ -67,7 +69,10 @@ Its narration source is `/Users/bear/Documents/CoWork/bear-textbooks/books/bruta
 
 ## Open items
 
-- Push `main` to GitHub if not already done (`git push -u origin main` from the Mac; origin is set).
+- Push the unpushed commits: `git push origin main` from the Mac (origin/main is behind at `fe8fb19`;
+  local is `d3b2e64`).
+- Commit the untracked build outputs for videos 3 and 4 (BUILD-LOG, scenes.py, gate files) and
+  `youtube/PUBLISH-LOG.md` once those cuts are confirmed good.
 - Video 4: `./art final youtube/posting-to-youtube`, review it, then publish (chapter_number 4 slots
   it after *When Cowork* in the Brutalist playlist).
 - Flip the three published videos to Public in YouTube Studio when ready (API-public is audit-gated).
