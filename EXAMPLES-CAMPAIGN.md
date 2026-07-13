@@ -46,7 +46,19 @@ static inspection missed becomes a loud `MISSING` the moment a real build needs 
    never have to ask for it.
 2. **Verify renders by LOOKING.** Never report a visual fix as done without extracting a frame and
    checking it. "The box fits now" is only true if a mid-frame PNG shows the text inside the border.
-   A fix that was discussed but not visually verified is not a fix.
+   A fix that was discussed but not visually verified is not a fix. This includes the `qc-sheet.png`
+   contact sheet after a compile — read it and confirm every beat shows THIS video's content.
+3. **Render Remotion beats ONLY via `runtime/scripts/remotion_scenes.py <reel>`** (foreground,
+   `--concurrency=1`, one beat at a time — what the helper already does). NEVER hand-roll
+   `npx remotion render`, NEVER background a render (`&`), and NEVER poll `ps`/`grep` for Chrome to
+   guess whether a render finished. That path burned hours on the `installs` build chasing phantom
+   "stale Chrome" processes that were the user's real browser. The helper is proven — video 1 used it.
+4. **Match Remotion props to the component's real zod schema.** A beat sheet's `shot.remotion.props`
+   keys must be the exact prop names in the component's `z.object({...})` (`topic`, `segment`,
+   `runningText`, `filename`, `code`, `variant`, …). Any key that doesn't match is ignored and the
+   composition falls back to its `Root.tsx` `defaultProps` — demo placeholders from other videos
+   (cancer-biology, photoelectric-effect). Read each component's schema before writing props, then
+   confirm on `qc-sheet.png` that no beat shows another video's placeholder text.
 
 ## The loop (per video type)
 
@@ -96,7 +108,7 @@ Legend: 🔑 keys needed · 📁 existing folder to rebuild-and-verify · ✨ ne
 | # | Video | Skill | Folder | Status | Notes |
 |---|---|---|---|---|---|
 | 1 | **What is Brutalist?** | explainer + terminal | ✨ `youtube/what-is-brutalist` | ✅ | **DONE** — 16/16 beats rendered (174s, narrated); 0 MISSING; **5 toolkit bugs found & fixed** (commit `50df886`). 3 beats flagged for pacing review (B11/B06/B02). |
-| 2 | **Installs, .env & credentials** | explainer + terminal | ✨ `youtube/installs` | ⬜ | **.env, credentials, npx/pip/venvs, the paid services + clone-your-voice.** Has `beat_sheet.json` (15 beats) + `BUILD-PROMPT.md`; source doc `docs/Installs.md`. Fully pipeline (0 human beats). **Second — build next.** |
+| 2 | **Installs, .env & credentials** | explainer + terminal | ✨ `youtube/installs` | 🚧 | **Built: 15/15 beats compiled (224.7s, narrated).** Source doc `docs/Installs.md`. Surfaced 2 toolkit bugs → fixed as standing rules #3/#4: (a) agent hand-rolled background `npx remotion render` + `ps` polling instead of `remotion_scenes.py` (burned hrs); (b) 6 Remotion beats rendered `Root.tsx` demo defaults (cancer/physics) because beat-sheet props didn't match the zod schema — props patched. **Re-render Remotion (`--force`) + re-check qc-sheet, then human review.** |
 | 3 | slate-cut | (compile) | 📁 `examples/slate-cut--base-rate` | ⬜ | the no-key first pass; verify `./art run` + request cards |
 | 4 | previz | (fill_slates) | ✨ `youtube/previz-*` | ⬜ | any beat sheet → all-slate timing pass |
 | 5 | line-art-vectorizer | line-art-vectorizer | ✨ `youtube/*` | ⬜ | vtracer, no key |

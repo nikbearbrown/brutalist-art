@@ -61,16 +61,22 @@ STEP 2 — Write the three gate files in the folder (required by `run.sh` GATE F
   write "No open media slots — all beats are pipeline-rendered" so the gate passes.
 
 STEP 3 — Render the Remotion beats: B00, B02, B05, B08, B13, B99.
-- `cd runtime/remotion && npm install` (first time only).
-- Components used (already registered in `runtime/remotion/src/Root.tsx`):
-  BrutalistTerminalOpen (B00), NikBearBrownCodeBlock (B02, B05),
-  NikBearBrownTerminalAsk (B08, B13 — has an `output: z.array(z.string())` prop), BrutalistCommentCTA (B99).
-- IMPORTANT: the props in the beat sheet express INTENT and may not all match each component's zod
-  schema. Open each component, read its `z.object({...})`, and for each beat EITHER map the beat's
-  intent onto the real props OR extend the component to render what the beat needs. Keep the
-  teardown palette. Register any new/edited composition in `Root.tsx`.
-- Render each beat to `youtube/installs/media/<BID>.mp4`, conforming duration to that beat's audio
-  if audio exists (else to `estimated_duration_s`).
+- `cd runtime/remotion && npm install` (first time only), then `cd` back to the repo root.
+- Render with the HELPER, never by hand:
+      python3 runtime/scripts/remotion_scenes.py youtube/installs        # (--force to re-render, --only B08 for one)
+  It renders each slate beat to `media/<BID>.mp4` in the FOREGROUND at `--concurrency=1` and stamps
+  provenance. NEVER hand-roll `npx remotion render`, NEVER background a render, NEVER poll `ps`/`grep`.
+- BEFORE rendering, make each beat's `shot.remotion.props` match the component's real zod schema —
+  any key that doesn't match is ignored and the composition renders its `Root.tsx` demo defaults
+  (cancer-biology / photoelectric-effect). The real prop names:
+    - BrutalistTerminalOpen (B00): `command`, `checklist`, `topic`
+    - NikBearBrownCodeBlock (B02, B05): `filename`, `segment`, `topic`, `code`, `language?`, `caption?`
+    - NikBearBrownTerminalAsk (B08, B13): `command`, `topic`, `segment`, `runningText`, `output?`
+    - BrutalistCommentCTA (B99): `filename`, `code`, `variant`, `topic`
+  Set `topic` to "SET UP ONCE" on all six so none inherit another video's topic.
+- The compiler conforms each clip to the beat's audio by CENTER-CUT; the fixed composition durations
+  are long, so terminal beats get trimmed head+tail. After compile, check `qc-sheet.png` that the
+  type-on reveal survived; if a beat's head is cut, lower its composition `durationInFrames`.
 
 STEP 4 — Audio (the master clock).
 - If `ELEVENLABS_API_KEY` is set: run `python3 runtime/scripts/generate_audio.py youtube/installs`

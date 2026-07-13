@@ -12,7 +12,7 @@
     "playlist": "Brutalist — Claude for Video Production",
     "url": "https://www.brutalist.art/",
     "basis_doc": "docs/Installs.md",
-    "total_estimated_duration_seconds": 205.0
+    "total_estimated_duration_seconds": 224.71
   },
   "beats": [
     {
@@ -33,16 +33,13 @@
               "blank key = feature off",
               "clone your voice once",
               "then just make videos"
-            ]
-          },
-          "rendered": {
-            "out": "media/B00.mp4",
-            "at": ""
+            ],
+            "topic": "SET UP ONCE"
           }
         }
       },
       "t_start": 0.0,
-      "actual_duration_s": null,
+      "actual_duration_s": 13.37,
       "audio_file": "mp3/beat-B00.mp3"
     },
     {
@@ -69,7 +66,7 @@
         }
       },
       "t_start": 9.0,
-      "actual_duration_s": null,
+      "actual_duration_s": 18.57,
       "audio_file": "mp3/beat-B01.mp3"
     },
     {
@@ -84,18 +81,17 @@
         "remotion": {
           "pattern": "NikBearBrownCodeBlock",
           "props": {
+            "filename": ".env",
+            "segment": "ENV",
+            "topic": "SET UP ONCE",
             "code": "$ cp .env.example .env    # gitignored — your keys never get committed",
             "language": "bash",
             "caption": "one file, blank = off"
-          },
-          "rendered": {
-            "out": "media/B02.mp4",
-            "at": ""
           }
         }
       },
       "t_start": 25.0,
-      "actual_duration_s": null,
+      "actual_duration_s": 10.63,
       "audio_file": "mp3/beat-B02.mp3"
     },
     {
@@ -122,7 +118,7 @@
         }
       },
       "t_start": 36.0,
-      "actual_duration_s": null,
+      "actual_duration_s": 17.74,
       "audio_file": "mp3/beat-B03.mp3"
     },
     {
@@ -149,7 +145,7 @@
         }
       },
       "t_start": 52.0,
-      "actual_duration_s": null,
+      "actual_duration_s": 15.05,
       "audio_file": "mp3/beat-B04.mp3"
     },
     {
@@ -164,18 +160,17 @@
         "remotion": {
           "pattern": "NikBearBrownCodeBlock",
           "props": {
+            "filename": "render.sh",
+            "segment": "REMOTION",
+            "topic": "SET UP ONCE",
             "code": "$ npx remotion render src/index.ts BarChart out/chart.mp4",
             "language": "bash",
             "caption": "npx = the version this project pins"
-          },
-          "rendered": {
-            "out": "media/B05.mp4",
-            "at": ""
           }
         }
       },
       "t_start": 67.0,
-      "actual_duration_s": null,
+      "actual_duration_s": 9.01,
       "audio_file": "mp3/beat-B05.mp3"
     },
     {
@@ -202,7 +197,7 @@
         }
       },
       "t_start": 77.0,
-      "actual_duration_s": null,
+      "actual_duration_s": 14.39,
       "audio_file": "mp3/beat-B06.mp3"
     },
     {
@@ -229,7 +224,7 @@
         }
       },
       "t_start": 90.0,
-      "actual_duration_s": null,
+      "actual_duration_s": 15.07,
       "audio_file": "mp3/beat-B07.mp3"
     },
     {
@@ -245,6 +240,9 @@
           "pattern": "NikBearBrownTerminalAsk",
           "props": {
             "command": "$ python3 -m venv .venv && . .venv/bin/activate && ./setup",
+            "topic": "SET UP ONCE",
+            "segment": "PYTHON VENV",
+            "runningText": "checking dependencies…",
             "output": [
               "key readiness (live, free)",
               "  ffmpeg .............. ok",
@@ -253,15 +251,11 @@
               "  librosa ............. ok",
               "green = ready to build"
             ]
-          },
-          "rendered": {
-            "out": "media/B08.mp4",
-            "at": ""
           }
         }
       },
       "t_start": 104.0,
-      "actual_duration_s": null,
+      "actual_duration_s": 9.27,
       "audio_file": "mp3/beat-B08.mp3"
     },
     {
@@ -288,7 +282,7 @@
         }
       },
       "t_start": 117.0,
-      "actual_duration_s": null,
+      "actual_duration_s": 21.13,
       "audio_file": "mp3/beat-B09.mp3"
     },
     {
@@ -315,7 +309,7 @@
         }
       },
       "t_start": 134.0,
-      "actual_duration_s": null,
+      "actual_duration_s": 15.6,
       "audio_file": "mp3/beat-B10.mp3"
     },
     {
@@ -342,7 +336,7 @@
         }
       },
       "t_start": 148.0,
-      "actual_duration_s": null,
+      "actual_duration_s": 26.17,
       "audio_file": "mp3/beat-B11.mp3"
     },
     {
@@ -369,7 +363,7 @@
         }
       },
       "t_start": 169.0,
-      "actual_duration_s": null,
+      "actual_duration_s": 12.85,
       "audio_file": "mp3/beat-B12.mp3"
     },
     {
@@ -385,21 +379,20 @@
           "pattern": "NikBearBrownTerminalAsk",
           "props": {
             "command": "$ ./art keys",
+            "topic": "SET UP ONCE",
+            "segment": "KEY CHECK",
+            "runningText": "validating keys…",
             "output": [
               "ElevenLabs  ELEVENLABS_API_KEY   valid   tier=creator",
               "higgsfield  (CLI login)          valid   logged in",
               "YouTube     OAuth                valid   channel: NikBearBrown",
               "all set keys validated."
             ]
-          },
-          "rendered": {
-            "out": "media/B13.mp4",
-            "at": ""
           }
         }
       },
       "t_start": 181.0,
-      "actual_duration_s": null,
+      "actual_duration_s": 11.47,
       "audio_file": "mp3/beat-B13.mp3"
     },
     {
@@ -414,18 +407,15 @@
         "remotion": {
           "pattern": "BrutalistCommentCTA",
           "props": {
-            "title": "Clone your voice. Then make videos.",
-            "handle": "@NikBearBrown",
-            "url": "www.brutalist.art"
-          },
-          "rendered": {
-            "out": "media/B99.mp4",
-            "at": ""
+            "filename": "brutalist.art",
+            "variant": "A",
+            "topic": "SET UP ONCE",
+            "code": "// that's setup — now clone your voice\n// subscribe to follow the series\n// @NikBearBrown · brutalist.art"
           }
         }
       },
       "t_start": 194.0,
-      "actual_duration_s": null,
+      "actual_duration_s": 14.39,
       "audio_file": "mp3/beat-B99.mp3"
     }
   ]
