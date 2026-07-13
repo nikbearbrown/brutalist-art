@@ -26,6 +26,7 @@ rows — they are the jargon there — but not as a skill's identity.
 | `cli-scout` | `cli-scout` (kept) | Mines a book for CLI-video candidates → `<book>/youtube/cli-ideas.md`. |
 | `muzak` | `music-video` | Beat-synced music video from WAV + lyrics (librosa beat grid). |
 | `muzak-overlay` | `lyric-overlay` | Karaoke lyrics + audiogram over an existing finished video. |
+| `songbird` | `songbird` (kept) | The sequencing director: Entry–Beat–Exit law, engine map (session/song/boogie/plug/169), the parameter rule. |
 | `lyric-match` | `lyric-resync` | Re-cuts an existing video so each beat's clip matches its lyric line (image-to-video). |
 | `songbird-dance` | `dance-video` | A character dances ON the beat (audio-driven generation). |
 | `cubs` | `kids-video` | Early-childhood (ages 1–5) concept films, dev-psych gated. |
