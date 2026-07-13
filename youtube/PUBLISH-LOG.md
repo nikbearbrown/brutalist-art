@@ -242,3 +242,20 @@ HUMAN ACTIONS (Studio):
 
 Lesson for the reel: stage the master AFTER `./art final`, never between run and
 final — the symlink convention (mp4/<slug>.mp4 -> ../<slug>-cut.mp4) prevents this.
+
+---
+
+## Kokoro: Free Voices (With Names) — 2026-07-13
+
+  ch6  https://youtu.be/yoE2eRBS54w   Kokoro: Free Voices (With Names) (11/11, 142.7s, kokoro-onnx 0.4.7) (unlisted)
+
+Audio: B00 ElevenLabs (Bear's clone, ~$0.02) + 10 Kokoro beats ($0.00).
+CC: kokoro-free-voices.srt uploaded (11 cues).
+Playlist: PLMn-aa84DxJk (Brutalist — Claude for Video Production) — created this run; ch6 at position 0.
+
+HUMAN ACTIONS (Studio):
+  1. Flip to public when ready.
+  2. Drag ch6 to correct position in Brutalist playlist (after Suno vs 11 Labs, before She Walks in Beauty).
+  3. Verify caption timing on the video page.
+ch6-short https://youtu.be/Nm74XCgLYuM — Kokoro: Free Voices (9:16 Short, 147.2s, Shorts playlist) (unlisted)
+ch6b https://youtu.be/Oxv763As98Q — Kokoro: All 28 English Voices (30/30, 196.5s, KokoroRosterCard, 19 grade corrections) (unlisted)

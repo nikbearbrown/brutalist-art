@@ -14,6 +14,7 @@ import {NikBearBrownOpen, nikBearBrownOpenSchema} from './scenes/NikBearBrownOpe
 import {NikBearBrownOutro, nikBearBrownOutroSchema} from './scenes/NikBearBrownOutro';
 import {NikBearBrownTerminalAsk, nikBearBrownTerminalAskSchema} from './scenes/NikBearBrownTerminalAsk';
 import {NikBearBrownCodeBlock, nikBearBrownCodeBlockSchema} from './scenes/NikBearBrownCodeBlock';
+import {KokoroRosterCard, kokoroRosterCardSchema} from './scenes/KokoroRosterCard';
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -82,6 +83,26 @@ export const RemotionRoot: React.FC = () => {
         }}
       />
       <Composition
+        id="BrutalistTerminalOpen916"
+        component={BrutalistTerminalOpen}
+        durationInFrames={600}
+        fps={30}
+        width={1080}
+        height={1920}
+        schema={brutalistTerminalOpenSchema}
+        defaultProps={{
+          command: 'brutalist explainer-video "Why Cancer Cells Are Harder to Kill"',
+          checklist: [
+            '✓ palette   teardown',
+            '✓ B00       BrutalistTerminalOpen',
+            '✓ B99       BrutalistCommentCTA',
+            '✓ voice     NikBearBrown',
+            '✓ gate      PASS',
+          ],
+          topic: 'CANCER BIOLOGY',
+        }}
+      />
+      <Composition
         id="BrutalistAdaptCLI"
         component={BrutalistAdaptCLI}
         durationInFrames={360}
@@ -122,6 +143,21 @@ export const RemotionRoot: React.FC = () => {
         fps={30}
         width={1920}
         height={1080}
+        schema={brutalistCommentCTASchema}
+        defaultProps={{
+          filename: 'onda.ts',
+          code: '// cancer-biology / apoptosis-resistance\n//\n// if this was useful, follow for more\n// @nikbearbrown  ·  brutalist.art\n',
+          variant: 'A',
+          topic: 'CANCER BIOLOGY',
+        }}
+      />
+      <Composition
+        id="BrutalistCommentCTA916"
+        component={BrutalistCommentCTA}
+        durationInFrames={450}
+        fps={30}
+        width={1080}
+        height={1920}
         schema={brutalistCommentCTASchema}
         defaultProps={{
           filename: 'onda.ts',
@@ -386,6 +422,40 @@ export const RemotionRoot: React.FC = () => {
           tagline: 'Brutalist + Educational AI',
           handle: '@NikBearBrown',
           url: 'nikbearbrown.com',
+        }}
+      />
+      <Composition
+        id="KokoroRosterCard"
+        component={KokoroRosterCard}
+        durationInFrames={240}
+        fps={30}
+        width={1920}
+        height={1080}
+        schema={kokoroRosterCardSchema}
+        defaultProps={{
+          name: 'Heart',
+          code: 'af_heart',
+          group: 'American',
+          grade: 'A-',
+          index: '1/28',
+          topic: 'KOKORO — THE FULL 28',
+        }}
+      />
+      <Composition
+        id="KokoroRosterCard916"
+        component={KokoroRosterCard}
+        durationInFrames={240}
+        fps={30}
+        width={1080}
+        height={1920}
+        schema={kokoroRosterCardSchema}
+        defaultProps={{
+          name: 'Heart',
+          code: 'af_heart',
+          group: 'American',
+          grade: 'A-',
+          index: '1/28',
+          topic: 'KOKORO — THE FULL 28',
         }}
       />
     </>
