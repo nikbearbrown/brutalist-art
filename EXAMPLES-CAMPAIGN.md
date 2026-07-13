@@ -96,45 +96,47 @@ Legend: 🔑 keys needed · 📁 existing folder to rebuild-and-verify · ✨ ne
 | # | Video | Skill | Folder | Status | Notes |
 |---|---|---|---|---|---|
 | 1 | **What is Brutalist?** | explainer + terminal | ✨ `youtube/what-is-brutalist` | ✅ | **DONE** — 16/16 beats rendered (174s, narrated); 0 MISSING; **5 toolkit bugs found & fixed** (commit `50df886`). 3 beats flagged for pacing review (B11/B06/B02). |
-| 2 | **Key check (free)** | `./art keys` | — (a gate, not a video) | ⬜ | **Run `./art keys` BEFORE any paid build.** Free live probes (ElevenLabs `/user`+`/voices`, higgsfield `account status`, YouTube `channels.list`=1 unit). Confirms every key/voice is valid + shows quota/credits. No spend. Fix any ❌ before Tier 1+. |
+| 2 | **Installs, .env & credentials** | explainer + terminal | ✨ `youtube/installs` | ⬜ | **.env, credentials, npx/pip/venvs, the paid services + clone-your-voice.** Has `beat_sheet.json` (15 beats) + `BUILD-PROMPT.md`; source doc `docs/Installs.md`. Fully pipeline (0 human beats). **Second — build next.** |
 | 3 | slate-cut | (compile) | 📁 `examples/slate-cut--base-rate` | ⬜ | the no-key first pass; verify `./art run` + request cards |
 | 4 | previz | (fill_slates) | ✨ `youtube/previz-*` | ⬜ | any beat sheet → all-slate timing pass |
 | 5 | line-art-vectorizer | line-art-vectorizer | ✨ `youtube/*` | ⬜ | vtracer, no key |
 | 6 | figure-planner | figure-planner | ✨ `youtube/*` | ⬜ | **author its SKILL.md first** (D5), then a figure |
 | 7 | sketch-explainer (silent) | sketch-explainer | ✨ `youtube/*` | ⬜ | Manim only, no key |
 
+**GATE — key check (free, not a video).** **Run `./art keys` BEFORE any paid build.** Free live probes (ElevenLabs `/user`+`/voices`, higgsfield `account status`, YouTube `channels.list`=1 unit). Confirms every key/voice is valid + shows quota/credits. No spend. Fix any ❌ before Tier 1+.
+
 ### Tier 1 — ElevenLabs (narration)
 | # | Video | Skill | Folder | Status |
 |---|---|---|---|---|
-| 7 | sketch-explainer (narrated) | sketch-explainer | ✨ | ⬜ |
-| 8 | math-explainer | math-explainer | ✨ (+LaTeX) | ⬜ |
-| 9 | explainer | explainer | 📁 `examples/explainer--size-paradox` | ⬜ |
-| 10 | terminal-screencast | terminal-screencast | 📁 `examples/terminal-screencast--compression-journey` | ⬜ |
-| 11 | bio | bio | ✨ (`--length` 3:00) | ⬜ |
-| 12 | code-walkthrough | code-walkthrough | ✨ | ⬜ |
-| 13 | kids-video | kids-video | ✨ | ⬜ |
-| 14 | recitation-film | recitation-film | ✨ (+faster-whisper) | ⬜ |
-| 15 | **deck-lecture** | deck-lecture | ✨ (vendor `animated-deck`; +Playwright) | ⬜ | restore one of the 34 lectures as the example |
-| 16 | story-film (narration) | story-film | 📁 `examples/00-story-film-demos` | ⬜ |
+| 8 | sketch-explainer (narrated) | sketch-explainer | ✨ | ⬜ |
+| 9 | math-explainer | math-explainer | ✨ (+LaTeX) | ⬜ |
+| 10 | explainer | explainer | 📁 `examples/explainer--size-paradox` | ⬜ |
+| 11 | terminal-screencast | terminal-screencast | 📁 `examples/terminal-screencast--compression-journey` | ⬜ |
+| 12 | bio | bio | ✨ (`--length` 3:00) | ⬜ |
+| 13 | code-walkthrough | code-walkthrough | ✨ | ⬜ |
+| 14 | kids-video | kids-video | ✨ | ⬜ |
+| 15 | recitation-film | recitation-film | ✨ (+faster-whisper) | ⬜ |
+| 16 | **deck-lecture** | deck-lecture | ✨ (vendor `animated-deck`; +Playwright) | ⬜ | restore one of the 34 lectures as the example |
+| 17 | story-film (narration) | story-film | 📁 `examples/00-story-film-demos` | ⬜ |
 
 ### Tier 2 — higgsfield CLI (AI image/video)
 | # | Video | Skill | Folder | Status |
 |---|---|---|---|---|
-| 17 | lyric-resync | lyric-resync | ✨ | ⬜ |
-| 18 | dance-video | dance-video | ✨ | ⬜ |
-| 19 | ai-asset-gen | ai-asset-gen | ✨ | ⬜ |
-| 20 | collage-ads | collage-ads | ✨ | ⬜ |
+| 18 | lyric-resync | lyric-resync | ✨ | ⬜ |
+| 19 | dance-video | dance-video | ✨ | ⬜ |
+| 20 | ai-asset-gen | ai-asset-gen | ✨ | ⬜ |
+| 21 | collage-ads | collage-ads | ✨ | ⬜ |
 
 ### Tier 3 — local audio (bring a WAV)
 | # | Video | Skill | Folder | Status |
 |---|---|---|---|---|
-| 21 | music-video | music-video | 📁 `examples/music-video--c-is-for-cookie` | ⬜ |
-| 22 | lyric-overlay | lyric-overlay | ✨ | ⬜ |
+| 22 | music-video | music-video | 📁 `examples/music-video--c-is-for-cookie` | ⬜ |
+| 23 | lyric-overlay | lyric-overlay | ✨ | ⬜ |
 
 ### Final
 | # | Video | Skill | Folder | Status |
 |---|---|---|---|---|
-| 23 | youtube-publisher | youtube-publisher | (publishes the built playlist) | ⬜ | OAuth; publishes everything above as the real playlist. **API quota: ~6 uploads/day** — the default 10,000 units/day ÷ 1,600 units per `videos.insert` = ~6, NOT the console's "100 uploads/day" (that limit never binds). So ~23 videos = ~4 days via API, unless you request a quota increase (adjustable, needs audit) or upload some manually via Studio (web uploads don't touch the API quota). **Chosen: publish via the API, batched ~6/day over ~4 days** (keeps the automation — transcript, chapters, description, playlist order, bookends — that Studio uploads lose). The API quota resets at **midnight Pacific (3:00 AM ET)**; the `ART_PUBLISH_LEDGER` tracks what's already up, so each daily run publishes the next unpublished batch until the playlist is complete. Can be a daily scheduled task. |
+| 24 | youtube-publisher | youtube-publisher | (publishes the built playlist) | ⬜ | OAuth; publishes everything above as the real playlist. **API quota: ~6 uploads/day** — the default 10,000 units/day ÷ 1,600 units per `videos.insert` = ~6, NOT the console's "100 uploads/day" (that limit never binds). So ~23 videos = ~4 days via API, unless you request a quota increase (adjustable, needs audit) or upload some manually via Studio (web uploads don't touch the API quota). **Chosen: publish via the API, batched ~6/day over ~4 days** (keeps the automation — transcript, chapters, description, playlist order, bookends — that Studio uploads lose). The API quota resets at **midnight Pacific (3:00 AM ET)**; the `ART_PUBLISH_LEDGER` tracks what's already up, so each daily run publishes the next unpublished batch until the playlist is complete. Can be a daily scheduled task. |
 
 ### Helpers to exercise along the way (not videos; no dedicated example)
 `scout`, `cli-scout`, `script-writer`, `audience-preset`, `shot-planner`, `duration-planner`,
