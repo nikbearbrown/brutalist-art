@@ -171,3 +171,74 @@ Note: ledger key used this session: "youtube/credentials/nikbearbrown/youtube_pu
   (the PUBLISH-LOG.md path used in the previous session was incorrect — that file is Markdown,
   not JSON. The real JSON ledger is in youtube/credentials/nikbearbrown/).
 
+---
+
+## Session — 2026-07-13 — Video 4 REV 2 (captions beat)
+
+REV 2 adds B03 update (four things, .srt line) and B04A_CaptionsRight (new beat).
+Supersedes https://youtu.be/5iadw1MET3Q (human deletes in Studio).
+
+### REAL UPLOAD — REV 2 — 2026-07-13
+
+Run 1 (wrong playlist — publisher default was stale):
+  Command: python3 skills/upload/youtube-publisher/scripts/publish_playlist.py youtube/posting-to-youtube
+  Output: created playlist 'Quantum Mechanics Volume 1 (NotebookLM)' → PLaOEYdBvYAog
+          uploaded → https://youtu.be/PE2Zv8hBDzc
+          caption track added
+  BUG: publisher's --playlist default was hardcoded to "Quantum Mechanics Volume 1 (NotebookLM)"
+       instead of requiring explicit input. Video uploaded to wrong playlist.
+  FIX: changed default to os.getenv("ART_PLAYLIST", "") + empty-string guard. Committed.
+
+Run 2 (correct playlist):
+  Command: python3 skills/upload/youtube-publisher/scripts/publish_playlist.py
+           youtube/posting-to-youtube --playlist "Brutalist"
+  Output: found playlist 'Brutalist' → PLG9H-C6rp5RU
+          posting-to-youtube already uploaded → PE2Zv8hBDzc
+          added posting-to-youtube to playlist at position 0
+          caption track already present — skipping
+          done.
+
+### HUMAN ACTION NEEDED
+
+1. Delete accidentally-created playlist "Quantum Mechanics Volume 1 (NotebookLM)"
+   (PLaOEYdBvYAog) in YouTube Studio. It has the posting-to-youtube video in it.
+2. Delete superseded video https://youtu.be/5iadw1MET3Q in YouTube Studio (unlisted).
+
+### FINAL SUMMARY — REV 2 — 2026-07-13
+
+  ch4  https://youtu.be/PE2Zv8hBDzc   Posting to YouTube (REV 2, 16/16, captions)  (unlisted)
+
+Playlist "Brutalist" (PLG9H-C6rp5RU) now has:
+  ch1  https://youtu.be/xXKgCXc1nm4   What is Brutalist?
+  ch2  https://youtu.be/7rUcwkFOhvM   Installs, .env & Credentials
+  ch3  https://youtu.be/AhdmP75PBY0   When Cowork Can Help Claude Code
+  ch4  https://youtu.be/PE2Zv8hBDzc   Posting to YouTube (REV 2)
+
+Captions: posting-to-youtube.srt uploaded (16 cues, 262s) — source text on measured timing.
+Ledger: youtube/credentials/nikbearbrown/youtube_publish_ledger.json updated ("posting-to-youtube": "PE2Zv8hBDzc").
+
+### REV 2 CORRECTION — the review cut went up first — 2026-07-13
+
+Human review caught it: PE2Zv8hBDzc was uploaded from a master staged BEFORE
+`./art final` ran — the rev-2 REVIEW cut, wearing its label. The clean final
+(261.5s, frame-verified: B03 four-things line, B04A captions card, no label)
+existed on disk; `mp4/posting-to-youtube.mp4` now symlinks it.
+
+Fix: ledger entry PE2Zv8hBDzc removed; publisher re-run uploaded the clean final.
+
+### FINAL SUMMARY — REV 2 FINAL — 2026-07-13
+
+  ch4  https://youtu.be/S7rmHr36C74   Posting to YouTube (rev 2 FINAL, 16/16, 261.5s)  (unlisted)
+
+One publisher run = upload + playlist + captions (verify CC + position in Studio
+during the cleanup pass).
+
+HUMAN ACTIONS (Studio):
+  1. Delete superseded videos: https://youtu.be/5iadw1MET3Q (rev 1) and
+     https://youtu.be/PE2Zv8hBDzc (rev 2 review cut).
+  2. Delete accidentally-created playlist "Quantum Mechanics Volume 1 (NotebookLM)" (PLaOEYdBvYAog).
+  3. Brutalist playlist → sort Manual → drag ch1–ch4 to the top, ch4 directly
+     after "When Cowork Can Help Claude Code".
+
+Lesson for the reel: stage the master AFTER `./art final`, never between run and
+final — the symlink convention (mp4/<slug>.mp4 -> ../<slug>-cut.mp4) prevents this.

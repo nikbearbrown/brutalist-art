@@ -71,3 +71,27 @@ RESULT: 16/16 beats rendered (233.9s, narrated). 0 slates. 0 beats need human re
   ancestor `youtube_publish.py` had).
 - Toolkit lesson: **vendoring a script is a refactor — diff features against the ancestor before
   first use.** The caption gap only surfaced because a human asked where the CC went.
+
+
+## REFACTOR FEEDBACK — posting-to-youtube REV 2 — 2026-07-13
+MISSING (vendor into brutalist-art):
+  - none
+FIXED (toolkit bugs this build surfaced):
+  - publish_playlist.py hardcoded `--playlist` default to "Quantum Mechanics Volume 1 (NotebookLM)"
+    (a stale default from another project). Running without `--playlist` created a wrong playlist and
+    added the video there instead of the Brutalist playlist. Fix: default now reads $ART_PLAYLIST env
+    var (empty fallback), with a runtime guard that fails fast if the value is empty.
+    File: skills/upload/youtube-publisher/scripts/publish_playlist.py.
+  - The REV 2 BUILD-PROMPT section did not include `--playlist "Brutalist"` in the publish command.
+    Future BUILD-PROMPTs must always include `--playlist` explicitly (or set ART_PLAYLIST in .env).
+DEPS: same as original build (manim, remotion node_modules, ElevenLabs key).
+STILL BLOCKED:
+  - Human: delete accidentally-created playlist "Quantum Mechanics Volume 1 (NotebookLM)"
+    (PLaOEYdBvYAog) in YouTube Studio.
+  - Human: delete superseded video https://youtu.be/5iadw1MET3Q (unlisted) in YouTube Studio.
+RESULT: 16/16 beats rendered (262.1s, narrated). 0 slates.
+  B03 re-rendered (Remotion, foreground, --force): shows `installs.srt ← the caption track (CC)`.
+  B04A_CaptionsRight new Manim scene: srt cue card, auto-caption strikethrough, captions.insert caption.
+  SRT regenerated: 16 cues, 262s. Caption track uploaded via captions.insert. ✓
+  Rev-2 video: https://youtu.be/PE2Zv8hBDzc (unlisted, in Brutalist playlist).
+  Standing rules #1–#4 followed exactly.

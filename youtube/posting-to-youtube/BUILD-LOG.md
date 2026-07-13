@@ -86,3 +86,66 @@ RESULT: 15/15 beats rendered (235.8s, narrated). 0 slates. 0 beats need human re
   Standing rules #3 and #4 followed exactly — Remotion rendered via remotion_scenes.py (foreground),
   props matched to schema, verified by looking at qc-sheet.png. No placeholder text found.
   B12 HERO confirmed: dark bg #2A1A0E, "THE MACHINE POSTS." / "YOU OWN WHAT SHIPS.", machine/human split.
+
+## HUMAN FEEDBACK — 2026-07-13
+
+Read youtube/posting-to-youtube/BUILD-PROMPT.md and execute the "REV 2 — the captions beat" section. Standing rules #1–#4 in EXAMPLES-CAMPAIGN.md apply.
+
+Context: the video explains the tool, and CC upload is an important feature — clients want their captions right. The publisher now uploads <slug>.srt via captions.insert (commit c3cac9b). Two beats change in beat_sheet.json (already edited — do NOT re-author them):
+- B03 (REMOTION, changed) — narration is now "four things" and props.output adds the installs.srt ← the caption track (CC) line. audio_file/actual_duration_s are cleared → re-record, re-render.
+- B04A (GRAPHIC, NEW, between B04 and B05) — "captions ship with the post". Write manim scene B04A_CaptionsRight in scenes.py per graphic.production_viz.mechanic (house palette).
+
+## REV 2 — session start — 2026-07-13
+
+Starting REV 2: captions beat. Beat sheet already edited; B03 cleared, B04A added.
+Beat count goes 15 → 16 (B04A inserted between B04 and B05).
+Steps: delete stale beat-B03.mp3, generate audio B03+B04A, write B04A_CaptionsRight in scenes.py, render both, compile, verify qc-sheet, final cut, regenerate SRT, republish.
+
+## REV 2 — renders
+
+- Deleted stale mp3/beat-B03.mp3.
+- Generated ElevenLabs audio: B03=19.25s, B04A=19.54s. beat_sheet.json updated.
+- Wrote B04A_CaptionsRight scene in scenes.py (srt cue card, auto-caption strikethrough, captions.insert caption).
+- Rendered B04A_CaptionsRight via system manim → manim/B04A.mp4. ✓
+- Rendered B03 via remotion_scenes.py (foreground, --force) → media/B03.mp4. ✓
+- ./art run → 16/16 filled (262.1s). B03 slowed 1.28x, B04A slowed 1.58x to match audio.
+
+## REV 2 — QC by looking (rule #2)
+
+Extracted frames from review video at B03 (52.3s) and B04A (90.6s):
+- B03 ✓: "WHAT EACH VIDEO NEEDS" terminal, shows all four lines including "installs.srt ← the caption track (CC)"
+- B04A ✓: CAPTIONS chip (teal), srt cue card (E=hν, timecodes), auto-generated strikethrough, E=hν fix, "captions.insert — the CC track travels with the upload."
+No placeholders from other videos. 16/16 confirmed.
+
+## REV 2 — final cut + SRT + publish
+
+- ./art final → posting-to-youtube-cut.mp4 (262.1s, 16/16). ✓
+- python3 runtime/scripts/stage_publish.py → posting-to-youtube.srt (16 cues, 262s) + mp4 symlink. ✓
+- Removed "posting-to-youtube": "5iadw1MET3Q" from ledger.
+- BUG: publisher --playlist default was "Quantum Mechanics Volume 1 (NotebookLM)". First run
+  created wrong playlist (PLaOEYdBvYAog) and added video there.
+- FIX: changed default to os.getenv("ART_PLAYLIST", "") + empty-string guard.
+- Second run with --playlist "Brutalist": found PLG9H-C6rp5RU, video already uploaded (PE2Zv8hBDzc),
+  added to Brutalist playlist, captions already present.
+- REV 2 published: https://youtu.be/PE2Zv8hBDzc (unlisted). ✓
+
+## HUMAN ACTION NEEDED
+
+1. Delete playlist "Quantum Mechanics Volume 1 (NotebookLM)" (PLaOEYdBvYAog) in YouTube Studio.
+2. Delete superseded video https://youtu.be/5iadw1MET3Q (unlisted) in YouTube Studio.
+
+## REFACTOR FEEDBACK — posting-to-youtube REV 2 — 2026-07-13
+MISSING (vendor into brutalist-art):
+  - none
+FIXED (toolkit bugs this build surfaced):
+  - publish_playlist.py: hardcoded --playlist default was stale ("Quantum Mechanics Volume 1 (NotebookLM)").
+    Fix: default now reads $ART_PLAYLIST env var (empty fallback) with empty-string guard.
+    File: skills/upload/youtube-publisher/scripts/publish_playlist.py.
+  - BUILD-PROMPT REV 2 did not include --playlist flag → always include it explicitly.
+DEPS: same as original build.
+STILL BLOCKED:
+  - Human: delete wrong playlist (PLaOEYdBvYAog) in Studio.
+  - Human: delete superseded video 5iadw1MET3Q in Studio.
+RESULT: 16/16 beats rendered (262.1s). B03 re-rendered (remotion, --force). B04A new Manim scene.
+  SRT: 16 cues, 262s. Caption track uploaded. Rev-2 video: https://youtu.be/PE2Zv8hBDzc (unlisted).
+  Standing rules #1–#4 followed exactly.

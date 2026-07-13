@@ -25,7 +25,7 @@
    "video production",
    "Cowork"
   ],
-  "total_estimated_duration_seconds": 235.83
+  "total_estimated_duration_seconds": 262.06
  },
  "beats": [
   {
@@ -144,8 +144,8 @@
    "estimated_duration_s": 16,
    "act": "PUBLISH",
    "t_start": 46.0,
-   "actual_duration_s": 0,
-   "audio_file": ""
+   "actual_duration_s": 19.25,
+   "audio_file": "mp3/beat-B03.mp3"
   },
   {
    "beat_id": "B04",
@@ -198,8 +198,8 @@
    "estimated_duration_s": 18,
    "act": "PUBLISH",
    "t_start": 78.0,
-   "actual_duration_s": 0,
-   "audio_file": ""
+   "actual_duration_s": 19.54,
+   "audio_file": "mp3/beat-B04A.mp3"
   },
   {
    "beat_id": "B05",

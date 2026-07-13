@@ -1,9 +1,10 @@
 """scenes.py — Manim scenes for 'Posting to YouTube'
 
 One Scene subclass per GRAPHIC beat with shot.source == 'own'.
-Beats: B01, B02, B04, B07, B08, B09, B10, B11, B12 (hero).
+Beats: B01, B02, B04, B04A, B07, B08, B09, B10, B11, B12 (hero).
 Palette: teardown — flat white GROUND, ink INK, red CRIMSON, teal ACCENT_TEAL.
 B12_TheSplit is the hero beat — most care; EB Garamond, conductor split.
+REV 2: B04A_CaptionsRight added (captions ship with the post).
 """
 import sys, pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2] / "runtime" / "manim"))
@@ -197,6 +198,98 @@ class B04_WhatPublisherDoes(Scene):
         ledger_grp.to_edge(DOWN, buff=0.55)
         self.play(FadeIn(ledger_grp), run_time=0.5)
         self.wait(7.0)
+
+
+# ──────────────────────────────────────────────────────────
+# B04A — CAPTIONS RIGHT (18s)  REV 2
+# An .srt cue card with a teal arrow FROM beat_sheet.json
+# ('source text · measured timing'). Beside it, faded, an
+# 'auto-generated' caption with a misheard phrase crossed
+# out in red: voice says 'h nu', auto writes 'h new', source
+# has 'E = hν'. Bottom: 'captions.insert — CC track travels
+# with the upload.'
+# ──────────────────────────────────────────────────────────
+class B04A_CaptionsRight(Scene):
+    def construct(self):
+        section = LabelChip("CAPTIONS", accent=ACCENT_TEAL, size=17)
+        section.to_corner(UL, buff=0.55)
+        self.play(FadeIn(section), run_time=0.5)
+
+        # LEFT — source .srt cue card
+        srt_num   = Text("1",                        font=MONO, color=SLATE,      font_size=14)
+        srt_tc    = Text("00:00:46,000 --> 00:01:02,000", font=MONO, color=SLATE, font_size=13)
+        srt_l1    = Text("E = hν — the energy of a photon.", font=MONO, color=INK, font_size=15, weight=BOLD)
+        srt_l2    = Text("(Planck, 1900.)",          font=MONO, color=INK,        font_size=15)
+        srt_content = VGroup(srt_num, srt_tc, srt_l1, srt_l2).arrange(DOWN, buff=0.1, aligned_edge=LEFT)
+        srt_box = surround_box(srt_content, buff=0.28, fill_color=GROUND,
+                               stroke_color=ACCENT_TEAL, stroke_width=2)
+        srt_grp = VGroup(srt_box, srt_content).move_to(LEFT * 3.2 + UP * 0.3)
+        if srt_grp.width > 5.5:
+            srt_grp.scale_to_fit_width(5.5)
+
+        # Source label + arrow INTO srt card FROM beat_sheet.json chip
+        src_t = Text("beat_sheet.json", font=MONO, color=INK, font_size=15, weight=BOLD)
+        src_b = auto_box(src_t, h_pad=0.16, v_pad=0.1, fill_color=GROUND,
+                         stroke_color=ACCENT_TEAL, stroke_width=1.5)
+        src_grp = VGroup(src_b, src_t).next_to(srt_grp, UP, buff=0.45)
+
+        src_arrow = Arrow(src_grp.get_bottom(),
+                          srt_grp.get_top(),
+                          stroke_color=ACCENT_TEAL, stroke_width=2.5,
+                          tip_length=0.18, buff=0.06)
+        src_lbl = Text("source text · measured timing",
+                       font=SERIF, color=ACCENT_TEAL, font_size=14, slant=ITALIC)
+        src_lbl.next_to(src_arrow, RIGHT, buff=0.15)
+        if src_lbl.width > 3.2:
+            src_lbl.scale_to_fit_width(3.2)
+
+        self.play(FadeIn(src_grp, scale=0.9), run_time=0.5)
+        self.play(GrowArrow(src_arrow), FadeIn(src_lbl), run_time=0.5)
+        self.play(FadeIn(srt_grp), run_time=0.6)
+        self.wait(0.3)
+
+        # RIGHT — auto-generated caption (faded) with misheard phrase
+        auto_hdr = Text("auto-generated:", font=SERIF, color=SLATE, font_size=15, slant=ITALIC)
+        auto_wrong = Text('"h new — the energy of a photon"',
+                          font=MONO, color=SLATE, font_size=15)
+        auto_stack = VGroup(auto_hdr, auto_wrong).arrange(DOWN, buff=0.12, aligned_edge=LEFT)
+        auto_box_obj = auto_box(auto_wrong, h_pad=0.18, v_pad=0.12,
+                                fill_color="#F9F9F9", stroke_color=SLATE, stroke_width=1)
+        auto_grp = VGroup(auto_box_obj, auto_stack).move_to(RIGHT * 3.0 + UP * 0.9)
+        if auto_grp.width > 5.0:
+            auto_grp.scale_to_fit_width(5.0)
+        auto_grp.set_opacity(0.55)
+
+        # Strikethrough on the misheard text
+        strike = Line(auto_wrong.get_left() + LEFT * 0.05,
+                      auto_wrong.get_right() + RIGHT * 0.05,
+                      stroke_color=CRIMSON, stroke_width=3.5)
+        strike.move_to(auto_wrong.get_center())
+
+        # Correction chip
+        fix_t = Text("E = hν", font=MONO, color=INK, font_size=16, weight=BOLD)
+        fix_b = auto_box(fix_t, h_pad=0.18, v_pad=0.12,
+                         fill_color=GROUND, stroke_color=ACCENT_TEAL, stroke_width=2)
+        fix_grp = VGroup(fix_b, fix_t)
+        fix_grp.next_to(auto_grp, DOWN, buff=0.3)
+        fix_grp.set_x(auto_grp.get_x())
+
+        fix_lbl = Text("the source text has it right",
+                       font=SERIF, color=ACCENT_TEAL, font_size=14, slant=ITALIC)
+        fix_lbl.next_to(fix_grp, DOWN, buff=0.15)
+        fix_lbl.set_x(fix_grp.get_x())
+
+        self.play(FadeIn(auto_grp, scale=0.9), run_time=0.5)
+        self.play(Create(strike), run_time=0.4)
+        self.play(FadeIn(fix_grp, scale=1.05), FadeIn(fix_lbl), run_time=0.5)
+        self.wait(0.4)
+
+        # Bottom caption
+        caption = SerifLabel("captions.insert — the CC track travels with the upload.",
+                             accent=ACCENT_TEAL, size=19)
+        caption.to_edge(DOWN, buff=0.55)
+        self.play(FadeIn(caption, shift=UP * 0.1), run_time=0.5)
+        self.wait(7.5)
 
 
 # ──────────────────────────────────────────────────────────
