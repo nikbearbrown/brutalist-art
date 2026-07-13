@@ -12,7 +12,20 @@
     "playlist": "Brutalist — Claude for Video Production",
     "url": "https://www.brutalist.art/",
     "basis_doc": "docs/cowork-and-claude-code.md",
-    "total_estimated_duration_seconds": 231.0
+    "total_estimated_duration_seconds": 233.9,
+    "chapter_number": 3,
+    "tags": [
+      "Claude",
+      "Claude Code",
+      "Cowork",
+      "AI agents",
+      "Brutalist",
+      "Nik Bear Brown",
+      "debugging",
+      "workflow",
+      "Anthropic",
+      "AI video"
+    ]
   },
   "beats": [
     {
@@ -43,7 +56,7 @@
       "estimated_duration_s": 13,
       "act": "INTRO",
       "t_start": 0.0,
-      "actual_duration_s": null,
+      "actual_duration_s": 15.23,
       "audio_file": "mp3/beat-B00.mp3"
     },
     {
@@ -70,7 +83,7 @@
       "estimated_duration_s": 15,
       "act": "STORY",
       "t_start": 13.0,
-      "actual_duration_s": null,
+      "actual_duration_s": 14.76,
       "audio_file": "mp3/beat-B01.mp3"
     },
     {
@@ -104,7 +117,7 @@
       "estimated_duration_s": 12,
       "act": "STORY",
       "t_start": 28.0,
-      "actual_duration_s": null,
+      "actual_duration_s": 9.85,
       "audio_file": "mp3/beat-B02.mp3"
     },
     {
@@ -131,7 +144,7 @@
       "estimated_duration_s": 17,
       "act": "STORY",
       "t_start": 40.0,
-      "actual_duration_s": null,
+      "actual_duration_s": 18.81,
       "audio_file": "mp3/beat-B03.mp3"
     },
     {
@@ -165,7 +178,7 @@
       "estimated_duration_s": 19,
       "act": "STORY",
       "t_start": 57.0,
-      "actual_duration_s": null,
+      "actual_duration_s": 19.67,
       "audio_file": "mp3/beat-B04.mp3"
     },
     {
@@ -192,7 +205,7 @@
       "estimated_duration_s": 8,
       "act": "STORY",
       "t_start": 76.0,
-      "actual_duration_s": null,
+      "actual_duration_s": 5.38,
       "audio_file": "mp3/beat-B05.mp3"
     },
     {
@@ -219,7 +232,7 @@
       "estimated_duration_s": 17,
       "act": "STORY",
       "t_start": 84.0,
-      "actual_duration_s": null,
+      "actual_duration_s": 17.55,
       "audio_file": "mp3/beat-B06.mp3"
     },
     {
@@ -246,7 +259,7 @@
       "estimated_duration_s": 18,
       "act": "STORY",
       "t_start": 101.0,
-      "actual_duration_s": null,
+      "actual_duration_s": 17.97,
       "audio_file": "mp3/beat-B07.mp3"
     },
     {
@@ -273,7 +286,7 @@
       "estimated_duration_s": 11,
       "act": "STORY",
       "t_start": 119.0,
-      "actual_duration_s": null,
+      "actual_duration_s": 9.09,
       "audio_file": "mp3/beat-B08.mp3"
     },
     {
@@ -306,7 +319,7 @@
       "estimated_duration_s": 11,
       "act": "STORY",
       "t_start": 130.0,
-      "actual_duration_s": null,
+      "actual_duration_s": 6.27,
       "audio_file": "mp3/beat-B09.mp3"
     },
     {
@@ -333,7 +346,7 @@
       "estimated_duration_s": 15,
       "act": "STORY",
       "t_start": 141.0,
-      "actual_duration_s": null,
+      "actual_duration_s": 12.8,
       "audio_file": "mp3/beat-B10.mp3"
     },
     {
@@ -360,7 +373,7 @@
       "estimated_duration_s": 12,
       "act": "STORY",
       "t_start": 156.0,
-      "actual_duration_s": null,
+      "actual_duration_s": 10.16,
       "audio_file": "mp3/beat-B11.mp3"
     },
     {
@@ -393,7 +406,7 @@
       "estimated_duration_s": 13,
       "act": "STORY",
       "t_start": 168.0,
-      "actual_duration_s": null,
+      "actual_duration_s": 14.24,
       "audio_file": "mp3/beat-B12.mp3"
     },
     {
@@ -420,7 +433,7 @@
       "estimated_duration_s": 18,
       "act": "STORY",
       "t_start": 181.0,
-      "actual_duration_s": null,
+      "actual_duration_s": 24.27,
       "audio_file": "mp3/beat-B13.mp3"
     },
     {
@@ -447,7 +460,7 @@
       "estimated_duration_s": 20,
       "act": "STORY",
       "t_start": 199.0,
-      "actual_duration_s": null,
+      "actual_duration_s": 20.9,
       "audio_file": "mp3/beat-B14.mp3"
     },
     {
@@ -474,7 +487,7 @@
       "estimated_duration_s": 12,
       "act": "OUTRO",
       "t_start": 219.0,
-      "actual_duration_s": null,
+      "actual_duration_s": 16.95,
       "audio_file": "mp3/beat-B99.mp3"
     }
   ]
