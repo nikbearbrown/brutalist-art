@@ -152,7 +152,16 @@ def main():
     sheet = json.loads(sheet_path.read_text())
     slug = sheet["metadata"].get("slug", folder.name)
 
-    chunks = chunk_beats(sheet, a.limit, a.tag)
+    # prefer the export's chunk map (immune to tag-style drift); fall back to
+    # recomputing the partition
+    map_p = folder / f"{slug}.suno.map.json"
+    if map_p.exists():
+        cmap = json.loads(map_p.read_text())
+        by_id = {b["beat_id"]: b for b in sheet["beats"]}
+        chunks = [(None, [by_id[bid] for bid in cmap[k]])
+                  for k in sorted(cmap, key=int)]
+    else:
+        chunks = chunk_beats(sheet, a.limit, a.tag)
     single = len(chunks) == 1
 
     # pass 1 — every stem present and cleanly segmented, or nothing happens

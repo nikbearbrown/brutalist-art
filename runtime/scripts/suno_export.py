@@ -12,20 +12,29 @@ interface, and the beat sheet stays the single source of truth.
 
 What this writes, next to beat_sheet.json:
 
-  <slug>.suno.1.txt      the narration, beat by beat, each beat preceded by
-  <slug>.suno.2.txt      the [spoken word] meta tag (Suno drifts into singing
-  ...                    without it, even when the style note says spoken
-                         word). A new file starts whenever the next beat
-                         would push the current file past --limit (default
-                         4000 chars, Suno's lyrics box cap). Beats are never
-                         split across files.
+  <slug>.suno.style.txt  SESSION NOTES for Suno's STYLE box — the Songbird
+                         `session` pattern: global setup (spoken word, voice,
+                         tempo, register), form direction, and the production
+                         note that matters most to the slicer: A FULL BREATH
+                         OF SILENCE BETWEEN SECTIONS.
+  <slug>.suno.1.txt      the narration, beat by beat, each beat preceded by a
+  <slug>.suno.2.txt      DIRECTION TAG — [spoken word — <delivery>] — that
+  ...                    directs the reading of that beat (Suno drifts into
+                         singing without the spoken-word anchor, even when the
+                         style note says spoken word). Delivery derives from
+                         the beat's act (hook / body / hero / close) or from an
+                         optional "delivery" field on the beat in the sheet.
+                         A new file starts whenever the next beat would push
+                         the current file past --limit (default 4000 chars,
+                         Suno's lyrics box cap). Beats are never split.
+                         --plain reverts to the bare [spoken word] tag.
 
-The human loop per file N:
-  1. Paste <slug>.suno.N.txt into Suno's lyrics box. Style: "spoken word"
-     (plus the voice persona). Generate.
-  2. Download the VOCAL-ONLY stem (no music bed).
-  3. Save it as pantry/<slug>-vocals-N.wav (or .mp3/.m4a/.flac).
-  4. When every stem is in the pantry: python3 runtime/scripts/suno_slice.py <reel>
+The human loop:
+  1. Paste <slug>.suno.style.txt into Suno's STYLE box.
+  2. Paste <slug>.suno.N.txt into the LYRICS box. Generate with your voice.
+  3. Download the VOCAL-ONLY stem (no music bed).
+  4. Save it as pantry/<slug>-vocals-N.wav (or .mp3/.m4a/.flac).
+  5. When every stem is in the pantry: python3 runtime/scripts/suno_slice.py <reel>
 
 GATE P applies exactly as it does to generate_audio.py: PEDAGOGY.md must
 carry VERDICT: PASS before narration leaves the building (--no-gate to
@@ -52,21 +61,59 @@ def narrated_beats(sheet):
     return [b for b in sheet["beats"] if (b.get("narration_text") or "").strip()]
 
 
-def beat_block(b, tag):
+def delivery_for(b, beats):
+    """Per-beat reading direction (the Songbird `session` pattern): an explicit
+    "delivery" field on the beat wins; otherwise derive from its role."""
+    if (b.get("delivery") or "").strip():
+        return b["delivery"].strip()
+    act = (b.get("act") or "").upper()
+    mech = json.dumps(b.get("graphic") or {}).lower()
+    if b is beats[0] or act == "INTRO":
+        return "open direct, unhurried, a half-smile"
+    if "hero" in mech:
+        return "slower, weighted — let each line land"
+    if act == "OUTRO":
+        return "warm, conclusive, an easy close"
+    return "steady, plainspoken, dry"
+
+
+def beat_block(b, tag, beats=None, plain=False):
     text = normalize_for_tts(b["narration_text"].strip())
     # the TTS map turns em-dashes into " , " for pause timing — tidy the
     # spacing so the pasted lyrics read clean (", " not " ,  ")
     text = re.sub(r"\s+,\s+", ", ", text)
-    return f"{tag}\n{text}"
+    if plain or beats is None:
+        return f"{tag}\n{text}"
+    return f"[spoken word — {delivery_for(b, beats)}]\n{text}"
 
 
-def chunk_beats(sheet, limit=DEFAULT_LIMIT, tag=DEFAULT_TAG):
+def session_notes(sheet, tag=DEFAULT_TAG):
+    """The STYLE-box paste — Songbird `session` mode applied to narration:
+    global setup + form direction + the production note the slicer depends on."""
+    title = sheet["metadata"].get("title", sheet["metadata"].get("slug", ""))
+    n = len(narrated_beats(sheet))
+    return (
+        f"Spoken word. A single male voice reading a technical essay aloud — "
+        f"dry, wry, unhurried, plainspoken. No singing, no melody, no rap "
+        f"cadence, no harmonies. Conversational tempo, about 140 words a "
+        f"minute. The piece is '{title}': {n} short sections, each marked "
+        f"[spoken word — direction] in the lyrics; follow each section's "
+        f"direction. LEAVE A FULL BREATH OF SILENCE BETWEEN SECTIONS — a "
+        f"clear pause at every section break. Keep any music bed sparse and "
+        f"far under the voice so the spoken stem separates cleanly. Clean "
+        f"close-mic studio vocal, no reverb tail.\n")
+
+
+def chunk_beats(sheet, limit=DEFAULT_LIMIT, tag=DEFAULT_TAG, plain=False):
     """Partition narrated beats into files of <= limit chars (beats whole).
-    Returns [(chunk_text, [beat, ...]), ...]. Deterministic — suno_slice.py
-    recomputes this to know which beats each pantry stem contains."""
+    Returns [(chunk_text, [beat, ...]), ...]. The export also writes
+    <slug>.suno.map.json recording which beats each file carries —
+    suno_slice.py prefers the map over recomputing, so tag style can never
+    drift the partition."""
+    beats = narrated_beats(sheet)
     chunks, cur_beats, cur_text = [], [], ""
-    for b in narrated_beats(sheet):
-        block = beat_block(b, tag)
+    for b in beats:
+        block = beat_block(b, tag, beats, plain)
         if len(block) > limit:
             raise SystemExit(f"[suno] beat {b['beat_id']} alone exceeds "
                              f"{limit} chars — split the narration in the sheet")
@@ -90,6 +137,8 @@ def main():
                     help="meta tag written above EVERY beat (default '[spoken word]')")
     ap.add_argument("--no-gate", action="store_true",
                     help="skip the GATE P (PEDAGOGY VERDICT: PASS) check")
+    ap.add_argument("--plain", action="store_true",
+                    help="bare [spoken word] tags; skip session notes + per-beat delivery direction")
     a = ap.parse_args()
     folder = a.folder.resolve()
     sheet = json.loads((folder / "beat_sheet.json").read_text())
@@ -105,14 +154,24 @@ def main():
     (folder / "pantry").mkdir(exist_ok=True)
     (folder / "mp3").mkdir(exist_ok=True)
 
-    chunks = chunk_beats(sheet, a.limit, a.tag)
+    if not a.plain:
+        style = folder / f"{slug}.suno.style.txt"
+        style.write_text(session_notes(sheet, a.tag))
+        print(f"[suno] {style.name}  {len(style.read_text())} chars  → Suno STYLE box")
+
+    chunks = chunk_beats(sheet, a.limit, a.tag, a.plain)
+    chunk_map = {}
     for i, (text, beats) in enumerate(chunks, 1):
         out = folder / f"{slug}.suno.{i}.txt"
         out.write_text(text + "\n")
+        chunk_map[str(i)] = [b["beat_id"] for b in beats]
         print(f"[suno] {out.name}  {len(text)} chars · {len(beats)} beats "
-              f"({beats[0]['beat_id']}–{beats[-1]['beat_id']})")
-    print(f"[suno] {len(chunks)} file(s). For each N:")
-    print('[suno]   1. paste <slug>.suno.N.txt into Suno lyrics · style "spoken word" · your voice')
+              f"({beats[0]['beat_id']}–{beats[-1]['beat_id']})  → Suno LYRICS box")
+    (folder / f"{slug}.suno.map.json").write_text(json.dumps(chunk_map, indent=1))
+    print(f"[suno] {len(chunks)} lyric file(s). For each N:")
+    if not a.plain:
+        print(f"[suno]   0. paste {slug}.suno.style.txt into Suno's STYLE box (session notes)")
+    print('[suno]   1. paste <slug>.suno.N.txt into the LYRICS box · your voice · generate')
     print(f"[suno]   2. download the VOCAL-ONLY stem (no music bed)")
     print(f"[suno]   3. save as pantry/{slug}-vocals-N.wav  (mp3/m4a/flac also fine)")
     print(f"[suno] then: python3 runtime/scripts/suno_slice.py {folder.name}  "

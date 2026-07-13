@@ -133,6 +133,7 @@ Legend: 🔑 keys needed · 📁 existing folder to rebuild-and-verify · ✨ ne
 | 18 | **deck-lecture** | deck-lecture | ✨ (vendor `animated-deck`; +Playwright) | ⬜ | restore one of the 34 lectures as the example |
 | 19 | story-film (narration) | story-film | 📁 `examples/00-story-film-demos` | ⬜ |
 | 19a | **Suno vs 11 Labs Cost Test** | (voice-engine A/B) | ✨ `youtube/suno-vs-11-labs-cost-test` | ⬜ | THE VIDEO IS THE EXPERIMENT: its own narration voiced both ways (generate_audio.py vs ./art suno → pantry stem → ./art suno-slice), real credits/time in COST-LOG.md, human picks the voice that ships. BUILD-PROMPT.md ready. |
+| 19b | **Session, Karaoke & Audiogram** | session + lyric-overlay | ✨ `youtube/session-karaoke-audiogram` | ⬜ | Teaches session notes (direct the reading), the align.py word clock, and the lyric-overlay audiogram — Byron's *She Walks in Beauty* (channel's own session-directed Suno reading, `youtube/she-walks-in-beauty/pantry/`) threaded through as the worked example. BUILD-PROMPT.md ready. |
 
 ### Tier 2 — higgsfield CLI (AI image/video)
 | # | Video | Skill | Folder | Status |
