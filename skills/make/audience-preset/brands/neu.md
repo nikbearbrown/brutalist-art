@@ -17,12 +17,14 @@ Lato; good/bad cannot be color-coded.
 ## Flow (per reel)
 1. **Scaffold (deterministic, no spend):**
    ```bash
-   python3 scripts/vox_variant.py <REEL> neu
+   python3 scripts/brand_variant.py <REEL> neu
    ```
    Creates `beat_sheet.neu.json` — a copy of the canonical with metadata set:
-   `audience: NEU`, `voice_id` = `ELEVENLABS_VOICE_NEU` **if set, else falls back to
-   `ELEVENLABS_VOICE_NIKBEARBROWN`** (Bear's voice — the default), `palette: neu`,
-   `register: Lecture`, and a `_variant_todo` checklist. Stale durations are dropped.
+   `audience: NEU`, `engine: kokoro`, `voice_kokoro: bm_fable` (British English, grade B —
+   the default TTS), `voice_id` = `ELEVENLABS_VOICE_NEU` **if set (ElevenLabs opt-in
+   override — to use it, set `metadata.engine:"elevenlabs"`), else falls back to
+   `ELEVENLABS_VOICE_NIKBEARBROWN`**, `palette: neu`, `register: Lecture`, and a
+   `_variant_todo` checklist. Stale durations are dropped.
 2. **Rewrite the register (Claude Code — the real work).** Open `beat_sheet.neu.json`
    and rewrite **every beat's `narration_text` into the Lecture register** — the voice
    of a good instructor inside a course: define terms precisely on first use, tie the
@@ -48,10 +50,13 @@ Lato; good/bad cannot be color-coded.
    by their own judgment — the variant is a strong starting point, not a locked master.
 
 ## NEU voice — other professors
-Bear's voice ships as the NEU default because he uses NEU mode for his own class slides.
-It is distinctive enough that it *dominates* a lecture — which is the intended nudge:
-another professor should create or choose their own voice, set `ELEVENLABS_VOICE_NEU` in
-`.env`, and their class will sound like them, not like Bear.
+**Kokoro `bm_fable`** (British English, calm academic male) is the NEU default — free
+and local. Bear's ElevenLabs voice is available as an opt-in: set
+`ELEVENLABS_VOICE_NEU` in `.env` and `metadata.engine:"elevenlabs"` in the variant
+sheet, and the reel will sound like Bear. Another professor should set
+`ELEVENLABS_VOICE_NEU` to their own clone — their class will sound like them, not like
+Bear. Without `ELEVENLABS_VOICE_NEU`, the fallback is `ELEVENLABS_VOICE_NIKBEARBROWN`
+(Bear's default) — but only when `engine:"elevenlabs"` is active.
 
 ## Pending wiring (shared with `medhavy` / `hai`)
 The build step needs `generate_audio.py` / `vox_compile.py` to accept an `--audience`

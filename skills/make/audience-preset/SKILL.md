@@ -42,8 +42,8 @@ and remain the authoritative spec for each brand.
 | `hai` | Pragmatist | `af_heart` | `ELEVENLABS_VOICE_HUMANITARIANS` | humanitarians | Humanitarians AI |
 | `medhavy` | Wonder | `af_kore` | `ELEVENLABS_VOICE_MEDHAVY` | medhavy (Okabe-Ito) | Medhavy.com |
 | `musinique` | Teardown | `am_puck` | `ELEVENLABS_VOICE_MUSINIQUE` | musinique (monochrome/Inter) | Musinique |
-| `nbb` | Teardown | `am_onyx` | `ELEVENLABS_VOICE_NIKBEARBROWN` | teardown | NikBearBrown |
-| `neu` | Lecture | *(ElevenLabs only)* | `ELEVENLABS_VOICE_NEU` → NIKBEARBROWN fallback | neu (NU red/black/white/gold, Lato) | Northeastern |
+| `nbb` | Teardown | *(ElevenLabs only)* | `ELEVENLABS_VOICE_NIKBEARBROWN` — the only paid brand default | teardown | NikBearBrown |
+| `neu` | Lecture | `bm_fable` | `ELEVENLABS_VOICE_NEU` → NIKBEARBROWN fallback (opt-in: set `engine:"elevenlabs"`) | neu (NU red/black/white/gold, Lato) | Northeastern |
 
 Kokoro is the **default engine** for `hai`, `medhavy`, and `nbb` — `brand_variant.py`
 writes `engine:"kokoro"` + the brand's `voice_kokoro` into the variant sheet. To switch a

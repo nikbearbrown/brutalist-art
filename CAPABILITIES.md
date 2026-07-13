@@ -46,11 +46,11 @@ can mix engines and voices — e.g. one beat in the human's ElevenLabs clone, th
 
 | Brand | Kokoro voice | ElevenLabs override (env var) | Notes |
 |---|---|---|---|
-| **brutalist / nbb** | `am_onyx` | `ELEVENLABS_VOICE_NIKBEARBROWN` | NikBearBrown channel default |
+| **brutalist / nbb** | *(ElevenLabs only)* | `ELEVENLABS_VOICE_NIKBEARBROWN` | The only paid brand default |
 | **hai** (Humanitarians AI) | `af_heart` | `ELEVENLABS_VOICE_HUMANITARIANS` | Pragmatist register |
 | **medhavy** | `af_kore` | `ELEVENLABS_VOICE_MEDHAVY` | Wonder register |
 | **musinique** | `am_puck` | `ELEVENLABS_VOICE_MUSINIQUE` | Teardown register; monochrome/Inter palette |
-| **neu** | *(ElevenLabs only)* | `ELEVENLABS_VOICE_NEU` → NIKBEARBROWN fallback | Northeastern brand laws apply |
+| **neu** | `bm_fable` | `ELEVENLABS_VOICE_NEU` → NIKBEARBROWN fallback (opt-in only) | Northeastern brand laws apply |
 
 The scaffolder (`brand_variant.py`) writes `engine:"kokoro"` + the brand's `voice_kokoro` into
 `beat_sheet.<brand>.json`. To switch a variant to ElevenLabs: set `metadata.engine:"elevenlabs"` —

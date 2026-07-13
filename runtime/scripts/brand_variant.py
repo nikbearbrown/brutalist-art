@@ -13,11 +13,11 @@ register, the signature tangent, the audience outro — is done by Claude Code, 
 the hai / medhavy SKILL. No API calls, no spend.
 
 Default TTS engine per brand (written into metadata.engine + metadata.voice_kokoro):
-  nbb/brutalist  → kokoro / am_onyx  (override: engine="elevenlabs", use metadata.voice_id)
+  nbb/brutalist  → ElevenLabs (ELEVENLABS_VOICE_NIKBEARBROWN) — the only paid brand default
   hai            → kokoro / af_heart (override: engine="elevenlabs", use metadata.voice_id)
   medhavy        → kokoro / af_kore  (override: engine="elevenlabs", use metadata.voice_id)
   musinique      → kokoro / am_puck  (override: engine="elevenlabs", use metadata.voice_id)
-  neu            → kokoro not set (NEU currently defaults to ElevenLabs voice_id)
+  neu            → kokoro / bm_fable (override: engine="elevenlabs", use metadata.voice_id)
 
 Usage:
   python3 scripts/brand_variant.py <REEL> {neu|hai|medhavy|nbb|musinique}
@@ -31,7 +31,8 @@ AUD = {
     "neu": {"suffix": "neu", "audience": "NEU", "voice_env": "ELEVENLABS_VOICE_NEU",
             "voice_fallback_env": "ELEVENLABS_VOICE_NIKBEARBROWN",
             "palette": "neu", "register": "Lecture", "charter": "NEU.md",
-            "author_section": "Northeastern"},
+            "author_section": "Northeastern",
+            "engine": "kokoro", "voice_kokoro": "bm_fable"},
     "hai": {"suffix": "hai", "audience": "HAI", "voice_env": "ELEVENLABS_VOICE_HUMANITARIANS",
             "palette": "humanitarians", "register": "Pragmatist", "charter": "HAI.md",
             "author_section": "Humanitarians AI",
@@ -42,8 +43,7 @@ AUD = {
                 "engine": "kokoro", "voice_kokoro": "af_kore"},
     "nbb": {"suffix": "nbb", "audience": "NikBearBrown", "voice_env": "ELEVENLABS_VOICE_NIKBEARBROWN",
             "palette": "teardown", "register": "Teardown", "charter": "NIKBEARBROWN.md",
-            "author_section": "NikBearBrown",
-            "engine": "kokoro", "voice_kokoro": "am_onyx"},
+            "author_section": "NikBearBrown"},
     "musinique": {"suffix": "musinique", "audience": "MUSINIQUE",
                   "voice_env": "ELEVENLABS_VOICE_MUSINIQUE",
                   "palette": "musinique", "register": "Teardown", "charter": "MUSINIQUE.md",
