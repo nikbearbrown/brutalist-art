@@ -82,8 +82,23 @@ def load_engine():
     return Kokoro(str(model), str(voices))
 
 
+LANG_BY_PREFIX = {
+    "a": "en-us",   # American English
+    "b": "en-gb",   # British English
+    "j": "ja",      # Japanese
+    "z": "cmn",     # Mandarin Chinese
+    "e": "es",      # Spanish
+    "f": "fr-fr",   # French
+    "h": "hi",      # Hindi
+    "i": "it",      # Italian
+    "p": "pt-br",   # Brazilian Portuguese
+}
+
+
 def lang_for(voice: str) -> str:
-    return "en-gb" if voice.startswith(("bf_", "bm_")) else "en-us"
+    """G2P language from the voice code's first letter (af_→en-us, zf_→cmn, …).
+    Narration text for a non-English voice must be IN that language."""
+    return LANG_BY_PREFIX.get(voice[:1], "en-us")
 
 
 def write_mp3(samples, sample_rate, out_mp3: Path):
