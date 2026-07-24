@@ -1,0 +1,316 @@
+{
+  "metadata": {
+    "title": "Get It Running + Design the Mode",
+    "slug": "claude-liam-mb25-01-run-and-design",
+    "topic": "MODE BUILD (LITE) — E1/4: GET IT RUNNING + DESIGN THE MODE (8 pts)",
+    "register": "Pragmatist",
+    "audience": "claude-liam",
+    "brand": "claude-liam",
+    "persona": "Liam (in for Bear)",
+    "voice": "am_onyx",
+    "engine": "kokoro",
+    "voice_kokoro": "am_onyx",
+    "palette": "claude",
+    "style_preset": "claude",
+    "ground": "#FAF9F5",
+    "greeting": "Hola, Liam",
+    "folderLabel": "@NikBearBrown",
+    "in_for_bear": true,
+    "playlist": "Make It Run (Lite) — The Reallocation Engine Mode Build",
+    "series": "claude-liam-mb25",
+    "episode": 1,
+    "source": "The Reallocation Engine — Mode Build Assignment (25 pts)"
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "act": "cold open",
+      "narration_text": "Hola — Liam here. Episode 1 of 4. This is the 25-point Mode Build — the lighter twin of the 100-point version. Four episodes, not five. The rubric is 8 points for the runnable mode file, 7 for the domain justification, 5 for the worked run, and 5 for an explainer video whose graded core is one unscripted, uncut segment of the terminal actually running. This episode covers two things in one sitting: get the engine running, then design the mode file. The word that separates this from the 25-point design assignment is run. Nothing has to be perfect. It has to be honest and it has to have actually run. Let's go.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 34,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Hola, Liam",
+            "topic": "MODE BUILD (LITE) — E1/4: GET IT RUNNING + DESIGN THE MODE (8 pts)",
+            "segment": "Get It Running + Design the Mode",
+            "command": "Clone + npm install. Read SNICKERDOODLE.md. Run npm run verify. One side-effect-free command — paste the real output. Then draft the mode file in recipes/ style, honest status, every named command actually exists.",
+            "runningText": "a mode file where every named command actually exists is worth more than a polished one with missing scripts…",
+            "output": [
+              "Engine cloned and installed — npm install completes",
+              "SNICKERDOODLE.md read: recipe lifecycle + P2, P4, P5",
+              "npm run verify output pasted (pass or fail, either is informative)",
+              "One anchor run with real terminal output pasted",
+              "Mode file drafted: honest status, source inventory of existing commands, typed TODOs for missing"
+            ],
+            "folderLabel": "@NikBearBrown",
+            "modelLabel": "Fable 5",
+            "effortLabel": "High"
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": null
+    },
+    {
+      "beat_id": "B01",
+      "act": "clone + install + conformance check",
+      "narration_text": "Two commands to start. Clone github.com slash nikbearbrown slash the-reallocation-engine, then npm install in the project root. Then immediately run the conformance check: npm run verify. Conformance checks are the first layer of the SNICKERDOODLE.md verification stack — what the machine can genuinely judge: a JSON file that doesn't parse, a missing schema field, a script that exits nonzero. These halt the run. They never become polite reports. Paste the output whether it passes or fails. A failure output is informative — it tells you exactly what the tree is missing before you design anything around it. Students who skip the conformance check and proceed directly to the mode file frequently discover, during the worked run in Episode 3, that a path they cited in the source inventory does not exist. The conformance check would have caught it in thirty seconds. Run it first. Then what's in the tree: scripts/sec for the SEC Form D and LCA pipeline, scripts/ats for ATS detection and liveness, scripts/bls for BLS and O*NET role quality. The recipes directory holds the active operations: scan, pipeline, oferta, tracker, pdf. Two files to read before you write a line: SNICKERDOODLE.md is the constitution, DOMAIN.md maps the data paths and the DATA_CONTRACT.md rules. Private data lives in private/ and data/ats/ — both are gitignored. npm run doctor enforces it.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 60,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "view": "artifact",
+            "artifactTitle": "Clone + Install + Conformance Check",
+            "artifactHeading": "npm run verify first — skipping it costs you in the E3 worked run",
+            "artifactLines": [
+              "git clone https://github.com/nikbearbrown/the-reallocation-engine && npm install",
+              "npm run verify — conformance check. Layer 1 of the verification stack. Paste whether it passes or fails.",
+              "scripts/sec/ (Form D + LCA) · scripts/ats/ (ATS + liveness) · scripts/bls/ (BLS/O*NET role quality).",
+              "recipes/ — active operations: scan · pipeline · oferta · tracker · pdf. Your mode goes here.",
+              "SNICKERDOODLE.md (constitution) · DOMAIN.md (data paths + DATA_CONTRACT.md).",
+              "private/ and data/ats/ are gitignored. npm run doctor enforces it. Never commit either."
+            ]
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": null
+    },
+    {
+      "beat_id": "B02",
+      "act": "read the constitution — the three principles that govern the mode file",
+      "narration_text": "SNICKERDOODLE.md governs every recipe in the repo, including yours. Three principles you need before you write anything. Principle two: only ingest scripts touch the network; nothing enters the verified layer without passing validation; agents read local verified data before any external lookup. This is the prime directive stated as a structural rule. Your mode must check local data and existing scripts before it prompts a model. Principle four: gates are hard stops. A phase gate requires a specific, testable handoff condition. Looks good is not a handoff condition. Your liveness gate and your visa-timeline gate must each have a testable condition — a command that returns a specific output — not a judgment call. Principle five: every recipe is executable by the agent and readable by the domain human, and every run produces a log for agents and a report for humans. One artifact cannot serve both. Then the recipe lifecycle. DRAFT, SPECIFIED, RUNNABLE-SAMPLE, RUNNABLE-LIVE, VERIFIED. The status field in your mode file is a claim — and per principle three, every claim needs evidence. For an 8-point mode design component, RUNNABLE-SAMPLE with one real run and a clear-eyed list of what the mode cannot do scores higher than VERIFIED with no evidence. Editing the status without the evidence is a violation, not a promotion.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 56,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "view": "artifact",
+            "artifactTitle": "The Three Principles That Govern Your Mode File",
+            "artifactHeading": "Recipe lifecycle: DRAFT → SPECIFIED → RUNNABLE-SAMPLE → RUNNABLE-LIVE → VERIFIED",
+            "artifactLines": [
+              "P2 — Verified data, structurally: local data and scripts before any LLM prompt. Only ingest scripts touch the network.",
+              "P4 — Gates are hard stops: testable condition, cleared by a named human, logged. 'Looks good' is not a condition.",
+              "P5 — Two customers, twice: agent log JSON + human report. One artifact cannot serve both readers.",
+              "Status is a claim. RUNNABLE-SAMPLE + honest limits > VERIFIED with no evidence.",
+              "Editing status without evidence = violation. DRAFT with typed TODOs is correct and it scores.",
+              "RUNNABLE-SAMPLE requires: a real RUN_LOG entry + passing conformance + generated audits."
+            ]
+          },
+          "rendered": {
+            "out": "media/B02.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": null
+    },
+    {
+      "beat_id": "B03",
+      "act": "the anchor run — one side-effect-free command, real output pasted",
+      "narration_text": "Before you write the mode file, run one command — side-effect-free, no writes to live data. Three options. First: npm run ats colon scan with the --dry-run flag, which runs ATS detection logic without writing scan history. Second: npm run ats colon liveness with a specific job URL — this is a gate, not a vote; it returns live or not-live against the actual posting. Third: npm run score with a SOC code, which returns the BLS and O*NET cognitive-demand score and demand trajectory without touching personal data. Pick one. Run it. Paste the entire terminal output — not a description of it. The actual text the terminal printed. This is your anchor run. It proves the engine ran on your machine before you wrote the mode file, and it gives you something real to inspect. What did the command actually return? Is the output format what you expected? Does the data present match what the mode's source inventory should cite? These are mode-design questions you cannot answer by reading the repo documentation. You can only answer them by running something. The anchor output also becomes exhibit one in your Episode 3 worked run — you are building your submission from the start, not at the end.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 54,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "view": "artifact",
+            "artifactTitle": "The Anchor Run — One Command, Real Output Pasted",
+            "artifactHeading": "The actual terminal text — not a description, not a summary",
+            "artifactLines": [
+              "Option 1: npm run ats:scan -- --dry-run (ATS detection, no writes to scan history).",
+              "Option 2: npm run ats:liveness -- <job-url> (live/not-live on the actual posting — gate, not vote).",
+              "Option 3: npm run score -- --soc <code> (BLS/O*NET cognitive-demand + demand trajectory, no personal data).",
+              "Paste the entire terminal output. Not a description. The actual text the terminal printed.",
+              "What did it return? Is the format what you expected? Does it match what the mode should cite?",
+              "This anchor output becomes exhibit one in your E3 worked run — build your submission from the start."
+            ]
+          },
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B03.mp3",
+      "actual_duration_s": null
+    },
+    {
+      "beat_id": "B04",
+      "act": "the mode file — status frontmatter + six sections",
+      "narration_text": "Now the mode file. It lives in recipes/ and is named for your situation: something like case-biostat-h1b-soc-15-2041.md. It opens with YAML frontmatter: status — one of DRAFT, SPECIFIED, RUNNABLE-SAMPLE, RUNNABLE-LIVE, or VERIFIED; todos underscore open — the count of remaining typed TODOs; last underscore gate — the name, date, and RUN_LOG reference for the last gate cleared; and recipe underscore version. For a first submission: DRAFT or SPECIFIED is honest. Six sections follow. Purpose: what the mode does and exactly when to use it — the specific person, the specific gap, the specific trigger. Source inventory: exact paths and commands from the repo that actually exist — not descriptions, not intentions, exact commands. Any path you write here that does not exist will fail the conformance check and the grader's review. Proposed additions: each a typed TODO with its type — DATA SOURCE, DEFINE, DEV, or APPROVE — and a one-sentence justification for why it belongs. A TODO without its type is still open regardless of what text follows it. Phase gates: two hard stops. Can/cannot verify: the verified-inferred boundary drawn explicitly. Output contract: two artifacts, always — agent log JSON and human-readable report. Stop conditions: the mode refuses to produce a score rather than guess. And a RUN_LOG template.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 62,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "view": "artifact",
+            "artifactTitle": "Mode File: Status Frontmatter + Six Sections",
+            "artifactHeading": "recipes/case-<domain>.md — every named command must actually exist",
+            "artifactLines": [
+              "Frontmatter: status · todos_open · last_gate · recipe_version. DRAFT or SPECIFIED is correct and honest.",
+              "Purpose: exact person · exact gap · exact trigger for this mode vs. a generic recipe.",
+              "Source inventory: exact npm commands + script paths from scripts/sec/, scripts/ats/, scripts/bls/. Cite what exists.",
+              "Proposed additions: typed [TODO: DATA SOURCE|DEFINE|DEV|APPROVE] + one-sentence justification each.",
+              "Phase gates: liveness + visa timeline as conditionals with testable stopping conditions.",
+              "Can/cannot verify. 6. Output contract: agent log JSON + human report (P5). 7. Stop conditions. 8. RUN_LOG template."
+            ]
+          },
+          "rendered": {
+            "out": "media/B04.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B04.mp3",
+      "actual_duration_s": null
+    },
+    {
+      "beat_id": "B05",
+      "act": "gates + output contract + can/cannot verify — the three sections that earn the points",
+      "narration_text": "Three sections where most of the 8 points live. Gates first. Principle four of SNICKERDOODLE.md is not a suggestion: gates halt the pipeline. Your mode has at least two that cannot be softened. The liveness gate: npm run ats colon liveness with the job URL. If not-live, the mode stops. Full stop. Not a suggestion to deprioritize. The visa-timeline gate: if the hiring cycle exceeds the student's OPT or visa deadline, no Apply recommendation — the mode stops. Write each gate as a conditional: if this specific output, then stop. A gate written as consider liveness is a vote. Next, the can/cannot-verify section — the verified-inferred boundary drawn explicitly. What can the mode verify with a script? H-1B history for the company — yes. Posting liveness — yes. SOC cognitive-demand score — yes. What it cannot verify: whether the company's H-1B history for one SOC code predicts their behavior for yours. Whether a company that sponsored three years ago still will. Whether the model's fit judgment matches the hiring manager. Label both sides. The section is the heart of the grade for this component. Last: the output contract. Principle five: one artifact cannot serve both the agent and the human. Two outputs per run. Agent log JSON — machine-readable, every field labeled and sourced. Human report — readable without parsing, in prose or a table. If you have one output, you are violating P5.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 62,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "view": "artifact",
+            "artifactTitle": "Gates + Output Contract + Can/Cannot Verify",
+            "artifactHeading": "The three sections where most of the 8 mode-design points live",
+            "artifactLines": [
+              "Liveness gate: npm run ats:liveness -- <url>. Not-live → mode stops. Not 'consider deprioritizing.'",
+              "Visa-timeline gate: hiring cycle > visa deadline → no Apply recommendation. Hard stop, not a vote.",
+              "Can verify: H-1B/LCA history (scripts/sec/) · liveness (ats:liveness) · SOC score (scripts/bls/).",
+              "Cannot verify: H-1B history for a different SOC predicting yours · company willingness now vs. past · model fit vs. hiring manager.",
+              "Output contract (P5): agent log JSON + human report. Two artifacts. Always. One artifact = P5 violation.",
+              "Stop conditions: Unknown sponsorship tier with no signal → refuses to score. Mode stops and says why."
+            ]
+          },
+          "rendered": {
+            "out": "media/B05.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B05.mp3",
+      "actual_duration_s": null
+    },
+    {
+      "beat_id": "BVDT",
+      "act": "verdict",
+      "lead_silence_s": 0.5,
+      "narration_text": "Verdict for Episode 1. Five traps, five fixes. Trap one: designing before the engine runs. Fix: conformance check before anything, anchor run before the mode file. Trap two: a command in the source inventory that doesn't exist. Fix: run npm run verify after writing the mode file — it catches missing paths. Trap three: status above the evidence. Fix: DRAFT or SPECIFIED is correct and honest for a first submission — lower it. Trap four: gates written as votes. Fix: each gate is a conditional with a testable stopping condition — if this output, then stop. Trap five: one artifact for both agent and human. Fix: agent log JSON and human report, two outputs, every run. Episode 2 writes the domain justification — one page, seven points, specific enough that only one person recognizes themselves in it.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 44,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "artifactTitle": "Get It Running + Design the Mode",
+            "artifactHeading": "Episode 1 verdict",
+            "artifactLines": [
+              "Trap 1: designing before the engine runs. Fix: conformance check → anchor run → mode file. In that order.",
+              "Trap 2: command in source inventory that doesn't exist. Fix: npm run verify after writing — catches it.",
+              "Trap 3: status above evidence. Fix: DRAFT or SPECIFIED is correct for first submission. Lower it.",
+              "Trap 4: gates as votes. Fix: if [testable output] → stop. Not 'consider.' Not 'may indicate.'",
+              "Trap 5: one artifact for both readers (P5). Fix: agent log JSON + human report. Two, always.",
+              "E2: domain justification — one page, 7 pts, specific enough that only one person recognizes themselves."
+            ]
+          },
+          "rendered": {
+            "out": "media/BVDT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BVDT.mp3",
+      "actual_duration_s": null
+    },
+    {
+      "beat_id": "BHTF",
+      "act": "your turn handoff",
+      "narration_text": "Your turn. Three steps and two prompts. Step one: git clone and npm install. Step two: npm run verify — paste the output. Step three: one side-effect-free command — npm run ats colon scan with --dry-run, npm run ats colon liveness with a public job URL, or npm run score with your target SOC code — paste the full terminal output. Now two prompts. First: read SNICKERDOODLE.md. Specifically the recipe lifecycle table, the gate definition in P4, and the two-customer rule in P5. Write three sentences: what does RUNNABLE-SAMPLE require as evidence? What is a testable gate condition and what is a vote? Why does the output contract require two artifacts? Second prompt: here is my exact situation — [degree plus field plus visa type plus deadline plus target company type plus the gap the mode closes]. Draft a mode file in recipes/ style with YAML frontmatter — status honest, todos underscore open at the real count. Six sections. Every command in the source inventory must actually exist in the repo. Every proposed addition gets a typed TODO. Gates written as conditionals. Can/cannot verify drawn explicitly. Two output artifacts named. A RUN_LOG template. After the draft: does every named command exist? Is the status honest given what you have run?",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 64,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Your turn.",
+            "topic": "MODE BUILD (LITE) — E1/4: GET IT RUNNING + DESIGN THE MODE (8 pts)",
+            "segment": "Get It Running + Design the Mode",
+            "command": "Step 1: git clone + npm install.\nStep 2: npm run verify — paste output.\nStep 3: one side-effect-free run — npm run ats:scan --dry-run OR npm run ats:liveness -- <url> OR npm run score --soc <code>. Paste full terminal output.\n\nPrompt: My situation: [degree + field + visa type + deadline + target type + gap]. Draft mode file in recipes/ format: honest status · exact existing commands · typed [TODO: TYPE] for missing · gates as conditionals · can/cannot verify · 2 output artifacts · RUN_LOG template.",
+            "runningText": "a mode file where every named command exists and status is honest scores higher than a polished one with inflated status…",
+            "folderLabel": "@NikBearBrown",
+            "modelLabel": "Fable 5",
+            "effortLabel": "High"
+          },
+          "rendered": {
+            "out": "media/BHTF.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BHTF.mp3",
+      "actual_duration_s": null
+    },
+    {
+      "beat_id": "BOUT",
+      "act": "outro",
+      "narration_text": "Get It Running + Design the Mode. Liam, in for Bear.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 5,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "Get It Running + Design the Mode",
+            "handle": "@NikBearBrown",
+            "subline": "Liam, in for Bear."
+          },
+          "rendered": {
+            "out": "media/BOUT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BOUT.mp3",
+      "actual_duration_s": null
+    }
+  ]
+}

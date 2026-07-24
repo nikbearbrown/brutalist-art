@@ -1,0 +1,13 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-prompting-playbook/manim_out/videos/scenes/1080p30/partial_movie_files/B01_TwoScenarios/2827951169_2775466917_1427409289.mp4'
+file 'file:/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-prompting-playbook/manim_out/videos/scenes/1080p30/partial_movie_files/B01_TwoScenarios/2102985648_711015526_439649650.mp4'
+file 'file:/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-prompting-playbook/manim_out/videos/scenes/1080p30/partial_movie_files/B01_TwoScenarios/2102985648_3058419156_1522034801.mp4'
+file 'file:/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-prompting-playbook/manim_out/videos/scenes/1080p30/partial_movie_files/B01_TwoScenarios/2102985648_521413544_653592034.mp4'
+file 'file:/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-prompting-playbook/manim_out/videos/scenes/1080p30/partial_movie_files/B01_TwoScenarios/2102985648_3232734138_1693002620.mp4'
+file 'file:/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-prompting-playbook/manim_out/videos/scenes/1080p30/partial_movie_files/B01_TwoScenarios/2102985648_1764738286_793016451.mp4'
+file 'file:/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-prompting-playbook/manim_out/videos/scenes/1080p30/partial_movie_files/B01_TwoScenarios/2102985648_1467299151_1113091372.mp4'
+file 'file:/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-prompting-playbook/manim_out/videos/scenes/1080p30/partial_movie_files/B01_TwoScenarios/2102985648_1206399401_3926663940.mp4'
+file 'file:/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-prompting-playbook/manim_out/videos/scenes/1080p30/partial_movie_files/B01_TwoScenarios/2102985648_1882196299_2308180833.mp4'
+file 'file:/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-prompting-playbook/manim_out/videos/scenes/1080p30/partial_movie_files/B01_TwoScenarios/2102985648_992181902_2466307675.mp4'
+file 'file:/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-prompting-playbook/manim_out/videos/scenes/1080p30/partial_movie_files/B01_TwoScenarios/2102985648_2823606568_3122444363.mp4'
+file 'file:/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-prompting-playbook/manim_out/videos/scenes/1080p30/partial_movie_files/B01_TwoScenarios/2102985648_2902822951_4192921076.mp4'

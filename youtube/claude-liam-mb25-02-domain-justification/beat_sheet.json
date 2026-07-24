@@ -1,0 +1,249 @@
+{
+  "metadata": {
+    "title": "The Domain Justification: One Page, Specific Asymmetry",
+    "slug": "claude-liam-mb25-02-domain-justification",
+    "topic": "MODE BUILD (LITE) — E2/4: THE DOMAIN JUSTIFICATION (7 pts)",
+    "register": "Pragmatist",
+    "audience": "claude-liam",
+    "brand": "claude-liam",
+    "persona": "Liam (in for Bear)",
+    "voice": "am_onyx",
+    "engine": "kokoro",
+    "voice_kokoro": "am_onyx",
+    "palette": "claude",
+    "style_preset": "claude",
+    "ground": "#FAF9F5",
+    "greeting": "Hola, Liam",
+    "folderLabel": "@NikBearBrown",
+    "in_for_bear": true,
+    "playlist": "Make It Run (Lite) — The Reallocation Engine Mode Build",
+    "series": "claude-liam-mb25",
+    "episode": 2,
+    "source": "The Reallocation Engine — Mode Build Assignment (25 pts)"
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "act": "cold open",
+      "narration_text": "Hola — Liam here. Episode 2 of 4. Seven points. One page. The domain justification proves that your mode solves a specific invisibility for a specific person — and names the errors that person would find hardest to catch when the mode actually runs. The trap is generality. A justification that describes any international job-seeker scores low. A justification where the failure modes apply to any AI tool scores zero on that section. One page, three parts, five minutes. Let's go.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 28,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Hola, Liam",
+            "topic": "MODE BUILD (LITE) — E2/4: THE DOMAIN JUSTIFICATION (7 pts)",
+            "segment": "The Domain Justification: One Page, Specific Asymmetry",
+            "command": "Draft the domain justification — one page, three parts: (1) who uses it + exact situation, (2) the specific information asymmetry the engine surfaces, (3) engine layer connection + 1-2 domain-shaped failure modes.",
+            "runningText": "a justification that fits any international job-seeker scores low — the grader is checking for one specific person…",
+            "output": [
+              "Who uses it: degree · field · visa type and deadline · target SOC code · the specific gap",
+              "Information asymmetry: the piece of data the engine surfaces that the student would otherwise guess at",
+              "Engine layer: 80 Days to Stay / Job-Ops / Cognitive Pivot — grounded in what the mode actually calls",
+              "1-2 failure modes: the error hardest for this exact person to catch, naming the specific data gap"
+            ],
+            "folderLabel": "@NikBearBrown",
+            "modelLabel": "Fable 5",
+            "effortLabel": "Medium"
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": null
+    },
+    {
+      "beat_id": "B01",
+      "act": "who uses it — the exact situation",
+      "narration_text": "Part one names who uses the mode and the exact situation. Not a persona. A situation — the intersection of three components that must all be present. First: the domain, specific enough that the SOC code is unambiguous. Data science is not specific enough. Biostatistics applied to clinical trial endpoints is. The specificity matters because the engine's 80 Days to Stay and Cognitive Pivot components compute differently for different SOC codes — a justification that doesn't name the SOC is a justification that doesn't know what the engine is actually computing for this person. Second: the visa category, specific enough to imply timing constraints. International student is not specific enough. PhD in biostatistics, F-1 OPT, STEM extension eligible, H-1B lottery target, with a specific number of unemployment days remaining — that is specific enough. The visa deadline is a phase gate in the mode; it belongs in the justification too. Third: the target company type and what the student cannot easily see about it. This is the bridge to part two. The situation is complete when someone in a different domain, different visa category, or different SOC code would not recognize themselves in the description. That is the test.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 56,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "view": "artifact",
+            "artifactTitle": "Who Uses It — The Exact Situation",
+            "artifactHeading": "Three components: domain + visa + target — all three must be specific",
+            "artifactLines": [
+              "Domain: specific enough for an unambiguous SOC code. 'Biostatistics for clinical endpoints' ≠ 'data science.'",
+              "SOC code named explicitly — 80 Days to Stay and Cognitive Pivot compute differently per SOC.",
+              "Visa: specific type + timing. F-1 OPT + STEM eligibility + H-1B lottery window + unemployment days remaining.",
+              "The visa deadline is a gate in the mode — it belongs in the justification too.",
+              "Target company type: what does this person target and what can't they see about it?",
+              "Test: would someone in a different domain, visa, or SOC recognize themselves? If yes → not specific enough."
+            ]
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": null
+    },
+    {
+      "beat_id": "B02",
+      "act": "the information asymmetry + engine layer connection",
+      "narration_text": "Part two names the information asymmetry — the specific thing this person cannot easily see that the engine makes visible. The test: can you point to a piece of data that exists, is collectible by the engine, but that a student doing a normal job search would not easily find or correctly interpret? If yes, that is an asymmetry. If no, you are describing a motivation gap or a skills gap — a different problem that the engine was not built for. Three common asymmetries in this domain. First: H-1B sponsorship history for the specific SOC code, not just the company. A company may have filed dozens of LCAs — but only for software engineers, not for biostatisticians. The 80 Days to Stay layer queries the LCA records by SOC. A student without the engine asks the model, which produces a plausible-sounding answer that is not sourced from filings. Second: posting liveness versus job-board display. A posting live on the job board may be a standing requisition filled through internal referrals, with the external application as data collection. The Job-Ops layer detects ATS fingerprints that distinguish open headcount from standing requisitions. Third: role quality versus role title. The same job title in two companies may map to different SOC codes with different BLS demand trajectories. The Cognitive Pivot makes this visible. Connect your asymmetry to the specific layer that addresses it — and explain why the asymmetry remains invisible without it.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 64,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "view": "artifact",
+            "artifactTitle": "Information Asymmetry + Engine Layer Connection",
+            "artifactHeading": "A specific piece of data the engine surfaces — invisible without it",
+            "artifactLines": [
+              "Test: data that exists + collectible by engine + not easily found in a normal search. If yes = asymmetry.",
+              "Asymmetry 1: H-1B history for the specific SOC, not just the company → 80 Days to Stay (LCA by SOC).",
+              "Asymmetry 2: job-board liveness vs. ATS fingerprint (standing requisition vs. open headcount) → Job-Ops.",
+              "Asymmetry 3: role title vs. actual SOC quality score — same title, different BLS trajectory → Cognitive Pivot.",
+              "Connect your asymmetry to the specific layer. Explain why it's invisible without that layer.",
+              "A layer referenced but not in the mode's source inventory is not a genuine connection."
+            ]
+          },
+          "rendered": {
+            "out": "media/B02.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": null
+    },
+    {
+      "beat_id": "B03",
+      "act": "domain-shaped failure modes",
+      "narration_text": "Part three names one or two domain-shaped failure modes — the specific error that someone in your exact situation would find hardest to catch. Generic failure modes score zero. The model might hallucinate. Data might be outdated. Results may be inaccurate. Those are true of every AI tool in every domain. The grader has read them before. A domain-shaped failure mode names the specific data gap in your mode that produces a plausible-looking wrong output, and explains why this exact person would not catch it. Here is the structure: your mode verifies something, but the thing it verifies is not quite the thing the student needs to know. A company shows H-1B history — but only for SOC code 15-1211, software developers, not SOC 15-2041, biostatisticians. The mode returns a green sponsorship signal. The student applies. The role cannot lead to sponsorship for their SOC. The mode currently has no SOC-level filter in the sponsorship check — that is a typed TODO, not a hidden gap. Why is it hard to catch? Because the signal is sourced from real records. It is verified data. It is just the wrong population, and the output does not say so. That is the failure mode: a verified signal for a different population, presented without the qualifier, in a format that looks like a finding for the student's population.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 58,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "view": "artifact",
+            "artifactTitle": "Domain-Shaped Failure Modes",
+            "artifactHeading": "The specific data gap that produces a plausible wrong output — for this exact person",
+            "artifactLines": [
+              "Generic (zero): 'the model might hallucinate.' 'Data might be outdated.' Applies to every AI tool.",
+              "Domain-shaped structure: your mode verifies X, but the student needs to know Y, and X ≠ Y for this person.",
+              "Example: H-1B history verified for SOC 15-1211 (software), not 15-2041 (biostatistics). Green signal. Wrong population.",
+              "Why hard to catch: signal is real records. It looks verified. The population qualifier is missing from the output.",
+              "Example 2: empty LCA result treated as zero sponsorship — may be a name-matching gap, not a true zero. Stop condition needed.",
+              "Name the specific data gap in your mode that makes the failure possible. The typed TODO is your honest accounting."
+            ]
+          },
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B03.mp3",
+      "actual_duration_s": null
+    },
+    {
+      "beat_id": "BVDT",
+      "act": "verdict",
+      "lead_silence_s": 0.5,
+      "narration_text": "Verdict for Episode 2. One page, three parts, seven points. Three questions the grader uses. One: does the situation in Part 1 match the mode you built in Episode 1? They read both documents. A situation that doesn't match the source inventory is a sign the justification was written for a different mode than the one submitted. Two: is the asymmetry in Part 2 checkable against a specific dataset that the engine provides — or is it a description of the job market that predates the engine? The test: what specific data does the engine surface that the student cannot easily find otherwise? Three: are the failure modes in Part 3 domain-shaped — do they name the specific data gap in your mode that produces the wrong output, and for whom it's hardest to catch? A failure mode that applies to any AI tool is not domain-shaped. Episode 3 runs the mode. Record your screen before you start, because that take is your Episode 4 video.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 44,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "artifactTitle": "The Domain Justification: One Page, Specific Asymmetry",
+            "artifactHeading": "Episode 2 verdict",
+            "artifactLines": [
+              "Part 1: exact situation — degree, field, visa type + deadline, SOC code, specific gap. Must match the mode in E1.",
+              "Part 2: asymmetry checkable against a specific dataset the engine provides — not a general job-market observation.",
+              "Part 3: failure modes naming the specific data gap in the mode that produces a plausible wrong output.",
+              "Grader checks: situation matches mode? Asymmetry checkable? Failure modes domain-shaped, not generic AI caveats?",
+              "Layer referenced but not in source inventory = not a genuine connection.",
+              "E3: run the mode — record your screen before you start, because that take is your E4 video."
+            ]
+          },
+          "rendered": {
+            "out": "media/BVDT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BVDT.mp3",
+      "actual_duration_s": null
+    },
+    {
+      "beat_id": "BHTF",
+      "act": "your turn handoff",
+      "narration_text": "Your turn. One prompt. Paste this into Claude after filling in the brackets. Prompt: here is my mode from Episode 1: [paste the mode file or key sections, particularly the source inventory and can/cannot verify]. Write a one-page domain justification with three parts. Part one: who uses this mode — [exact situation: degree + field + visa type + deadline + target SOC code + specific gap the mode closes]. Part two: the specific information asymmetry the mode addresses — name the piece of data the engine surfaces that I would otherwise have to guess at or ask a model for, and ground it in the data the mode actually uses in the source inventory. Part three: how this mode connects to one or more engine layers, grounded in what the mode actually calls. Then add one or two domain-shaped failure modes: the specific error someone in my exact situation would find hardest to catch, naming the specific data gap in my mode that makes it possible. After running: does the situation match the mode you wrote in Episode 1? Is the asymmetry grounded in the source inventory? Do the failure modes name a data gap in the mode — or could they apply to any AI tool? If generic, find the real gap.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 58,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Your turn.",
+            "topic": "MODE BUILD (LITE) — E2/4: THE DOMAIN JUSTIFICATION (7 pts)",
+            "segment": "The Domain Justification: One Page, Specific Asymmetry",
+            "command": "Here is my mode: [paste source inventory + can/cannot verify]. Write 1-page justification: (1) exact situation [degree + field + visa + deadline + SOC + gap], (2) specific information asymmetry grounded in source inventory, (3) engine layer(s) mode actually calls. Then 1-2 failure modes: specific data gap in mode + why this person wouldn't catch it.",
+            "runningText": "if the failure mode applies to any AI tool, it is not domain-shaped — find the specific data gap in your mode…",
+            "folderLabel": "@NikBearBrown",
+            "modelLabel": "Fable 5",
+            "effortLabel": "Medium"
+          },
+          "rendered": {
+            "out": "media/BHTF.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BHTF.mp3",
+      "actual_duration_s": null
+    },
+    {
+      "beat_id": "BOUT",
+      "act": "outro",
+      "narration_text": "The Domain Justification: One Page, Specific Asymmetry. Liam, in for Bear.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 5,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "The Domain Justification: One Page, Specific Asymmetry",
+            "handle": "@NikBearBrown",
+            "subline": "Liam, in for Bear."
+          },
+          "rendered": {
+            "out": "media/BOUT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BOUT.mp3",
+      "actual_duration_s": null
+    }
+  ]
+}

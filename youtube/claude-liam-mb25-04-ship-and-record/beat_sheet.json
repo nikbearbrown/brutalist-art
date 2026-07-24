@@ -1,0 +1,282 @@
+{
+  "metadata": {
+    "title": "Ship It: PR + Explainer Video with One Uncut Live Run",
+    "slug": "claude-liam-mb25-04-ship-and-record",
+    "topic": "MODE BUILD (LITE) — E4/4: SHIP IT — PR + VIDEO (5 pts + submission)",
+    "register": "Pragmatist",
+    "audience": "claude-liam",
+    "brand": "claude-liam",
+    "persona": "Liam (in for Bear)",
+    "voice": "am_onyx",
+    "engine": "kokoro",
+    "voice_kokoro": "am_onyx",
+    "palette": "claude",
+    "style_preset": "claude",
+    "ground": "#FAF9F5",
+    "greeting": "Hola, Liam",
+    "folderLabel": "@NikBearBrown",
+    "in_for_bear": true,
+    "playlist": "Make It Run (Lite) — The Reallocation Engine Mode Build",
+    "series": "claude-liam-mb25",
+    "episode": 4,
+    "source": "The Reallocation Engine — Mode Build Assignment (25 pts)"
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "act": "cold open",
+      "narration_text": "Hola — Liam here. Episode 4 of 4. Two submissions and a 3-to-5-minute video. The zip is the Canvas submission. The GitHub PR is the proof it runs in the real repo tree. The video is five points — and the graded core is one unscripted, uncut segment of the terminal actually running. Not a polished screencast. Not a slide of pasted output. The terminal executing, in real time, on screen. Everything else this episode is mechanics: append the RUN_LOG entry, scrub private data, build the zip, open the PR clean, then assemble and trim the video around the uncut segment you recorded in Episode 3. Six minutes.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 32,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Hola, Liam",
+            "topic": "MODE BUILD (LITE) — E4/4: SHIP IT — PR + VIDEO (5 pts + submission)",
+            "segment": "Ship It: PR + Explainer Video with One Uncut Live Run",
+            "command": "npm run verify && npm run doctor — both must pass before the PR. Scrub private/ and data/ats/. Build the zip. Open the PR. Then assemble the 3-5 min video: domain + asymmetry (~45s) → uncut live run (the required segment) → one honest limitation + one thing learned.",
+            "runningText": "the uncut terminal segment is the 5 points — a polished video with the terminal edited out fails the one thing this tests…",
+            "output": [
+              "RUN_LOG entry appended (no PII, honest status)",
+              "reallocation-<name>-mode.zip with four documents",
+              "GitHub PR: verify and doctor passing · status honest in title",
+              "3-5 min video: domain + asymmetry → uncut live run → honest limitation + thing learned"
+            ],
+            "folderLabel": "@NikBearBrown",
+            "modelLabel": "Fable 5",
+            "effortLabel": "High"
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": null
+    },
+    {
+      "beat_id": "B01",
+      "act": "RUN_LOG entry + scrub + build the zip",
+      "narration_text": "Three tasks before the PR. First: append the RUN_LOG entry. A RUN_LOG entry records what actually happened — the date, the mode filename, the anonymized inputs, the commands run verbatim, the outputs with their verification labels, the lifecycle status at time of run, and the open issues the break attempt revealed. The status in the log is the status the mode held when this run occurred — not the status you are hoping to earn. The log is a public artifact and will be in the repo. No PII. Second: scrub private data. Run npm run doctor. If it flags anything in private/ or data/ats/ as staged, fix it before anything else. A PR that leaks personal data is not gradeable. Third: build the zip. The filename: reallocation, hyphen, your name, hyphen, mode.zip. Four documents inside: the mode file in its current post-run state, the domain justification from Episode 2, the worked run and attestation from Episode 3, and the RUN_LOG entry. Any new scripts or anonymized sample data go in too. Before zipping: manual scrub of every file. Does any file contain a real job URL from your actual search? Contents from private/ or data/ats/? An absolute path that reveals your local directory structure? If yes to any, edit before zipping.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 60,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "view": "artifact",
+            "artifactTitle": "RUN_LOG Entry + Scrub + Build the Zip",
+            "artifactHeading": "npm run doctor first — if it fails, fix before anything else",
+            "artifactLines": [
+              "RUN_LOG: date · mode filename · anonymized inputs · commands verbatim · outputs labeled · status at time of run · open issues.",
+              "Status in log = what the mode held at run time. Not your aspirational status.",
+              "npm run doctor — if it flags private/ or data/ats/ as staged: fix. Do not PR.",
+              "Zip: reallocation-<name>-mode.zip — mode file · justification · worked run + attestation · RUN_LOG entry.",
+              "Manual scrub before zipping: real URLs? private/ contents? absolute paths? Edit if yes.",
+              "A zip that leaks personal data cannot be graded without additional review."
+            ]
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": null
+    },
+    {
+      "beat_id": "B02",
+      "act": "the GitHub PR — fork, branch, pre-push checks",
+      "narration_text": "The PR is three steps and two mandatory checks before you push. Step one: fork the repository on GitHub under your own account. Step two: create a branch named mode, slash, your name, slash, your domain — for example mode/chen-biostat-h1b. Step three: place the files in the right locations. The mode file goes in recipes/, named for your domain. The domain justification and worked run go in assignments/submissions/ under a folder with your name. Any new scripts go in their appropriate scripts subdirectory. Before you push: two checks, both mandatory. First — npm run verify. The conformance check on the branch as it stands. If it fails, fix it. Do not push a failing conformance check. Second — npm run doctor. If it flags private data, fix it. Do not push. Both must pass. The PR title names the domain and the lifecycle stage you reached: Mode Build colon, your domain, dash, the lifecycle stage. For example: Mode Build: biostat H-1B SOC 15-2041 — RUNNABLE-SAMPLE. The title is a claim — the grader will verify it against the status frontmatter in the mode file and the RUN_LOG entry. A title that claims VERIFIED when the evidence supports RUNNABLE-SAMPLE is the same kind of status inflation as editing the frontmatter without evidence.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 58,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "view": "artifact",
+            "artifactTitle": "GitHub PR — Fork · Branch · Pre-Push Checks",
+            "artifactHeading": "npm run verify && npm run doctor — both must pass, every time",
+            "artifactLines": [
+              "Fork the repo. Branch: mode/<your-name>-<domain> (e.g. mode/chen-biostat-h1b).",
+              "recipes/ — your mode file. assignments/submissions/<name>/ — justification + worked run.",
+              "New scripts: scripts/<sec|ats|bls>/ with typed [TODO: DEV] closure in mode file.",
+              "Pre-push: npm run verify (conformance). Fails → fix. Do not push.",
+              "Pre-push: npm run doctor (privacy). Flags → fix. Do not push.",
+              "PR title: 'Mode Build: <domain> — <LIFECYCLE_STATUS>'. Title is a claim — must match frontmatter + RUN_LOG."
+            ]
+          },
+          "rendered": {
+            "out": "media/B02.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": null
+    },
+    {
+      "beat_id": "B03",
+      "act": "the explainer video — arc + the required uncut segment",
+      "narration_text": "The video is 3 to 5 minutes. It has four parts, and the second part is the one that earns the 5 points. Part one: the domain and the asymmetry. About 45 seconds. Who uses this mode, what situation it addresses, and the specific thing the engine makes visible that a normal job search leaves invisible. Narrate it concisely — the grader read the justification. Part two: the uncut live run. This is the required segment. Screen-record your terminal executing the mode or its existing parts, in real time, with the output appearing as it runs. No cuts inside this segment. No edits. The terminal runs; the camera watches. Use a fictional scenario and a public example URL — no real PII on screen. If a command errors on camera: leave it in. Narrate the fix. The error footage is more honest than a scripted re-run and the grader will give credit for it. Part three: one honest limitation the mode cannot verify — made concrete by what happened in the run. Reference the can/cannot-verify section directly. Point to the specific output that is inferred rather than verified. Part four: one concrete thing you learned from running or failing to run the mode. Not a feature of the mode — something that changed or surprised you. One sentence is enough if it is specific.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 62,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "view": "artifact",
+            "artifactTitle": "The Explainer Video — Four Parts",
+            "artifactHeading": "The uncut live run is the graded core — no edits inside the segment",
+            "artifactLines": [
+              "Part 1 (~45s): domain + asymmetry. Who uses it, what the engine makes visible. Concise — grader read the justification.",
+              "Part 2 (required): uncut live run. Terminal executing in real time. No cuts inside. No PII on screen.",
+              "  If it errors on camera: keep it in. Narrate the fix. Error footage > scripted re-run.",
+              "Part 3: one honest limitation the mode cannot verify — concrete from the run. Point to the specific inferred output.",
+              "Part 4: one thing you learned — not a feature, something that changed or surprised you.",
+              "Trap: polished screencast with terminal edited out. That fails the one thing this component tests."
+            ]
+          },
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B03.mp3",
+      "actual_duration_s": null
+    },
+    {
+      "beat_id": "B04",
+      "act": "assembling the video — trim, not polish; PII off screen",
+      "narration_text": "Assembling the video is trim, not polish. You have the raw recording from Episode 3. You need to add two things around the uncut segment: a short narrated intro with the domain and asymmetry, and a short outro with the honest limitation and the thing you learned. Any free screen recorder and basic editor will do — QuickTime, OBS, Loom, whatever you have. The workflow: record a short narrated intro — 45 seconds, audio-only or talking head, no slides required. Then cut to the raw uncut terminal segment from Episode 3 — do not edit inside it. Then record a short outro — your honest limitation, your one concrete learning. Splice. Export. That is a valid submission. Two non-negotiable rules. First: no PII on screen during the uncut segment. Before you start the terminal recording in Episode 3, verify the scenario uses a fictional company name and a public example URL — not a real URL from your search. If your terminal prompt reveals your username or directory structure, crop or blur it. Second: do not cut inside the run segment. The grader is watching for the output to appear in real time. A static screenshot of terminal output is not a run. A splice inside the run segment is not uncut. The whole point of this component is that the grader watches the engine run — not a representation of a run.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 62,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "view": "artifact",
+            "artifactTitle": "Assembling the Video — Trim, Not Polish",
+            "artifactHeading": "No PII on screen · no cuts inside the run segment",
+            "artifactLines": [
+              "Workflow: narrated intro (45s, domain + asymmetry) → uncut terminal segment (from E3) → narrated outro (limitation + learning).",
+              "Any free tool: QuickTime · OBS · Loom. Splice. Export. That is a valid submission.",
+              "PII rule: fictional company name + public example URL during terminal recording. Crop username/directory if visible.",
+              "No cuts inside the run segment. Output must appear in real time. The grader is watching it run.",
+              "A static screenshot of terminal output is not a run. A splice inside the segment is not uncut.",
+              "Trap: polished video where the terminal appears as a clean screenshot. Fails the uncut requirement."
+            ]
+          },
+          "rendered": {
+            "out": "media/B04.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B04.mp3",
+      "actual_duration_s": null
+    },
+    {
+      "beat_id": "BVDT",
+      "act": "verdict",
+      "lead_silence_s": 0.5,
+      "narration_text": "Verdict for Episode 4 — and the series. Five things. One: npm run verify and npm run doctor before the PR — both must pass. A PR that fails conformance or leaks personal data is not gradeable. Two: the zip is four documents, scrubbed of PII, with a status in the RUN_LOG that matches the evidence — not the aspiration. Three: the PR title names the domain and lifecycle stage reached — that title is a claim the grader will verify. Four: the video is 3 to 5 minutes and it must contain one unscripted, uncut segment where the terminal actually runs. Not a description. Not a screenshot. The terminal executing in real time. Five: the honest limitation and the one concrete learning are the presentation — not the feature tour. The 25 points turn on one question: is this honest about what it can and cannot verify?",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 44,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "artifactTitle": "Ship It: PR + Explainer Video with One Uncut Live Run",
+            "artifactHeading": "Episode 4 verdict — series complete",
+            "artifactLines": [
+              "npm run verify && npm run doctor — both pass. A failing PR is not gradeable.",
+              "Zip: four documents, PII scrubbed. RUN_LOG status matches evidence, not aspiration.",
+              "PR title: 'Mode Build: <domain> — <LIFECYCLE_STATUS>'. Grader verifies it against frontmatter + RUN_LOG.",
+              "Video: 3-5 min · uncut live run required · no PII on screen · no cuts inside the segment.",
+              "The limitation and the learning are the presentation — not the feature tour.",
+              "25 points turn on one question: is this honest about what it can and cannot verify?"
+            ]
+          },
+          "rendered": {
+            "out": "media/BVDT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BVDT.mp3",
+      "actual_duration_s": null
+    },
+    {
+      "beat_id": "BHTF",
+      "act": "your turn handoff",
+      "narration_text": "Your turn. Three tasks and one prompt. Task one: npm run verify, then npm run doctor. Paste both outputs. Fix any failures before continuing. Task two: build the zip — four documents, named reallocation hyphen your name hyphen mode.zip. Task three: open the PR from your fork, branch name mode slash your name slash your domain, files in recipes/ and assignments/submissions/, PR title Mode Build colon your domain dash the lifecycle stage you reached. Then this prompt to prepare the video narration. Prompt: here is my mode file, my domain justification, and my worked run: [paste or summarize each]. Write narration for a 3-to-5-minute explainer video in four parts. Part one: 45 seconds on the domain and the information asymmetry — who uses the mode and what the engine makes visible. Part two: a transition into the uncut live run — one sentence bridging the narration into the terminal segment, and one sentence after it that names what just happened. Part three: one honest limitation the mode cannot verify — make it concrete from the worked run, reference the can/cannot-verify section. Part four: one concrete thing I learned from running or failing to run the mode — not a feature, something that changed or surprised me. After the video is assembled: submit the zip to Canvas, link the PR, and upload the video. Done.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 62,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Your turn.",
+            "topic": "MODE BUILD (LITE) — E4/4: SHIP IT — PR + VIDEO (5 pts + submission)",
+            "segment": "Ship It: PR + Explainer Video with One Uncut Live Run",
+            "command": "Task 1: npm run verify && npm run doctor — paste outputs. Fix any failures.\n\nTask 2: Build reallocation-<name>-mode.zip (four docs, PII scrubbed).\n\nTask 3: PR from fork. Branch: mode/<name>/<domain>. Title: 'Mode Build: <domain> — <LIFECYCLE_STATUS>'.\n\nPrompt: draft 4-part video narration — (1) 45s domain + asymmetry, (2) transition into uncut segment, (3) one honest limitation concrete from the run, (4) one thing I learned.",
+            "runningText": "the uncut segment is the grade — the narration around it is the argument — limitation and learning are the talk…",
+            "folderLabel": "@NikBearBrown",
+            "modelLabel": "Fable 5",
+            "effortLabel": "High"
+          },
+          "rendered": {
+            "out": "media/BHTF.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BHTF.mp3",
+      "actual_duration_s": null
+    },
+    {
+      "beat_id": "BOUT",
+      "act": "outro",
+      "narration_text": "Ship It: PR + Explainer Video with One Uncut Live Run. Liam, in for Bear.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 5,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "Ship It: PR + Explainer Video with One Uncut Live Run",
+            "handle": "@NikBearBrown",
+            "subline": "Liam, in for Bear."
+          },
+          "rendered": {
+            "out": "media/BOUT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BOUT.mp3",
+      "actual_duration_s": null
+    }
+  ]
+}

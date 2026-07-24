@@ -1,0 +1,492 @@
+{
+  "metadata": {
+    "slug": "claude-liam-prompting-playbook",
+    "title": "The Prompting Playbook",
+    "channel": "claude-liam",
+    "persona": "Liam",
+    "brand": "claude-liam",
+    "audience": "Claude",
+    "engine": "kokoro",
+    "voice": "am_onyx",
+    "voice_kokoro": "am_onyx",
+    "palette": "claude",
+    "register": "Teardown",
+    "format": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "source": "Anthropic — Code with Claude: The Prompting Playbook (Margot Vanlar, Applied AI Engineer)",
+    "topic": "BUILD WITH CLAUDE · ANTHROPIC",
+    "subline": "Debug the prompt like code.",
+    "gate_p": "approved",
+    "build": {
+      "at": "2026-07-21T00:23:15",
+      "cut": "master",
+      "filled": 13,
+      "of": 13,
+      "slates": [],
+      "skin_warnings": [
+        "YTV01: palette=claude but the cold open is 'ClaudeVerdictArtifact' — COLD OPEN LAW wants ClaudeComposerAsk",
+        "B11: palette=claude but the outro is 'LogoOutro' — OUTRO LAW wants ClaudeTitleOutro"
+      ]
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "YTV01",
+      "act": "VERDICT",
+      "engine": "kokoro",
+      "voice": "am_onyx",
+      "lead_silence_s": 0.5,
+      "narration_text": "The prompting playbook in four moves. Evals first — control, edge, and boundary cases — so every change is measured, not guessed. Hygiene second — XML structure, clear role, output contract — if you cannot tell policy from guidelines, neither can the model. Patch debt third — old defensive instructions break on new models; version-control the why, not just the what. Capability gap fourth — instructions do not add capability; if a task needs reliable arithmetic or a handoff, give the model a tool or a human escalation path. A prompt that works is debugged like code: reproducible cases, one failure mode at a time.",
+      "shot": {
+        "type": "CARD",
+        "source": "remotion",
+        "motion": "hold",
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "provenance": "proven-core/ClaudeVerdictArtifact",
+          "version": "1",
+          "props": {
+            "artifactTitle": "The Prompting Playbook",
+            "artifactHeading": "Four moves, one discipline",
+            "artifactLines": [
+              "Evals first — control, edge, and boundary cases — so every change is measured, not guessed.",
+              "Hygiene second — XML structure, clear role, output contract — structure the prompt so the model can parse it.",
+              "Patch debt third — old defensive instructions break on new models; version-control the why.",
+              "Capability gap fourth — instructions do not add capability; give the model a tool or an escalation path."
+            ]
+          },
+          "rendered": {
+            "out": "media/YTV01.mp4",
+            "at": ""
+          }
+        }
+      },
+      "estimated_duration_s": 38,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/YTV01.mp4",
+        "filled_by": "media",
+        "at": "2026-07-21T00:23:15"
+      },
+      "audio_file": "mp3/beat-YTV01.mp3",
+      "actual_duration_s": 33.71
+    },
+    {
+      "beat_id": "B00",
+      "act": "COLD OPEN",
+      "scene": "ClaudeComposerAsk",
+      "narration_text": "Anthropic engineer Margot Vanlar ran the real prompting playbook on a real production prompt — and this is Liam, in for Bear. Two scenarios: a prompt that worked fine until the model migration, and a new agentic system built from zero. One discipline applies to both. Evals first, hygiene second, failure modes one at a time, tools where instructions fall short. Let's actually look at it.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "shot": {
+        "type": "REMOTION",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Bonjour, Liam",
+            "topic": "BUILD WITH CLAUDE · ANTHROPIC",
+            "segment": "The Prompting Playbook",
+            "command": "Anthropic engineer Margot Vanlar ran the real prompting playbook on a real production prompt — and this is Liam, in for Bear. Two scenarios: a prompt that worked fine until the model migration, and a new agentic system built from zero. One discipline applies to both. Evals first, hygiene second, failure modes one at a time, tools where instructions fall short. Let's actually look at it.",
+            "runningText": "loading the playbook…",
+            "folderLabel": "@NikBearBrown",
+            "modelLabel": "claude-sonnet-4-6",
+            "effortLabel": "High"
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": ""
+          }
+        }
+      },
+      "estimated_duration_s": 23,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B00.mp4",
+        "filled_by": "media",
+        "at": "2026-07-21T00:23:15"
+      },
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": 20.22
+    },
+    {
+      "beat_id": "B01",
+      "act": "ESTABLISH",
+      "scene": "B01_TwoScenarios",
+      "narration_text": "Engineers face two prompting scenarios. Scenario one: a prompt in production — multiple contributors, no clear owner, patches layered for previous models, and a migration suddenly breaks half the test cases. Scenario two: a new agent from scratch — no baseline, picking a model, a harness, and a first draft with nothing to hill-climb against. The same discipline applies to both. You need a reproducible test suite before you touch anything.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "shot": {
+        "type": "MANIM",
+        "source": "manim",
+        "manim": {
+          "scene_class": "B01_TwoScenarios",
+          "src": "scenes.py",
+          "description": "Two parallel lanes. Left: 'Prompt in Production' — a diagram showing layered patches accumulating on a system prompt, then a model-migration arrow breaking test cases red. Right: 'New Agent from Zero' — blank prompt, three question marks for model/harness/draft. Both lanes converge at a central 'One Discipline' node at bottom. Terracotta accent on the convergence node.",
+          "rendered": {
+            "out": "manim/B01.mp4",
+            "at": ""
+          }
+        }
+      },
+      "estimated_duration_s": 22,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B01.mp4",
+        "filled_by": "manim:B01_TwoScenarios",
+        "at": "2026-07-21T00:23:15"
+      },
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": 22.74
+    },
+    {
+      "beat_id": "B02",
+      "act": "TEACH",
+      "scene": "B02_EvalSuite",
+      "narration_text": "Before targeting failure modes, you need an eval suite. Not optional — mandatory. Three categories. Control cases: unambiguous, should always pass, confirms the model handles the basics. Edge cases: failures you've seen before — the prompt now catches them explicitly so they can't silently regress. Boundary cases: when to escalate to a human or refuse outright — the model needs a clear sense of where its role ends. Without all three columns, you cannot tell if a prompt change was an improvement or just a different kind of wrong.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "shot": {
+        "type": "MANIM",
+        "source": "manim",
+        "manim": {
+          "scene_class": "B02_EvalSuite",
+          "src": "scenes.py",
+          "description": "Three columns labeled 'Control', 'Edge Cases', 'Boundary'. Each column fills with example test cards (simplified text). Below: an arrow labeled 'Run against v0 prompt' → a results row showing pass/fail circles. Terracotta accent on the pass circles. The three column headers are the reveal anchors.",
+          "rendered": {
+            "out": "manim/B02.mp4",
+            "at": ""
+          }
+        }
+      },
+      "estimated_duration_s": 28,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B02.mp4",
+        "filled_by": "manim:B02_EvalSuite",
+        "at": "2026-07-21T00:23:15"
+      },
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": 27.35
+    },
+    {
+      "beat_id": "B03",
+      "act": "TEACH",
+      "scene": "B03_Hygiene",
+      "narration_text": "General hygiene before targeting specific failures. Rule of thumb: if you cannot tell guidelines from policy from data when reading the prompt — the model cannot either. The fix is structure. XML tags separating role, guidelines, policy, tone, customer context, and the user message. That cleanup alone improved performance on a failing scenario before any targeted instruction change. Separately: an output contract. A stop sequence on the closing XML tag tells the model exactly when to stop. Disciplined output structure matters most with nested JSON or structured schemas.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "shot": {
+        "type": "REMOTION",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "ClaudeCodeBeat",
+          "props": {
+            "title": "Prompt hygiene — the diff",
+            "code": "# BEFORE: one big paragraph, everything mixed\nYou are a helpful assistant for Meridian Mobile...\n[role + guidelines + policy + tone all inline]\n\n# AFTER: XML structure\n<role>Customer support agent for Meridian Mobile.</role>\n<guidelines>...</guidelines>\n<policy>...</policy>\n<tone>...</tone>\n<customer_context>{{account_data}}</customer_context>\n<user_message>{{query}}</user_message>\n\n# harness: add stop sequence\nstop_sequences=[\"</response>\"]  # model stops here",
+            "sparkLine": "If you can't tell policy from guidelines, neither can the model."
+          },
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": ""
+          }
+        }
+      },
+      "estimated_duration_s": 30,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B03.mp4",
+        "filled_by": "media",
+        "at": "2026-07-21T00:23:15"
+      },
+      "audio_file": "mp3/beat-B03.mp3",
+      "actual_duration_s": 32.7
+    },
+    {
+      "beat_id": "B04",
+      "act": "TEACH",
+      "scene": "B04_PatchDebt",
+      "narration_text": "Here is a failure mode you won't find in a textbook. The customer's data includes exactly how much hotspot data they have — five gigabytes. The model tells them to check the account URL instead of answering directly. Why? An old instruction: 'Never give a customer wrong plan details — point them to the URL.' That instruction was written to stop hallucination on a previous model. Newer models follow instructions more literally. The patch became the bug. Best practice: version-control your defensive instructions. Track why they exist. An instruction written to stop a 2023 hallucination may cause 2025 information withholding.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "shot": {
+        "type": "MANIM",
+        "source": "manim",
+        "manim": {
+          "scene_class": "B04_PatchDebt",
+          "src": "scenes.py",
+          "description": "Timeline: Model v1 (hallucination bug) → defensive instruction added (patch node, terracotta) → Model v2 (instruction followed too literally → withholding correct info, shown in red). Label the defensive instruction block: 'Never give wrong plan details → point to URL'. Arrow from 'customer has 5GB in context' pointing to the deflected answer. The reveal: the patch became the bug.",
+          "rendered": {
+            "out": "manim/B04.mp4",
+            "at": ""
+          }
+        }
+      },
+      "estimated_duration_s": 30,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B04.mp4",
+        "filled_by": "manim:B04_PatchDebt",
+        "at": "2026-07-21T00:23:15"
+      },
+      "audio_file": "mp3/beat-B04.mp3",
+      "actual_duration_s": 35.2
+    },
+    {
+      "beat_id": "B05",
+      "act": "TEACH",
+      "scene": "B05_ToolVsInstruction",
+      "narration_text": "Instructions do not add capability. 'Critical: always calculate proration amounts correctly.' That instruction does nothing. The model cannot reliably do mental arithmetic — telling it to do mental arithmetic correctly is not an implementation, it is a prayer. The fix was a tool. Whenever a calculation is needed, call the proration calculator. The math runs in deterministic code. The model reads the result and explains it to the customer. If you need reliable precision on a task — arithmetic, date logic, database lookup — define the tool, register it in the API, let the model decide when to call it.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "shot": {
+        "type": "REMOTION",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "ClaudeCodeBeat",
+          "props": {
+            "title": "Instructions vs. tools",
+            "code": "# INSTRUCTION (does nothing)\n\"Critical: always calculate proration amounts correctly.\"\n\n# TOOL (actually works)\n# In prompt:\n\"Use the calculate_proration tool for all billing calculations.\"\n\n# In API:\ntools=[{\n  \"name\": \"calculate_proration\",\n  \"description\": \"Calculates prorated bill for mid-cycle plan change.\",\n  \"input_schema\": {\n    \"current_plan_cost\": ...,\n    \"days_used\": ...,\n    \"new_plan_cost\": ...\n  }\n}]",
+            "sparkLine": "Instructions don't add capability. Tools do."
+          },
+          "rendered": {
+            "out": "media/B05.mp4",
+            "at": ""
+          }
+        }
+      },
+      "estimated_duration_s": 30,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B05.mp4",
+        "filled_by": "media",
+        "at": "2026-07-21T00:23:15"
+      },
+      "audio_file": "mp3/beat-B05.mp3",
+      "actual_duration_s": 32.53
+    },
+    {
+      "beat_id": "B06",
+      "act": "TEACH",
+      "scene": "B06_BothSides",
+      "narration_text": "The billing error case. A customer has a billing conflict. The model tries to diagnose it instead of escalating. Why? The prompt said: 'Avoid escalating unless absolutely necessary — escalations cost approximately eight dollars per case and count against fast-resolution metrics.' One side of the trade-off. No mention of the cost of getting it wrong: a refund, plus customer trust. Models become more capable means they optimize trade-offs more aggressively. If you give them an incomplete cost function, they solve the wrong problem. State both sides. The cost of escalating AND the cost of not escalating — let the model weigh them.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "shot": {
+        "type": "REMOTION",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "view": "artifact",
+            "artifactTitle": "Trade-off framing — billing escalation",
+            "artifactHeading": "One-sided vs. two-sided cost function",
+            "artifactLines": [
+              "BEFORE: 'Avoid escalating — costs $8 per case, counts against fast-resolution metrics.'",
+              "Result: model never escalates, tries to diagnose billing errors itself.",
+              "AFTER: 'Escalating costs $8. Failing to escalate a real error costs a refund plus customer trust.'",
+              "Result: model weighs both sides and escalates when the conflict is genuine.",
+              "As models get smarter, they optimize trade-offs more aggressively. Give them the full cost function."
+            ],
+            "sparkLine": "An incomplete cost function produces the wrong optimization."
+          },
+          "rendered": {
+            "out": "media/B06.mp4",
+            "at": ""
+          }
+        }
+      },
+      "estimated_duration_s": 30,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B06.mp4",
+        "filled_by": "media",
+        "at": "2026-07-21T00:23:15"
+      },
+      "audio_file": "mp3/beat-B06.mp3",
+      "actual_duration_s": 32.7
+    },
+    {
+      "beat_id": "B07",
+      "act": "TEACH",
+      "scene": "B07_ModelPromptHarness",
+      "narration_text": "New agent from scratch: a retail staff scheduler with hard constraints. Four approaches tested. Sonnet four-six with a simple prompt — all five trials fail. Opus four-seven, same prompt — violations drop significantly, still failing. Opus with extended thinking — compliant schedules, but triple the tokens and triple the latency. Sonnet four-six with a better prompt — two of five pass, but the model hits output limits before finishing. Model, prompt, and harness are three separate levers. Pulling any one of them in isolation often isn't enough.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "shot": {
+        "type": "REMOTION",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "view": "artifact",
+            "artifactTitle": "Staff Scheduler — Four Approaches",
+            "artifactHeading": "Model × Prompt × Harness",
+            "artifactLines": [
+              "Sonnet 4.6 + simple prompt → all 5 trials fail (violations too high)",
+              "Opus 4.7 + same prompt → violations drop, still failing — more reasoning helps",
+              "Opus 4.7 + extended thinking → compliant, but 3× tokens, 3× latency (100s per run)",
+              "Sonnet 4.6 + better prompt → 2/5 pass, hits output limit before finishing",
+              "Lesson: model, prompt, and harness are three separate levers — none is the whole answer."
+            ],
+            "sparkLine": "Model capability is one lever. It is not the only lever."
+          },
+          "rendered": {
+            "out": "media/B07.mp4",
+            "at": ""
+          }
+        }
+      },
+      "estimated_duration_s": 30,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B07.mp4",
+        "filled_by": "media",
+        "at": "2026-07-21T00:23:15"
+      },
+      "audio_file": "mp3/beat-B07.mp3",
+      "actual_duration_s": 28.97
+    },
+    {
+      "beat_id": "B08",
+      "act": "TEACH",
+      "scene": "B08_GenEvalRepair",
+      "narration_text": "The winning configuration for the scheduler: three simple prompts instead of one complex one. Generator creates a draft schedule. Evaluator checks every hard constraint, reports specific violations with evidence. Repair prompt receives those violations and makes targeted fixes. Fewer tokens, lower latency than Sonnet with an enlarged prompt. Bonus: soft constraints at runtime — 'Harry doesn't like working with Sally' goes into the evaluator description, no code changes to the validation function required. The pattern works because each prompt has one job. When a complex task has clear separable steps, separate them.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "shot": {
+        "type": "MANIM",
+        "source": "manim",
+        "manim": {
+          "scene_class": "B08_GenEvalRepair",
+          "src": "scenes.py",
+          "description": "Three nodes in a horizontal loop: 'Generator' → 'Evaluator' → 'Repair' → (back to Generator if violations remain, or → 'Output' if clean). Arrows labeled with their payloads: Generator→Evaluator: 'draft schedule'; Evaluator→Repair: 'violation list + evidence'; Repair→Generator: 'targeted fix'. Terracotta accent on the loop-back arrow. Below: token and latency comparison bars showing gen-eval-repair wins.",
+          "rendered": {
+            "out": "manim/B08.mp4",
+            "at": ""
+          }
+        }
+      },
+      "estimated_duration_s": 30,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B08.mp4",
+        "filled_by": "manim:B08_GenEvalRepair",
+        "at": "2026-07-21T00:23:15"
+      },
+      "audio_file": "mp3/beat-B08.mp3",
+      "actual_duration_s": 33.6
+    },
+    {
+      "beat_id": "B09",
+      "act": "HANDOFF",
+      "scene": "ClaudeComposerAsk",
+      "narration_text": "Your turn. Take a prompt you own. Write five test cases — one control, two edge cases, two boundary cases. Run it. Find the first failure mode. Apply one change: structure first, then a specific instruction, then a tool if instructions won't do it. Measure whether the failure count went down. Paste this into Claude to build the eval suite.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "shot": {
+        "type": "REMOTION",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Your turn.",
+            "topic": "BUILD WITH CLAUDE · ANTHROPIC",
+            "segment": "The Prompting Playbook",
+            "command": "I have a production prompt for [describe the task]. Help me build a five-case eval suite — one control case (should always pass), two edge cases (failure modes I've already seen), and two boundary cases (where the model should escalate or refuse). For each case provide: the input, the expected output or behavior, and a one-line pass/fail criterion I can evaluate programmatically or by inspection.",
+            "runningText": "paste this into Claude…",
+            "folderLabel": "@NikBearBrown",
+            "modelLabel": "claude-sonnet-4-6",
+            "effortLabel": "High"
+          },
+          "rendered": {
+            "out": "media/B09.mp4",
+            "at": ""
+          }
+        }
+      },
+      "estimated_duration_s": 22,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B09.mp4",
+        "filled_by": "media",
+        "at": "2026-07-21T00:23:15"
+      },
+      "audio_file": "mp3/beat-B09.mp3",
+      "actual_duration_s": 17.83
+    },
+    {
+      "beat_id": "B10",
+      "act": "OUTRO",
+      "scene": "ClaudeTitleOutro",
+      "narration_text": "The Prompting Playbook. Liam, in for Bear.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "shot": {
+        "type": "REMOTION",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "The Prompting Playbook",
+            "handle": "@NikBearBrown",
+            "subline": "Debug the prompt like code."
+          },
+          "rendered": {
+            "out": "media/B10.mp4",
+            "at": ""
+          }
+        }
+      },
+      "estimated_duration_s": 8,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B10.mp4",
+        "filled_by": "media",
+        "at": "2026-07-21T00:23:15"
+      },
+      "audio_file": "mp3/beat-B10.mp3",
+      "actual_duration_s": 3.01
+    },
+    {
+      "beat_id": "B11",
+      "act": "LOGO",
+      "scene": "LogoOutro",
+      "narration_text": "",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "shot": {
+        "type": "REMOTION",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "LogoOutro",
+          "props": {
+            "svgFile": "logo-outro/bear-brown/bear-brown-logo-1.svg",
+            "animation": "kineticGrid",
+            "aspect": "16:9",
+            "aspectRatio": 1.5,
+            "bg": "#FAF9F5",
+            "accent": "#D97757",
+            "fill": "#000000",
+            "handle": "@NikBearBrown"
+          },
+          "rendered": {
+            "out": "media/B11.mp4",
+            "at": ""
+          }
+        }
+      },
+      "estimated_duration_s": 14,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B11.mp4",
+        "filled_by": "media",
+        "at": "2026-07-21T00:23:15"
+      },
+      "audio_file": "mp3/beat-B11.mp3",
+      "actual_duration_s": 14.0
+    }
+  ]
+}

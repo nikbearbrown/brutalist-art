@@ -1,0 +1,12 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-prompting-playbook/manim_out/videos/scenes/1080p30/partial_movie_files/B08_GenEvalRepair/2827951169_2682621333_3594071591.mp4'
+file 'file:/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-prompting-playbook/manim_out/videos/scenes/1080p30/partial_movie_files/B08_GenEvalRepair/2102985648_3929632957_1420296444.mp4'
+file 'file:/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-prompting-playbook/manim_out/videos/scenes/1080p30/partial_movie_files/B08_GenEvalRepair/2102985648_2506607957_1813683886.mp4'
+file 'file:/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-prompting-playbook/manim_out/videos/scenes/1080p30/partial_movie_files/B08_GenEvalRepair/2102985648_51428694_3464269285.mp4'
+file 'file:/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-prompting-playbook/manim_out/videos/scenes/1080p30/partial_movie_files/B08_GenEvalRepair/2102985648_3489610536_2973980206.mp4'
+file 'file:/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-prompting-playbook/manim_out/videos/scenes/1080p30/partial_movie_files/B08_GenEvalRepair/2102985648_638696208_2617576880.mp4'
+file 'file:/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-prompting-playbook/manim_out/videos/scenes/1080p30/partial_movie_files/B08_GenEvalRepair/2102985648_2764121252_935508324.mp4'
+file 'file:/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-prompting-playbook/manim_out/videos/scenes/1080p30/partial_movie_files/B08_GenEvalRepair/2102985648_1404541574_3008475079.mp4'
+file 'file:/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-prompting-playbook/manim_out/videos/scenes/1080p30/partial_movie_files/B08_GenEvalRepair/2102985648_893655285_2464578908.mp4'
+file 'file:/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-prompting-playbook/manim_out/videos/scenes/1080p30/partial_movie_files/B08_GenEvalRepair/2102985648_1956671373_2277321962.mp4'
+file 'file:/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-prompting-playbook/manim_out/videos/scenes/1080p30/partial_movie_files/B08_GenEvalRepair/2102985648_3238199799_1678135333.mp4'

@@ -1,0 +1,282 @@
+{
+  "metadata": {
+    "title": "The Worked Run: Run It, Then Try to Break It",
+    "slug": "claude-liam-mb25-03-worked-run",
+    "topic": "MODE BUILD (LITE) — E3/4: THE WORKED RUN (5 pts)",
+    "register": "Pragmatist",
+    "audience": "claude-liam",
+    "brand": "claude-liam",
+    "persona": "Liam (in for Bear)",
+    "voice": "am_onyx",
+    "engine": "kokoro",
+    "voice_kokoro": "am_onyx",
+    "palette": "claude",
+    "style_preset": "claude",
+    "ground": "#FAF9F5",
+    "greeting": "Hola, Liam",
+    "folderLabel": "@NikBearBrown",
+    "in_for_bear": true,
+    "playlist": "Make It Run (Lite) — The Reallocation Engine Mode Build",
+    "series": "claude-liam-mb25",
+    "episode": 3,
+    "source": "The Reallocation Engine — Mode Build Assignment (25 pts)"
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "act": "cold open",
+      "narration_text": "Hola — Liam here. Episode 3 of 4. Five points. This is where designed becomes ran. The worked run requires real output, a clean verified-inferred split, and a deliberate attempt to break your own mode. The break attempt is worth more than a clean run. And one more thing specific to this version: hit record before you start. The terminal session you run in this episode is the raw material for your Episode 4 video. You are not producing footage separately — you are doing the work and capturing it. Six minutes.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 30,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Hola, Liam",
+            "topic": "MODE BUILD (LITE) — E3/4: THE WORKED RUN (5 pts)",
+            "segment": "The Worked Run: Run It, Then Try to Break It",
+            "command": "Hit record. Run the mode or its existing parts against an anonymized scenario. Paste the actual terminal output. Label every output: verified-by-data or inferred-by-prompt. Deliberately try to break it — feed it an edge case. Write the attestation: Ran/Saw/Expected table · Did not test · Broke during testing.",
+            "runningText": "hit record before you start — this take is your video; if it errors, keep it and narrate the fix…",
+            "output": [
+              "Screen recording started before any commands run",
+              "Anonymized inputs + verbatim commands + real terminal output pasted",
+              "Verified/inferred split, labeled on every output",
+              "Attestation: Ran/Saw/Expected · Did not test (honest list) · break attempt result"
+            ],
+            "folderLabel": "@NikBearBrown",
+            "modelLabel": "Fable 5",
+            "effortLabel": "High"
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": null
+    },
+    {
+      "beat_id": "B01",
+      "act": "inputs and commands — paste the actual terminal output",
+      "narration_text": "The worked run has three required elements before the attestation. Inputs: what scenario did you run the mode against? Anonymize if the inputs come from your real job search — use a fictional company name, a public example URL, or a synthetic scenario with the same structure as your real inputs but no personal data. Name the inputs explicitly: the job URL, the SOC code, any candidate profile fields the mode reads. Commands: the exact commands you ran, verbatim, in the order you ran them. Not paraphrased. Copied from your terminal. Output: the exact terminal output for each command, pasted in full. Not summarized. Not described as the liveness check passed. The actual text the terminal printed. The common violation is always the same: run the command, see the output, write a sentence describing it. The sentence is your interpretation. The terminal text is the output. One is verified evidence. The other is inference. The distinction is the heart of the grade. A described run with fabricated numbers passed off as real output is a zero. A partially run mode with pasted errors and a clear explanation of what failed is honest — and honest submissions that run what exists always score better than descriptions of runs that didn't happen. If your mode only reaches DRAFT or SPECIFIED lifecycle status, run the commands that exist and label the rest as proposed, not yet run.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 62,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "view": "artifact",
+            "artifactTitle": "Inputs · Commands · Output — Paste, Don't Describe",
+            "artifactHeading": "The terminal text is evidence. The sentence describing it is inference.",
+            "artifactLines": [
+              "Inputs: anonymized — fictional company name, public example URL, synthetic scenario with real structure.",
+              "Commands: exact verbatim text, in run order. Copied from terminal. Not paraphrased.",
+              "Output: exact terminal text pasted in full. Not 'the liveness check passed.' The actual printout.",
+              "Errors count — paste them too. An error output proves the run happened and is informative.",
+              "If mode is DRAFT/SPECIFIED: run what exists, label unrun steps 'proposed, not yet run.'",
+              "Described run with fabricated numbers = zero. Partial run with pasted errors = scores."
+            ]
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": null
+    },
+    {
+      "beat_id": "B02",
+      "act": "the verified/inferred split",
+      "narration_text": "After the output is pasted, draw the verified-inferred line — not as a section header but as a label attached to each output. The structure: for each meaningful output the mode produces, decide whether it is something the script established by reading a data file, making an API call, or running a computation — or something you or a model concluded from those facts. The first category is verified. The second is inferred. In the worked run, the split typically looks like this. Verified: the HTTP status code the liveness check returned. The ATS provider the scan identified. The BLS employment growth rate for the target SOC code. The O*NET cognitive-demand tier for the target occupation. Inferred: your assessment of whether the growth rate is good enough for your target. Your interpretation of what the ATS provider means for application strategy. The Apply/Consider/Skip recommendation, which combines verified factors with judgment. Labeled LLM-generated text is acceptable — it must be labeled LLM-generated interpretation, not data output. A worked run where everything is labeled verified is almost certainly wrong. Some of what the mode produces is always inference. The split is honest when the verified section contains only what the script printed, and the inferred section contains everything you or the model concluded from it.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 58,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "view": "artifact",
+            "artifactTitle": "The Verified / Inferred Split",
+            "artifactHeading": "Label every output — both are acceptable, unlabeled inference is not",
+            "artifactLines": [
+              "Verified: HTTP status code · ATS provider · BLS growth rate · O*NET demand tier — what the script printed.",
+              "Inferred: your assessment of the growth rate · ATS interpretation → strategy · Apply/Consider/Skip composite.",
+              "LLM-generated text: label it 'LLM-generated interpretation' — not data output.",
+              "Everything labeled verified = almost certainly wrong. Some output is always inference.",
+              "Honest split: verified = script output only. Inferred = everything concluded from it.",
+              "The split makes can/cannot-verify from E1 concrete — what you designed vs. what the run produced."
+            ]
+          },
+          "rendered": {
+            "out": "media/B02.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": null
+    },
+    {
+      "beat_id": "B03",
+      "act": "the attestation block — Ran/Saw/Expected + break attempt",
+      "narration_text": "The attestation block is the human's record of having judged the running system. SNICKERDOODLE.md says thin testing exposes itself. Three parts. First: the Tested table, three columns. Ran — the exact command. Saw — what the terminal actually returned. Expected — what you predicted before running. A Saw column that always matches Expected is suspicious. Real runs produce surprises. If everything matched, either you had perfect foresight or you wrote Expected after the fact. Second: the Did not test list. An honest accounting of what the mode covers in the mode file that you did not actually exercise during this run. Not testing something is not a failure — not disclosing that you did not test it is. An empty Did-not-test list is the new it works. Third: broke during testing. Choose at least one edge case deliberately. Feed the mode a company with zero LCA history in the dataset. Or a URL where the liveness checker returns a 404. Or a SOC code outside the BLS data range. What happened? Did the mode trigger its stop condition correctly? Did it produce an output it should not have? If the mode broke and you fixed it — describe what failed, what you changed, and what the output was after the fix. Breaking and fixing is evidence. It is not a penalty.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 60,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "view": "artifact",
+            "artifactTitle": "The Attestation Block",
+            "artifactHeading": "Ran/Saw/Expected · Did not test · Broke during testing",
+            "artifactLines": [
+              "Tested table: Ran (exact command) · Saw (actual terminal output) · Expected (pre-run prediction).",
+              "Saw always = Expected = suspicious. Real runs produce surprises.",
+              "Did not test: honest list of mode steps not exercised. Empty list = 'it works' = not trusted.",
+              "Break attempt: company with zero LCA history · 404 URL · SOC outside BLS range.",
+              "Did the stop condition trigger? Or did it produce output it shouldn't have?",
+              "Broke and fixed: describe the failure + the fix + the output after. Evidence, not a penalty."
+            ]
+          },
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B03.mp3",
+      "actual_duration_s": null
+    },
+    {
+      "beat_id": "B04",
+      "act": "reflection + this run is your video — record before you start",
+      "narration_text": "Two final pieces. Reflection: three questions. What worked — which parts of the mode ran as designed and produced useful output? What the mode missed — what would a student in your exact situation still need to check manually after running this mode? Next steps — if you had one more week, what would you build first? Nothing is perfect; say where yours isn't. The reflection does not need to be long. One sentence per question. But it needs to be honest — and the honesty of the reflection directly informs the presentation in Episode 4. Now the thing specific to this assignment: the terminal session you just ran is the raw material for your explainer video. Specifically: the unscripted, uncut segment where the terminal is actually executing. This is the 5 points for the video component — not polish, not narration, not editing — the one segment where the grader watches the output appear in real time. Before you run Episode 3 in practice, open your screen recorder. Run npm run verify and your mode's commands with the recorder running. If the commands error on camera, leave it in and narrate the fix. That footage is more honest than a scripted re-run. When you are done with the worked run, you should have the attestation document and a screen recording. Both go to Episode 4.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 62,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "view": "artifact",
+            "artifactTitle": "Reflection + This Run Is Your Video",
+            "artifactHeading": "Hit record before you start — the uncut terminal run is the 5 video points",
+            "artifactLines": [
+              "Reflection: what worked · what it missed · next steps. One sentence each. Honest, not polished.",
+              "The honesty of the reflection shapes your E4 presentation — the grader reads both.",
+              "Before you run E3 in practice: open your screen recorder. Record npm run verify + mode commands.",
+              "The unscripted, uncut segment where terminal output appears in real time = the 5 video points.",
+              "If commands error on camera: leave it in and narrate the fix. That footage is more honest than a scripted re-run.",
+              "End of E3: attestation document + screen recording. Both go to E4."
+            ]
+          },
+          "rendered": {
+            "out": "media/B04.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B04.mp3",
+      "actual_duration_s": null
+    },
+    {
+      "beat_id": "BVDT",
+      "act": "verdict",
+      "lead_silence_s": 0.5,
+      "narration_text": "Verdict for Episode 3. Four things. One: paste the actual terminal output — not a description. Errors count. A partially-run mode with pasted errors scores higher than a described run with clean fabricated numbers. Two: label every output as verified-by-data or inferred-by-prompt. Both are acceptable. Unlabeled inferences dressed as findings are not. Three: the attestation must include a break attempt. An empty Did-not-test list is the new it works. Four: hit record before you run. The uncut segment where the terminal executes is the graded core of the Episode 4 video. If it errors on camera, leave it in — that footage is more honest than a re-run. Episode 4 ships everything: zip, PR, and the video.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 42,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "artifactTitle": "The Worked Run: Run It, Then Try to Break It",
+            "artifactHeading": "Episode 3 verdict",
+            "artifactLines": [
+              "Paste real terminal output — errors count. Described run with fabricated numbers = zero.",
+              "Label every output: verified-by-data or inferred-by-prompt. Unlabeled inference = integrity failure.",
+              "Attestation: Ran/Saw/Expected · Did not test (honest list, never empty) · break attempt.",
+              "Reflection: what worked · what it missed · next steps. One sentence each, honest.",
+              "Hit record before you run. Uncut terminal output appearing in real time = the 5 video points.",
+              "E4: zip + PR + 3-5 min video with the uncut segment as its core."
+            ]
+          },
+          "rendered": {
+            "out": "media/BVDT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BVDT.mp3",
+      "actual_duration_s": null
+    },
+    {
+      "beat_id": "BHTF",
+      "act": "your turn handoff",
+      "narration_text": "Your turn. Before you run anything: open your screen recorder. Then this prompt. Prompt: here is my mode file from Episode 1: [paste]. Here is the scenario I am running against: [company name and posting URL, both anonymized — use a fictional name and a public example URL — or describe a synthetic scenario]. Run the mode or its existing parts in source-inventory order. For each command: paste the exact command and the terminal output. For each output: label it verified-by-data or inferred-by-prompt, with the source or basis. After the full run: write the attestation block — Tested table with Ran, Saw, and Expected columns; the Did-not-test list; and the break attempt, where I deliberately try to make the mode produce a wrong score. Use one edge case: [company with zero LCA history, a 404 URL, or a SOC code outside the BLS range]. Record what happened. Then write a three-part reflection: what worked, what the mode missed, and what I would build first with one more week. When done: stop the screen recorder and save the raw take. That recording — especially the unscripted terminal segment — is the core of your Episode 4 video.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 60,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Your turn.",
+            "topic": "MODE BUILD (LITE) — E3/4: THE WORKED RUN (5 pts)",
+            "segment": "The Worked Run: Run It, Then Try to Break It",
+            "command": "Open screen recorder first.\n\nHere is my mode: [paste]. Scenario: [anonymized company + URL or 'synthetic — describe it']. Run each command in source-inventory order. Paste exact command + terminal output. Label every output: verified-by-data or inferred-by-prompt.\n\nAttestation: Ran/Saw/Expected · Did-not-test (honest, never empty) · break attempt with [edge case].\n\nReflection: what worked · what it missed · what I'd build first.\n\nSave the raw recording — the uncut terminal segment is the E4 video.",
+            "runningText": "open the screen recorder before any command — the raw uncut take is worth more than edited polish…",
+            "folderLabel": "@NikBearBrown",
+            "modelLabel": "Fable 5",
+            "effortLabel": "High"
+          },
+          "rendered": {
+            "out": "media/BHTF.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BHTF.mp3",
+      "actual_duration_s": null
+    },
+    {
+      "beat_id": "BOUT",
+      "act": "outro",
+      "narration_text": "The Worked Run: Run It, Then Try to Break It. Liam, in for Bear.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 5,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "The Worked Run: Run It, Then Try to Break It",
+            "handle": "@NikBearBrown",
+            "subline": "Liam, in for Bear."
+          },
+          "rendered": {
+            "out": "media/BOUT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BOUT.mp3",
+      "actual_duration_s": null
+    }
+  ]
+}

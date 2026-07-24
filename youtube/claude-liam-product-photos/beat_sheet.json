@@ -1,0 +1,434 @@
+{
+  "metadata": {
+    "slug": "claude-liam-product-photos",
+    "title": "Claude, Photographed.",
+    "skill": "product-photos",
+    "brand": "claude-liam",
+    "engine": "kokoro",
+    "voice": "am_onyx",
+    "greeting": "Shalom",
+    "chapter_number": 45,
+    "build": {
+      "at": "2026-07-18T23:11:08",
+      "cut": "master",
+      "filled": 11,
+      "of": 11,
+      "slates": [],
+      "skin_warnings": []
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "role": "OPEN",
+      "narration_text": "Shalom, Liam. Today: product-photos. Ten modes — studio to surreal. You describe the intent. The backend assembles the prompt. GPT Image 2 generates. You get brand-quality images. You never touch the generation prompt. Liam, in for Bear.",
+      "duration_s": 14,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "PRODUCT-PHOTOS · SKILL TEARDOWN",
+            "segment": "Liam, in for Bear.",
+            "greeting": "Shalom, Liam.",
+            "command": "higgsfield product-photoshoot create --mode lifestyle_scene --prompt \"cold-brew on kitchen counter\" --image bottle.jpg --count 3",
+            "runningText": "* mode select → interview → backend enhancer → gpt_image_2 → URLs",
+            "output": [
+              "3 lifestyle shots ready:",
+              "- https://cdn.higgsfield.ai/.../job_abc.jpg",
+              "- https://cdn.higgsfield.ai/.../job_def.jpg",
+              "- https://cdn.higgsfield.ai/.../job_ghi.jpg"
+            ],
+            "folderLabel": "skills/assets/product-photos/"
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": 16.92,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B00.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T23:11:08"
+      }
+    },
+    {
+      "beat_id": "B01",
+      "role": "ANATOMY",
+      "narration_text": "Product-photos has three parts. A mode router that maps user intent to one of ten modes — from product_shot to conceptual_product. An interview that asks three to four labeled questions before any generation. And a CLI wrapper around the Higgsfield backend enhancer, which holds the mode-specific photography vocabulary and assembles the final GPT Image 2 prompt from your answers.",
+      "duration_s": 21,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownAnatomy",
+          "props": {
+            "skillName": "product-photos",
+            "title": "A skill is a folder.",
+            "files": [
+              {
+                "indent": 0,
+                "icon": "📁",
+                "name": "skills/assets/product-photos/",
+                "accent": false
+              },
+              {
+                "indent": 1,
+                "icon": "📄",
+                "name": "SKILL.md",
+                "tag": "the photoshoot contract",
+                "accent": true
+              },
+              {
+                "indent": 0,
+                "icon": "🖥️",
+                "name": "higgsfield product-photoshoot",
+                "tag": "CLI entry point",
+                "accent": false
+              },
+              {
+                "indent": 1,
+                "icon": "⚙️",
+                "name": "backend enhancer",
+                "tag": "mode templates + prompt assembly",
+                "accent": false
+              },
+              {
+                "indent": 1,
+                "icon": "🖼️",
+                "name": "gpt_image_2",
+                "tag": "generation model (always 2k)",
+                "accent": false
+              }
+            ],
+            "calloutText": "Ten modes. Backend owns the prompt. Claude routes intent, asks short questions, delivers URLs.",
+            "sparkLine": "Mode. Interview. Backend. URLs. Claude never writes the generation prompt."
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": 24.09,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B01.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T23:11:08"
+      }
+    },
+    {
+      "beat_id": "B02",
+      "role": "PIPELINE",
+      "narration_text": "The pipeline: check Higgsfield is installed. Detect the request type — uploaded image, named use case, text only, restyle, model shoot, or vague. Run the pre-generation interview — three to four labeled questions, skip the obvious ones. Select the mode by intent. Run one product-photoshoot create command. Backend enhancer assembles the prompt. GPT Image 2 generates at 2K. Print result URLs only.",
+      "duration_s": 23,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownPipeline",
+          "props": {
+            "title": "How product-photos works.",
+            "inputLabel": "product intent + image",
+            "outputLabel": "brand image URLs",
+            "phases": [
+              {
+                "label": "Detect request type",
+                "desc": "A–F: uploaded image / named use / text / restyle / model / vague",
+                "accent": false
+              },
+              {
+                "label": "Interview (3–4 questions)",
+                "desc": "labeled options; skip what's obvious from context",
+                "accent": true
+              },
+              {
+                "label": "Select mode by intent",
+                "desc": "10 modes — pick most specific; tie-breakers in SKILL.md",
+                "accent": false
+              },
+              {
+                "label": "Run product-photoshoot create",
+                "desc": "backend enhancer → gpt_image_2 at 2K",
+                "accent": false
+              },
+              {
+                "label": "Print result URLs",
+                "desc": "no JSON, no IDs, no enhanced prompt text",
+                "accent": false
+              }
+            ],
+            "sparkLine": "Interview short. Mode by intent. Backend assembles. URLs delivered."
+          },
+          "rendered": {
+            "out": "media/B02.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": 25.77,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B02.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T23:11:08"
+      }
+    },
+    {
+      "beat_id": "B03",
+      "role": "PREDICT",
+      "narration_text": "You call higgsfield generate create directly with your own prompt instead of going through product-photoshoot create. Why does the output look noticeably worse?",
+      "duration_s": 9,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "PRODUCT-PHOTOS · PREDICT",
+            "segment": "The Question.",
+            "greeting": "direct vs. enhanced",
+            "command": "Why does bypassing product-photoshoot produce worse output?",
+            "runningText": "",
+            "output": []
+          },
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B03.mp3",
+      "actual_duration_s": 9.39,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B03.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T23:11:08"
+      }
+    },
+    {
+      "beat_id": "B04",
+      "role": "SELF-DEMO",
+      "narration_text": "Free demo: confirm the command is live. product-photoshoot create — mode, prompt, image, count. Then two concrete mode routes from the SKILL: bottle on kitchen counter maps to lifestyle-scene; Pinterest pin for a candle brand maps to moodboard-pin. Mode selection is intent, not keyword. No image generated, no credits spent.",
+      "duration_s": 21,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeCodeBeat",
+          "props": {
+            "title": "product-photos — mode routing + help",
+            "code": "higgsfield product-photoshoot --help\n# → product-photoshoot create confirmed live\n\n# Mode routing examples:\n# \"bottle on sunlit kitchen counter\"\n#   → lifestyle_scene (in-use environment)\n#\n# \"vertical Pinterest pin for my candle\"\n#   → moodboard_pin (platform wins)\n#\n# \"hero banner for my product in use\"\n#   → hero_banner (banner format wins)\n# → no image generated | $0.00",
+            "sparkLine": "Intent maps to mode. Mode maps to backend template. Not guesswork."
+          },
+          "rendered": {
+            "out": "media/B04.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B04.mp3",
+      "actual_duration_s": 21.08,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B04.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T23:11:08"
+      }
+    },
+    {
+      "beat_id": "B05",
+      "role": "MECHANISM_1",
+      "narration_text": "Law one: backend owns the prompt. As the SKILL says: never write the GPT Image 2 prompt yourself — backend assembles it. The backend holds mode-specific photography vocabulary and structural templates. Bypassing it by calling higgsfield generate create directly produces noticeably worse output — the common mistake the SKILL explicitly calls out.",
+      "duration_s": 18,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Backend owns the prompt.",
+            "body": "Mode-specific photography vocabulary and structural templates live in the backend enhancer — private, not guessable. Bypassing it produces noticeably worse output.",
+            "quote": "Never write the gpt_image_2 prompt yourself — backend assembles it.",
+            "cite": "skills/assets/product-photos/SKILL.md",
+            "sparkLine": "Use product-photoshoot. Never bypass to generate create."
+          },
+          "rendered": {
+            "out": "media/B05.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B05.mp3",
+      "actual_duration_s": 22.59,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B05.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T23:11:08"
+      }
+    },
+    {
+      "beat_id": "B06",
+      "role": "MECHANISM_2",
+      "narration_text": "Law two: mode by intent. As the SKILL says: pick by intent, not surface keyword. 'Pinterest pin of my product on a kitchen counter' is moodboard-pin — Pinterest is the platform, not lifestyle-scene. 'Hero banner showing my product in use' is hero-banner — banner format wins over the in-use detail. Ten modes, each with a specific intent. The tie-breakers are in the SKILL.",
+      "duration_s": 20,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Mode by intent.",
+            "body": "When two modes could apply, prefer the more specific one. Platform wins over surface. Format wins over scene. Tie-breakers are explicit in the SKILL.md.",
+            "quote": "Pick by intent, not surface keyword.",
+            "cite": "skills/assets/product-photos/SKILL.md",
+            "sparkLine": "Platform beats scene. Format beats content. Intent wins."
+          },
+          "rendered": {
+            "out": "media/B06.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B06.mp3",
+      "actual_duration_s": 23.3,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B06.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T23:11:08"
+      }
+    },
+    {
+      "beat_id": "B07",
+      "role": "MECHANISM_3",
+      "narration_text": "Law three: interview short. Three to four questions before generating, labeled options, never open-ended. As the SKILL says: skip questions whose answer is obvious from context — uploaded image, prior turn, brand memory. If the user uploads a product photo and says 'make me a hero banner,' the mode is obvious; ask only what's missing.",
+      "duration_s": 19,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Interview short.",
+            "body": "3–4 labeled questions. Never open-ended. Skip what's obvious. Mode obvious from upload + use case → ask only the gaps.",
+            "quote": "Skip questions whose answer is obvious from context (uploaded image, prior turn, brand memory).",
+            "cite": "skills/assets/product-photos/SKILL.md",
+            "sparkLine": "Short interview. Labeled options. Obvious answers skipped."
+          },
+          "rendered": {
+            "out": "media/B07.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B07.mp3",
+      "actual_duration_s": 21.91,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B07.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T23:11:08"
+      }
+    },
+    {
+      "beat_id": "BVDT",
+      "role": "VERDICT",
+      "narration_text": "Verdict: product-photos generates brand-quality images with one command — mode, intent description, optional image. Backend owns the prompt; bypassing it produces noticeably worse output. Mode by intent, not surface keyword. Interview in three to four labeled questions, skip the obvious.",
+      "duration_s": 16,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "artifactTitle": "Verdict",
+            "artifactHeading": "The photograph.",
+            "artifactLines": [
+              "Backend owns prompt: never write gpt_image_2 prompt directly",
+              "Mode by intent: platform wins, format wins — 10 modes, not guesswork",
+              "Interview short: 3-4 labeled questions, skip what's obvious"
+            ]
+          },
+          "rendered": {
+            "out": "media/BVDT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BVDT.mp3",
+      "actual_duration_s": 19.11,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BVDT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T23:11:08"
+      }
+    },
+    {
+      "beat_id": "BHTF",
+      "role": "YOUR_TURN",
+      "narration_text": "Your turn. Pick a product you own. Upload one photo. Ask for three lifestyle shots for Instagram. Watch the interview — how many questions does the skill ask before generating? Which question does it skip because the answer is obvious?",
+      "duration_s": 13,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "YOUR TURN",
+            "segment": "Your product.",
+            "greeting": "Your turn.",
+            "command": "higgsfield product-photoshoot create --mode lifestyle_scene --prompt \"<your product>, IG feed\" --image ./product.jpg --count 3",
+            "runningText": "* interview → mode route → backend → gpt_image_2 → URLs",
+            "output": [
+              "→ count the interview questions",
+              "→ note which one gets skipped (obvious from upload)"
+            ]
+          },
+          "rendered": {
+            "out": "media/BHTF.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BHTF.mp3",
+      "actual_duration_s": 14.89,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BHTF.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T23:11:08"
+      }
+    },
+    {
+      "beat_id": "BOUT",
+      "role": "OUTRO",
+      "narration_text": "Claude, Photographed.",
+      "duration_s": 4,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "Claude, Photographed.",
+            "handle": "@NikBearBrown",
+            "subline": "product-photos skill teardown"
+          },
+          "rendered": {
+            "out": "media/BOUT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BOUT.mp3",
+      "actual_duration_s": 1.22,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BOUT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T23:11:08"
+      }
+    }
+  ]
+}

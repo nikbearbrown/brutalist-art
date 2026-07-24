@@ -1,0 +1,367 @@
+1
+00:00:00,000 --> 00:00:04,680
+The prompting playbook in four moves, evals first control edge and boundary cases so every
+
+2
+00:00:04,680 --> 00:00:06,960
+change is measured, not guessed.
+
+3
+00:00:06,960 --> 00:00:10,960
+Hygiene second, XML structure, clear role, output contract, if you cannot tell policy
+
+4
+00:00:10,960 --> 00:00:13,160
+from guidelines, neither can the model.
+
+5
+00:00:13,160 --> 00:00:17,400
+Patch debt third, old defensive instructions break on new models, version control the why,
+
+6
+00:00:17,400 --> 00:00:18,880
+not just the what.
+
+7
+00:00:18,880 --> 00:00:22,120
+Capability gap fourth, instructions do not add capability.
+
+8
+00:00:22,120 --> 00:00:26,440
+If a task needs reliable arithmetic or a handoff, give the model a tool or a human
+
+9
+00:00:26,440 --> 00:00:28,000
+escalation path.
+
+10
+00:00:28,000 --> 00:00:33,840
+A prompt that works is debugged like code, reproducible cases, one failure mode at a time.
+
+11
+00:00:33,840 --> 00:00:37,640
+Anthropic engineer, Margaret Vanler ran the real prompting playbook on a real production
+
+12
+00:00:37,640 --> 00:00:40,480
+prompt and this is Liam in for bear.
+
+13
+00:00:40,480 --> 00:00:44,240
+Two scenarios, a prompt that worked fine until the model migration and a new agentic
+
+14
+00:00:44,240 --> 00:00:45,920
+system built from zero.
+
+15
+00:00:45,920 --> 00:00:50,560
+One discipline applies to both evals first, hygiene second, failure modes one at a time,
+
+16
+00:00:50,560 --> 00:00:54,440
+tools where instructions fall short, let's actually look at it.
+
+17
+00:00:54,440 --> 00:00:56,840
+Engineers face two prompting scenarios.
+
+18
+00:00:56,840 --> 00:01:00,680
+Scenario one, a prompt in production, multiple contributors, no clear owner, patches
+
+19
+00:01:00,680 --> 00:01:05,400
+layered for previous models and a migration suddenly breaks half the test cases.
+
+20
+00:01:05,400 --> 00:01:09,480
+Scenario two, a new agent from scratch, no baseline picking a model, a harness and a first
+
+21
+00:01:09,480 --> 00:01:11,720
+draft with nothing to hill climb against.
+
+22
+00:01:11,720 --> 00:01:13,640
+The same discipline applies to both.
+
+23
+00:01:13,640 --> 00:01:16,920
+You need a reproducible test suite before you touch anything.
+
+24
+00:01:16,920 --> 00:01:21,080
+Before targeting failure modes, you need an eval suite, not optional mandatory.
+
+25
+00:01:21,080 --> 00:01:24,920
+Three categories, control cases, unambiguous should always pass confirms the model
+
+26
+00:01:24,920 --> 00:01:26,640
+handles the basics.
+
+27
+00:01:26,640 --> 00:01:30,200
+Change cases, failures you've seen before, the prompt now catches them explicitly so they
+
+28
+00:01:30,200 --> 00:01:31,760
+can't silently regress.
+
+29
+00:01:31,760 --> 00:01:35,960
+Boundary cases, when to escalate to a human or refuse outright, the model needs a clear sense
+
+30
+00:01:35,960 --> 00:01:39,120
+of where its role ends, without all three columns.
+
+31
+00:01:39,120 --> 00:01:44,400
+You cannot tell if a prompt change was an improvement or just a different kind of wrong.
+
+32
+00:01:44,400 --> 00:01:47,080
+General hygiene before targeting specific failures.
+
+33
+00:01:47,080 --> 00:01:51,080
+Rule of thumb, if you cannot tell guidelines from policy from data when reading the prompt,
+
+34
+00:01:51,080 --> 00:01:53,600
+the model cannot either, the fix is structure.
+
+35
+00:01:53,600 --> 00:01:58,880
+XML tags, separating role, guidelines, policy, tone, customer context and the user message
+
+36
+00:01:58,880 --> 00:02:03,200
+that clean up alone improved performance on a failing scenario before any targeted instruction
+
+37
+00:02:03,200 --> 00:02:09,320
+change, separately an output contract, a stop sequence on the closing XML tag tells the
+
+38
+00:02:09,320 --> 00:02:12,120
+model exactly when to stop.
+
+39
+00:02:12,120 --> 00:02:16,960
+Disciplined output structure matters most with nested JSON or structured schemas.
+
+40
+00:02:16,960 --> 00:02:19,440
+Here's a failure mode you won't find in a textbook.
+
+41
+00:02:19,440 --> 00:02:23,960
+The customer's data includes exactly how much hotspot data they have, five gigabytes.
+
+42
+00:02:23,960 --> 00:02:27,360
+The model tells them to check the account URL instead of answering directly.
+
+43
+00:02:27,360 --> 00:02:28,360
+Why?
+
+44
+00:02:28,360 --> 00:02:32,160
+An old instruction never give a customer wrong plan details point them to the URL.
+
+45
+00:02:32,160 --> 00:02:35,360
+That instruction was written to stop hallucination on a previous model.
+
+46
+00:02:35,360 --> 00:02:37,880
+Newer models follow instructions more literally.
+
+47
+00:02:37,880 --> 00:02:39,800
+The patch became the bug.
+
+48
+00:02:39,800 --> 00:02:44,680
+Best practice, version control your defensive instructions, track why they exist.
+
+49
+00:02:44,680 --> 00:02:52,520
+An instruction written to stop a 2023 hallucination may cause 2025 information withholding.
+
+50
+00:02:52,520 --> 00:02:54,360
+Instructions do not add capability.
+
+51
+00:02:54,360 --> 00:02:56,920
+Critical always calculate proration amounts correctly.
+
+52
+00:02:56,920 --> 00:02:58,480
+That instruction does nothing.
+
+53
+00:02:58,480 --> 00:03:02,560
+The model cannot reliably do mental arithmetic telling it to do mental arithmetic correctly
+
+54
+00:03:02,560 --> 00:03:03,560
+is not an implementation.
+
+55
+00:03:03,560 --> 00:03:04,560
+It is a prayer.
+
+56
+00:03:04,560 --> 00:03:09,000
+The fix was a tool whenever a calculation is needed, call the proration calculator.
+
+57
+00:03:09,000 --> 00:03:11,160
+The math runs in deterministic code.
+
+58
+00:03:11,160 --> 00:03:14,400
+The model reads the result and explains it to the customer.
+
+59
+00:03:14,400 --> 00:03:19,720
+If you need reliable precision on a task, arithmetic, date, logic, database, lookup, define the
+
+60
+00:03:19,720 --> 00:03:24,560
+tool, register it in the API, let the model decide when to call it.
+
+61
+00:03:24,560 --> 00:03:27,400
+The billing error case, a customer has a billing conflict.
+
+62
+00:03:27,400 --> 00:03:29,920
+The model tries to diagnose it instead of escalating.
+
+63
+00:03:29,920 --> 00:03:30,920
+Why?
+
+64
+00:03:30,920 --> 00:03:35,120
+The prompt said avoid escalating unless absolutely necessary escalations cost approximately
+
+65
+00:03:35,120 --> 00:03:39,560
+$8 per case and count against fast resolution metrics, one side of the trade off.
+
+66
+00:03:39,560 --> 00:03:43,720
+No mention of the cost of getting it wrong, a refund plus customer trust models become
+
+67
+00:03:43,720 --> 00:03:47,400
+more capable means they optimize trade offs more aggressively.
+
+68
+00:03:47,400 --> 00:03:52,640
+If you give them an incomplete cost function, they solve the wrong problem, state both sides,
+
+69
+00:03:52,640 --> 00:03:57,320
+the cost of escalating and the cost of not escalating, let the model weigh them.
+
+70
+00:03:57,320 --> 00:04:02,640
+New agent from scratch, a retail staff scheduler with hard constraints, four approaches tested.
+
+71
+00:04:02,640 --> 00:04:07,240
+Sonnet 4.6 with a simple prompt, all five trials fail, Opus 4.7 same prompt violations
+
+72
+00:04:07,240 --> 00:04:09,240
+drop significantly still failing.
+
+73
+00:04:09,240 --> 00:04:12,960
+Opus with extended thinking, compliance schedules, but triple the tokens and triple
+
+74
+00:04:12,960 --> 00:04:13,960
+the latency.
+
+75
+00:04:13,960 --> 00:04:19,640
+Sonnet 4.6 with a better prompt to a five pass, but the model hits output limits before finishing.
+
+76
+00:04:19,640 --> 00:04:24,880
+Model prompt and harness are three separate levers pulling any one of them in isolation often
+
+77
+00:04:24,880 --> 00:04:26,200
+isn't enough.
+
+78
+00:04:26,200 --> 00:04:30,360
+The winning configuration for the scheduler, three simple prompts instead of one complex
+
+79
+00:04:30,360 --> 00:04:31,360
+one.
+
+80
+00:04:31,360 --> 00:04:33,240
+Generator creates a draft schedule.
+
+81
+00:04:33,240 --> 00:04:37,440
+Evaluator checks every hard constraint report specific violations with evidence repair
+
+82
+00:04:37,440 --> 00:04:42,080
+prompt receives those violations and makes targeted fixes fewer tokens lower latency
+
+83
+00:04:42,080 --> 00:04:46,800
+than sonnet with an enlarged prompt bonus soft constraints at runtime Harry doesn't like
+
+84
+00:04:46,800 --> 00:04:50,000
+working with Sally goes into the evaluator description.
+
+85
+00:04:50,000 --> 00:04:53,160
+No code changes to the validation function required.
+
+86
+00:04:53,160 --> 00:04:57,880
+The pattern works because each prompt has one job when a complex task has clear separable
+
+87
+00:04:57,880 --> 00:04:59,880
+steps separate them.
+
+88
+00:04:59,880 --> 00:05:04,320
+Your turn take a prompt you own write five test cases one control two edge cases two
+
+89
+00:05:04,320 --> 00:05:09,360
+boundary cases run it find the first failure mode apply one change structure first than
+
+90
+00:05:09,360 --> 00:05:14,040
+a specific instruction than a tool of instructions won't do it measure whether the failure count
+
+91
+00:05:14,040 --> 00:05:18,880
+went down paste this into Claude to build the eval suite the prompting playbook lay
+
+92
+00:05:18,880 --> 00:05:19,920
+him in for bear.

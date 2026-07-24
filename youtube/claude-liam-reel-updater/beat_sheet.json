@@ -1,0 +1,441 @@
+{
+  "metadata": {
+    "slug": "claude-liam-reel-updater",
+    "title": "Claude, Updated.",
+    "skill": "reel-updater",
+    "brand": "claude-liam",
+    "engine": "kokoro",
+    "voice": "am_onyx",
+    "greeting": "Merhaba",
+    "chapter_number": 39,
+    "build": {
+      "at": "2026-07-18T22:10:25",
+      "cut": "master",
+      "filled": 11,
+      "of": 11,
+      "slates": [],
+      "skin_warnings": []
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "role": "OPEN",
+      "narration_text": "Merhaba, Liam. Today: reel-updater. The outro spec changed. Old green-screen mascot outros need to become Remotion outros. One-sixty-four built reels. How do you migrate them without re-spending audio credits on every beat? That's the question. Liam, in for Bear.",
+      "duration_s": 14,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "REEL-UPDATER · SKILL TEARDOWN",
+            "segment": "Liam, in for Bear.",
+            "greeting": "Merhaba, Liam.",
+            "command": "python3 scripts/vox_update.py --all",
+            "runningText": "* detect drift → plan strip → restore narration → append new outro",
+            "output": [
+              "reels scanned: 2761 | drift: 0 | already-migrated: 83",
+              "→ fleet is clean — no mascot outros remain",
+              "→ 83 reels confirmed migrated (outro-orig files present)",
+              "→ 0 reels need action"
+            ],
+            "folderLabel": "books/*/youtube/*/"
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": 17.73,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B00.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:10:25"
+      }
+    },
+    {
+      "beat_id": "B01",
+      "role": "ANATOMY",
+      "narration_text": "Reel-updater has three parts. A drift detector that reads every beat_sheet and flags old mascot outro patterns, orphan audio, and out-of-sync narration. A stripper that restores pristine narration and cleans the outro work files. And an appender — the next phase — that adds the two new Remotion outro beats and generates only their audio.",
+      "duration_s": 20,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownAnatomy",
+          "props": {
+            "skillName": "reel-updater",
+            "title": "A skill is a folder.",
+            "files": [
+              {
+                "indent": 0,
+                "icon": "📁",
+                "name": "skills/make/reel-updater/",
+                "accent": false
+              },
+              {
+                "indent": 1,
+                "icon": "📄",
+                "name": "SKILL.md",
+                "tag": "the migration contract",
+                "accent": true
+              },
+              {
+                "indent": 0,
+                "icon": "📁",
+                "name": "scripts/",
+                "accent": false
+              },
+              {
+                "indent": 1,
+                "icon": "📄",
+                "name": "vox_update.py",
+                "tag": "detect, strip, append",
+                "accent": false
+              }
+            ],
+            "calloutText": "Dry-run by default. --apply on the Mac.",
+            "sparkLine": "Strip the old. Append the new. Never re-spend the body."
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": 21.63,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B01.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:10:25"
+      }
+    },
+    {
+      "beat_id": "B02",
+      "role": "PIPELINE",
+      "narration_text": "The pipeline: detect drift — old outro, orphan audio, missing audio. Plan the strip. Strip the non-Remotion outro: delete the mascot media, restore the pristine narration, reset actual-duration-s, clean work files. Delete orphan audio. Then — once the Remotion compositions exist — append the two new outro beats and generate only their audio. compile produces the fresh cut.",
+      "duration_s": 22,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownPipeline",
+          "props": {
+            "title": "How reel-updater works.",
+            "inputLabel": "OLD REEL",
+            "outputLabel": "UPDATED CUT",
+            "phases": [
+              {
+                "label": "Detect drift",
+                "desc": "mascot outro / orphan mp3s / missing audio",
+                "accent": false
+              },
+              {
+                "label": "Plan (dry-run)",
+                "desc": "print plan, write UPDATE.md — no files changed",
+                "accent": true
+              },
+              {
+                "label": "Strip outro",
+                "desc": "delete mascot media; restore outro-orig narration",
+                "accent": false
+              },
+              {
+                "label": "Delete orphans",
+                "desc": "mp3s whose beat id is gone from the sheet",
+                "accent": false
+              },
+              {
+                "label": "Append new outro",
+                "desc": "OutroSeries + OutroCTA beats added",
+                "accent": false
+              },
+              {
+                "label": "Generate only new",
+                "desc": "generate_audio.py --only <new beats>",
+                "accent": false
+              },
+              {
+                "label": "Remotion render",
+                "desc": "render the two new Remotion outro beats",
+                "accent": false
+              },
+              {
+                "label": "Compile",
+                "desc": "fresh up-to-date cut",
+                "accent": false
+              }
+            ],
+            "sparkLine": "Only the two new outro beats ever bill. Body audio is never re-generated."
+          },
+          "rendered": {
+            "out": "media/B02.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": 24.09,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B02.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:10:25"
+      }
+    },
+    {
+      "beat_id": "B03",
+      "role": "PREDICT",
+      "narration_text": "The old mascot outro is detected. The strip runs. What happens to the audio for that outro beat — and why does the body narration cost nothing?",
+      "duration_s": 9,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "REEL-UPDATER · PREDICT",
+            "segment": "The Question.",
+            "greeting": "Predict:",
+            "command": "python3 scripts/vox_update.py code-runs-ships-wrong --apply",
+            "runningText": "* strip mascot outro → what happens to the audio?",
+            "output": []
+          },
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B03.mp3",
+      "actual_duration_s": 9.19,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B03.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:10:25"
+      }
+    },
+    {
+      "beat_id": "B04",
+      "role": "SELF-DEMO",
+      "narration_text": "Free demo: the migration audit. Scan all 2761 beat_sheets for old mascot outro patterns. Find the outro-orig files — the saved pristine narrations that prove a strip already ran. Result: 83 reels confirmed migrated, 0 drift remaining. The audit is free: it reads files and checks patterns. No audio generated, no files deleted.",
+      "duration_s": 24,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeCodeBeat",
+          "props": {
+            "title": "migration audit — free drift scan",
+            "code": "import glob, json\n# find reels with saved pristine outros\norig = glob.glob(\n  'books/*/youtube/*/clips/_work/outro-orig-*.mp3'\n)\nreels = set(f.split('/clips/')[0] for f in orig)\nprint(f'migrated: {len(reels)} reels')\n# scan all beat_sheets for remaining drift\nall_bs = glob.glob(\n  'books/*/youtube/*/beat_sheet.json'\n)\ndrift = 0\nfor r in all_bs:\n    bs = json.load(open(r))\n    for b in bs.get('beats', []):\n        if b.get('shot',{}).get('source')=='outro':\n            drift += 1; break\nprint(f'drift: {drift} | total: {len(all_bs)}')\n# migrated: 83 reels\n# drift: 0 | total: 2761",
+            "sparkLine": "83 migrated. 0 drift. 2761 scanned. Fleet is clean."
+          },
+          "rendered": {
+            "out": "media/B04.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B04.mp3",
+      "actual_duration_s": 24.23,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B04.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:10:25"
+      }
+    },
+    {
+      "beat_id": "B05",
+      "role": "MECHANISM_1",
+      "narration_text": "Law one: dry-run by default. You never run update and accidentally delete files. The script reads every beat_sheet, detects drift, prints the plan, and writes UPDATE dot md. Nothing changes until you pass dash dash apply. As the SKILL.md says — dry-run by default. It prints the plan and writes UPDATE.md; it changes nothing.",
+      "duration_s": 20,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Dry-run by default.",
+            "body": "Read every beat_sheet. Detect drift. Print the plan. Write UPDATE.md. Nothing changes until --apply. Safe to run at any time.",
+            "quote": "Dry-run by default. It prints the plan and writes UPDATE.md; it changes nothing.",
+            "cite": "skills/make/reel-updater/SKILL.md",
+            "sparkLine": "Plan first. Apply only when you've reviewed."
+          },
+          "rendered": {
+            "out": "media/B05.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B05.mp3",
+      "actual_duration_s": 21.78,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B05.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:10:25"
+      }
+    },
+    {
+      "beat_id": "B06",
+      "role": "MECHANISM_2",
+      "narration_text": "Law two: credit discipline. The strip itself costs nothing — it restores the pristine narration that was saved before the mascot outro was generated. The body's audio is never re-generated. The only audio spend is for the two new outro beats, and that runs with dash dash only, billing exactly those two beats. As the SKILL says: credit discipline — the strip spends nothing. Only the new outro beats ever get new audio.",
+      "duration_s": 23,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Credit discipline.",
+            "body": "Strip: restore outro-orig narration — free. Body audio: never re-generated. Only the two new outro beats bill, via generate_audio.py --only.",
+            "quote": "Credit discipline: the strip spends nothing. Only the new outro beats ever get new audio, via generate_audio.py --only",
+            "cite": "skills/make/reel-updater/SKILL.md",
+            "sparkLine": "Strip for free. Pay only for what's new."
+          },
+          "rendered": {
+            "out": "media/B06.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B06.mp3",
+      "actual_duration_s": 25.51,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B06.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:10:25"
+      }
+    },
+    {
+      "beat_id": "B07",
+      "role": "MECHANISM_3",
+      "narration_text": "Law three: idempotent. Run it once, run it a hundred times — same result. A reel with no mascot outro and no orphans is reported clean and skipped. Re-running is safe. This is what makes update-all safe to run across 2761 reels: the ones already done are just reported clean. No double-deletion, no double-billing.",
+      "duration_s": 20,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Idempotent.",
+            "body": "Already migrated → reported clean, skipped. Double-running is safe. 83 reels already done; re-running hits 0 drift.",
+            "quote": "Idempotent: a reel with no mascot outro and no orphans is reported clean and skipped; re-running is safe.",
+            "cite": "skills/make/reel-updater/SKILL.md",
+            "sparkLine": "Run it as many times as you need. Clean is clean."
+          },
+          "rendered": {
+            "out": "media/B07.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B07.mp3",
+      "actual_duration_s": 22.14,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B07.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:10:25"
+      }
+    },
+    {
+      "beat_id": "BVDT",
+      "role": "VERDICT",
+      "narration_text": "Verdict: reel-updater migrates the fleet without re-spending audio credits. Dry-run by default means the plan is always reviewed before files change. Credit discipline means only the new beats bill. And idempotency means the migration can run across thousands of reels without side effects. The fleet is clean.",
+      "duration_s": 18,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "artifactTitle": "Verdict",
+            "artifactHeading": "The controls.",
+            "artifactLines": [
+              "Dry-run by default: plan before any file changes",
+              "Credit discipline: strip is free; only new outro beats bill",
+              "Idempotent: clean reels are skipped, re-running is safe"
+            ]
+          },
+          "rendered": {
+            "out": "media/BVDT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BVDT.mp3",
+      "actual_duration_s": 19.86,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BVDT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:10:25"
+      }
+    },
+    {
+      "beat_id": "BHTF",
+      "role": "YOUR_TURN",
+      "narration_text": "Your turn. Run vox_update.py dash dash all on your book's youtube directory. Review UPDATE.md. How many reels have drift? For any that do, run dash dash apply and verify the pristine narration was restored correctly.",
+      "duration_s": 14,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "YOUR TURN",
+            "segment": "Your move.",
+            "greeting": "Your turn.",
+            "command": "python3 scripts/vox_update.py --all",
+            "runningText": "* scan → detect → plan → review UPDATE.md",
+            "output": [
+              "→ review UPDATE.md before running --apply",
+              "→ confirm outro-orig files exist before strip"
+            ]
+          },
+          "rendered": {
+            "out": "media/BHTF.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BHTF.mp3",
+      "actual_duration_s": 14.95,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BHTF.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:10:25"
+      }
+    },
+    {
+      "beat_id": "BOUT",
+      "role": "OUTRO",
+      "narration_text": "Claude, Updated.",
+      "duration_s": 4,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "Claude, Updated.",
+            "handle": "@NikBearBrown",
+            "subline": "reel-updater skill teardown"
+          },
+          "rendered": {
+            "out": "media/BOUT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BOUT.mp3",
+      "actual_duration_s": 1.19,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BOUT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:10:25"
+      }
+    }
+  ]
+}

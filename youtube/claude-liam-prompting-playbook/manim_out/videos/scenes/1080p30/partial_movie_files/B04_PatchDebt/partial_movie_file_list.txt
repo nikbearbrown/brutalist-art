@@ -1,0 +1,11 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-prompting-playbook/manim_out/videos/scenes/1080p30/partial_movie_files/B04_PatchDebt/2827951169_2714748014_80358432.mp4'
+file 'file:/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-prompting-playbook/manim_out/videos/scenes/1080p30/partial_movie_files/B04_PatchDebt/2102985648_1571939427_2101274548.mp4'
+file 'file:/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-prompting-playbook/manim_out/videos/scenes/1080p30/partial_movie_files/B04_PatchDebt/2102985648_1485789176_2072104478.mp4'
+file 'file:/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-prompting-playbook/manim_out/videos/scenes/1080p30/partial_movie_files/B04_PatchDebt/2102985648_2113128917_1686575236.mp4'
+file 'file:/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-prompting-playbook/manim_out/videos/scenes/1080p30/partial_movie_files/B04_PatchDebt/2102985648_298016958_286218614.mp4'
+file 'file:/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-prompting-playbook/manim_out/videos/scenes/1080p30/partial_movie_files/B04_PatchDebt/2102985648_1017181319_691615543.mp4'
+file 'file:/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-prompting-playbook/manim_out/videos/scenes/1080p30/partial_movie_files/B04_PatchDebt/2102985648_597240867_629413406.mp4'
+file 'file:/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-prompting-playbook/manim_out/videos/scenes/1080p30/partial_movie_files/B04_PatchDebt/2102985648_2159875719_1215096250.mp4'
+file 'file:/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-prompting-playbook/manim_out/videos/scenes/1080p30/partial_movie_files/B04_PatchDebt/2102985648_827135733_4244602.mp4'
+file 'file:/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-prompting-playbook/manim_out/videos/scenes/1080p30/partial_movie_files/B04_PatchDebt/2102985648_4057613226_3230271314.mp4'

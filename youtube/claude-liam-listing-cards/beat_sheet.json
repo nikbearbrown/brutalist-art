@@ -1,0 +1,434 @@
+{
+  "metadata": {
+    "slug": "claude-liam-listing-cards",
+    "title": "Claude, Listed.",
+    "skill": "listing-cards",
+    "brand": "claude-liam",
+    "engine": "kokoro",
+    "voice": "am_onyx",
+    "greeting": "Ahoj",
+    "chapter_number": 44,
+    "build": {
+      "at": "2026-07-18T23:01:17",
+      "cut": "master",
+      "filled": 11,
+      "of": 11,
+      "slates": [],
+      "skin_warnings": []
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "role": "OPEN",
+      "narration_text": "Ahoj, Liam. Today: listing-cards. One command — scope, product description, image. The Higgsfield backend enhancer handles the generation prompts. You get marketplace-ready images: main, secondary, A-plus modules. Liam, in for Bear.",
+      "duration_s": 13,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "LISTING-CARDS · SKILL TEARDOWN",
+            "segment": "Liam, in for Bear.",
+            "greeting": "Ahoj, Liam.",
+            "command": "higgsfield marketplace-cards create --scope full-set --prompt \"sparkling peach lemonade can\" --image ./can.png",
+            "runningText": "* backend enhancer → nano_banana_2 jobs → result URLs",
+            "output": [
+              "Main image: https://cdn.higgsfield.ai/...",
+              "Infographic: https://cdn.higgsfield.ai/...",
+              "+ 11 more assets in full-set",
+              "→ no prompts written by Claude | cost: credits"
+            ],
+            "folderLabel": "skills/assets/listing-cards/"
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": 16.15,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B00.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T23:01:17"
+      }
+    },
+    {
+      "beat_id": "B01",
+      "role": "ANATOMY",
+      "narration_text": "Listing-cards has two parts. A scope selector that chooses your bundle — main, product-images, aplus, or full-set — and a CLI router that passes your short product description to the Higgsfield backend enhancer. The backend writes the actual generation prompts, runs the nano-banana-2 jobs, and returns the result URLs. Claude touches neither the prompts nor the images.",
+      "duration_s": 20,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownAnatomy",
+          "props": {
+            "skillName": "listing-cards",
+            "title": "A skill is a folder.",
+            "files": [
+              {
+                "indent": 0,
+                "icon": "📁",
+                "name": "skills/assets/listing-cards/",
+                "accent": false
+              },
+              {
+                "indent": 1,
+                "icon": "📄",
+                "name": "SKILL.md",
+                "tag": "the marketplace contract",
+                "accent": true
+              },
+              {
+                "indent": 0,
+                "icon": "🖥️",
+                "name": "higgsfield marketplace-cards",
+                "tag": "CLI entry point",
+                "accent": false
+              },
+              {
+                "indent": 1,
+                "icon": "⚙️",
+                "name": "backend enhancer",
+                "tag": "owns prompts + compliance",
+                "accent": false
+              },
+              {
+                "indent": 1,
+                "icon": "🖼️",
+                "name": "nano_banana_2",
+                "tag": "image generation model",
+                "accent": false
+              }
+            ],
+            "calloutText": "Claude routes intent. Backend enhancer owns the prompts. You get URLs.",
+            "sparkLine": "Scope. Describe. Image. Claude never writes the generation prompt."
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": 23.81,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B01.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T23:01:17"
+      }
+    },
+    {
+      "beat_id": "B02",
+      "role": "PIPELINE",
+      "narration_text": "The pipeline: check Higgsfield is installed — if not, the SKILL runs the official installer. Confirm account status. Select scope or individual assets. Provide a short product description and optional image. Run one marketplace-cards create command. Backend enhancer applies compliance rules and templates. Nano-banana-2 generates. Print result URLs with labels.",
+      "duration_s": 20,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownPipeline",
+          "props": {
+            "title": "How listing-cards works.",
+            "inputLabel": "product intent + image",
+            "outputLabel": "marketplace image URLs",
+            "phases": [
+              {
+                "label": "Check Higgsfield CLI",
+                "desc": "install if absent; confirm auth",
+                "accent": false
+              },
+              {
+                "label": "Select scope",
+                "desc": "main / product-images / aplus / full-set",
+                "accent": true
+              },
+              {
+                "label": "One confirmation question",
+                "desc": "at most one; prefer a product image",
+                "accent": false
+              },
+              {
+                "label": "Run marketplace-cards create",
+                "desc": "backend enhancer → nano_banana_2 jobs",
+                "accent": false
+              },
+              {
+                "label": "Print result URLs",
+                "desc": "labels only — no job IDs or prompt text",
+                "accent": false
+              }
+            ],
+            "sparkLine": "One command. Backend handles compliance. URLs are the artifact."
+          },
+          "rendered": {
+            "out": "media/B02.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": 23.53,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B02.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T23:01:17"
+      }
+    },
+    {
+      "beat_id": "B03",
+      "role": "PREDICT",
+      "narration_text": "You pass a short product description to listing-cards. Why doesn't Claude write the actual image generation prompts that go to Higgsfield?",
+      "duration_s": 8,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "LISTING-CARDS · PREDICT",
+            "segment": "The Question.",
+            "greeting": "short description →",
+            "command": "Why doesn't Claude write the generation prompts?",
+            "runningText": "",
+            "output": []
+          },
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B03.mp3",
+      "actual_duration_s": 7.96,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B03.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T23:01:17"
+      }
+    },
+    {
+      "beat_id": "B04",
+      "role": "SELF-DEMO",
+      "narration_text": "Free demo: check the actual account status. Ultra plan. One thousand six hundred and sixty-eight point two three credits. CLI version zero point two point three. No image generated, no credits spent. This is the first command the SKILL runs — confirms setup before any paid generation. Everything else follows from here.",
+      "duration_s": 18,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeCodeBeat",
+          "props": {
+            "title": "listing-cards — account status check",
+            "code": "higgsfield account status\n\n# bear@bearbrown.co\n# ultra plan, 1668.23 credits\n# CLI 0.2.3\n#\n# No image generated.\n# No credits spent.\n# → confirms setup is live before\n#   any marketplace-cards create call",
+            "sparkLine": "Check credits first. No surprises mid-generation."
+          },
+          "rendered": {
+            "out": "media/B04.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B04.mp3",
+      "actual_duration_s": 20.76,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B04.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T23:01:17"
+      }
+    },
+    {
+      "beat_id": "B05",
+      "role": "MECHANISM_1",
+      "narration_text": "Law one: backend owns the prompts. Claude never writes the final image generation prompts for marketplace listings. As the SKILL says: do not write final image-generation prompts yourself. Backend enhancement owns that. The backend applies private compliance rules and templates that would be wrong to guess. You give it a short product description. It handles the rest.",
+      "duration_s": 19,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Backend owns the prompts.",
+            "body": "Claude routes intent; the backend enhancer writes the actual generation prompts. Marketplace compliance rules and templates are kept private — never guess them.",
+            "quote": "Do not write final image-generation prompts yourself. Backend enhancement owns that.",
+            "cite": "skills/assets/listing-cards/SKILL.md",
+            "sparkLine": "Short description in. Compliant images out. No prompt-writing."
+          },
+          "rendered": {
+            "out": "media/B05.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B05.mp3",
+      "actual_duration_s": 22.27,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B05.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T23:01:17"
+      }
+    },
+    {
+      "beat_id": "B06",
+      "role": "MECHANISM_2",
+      "narration_text": "Law two: scope first. The dash-dash scope flag selects a pre-built bundle: main for one image, product-images for six, aplus for eight, full-set for thirteen. You should never assemble individual assets manually when a scope covers your need. The SKILL says: use dash-dash scope when the user asks for a common bundle. Custom subsets with repeated dash-dash asset are for genuine edge cases only.",
+      "duration_s": 20,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Scope first.",
+            "body": "main=1 image | product-images=6 | aplus=8 | full-set=13. Pick a scope before reaching for individual --asset flags.",
+            "quote": "Use --scope when the user asks for a common bundle",
+            "cite": "skills/assets/listing-cards/SKILL.md",
+            "sparkLine": "One flag, a whole bundle. Don't assemble what scope gives you."
+          },
+          "rendered": {
+            "out": "media/B06.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B06.mp3",
+      "actual_duration_s": 24.79,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B06.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T23:01:17"
+      }
+    },
+    {
+      "beat_id": "B07",
+      "role": "MECHANISM_3",
+      "narration_text": "Law three: minimal interaction. As the SKILL says: ask at most one concise confirmation question before running. This isn't about being fast — it's about not blocking on questions when the product details are already clear. Prefer a product image. If text or a URL is the only input, proceed only when the product details are unambiguous.",
+      "duration_s": 18,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Minimal interaction.",
+            "body": "At most one confirmation question. Prefer a product image. When the product details are clear, run — don't block on clarification.",
+            "quote": "Ask at most one concise confirmation question before running.",
+            "cite": "skills/assets/listing-cards/SKILL.md",
+            "sparkLine": "One question max. Clear details → run."
+          },
+          "rendered": {
+            "out": "media/B07.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B07.mp3",
+      "actual_duration_s": 21.44,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B07.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T23:01:17"
+      }
+    },
+    {
+      "beat_id": "BVDT",
+      "role": "VERDICT",
+      "narration_text": "Verdict: listing-cards generates marketplace-ready product image sets with one command — scope, short description, optional image. The backend enhancer owns all compliance rules and generation prompts. Scope first; custom assets only when scope can't cover it. One confirmation question max.",
+      "duration_s": 15,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "artifactTitle": "Verdict",
+            "artifactHeading": "The listing.",
+            "artifactLines": [
+              "Backend owns prompts: Claude routes intent, never writes generation prompts",
+              "Scope first: main/product-images/aplus/full-set — one flag, one bundle",
+              "Minimal interaction: at most one confirmation question before running"
+            ]
+          },
+          "rendered": {
+            "out": "media/BVDT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BVDT.mp3",
+      "actual_duration_s": 19.37,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BVDT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T23:01:17"
+      }
+    },
+    {
+      "beat_id": "BHTF",
+      "role": "YOUR_TURN",
+      "narration_text": "Your turn. Pick a product you know — a can, a bottle, a serum. Run listing-cards with scope product-images. Give it a short description and one image. How close is the first main image to compliant without any prompt engineering?",
+      "duration_s": 11,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "YOUR TURN",
+            "segment": "Your listing.",
+            "greeting": "Your turn.",
+            "command": "higgsfield marketplace-cards create --scope product-images --prompt \"<your product>\" --image ./product.png",
+            "runningText": "* backend enhancer → nano_banana_2 → URLs",
+            "output": [
+              "→ check: is main image marketplace-compliant?",
+              "→ note which assets need --main-job reuse"
+            ]
+          },
+          "rendered": {
+            "out": "media/BHTF.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BHTF.mp3",
+      "actual_duration_s": 14.63,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BHTF.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T23:01:17"
+      }
+    },
+    {
+      "beat_id": "BOUT",
+      "role": "OUTRO",
+      "narration_text": "Claude, Listed.",
+      "duration_s": 4,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "Claude, Listed.",
+            "handle": "@NikBearBrown",
+            "subline": "listing-cards skill teardown"
+          },
+          "rendered": {
+            "out": "media/BOUT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BOUT.mp3",
+      "actual_duration_s": 1.0,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BOUT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T23:01:17"
+      }
+    }
+  ]
+}

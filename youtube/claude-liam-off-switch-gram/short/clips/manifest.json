@@ -1,0 +1,14 @@
+{
+ "B00": "L3|1080x1920@24|crop|13.030|type-on|||484c2235b85f5dbc6de89bc14e15f3ae5fb67f34",
+ "B01": "L3|1080x1920@24|crop|13.740|drawon|||slate",
+ "B03": "L3|1080x1920@24|crop|19.070|drawon|||slate",
+ "B04": "L3|1080x1920@24|crop|16.380|drawon|||slate",
+ "B05": "L3|1080x1920@24|crop|15.910|drawon|||slate",
+ "B06": "L3|1080x1920@24|crop|14.740|drawon|||slate",
+ "B07": "L3|1080x1920@24|crop|10.410|drawon|||slate",
+ "B08": "L3|1080x1920@24|crop|15.620|drawon|||slate",
+ "B10": "L3|1080x1920@24|crop|15.740|drawon|||slate",
+ "B12": "L3|1080x1920@24|crop|15.400|type-on|||cfc28d86e625fe9880b73249eb3b02d60a931e92",
+ "B13": "L3|1080x1920@24|crop|12.760|fade|||9eb37856c9629ffd49197bb4c066d3d46f22e61c",
+ "END": "L3|1080x1920@24|crop|4.500|hold||none|92d46d85bd3bebb3875183bf52a220f9a5df2658"
+}
