@@ -1,0 +1,7 @@
+CC0
+SI_ID: ld1-1643399756728-1643399813211-0
+Title: Coonley family
+Unit: NPG
+Credit: 
+Source URL: https://ids.si.edu/ids/deliveryService?id=NPG-A7000100C
+License: CC0 — Smithsonian Open Access https://www.si.edu/openaccess

@@ -59,6 +59,14 @@ static inspection missed becomes a loud `MISSING` the moment a real build needs 
    composition falls back to its `Root.tsx` `defaultProps` — demo placeholders from other videos
    (cancer-biology, photoelectric-effect). Read each component's schema before writing props, then
    confirm on `qc-sheet.png` that no beat shows another video's placeholder text.
+5. **Legibility floor — no text below 14pt; use a symbol instead.** No on-screen text may render
+   smaller than **14pt** (at the 1080 authoring baseline ≈ **19px**; ≈37px on the 4K master;
+   ≈1.7% of frame height). If a label, caption, annotation, axis tick, legend entry, or credit
+   would have to be smaller than that to fit, it is NOT shrunk — it becomes a **symbol**: an icon,
+   a single number, a ✓/✗, one glyph. Fit the layout to legible type, or replace the text with a
+   mark. Verify on `qc-sheet.png` (rule #2): any beat carrying sub-14pt text is a **fail**, not a
+   nitpick. Rationale: YouTube's VP9/AV1 recompression plus phone-sized viewing destroy small
+   type — a symbol survives that pipeline, tiny text does not.
 
 ## The loop (per video type)
 
@@ -125,7 +133,7 @@ Legend: 🔑 keys needed · 📁 existing folder to rebuild-and-verify · ✨ ne
 | 10 | sketch-explainer (narrated) | sketch-explainer | ✨ | ⬜ |
 | 11 | math-explainer | math-explainer | ✨ (+LaTeX) | ⬜ |
 | 12 | explainer | explainer | 📁 `examples/explainer--size-paradox` | ⬜ |
-| 13 | terminal-screencast | terminal-screencast | 📁 `examples/terminal-screencast--compression-journey` | ⬜ |
+| 13 | cli-explainer | cli-explainer | 📁 `examples/terminal-screencast--compression-journey` | ⬜ |
 | 14 | bio | bio | ✨ (`--length` 3:00) | ⬜ |
 | 15 | code-walkthrough | code-walkthrough | ✨ | ⬜ |
 | 16 | kids-video | kids-video | ✨ | ⬜ |

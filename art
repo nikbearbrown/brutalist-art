@@ -6,6 +6,7 @@
 #   ./art <skill> <target> ...   run a skill (old house names resolve via GLOSSARY.md)
 #   ./art todo <reel> [flags]    per-video beat ledger (which beats need filling, how)
 #   ./art run <reel> [flags]     compile a reel (wraps runtime/scripts/run.sh)
+#   ./art fill-pantry <reel>     Higgsfield tier-1 vox auto-fill (dry-run; --go to spend)
 #   ./art shorts <reel> [flags]  derive the 9:16 Short (cap check + auto-shorten)
 #   ./art suno <reel>            export narration for Suno (.suno.N.txt, [spoken word])
 #   ./art suno-slice <reel>      slice pantry vocal stem into beat mp3s (no 11L calls)
@@ -59,6 +60,10 @@ case "$cmd" in
   todo)
     exec python3 "$ART_HOME/runtime/scripts/todo.py" "$@"
     ;;
+  fill-pantry)
+    # Higgsfield tier-1 vox auto-fill (dry-run by default; --go to spend)
+    exec python3 "$ART_HOME/runtime/scripts/fill_pantry.py" "$@"
+    ;;
   keys)
     exec python3 "$ART_HOME/runtime/scripts/check_keys.py" "$@"
     ;;
@@ -77,11 +82,30 @@ case "$cmd" in
     # slice the pantry vocal stem into mp3/beat-*.mp3 (no ElevenLabs calls)
     exec python3 "$ART_HOME/runtime/scripts/suno_slice.py" "$@"
     ;;
+  post|stage|topost|publish-prep|stage-for-youtube)
+    # clean 4K master → TOPOST staging (never uploads)
+    exec python3 "$ART_HOME/runtime/scripts/post.py" "$@"
+    ;;
   final)
-    # clean master (no --review label). Defaults to full-res 1080 unless the caller sets --height.
+    # GATE T — type-lock pre-check before clean master. TYPECHECK.md FAILs block final.
+    # Mirrors how FACTCHECK.md is required by GATE F before rendering.
+    REEL_FOR_TC="${1:-}"
+    if [ -n "$REEL_FOR_TC" ] && [ -f "$ART_HOME/runtime/scripts/type_check.py" ]; then
+      tc_rc=0
+      python3 "$ART_HOME/runtime/scripts/type_check.py" "$REEL_FOR_TC" || tc_rc=$?
+      if [ "$tc_rc" -eq 3 ]; then
+        echo "[art final] GATE T skipped — missing deps (pip install pillow numpy scipy)"
+      elif [ "$tc_rc" -ge 2 ]; then
+        echo "[art final] GATE T BLOCKED: TYPECHECK.md has FAILs — fix before final cut."
+        echo "[art final] See: $REEL_FOR_TC/TYPECHECK.md"
+        echo "[art final] A reel with TYPECHECK.md FAILs cannot ship a clean master."
+        exit 2
+      fi
+    fi
+    # clean master (no --review label). Defaults to 4K-native 2160 unless the caller sets --height.
     case " $* " in
       *" --height "*) exec python3 "$ART_HOME/runtime/scripts/compile.py" "$@" ;;
-      *)              exec python3 "$ART_HOME/runtime/scripts/compile.py" "$@" --height 1080 ;;
+      *)              exec python3 "$ART_HOME/runtime/scripts/compile.py" "$@" --height 2160 ;;
     esac
     ;;
   doctor)

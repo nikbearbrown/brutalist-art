@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 4 — Cancer Genetics & Genomic Instability (Lecture Deck)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --ink:#1a1a1a; --muted:#555; --line:#d0d0d0; --footer:#8a1020; --font:'Inter',Arial,Helvetica,sans-serif; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body { background: #555; font-family: var(--font); color: var(--ink); overflow: hidden; }
+  #wrap { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; padding: 22px; }
+  .slide { position: relative; width: min(96vw, calc(94vh*16/9)); height: min(94vh, calc(96vw*9/16));
+    background: #fff; box-shadow: 0 6px 22px -6px rgba(0,0,0,.45); display: none; flex-direction: column; padding: 3.4% 4.0% 4.2%; }
+  .slide.active { display: flex; animation: slideIn 0.42s cubic-bezier(0.22,0.61,0.36,1); }
+  @keyframes slideIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+  .sectag { position: absolute; top: 2.6%; left: 4.0%; font-size: clamp(9px,1.05vw,14px); font-weight: 700;
+    letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); }
+  .logo { position: absolute; top: 2.3%; right: 2.8%; width: clamp(18px,2.2vw,30px); height: clamp(18px,2.2vw,30px);
+    border: 1.5px solid var(--muted); border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    font-size: clamp(9px,1.1vw,14px); font-weight: 700; color: var(--muted); }
+  .footer { position: absolute; left: 0; right: 0; bottom: 0; height: 1.4%; background: var(--footer); }
+  .pbar { position: absolute; left: 0; right: 0; bottom: 1.4%; height: 0.5%; background: var(--line); }
+  .pbar > i { display: block; height: 100%; background: var(--footer); }
+  .pageno { position: absolute; right: 4.0%; bottom: 2.5%; font-size: clamp(8px,0.9vw,12px); font-weight: 700;
+    letter-spacing: 0.06em; color: var(--muted); }
+  .title { text-align: center; font-weight: 700; font-size: clamp(19px,2.9vw,38px); line-height: 1.12;
+    letter-spacing: -0.01em; color: var(--ink); margin: 0.4em 6% 0; }
+  .title::after { content: ''; display: block; width: clamp(34px,3.2vw,52px); height: 3px; border-radius: 2px;
+    background: var(--footer); margin: 0.34em auto 0; }
+  .slide.cover { align-items: center; justify-content: center; text-align: center; }
+  .cover-eyebrow { font-size: clamp(15px,2.4vw,32px); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--footer); margin-bottom: 0.5em; }
+  .cover-title { font-size: clamp(30px,5.8vw,80px); font-weight: 700; line-height: 1.06; color: var(--ink); margin: 0 5%; }
+  .cover-rule { width: clamp(60px,8vw,110px); height: 4px; background: var(--footer); margin: 0.85em auto 0; }
+  .cover-sub { font-size: clamp(15px,2.6vw,36px); font-weight: 400; color: var(--muted); margin-top: 0.6em; }
+  .body { flex: 1 1 auto; min-height: 0; margin-top: 1.8%; display: grid; grid-template-columns: 1fr; gap: 2.4%; overflow: hidden; }
+  .body.split { grid-template-columns: 0.9fr 1.6fr; align-items: center; gap: 2.6%; }
+  .body.split.tall { grid-template-columns: 1.85fr 1fr; gap: 2.2%; }
+  .body.imgfull { grid-template-rows: auto 1fr; }
+  .body.textonly .text > ul.bul > li { margin: 0.5em 0; }
+  ul.bul { list-style: none; padding: 0; }
+  ul.bul li { position: relative; padding-left: 1.25em; font-size: clamp(12px,1.58vw,24px); line-height: 1.4; margin: 0.34em 0; }
+  ul.bul li::before { content: ""; position: absolute; left: 0; top: 0.52em; width: 0.44em; height: 0.44em;
+    background: var(--footer); border-radius: 1px; }
+  ul.bul ul { list-style: none; padding-left: 1.35em; margin-top: 0.18em; }
+  ul.bul ul li { font-size: 0.88em; margin: 0.22em 0; color: #222; padding-left: 1.05em; }
+  ul.bul ul li::before { content: ""; top: 0.5em; width: 0.34em; height: 0.34em; background: var(--muted); border-radius: 50%; }
+  .body b { font-weight: 700; } .body i { font-style: italic; } .body u { text-decoration: underline; }
+  .fig { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5em; min-height: 0; height: 100%; }
+  .fig img { flex: 1 1 auto; min-height: 0; max-width: 100%; max-height: 100%; object-fit: contain; border: 1px solid var(--line); border-radius: 4px; background: #fff; }
+  .imgcap { flex: 0 0 auto; font-style: italic; text-align: center; font-size: clamp(8px,0.8vw,12px); line-height: 1.22; color: var(--muted); max-width: 100%; margin-top: 0.15em; }
+  .srcfoot { position: absolute; left: 4.0%; bottom: 2.5%; max-width: 62%; font-size: clamp(8px,0.9vw,12px); color: var(--muted); line-height: 1.3; }
+  .chrome { position: fixed; bottom: 10px; left: 0; right: 0; display: flex; justify-content: center; gap: 16px; font-size: 12px; color: #fff; pointer-events: none; }
+  .chrome span { background: rgba(0,0,0,.4); padding: 3px 9px; border-radius: 4px; }
+  /* presenter notes overlay — hidden by default; toggle with N */
+  #notes { position: fixed; right: 0; top: 0; bottom: 0; width: min(34vw, 460px); background: #1a1a1a; color: #f2f2f2;
+    padding: 26px 26px 60px; overflow-y: auto; box-shadow: -6px 0 22px -6px rgba(0,0,0,.6); display: none; z-index: 20;
+    font-size: 15px; line-height: 1.5; }
+  #notes.open { display: block; }
+  #notes h2 { font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: #ff9db0; margin-bottom: 4px; }
+  #notes .n-title { font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 14px; border-bottom: 1px solid #444; padding-bottom: 10px; }
+  #notes .n-body { white-space: pre-wrap; }
+  #notes .n-empty { color: #999; font-style: italic; }
+  body.notes-open #wrap { padding-right: min(34vw, 460px); }
+  /* audio (text-to-speech) controls */
+  #audioCtl { position: fixed; left: 14px; bottom: 8px; z-index: 21; pointer-events: auto;
+    display: flex; align-items: center; gap: 6px; font-family: var(--font); }
+  #audioBtn { cursor: pointer; display: flex; align-items: center; gap: 6px; font-family: var(--font); font-size: 12px;
+    color: #fff; background: var(--footer); border: none; border-radius: 4px; padding: 5px 11px; box-shadow: 0 2px 8px -2px rgba(0,0,0,.5); }
+  #audioBtn:hover { filter: brightness(1.1); }
+  #audioBtn:disabled { background: #777; cursor: not-allowed; }
+  #audioBtn.speaking { background: #0a7d3f; }
+  #audioCtl .mini { cursor: pointer; font-family: var(--font); font-size: 11px; color: #fff; background: rgba(0,0,0,.5);
+    border: 1px solid rgba(255,255,255,.25); border-radius: 4px; padding: 5px 9px; }
+  #audioCtl .mini:hover { background: rgba(0,0,0,.7); }
+  #audioCtl .mini:disabled { opacity: .5; cursor: not-allowed; }
+  #audioCtl select { font-family: var(--font); font-size: 11px; color: #fff; background: rgba(0,0,0,.5);
+    border: 1px solid rgba(255,255,255,.25); border-radius: 4px; padding: 4px 6px; max-width: 168px; }
+  #audioCtl select:disabled { opacity: .5; }
+  #audioCtl label { display: flex; align-items: center; gap: 4px; font-size: 11px; color: #fff; cursor: pointer;
+    background: rgba(0,0,0,.5); border: 1px solid rgba(255,255,255,.25); border-radius: 4px; padding: 4px 8px; }
+  #audioCtl input[type=checkbox] { accent-color: var(--footer); cursor: pointer; margin: 0; }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+</style>
+</head>
+<body>
+  <div id="wrap" role="main"></div>
+  <aside id="notes" aria-label="Presenter notes"></aside>
+  <div id="audioCtl">
+    <button id="audioBtn" aria-label="Play, pause, or resume narration" title="Play / pause / resume (A)">▶ Narrate</button>
+    <button id="replayBtn" class="mini" aria-label="Replay this slide from the start" title="Replay this slide from the start (R)">↻ Replay</button>
+    <button id="restartBtn" class="mini" aria-label="Restart narration from slide 1" title="Start over from slide 1">⏮ Start over</button>
+    <select id="voiceSel" aria-label="Narration accent" title="Accent">
+      <option value="en-IN">Indian English</option>
+      <option value="en-US" selected>American English</option>
+      <option value="en-GB">British English</option>
+    </select>
+    <select id="rateSel" aria-label="Narration speed" title="Speed">
+      <option value="0.8">0.8×</option>
+      <option value="0.9">0.9×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.15">1.15×</option>
+      <option value="1.3">1.3×</option>
+      <option value="1.5">1.5×</option>
+    </select>
+    <label id="autoLbl" title="Auto-advance to the next slide when narration ends"><input type="checkbox" id="autoChk" checked> Auto</label>
+  </div>
+  <div class="chrome"><span id="counter">1 / 24</span><span>← →  navigate · F  fullscreen · N  notes · A  play/pause · R  replay</span></div>
+
+  <script>
+  const IMG = 'chapter%204%20image/';
+
+  const slides = [
+    { cover:true, eyebrow:'Chapter 4', title:'Cancer Genetics & Genomic Instability', sub:'DNA · Mutations · Chromosomes · Repair',
+      notes:`1. "Welcome to Chapter 4. In Chapter 2 we said cancer is a disease of deregulation. Today we go one level deeper and ask: deregulation of what, exactly? The answer is the genome."
+2. "The through-line for this whole chapter is a single sentence: cancer is fundamentally a genetic disease. Not always inherited — but always, at the cellular level, a disease of altered DNA."
+3. "We'll follow the information: how DNA is copied, how that copying goes wrong, what those errors do to genes and chromosomes, how the cell tries to repair them, and what happens when repair itself fails. Four words to hold onto — DNA, mutations, chromosomes, repair."` },
+
+    { tag:'Chapter 4 · Objectives', title:'Objectives',
+      body:`<ul class="bul">
+        <li>Review DNA structure, replication, and the fidelity mechanisms that protect the genome</li>
+        <li>Analyze how mutations arise and their consequences — oncogenes vs. tumor suppressors</li>
+        <li>Describe chromosomal abnormalities and chromosomal instability in cancer</li>
+        <li>Explain the major DNA repair pathways and how their failure drives cancer</li>
+        <li>Examine genomic instability as a driver of tumor evolution</li>
+        <li>Connect these processes to how normal cells transform into cancer</li>
+      </ul>`,
+      notes:`1. "Here's the plan. We start at the foundation — DNA structure, replication, and the fidelity mechanisms that keep the genome accurate."
+2. "Then we look at how mutations arise and what they do, drawing the central contrast of cancer genetics: oncogenes versus tumor suppressors."
+3. "From single genes we scale up to whole chromosomes — chromosomal abnormalities and chromosomal instability — and then to the repair pathways that fix damage, and what happens when they break."
+4. "Finally we pull it together as genomic instability — the engine of tumor evolution — and connect all of it back to the question that matters: how a normal cell actually becomes a cancer cell."` },
+
+    { tag:'§4.1 · DNA & Replication', title:'DNA Structure and Replication', split:true, tall:true,
+      body:`<ul class="bul">
+        <li>Cancer is ultimately a disease of <b>altered genetic information</b></li>
+        <li>Genes encode proteins that control functions such as cell growth</li>
+        <li>Mutations change protein function → healthy cells can become cancerous</li>
+        <li>Genetic alterations arise during replication and from environmental damage</li>
+        <li>DNA replication passes the genetic blueprint to daughter cells intact</li>
+        <li>Understanding DNA structure & replication explains how alterations arise</li>
+      </ul>`,
+      img:'4-1-1.jpg', alt:'Genetic changes and cancer: mutations alter proteins that control cell growth.',
+      cap:'Genetic Changes and Cancer — mutations alter growth-controlling proteins.', src:'National Cancer Institute (NCI)',
+      notes:`1. "Let's establish the premise before any mechanism. Cancer is ultimately a disease of altered genetic information — that's the foundation everything else rests on."
+2. "Why does altered information matter so much? Because genes encode proteins, and those proteins run the cell's core functions, including cell growth. Change the gene, you change the protein, you change the behavior."
+3. "So when a mutation changes a protein's function, a healthy cell can become cancerous. That's the whole causal chain in one line — and the diagram shows it."
+4. "Where do these alterations come from? Two sources we'll keep returning to: errors during DNA replication, and damage from the environment. And since replication is where so much of it happens, understanding DNA structure and how it's copied is what lets us explain how the alterations arise in the first place."` },
+
+    { tag:'§4.1.1 · DNA Structure', title:'DNA Structure and Organization',
+      body:`<ul class="bul">
+        <li><b>DNA</b> is the repository of genetic information in all living organisms</li>
+        <li><b>Double helix</b> — two complementary strands coil together; each templates a new daughter strand</li>
+        <li><u>Nucleotide</u> = deoxyribose sugar + phosphate group + nitrogenous base (A, G, T, C)</li>
+        <li>Strands held by hydrogen bonds: <b>A–T</b> (2 H-bonds), <b>G–C</b> (3 H-bonds)</li>
+        <li>The genome must be tightly packaged to fit inside the nucleus</li>
+        <li><b>Packaging</b>: DNA wraps histone proteins → <u>nucleosome</u> (octamer + ~147 bp)</li>
+        <li>Nucleosomes coil into <u>chromatin</u> → condensed into the <u>chromosome</u> at division</li>
+        <li>Interphase DNA is organized into loops (25–200 bp) that section genes by expression</li>
+      </ul>`,
+      notes:`1. "Let's build DNA from the ground up, because every later concept references this. DNA is the repository of genetic information in all living organisms — the master copy."
+2. "Its shape is the famous double helix: two complementary strands coiled together, and crucially, each strand can serve as a template for building a new daughter strand. That complementarity is what makes copying possible."
+3. "The building block is the nucleotide — a deoxyribose sugar, a phosphate group, and one of four nitrogenous bases: A, G, T, and C. The strands are held together by hydrogen bonds between the bases: A pairs with T using two bonds, G pairs with C using three. Remember G-C is the stronger, three-bond pair."
+4. "Now the packaging problem: the entire genome has to fit inside a tiny nucleus. So DNA wraps around histone proteins to form a nucleosome — an octamer of histones with about 147 base pairs wound around it."
+5. "Those nucleosomes coil into chromatin, and at cell division chromatin condenses into the chromosome. And even during interphase it's not random — the DNA is organized into loops that group genes by how they're expressed."` },
+
+    { tag:'§4.1.2 · Replication', title:'DNA Replication Process', split:true, tall:true,
+      body:`<ul class="bul">
+        <li><b>Semiconservative</b> — each parental strand templates a new daughter strand</li>
+        <li>DNA polymerase joins dNTPs; starts at the <u>origin of replication</u></li>
+        <li>Eukaryotes have <b>many</b> origins of replication; prokaryotes have <b>one</b></li>
+        <li>Helicase unwinds DNA → <u>replication fork</u>; SSBs stabilize single strands</li>
+        <li><u>Leading strand</u> continuous; <u>lagging strand</u> discontinuous → Okazaki fragments</li>
+        <li>Okazaki fragments are later joined into one continuous strand</li>
+      </ul>`,
+      img:'4-1-2.jpg', alt:'A dividing cell; cancer risk increases with the rate of cell division.',
+      cap:'Cells Dividing — cancer risk increases with the rate of cell division.', src:'Thomas Ried / NIH National Cancer Institute',
+      notes:`1. "Now let's watch DNA actually get copied, because the mechanism is where the errors we care about get introduced. The key word is semiconservative — each parental strand serves as the template for a new daughter strand, so every new double helix is half old, half new."
+2. "The enzyme DNA polymerase does the building, joining nucleotides — the dNTPs — and it starts at a specific spot called the origin of replication. Here's a useful contrast: eukaryotes like us have many origins firing along each chromosome; prokaryotes have just one."
+3. "To copy DNA you first have to open it: helicase unwinds the double helix to create a replication fork, and single-strand binding proteins hold the exposed strands apart so they don't snap back."
+4. "But the two strands run in opposite directions, so they're copied differently. The leading strand is made continuously; the lagging strand is made in pieces called Okazaki fragments — discontinuously."
+5. "Those Okazaki fragments are then stitched together into one continuous strand. Keep this asymmetry in mind — the lagging strand's piecemeal synthesis is one more place things can go wrong."` },
+
+    { tag:'§4.1.3 · Replication Fidelity', title:'Accuracy of DNA Replication',
+      body:`<ul class="bul">
+        <li>Accurate replication is critical to faithful cell reproduction</li>
+        <li>Error frequency ≈ <b>1 incorrect base per 10⁹–10¹⁰</b> nucleotides incorporated</li>
+        <li>Far lower than complementary base-pairing alone would predict</li>
+        <li><u>Proofreading</u>: DNA polymerase's 3′-exonuclease reads the last base before adding the next</li>
+        <li>If a base mispairs, the exonuclease cuts the bond and releases the wrong nucleotide</li>
+        <li>Proofreading + base discrimination → ~<b>1 mismatch per 10⁹</b></li>
+        <li>Additional mismatch-removal systems correct errors in newly made DNA</li>
+        <li>Most replication errors are corrected before the cell divides</li>
+      </ul>`,
+      notes:`1. "So how accurate is this copying? Astonishingly accurate — and that accuracy is not optional; it's critical to faithful cell reproduction."
+2. "Put a number on it: the error rate is roughly one incorrect base for every billion to ten billion nucleotides added. That's far lower than you'd get from base-pairing chemistry alone — so there must be active correction going on."
+3. "The first line of correction is proofreading. DNA polymerase has a 3-prime exonuclease activity that checks the base it just added before moving on."
+4. "If that last base is mispaired, the exonuclease clips the bond and releases the wrong nucleotide — like backspacing over a typo before typing the next letter. Base discrimination plus proofreading together get you to about one mismatch per billion."
+5. "And there's still a backup: additional mismatch-removal systems scan the newly made DNA and fix what slipped through. The result is that most replication errors are corrected before the cell ever divides — which is exactly why cancer, where errors persist, means something has broken."` },
+
+    { tag:'§4.1.4 · Replication & Cancer', title:'DNA Replication and Cancer', split:true,
+      body:`<ul class="bul">
+        <li>Cancers can arise from <b>errors / mutations in DNA replication</b></li>
+        <li><u>Genomic instability</u> = higher-than-normal mutation rate → drives tumorigenesis</li>
+        <li>Minimized by high-fidelity replication, precise segregation, error-free repair, coordinated cell cycle</li>
+        <li>Replication stress → chromosomal instability in early cancer</li>
+        <li>Failure to finish replication → aneuploidy, breakage, rearrangements</li>
+      </ul>`,
+      img:'4-1-4-1.jpg', alt:'Chromosomal instability in primary breast cancer cells shown by fluorescence in situ hybridization.',
+      cap:'Chromosomal Instability in Breast Cancer, shown by FISH.', src:'Thomas Ried / NIH National Cancer Institute',
+      notes:`1. "Now let's connect replication directly to cancer. Cancers can arise from errors and mutations in DNA replication — when that near-perfect copying stops being near-perfect."
+2. "Here's the key term for the whole chapter: genomic instability — a higher-than-normal mutation rate. It's not one mutation; it's a raised tempo of mutation, and that tempo drives tumorigenesis."
+3. "Normally instability is held down by four things working together: high-fidelity replication, precise chromosome segregation, error-free repair, and a well-coordinated cell cycle. Weaken any of those and the rate climbs."
+4. "One specific trigger is replication stress, which causes chromosomal instability early in cancer. And if a cell simply fails to finish replicating its DNA, you get aneuploidy — wrong chromosome numbers — plus breakage and rearrangements. The FISH image shows exactly that chaos in real breast-cancer cells."` },
+
+    { tag:'§4.1.4 · Replication Stress', title:'Replication Stress and Instability', split:true,
+      body:`<ul class="bul">
+        <li><b>Oncogene-induced replication stress</b> — aberrant Rb–E2F activation, low nucleotide pool</li>
+        <li><i>HPV-16 E6/E7</i> or cyclin E → ↓ nucleotides → replication stress + DNA damage</li>
+        <li>Fork collapse → <u>double-strand breaks (DSBs)</u></li>
+        <li>Common fragile sites (FRA3B, FRA16D) house <i>FHIT</i>, <i>WWOX</i></li>
+        <li>Supplying nucleosides can rescue the stress and reduce transformation</li>
+      </ul>`,
+      img:'4-1-4-2.jpg', alt:'Chromosomes from a malignant glioblastoma by spectral karyotyping, showing chromosomal instability.',
+      cap:'Brain Cancer Chromosomes — spectral karyotyping shows extreme instability.', src:'Thomas Ried / NIH National Cancer Institute',
+      notes:`1. "Let's unpack replication stress, because it's a concrete mechanism, not just a phrase. It's often oncogene-induced — for example, aberrant activation of the Rb-E2F pathway that pushes cells to divide while the nucleotide pool is too low to support it."
+2. "Concretely: HPV-16's E6 and E7 proteins, or too much cyclin E, drive cells forward but drop the available nucleotides — and that shortage produces replication stress and DNA damage."
+3. "Under that stress, replication forks collapse, and collapsed forks generate double-strand breaks — the most dangerous kind of damage, which we'll return to."
+4. "There are predictable weak spots: common fragile sites like FRA3B and FRA16D, which happen to house the genes FHIT and WWOX. And here's a hopeful, almost surprising finding — simply supplying extra nucleosides can rescue the stress and reduce transformation. The karyotype here, from a glioblastoma, shows where unrescued instability ends up: chromosomes shattered and rearranged."` },
+
+    { tag:'§4.2.1 · Mutation Types', title:'Mutations: Types',
+      body:`<ul class="bul">
+        <li>A <u>mutation</u> = a change in the nucleotide sequence of a genome</li>
+        <li><b>Large-scale</b>: a chunk of chromosome lost, relocated, or rearranged</li>
+        <li><b>Point mutation</b>: one base pair changed — e.g., sickle-cell disease (a single nucleotide)</li>
+        <li>A difference of even one nucleotide can be enough to cause disease</li>
+        <li>Mutations arise from <b>replication errors</b> OR from <b>mutagens</b> (chemicals, radiation)</li>
+        <li><b>Spontaneous</b>: mismatches that escape polymerase proofreading</li>
+        <li><b>Induced</b>: UV photons → <u>pyrimidine dimers</u> that distort DNA and block normal activity</li>
+      </ul>`,
+      notes:`1. "Let's define our central unit precisely. A mutation is simply a change in the nucleotide sequence of a genome — and they come at very different scales."
+2. "At the large scale, a whole chunk of chromosome can be lost, relocated, or rearranged. At the smallest scale is the point mutation — a single base pair changed."
+3. "Don't underestimate the small end: sickle-cell disease comes from changing a single nucleotide. One base can be enough to cause disease — which tells you how little it takes to matter in cancer, too."
+4. "By origin, mutations split two ways. They come from replication errors, or from mutagens like chemicals and radiation."
+5. "So we call them spontaneous — mismatches that escaped polymerase proofreading — or induced. The classic induced example: UV photons create pyrimidine dimers, kinks that distort the DNA and block its normal activity. Hold that example; it comes back under repair."` },
+
+    { tag:'§4.2.2 · Oncogenes', title:'Gain-of-Function: Oncogenes', split:true,
+      body:`<ul class="bul">
+        <li><i>Proto-oncogenes</i> normally help cells grow, divide, or survive</li>
+        <li>Mutation or extra copies → <i>oncogene</i> (turned on when it should be off)</li>
+        <li>Analogy: a <b>gas pedal stuck down</b> → uncontrolled division</li>
+        <li>Usually <b>dominant</b>; gain-of-function mutations are less common</li>
+        <li><i>BCR-ABL</i> (Philadelphia chromosome) → CML; <i>KRAS</i> codon-12 → pancreatic cancer</li>
+      </ul>`,
+      img:'4-2-2-1.jpg', alt:'How a normal cell becomes a cancer cell when an oncogene is activated.',
+      cap:'Oncogenes — how a normal cell becomes cancerous when an oncogene is activated.', src:'NIH National Cancer Institute',
+      notes:`1. "Now the central contrast of cancer genetics — and we start with oncogenes. In their normal form they're called proto-oncogenes, and they do useful work: helping cells grow, divide, or survive."
+2. "The problem comes when a mutation, or extra copies of the gene, converts a proto-oncogene into an oncogene — a gene that's turned on when it should be off."
+3. "The analogy to lock in: a gas pedal stuck to the floor. The growth signal is jammed on, and you get uncontrolled division."
+4. "Genetically, oncogenes are usually dominant — one altered copy is enough to cause trouble — though these gain-of-function mutations are the less common route to cancer overall."
+5. "Two names to know: BCR-ABL, from the Philadelphia chromosome, which drives chronic myeloid leukemia; and KRAS with a codon-12 mutation, a driver of pancreatic cancer. We'll see how both get activated next."` },
+
+    { tag:'§4.2.2 · Oncogene Activation', title:'Mechanisms of Oncogene Activation', split:true,
+      body:`<ul class="bul">
+        <li>Two routes: altered protein <b>structure</b> OR increased protein <b>amount</b></li>
+        <li>Point mutation · gene amplification · chromosomal translocation</li>
+        <li>Fusion proteins (e.g., <i>BCR-ABL</i>) render kinases <b>permanently active</b></li>
+        <li>The Philadelphia chromosome forms from a t(9;22) translocation</li>
+        <li><i>KRAS</i> point mutation → a constitutively active protein in pancreatic cancer</li>
+      </ul>`,
+      img:'4-2-2-2.jpg', alt:'Electron micrograph of an oncogene in a cancer cell.',
+      cap:'Electron Micrograph of an Oncogene — oncogenes arise from normal proto-oncogenes.', src:'NIH National Cancer Institute',
+      notes:`1. "How exactly does a proto-oncogene get switched on? It comes down to two outcomes: you either change the protein's structure, or you increase the amount of protein. Either way you get too much activity."
+2. "Three mechanisms deliver those outcomes: a point mutation, gene amplification — making extra copies — and chromosomal translocation, where pieces of two chromosomes swap."
+3. "Translocations can create fusion proteins. BCR-ABL is the textbook case: the fusion renders the kinase permanently active — it never switches off."
+4. "That fusion comes from a specific event — the Philadelphia chromosome forms from a t(9;22) translocation, chromosomes 9 and 22 exchanging material."
+5. "And the point-mutation route: a single KRAS point mutation produces a constitutively active protein driving pancreatic cancer. Same theme as the last slide — the growth switch stuck on, reached by different molecular roads."` },
+
+    { tag:'§4.2.2 · Tumor Suppressors', title:'Loss-of-Function: Tumor Suppressors', split:true,
+      body:`<ul class="bul">
+        <li><u>Tumor suppressor genes (TSGs)</u> slow division or trigger apoptosis</li>
+        <li>Analogy: a <b>brake pedal</b> — loss → uncontrolled division</li>
+        <li>Usually <b>recessive</b> — both alleles must be inactivated</li>
+        <li><b>Two-hit hypothesis</b> (Knudson, retinoblastoma): inherited hit + somatic hit</li>
+        <li><i>p53</i> and <i>RB</i> are the best-known tumor suppressors</li>
+      </ul>`,
+      img:'4-2-2-3.jpg', alt:'Tumor suppressor genes prevent cancer in normal cells; their inactivation leads to uncontrolled growth.',
+      cap:'Tumor Suppressor Genes — they slow growth; inactivation causes uncontrolled growth.', src:'National Cancer Institute (NCI)',
+      notes:`1. "Now the other half of the contrast — tumor suppressor genes, the TSGs. Their normal job is protective: they slow down division or trigger apoptosis when something's wrong."
+2. "If oncogenes are the stuck gas pedal, tumor suppressors are the brake pedal. And the danger here is loss — lose the brakes and you get uncontrolled division. Note the asymmetry: oncogenes are about a harmful gain; tumor suppressors are about a harmful loss."
+3. "Genetically that makes them usually recessive — because you have two copies of the brake, both alleles have to be inactivated before you lose the function."
+4. "That requirement is captured by Knudson's two-hit hypothesis, worked out in retinoblastoma: in the inherited form, a child is born with one hit already present in every cell and only needs one more somatic hit — which is why hereditary cancers strike earlier."
+5. "The two names to carry forward are p53 and RB — the best-known tumor suppressors, and the subject of the next slide."` },
+
+    { tag:'§4.2.2 · TP53 & RB', title:'TP53 — Guardian of the Genome', imgfull:true,
+      body:`<ul class="bul">
+        <li><i>TP53</i> = <b>"guardian of the genome"</b>; mutated in up to <b>50%</b> of all cancers</li>
+        <li>DNA damage → ATM/ATR phosphorylate p53 → released from MDM2</li>
+        <li>Active p53 → <i>p21</i> → G1-S checkpoint arrest, or apoptosis if damage is severe</li>
+        <li><i>RB</i> ("governor of the cell cycle") binds E2F to block the G1→S transition</li>
+      </ul>`,
+      img:'4-2-2-4.png', alt:'Normal TP53 function versus loss of TP53: checkpoint arrest and apoptosis versus unchecked replication.',
+      cap:'Normal TP53 vs Loss of TP53 — p53 arrests the cycle or triggers apoptosis; its loss lets damaged cells replicate.', src:'Humanitarians AI / Medhavi Cancer Textbook',
+      notes:`1. "This is the single most important gene in the chapter, so let's give it real attention. TP53 is called the guardian of the genome — and its importance shows in one statistic: it's mutated in up to half of all human cancers."
+2. "Here's how it works normally. When DNA is damaged, sensor kinases called ATM and ATR phosphorylate p53, which frees it from its inhibitor MDM2 — so damage releases the guardian."
+3. "Once active, p53 turns on the gene p21, which slams on the brakes at the G1-to-S checkpoint — stopping the cell before it copies damaged DNA. If the damage is too severe to fix, p53 orders apoptosis instead: the cell destroys itself for the good of the organism."
+4. "Its partner RB is the governor of the cell cycle — it binds a protein called E2F to block the G1-to-S transition until the cell is truly ready."
+5. "Now read the diagram's right side: lose TP53 and damaged cells sail through the checkpoint and replicate their damage. That's why p53 loss is so catastrophic — the guardian is gone precisely when the genome is under threat."` },
+
+    { tag:'§4.2.3 · Somatic Mutations', title:'Somatic Mutations & Mutation Rates',
+      body:`<ul class="bul">
+        <li><u>Somatic mutations</u> arise after fertilization; not in the germline → not inherited</li>
+        <li>Occur spontaneously (DNA-repair errors) or as a direct response to stress</li>
+        <li>Inherited defects in TSGs, oncogenes, or genome-stability genes raise cancer risk</li>
+        <li>Mutations build up <b>faster than repair</b> can fix → progressive loss of function</li>
+        <li>Somatic mutation theory → multistep carcinogenesis → the hallmarks of cancer</li>
+        <li>Rate ≈ <b>13–44 mutations / genome / year</b>; ↑ with radiation, smoking, alcohol, pollutants</li>
+        <li>Mutation density varies &gt;<b>10,000-fold</b> between environment-driven and paediatric cancers</li>
+      </ul>`,
+      notes:`1. "Let's clarify a distinction students often blur. Somatic mutations arise after fertilization, in ordinary body cells — they're not in the germline, so they are not inherited by your children. Most cancer mutations are somatic."
+2. "They happen spontaneously, from DNA-repair errors, or as a direct response to stress. And while the mutations themselves aren't inherited, an inherited defect in a tumor suppressor, an oncogene, or a genome-stability gene raises your baseline cancer risk."
+3. "Here's the tipping-point idea: when mutations build up faster than repair can fix them, you get a progressive loss of function. That imbalance — damage outrunning repair — is the heart of it."
+4. "This is the somatic mutation theory, and it connects straight back to Chapter 2: accumulating somatic mutations drive multistep carcinogenesis, which produces the hallmarks of cancer."
+5. "Some numbers for scale: a rate of roughly 13 to 44 mutations per genome per year, rising with radiation, smoking, alcohol, and pollutants. And the variation is enormous — mutation density differs more than ten-thousand-fold between environment-driven cancers and pediatric cancers, which have had far less exposure."` },
+
+    { tag:'§4.3 · Chromosomal Abnormalities', title:'Chromosomal Abnormalities',
+      body:`<ul class="bul">
+        <li><b>Numerical</b> (<u>aneuploidy</u>) — segregation errors in mitosis → gain / loss of chromosomes</li>
+        <li><b>Structural</b> — from DNA damage: deletions (most common) &gt; amplifications &gt; translocations</li>
+        <li>Boveri (&gt;100 years ago) first proposed chromosomal abnormalities as a feature of tumors</li>
+        <li>Abnormal centromeres → multipolar spindles → abnormal loss of chromosomes</li>
+        <li>~<b>90%</b> of cancers have gained or lost at least one chromosome</li>
+        <li>Gains / losses are <b>non-random and tumor-specific</b>; early changes persist into metastases</li>
+        <li>High CIN → poor outcomes; heterogeneity → a bet-hedging route to drug resistance</li>
+      </ul>`,
+      notes:`1. "We've been at the level of single genes; now let's zoom out to whole chromosomes. Abnormalities come in two flavors. Numerical abnormalities — aneuploidy — come from segregation errors in mitosis, so the cell gains or loses whole chromosomes."
+2. "Structural abnormalities come from DNA damage, and in order of frequency: deletions are most common, then amplifications, then translocations."
+3. "This idea is old, by the way — Boveri proposed more than a hundred years ago that chromosomal abnormalities are a feature of tumors, long before we knew the molecular details."
+4. "Mechanistically, abnormal centromeres produce multipolar spindles, which pull chromosomes apart wrongly and cause their loss."
+5. "And the scale is striking: about 90 percent of cancers have gained or lost at least one chromosome. Crucially, these gains and losses are non-random and tumor-specific — and the early changes persist all the way into metastases. High chromosomal instability predicts poor outcomes, and the heterogeneity it creates is a bet-hedging route to drug resistance."` },
+
+    { tag:'§4.3 · Detection & Heredity', title:'Detection and Hereditary Patterns', split:true,
+      body:`<ul class="bul">
+        <li><b>Philadelphia chromosome</b> — t(9;22) → hallmark of CML</li>
+        <li><u>FISH</u> and comparative genomic hybridization detect chromosomal changes</li>
+        <li>Instability syndromes: <b>Bloom</b> (BLM helicase), <b>Fanconi anemia</b></li>
+        <li>Hereditary patterns trace mutations across families (e.g., <i>RET</i> → MEN2A)</li>
+        <li>A specific chromosomal change can flag an oncogene or a lost tumor suppressor</li>
+      </ul>`,
+      img:'4-3-1.jpg', alt:'Pedigree of a family with a deleterious RET mutation across four generations (MEN2A).',
+      cap:'MEN2A Pedigree — a deleterious RET mutation traced across four generations.', src:'National Cancer Institute',
+      notes:`1. "So how do we see these chromosomal changes, and how do we track them through families? Start with the most famous marker: the Philadelphia chromosome, the t(9;22) translocation, a hallmark of chronic myeloid leukemia."
+2. "The detection tools are FISH — fluorescence in situ hybridization — and comparative genomic hybridization, which let us visualize chromosomal changes directly."
+3. "Some instability is inherited as a syndrome: Bloom syndrome, from a defect in the BLM helicase, and Fanconi anemia — both predispose to cancer."
+4. "And we can trace mutations across families through hereditary patterns — the pedigree here follows a RET mutation causing MEN2A down four generations."
+5. "The clinical payoff: a specific chromosomal change can flag an activated oncogene or a lost tumor suppressor — so the karyotype becomes a diagnostic clue, not just a curiosity."` },
+
+    { tag:'§4.4 · DNA Repair Pathways', title:'DNA Repair: Major Pathways',
+      body:`<ul class="bul">
+        <li>Thousands of DNA lesions occur daily (heat, metabolism, radiation) → corrected continuously</li>
+        <li><b>Base excision repair</b> — DNA glycosylases flip out and remove a single damaged base</li>
+        <li><b>Nucleotide excision repair</b> — removes bulky lesions (UV pyrimidine dimers)</li>
+        <li><b>Mismatch repair</b> — fixes post-replication base mismatches missed by proofreading</li>
+        <li><b>Double-strand break repair</b> — homologous recombination or non-homologous end joining</li>
+        <li>Over <b>100</b> distinct DNA-repair enzymes keep constant watch over the genetic code</li>
+        <li>Pre- and post-replicative enzymes both correct errors; irreparable damage → apoptosis</li>
+      </ul>`,
+      notes:`1. "We've talked a lot about damage; now the counterforce — repair. First appreciate the scale of the threat: thousands of DNA lesions occur every single day, from heat, metabolism, and radiation — and they're corrected continuously, around the clock."
+2. "There are four major pathways, and I want you to be able to match each to the damage it fixes. Base excision repair handles a single damaged base — a DNA glycosylase flips the bad base out and removes it."
+3. "Nucleotide excision repair handles bulky lesions — the UV pyrimidine dimers from earlier are the classic target. Mismatch repair cleans up base mismatches after replication, the ones proofreading missed."
+4. "And double-strand break repair handles the worst damage, using one of two strategies — homologous recombination or non-homologous end joining, which we'll take one at a time."
+5. "The overall picture: more than a hundred distinct DNA-repair enzymes keep constant watch over the genetic code, correcting errors both before and after replication. And if damage simply can't be repaired, the cell falls back on apoptosis — better to die than to divide broken."` },
+
+    { tag:'§4.4.2 · Nucleotide Excision Repair', title:'Nucleotide Excision Repair', imgfull:true,
+      body:`<ul class="bul">
+        <li>Repairs <b>bulky lesions</b> — e.g., UV-induced pyrimidine dimers</li>
+        <li>A nuclease snips out the segment containing the lesion</li>
+        <li>Polymerase fills the gap using the opposite strand as a template</li>
+        <li>Ligase seals the double helix</li>
+      </ul>`,
+      img:'4-4-2-1.png', alt:'Nucleotide excision repair: a damaged segment is excised, resynthesized, and sealed.',
+      cap:'Nucleotide Excision Repair — excise the lesion, fill the gap, seal the helix.', src:'Humanitarians AI / Medhavi Cancer Textbook',
+      notes:`1. "Let's walk one pathway end to end so the logic is concrete. Nucleotide excision repair is the pathway for bulky lesions — most importantly the UV-induced pyrimidine dimers we keep coming back to."
+2. "Step one: a nuclease snips out the whole segment of DNA containing the lesion — it doesn't try to fix the damaged bases, it removes the region wholesale."
+3. "Step two: DNA polymerase fills the resulting gap, using the undamaged opposite strand as a template — which is why having two complementary strands is such a powerful safety feature."
+4. "Step three: ligase seals the backbone, and the double helix is whole again. Excise, fill, seal — three steps. Remember this pathway; on the next-but-one slide, the disease that results when it fails will make the point vivid."` },
+
+    { tag:'§4.4.2 · Double-Strand Break Repair', title:'Double-Strand Break Repair', imgfull:true,
+      body:`<ul class="bul">
+        <li>DSBs are the <b>most dangerous</b> damage — no intact template remains</li>
+        <li><u>ATM kinase</u> detects the break and activates repair</li>
+        <li><b>Homologous recombination</b> — accurate; uses the sister chromatid as template</li>
+        <li><b>Non-homologous end joining</b> — fast but error-prone direct rejoining</li>
+      </ul>`,
+      img:'4-4-2-2.png', alt:'Double-strand break repair via homologous recombination or non-homologous end joining.',
+      cap:'Double-Strand Break Repair — homologous recombination (accurate) or end joining (error-prone).', src:'Humanitarians AI / Medhavi Cancer Textbook',
+      notes:`1. "Now the most dangerous damage of all. A double-strand break severs both strands at once — and that means there's no intact template strand left to copy from. That's what makes it uniquely threatening."
+2. "The alarm is raised by ATM kinase, which detects the break and activates the repair response — the same ATM we met with p53."
+3. "There are two repair options, and they trade off accuracy against speed. Homologous recombination is accurate: it borrows the sister chromatid as a template to rebuild the break faithfully — but it only works when a sister chromatid is available."
+4. "Non-homologous end joining is the alternative: fast, always available, but error-prone — it simply rejoins the broken ends directly, often losing or adding a few bases in the process. The cell trades perfect for good-enough when it has to — and those imperfect joins are themselves a source of mutation."` },
+
+    { tag:'§4.4.4 · Repair Defects & Cancer', title:'DNA Repair Defects and Cancer',
+      body:`<ul class="bul">
+        <li>Mutations in ≥<b>30</b> DNA-repair genes raise cancer susceptibility → the <u>mutator phenotype</u></li>
+        <li>Damage accumulates faster than repair can correct it</li>
+        <li>Mismatch-repair defects (<i>MLH1, MSH2, MSH6, PMS2</i>) → Lynch syndrome (HNPCC) and ovarian cancers</li>
+        <li>Inheriting one defective mismatch-repair copy → marked predisposition to certain cancers</li>
+        <li><b>Xeroderma pigmentosum</b> — NER defect; NER is the only repair for UV pyrimidine dimers</li>
+        <li>→ UV hypersensitivity and frequent skin cancers</li>
+        <li>2015 Nobel Prize in Chemistry (Lindahl &amp; Sancar) for DNA-repair mechanisms</li>
+      </ul>`,
+      notes:`1. "Here's the payoff of the last three slides: what happens when repair itself is broken. Mutations in at least thirty DNA-repair genes raise cancer susceptibility — and the underlying state has a name worth knowing: the mutator phenotype."
+2. "The logic is simple and now familiar — with repair impaired, damage accumulates faster than it can be corrected. The cell becomes a mutation factory."
+3. "Two concrete examples tie it together. Defects in the mismatch-repair genes — MLH1, MSH2, MSH6, PMS2 — cause Lynch syndrome, also called HNPCC, and ovarian cancers. Inheriting just one defective mismatch-repair copy already gives a marked predisposition."
+4. "And the one I flagged earlier: xeroderma pigmentosum is a defect in nucleotide excision repair — and NER is the only pathway that fixes UV pyrimidine dimers. So these patients are extraordinarily sensitive to sunlight and get frequent skin cancers. That's the excision-repair pathway from two slides ago, seen through the lens of its failure."
+5. "This field is foundational enough that the 2015 Nobel Prize in Chemistry went to Lindahl and Sancar for working out DNA-repair mechanisms."` },
+
+    { tag:'§4.5 · Genomic Instability', title:'Genomic Instability', split:true,
+      body:`<ul class="bul">
+        <li>Genetic instability promotes cancer — ↑ probability of a malignant mutation</li>
+        <li>Cancer behaves as an <b>evolutionary process</b> among somatic cells</li>
+        <li>Carcinogenesis is linked with <u>mutagenesis</u></li>
+        <li>Agents that cause cancer often also cause genetic change</li>
+        <li>Some degree of instability appears <b>essential</b> for cancer progression</li>
+      </ul>`,
+      img:'4-5-1.jpg', alt:'A dividing cell with replicated chromosomes being pulled apart by microtubules.',
+      cap:'Dividing Cells — chromosomes (purple) pulled apart by microtubules (green).', src:'Nasser Rusan / NIH National Cancer Institute',
+      notes:`1. "Now we synthesize everything into the chapter's big idea. Genetic instability promotes cancer because it raises the probability of hitting a malignant mutation — more shots on goal, more chances for the dangerous one."
+2. "The best frame is evolutionary: cancer behaves as an evolutionary process playing out among your somatic cells — variation, selection, and descent, all inside one body."
+3. "That's why carcinogenesis is linked with mutagenesis — the two travel together — and why agents that cause cancer so often also cause genetic change. If something damages DNA, suspect it as a carcinogen."
+4. "And here's the counterintuitive punchline: some degree of instability appears to be essential for cancer progression. A tumor needs enough genetic churn to keep evolving new capabilities — which, as the next slide shows, is a balance the cell normally guards carefully."` },
+
+    { tag:'§4.5.2 · Types & Mechanisms', title:'Types and Mechanisms of Instability',
+      body:`<ul class="bul">
+        <li><b>Chromosomal instability (CIN)</b> — explains accumulation of many genetic changes</li>
+        <li><b>Microsatellite instability</b> — in HNPCC tumors the karyotype is near-normal</li>
+        <li>By contrast, most non-HNPCC colorectal tumors carry <b>55–70+</b> chromosomes (vs. normal 46)</li>
+        <li><i>p53</i> loss is "trebly dangerous": cell-cycle escape + apoptosis escape + genetic instability</li>
+        <li><u>Telomere dysfunction</u> — telomere shortening drives replicative senescence and instability</li>
+        <li>Most human cells have a built-in proliferative limit (replicative senescence)</li>
+        <li>Chromosomal instability likely arises <b>early</b> in progression in many tumors</li>
+      </ul>`,
+      notes:`1. "Instability isn't one thing, so let's distinguish its forms. Chromosomal instability — CIN — is the big one; it explains how cancers accumulate so many genetic changes at the level of whole chromosomes."
+2. "There's also microsatellite instability, and here's a telling contrast: in HNPCC tumors, the ones with mismatch-repair defects, the karyotype is actually near-normal — the instability is at the sequence level, not the chromosome level."
+3. "Compare that to most non-HNPCC colorectal tumors, which carry 55 to 70-plus chromosomes instead of the normal 46 — massive chromosomal chaos. Two different flavors of instability, two different-looking genomes."
+4. "And p53 comes back one more time — losing it is, in the memorable phrase, trebly dangerous: the cell escapes cell-cycle arrest, escapes apoptosis, and gains genetic instability, all from one loss."
+5. "One more mechanism: telomere dysfunction. As telomeres shorten they drive replicative senescence and instability — because most human cells have a built-in proliferative limit. Put it together and chromosomal instability likely arises early in progression in many tumors, setting the stage for everything that follows."` },
+
+    { tag:'§4.5.4 · Landscape & Clinical', title:'Genomic Landscape and Clinical Impact',
+      body:`<ul class="bul">
+        <li>Cancer genomes span single-base mutations → shattering of entire chromosomes</li>
+        <li><b>Driver</b> mutations propel the cancer; <b>passenger</b> mutations are incidental</li>
+        <li>The list of recurrently mutated driver genes is short; many genes are rarely mutated</li>
+        <li>Two accelerants: early changes beget later changes; clonal selection favors aggressive lines</li>
+        <li>Treatment resistance and relapse can be traced to <b>different mutations</b></li>
+        <li><i>BCR-ABL</i> independently drives instability; <i>BCR</i> rearrangements help predict therapy response</li>
+        <li>Cancer-genome analyses show the origins of cancer are complex and multifactorial</li>
+      </ul>`,
+      notes:`1. "Let's bring it to the clinic and the genome as a whole. Cancer genomes span the full range — from a single changed base all the way to the shattering of entire chromosomes. It's a landscape, not a single lesion."
+2. "The most useful distinction in that landscape is driver versus passenger. Driver mutations actually propel the cancer forward; passenger mutations are just along for the ride, incidental. Therapy aims at the drivers."
+3. "Encouragingly, the list of recurrently mutated driver genes is fairly short — many genes are only rarely mutated. That short list is what makes targeted therapy feasible."
+4. "Two accelerants make this a runaway process: early changes beget later changes, and clonal selection favors the most aggressive lineages — the same evolutionary logic from before."
+5. "The clinical stakes are direct: treatment resistance and relapse can be traced to different mutations arising in the tumor. BCR-ABL, for instance, independently drives instability, and BCR rearrangements help predict how a patient will respond to therapy. The overall lesson from cancer-genome analyses is honest: the origins of cancer are complex and multifactorial — but increasingly readable."` },
+
+    { tag:'Chapter 4 · Summary', title:'Summary',
+      body:`<ul class="bul">
+        <li>Cancer is fundamentally a <b>genetic disease</b></li>
+        <li>Order depends on accurate DNA replication + continual surveillance and repair</li>
+        <li>DNA is continually damaged by chemicals, radiation, and metabolic accidents</li>
+        <li>Replication, mutation, chromosomal change, repair, and instability interlock</li>
+        <li>Loss of fidelity → accumulated mutations → malignant transformation</li>
+        <li>Short-term survival needs stable DNA; long-term survival needs it changeable — cancer breaks this balance</li>
+        <li>This understanding drives <b>precision-medicine</b> approaches to cancer</li>
+      </ul>`,
+      notes:`1. "Let's consolidate. The one sentence to leave with: cancer is fundamentally a genetic disease."
+2. "Order in the genome depends on two things working together — accurate DNA replication, and continual surveillance and repair. Both, not either."
+3. "And they're under constant assault: DNA is continually damaged by chemicals, radiation, and ordinary metabolic accidents."
+4. "Everything we covered interlocks — replication, mutation, chromosomal change, repair, and instability are not separate topics but one connected system. When fidelity is lost, mutations accumulate, and that accumulation is what drives malignant transformation."
+5. "Here's the deep tension to remember: short-term survival needs DNA that's stable, but long-term evolutionary survival needs DNA that's changeable — and cancer is what happens when a cell breaks that balance in its own favor."
+6. "Finally, why this matters beyond the exam: reading a tumor's genetics — its drivers, its repair defects, its instability — is exactly what drives precision medicine. That's Chapter 4 — thank you."` }
+  ];
+
+  const wrap = document.getElementById('wrap');
+  slides.forEach((s, i) => {
+    const sec = document.createElement('section');
+    sec.className = 'slide' + (i === 0 ? ' active' : '');
+    if (s.cover) {
+      sec.classList.add('cover');
+      sec.innerHTML = `<div class="logo">M</div><div class="cover-eyebrow">${s.eyebrow}</div>`
+        + `<h1 class="cover-title">${s.title}</h1><div class="cover-rule"></div>`
+        + `<div class="cover-sub">${s.sub}</div><div class="footer"></div>`;
+      wrap.appendChild(sec);
+      return;
+    }
+    const bodyCls = 'body' + (s.split ? ' split' : '') + (s.tall ? ' tall' : '') + (s.imgfull ? ' imgfull' : '') + (!s.img && !s.imgfull ? ' textonly' : '');
+    const secNum = s.tag.split('·')[0].trim();
+    let inner = `<div class="sectag">${secNum}</div><div class="logo">M</div><h1 class="title">${s.title}</h1>`;
+    let figHtml = '';
+    if (s.img) {
+      const capHtml = s.cap ? `<div class="imgcap">${s.cap}</div>` : '';
+      figHtml = `<div class="fig"><img src="${IMG}${s.img}" alt="${s.alt || ''}">${capHtml}</div>`;
+    }
+    inner += `<div class="${bodyCls}"><div class="text">${s.body}</div>${figHtml}</div>`;
+    if (s.src) inner += `<div class="srcfoot">Source: ${s.src}</div>`;
+    const pct = (i / (slides.length - 1) * 100).toFixed(1);
+    inner += `<div class="pageno">${String(i + 1).padStart(2,'0')} / ${String(slides.length).padStart(2,'0')}</div>`;
+    inner += `<div class="pbar"><i style="width:${pct}%"></i></div><div class="footer"></div>`;
+    sec.innerHTML = inner;
+    wrap.appendChild(sec);
+  });
+
+  let idx = 0;
+  const sections = document.querySelectorAll('.slide');
+  const counter = document.getElementById('counter');
+  const notesEl = document.getElementById('notes');
+  function renderNotes() {
+    const s = slides[idx];
+    const title = s.cover ? s.title : (s.title || '');
+    const tag = s.tag || s.eyebrow || '';
+    const body = s.notes
+      ? `<div class="n-body">${s.notes.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</div>`
+      : `<div class="n-empty">No notes for this slide.</div>`;
+    notesEl.innerHTML = `<h2>${tag} · ${idx + 1} / ${slides.length}</h2><div class="n-title">${title}</div>${body}`;
+  }
+
+  // --- audio narration (Web Speech API, reads the slide's notes aloud) ---
+  // state machine: 'idle' -> 'playing' <-> 'paused'; auto-advances to the next slide when a slide's narration ends
+  const synth = window.speechSynthesis || null;
+  const audioBtn = document.getElementById('audioBtn');
+  const replayBtn = document.getElementById('replayBtn');
+  const restartBtn = document.getElementById('restartBtn');
+  const voiceSel = document.getElementById('voiceSel');
+  const rateSel  = document.getElementById('rateSel');
+  const autoChk  = document.getElementById('autoChk');
+  let voices = [];
+  let playState = 'idle';   // 'idle' | 'playing' | 'paused'
+  let autoPlay = true;      // advance to next slide when narration ends
+  let current = null;       // the utterance currently in flight
+
+  function loadVoices() {
+    if (!synth) return;
+    voices = synth.getVoices();
+  }
+  // find an installed voice matching an accent code like 'en-IN'; null if none installed
+  function voiceForAccent(code) {
+    if (!voices.length) return null;
+    const c = code.toLowerCase();
+    const norm = v => (v.lang || '').replace('_', '-').toLowerCase();
+    return voices.find(v => norm(v) === c) || voices.find(v => norm(v).startsWith(c)) || null;
+  }
+  function slideSpeechText(i) {
+    const s = slides[i];
+    if (!s || !s.notes) return '';
+    return s.notes.split('\n')
+      .map(line => line.replace(/^\s*\d+\.\s*/, '').replace(/^["“]+|["”]+$/g, '').trim())
+      .filter(Boolean)
+      .join(' ');
+  }
+  function updateAudioBtn() {
+    if (!audioBtn) return;
+    audioBtn.classList.toggle('speaking', playState === 'playing');
+    audioBtn.textContent = playState === 'playing' ? '⏸ Pause'
+                         : playState === 'paused'  ? '▶ Resume'
+                         : '▶ Narrate';
+  }
+  function stopNarration() {
+    if (current) current.cancelled = true;
+    if (synth) synth.cancel();
+    current = null;
+    playState = 'idle';
+    updateAudioBtn();
+  }
+  function speakCurrent() {
+    if (!synth) return;
+    if (current) current.cancelled = true;
+    synth.cancel();
+    current = null;
+    const text = slideSpeechText(idx);
+    if (!text) { playState = 'idle'; updateAudioBtn(); return; }
+    const u = new SpeechSynthesisUtterance(text);
+    u.cancelled = false;
+    u.rate = parseFloat(rateSel.value) || 1;
+    u.pitch = 1;
+    const v = voiceForAccent(voiceSel.value);
+    if (v) { u.voice = v; u.lang = v.lang; }
+    else { u.lang = voiceSel.value; }   // no installed voice for this accent — tag the language so the engine approximates
+    u.onend = () => {
+      if (u.cancelled) return;
+      current = null;
+      playState = 'idle';
+      updateAudioBtn();
+      if (autoPlay && idx < slides.length - 1) {
+        goToSlide(idx + 1);
+        speakCurrent();
+      }
+    };
+    u.onerror = () => { if (u.cancelled) return; current = null; playState = 'idle'; updateAudioBtn(); };
+    current = u;
+    playState = 'playing';
+    updateAudioBtn();
+    synth.speak(u);
+  }
+  function toggleSpeech() {
+    if (!synth) return;
+    if (playState === 'playing') { synth.pause();  playState = 'paused';  updateAudioBtn(); }
+    else if (playState === 'paused') { synth.resume(); playState = 'playing'; updateAudioBtn(); }
+    else { speakCurrent(); }
+  }
+  function replayCurrent() { if (synth) speakCurrent(); }
+  function restartAll() { if (!synth) return; stopNarration(); goToSlide(0); speakCurrent(); }
+
+  if (synth) {
+    loadVoices();
+    synth.addEventListener('voiceschanged', loadVoices);
+    const savedVoice = (function(){ try { return localStorage.getItem('deckVoice'); } catch (e) { return null; } })();
+    if (savedVoice && [].some.call(voiceSel.options, o => o.value === savedVoice)) voiceSel.value = savedVoice;
+    const savedRate = (function(){ try { return localStorage.getItem('deckRate'); } catch (e) { return null; } })();
+    if (savedRate) rateSel.value = savedRate;
+    const savedAuto = (function(){ try { return localStorage.getItem('deckAuto'); } catch (e) { return null; } })();
+    if (savedAuto !== null) autoPlay = savedAuto === '1';
+    if (autoChk) autoChk.checked = autoPlay;
+    voiceSel.addEventListener('change', () => {
+      try { localStorage.setItem('deckVoice', voiceSel.value); } catch (e) {}
+      if (playState !== 'idle') speakCurrent();
+    });
+    rateSel.addEventListener('change', () => {
+      try { localStorage.setItem('deckRate', rateSel.value); } catch (e) {}
+      if (playState !== 'idle') speakCurrent();
+    });
+    if (autoChk) autoChk.addEventListener('change', () => {
+      autoPlay = autoChk.checked;
+      try { localStorage.setItem('deckAuto', autoPlay ? '1' : '0'); } catch (e) {}
+    });
+    setInterval(() => { if (playState === 'playing' && synth.speaking && !synth.paused) synth.resume(); }, 10000);
+  } else {
+    if (audioBtn) { audioBtn.disabled = true; audioBtn.title = 'Text-to-speech not supported in this browser'; }
+    if (replayBtn) replayBtn.disabled = true;
+    if (restartBtn) restartBtn.disabled = true;
+    if (voiceSel) voiceSel.disabled = true;
+    if (rateSel) rateSel.disabled = true;
+    if (autoChk) autoChk.disabled = true;
+  }
+  if (audioBtn) audioBtn.addEventListener('click', toggleSpeech);
+  if (replayBtn) replayBtn.addEventListener('click', replayCurrent);
+  if (restartBtn) restartBtn.addEventListener('click', restartAll);
+
+  function goToSlide(i) {
+    idx = Math.max(0, Math.min(slides.length - 1, i));
+    sections.forEach((s, k) => s.classList.toggle('active', k === idx));
+    counter.textContent = `${idx + 1} / ${slides.length}`;
+    renderNotes();
+  }
+  function show(i) {
+    const wasPlaying = (playState === 'playing');
+    stopNarration();
+    goToSlide(i);
+    if (wasPlaying) speakCurrent();
+  }
+  goToSlide(0);
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'ArrowRight' || event.key === 'PageDown' || event.key === ' ') show(idx + 1);
+    else if (event.key === 'ArrowLeft' || event.key === 'PageUp') show(idx - 1);
+    else if (event.key === 'Home') show(0);
+    else if (event.key === 'End') show(slides.length - 1);
+    else if (event.key.toLowerCase() === 'f') { if (!document.fullscreenElement) document.documentElement.requestFullscreen(); else document.exitFullscreen(); }
+    else if (event.key.toLowerCase() === 'n') { notesEl.classList.toggle('open'); document.body.classList.toggle('notes-open'); }
+    else if (event.key.toLowerCase() === 'a') { toggleSpeech(); }
+    else if (event.key.toLowerCase() === 'r') { replayCurrent(); }
+  });
+  window.addEventListener('beforeunload', stopNarration);
+  wrap.addEventListener('click', (event) => { show(event.clientX > window.innerWidth / 2 ? idx + 1 : idx - 1); });
+  </script>
+</body>
+</html>

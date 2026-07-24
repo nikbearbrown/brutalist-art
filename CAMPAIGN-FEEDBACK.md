@@ -5,6 +5,37 @@ The refactor session consumes this: MISSING → vendor list · FIXED → regress
 INSTALL/doctor · STILL BLOCKED → open gates.
 
 
+## REFACTOR FEEDBACK — suno-vs-11-labs-cost-test — 2026-07-13 (human review)
+LAYOUT DEFECTS caught by human eye that layout_audit missed:
+
+  (1) B02_TheChallenger — stamp overflow, invisible to overlap check:
+      stamp_bg was a fixed Rectangle(width=3.6) marked _qc_intentional=True, which
+      suppressed the audit entirely on that object. stamp_txt "ONE GENERATION ≈ ONE
+      VIDEO'S NARRATION" is wider than 3.6 units — white text spilled onto the near-white
+      card and rendered as clipped garbage ("NERATION ≈ ONE VIDEO'S NAR"). Two blind spots:
+        (a) _qc_intentional on a background must not exempt the text it carries.
+        (b) White-on-white spill is invisible to a text-vs-text overlap check.
+      Fix: build stamp_bg from the text, not a guessed size — size Rectangle from stamp_txt.width.
+
+  (2) B05_PantryDrop — box-vs-text collision:
+      pantry_path auto_box at RIGHT*2.6+UP*0.2 overlapped step-2 head text "generate + download"
+      at LEFT*2.0+UP*0.18. The audit checks text-vs-text but not box-vs-text, so it missed
+      the box's left edge intruding on the text zone.
+      Fix: move pantry_path to RIGHT*3.2+DOWN*0.55 and reduce font_size.
+
+AUDIT BLIND SPOTS logged:
+  - _qc_intentional suppresses ALL sub-object checks, including text the bg carries.
+    Future: _qc_intentional should suppress stroke/position checks but NOT carried text.
+  - box-vs-text collision: auto_box extent is not compared against nearby text centroids.
+    Future: add box-extent (bounding_box) into the overlap manifest alongside text centroids.
+
+CONTENT CHANGES:
+  (3) New B00A announce beat added to both variants: ElevenLabs voiced in both ("This is
+      the Suno/ElevenLabs version…"). Announcer is the constant; body voice is the experiment.
+  (4) Variant labeling: topic string "SUNO VS 11 LABS" suffixed per folder — "(SUNO)" and
+      "(11 LABS)" — so analytics and Remotion props distinguish the two published videos.
+
+
 ## REFACTOR FEEDBACK — posting-to-youtube — 2026-07-13
 MISSING (vendor into brutalist-art):
   - none — all assets resolved within brutalist-art/
@@ -207,10 +238,46 @@ RESULT: Four 9:16 shorts published to "Shorts" playlist (unlisted).
 - Fix shipped: the EXPECTED-DURATION MERGE in suno_slice.py — beats' narration
   lengths give expected duration shares; a DP groups consecutive segments into
   one window per beat (bonus for cutting at bigger silences); windows off by
-  > max(3s, 25%) still refuse. Model-free, no new deps. --strict disables.
+  > max(3s, 25%) still refuse. Model-like, no new deps. --strict disables.
 - This stem sliced clean: 13 windows, worst Δ −4.0s (pacing), boundaries on
   the biggest gaps. Slices + measured durations written back; the sheet now
   records voice_engine.
 - Backlog: a --align mode (faster-whisper forced alignment of the KNOWN
   narration text, voxlit's recitation-clock pattern) as the gold path where
   faster-whisper is installed.
+
+## HUMAN FEEDBACK — she-walks-in-beauty — 2026-07-13 (karaoke tail cutoff)
+
+Karaoke film cuts "innocent!" mid-word — the B99 outro hits before the last word
+fully decays into silence. Fix: extend source.mp4 by 3s of music tail (WAV has
+~32s of music after the speech ends at ~82s); re-render Remotion project; reassemble
+review cut with the extra breathing room before B99.
+Lesson: always let the final word resolve to silence before the next beat.
+
+## HUMAN FEEDBACK — she-walks-in-beauty — 2026-07-13 (wrong build path)
+
+Review cut failed: video was built as a generic graphic-card reel — the mastered
+performance WAV was beat-sliced into mp3/beat-*.mp3, stanzas rendered as static
+Manim text cards with guessed timing, no align/ folder, no karaoke, no audiogram.
+
+Correct build path: recitation-film + lyric-overlay (continuous WAV master clock,
+forced alignment → align/words.json + align/lines.json, karaoke + audiogram burned in).
+Both skills exist in this repo and neither was used.
+
+Lesson: the build path is chosen by the video's declared skill/purpose, not by the
+default pipeline. The folder's stated purpose (worked example for session-karaoke-audiogram,
+video 19b) and the presence of the mastered continuous WAV were both on record — the
+build session still defaulted to the beat-slice/Manim-card pipeline.
+
+Required rebuild:
+  1. MASTER CLOCK: use the continuous WAV (SheWalksinBeautybyLordByron1814NateSpoken-mastered.wav)
+     as the clock, not per-beat slices.
+  2. GATE 0: forced alignment via align.py (or lyric-overlay's align step) → align/words.json
+     + align/lines.json.
+  3. FOREGROUND: karaoke overlay + audiogram burned into picture via lyric-overlay skill.
+  4. NEW INTRO BEAT B00: ElevenLabs voiced; explains the clip is a Suno voice clone, directed
+     with the session command, and that the karaoke proves word-sync.
+  5. SRT CC track from line-level alignment.
+
+Actions: retire mp3/beat-*.mp3 slices and scenes.py (wrong architecture); rebuild from
+continuous WAV + forced alignment + overlay_new.py.

@@ -1,0 +1,652 @@
+{
+  "slug": "cancer-medicine-ch04-genetics-genomic-instability",
+  "title": "Cancer Genetics & Genomic Instability",
+  "series": "Cancer Medicine",
+  "source": "chapters/04-cancer-genetics-genomic-instability.md",
+  "metadata": {
+    "chapter": 4,
+    "total_chapters": 11,
+    "playlist": "Cancer Medicine",
+    "palette": "medhavy",
+    "voice_kokoro": "af_kore",
+    "audience": "Medhavy"
+  },
+  "segments": [
+    {
+      "id": "S01",
+      "num": 1,
+      "section": "CHAPTER 4",
+      "title": [
+        [
+          "Cancer Is Fundamentally a ",
+          false
+        ],
+        [
+          "Genetic",
+          true
+        ],
+        [
+          " Disease",
+          false
+        ]
+      ],
+      "body_html": "<p class=\"thesis\">Cancer is fundamentally a <b>genetic</b> disease — not always inherited, but always, at the cellular level, a disease of altered DNA.</p>",
+      "beats": [
+        {
+          "text": "Welcome to Chapter Four. In Chapter Two we said cancer is a disease of deregulation. Today we go one level deeper and ask: deregulation of what, exactly? The answer is the genome. The through-line for this whole chapter is a single sentence: cancer is fundamentally a genetic disease — not always inherited, but always, at the cellular level, a disease of altered DNA. We will follow the information: how DNA is copied, how that copying goes wrong, what those errors do to genes and chromosomes, how the cell tries to repair them, and what happens when repair itself fails. Four words to hold onto — DNA, mutations, chromosomes, repair.",
+          "actual_duration_s": 34.45,
+          "audio_file": "audio/S01.mp3"
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "num": 2,
+      "section": "OBJECTIVES",
+      "title": [
+        [
+          "Five ",
+          false
+        ],
+        [
+          "Objectives",
+          true
+        ],
+        [
+          " for Chapter 4",
+          false
+        ]
+      ],
+      "body_html": "<div class=\"stack\">\n  <div class=\"wire\"><b>DNA structure, replication, and fidelity</b><span>The foundation — how the genome stays accurate</span></div>\n  <div class=\"wire\"><b>Mutations and their consequences</b><span>Oncogenes vs. tumor suppressors</span></div>\n  <div class=\"wire\"><b>Chromosomal abnormalities and instability</b><span>From single genes to whole chromosomes</span></div>\n  <div class=\"wire\"><b>DNA repair pathways</b><span>Four mechanisms that guard the genome — and what breaks them</span></div>\n  <div class=\"wire\"><b>Genomic instability as an engine of tumor evolution</b><span>How normal cells transform into cancer cells</span></div>\n</div>",
+      "beats": [
+        {
+          "text": "Here is the plan. We start at the foundation — DNA structure, replication, and the fidelity mechanisms that keep the genome accurate. Then we look at how mutations arise and what they do, drawing the central contrast of cancer genetics: oncogenes versus tumor suppressors. From single genes we scale up to whole chromosomes — chromosomal abnormalities and chromosomal instability — and then to the repair pathways that fix damage, and what happens when they break. Finally we pull it all together as genomic instability — the engine of tumor evolution — and connect it back to how a normal cell actually becomes a cancer cell.",
+          "actual_duration_s": 31.89,
+          "audio_file": "audio/S02.mp3"
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "num": 3,
+      "section": "§4.1 DNA & REPLICATION",
+      "title": [
+        [
+          "DNA ",
+          false
+        ],
+        [
+          "Alteration",
+          true
+        ],
+        [
+          " Is How Cancer Starts",
+          false
+        ]
+      ],
+      "body_html": "<div class=\"flow\">\n  <span class=\"chip\">Replication error<br>or mutagen</span>\n  <span class=\"arw\">→</span>\n  <span class=\"chip\">Altered gene</span>\n  <span class=\"arw\">→</span>\n  <span class=\"chip\">Altered protein</span>\n  <span class=\"arw\">→</span>\n  <span class=\"chip on\">Cancer</span>\n</div>\n<p class=\"lead\">Cancer is ultimately a disease of altered genetic information — changing the gene changes the protein, changing the protein changes the behavior.</p>",
+      "beats": [
+        {
+          "text": "Let us establish the premise before any mechanism. Cancer is ultimately a disease of altered genetic information — that is the foundation everything else rests on. Why does altered information matter so much? Because genes encode proteins, and those proteins run the cell's core functions, including cell growth. Change the gene, you change the protein, you change the behavior. When a mutation changes a protein's function, a healthy cell can become cancerous. That is the whole causal chain in one line. Where do these alterations come from? Two sources we will keep returning to: errors during DNA replication, and damage from the environment.",
+          "actual_duration_s": 33.75,
+          "audio_file": "audio/S03.mp3"
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "num": 4,
+      "section": "§4.1.1 DNA STRUCTURE",
+      "title": [
+        [
+          "DNA Packs into a ",
+          false
+        ],
+        [
+          "Chromosome",
+          true
+        ]
+      ],
+      "body_html": "<div class=\"flow\">\n  <span class=\"chip\">DNA double helix<br><small>A–T · G–C base pairs</small></span>\n  <span class=\"arw\">→</span>\n  <span class=\"chip\">+ Histones<br><small>147 bp wound around</small></span>\n  <span class=\"arw\">→</span>\n  <span class=\"chip\">Nucleosome</span>\n  <span class=\"arw\">→</span>\n  <span class=\"chip\">Chromatin</span>\n  <span class=\"arw\">→</span>\n  <span class=\"chip on\">Chromosome</span>\n</div>",
+      "beats": [
+        {
+          "text": "Let us build DNA from the ground up, because every later concept references this structure. DNA is the repository of genetic information in all living organisms. Its shape is the famous double helix: two complementary strands coiled together, each able to serve as a template for building a new daughter strand. The building block is the nucleotide — a deoxyribose sugar, a phosphate group, and one of four nitrogenous bases: A, G, T, and C. G pairs with C using three hydrogen bonds; A pairs with T using two — remember G-C is the stronger pair. To fit in the tiny nucleus, DNA wraps around histone proteins to form a nucleosome, an octamer of histones with about 147 base pairs wound around it. Those nucleosomes coil into chromatin and condense into chromosomes at cell division.",
+          "actual_duration_s": 41.58,
+          "audio_file": "audio/S04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "num": 5,
+      "section": "§4.1.2 REPLICATION",
+      "title": [
+        [
+          "Replication Is ",
+          false
+        ],
+        [
+          "Semiconservative",
+          true
+        ]
+      ],
+      "body_html": "<div class=\"flow\">\n  <span class=\"chip\">Helicase unwinds<br><small>creates replication fork</small></span>\n  <span class=\"arw\">→</span>\n  <span class=\"chip\">Origins fire<br><small>many in eukaryotes</small></span>\n  <span class=\"arw\">→</span>\n  <span class=\"chip\">Leading strand<br><small>continuous</small></span>\n  <span class=\"arw\">+</span>\n  <span class=\"chip warn\">Lagging: Okazaki<br><small>discontinuous</small></span>\n  <span class=\"arw\">→</span>\n  <span class=\"chip on\">Ligase seals</span>\n</div>",
+      "beats": [
+        {
+          "text": "Now let us watch DNA actually get copied, because the mechanism is where the errors we care about get introduced. The key word is semiconservative — each parental strand serves as the template for a new daughter strand, so every new double helix is half old, half new. Helicase unwinds the double helix to create a replication fork, and single-strand binding proteins hold the exposed strands apart. Eukaryotes like us have many origins of replication firing simultaneously along each chromosome; prokaryotes have just one. But the two strands run in opposite directions, so they are copied differently. The leading strand is made continuously; the lagging strand is made in pieces called Okazaki fragments — discontinuously — and those fragments are then stitched together into one continuous strand by ligase. That lagging-strand piecemeal synthesis is one more place things can go wrong.",
+          "actual_duration_s": 44.78,
+          "audio_file": "audio/S05.mp3"
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "num": 6,
+      "section": "§4.1.3 FIDELITY",
+      "title": [
+        [
+          "One Error per ",
+          false
+        ],
+        [
+          "Billion",
+          true
+        ],
+        [
+          " Bases",
+          false
+        ]
+      ],
+      "body_html": "<div class=\"stat-row\">\n  <div class=\"stat\"><div class=\"big on\">10⁻⁹</div><div class=\"cap\">error rate per base</div></div>\n  <div class=\"eq\">←</div>\n  <div class=\"stat\"><div class=\"big\">3′ exonuclease</div><div class=\"cap\">proofreading — clips mismatches before moving on</div></div>\n</div>\n<p class=\"lead\">Base discrimination + proofreading + mismatch-removal backup. Most replication errors are corrected before the cell divides.</p>",
+      "beats": [
+        {
+          "text": "How accurate is this copying? Astonishingly accurate — and that accuracy is not optional. The error rate is roughly one incorrect base for every billion to ten billion nucleotides added. That is far lower than base-pairing chemistry alone would achieve, so there must be active correction going on. The first line of correction is proofreading: DNA polymerase has a three-prime exonuclease activity that checks the base it just added before moving on to the next. If that last base is mispaired, the exonuclease clips the bond and releases the wrong nucleotide — like backspacing over a typo before typing the next letter. Base discrimination plus proofreading together achieve about one mismatch per billion. And there is still a backup: mismatch-removal systems scan the newly made DNA and fix what slipped through. Most replication errors are corrected before the cell ever divides — which is exactly why cancer, where errors persist, means something has broken.",
+          "actual_duration_s": 45.63,
+          "audio_file": "audio/S06.mp3"
+        }
+      ]
+    },
+    {
+      "id": "S07",
+      "num": 7,
+      "section": "§4.1.4 REPLICATION & CANCER",
+      "title": [
+        [
+          "Genomic ",
+          false
+        ],
+        [
+          "Instability",
+          true
+        ],
+        [
+          " Drives Tumorigenesis",
+          false
+        ]
+      ],
+      "body_html": "<p class=\"thesis\">Genomic <b>instability</b> — a higher-than-normal mutation rate — is the engine of tumorigenesis. Four guards hold it in check: high-fidelity replication, precise chromosome segregation, error-free repair, and a coordinated cell cycle.</p>",
+      "beats": [
+        {
+          "text": "Now let us connect replication directly to cancer. Cancers can arise from errors and mutations in DNA replication — when that near-perfect copying stops being near-perfect. Here is the key term for the whole chapter: genomic instability — a higher-than-normal mutation rate. It is not one mutation; it is a raised tempo of mutation, and that tempo drives tumorigenesis. Normally, instability is held down by four things working together: high-fidelity replication, precise chromosome segregation, error-free repair, and a well-coordinated cell cycle. Weaken any of those and the rate climbs. And one specific trigger is replication stress, which causes chromosomal instability early in cancer — which is where we go next.",
+          "actual_duration_s": 40.11,
+          "audio_file": "audio/S07.mp3"
+        }
+      ]
+    },
+    {
+      "id": "S08",
+      "num": 8,
+      "section": "§4.1.4 REPLICATION STRESS",
+      "title": [
+        [
+          "Replication ",
+          false
+        ],
+        [
+          "Stress",
+          true
+        ],
+        [
+          " Generates Double-Strand Breaks",
+          false
+        ]
+      ],
+      "body_html": "<div class=\"flow\">\n  <span class=\"chip\">Oncogene activation<br><small>HPV E6/E7 · cyclin E</small></span>\n  <span class=\"arw\">→</span>\n  <span class=\"chip warn\">Low nucleotide pool</span>\n  <span class=\"arw\">→</span>\n  <span class=\"chip warn\">Fork collapse</span>\n  <span class=\"arw\">→</span>\n  <span class=\"chip on\">DSBs at fragile sites<br><small>FRA3B, FRA16D</small></span>\n</div>",
+      "beats": [
+        {
+          "text": "Replication stress is a concrete mechanism, not just a phrase. It is often oncogene-induced — for example, aberrant activation of the Rb-E2F pathway that pushes cells to divide while the nucleotide pool is too low to support it. Concretely: HPV-16's E6 and E7 proteins, or too much cyclin E, drive cells forward but drop the available nucleotides — and that shortage produces replication stress and DNA damage. Under that stress, replication forks collapse, and collapsed forks generate double-strand breaks — the most dangerous kind of damage, which we will return to. There are predictable weak spots: common fragile sites like FRA3B and FRA16D, which happen to house the genes FHIT and WWOX. And here is a hopeful finding: simply supplying extra nucleosides can rescue the stress and reduce transformation.",
+          "actual_duration_s": 43.05,
+          "audio_file": "audio/S08.mp3"
+        }
+      ]
+    },
+    {
+      "id": "S09",
+      "num": 9,
+      "section": "§4.2.1 MUTATION TYPES",
+      "title": [
+        [
+          "Mutations: ",
+          false
+        ],
+        [
+          "Two Scales",
+          true
+        ],
+        [
+          " of Change",
+          false
+        ]
+      ],
+      "body_html": "<div class=\"grid2\">\n  <div class=\"cell-part\"><b>Large-scale</b><span>A whole chromosome chunk lost, relocated, or rearranged — detectable by karyotype</span></div>\n  <div class=\"cell-part hot\"><b>Point mutation</b><span>One base pair changed — e.g., the sickle-cell nucleotide. One base can be enough to cause disease.</span></div>\n</div>\n<p class=\"lead\">Source: replication errors (spontaneous) or mutagens such as UV photons (induced → pyrimidine dimers).</p>",
+      "beats": [
+        {
+          "text": "Let us define our central unit precisely. A mutation is simply a change in the nucleotide sequence of a genome — and they come at very different scales. At the large scale, a whole chunk of chromosome can be lost, relocated, or rearranged. At the smallest scale is the point mutation — a single base pair changed. Do not underestimate the small end: sickle-cell disease comes from changing a single nucleotide. One base can be enough to cause disease, which tells you how little it takes to matter in cancer. By origin, mutations split two ways — they come from replication errors, or from mutagens like chemicals and radiation. We call them spontaneous — mismatches that escaped polymerase proofreading — or induced. The classic induced example: UV photons create pyrimidine dimers, kinks that distort the DNA and block its normal activity. That example comes back under repair.",
+          "actual_duration_s": 42.3,
+          "audio_file": "audio/S09.mp3"
+        }
+      ]
+    },
+    {
+      "id": "S10",
+      "num": 10,
+      "section": "§4.2.2 ONCOGENES",
+      "title": [
+        [
+          "Proto-Oncogene → ",
+          false
+        ],
+        [
+          "Gas Pedal",
+          true
+        ],
+        [
+          " Stuck",
+          false
+        ]
+      ],
+      "body_html": "<div class=\"balance\">\n  <div class=\"pan surv\"><b>Proto-oncogene</b><span>Normal growth signaling — on when it should be, off when it should be</span></div>\n  <div class=\"fulcrum\">→</div>\n  <div class=\"pan die\"><b>Oncogene (stuck on)</b><span>Mutation or amplification — uncontrolled division. Usually dominant: one copy suffices.</span></div>\n</div>",
+      "beats": [
+        {
+          "text": "Now the central contrast of cancer genetics — and we start with oncogenes. In their normal form they are called proto-oncogenes, and they do useful work: helping cells grow, divide, or survive. The problem comes when a mutation, or extra copies of the gene, converts a proto-oncogene into an oncogene — a gene that is turned on when it should be off. The analogy to lock in: a gas pedal stuck to the floor. The growth signal is jammed on and you get uncontrolled division. Genetically, oncogenes are usually dominant — one altered copy is enough to cause trouble, though these gain-of-function mutations are the less common route to cancer overall. Two names to know: BCR-ABL, from the Philadelphia chromosome, which drives chronic myeloid leukemia; and KRAS with a codon-12 mutation, a driver of pancreatic cancer.",
+          "actual_duration_s": 40.79,
+          "audio_file": "audio/S10.mp3"
+        }
+      ]
+    },
+    {
+      "id": "S11",
+      "num": 11,
+      "section": "§4.2.2 ONCOGENE ACTIVATION",
+      "title": [
+        [
+          "Three Routes to ",
+          false
+        ],
+        [
+          "Oncogene",
+          true
+        ],
+        [
+          " Activation",
+          false
+        ]
+      ],
+      "body_html": "<div class=\"grid3\">\n  <div class=\"cell-part\"><b>Point mutation</b><span>Changes protein structure → constitutively active. KRAS codon-12 in pancreatic cancer.</span></div>\n  <div class=\"cell-part hot\"><b>Gene amplification</b><span>Extra copies → too much protein → too much signal.</span></div>\n  <div class=\"cell-part\"><b>Translocation</b><span>BCR-ABL from t(9;22) — fusion kinase permanently active → CML.</span></div>\n</div>",
+      "beats": [
+        {
+          "text": "How exactly does a proto-oncogene get switched on? It comes down to two outcomes: you either change the protein's structure, or you increase the amount of protein. Either way you get too much activity. Three mechanisms deliver those outcomes: a point mutation, gene amplification — making extra copies — and chromosomal translocation, where pieces of two chromosomes swap. Translocations can create fusion proteins. BCR-ABL is the textbook case: the fusion renders the kinase permanently active — it never switches off. That fusion comes from a specific event: the Philadelphia chromosome forms from a t-9-22 translocation, chromosomes 9 and 22 exchanging material. And the point-mutation route: a single KRAS point mutation produces a constitutively active protein driving pancreatic cancer. Same theme — the growth switch stuck on, reached by different molecular roads.",
+          "actual_duration_s": 46.44,
+          "audio_file": "audio/S11.mp3"
+        }
+      ]
+    },
+    {
+      "id": "S12",
+      "num": 12,
+      "section": "§4.2.2 TUMOR SUPPRESSORS",
+      "title": [
+        [
+          "Both ",
+          false
+        ],
+        [
+          "Alleles",
+          true
+        ],
+        [
+          " Must Fall: Two-Hit Rule",
+          false
+        ]
+      ],
+      "body_html": "<div class=\"balance\">\n  <div class=\"pan surv\"><b>Both alleles intact</b><span>Cell-cycle braking and apoptosis signaling are active — normal restraint on division</span></div>\n  <div class=\"fulcrum\">⇄</div>\n  <div class=\"pan die\"><b>Two hits (Knudson)</b><span>Inherited hit + somatic hit → both alleles inactivated → brake gone → uncontrolled growth</span></div>\n</div>",
+      "beats": [
+        {
+          "text": "Now the other half of the contrast — tumor suppressor genes, the TSGs. Their normal job is protective: they slow down division or trigger apoptosis when something is wrong. If oncogenes are the stuck gas pedal, tumor suppressors are the brake pedal. And the danger here is loss — lose the brakes and you get uncontrolled division. Note the asymmetry: oncogenes are about a harmful gain; tumor suppressors are about a harmful loss. Genetically that makes them usually recessive — because you have two copies of the brake, both alleles have to be inactivated before you lose the function. That requirement is captured by Knudson's two-hit hypothesis, worked out in retinoblastoma: in the inherited form, a child is born with one hit already present in every cell and only needs one more somatic hit — which is why hereditary cancers strike earlier. The two names to carry forward are p53 and RB.",
+          "actual_duration_s": 43.03,
+          "audio_file": "audio/S12.mp3"
+        }
+      ]
+    },
+    {
+      "id": "S13",
+      "num": 13,
+      "section": "§4.2.2 TP53",
+      "title": [
+        [
+          "TP53",
+          true
+        ],
+        [
+          " — Guardian of the Genome",
+          false
+        ]
+      ],
+      "body_html": "<div class=\"flow\">\n  <span class=\"chip\">DNA damage</span>\n  <span class=\"arw\">→</span>\n  <span class=\"chip\">ATM / ATR<br><small>phosphorylate p53</small></span>\n  <span class=\"arw\">→</span>\n  <span class=\"chip on\">p53 released<br><small>from MDM2</small></span>\n  <span class=\"arw\">→</span>\n  <span class=\"chip\">p21 → G1/S arrest</span>\n  <span class=\"arw\">or</span>\n  <span class=\"chip warn\">Apoptosis</span>\n</div>\n<p class=\"lead\">Mutated in up to 50% of all human cancers — lose TP53 and damaged cells replicate their damage.</p>",
+      "beats": [
+        {
+          "text": "This is the single most important gene in the chapter, so let us give it real attention. TP53 is called the guardian of the genome — and its importance shows in one statistic: it is mutated in up to half of all human cancers. Here is how it works normally. When DNA is damaged, sensor kinases ATM and ATR phosphorylate p53, which frees it from its inhibitor MDM2 — so damage releases the guardian. Once active, p53 turns on the gene p21, which slams on the brakes at the G1-to-S checkpoint, stopping the cell before it copies damaged DNA. If the damage is too severe to fix, p53 orders apoptosis: the cell destroys itself for the good of the organism. Its partner RB binds a protein called E2F to block the G1-to-S transition until the cell is truly ready. Now the consequence of loss: lose TP53 and damaged cells sail through the checkpoint and replicate their damage — that is why p53 loss is so catastrophic.",
+          "actual_duration_s": 54.29,
+          "audio_file": "audio/S13.mp3"
+        }
+      ]
+    },
+    {
+      "id": "S14",
+      "num": 14,
+      "section": "§4.2.3 SOMATIC MUTATIONS",
+      "title": [
+        [
+          "13–44 ",
+          false
+        ],
+        [
+          "Mutations",
+          true
+        ],
+        [
+          " per Genome per Year",
+          false
+        ]
+      ],
+      "body_html": "<div class=\"stat-row\">\n  <div class=\"stat\"><div class=\"big on\">13–44</div><div class=\"cap\">mutations / genome / year<br>rises with radiation, smoking, alcohol</div></div>\n  <div class=\"eq\">&gt;</div>\n  <div class=\"stat\"><div class=\"big\">10,000×</div><div class=\"cap\">variation between environment-driven<br>and paediatric cancers</div></div>\n</div>\n<p class=\"lead\">Somatic mutations arise after fertilization in body cells — not inherited — but they accumulate until damage outpaces repair.</p>",
+      "beats": [
+        {
+          "text": "A crucial distinction: somatic mutations arise after fertilization in ordinary body cells — they are not in the germline, so they are not inherited by your children. Most cancer mutations are somatic. They happen spontaneously from DNA-repair errors, or as a direct response to stress. Here is the tipping-point idea: when mutations build up faster than repair can fix them, you get a progressive loss of function. That imbalance — damage outrunning repair — is the heart of it. This is the somatic mutation theory, and it connects straight back to Chapter Two: accumulating somatic mutations drive multistep carcinogenesis, which produces the hallmarks of cancer. Some numbers for scale: a rate of roughly 13 to 44 mutations per genome per year, rising with radiation, smoking, alcohol, and pollutants. And the variation is enormous — mutation density differs more than ten-thousand-fold between environment-driven cancers and pediatric cancers, which have had far less exposure.",
+          "actual_duration_s": 52.54,
+          "audio_file": "audio/S14.mp3"
+        }
+      ]
+    },
+    {
+      "id": "S15",
+      "num": 15,
+      "section": "§4.3 CHROMOSOMAL ABNORMALITIES",
+      "title": [
+        [
+          "90% ",
+          false
+        ],
+        [
+          "of Cancers",
+          true
+        ],
+        [
+          " Have Chromosomal Changes",
+          false
+        ]
+      ],
+      "body_html": "<p class=\"callout\"><b>~90%</b> of cancers have gained or lost at least one chromosome — and these gains and losses are non-random, tumor-specific, and persist into metastases.</p>",
+      "beats": [
+        {
+          "text": "We have been at the level of single genes; now let us zoom out to whole chromosomes. Abnormalities come in two flavors. Numerical abnormalities — aneuploidy — come from segregation errors in mitosis, so the cell gains or loses whole chromosomes. Structural abnormalities come from DNA damage, and in order of frequency: deletions are most common, then amplifications, then translocations. This idea is old — Boveri proposed more than a hundred years ago that chromosomal abnormalities are a feature of tumors. Mechanistically, abnormal centromeres produce multipolar spindles that pull chromosomes apart wrongly. The scale is striking: about 90 percent of cancers have gained or lost at least one chromosome. Crucially, these gains and losses are non-random and tumor-specific, and the early changes persist all the way into metastases. High chromosomal instability predicts poor outcomes, and the heterogeneity it creates is a bet-hedging route to drug resistance.",
+          "actual_duration_s": 50.43,
+          "audio_file": "audio/S15.mp3"
+        }
+      ]
+    },
+    {
+      "id": "S16",
+      "num": 16,
+      "section": "§4.3 DETECTION",
+      "title": [
+        [
+          "",
+          false
+        ],
+        [
+          "Detection",
+          true
+        ],
+        [
+          " and Hereditary Patterns",
+          false
+        ]
+      ],
+      "body_html": "<div class=\"stack\">\n  <div class=\"wire\"><b>Philadelphia chromosome</b><span>t(9;22) translocation — hallmark of CML; BCR-ABL fusion kinase permanently active</span></div>\n  <div class=\"wire\"><b>FISH & comparative genomic hybridization</b><span>Visualize chromosomal gains and losses directly — maps the aberrant karyotype</span></div>\n  <div class=\"wire\"><b>Inherited instability syndromes</b><span>Bloom syndrome (BLM helicase) · Fanconi anemia — both predispose to cancer</span></div>\n  <div class=\"wire\"><b>Hereditary pedigrees</b><span>RET mutation → MEN2A traced across four generations — a chromosomal change flags an oncogene or lost TSG</span></div>\n</div>",
+      "beats": [
+        {
+          "text": "So how do we see these chromosomal changes, and how do we track them through families? Start with the most famous marker: the Philadelphia chromosome, the t-9-22 translocation, a hallmark of chronic myeloid leukemia. The detection tools are FISH — fluorescence in situ hybridization — and comparative genomic hybridization, which let us visualize chromosomal changes directly. Some instability is inherited as a syndrome: Bloom syndrome, from a defect in the BLM helicase, and Fanconi anemia — both predispose to cancer. And we can trace mutations across families through hereditary patterns — the pedigree follows a RET mutation causing MEN2A down four generations. The clinical payoff: a specific chromosomal change can flag an activated oncogene or a lost tumor suppressor — so the karyotype becomes a diagnostic clue, not just a curiosity.",
+          "actual_duration_s": 43.26,
+          "audio_file": "audio/S16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "S17",
+      "num": 17,
+      "section": "§4.4 REPAIR PATHWAYS",
+      "title": [
+        [
+          "Four ",
+          false
+        ],
+        [
+          "Repair",
+          true
+        ],
+        [
+          " Pathways Guard the Genome",
+          false
+        ]
+      ],
+      "body_html": "<div class=\"grid2\">\n  <div class=\"cell-part\"><b>Base excision repair (BER)</b><span>Single damaged base — glycosylase flips it out and removes it</span></div>\n  <div class=\"cell-part\"><b>Nucleotide excision repair (NER)</b><span>Bulky lesions — UV pyrimidine dimers. Excise, fill, seal.</span></div>\n  <div class=\"cell-part\"><b>Mismatch repair (MMR)</b><span>Post-replication mismatches missed by proofreading — MLH1, MSH2, MSH6, PMS2</span></div>\n  <div class=\"cell-part hot\"><b>Double-strand break repair</b><span>HR (accurate, uses sister chromatid) or NHEJ (fast, error-prone). ATM raises the alarm.</span></div>\n</div>",
+      "beats": [
+        {
+          "text": "We have talked a lot about damage; now the counterforce — repair. First appreciate the scale of the threat: thousands of DNA lesions occur every single day from heat, metabolism, and radiation, corrected continuously around the clock by more than a hundred distinct repair enzymes. There are four major pathways, and I want you to be able to match each to the damage it fixes. Base excision repair handles a single damaged base — a DNA glycosylase flips the bad base out and removes it. Nucleotide excision repair handles bulky lesions — the UV pyrimidine dimers from earlier are the classic target. Mismatch repair cleans up base mismatches after replication, the ones proofreading missed. And double-strand break repair handles the worst damage, using either homologous recombination or non-homologous end joining. If damage simply cannot be repaired, the cell falls back on apoptosis — better to die than to divide broken.",
+          "actual_duration_s": 46.95,
+          "audio_file": "audio/S17.mp3"
+        }
+      ]
+    },
+    {
+      "id": "S18",
+      "num": 18,
+      "section": "§4.4.2 NUCLEOTIDE EXCISION REPAIR",
+      "title": [
+        [
+          "NER: ",
+          false
+        ],
+        [
+          "Excise",
+          true
+        ],
+        [
+          ", Fill, Seal",
+          false
+        ]
+      ],
+      "body_html": "<div class=\"flow\">\n  <span class=\"chip warn\">Bulky lesion<br><small>UV pyrimidine dimer</small></span>\n  <span class=\"arw\">→</span>\n  <span class=\"chip\">Nuclease excises<br><small>the whole segment</small></span>\n  <span class=\"arw\">→</span>\n  <span class=\"chip\">Polymerase fills<br><small>opposite strand as template</small></span>\n  <span class=\"arw\">→</span>\n  <span class=\"chip on\">Ligase seals<br><small>double helix restored</small></span>\n</div>",
+      "beats": [
+        {
+          "text": "Let us walk one pathway end to end so the logic is concrete. Nucleotide excision repair is the pathway for bulky lesions — most importantly the UV-induced pyrimidine dimers we keep coming back to. Step one: a nuclease snips out the whole segment of DNA containing the lesion — it does not try to fix the damaged bases, it removes the region wholesale. Step two: DNA polymerase fills the resulting gap, using the undamaged opposite strand as a template — which is exactly why having two complementary strands is such a powerful safety feature. Step three: ligase seals the backbone, and the double helix is whole again. Excise, fill, seal — three steps. Remember this pathway, because on the slide after next, the disease that results when it fails will make the point vivid.",
+          "actual_duration_s": 40.9,
+          "audio_file": "audio/S18.mp3"
+        }
+      ]
+    },
+    {
+      "id": "S19",
+      "num": 19,
+      "section": "§4.4.2 DOUBLE-STRAND BREAK REPAIR",
+      "title": [
+        [
+          "DSBs: ",
+          false
+        ],
+        [
+          "Accurate HR",
+          true
+        ],
+        [
+          " vs Fast NHEJ",
+          false
+        ]
+      ],
+      "body_html": "<div class=\"balance\">\n  <div class=\"pan surv\"><b>Homologous recombination</b><span>Accurate — uses sister chromatid as template. Only available when sister chromatid exists (S/G2 phase).</span></div>\n  <div class=\"fulcrum\">DSB</div>\n  <div class=\"pan die\"><b>Non-homologous end joining</b><span>Fast and always available — but error-prone. Directly rejoins ends, often losing or adding bases.</span></div>\n</div>",
+      "beats": [
+        {
+          "text": "Now the most dangerous damage of all. A double-strand break severs both strands at once — and that means there is no intact template strand left to copy from. That is what makes it uniquely threatening. The alarm is raised by ATM kinase, which detects the break and activates the repair response — the same ATM we met earlier with p53. There are two repair options, and they trade off accuracy against speed. Homologous recombination is accurate: it borrows the sister chromatid as a template to rebuild the break faithfully — but it only works when a sister chromatid is available, limiting it to S and G2 phases. Non-homologous end joining is the alternative: fast, always available, but error-prone — it simply rejoins the broken ends directly, often losing or adding a few bases in the process. Those imperfect joins are themselves a source of mutation.",
+          "actual_duration_s": 42.88,
+          "audio_file": "audio/S19.mp3"
+        }
+      ]
+    },
+    {
+      "id": "S20",
+      "num": 20,
+      "section": "§4.4.4 REPAIR DEFECTS",
+      "title": [
+        [
+          "Broken ",
+          false
+        ],
+        [
+          "Repair",
+          true
+        ],
+        [
+          " = Mutator Phenotype",
+          false
+        ]
+      ],
+      "body_html": "<div class=\"stack\">\n  <div class=\"wire\"><b>Mutator phenotype</b><span>≥30 repair genes — when any is mutated, damage accumulates faster than correction. The cell becomes a mutation factory.</span></div>\n  <div class=\"wire\"><b>Lynch syndrome (HNPCC)</b><span>MMR defects: MLH1, MSH2, MSH6, PMS2 — mismatch repair gone → colorectal and ovarian cancers</span></div>\n  <div class=\"wire\"><b>Xeroderma pigmentosum</b><span>NER defect — the only pathway for UV pyrimidine dimers → UV hypersensitivity → frequent skin cancers</span></div>\n</div>",
+      "beats": [
+        {
+          "text": "Here is the payoff of the last three slides: what happens when repair itself is broken. Mutations in at least thirty DNA-repair genes raise cancer susceptibility — and the underlying state has a name worth knowing: the mutator phenotype. The logic is simple and now familiar: with repair impaired, damage accumulates faster than it can be corrected. The cell becomes a mutation factory. Two concrete examples tie it together. Defects in the mismatch-repair genes — MLH1, MSH2, MSH6, and PMS2 — cause Lynch syndrome, also called HNPCC, and ovarian cancers. Inheriting just one defective mismatch-repair copy already gives a marked predisposition. And xeroderma pigmentosum is a defect in nucleotide excision repair — and NER is the only pathway that fixes UV pyrimidine dimers. So these patients are extraordinarily sensitive to sunlight and develop frequent skin cancers. That is the excision-repair pathway from two slides ago, seen through the lens of its failure. This field is foundational enough that the 2015 Nobel Prize in Chemistry went to Lindahl and Sancar for working out DNA-repair mechanisms.",
+          "actual_duration_s": 62.02,
+          "audio_file": "audio/S20.mp3"
+        }
+      ]
+    },
+    {
+      "id": "S21",
+      "num": 21,
+      "section": "§4.5 GENOMIC INSTABILITY",
+      "title": [
+        [
+          "Cancer Behaves as an ",
+          false
+        ],
+        [
+          "Evolutionary",
+          true
+        ],
+        [
+          " Process",
+          false
+        ]
+      ],
+      "body_html": "<p class=\"thesis\">Cancer is an <b>evolutionary</b> process among somatic cells — variation, selection, and descent, all inside one body. Genetic instability raises the probability of hitting a malignant mutation.</p>",
+      "beats": [
+        {
+          "text": "Now we synthesize everything into the chapter's big idea. Genetic instability promotes cancer because it raises the probability of hitting a malignant mutation — more shots on goal, more chances for the dangerous one. The best frame is evolutionary: cancer behaves as an evolutionary process playing out among your somatic cells — variation, selection, and descent, all inside one body. That is why carcinogenesis is linked with mutagenesis — the two travel together — and why agents that cause cancer so often also cause genetic change. If something damages DNA, suspect it as a carcinogen. And here is the counterintuitive punchline: some degree of instability appears to be essential for cancer progression. A tumor needs enough genetic churn to keep evolving new capabilities — which, as the next slide shows, is a balance the cell normally guards carefully.",
+          "actual_duration_s": 42.39,
+          "audio_file": "audio/S21.mp3"
+        }
+      ]
+    },
+    {
+      "id": "S22",
+      "num": 22,
+      "section": "§4.5.2 TYPES OF INSTABILITY",
+      "title": [
+        [
+          "CIN at the ",
+          false
+        ],
+        [
+          "Chromosome",
+          true
+        ],
+        [
+          " Level, MSI at Sequence",
+          false
+        ]
+      ],
+      "body_html": "<div class=\"balance\">\n  <div class=\"pan die\"><b>Chromosomal instability (CIN)</b><span>55–70+ chromosomes in non-HNPCC colorectal tumors vs. normal 46. Whole-chromosome-level chaos.</span></div>\n  <div class=\"fulcrum\">vs</div>\n  <div class=\"pan\"><b>Microsatellite instability (MSI)</b><span>HNPCC tumors: karyotype near-normal. Sequence-level errors accumulate due to MMR defects.</span></div>\n</div>\n<p class=\"lead\">Losing TP53 is trebly dangerous: cell-cycle escape + apoptosis escape + genetic instability — all from one loss.</p>",
+      "beats": [
+        {
+          "text": "Instability is not one thing, so let us distinguish its forms. Chromosomal instability — CIN — is the big one; it explains how cancers accumulate so many genetic changes at the level of whole chromosomes. There is also microsatellite instability, and here is a telling contrast: in HNPCC tumors, the ones with mismatch-repair defects, the karyotype is actually near-normal — the instability is at the sequence level, not the chromosome level. Compare that to most non-HNPCC colorectal tumors, which carry 55 to 70-plus chromosomes instead of the normal 46 — massive chromosomal chaos. Two different flavors of instability, two different-looking genomes. And p53 comes back one more time: losing it is trebly dangerous — the cell escapes cell-cycle arrest, escapes apoptosis, and gains genetic instability, all from one loss. Chromosomal instability likely arises early in progression in many tumors, setting the stage for everything that follows.",
+          "actual_duration_s": 50.22,
+          "audio_file": "audio/S22.mp3"
+        }
+      ]
+    },
+    {
+      "id": "S23",
+      "num": 23,
+      "section": "§4.5.4 GENOMIC LANDSCAPE",
+      "title": [
+        [
+          "",
+          false
+        ],
+        [
+          "Drivers",
+          true
+        ],
+        [
+          " Propel the Cancer; Passengers Ride",
+          false
+        ]
+      ],
+      "body_html": "<div class=\"grid2\">\n  <div class=\"cell-part hot\"><b>Driver mutations</b><span>Propel the cancer forward — the short, recurrent list that makes targeted therapy feasible. Early changes beget later changes.</span></div>\n  <div class=\"cell-part\"><b>Passenger mutations</b><span>Incidental — along for the ride. Many genes are rarely mutated. Clonal selection favors the aggressive lineages.</span></div>\n</div>\n<p class=\"lead\">Cancer genomes span a single changed base to the shattering of entire chromosomes. Resistance and relapse trace to new driver mutations arising in the tumor.</p>",
+      "beats": [
+        {
+          "text": "Let us bring it to the clinic and the genome as a whole. Cancer genomes span the full range — from a single changed base all the way to the shattering of entire chromosomes. It is a landscape, not a single lesion. The most useful distinction in that landscape is driver versus passenger. Driver mutations actually propel the cancer forward; passenger mutations are just along for the ride, incidental. Therapy aims at the drivers. Encouragingly, the list of recurrently mutated driver genes is fairly short — many genes are only rarely mutated. That short list is what makes targeted therapy feasible. Two accelerants make this a runaway process: early changes beget later changes, and clonal selection favors the most aggressive lineages — the same evolutionary logic from before. The clinical stakes are direct: treatment resistance and relapse can be traced to different mutations arising in the tumor. BCR-ABL independently drives instability, and BCR rearrangements help predict how a patient will respond to therapy.",
+          "actual_duration_s": 52.48,
+          "audio_file": "audio/S23.mp3"
+        }
+      ]
+    },
+    {
+      "id": "S24",
+      "num": 24,
+      "section": "SUMMARY",
+      "title": [
+        [
+          "Stability to Survive, ",
+          false
+        ],
+        [
+          "Change",
+          true
+        ],
+        [
+          " to Evolve",
+          false
+        ]
+      ],
+      "body_html": "<div class=\"close\">\n  <div class=\"close-tags\">\n    <span>DNA</span><span>·</span><span>Mutations</span><span>·</span><span>Chromosomes</span><span>·</span><span>Repair</span><span>·</span><span>Instability</span>\n  </div>\n  <p class=\"callout\"><b>Short-term</b> survival needs stable DNA; <b>long-term</b> evolutionary survival needs DNA that is changeable — cancer is what happens when a cell breaks this balance in its own favor.</p>\n  <div class=\"sig\">Cancer Genetics &amp; Genomic Instability · Ch. 4 · Cancer Medicine</div>\n</div>",
+      "beats": [
+        {
+          "text": "Let us consolidate. The one sentence to leave with: cancer is fundamentally a genetic disease. Order in the genome depends on two things working together — accurate DNA replication, and continual surveillance and repair. And they are under constant assault: DNA is continually damaged by chemicals, radiation, and ordinary metabolic accidents. Everything we covered interlocks — replication, mutation, chromosomal change, repair, and instability are not separate topics but one connected system. When fidelity is lost, mutations accumulate, and that accumulation drives malignant transformation. Here is the deep tension to remember: short-term survival needs DNA that is stable, but long-term evolutionary survival needs DNA that is changeable — and cancer is what happens when a cell breaks that balance in its own favor. Reading a tumor's genetics — its drivers, its repair defects, its instability — is exactly what drives precision medicine. That is Chapter Four — thank you.",
+          "actual_duration_s": 49.11,
+          "audio_file": "audio/S24.mp3"
+        }
+      ]
+    }
+  ]
+}

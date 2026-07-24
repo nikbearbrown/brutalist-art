@@ -33,9 +33,10 @@ does, and flags. Media, `node_modules`, and `.git` were excluded at gather time.
 | Skill | Source | What it does | Flags |
 |---|---|---|---|
 | `script-writer` | `books/vox/aspects/teardown-script` | Turns any text into a style-agnostic script + `beat_sheet.json` (shot.source left open). Upstream of the builders. | Ships `reference/example/beat_sheet.json`. |
-| `terminal-screencast` | `books/vox/aspects/cli` | CLI video — terminal in, moving output out; fixed spine (INTRO→PROBLEM→ASK→CODE→OUTPUT→…→OUTRO). | Ships `reference/example-cli-beat_sheet.json`. |
+| `cli-explainer` | `books/vox/aspects/cli` | CLI video — terminal in, moving output out; fixed spine (INTRO→PROBLEM→ASK→CODE→OUTPUT→…→OUTRO). | Ships `reference/example-cli-beat_sheet.json`. |
 | `code-walkthrough` | `books/vox/aspects/simulation` | "Build it with Claude Code + Manim" workflow reel. | Emits `beat_sheet.json` + `scenes.py`. |
 | `explainer` | `books/vox/aspects/explainer/vox-explainer` | The flagship: per-beat best-tool mp4 (Manim + Ken Burns + AI video + Remotion annotation plane), composited at the end. Two-axis shot system, slot contract. | Absorbed `vox-explainer-unreal` (deleted; older `animated_graphics.py` without the palette registry). |
+| `doodle` | new (2026-07-22, this repo) | organized-svg icon library (524 potrace icons) + vendored rough.js -> hand-drawn Remotion beats (DoodleScene/DoodleChart); full doodle reels or per-beat fills in any reel. | Vendors roughjs 4.6.6 + Shadows Into Light (OFL); no npm/network at build time. |
 | `sketch-explainer` | `books/unreal-reels/aspects/explainer/bears-doodles` | ~1-min-style MinutePhysics progressive-disclosure sketch explainer. | |
 | `math-explainer` | `books/unreal-reels/aspects/explainer/brownblue` | 3–8 min pure-Manim 3Blue1Brown-style explainer. | Reuses sketch-explainer scripts. |
 | `explainer-deepen` | `books/unreal-reels/aspects/explainer/brownblue-convert` | Audits a sketch vs math-explainer depth; rewrites into a deeper version. | Ships `scripts/audit.py`. |
@@ -59,7 +60,7 @@ does, and flags. Media, `node_modules`, and `.git` were excluded at gather time.
 ### Audience presets (brand variants)
 | Skill | Source | What it does | Flags |
 |---|---|---|---|
-| `hai` | `books/vox/aspects/hai` (promoted from `audience-preset/brands/hai.md`) | Creates a HAI (Humanitarians AI) cut — Pragmatist register, Kokoro af_heart, humanitarians palette. Writes into a **new `hai-` directory**; adds CLI worked exercise (second-to-last) + Humanitarians AI outro (last). Brand spec: `audience-preset/brands/hai.md`. Runtime: `brand_variant.py hai`. | First-class skill; former `hai` re-promoted with directory convention + CLI exercise + outro beats. |
+| `hai` | `books/vox/aspects/hai` (promoted from `audience-preset/brands/hai.md`) | Creates a HAI (Humanitarians AI) cut — Pragmatist register, Kokoro am_onyx, humanitarians palette. Writes into a **new `hai-` directory**; adds CLI worked exercise (second-to-last) + Humanitarians AI outro (last). Brand spec: `audience-preset/brands/hai.md`. Runtime: `brand_variant.py hai`. | First-class skill; former `hai` re-promoted with directory convention + CLI exercise + outro beats. |
 | `nbb` | `books/vox/aspects/nbb` (new first-class skill) | Creates a NikBearBrown cut — Teardown register (Feynman × MKBHD), ElevenLabs NIKBEARBROWN voice (paid, no Kokoro), teardown palette. Writes into a **new `nbb-` directory**; adds LLM exercise + dig-deeper (second-to-last) + NikBearBrown outro (last). Brand spec: `audience-preset/brands/nbb.md`. Runtime: `brand_variant.py nbb`. GATE P before audio spend. | First-class skill; nbb was the undocumented default brand — now explicit with directory convention + LLM exercise beat. |
 | `audience-preset` | `books/vox/aspects/{hai,medhavy,neu}` | Brand variant for medhavy/neu/musinique → `beat_sheet.<brand>.json` sibling; hai/nbb/medhavy → `<brand>-` directory. Never touches the canonical sheet. Brands: `brands/{hai,medhavy,neu,nbb}.md`. | Merge of three skills; runtime is `brand_variant.py`. `hai` + `nbb` delegate to their own SKILL.md. |
 
@@ -102,7 +103,7 @@ does, and flags. Media, `node_modules`, and `.git` were excluded at gather time.
 | Folder | Source | Type it demonstrates |
 |---|---|---|
 | `00-story-film-demos/` | `books/unreal-reels/examples` | `bios-demo`, `explainer-demo`, `songbird-demo` (text seeds). |
-| `terminal-screencast--compression-journey/` | `books/embedded-ai/youtube/cli-compression-journey` | `terminal-screencast`. |
+| `terminal-screencast--compression-journey/` | `books/embedded-ai/youtube/cli-compression-journey` | `cli-explainer`. |
 | `explainer--size-paradox/` | `books/cancer-nanomedicine/youtube/vox-size-paradox` | `explainer`. |
 | `slate-cut--base-rate/` | `books/unreal-reels/reels/vox-base-rate` | The no-key slate cut (the previz — every ungeneratable beat renders as a named slate). |
 | `music-video--c-is-for-cookie/` | `books/unreal-reels/music/c-is-for-cookie` | `music-video`. |

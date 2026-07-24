@@ -104,9 +104,9 @@ type, not an optional extra. See the lead P0 in Theme 3; this reverses D4.
 - **Acceptance:** `LICENSE` (MIT) at root, referenced from README.
 - **Effort:** S
 
-### [P1] Give `terminal-screencast`, `remotion-explainer`, `collage-ads` CAPABILITIES + doctor rows
+### [P1] Give `cli-explainer`, `remotion-explainer`, `collage-ads` CAPABILITIES + doctor rows
 - **Repo:** brutalist-art
-- **Evidence:** all three have real SKILL.md + appear in `./art --list`; none has a `CAPABILITIES.md` row, and `setup`'s `FEATURES` array has no `terminal-screencast`/`remotion-explainer`/`collage-ads` entry.
+- **Evidence:** all three have real SKILL.md + appear in `./art --list`; none has a `CAPABILITIES.md` row, and `setup`'s `FEATURES` array has no `cli-explainer`/`remotion-explainer`/`collage-ads` entry.
 - **Why:** shipped video-producing skills are invisible on the two at-a-glance surfaces users are told to consult.
 - **Acceptance:** each gets a CAPABILITIES row + `./setup <name>` readiness row (or an explicit "helper, not a standalone type" note).
 - **Effort:** M
@@ -206,7 +206,7 @@ type, not an optional extra. See the lead P0 in Theme 3; this reverses D4.
 
 ### [P2] Stale "not yet built" / stale-path docs in built skills
 - **Repo:** brutalist-art
-- **Evidence:** `component-showcase/remotion/PROJECT.md:85` says the harness is "not yet built" but `src/harness/OndaScene.tsx`+`registry.ts`+`fixtures/data.ts` now exist (reverse gap). `terminal-screencast/SKILL.md:67-69` and `slate-filler/SKILL.md:114-128` and `code-walkthrough/preflight.sh:49-56` all point at the moved `aspects/remotion-pass/remotion/` (now `runtime/remotion/`); the Onda restyle scenes are unbuilt but have a working fallback.
+- **Evidence:** `component-showcase/remotion/PROJECT.md:85` says the harness is "not yet built" but `src/harness/OndaScene.tsx`+`registry.ts`+`fixtures/data.ts` now exist (reverse gap). `cli-explainer/SKILL.md:67-69` and `slate-filler/SKILL.md:114-128` and `code-walkthrough/preflight.sh:49-56` all point at the moved `aspects/remotion-pass/remotion/` (now `runtime/remotion/`); the Onda restyle scenes are unbuilt but have a working fallback.
 - **Acceptance:** built-harness doc updated; remotion project references repointed to `runtime/remotion/`; `preflight.sh` can reach "Ready".
 - **Effort:** S
 

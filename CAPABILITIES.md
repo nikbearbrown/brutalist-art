@@ -22,7 +22,7 @@ narration · **$$** AI image/video (higgsfield CLI).
 | **lyric-resync** | Re-cut a video so each beat matches its lyric (image-to-video) | higgsfield | jq | $$ | *(to add)* | the source video + lyrics |
 | **dance-video** | A character dancing on the beat | higgsfield | jq | $$ | *(to add)* | the song + a character reference |
 | **story-film** | Story → narrated AI film, one beat per scene | ELEVENLABS + higgsfield | jq | $$ | `00-story-film-demos` | the story/script |
-| **terminal-screencast** | CLI video: terminal in, animated output out | ELEVENLABS | Node/Remotion | $ | `terminal-screencast--compression-journey` | the terminal session to feature |
+| **cli-explainer** | CLI video: terminal in, animated output out | ELEVENLABS | Node/Remotion | $ | `terminal-screencast--compression-journey` | the terminal session to feature |
 | **ai-asset-gen** | Images/video/3D/audio via the higgsfield CLI | higgsfield | jq | $$ | — | the prompt/brief |
 | **line-art-vectorizer** | Clean SVGs from B/W line art | none | vtracer | free | — | the line-art image |
 | **figure-planner** | Figure plans + SVG→PNG rendering | none | Node (sharp) | free | — | the chapter/prose to plan figures for |
@@ -49,7 +49,7 @@ can mix engines and voices — e.g. one beat in the human's ElevenLabs clone, th
 | Brand | Kokoro voice | ElevenLabs override (env var) | Notes |
 |---|---|---|---|
 | **brutalist / nbb** | *(ElevenLabs only)* | `ELEVENLABS_VOICE_NIKBEARBROWN` | The only paid brand default |
-| **hai** (Humanitarians AI) | `af_heart` | `ELEVENLABS_VOICE_HUMANITARIANS` | Pragmatist register |
+| **hai** (Humanitarians AI) | `am_onyx` | `ELEVENLABS_VOICE_HUMANITARIANS` | Pragmatist register |
 | **medhavy** | `af_kore` | `ELEVENLABS_VOICE_MEDHAVY` | Wonder register |
 | **musinique** | `am_puck` | `ELEVENLABS_VOICE_MUSINIQUE` | Teardown register; monochrome/Inter palette |
 | **neu** | `bm_fable` | `ELEVENLABS_VOICE_NEU` → NIKBEARBROWN fallback (opt-in only) | Northeastern brand laws apply |

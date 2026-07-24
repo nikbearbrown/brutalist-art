@@ -1,0 +1,7 @@
+CC0
+SI_ID: ld1-1643398775873-1643398779408-0
+Title: Dr. John F. Enders' Flasks of Poliovirus Cultures
+Unit: NMAH
+Credit: 
+Source URL: https://ids.si.edu/ids/deliveryService?id=NMAH-2005-2467
+License: CC0 — Smithsonian Open Access https://www.si.edu/openaccess

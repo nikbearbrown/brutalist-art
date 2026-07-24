@@ -27,7 +27,7 @@ column for the whole family.
 | `art` dispatcher + GLOSSARY alias resolution | **Works** — `--list` maps 34 skills incl. old names (cosmetic mangle on one multi-source name) | #18 |
 | `./art todo <reel>` beat ledger | **Works** — `todo.py --help` runs | — |
 | `./art run <reel>` end-to-end compile | **Broken on shipped examples** — dead `aspects/` import in every `scenes.py`; GATE F missing PROMPTS.md; QC + outro no-op | Theme 1 |
-| `./setup` readiness table | **Present, sound** — degrades optional gracefully; missing rows for terminal-screencast/remotion-explainer/collage-ads | Theme 2 |
+| `./setup` readiness table | **Present, sound** — degrades optional gracefully; missing rows for cli-explainer/remotion-explainer/collage-ads | Theme 2 |
 | 34 media skills (SKILL.md each) | **Present as docs; ~55 command paths stale** (`aspects/…`) | Theme 1 |
 | `runtime/manim/animated_graphics.py` | **Present** (~728 lines); skill-local copy diverges (VOX_PALETTE, books/vox) | Theme 1 |
 | `runtime/remotion/` scenes | **Present** (NikBearBrown/Medhavy/Brutalist); some stale strings | Theme 5 |
