@@ -1,0 +1,1451 @@
+[build_ai1_sim_reels] 108 sims  out=/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers
+
+[Phase-0] smoke test on 00-wave-packet-spreading.html…
+[Phase-0] PASSED ✓
+
+[1/108] 00-wave-packet-spreading
+[build] SKIP  00-wave-packet-spreading
+[log] 00-wave-packet-spreading  SKIPPED  already built (2530 KB)
+
+[2/108] 01-uncertainty-minimizer
+[build] SKIP  01-uncertainty-minimizer
+[log] 01-uncertainty-minimizer  SKIPPED  already built (1279 KB)
+
+[3/108] 02-infinite-well-superposition
+[build] SKIP  02-infinite-well-superposition
+[log] 02-infinite-well-superposition  SKIPPED  already built (2006 KB)
+
+[4/108] 03-coherent-state-oscillator
+[build] SKIP  03-coherent-state-oscillator
+[log] 03-coherent-state-oscillator  SKIPPED  already built (1163 KB)
+
+[5/108] 04-uncertainty-ensemble
+[build] SKIP  04-uncertainty-ensemble
+[log] 04-uncertainty-ensemble  SKIPPED  already built (1332 KB)
+
+[6/108] 05-spherical-harmonics-cone
+
+================================================================
+[build] START  05-spherical-harmonics-cone
+[build] title='Spherical Harmonics & Angular Momentum Cone'  ctrl='main slider from 0 to 4'
+[build] beat_sheet.json written (11 beats)
+[build] capturing 05-spherical-harmonics-cone…
+[build] captured  output=158KB change=331KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  05-spherical-harmonics-cone  1373KB
+[log] 05-spherical-harmonics-cone  BUILT  1373 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/05-spherical-harmonics-cone/05-spherical-harmonics-cone-review.mp4`
+
+[7/108] 06-stern-gerlach-sequential
+
+================================================================
+[build] START  06-stern-gerlach-sequential
+[build] title='Sequential Stern-Gerlach — Born Rule & Measurement Disturbance'  ctrl='γ (angle) from 0 to 180'
+[build] beat_sheet.json written (11 beats)
+[build] capturing 06-stern-gerlach-sequential…
+[build] FAIL  06-stern-gerlach-sequential: capture_sim failed: [capture_sim] sim=06-stern-gerlach-sequential.html  reel=/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/06-stern-gerlach-sequential [capture_sim] recording baseline: http://127.0.0.1:63723/06-stern-gerlach-sequential.html  [capture_sim]
+[log] 06-stern-gerlach-sequential  FAILED  capture_sim failed: [capture_sim] sim=06-stern-gerlach-sequential.html  reel=/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/06-stern-gerlach-sequential [capture_sim] recording baseline: http://127.0.0.1:63723/06-stern-gerlach-sequential.html  [capture_sim]
+
+[8/108] 07-hydrogen-radial-density
+
+================================================================
+[build] START  07-hydrogen-radial-density
+[build] title='Hydrogen Radial Probability Density'  ctrl='x = from 0 to 1'
+[build] beat_sheet.json written (11 beats)
+[build] capturing 07-hydrogen-radial-density…
+[build] captured  output=106KB change=226KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  07-hydrogen-radial-density  1333KB
+[log] 07-hydrogen-radial-density  BUILT  1333 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/07-hydrogen-radial-density/07-hydrogen-radial-density-review.mp4`
+
+[9/108] 08-two-particle-symmetry
+
+================================================================
+[build] START  08-two-particle-symmetry
+[build] title='08 — Two-Particle Symmetry: Bosons, Fermions, Distinguishable'  ctrl='main control'
+[build] beat_sheet.json written (11 beats)
+[build] capturing 08-two-particle-symmetry…
+[build] FAIL  08-two-particle-symmetry: capture_sim failed: [capture_sim] sim=08-two-particle-symmetry.html  reel=/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/08-two-particle-symmetry [capture_sim] recording baseline: http://127.0.0.1:63762/08-two-particle-symmetry.html  [capture_sim] FAILED: 
+[log] 08-two-particle-symmetry  FAILED  capture_sim failed: [capture_sim] sim=08-two-particle-symmetry.html  reel=/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/08-two-particle-symmetry [capture_sim] recording baseline: http://127.0.0.1:63762/08-two-particle-symmetry.html  [capture_sim] FAILED: 
+
+[10/108] 09-asymptotic-perturbation
+
+================================================================
+[build] START  09-asymptotic-perturbation
+[build] title='Asymptotic Series & Perturbation Theory — Anharmonic Oscillator'  ctrl='main slider from 0 to 100'
+[build] beat_sheet.json written (11 beats)
+[build] capturing 09-asymptotic-perturbation…
+[build] captured  output=166KB change=391KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  09-asymptotic-perturbation  1453KB
+[log] 09-asymptotic-perturbation  BUILT  1453 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/09-asymptotic-perturbation/09-asymptotic-perturbation-review.mp4`
+
+[11/108] 09-hydrogen-stark-effect
+
+================================================================
+[build] START  09-hydrogen-stark-effect
+[build] title='Hydrogen Stark Effect — n=2 Shell'  ctrl='main slider from 0 to 20000000'
+[build] beat_sheet.json written (11 beats)
+[build] capturing 09-hydrogen-stark-effect…
+[build] captured  output=163KB change=355KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  09-hydrogen-stark-effect  1347KB
+[log] 09-hydrogen-stark-effect  BUILT  1347 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/09-hydrogen-stark-effect/09-hydrogen-stark-effect-review.mp4`
+
+[12/108] 10-rabi-vs-perturbation-theory
+
+================================================================
+[build] START  10-rabi-vs-perturbation-theory
+[build] title='Rabi Oscillations vs Perturbation Theory'  ctrl='δ/Ω = from 0 to 3'
+[build] beat_sheet.json written (11 beats)
+[build] capturing 10-rabi-vs-perturbation-theory…
+[build] captured  output=164KB change=411KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  10-rabi-vs-perturbation-theory  1817KB
+[log] 10-rabi-vs-perturbation-theory  BUILT  1817 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/10-rabi-vs-perturbation-theory/10-rabi-vs-perturbation-theory-review.mp4`
+
+[13/108] 11-geiger-nuttall-alpha-decay
+
+================================================================
+[build] START  11-geiger-nuttall-alpha-decay
+[build] title='Geiger-Nuttall Law — Alpha Decay & Gamow Tunneling'  ctrl='main slider from -2 to 2'
+[build] beat_sheet.json written (11 beats)
+[build] capturing 11-geiger-nuttall-alpha-decay…
+[build] captured  output=126KB change=351KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  11-geiger-nuttall-alpha-decay  1614KB
+[log] 11-geiger-nuttall-alpha-decay  BUILT  1614 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/11-geiger-nuttall-alpha-decay/11-geiger-nuttall-alpha-decay-review.mp4`
+
+[14/108] 11-tunneling-wave-packet
+
+================================================================
+[build] START  11-tunneling-wave-packet
+[build] title='Tunneling Wave Packet — Crank-Nicolson TDSE'  ctrl='Barrier height V₀ (eV) from 1.2 to 4.0'
+[build] beat_sheet.json written (11 beats)
+[build] capturing 11-tunneling-wave-packet…
+[build] captured  output=514KB change=457KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  11-tunneling-wave-packet  1943KB
+[log] 11-tunneling-wave-packet  BUILT  1943 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/11-tunneling-wave-packet/11-tunneling-wave-packet-review.mp4`
+
+[15/108] 11-wkb-vs-exact-transmission
+
+================================================================
+[build] START  11-wkb-vs-exact-transmission
+[build] title='WKB vs Exact Transmission — Rectangular Barrier'  ctrl='V₀ (eV) from 0.5 to 3'
+[build] beat_sheet.json written (11 beats)
+[build] capturing 11-wkb-vs-exact-transmission…
+[build] captured  output=118KB change=515KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  11-wkb-vs-exact-transmission  1866KB
+[log] 11-wkb-vs-exact-transmission  BUILT  1866 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/11-wkb-vs-exact-transmission/11-wkb-vs-exact-transmission-review.mp4`
+
+[16/108] 12-chsh-bell-inequality
+
+================================================================
+[build] START  12-chsh-bell-inequality
+[build] title='CHSH Bell Inequality'  ctrl='main slider from 0 to 360'
+[build] beat_sheet.json written (11 beats)
+[build] capturing 12-chsh-bell-inequality…
+[build] captured  output=130KB change=434KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  12-chsh-bell-inequality  1741KB
+[log] 12-chsh-bell-inequality  BUILT  1741 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/12-chsh-bell-inequality/12-chsh-bell-inequality-review.mp4`
+
+[17/108] 13-bloch-decoherence
+
+================================================================
+[build] START  13-bloch-decoherence
+[build] title='Bloch Sphere Decoherence — T₁, T₂, T_φ'  ctrl='main slider from 0 to 100'
+[build] beat_sheet.json written (11 beats)
+[build] capturing 13-bloch-decoherence…
+[build] captured  output=120KB change=375KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  13-bloch-decoherence  1497KB
+[log] 13-bloch-decoherence  BUILT  1497 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/13-bloch-decoherence/13-bloch-decoherence-review.mp4`
+
+[18/108] 13-nv-center-odmr
+
+================================================================
+[build] START  13-nv-center-odmr
+[build] title='NV Center ODMR — Quantum Magnetometry'  ctrl='B-field from 0 to 15'
+[build] beat_sheet.json written (11 beats)
+[build] capturing 13-nv-center-odmr…
+[build] captured  output=87KB change=331KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  13-nv-center-odmr  1304KB
+[log] 13-nv-center-odmr  BUILT  1304 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/13-nv-center-odmr/13-nv-center-odmr-review.mp4`
+
+[19/108] bgp-counting-to-infinity
+
+================================================================
+[build] START  bgp-counting-to-infinity
+[build] title='BGP vs Bellman-Ford: Counting to Infinity'  ctrl='main control'
+[build] beat_sheet.json written (11 beats)
+[build] capturing bgp-counting-to-infinity…
+[build] captured  output=115KB change=194KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  bgp-counting-to-infinity  1538KB
+[log] bgp-counting-to-infinity  BUILT  1538 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/bgp-counting-to-infinity/bgp-counting-to-infinity-review.mp4`
+
+[20/108] bloch-sphere-qubit-explorer
+
+================================================================
+[build] START  bloch-sphere-qubit-explorer
+[build] title='Bloch Sphere Qubit Explorer'  ctrl='main control'
+[build] beat_sheet.json written (11 beats)
+[build] capturing bloch-sphere-qubit-explorer…
+[build] captured  output=70KB change=126KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  bloch-sphere-qubit-explorer  1164KB
+[log] bloch-sphere-qubit-explorer  BUILT  1164 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/bloch-sphere-qubit-explorer/bloch-sphere-qubit-explorer-review.mp4`
+
+[21/108] borwein-integrals
+
+================================================================
+[build] START  borwein-integrals
+[build] title='Borwein Integrals: A Pattern That Breaks at Step 8'  ctrl='main control'
+[build] beat_sheet.json written (11 beats)
+[build] capturing borwein-integrals…
+[build] captured  output=62KB change=173KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  borwein-integrals  1365KB
+[log] borwein-integrals  BUILT  1365 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/borwein-integrals/borwein-integrals-review.mp4`
+
+[22/108] covering-rationals-intervals
+
+================================================================
+[build] START  covering-rationals-intervals
+[build] title='Covering Rationals: A Dense Set With Measure Zero'  ctrl='main slider from 1 to 50'
+[build] beat_sheet.json written (11 beats)
+[build] capturing covering-rationals-intervals…
+[build] captured  output=95KB change=217KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  covering-rationals-intervals  1335KB
+[log] covering-rationals-intervals  BUILT  1335 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/covering-rationals-intervals/covering-rationals-intervals-review.mp4`
+
+[23/108] curse-of-dimensionality
+
+================================================================
+[build] START  curse-of-dimensionality
+[build] title='Curse of Dimensionality: Local Becomes Global'  ctrl='Fraction to capture f = from 0.01 to 0.5'
+[build] beat_sheet.json written (11 beats)
+[build] capturing curse-of-dimensionality…
+[build] captured  output=79KB change=341KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  curse-of-dimensionality  1412KB
+[log] curse-of-dimensionality  BUILT  1412 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/curse-of-dimensionality/curse-of-dimensionality-review.mp4`
+
+[24/108] cv-filter-leakage
+
+================================================================
+[build] START  cv-filter-leakage
+[build] title='CV Filter Leakage: 5000 Random Predictors Report 0% Error'  ctrl='main slider from 100 to 5000'
+[build] beat_sheet.json written (11 beats)
+[build] capturing cv-filter-leakage…
+[build] captured  output=284KB change=465KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  cv-filter-leakage  1998KB
+[log] cv-filter-leakage  BUILT  1998 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/cv-filter-leakage/cv-filter-leakage-review.mp4`
+
+[25/108] epidemic-growth-factor
+
+================================================================
+[build] START  epidemic-growth-factor
+[build] title="Epidemic Growth Factor: One Month's Warning"  ctrl='main slider from 90 to 135'
+[build] beat_sheet.json written (11 beats)
+[build] capturing epidemic-growth-factor…
+[build] captured  output=119KB change=457KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  epidemic-growth-factor  1493KB
+[log] epidemic-growth-factor  BUILT  1493 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/epidemic-growth-factor/epidemic-growth-factor-review.mp4`
+
+[26/108] fft-vs-naive-convolution
+
+================================================================
+[build] START  fft-vs-naive-convolution
+[build] title='FFT vs Naive Convolution: A 1000× Speedup from Math'  ctrl='n = from 1 to 6'
+[build] beat_sheet.json written (11 beats)
+[build] capturing fft-vs-naive-convolution…
+[build] captured  output=217KB change=423KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  fft-vs-naive-convolution  1953KB
+[log] fft-vs-naive-convolution  BUILT  1953 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/fft-vs-naive-convolution/fft-vs-naive-convolution-review.mp4`
+
+[27/108] fourier-transform-winding
+
+================================================================
+[build] START  fourier-transform-winding
+[build] title='The Fourier Transform: Winding a Signal Around a Circle'  ctrl='Signal from 0 to 6'
+[build] beat_sheet.json written (11 beats)
+[build] capturing fourier-transform-winding…
+[build] captured  output=165KB change=561KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  fourier-transform-winding  1915KB
+[log] fourier-transform-winding  BUILT  1915 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/fourier-transform-winding/fourier-transform-winding-review.mp4`
+
+[28/108] fractal-dimension-explore
+
+================================================================
+[build] START  fractal-dimension-explore
+[build] title='Fractal Dimension: Between Curve and Plane'  ctrl='N (copies) from 2 to 9'
+[build] beat_sheet.json written (11 beats)
+[build] capturing fractal-dimension-explore…
+[build] captured  output=188KB change=2767KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  fractal-dimension-explore  4266KB
+[log] fractal-dimension-explore  BUILT  4266 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/fractal-dimension-explore/fractal-dimension-explore-review.mp4`
+
+[29/108] gene-drive-spread
+
+================================================================
+[build] START  gene-drive-spread
+[build] title='Gene Drive: One Edit Floods a Million Mosquitoes'  ctrl='Drive inheritance rate (d) from 0.5 to 1.0'
+[build] beat_sheet.json written (11 beats)
+[build] capturing gene-drive-spread…
+[build] captured  output=129KB change=291KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] FAIL  gene-drive-spread: compile: r -1145393733 occurred) [vist#0:0/h264 @ 0x8a0c0c180] [dec:h264 @ 0x8a1018a00] Terminating thread with return code -1145393733 (Error number -1145393733 occurred) [out#0/mp4 @ 0x8a0c60a80] Nothing was written into output file, because at least one of its streams received no packets. frame= 
+[log] gene-drive-spread  FAILED  compile: r -1145393733 occurred) [vist#0:0/h264 @ 0x8a0c0c180] [dec:h264 @ 0x8a1018a00] Terminating thread with return code -1145393733 (Error number -1145393733 occurred) [out#0/mp4 @ 0x8a0c60a80] Nothing was written into output file, because at least one of its streams received no packets. frame= 
+
+[30/108] hairy-ball-cowlick
+
+================================================================
+[build] START  hairy-ball-cowlick
+[build] title='Hairy Ball Theorem — Vector Fields on S²'  ctrl='Field preset: from 0 to 360'
+[build] beat_sheet.json written (11 beats)
+[build] capturing hairy-ball-cowlick…
+[build] captured  output=164KB change=491KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  hairy-ball-cowlick  1650KB
+[log] hairy-ball-cowlick  BUILT  1650 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/hairy-ball-cowlick/hairy-ball-cowlick-review.mp4`
+
+[31/108] hermitian-eigenvalue-explorer
+
+================================================================
+[build] START  hermitian-eigenvalue-explorer
+[build] title='Hermitian Eigenvalue Explorer'  ctrl='main control'
+[build] beat_sheet.json written (11 beats)
+[build] capturing hermitian-eigenvalue-explorer…
+[build] captured  output=68KB change=125KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  hermitian-eigenvalue-explorer  1320KB
+[log] hermitian-eigenvalue-explorer  BUILT  1320 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/hermitian-eigenvalue-explorer/hermitian-eigenvalue-explorer-review.mp4`
+
+[32/108] high-d-sphere-volume
+
+================================================================
+[build] START  high-d-sphere-volume
+[build] title='High-D Sphere Volume: Peaks at n=5, Then Shrinks to Zero'  ctrl='Dimension n (cursor) from 0 to 25'
+[build] beat_sheet.json written (11 beats)
+[build] capturing high-d-sphere-volume…
+[build] captured  output=190KB change=229KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  high-d-sphere-volume  1777KB
+[log] high-d-sphere-volume  BUILT  1777 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/high-d-sphere-volume/high-d-sphere-volume-review.mp4`
+
+[33/108] inner-sphere-paradox
+
+================================================================
+[build] START  inner-sphere-paradox
+[build] title='The Inner Sphere Paradox: It Pokes Outside the Box in 10D'  ctrl='Dimension n from 2 to 20'
+[build] beat_sheet.json written (11 beats)
+[build] capturing inner-sphere-paradox…
+[build] captured  output=212KB change=434KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  inner-sphere-paradox  1819KB
+[log] inner-sphere-paradox  BUILT  1819 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/inner-sphere-paradox/inner-sphere-paradox-review.mp4`
+
+[34/108] karatsuba-recursion-speedup
+
+================================================================
+[build] START  karatsuba-recursion-speedup
+[build] title='Karatsuba Multiplication: 3 Recursive Calls Beat 4'  ctrl='main slider from 0 to 1'
+[build] beat_sheet.json written (11 beats)
+[build] capturing karatsuba-recursion-speedup…
+[build] captured  output=278KB change=512KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  karatsuba-recursion-speedup  1790KB
+[log] karatsuba-recursion-speedup  BUILT  1790 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/karatsuba-recursion-speedup/karatsuba-recursion-speedup-review.mp4`
+
+[35/108] knapsack-pseudopolynomial
+
+================================================================
+[build] START  knapsack-pseudopolynomial
+[build] title="Knapsack's Hidden Exponential: One Zero, Ten Times Slower"  ctrl='main slider from 1 to 8'
+[build] beat_sheet.json written (11 beats)
+[build] capturing knapsack-pseudopolynomial…
+[build] captured  output=171KB change=283KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  knapsack-pseudopolynomial  1559KB
+[log] knapsack-pseudopolynomial  BUILT  1559 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/knapsack-pseudopolynomial/knapsack-pseudopolynomial-review.mp4`
+
+[36/108] kolmogorov-turbulence-spectrum
+
+================================================================
+[build] START  kolmogorov-turbulence-spectrum
+[build] title='Kolmogorov Turbulence: The −5/3 Power Law Hidden in Chaos'  ctrl='main slider from 0.01 to 10'
+[build] beat_sheet.json written (11 beats)
+[build] capturing kolmogorov-turbulence-spectrum…
+[build] captured  output=229KB change=399KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  kolmogorov-turbulence-spectrum  1896KB
+[log] kolmogorov-turbulence-spectrum  BUILT  1896 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/kolmogorov-turbulence-spectrum/kolmogorov-turbulence-spectrum-review.mp4`
+
+[37/108] lasso-vs-ridge-geometry
+
+================================================================
+[build] START  lasso-vs-ridge-geometry
+[build] title='LASSO vs Ridge: Why a Diamond Beats a Circle for Sparsity'  ctrl='main slider from 0.1 to 2.0'
+[build] beat_sheet.json written (11 beats)
+[build] capturing lasso-vs-ridge-geometry…
+[build] captured  output=239KB change=592KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  lasso-vs-ridge-geometry  1936KB
+[log] lasso-vs-ridge-geometry  BUILT  1936 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/lasso-vs-ridge-geometry/lasso-vs-ridge-geometry-review.mp4`
+
+[38/108] qm2-exchange-pauli-node
+
+================================================================
+[build] START  qm2-exchange-pauli-node
+[build] title='Exchange Symmetry & Pauli Exclusion Node'  ctrl='Exchange K: from -50 to 50'
+[build] beat_sheet.json written (11 beats)
+[build] capturing qm2-exchange-pauli-node…
+[build] captured  output=111KB change=238KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  qm2-exchange-pauli-node  1451KB
+[log] qm2-exchange-pauli-node  BUILT  1451 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/qm2-exchange-pauli-node/qm2-exchange-pauli-node-review.mp4`
+
+[39/108] qm2-hydrogen-radial-explorer
+
+================================================================
+[build] START  qm2-hydrogen-radial-explorer
+[build] title='Hydrogen Radial Explorer — Sweep n, ℓ'  ctrl='n-select selector'
+[build] beat_sheet.json written (11 beats)
+[build] capturing qm2-hydrogen-radial-explorer…
+[build] captured  output=75KB change=123KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  qm2-hydrogen-radial-explorer  1337KB
+[log] qm2-hydrogen-radial-explorer  BUILT  1337 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/qm2-hydrogen-radial-explorer/qm2-hydrogen-radial-explorer-review.mp4`
+
+[40/108] qm2-hydrogen-transitions
+
+================================================================
+[build] START  qm2-hydrogen-transitions
+[build] title='Hydrogen Atom — Energy Levels & Transitions'  ctrl='main control'
+[build] beat_sheet.json written (11 beats)
+[build] capturing qm2-hydrogen-transitions…
+[build] captured  output=111KB change=224KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  qm2-hydrogen-transitions  1580KB
+[log] qm2-hydrogen-transitions  BUILT  1580 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/qm2-hydrogen-transitions/qm2-hydrogen-transitions-review.mp4`
+
+[41/108] qm2-madelung-exceptions
+
+================================================================
+[build] START  qm2-madelung-exceptions
+[build] title='Madelung Exceptions — 3d Transition Metals'  ctrl='K (exchange integral): from 0 to 0.40'
+[build] beat_sheet.json written (11 beats)
+[build] capturing qm2-madelung-exceptions…
+[build] captured  output=243KB change=341KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  qm2-madelung-exceptions  1496KB
+[log] qm2-madelung-exceptions  BUILT  1496 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/qm2-madelung-exceptions/qm2-madelung-exceptions-review.mp4`
+
+[42/108] qm2-rabi-oscillation
+
+================================================================
+[build] START  qm2-rabi-oscillation
+[build] title='Rabi Oscillation — Spin Flopping Between Up and Down'  ctrl='Rabi freq ω₀ / (2π) from 0.2 to 5'
+[build] beat_sheet.json written (11 beats)
+[build] capturing qm2-rabi-oscillation…
+[build] captured  output=346KB change=519KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  qm2-rabi-oscillation  1921KB
+[log] qm2-rabi-oscillation  BUILT  1921 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/qm2-rabi-oscillation/qm2-rabi-oscillation-review.mp4`
+
+[43/108] qm2-robertson-bloch-heatmap
+
+================================================================
+[build] START  qm2-robertson-bloch-heatmap
+[build] title='Robertson Bound on the Bloch Sphere'  ctrl='main control'
+[build] beat_sheet.json written (11 beats)
+[build] capturing qm2-robertson-bloch-heatmap…
+[build] captured  output=87KB change=170KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  qm2-robertson-bloch-heatmap  1234KB
+[log] qm2-robertson-bloch-heatmap  BUILT  1234 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/qm2-robertson-bloch-heatmap/qm2-robertson-bloch-heatmap-review.mp4`
+
+[44/108] qmcg-chsh-explorer
+
+================================================================
+[build] START  qmcg-chsh-explorer
+[build] title='CHSH Bell Inequality Tester'  ctrl='a₁ from 0 to 360'
+[build] beat_sheet.json written (11 beats)
+[build] capturing qmcg-chsh-explorer…
+[build] captured  output=74KB change=244KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  qmcg-chsh-explorer  1556KB
+[log] qmcg-chsh-explorer  BUILT  1556 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/qmcg-chsh-explorer/qmcg-chsh-explorer-review.mp4`
+
+[45/108] qmcg-fermis-golden-rule
+
+================================================================
+[build] START  qmcg-fermis-golden-rule
+[build] title="Fermi's Golden Rule — Transition Probability"  ctrl='Time  t from 0.1 to 20'
+[build] beat_sheet.json written (11 beats)
+[build] capturing qmcg-fermis-golden-rule…
+[build] captured  output=86KB change=335KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  qmcg-fermis-golden-rule  1574KB
+[log] qmcg-fermis-golden-rule  BUILT  1574 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/qmcg-fermis-golden-rule/qmcg-fermis-golden-rule-review.mp4`
+
+[46/108] qmcg-finite-well-explorer
+
+================================================================
+[build] START  qmcg-finite-well-explorer
+[build] title='Finite Square Well Explorer — 1D vs 3D'  ctrl='main slider from 0.05 to 100'
+[build] beat_sheet.json written (11 beats)
+[build] capturing qmcg-finite-well-explorer…
+[build] captured  output=215KB change=1485KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  qmcg-finite-well-explorer  2263KB
+[log] qmcg-finite-well-explorer  BUILT  2263 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/qmcg-finite-well-explorer/qmcg-finite-well-explorer-review.mp4`
+
+[47/108] qmcg-harmonic-oscillator-ladder
+
+================================================================
+[build] START  qmcg-harmonic-oscillator-ladder
+[build] title='Harmonic Oscillator Ladder — Uncertainty Floor'  ctrl='Level n from 0 to 10'
+[build] beat_sheet.json written (11 beats)
+[build] capturing qmcg-harmonic-oscillator-ladder…
+[build] captured  output=71KB change=157KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  qmcg-harmonic-oscillator-ladder  1207KB
+[log] qmcg-harmonic-oscillator-ladder  BUILT  1207 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/qmcg-harmonic-oscillator-ladder/qmcg-harmonic-oscillator-ladder-review.mp4`
+
+[48/108] qmcg-kronig-penney-bands
+
+================================================================
+[build] START  qmcg-kronig-penney-bands
+[build] title='Kronig-Penney Band Gap Explorer'  ctrl='main slider from 0 to 20'
+[build] beat_sheet.json written (11 beats)
+[build] capturing qmcg-kronig-penney-bands…
+[build] captured  output=323KB change=703KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  qmcg-kronig-penney-bands  1551KB
+[log] qmcg-kronig-penney-bands  BUILT  1551 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/qmcg-kronig-penney-bands/qmcg-kronig-penney-bands-review.mp4`
+
+[49/108] qmcg-quantum-statistics-explorer
+
+================================================================
+[build] START  qmcg-quantum-statistics-explorer
+[build] title='Quantum Statistics Explorer'  ctrl='main slider from 300 to 8000'
+[build] beat_sheet.json written (11 beats)
+[build] capturing qmcg-quantum-statistics-explorer…
+[build] captured  output=88KB change=263KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  qmcg-quantum-statistics-explorer  1291KB
+[log] qmcg-quantum-statistics-explorer  BUILT  1291 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/qmcg-quantum-statistics-explorer/qmcg-quantum-statistics-explorer-review.mp4`
+
+[50/108] qmcg-uncertainty-explorer
+
+================================================================
+[build] START  qmcg-uncertainty-explorer
+[build] title='Uncertainty Principle Explorer'  ctrl='σ x  (ℏ = 1 units) from 0.1 to 10'
+[build] beat_sheet.json written (11 beats)
+[build] capturing qmcg-uncertainty-explorer…
+[build] captured  output=74KB change=235KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  qmcg-uncertainty-explorer  1189KB
+[log] qmcg-uncertainty-explorer  BUILT  1189 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/qmcg-uncertainty-explorer/qmcg-uncertainty-explorer-review.mp4`
+
+[51/108] qmcg-variational-helium
+
+================================================================
+[build] START  qmcg-variational-helium
+[build] title='Variational Helium — Screened Nuclear Charge'  ctrl='main slider from 0.5 to 3.0'
+[build] beat_sheet.json written (11 beats)
+[build] capturing qmcg-variational-helium…
+[build] captured  output=230KB change=408KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  qmcg-variational-helium  1328KB
+[log] qmcg-variational-helium  BUILT  1328 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/qmcg-variational-helium/qmcg-variational-helium-review.mp4`
+
+[52/108] quantum-revival-box-explorer
+
+================================================================
+[build] START  quantum-revival-box-explorer
+[build] title='Quantum Revival Explorer — Superposition Breathing in a Box'  ctrl='Terms N from 1 to 20'
+[build] beat_sheet.json written (11 beats)
+[build] capturing quantum-revival-box-explorer…
+[build] captured  output=214KB change=326KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  quantum-revival-box-explorer  1623KB
+[log] quantum-revival-box-explorer  BUILT  1623 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/quantum-revival-box-explorer/quantum-revival-box-explorer-review.mp4`
+
+[53/108] sir-epidemic-hub
+
+================================================================
+[build] START  sir-epidemic-hub
+[build] title='SIR Epidemic: How One Hub Defeats Social Distancing'  ctrl='main control'
+[build] beat_sheet.json written (11 beats)
+[build] capturing sir-epidemic-hub…
+[build] captured  output=964KB change=1793KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  sir-epidemic-hub  3508KB
+[log] sir-epidemic-hub  BUILT  3508 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/sir-epidemic-hub/sir-epidemic-hub-review.mp4`
+
+[54/108] sturm-liouville-orthogonality-gallery
+
+================================================================
+[build] START  sturm-liouville-orthogonality-gallery
+[build] title='Sturm-Liouville Orthogonality Gallery'  ctrl='main control'
+[build] beat_sheet.json written (11 beats)
+[build] capturing sturm-liouville-orthogonality-gallery…
+[build] captured  output=135KB change=215KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  sturm-liouville-orthogonality-gallery  1305KB
+[log] sturm-liouville-orthogonality-gallery  BUILT  1305 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/sturm-liouville-orthogonality-gallery/sturm-liouville-orthogonality-gallery-review.mp4`
+
+[55/108] uncertainty-principle-sandbox
+
+================================================================
+[build] START  uncertainty-principle-sandbox
+[build] title='Uncertainty Principle Sandbox'  ctrl='a =  1.00  nm (Gaussian width parameter) from 0 to 1'
+[build] beat_sheet.json written (11 beats)
+[build] capturing uncertainty-principle-sandbox…
+[build] captured  output=66KB change=258KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  uncertainty-principle-sandbox  1352KB
+[log] uncertainty-principle-sandbox  BUILT  1352 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/uncertainty-principle-sandbox/uncertainty-principle-sandbox-review.mp4`
+
+[56/108] variational-bound-optimizer
+
+================================================================
+[build] START  variational-bound-optimizer
+[build] title='Variational Bound Optimizer'  ctrl='Trial type: from 0.1 to 3.0'
+[build] beat_sheet.json written (11 beats)
+[build] capturing variational-bound-optimizer…
+[build] captured  output=114KB change=322KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  variational-bound-optimizer  1689KB
+[log] variational-bound-optimizer  BUILT  1689 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/variational-bound-optimizer/variational-bound-optimizer-review.mp4`
+
+[57/108] vol1-barrier-explorer
+
+================================================================
+[build] START  vol1-barrier-explorer
+[build] title='Barrier Transmission Explorer — Exact vs WKB'  ctrl='Barrier V₀ (eV) from 0.5 to 6'
+[build] beat_sheet.json written (11 beats)
+[build] capturing vol1-barrier-explorer…
+[build] FAIL  vol1-barrier-explorer: capture_sim failed: [capture_sim] sim=vol1-barrier-explorer.html  reel=/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/vol1-barrier-explorer [capture_sim] recording baseline: http://127.0.0.1:64643/vol1-barrier-explorer.html  [capture_sim] FAILED: output mp
+[log] vol1-barrier-explorer  FAILED  capture_sim failed: [capture_sim] sim=vol1-barrier-explorer.html  reel=/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/vol1-barrier-explorer [capture_sim] recording baseline: http://127.0.0.1:64643/vol1-barrier-explorer.html  [capture_sim] FAILED: output mp
+
+[58/108] vol1-bloch-sphere
+
+================================================================
+[build] START  vol1-bloch-sphere
+[build] title='Bloch Sphere — Qubit State & Robertson Uncertainty Bound'  ctrl='main slider from 0 to 180'
+[build] beat_sheet.json written (11 beats)
+[build] capturing vol1-bloch-sphere…
+[build] captured  output=198KB change=373KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  vol1-bloch-sphere  1284KB
+[log] vol1-bloch-sphere  BUILT  1284 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/vol1-bloch-sphere/vol1-bloch-sphere-review.mp4`
+
+[59/108] vol1-debroglie-scale
+
+================================================================
+[build] START  vol1-debroglie-scale
+[build] title='de Broglie Wavelength Scale'  ctrl='main slider from 0 to 1'
+[build] beat_sheet.json written (11 beats)
+[build] capturing vol1-debroglie-scale…
+[build] captured  output=218KB change=418KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  vol1-debroglie-scale  1542KB
+[log] vol1-debroglie-scale  BUILT  1542 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/vol1-debroglie-scale/vol1-debroglie-scale-review.mp4`
+
+[60/108] vol1-finite-well-explorer
+
+================================================================
+[build] START  vol1-finite-well-explorer
+[build] title='Finite Square Well Explorer'  ctrl='main slider from 0.2 to 10'
+[build] beat_sheet.json written (11 beats)
+[build] capturing vol1-finite-well-explorer…
+[build] captured  output=80KB change=382KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  vol1-finite-well-explorer  1323KB
+[log] vol1-finite-well-explorer  BUILT  1323 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/vol1-finite-well-explorer/vol1-finite-well-explorer-review.mp4`
+
+[61/108] vol1-planck-vs-rj
+
+================================================================
+[build] START  vol1-planck-vs-rj
+[build] title='Planck vs Rayleigh-Jeans — UV Catastrophe'  ctrl='Temperature T from 1000 to 10000'
+[build] beat_sheet.json written (11 beats)
+[build] capturing vol1-planck-vs-rj…
+[build] captured  output=83KB change=236KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  vol1-planck-vs-rj  1319KB
+[log] vol1-planck-vs-rj  BUILT  1319 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/vol1-planck-vs-rj/vol1-planck-vs-rj-review.mp4`
+
+[62/108] vol1-uncertainty-hyperbola
+
+================================================================
+[build] START  vol1-uncertainty-hyperbola
+[build] title='Uncertainty Hyperbola — σₓ × σₚ ≥ ℏ/2'  ctrl='Width parameter  a  (nm) from 0.2 to 4.0'
+[build] beat_sheet.json written (11 beats)
+[build] capturing vol1-uncertainty-hyperbola…
+[build] captured  output=73KB change=224KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  vol1-uncertainty-hyperbola  1498KB
+[log] vol1-uncertainty-hyperbola  BUILT  1498 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/vol1-uncertainty-hyperbola/vol1-uncertainty-hyperbola-review.mp4`
+
+[63/108] vol3-born-validity-map
+
+================================================================
+[build] START  vol3-born-validity-map
+[build] title='Born Approximation Validity Map'  ctrl='ka =  3.00  (dimensionless wavenumber) from 0 to 1'
+[build] beat_sheet.json written (11 beats)
+[build] capturing vol3-born-validity-map…
+[build] captured  output=76KB change=253KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  vol3-born-validity-map  1344KB
+[log] vol3-born-validity-map  BUILT  1344 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/vol3-born-validity-map/vol3-born-validity-map-review.mp4`
+
+[64/108] vol3-hard-sphere-crosssection
+
+================================================================
+[build] START  vol3-hard-sphere-crosssection
+[build] title='Hard-Sphere Quantum Scattering Cross Section'  ctrl='ka (wavenumber×radius) from 0.1 to 30'
+[build] beat_sheet.json written (11 beats)
+[build] capturing vol3-hard-sphere-crosssection…
+[build] captured  output=71KB change=179KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  vol3-hard-sphere-crosssection  1301KB
+[log] vol3-hard-sphere-crosssection  BUILT  1301 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/vol3-hard-sphere-crosssection/vol3-hard-sphere-crosssection-review.mp4`
+
+[65/108] vol3-kronig-penney-explorer
+
+================================================================
+[build] START  vol3-kronig-penney-explorer
+[build] title='Kronig-Penney Band Structure Explorer'  ctrl='Barrier strength P from 0 to 20'
+[build] beat_sheet.json written (11 beats)
+[build] capturing vol3-kronig-penney-explorer…
+[build] captured  output=63KB change=249KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  vol3-kronig-penney-explorer  1489KB
+[log] vol3-kronig-penney-explorer  BUILT  1489 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/vol3-kronig-penney-explorer/vol3-kronig-penney-explorer-review.mp4`
+
+[66/108] vol3-quantum-dot-confinement
+
+================================================================
+[build] START  vol3-quantum-dot-confinement
+[build] title='Quantum Dot Confinement — CdSe Brus Equation'  ctrl='main slider from 1 to 10'
+[build] beat_sheet.json written (11 beats)
+[build] capturing vol3-quantum-dot-confinement…
+[build] captured  output=105KB change=277KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  vol3-quantum-dot-confinement  1150KB
+[log] vol3-quantum-dot-confinement  BUILT  1150 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/vol3-quantum-dot-confinement/vol3-quantum-dot-confinement-review.mp4`
+
+[67/108] vol3-rabi-detuning-landscape
+
+================================================================
+[build] START  vol3-rabi-detuning-landscape
+[build] title='Rabi Detuning Landscape — Resonance and Off-Resonance'  ctrl='Detuning Δ/Ω from 0 to 5'
+[build] beat_sheet.json written (11 beats)
+[build] capturing vol3-rabi-detuning-landscape…
+[build] captured  output=66KB change=111KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  vol3-rabi-detuning-landscape  1393KB
+[log] vol3-rabi-detuning-landscape  BUILT  1393 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/vol3-rabi-detuning-landscape/vol3-rabi-detuning-landscape-review.mp4`
+
+[68/108] vol3-sinc-squared-to-golden-rule
+
+================================================================
+[build] START  vol3-sinc-squared-to-golden-rule
+[build] title="Sinc² → Fermi's Golden Rule"  ctrl='T slider: from 1 to 100'
+[build] beat_sheet.json written (11 beats)
+[build] capturing vol3-sinc-squared-to-golden-rule…
+[build] FAIL  vol3-sinc-squared-to-golden-rule: capture_sim failed: [capture_sim] sim=vol3-sinc-squared-to-golden-rule.html  reel=/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/vol3-sinc-squared-to-golden-rule [capture_sim] recording baseline: http://127.0.0.1:64792/vol3-sinc-squared-to-golden-rule.html
+[log] vol3-sinc-squared-to-golden-rule  FAILED  capture_sim failed: [capture_sim] sim=vol3-sinc-squared-to-golden-rule.html  reel=/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/vol3-sinc-squared-to-golden-rule [capture_sim] recording baseline: http://127.0.0.1:64792/vol3-sinc-squared-to-golden-rule.html
+
+[69/108] vol3-zeeman-crossover
+
+================================================================
+[build] START  vol3-zeeman-crossover
+[build] title='Zeeman Crossover — Hydrogen 2p Manifold'  ctrl='B field (T) from 0 to 5'
+[build] beat_sheet.json written (11 beats)
+[build] capturing vol3-zeeman-crossover…
+[build] captured  output=93KB change=222KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  vol3-zeeman-crossover  1302KB
+[log] vol3-zeeman-crossover  BUILT  1302 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/vol3-zeeman-crossover/vol3-zeeman-crossover-review.mp4`
+
+[70/108] vol4-chsh-angle-explorer
+
+================================================================
+[build] START  vol4-chsh-angle-explorer
+[build] title='CHSH Angle Explorer — Why 45° Wins'  ctrl='${k} from 0 to 360'
+[build] beat_sheet.json written (11 beats)
+[build] capturing vol4-chsh-angle-explorer…
+[build] captured  output=73KB change=281KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  vol4-chsh-angle-explorer  1605KB
+[log] vol4-chsh-angle-explorer  BUILT  1605 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/vol4-chsh-angle-explorer/vol4-chsh-angle-explorer-review.mp4`
+
+[71/108] vol4-entanglement-entropy-slider
+
+================================================================
+[build] START  vol4-entanglement-entropy-slider
+[build] title='Entanglement Entropy — The Ebit Curve'  ctrl='Schmidt angle θ from 0 to 45'
+[build] beat_sheet.json written (11 beats)
+[build] capturing vol4-entanglement-entropy-slider…
+[build] FAIL  vol4-entanglement-entropy-slider: capture_sim failed: [capture_sim] sim=vol4-entanglement-entropy-slider.html  reel=/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/vol4-entanglement-entropy-slider [capture_sim] recording baseline: http://127.0.0.1:64818/vol4-entanglement-entropy-slider.html
+[log] vol4-entanglement-entropy-slider  FAILED  capture_sim failed: [capture_sim] sim=vol4-entanglement-entropy-slider.html  reel=/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/vol4-entanglement-entropy-slider [capture_sim] recording baseline: http://127.0.0.1:64818/vol4-entanglement-entropy-slider.html
+
+[72/108] vol4-nv-odmr-field-map
+
+================================================================
+[build] START  vol4-nv-odmr-field-map
+[build] title='NV Center ODMR — Magnetic Field Map'  ctrl='Applied field B: from 0 to 50'
+[build] beat_sheet.json written (11 beats)
+[build] capturing vol4-nv-odmr-field-map…
+[build] captured  output=97KB change=324KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  vol4-nv-odmr-field-map  1564KB
+[log] vol4-nv-odmr-field-map  BUILT  1564 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/vol4-nv-odmr-field-map/vol4-nv-odmr-field-map-review.mp4`
+
+[73/108] vol4-partial-trace-heatmap
+
+================================================================
+[build] START  vol4-partial-trace-heatmap
+[build] title='Partial Trace — Tracing Away One Qubit Kills All Coherence'  ctrl='main slider from 0 to 1000'
+[build] beat_sheet.json written (11 beats)
+[build] capturing vol4-partial-trace-heatmap…
+[build] captured  output=100KB change=270KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  vol4-partial-trace-heatmap  1225KB
+[log] vol4-partial-trace-heatmap  BUILT  1225 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/vol4-partial-trace-heatmap/vol4-partial-trace-heatmap-review.mp4`
+
+[74/108] vol4-platform-ngates-compare
+
+================================================================
+[build] START  vol4-platform-ngates-compare
+[build] title='Quantum Platform N_gates Comparison'  ctrl='t_gate scale: from -1 to 1'
+[build] beat_sheet.json written (11 beats)
+[build] capturing vol4-platform-ngates-compare…
+[build] captured  output=203KB change=301KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  vol4-platform-ngates-compare  1572KB
+[log] vol4-platform-ngates-compare  BUILT  1572 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/vol4-platform-ngates-compare/vol4-platform-ngates-compare-review.mp4`
+
+[75/108] vol4-willow-threshold-reconstruction
+
+================================================================
+[build] START  vol4-willow-threshold-reconstruction
+[build] title='Willow Threshold Reconstruction — Surface Code Error Rates'  ctrl='main slider from 1.5 to 4.0'
+[build] beat_sheet.json written (11 beats)
+[build] capturing vol4-willow-threshold-reconstruction…
+[build] captured  output=134KB change=376KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  vol4-willow-threshold-reconstruction  1253KB
+[log] vol4-willow-threshold-reconstruction  BUILT  1253 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/vol4-willow-threshold-reconstruction/vol4-willow-threshold-reconstruction-review.mp4`
+
+[76/108] wallis-product-pi
+
+================================================================
+[build] START  wallis-product-pi
+[build] title='Wallis Product: Two Diverging Halves Converge to π/2'  ctrl='N (terms in product) from 1 to 500'
+[build] beat_sheet.json written (11 beats)
+[build] capturing wallis-product-pi…
+[build] captured  output=147KB change=392KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  wallis-product-pi  1731KB
+[log] wallis-product-pi  BUILT  1731 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/wallis-product-pi/wallis-product-pi-review.mp4`
+
+[77/108] youtubers-bandit-explore-exploit
+
+================================================================
+[build] START  youtubers-bandit-explore-exploit
+[build] title='Multi-Armed Bandit: Explore vs Exploit'  ctrl='Strategy: from 0 to 1'
+[build] beat_sheet.json written (11 beats)
+[build] capturing youtubers-bandit-explore-exploit…
+[build] captured  output=82KB change=183KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  youtubers-bandit-explore-exploit  1370KB
+[log] youtubers-bandit-explore-exploit  BUILT  1370 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/youtubers-bandit-explore-exploit/youtubers-bandit-explore-exploit-review.mp4`
+
+[78/108] youtubers-braess-paradox
+
+================================================================
+[build] START  youtubers-braess-paradox
+[build] title="Braess's Paradox"  ctrl='0 min from 0 to 60'
+[build] beat_sheet.json written (11 beats)
+[build] capturing youtubers-braess-paradox…
+[build] captured  output=204KB change=300KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  youtubers-braess-paradox  1264KB
+[log] youtubers-braess-paradox  BUILT  1264 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/youtubers-braess-paradox/youtubers-braess-paradox-review.mp4`
+
+[79/108] youtubers-clt-repeated-convolution
+
+================================================================
+[build] START  youtubers-clt-repeated-convolution
+[build] title='CLT: Repeated Convolution'  ctrl='main slider from 100 to 1200'
+[build] beat_sheet.json written (11 beats)
+[build] capturing youtubers-clt-repeated-convolution…
+[build] captured  output=54KB change=97KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  youtubers-clt-repeated-convolution  1200KB
+[log] youtubers-clt-repeated-convolution  BUILT  1200 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/youtubers-clt-repeated-convolution/youtubers-clt-repeated-convolution-review.mp4`
+
+[80/108] youtubers-hanoi-binary
+
+================================================================
+[build] START  youtubers-hanoi-binary
+[build] title='Hanoi ↔ Binary Counting'  ctrl='main slider from 1 to 6'
+[build] beat_sheet.json written (11 beats)
+[build] capturing youtubers-hanoi-binary…
+[build] captured  output=53KB change=114KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  youtubers-hanoi-binary  1203KB
+[log] youtubers-hanoi-binary  BUILT  1203 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/youtubers-hanoi-binary/youtubers-hanoi-binary-review.mp4`
+
+[81/108] youtubers-mandelbrot-julia
+
+================================================================
+[build] START  youtubers-mandelbrot-julia
+[build] title='Mandelbrot & Julia Sets'  ctrl='main slider from 50 to 500'
+[build] beat_sheet.json written (11 beats)
+[build] capturing youtubers-mandelbrot-julia…
+[build] captured  output=136KB change=435KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  youtubers-mandelbrot-julia  1853KB
+[log] youtubers-mandelbrot-julia  BUILT  1853 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/youtubers-mandelbrot-julia/youtubers-mandelbrot-julia-review.mp4`
+
+[82/108] youtubers-mosers-circle
+
+================================================================
+[build] START  youtubers-mosers-circle
+[build] title="Moser's Circle"  ctrl='main control'
+[build] beat_sheet.json written (11 beats)
+[build] capturing youtubers-mosers-circle…
+[build] captured  output=129KB change=201KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  youtubers-mosers-circle  1128KB
+[log] youtubers-mosers-circle  BUILT  1128 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/youtubers-mosers-circle/youtubers-mosers-circle-review.mp4`
+
+[83/108] youtubers-newtons-fractal
+
+================================================================
+[build] START  youtubers-newtons-fractal
+[build] title="Newton's Fractal"  ctrl='main control'
+[build] beat_sheet.json written (11 beats)
+[build] capturing youtubers-newtons-fractal…
+[build] captured  output=255KB change=386KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  youtubers-newtons-fractal  1250KB
+[log] youtubers-newtons-fractal  BUILT  1250 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/youtubers-newtons-fractal/youtubers-newtons-fractal-review.mp4`
+
+[84/108] youtubers-phase-transition-free-energy
+
+================================================================
+[build] START  youtubers-phase-transition-free-energy
+[build] title='Phase Transition — Free Energy'  ctrl='Temperature T = from 0 to 6'
+[build] beat_sheet.json written (11 beats)
+[build] capturing youtubers-phase-transition-free-energy…
+[build] captured  output=165KB change=359KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  youtubers-phase-transition-free-energy  1272KB
+[log] youtubers-phase-transition-free-energy  BUILT  1272 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/youtubers-phase-transition-free-energy/youtubers-phase-transition-free-energy-review.mp4`
+
+[85/108] youtubers-pi-block-collisions
+
+================================================================
+[build] START  youtubers-pi-block-collisions
+[build] title='Pi from Block Collisions'  ctrl='M/m = from 0 to 6'
+[build] beat_sheet.json written (11 beats)
+[build] capturing youtubers-pi-block-collisions…
+[build] captured  output=59KB change=103KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  youtubers-pi-block-collisions  1122KB
+[log] youtubers-pi-block-collisions  BUILT  1122 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/youtubers-pi-block-collisions/youtubers-pi-block-collisions-review.mp4`
+
+[86/108] youtubers-prime-polar-spirals
+
+================================================================
+[build] START  youtubers-prime-polar-spirals
+[build] title='Prime Polar Spirals'  ctrl='Primes: from 100 to 50000'
+[build] beat_sheet.json written (11 beats)
+[build] capturing youtubers-prime-polar-spirals…
+[build] captured  output=187KB change=3848KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  youtubers-prime-polar-spirals  3932KB
+[log] youtubers-prime-polar-spirals  BUILT  3932 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/youtubers-prime-polar-spirals/youtubers-prime-polar-spirals-review.mp4`
+
+[87/108] youtubers-putnam-tetrahedron
+
+================================================================
+[build] START  youtubers-putnam-tetrahedron
+[build] title='Putnam: Simplex Contains Center'  ctrl='main slider from 1 to 100'
+[build] beat_sheet.json written (11 beats)
+[build] capturing youtubers-putnam-tetrahedron…
+[build] captured  output=79KB change=137KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  youtubers-putnam-tetrahedron  1204KB
+[log] youtubers-putnam-tetrahedron  BUILT  1204 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/youtubers-putnam-tetrahedron/youtubers-putnam-tetrahedron-review.mp4`
+
+[88/108] youtubers-rocket-equation-tyranny
+
+================================================================
+[build] START  youtubers-rocket-equation-tyranny
+[build] title='Rocket Equation Tyranny'  ctrl='Delta-V (ΔV):  9.4  km/s from 0 to 30'
+[build] beat_sheet.json written (11 beats)
+[build] capturing youtubers-rocket-equation-tyranny…
+[build] captured  output=100KB change=341KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  youtubers-rocket-equation-tyranny  1246KB
+[log] youtubers-rocket-equation-tyranny  BUILT  1246 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/youtubers-rocket-equation-tyranny/youtubers-rocket-equation-tyranny-review.mp4`
+
+[89/108] youtubers-square-cube-metabolic
+
+================================================================
+[build] START  youtubers-square-cube-metabolic
+[build] title='Square-Cube Metabolic Law'  ctrl='Length:  7  cm from -1.398 to 0.699'
+[build] beat_sheet.json written (11 beats)
+[build] capturing youtubers-square-cube-metabolic…
+[build] captured  output=93KB change=340KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  youtubers-square-cube-metabolic  1633KB
+[log] youtubers-square-cube-metabolic  BUILT  1633 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/youtubers-square-cube-metabolic/youtubers-square-cube-metabolic-review.mp4`
+
+[90/108] youtubers-three-polarizer
+
+================================================================
+[build] START  youtubers-three-polarizer
+[build] title='Three Polarizer Paradox'  ctrl='main control'
+[build] beat_sheet.json written (11 beats)
+[build] capturing youtubers-three-polarizer…
+[build] captured  output=222KB change=430KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  youtubers-three-polarizer  1415KB
+[log] youtubers-three-polarizer  BUILT  1415 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/youtubers-three-polarizer/youtubers-three-polarizer-review.mp4`
+
+[91/108] youtubers-windmill-invariant
+
+================================================================
+[build] START  youtubers-windmill-invariant
+[build] title='Windmill Invariant — IMO 2011'  ctrl='main slider from 1 to 30'
+[build] beat_sheet.json written (11 beats)
+[build] capturing youtubers-windmill-invariant…
+[build] captured  output=81KB change=164KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  youtubers-windmill-invariant  1184KB
+[log] youtubers-windmill-invariant  BUILT  1184 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/youtubers-windmill-invariant/youtubers-windmill-invariant-review.mp4`
+
+[92/108] yt-ant-supercolony
+
+================================================================
+[build] START  yt-ant-supercolony
+[build] title='Argentine Ant Supercolony: Genetic Diversity as a Phase Transition'  ctrl='main slider from 1 to 30'
+[build] beat_sheet.json written (11 beats)
+[build] capturing yt-ant-supercolony…
+[build] captured  output=83KB change=2368KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  yt-ant-supercolony  3891KB
+[log] yt-ant-supercolony  BUILT  3891 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/yt-ant-supercolony/yt-ant-supercolony-review.mp4`
+
+[93/108] yt-bagging-variance
+
+================================================================
+[build] START  yt-bagging-variance
+[build] title='Bagging: 300 Trees Kill the Variance'  ctrl='main slider from 1 to 300'
+[build] beat_sheet.json written (11 beats)
+[build] capturing yt-bagging-variance…
+[build] captured  output=128KB change=188KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  yt-bagging-variance  1309KB
+[log] yt-bagging-variance  BUILT  1309 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/yt-bagging-variance/yt-bagging-variance-review.mp4`
+
+[94/108] yt-basel-lighthouse
+
+================================================================
+[build] START  yt-basel-lighthouse
+[build] title='The Basel Problem: Lighthouses Sum to π²/6'  ctrl='main slider from 1 to 200'
+[build] beat_sheet.json written (11 beats)
+[build] capturing yt-basel-lighthouse…
+[build] captured  output=181KB change=313KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  yt-basel-lighthouse  1802KB
+[log] yt-basel-lighthouse  BUILT  1802 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/yt-basel-lighthouse/yt-basel-lighthouse-review.mp4`
+
+[95/108] yt-bayes-medical-test
+
+================================================================
+[build] START  yt-bayes-medical-test
+[build] title='Why Doctors Get Medical Tests Wrong: Bayes Factor'  ctrl='Prevalence (% population) from 0.1 to 10'
+[build] beat_sheet.json written (11 beats)
+[build] capturing yt-bayes-medical-test…
+[build] captured  output=284KB change=537KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  yt-bayes-medical-test  1631KB
+[log] yt-bayes-medical-test  BUILT  1631 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/yt-bayes-medical-test/yt-bayes-medical-test-review.mp4`
+
+[96/108] yt-bias-variance-u
+
+================================================================
+[build] START  yt-bias-variance-u
+[build] title='Bias-Variance Tradeoff: The U-Shaped Test Error'  ctrl='main slider from 1 to 10'
+[build] beat_sheet.json written (11 beats)
+[build] capturing yt-bias-variance-u…
+[build] captured  output=126KB change=216KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  yt-bias-variance-u  1320KB
+[log] yt-bias-variance-u  BUILT  1320 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/yt-bias-variance-u/yt-bias-variance-u-review.mp4`
+
+[97/108] yt-binomial-to-normal
+
+================================================================
+[build] START  yt-binomial-to-normal
+[build] title='Binomial → Normal: The Central Limit Theorem in Action'  ctrl='n (trials) from 2 to 200'
+[build] beat_sheet.json written (11 beats)
+[build] capturing yt-binomial-to-normal…
+[build] captured  output=100KB change=550KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  yt-binomial-to-normal  1829KB
+[log] yt-binomial-to-normal  BUILT  1829 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/yt-binomial-to-normal/yt-binomial-to-normal-review.mp4`
+
+[98/108] yt-bloom-filter-tradeoff
+
+================================================================
+[build] START  yt-bloom-filter-tradeoff
+[build] title='Bloom Filter: Exponential Precision for Linear Space'  ctrl='main slider from 4 to 32'
+[build] beat_sheet.json written (11 beats)
+[build] capturing yt-bloom-filter-tradeoff…
+[build] captured  output=145KB change=235KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  yt-bloom-filter-tradeoff  1597KB
+[log] yt-bloom-filter-tradeoff  BUILT  1597 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/yt-bloom-filter-tradeoff/yt-bloom-filter-tradeoff-review.mp4`
+
+[99/108] yt-braess-paradox
+
+================================================================
+[build] START  yt-braess-paradox
+[build] title="Braess's Paradox: The Road That Slows Everyone"  ctrl='main slider from 0 to 100'
+[build] beat_sheet.json written (11 beats)
+[build] capturing yt-braess-paradox…
+[build] captured  output=222KB change=317KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  yt-braess-paradox  1483KB
+[log] yt-braess-paradox  BUILT  1483 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/yt-braess-paradox/yt-braess-paradox-review.mp4`
+
+[100/108] yt-cache-fif
+
+================================================================
+[build] START  yt-cache-fif
+[build] title='Cache Replacement: FIF vs LRU vs FIFO'  ctrl='Cache size (k):\n     \n     4 from 2 to 8'
+[build] beat_sheet.json written (11 beats)
+[build] capturing yt-cache-fif…
+[build] captured  output=110KB change=232KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  yt-cache-fif  1575KB
+[log] yt-cache-fif  BUILT  1575 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/yt-cache-fif/yt-cache-fif-review.mp4`
+
+[101/108] yt-clt-bell-emergence
+
+================================================================
+[build] START  yt-clt-bell-emergence
+[build] title='The Central Limit Theorem: Any Shape Becomes a Bell'  ctrl='main slider from 1 to 200'
+[build] beat_sheet.json written (11 beats)
+[build] capturing yt-clt-bell-emergence…
+[build] captured  output=143KB change=567KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  yt-clt-bell-emergence  1768KB
+[log] yt-clt-bell-emergence  BUILT  1768 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/yt-clt-bell-emergence/yt-clt-bell-emergence-review.mp4`
+
+[102/108] yt-complex-systems-threshold
+
+================================================================
+[build] START  yt-complex-systems-threshold
+[build] title='Complex Systems: One Local Rule, No Central Plan'  ctrl='θ threshold: from 0.1 to 0.9'
+[build] beat_sheet.json written (11 beats)
+[build] capturing yt-complex-systems-threshold…
+[build] captured  output=489KB change=622KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  yt-complex-systems-threshold  1933KB
+[log] yt-complex-systems-threshold  BUILT  1933 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/yt-complex-systems-threshold/yt-complex-systems-threshold-review.mp4`
+
+[103/108] yt-hanoi-binary
+
+================================================================
+[build] START  yt-hanoi-binary
+[build] title='Binary Counting Solves Towers of Hanoi'  ctrl='main slider from 0.5 to 4'
+[build] beat_sheet.json written (11 beats)
+[build] capturing yt-hanoi-binary…
+[build] captured  output=103KB change=140KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  yt-hanoi-binary  1227KB
+[log] yt-hanoi-binary  BUILT  1227 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/yt-hanoi-binary/yt-hanoi-binary-review.mp4`
+
+[104/108] yt-knapsack-greedy
+
+================================================================
+[build] START  yt-knapsack-greedy
+[build] title='Greedy Knapsack: The 50% Guarantee'  ctrl='Capacity: from 100 to 2000'
+[build] beat_sheet.json written (11 beats)
+[build] capturing yt-knapsack-greedy…
+[build] captured  output=155KB change=284KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  yt-knapsack-greedy  1349KB
+[log] yt-knapsack-greedy  BUILT  1349 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/yt-knapsack-greedy/yt-knapsack-greedy-review.mp4`
+
+[105/108] yt-mandelbrot-newton
+
+================================================================
+[build] START  yt-mandelbrot-newton
+[build] title="Mandelbrot Set Hidden Inside Newton's Method"  ctrl='main control'
+[build] beat_sheet.json written (11 beats)
+[build] capturing yt-mandelbrot-newton…
+[build] captured  output=218KB change=280KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  yt-mandelbrot-newton  1649KB
+[log] yt-mandelbrot-newton  BUILT  1649 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/yt-mandelbrot-newton/yt-mandelbrot-newton-review.mp4`
+
+[106/108] yt-pi-block-collisions
+
+================================================================
+[build] START  yt-pi-block-collisions
+[build] title='Block Collisions Count π: The Configuration Space View'  ctrl='massSelect selector'
+[build] beat_sheet.json written (11 beats)
+[build] capturing yt-pi-block-collisions…
+[build] captured  output=155KB change=184KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  yt-pi-block-collisions  1319KB
+[log] yt-pi-block-collisions  BUILT  1319 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/yt-pi-block-collisions/yt-pi-block-collisions-review.mp4`
+
+[107/108] yt-quicksort-harmonic
+
+================================================================
+[build] START  yt-quicksort-harmonic
+[build] title='Quicksort Harmonic Analysis'  ctrl='Pivot: from 10 to 1000'
+[build] beat_sheet.json written (11 beats)
+[build] capturing yt-quicksort-harmonic…
+[build] captured  output=176KB change=371KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  yt-quicksort-harmonic  1283KB
+[log] yt-quicksort-harmonic  BUILT  1283 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/yt-quicksort-harmonic/yt-quicksort-harmonic-review.mp4`
+
+[108/108] yt-six-dots-31
+
+================================================================
+[build] START  yt-six-dots-31
+[build] title='Six Dots Make 31, Not 32: When Patterns Break'  ctrl='main slider from 1 to 8'
+[build] beat_sheet.json written (11 beats)
+[build] capturing yt-six-dots-31…
+[build] captured  output=175KB change=346KB
+[build] generating audio (af_kore)…
+[build] audio done
+[build] compiling review cut…
+[build] DONE  yt-six-dots-31  1611KB
+[log] yt-six-dots-31  BUILT  1611 KB  `open /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/yt-six-dots-31/yt-six-dots-31-review.mp4`
+
+[report] written: /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/ai1-sim-explainers/SIM-EXPLAINERS-REPORT.md
+[report] total=108  built=97  failed=6  skipped=5
+
+[build_ai1_sim_reels] FINISHED: {'SKIPPED': 5, 'BUILT': 97, 'FAILED': 6}
