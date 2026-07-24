@@ -1,0 +1,473 @@
+{
+  "metadata": {
+    "slug": "claude-liam-cap-08-video-and-submit",
+    "title": "Leave the Error In.",
+    "series": "Ship Something Real: The Reallocation Engine Capstone",
+    "episode": "E8 of 8",
+    "brand": "claude-liam",
+    "engine": "kokoro",
+    "voice": "am_onyx",
+    "greeting": "Salve",
+    "chapter_number": 53,
+    "build": {
+      "at": "2026-07-19T01:46:15",
+      "cut": "master",
+      "filled": 12,
+      "of": 12,
+      "slates": [],
+      "skin_warnings": [
+        "B03: composer beat has an empty spark line — SPARK-LINE LAW wants a short serif cue (e.g. \"The change,\")."
+      ]
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "role": "OPEN",
+      "narration_text": "Salve, Liam. Episode eight — the final one: the explainer video, twenty points. Three to six minutes, with at least one unscripted, uncut live terminal segment. The restriction is the discipline. If your contribution errors on camera, leave it in and narrate the fix. That is the most honest footage you can submit. The recording is the final application of the verified-data contract to the presentation itself. Liam, in for Bear.",
+      "duration_s": 30,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "REALLOCATION ENGINE CAPSTONE · E8 OF 8",
+            "segment": "Liam, in for Bear.",
+            "greeting": "Salve, Liam.",
+            "command": "sed -n '186,205p' assignments/ASSIGNMENT-professional-contribution-capstone-250pt.md",
+            "runningText": "* unscripted · uncut · live terminal · fictional scenario · no PII · errors stay",
+            "output": [
+              "the real command, the real output appearing in real time, no cut inside the take",
+              "if it errors on camera, leave it in and narrate the fix",
+              "the uncut run must be real screen capture, not a slide of pasted output"
+            ],
+            "folderLabel": "the-reallocation-engine/assignments/"
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": 25.83,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B00.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:46:15"
+      }
+    },
+    {
+      "beat_id": "B01",
+      "role": "ANATOMY",
+      "narration_text": "Step 7 has a five-part arc. One — domain and asymmetry: forty-five seconds on what the engine tracks and what it misses. Two — the uncut live run: your contribution or npm-run-verify-and-doctor executing, no cut inside the take. The whole real sequence: command, output, time. Three — the PII rule: fictional scenario and public example data, structurally — no real student records anywhere in the run, not just careful. Four — one thing you learned: authentic reflection from running or failing to run it, not rehearsed. Five — one honest limitation: something the contribution cannot verify, stated as a strength, not an apology.",
+      "duration_s": 50,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownAnatomy",
+          "props": {
+            "skillName": "Step 7 — The Explainer Video",
+            "title": "The five-part arc.",
+            "files": [
+              {
+                "indent": 0,
+                "icon": "🎙️",
+                "name": "Domain + asymmetry",
+                "tag": "~45s — what the engine tracks and what it misses",
+                "accent": false
+              },
+              {
+                "indent": 0,
+                "icon": "🎬",
+                "name": "The uncut live run",
+                "tag": "real command · real output · no cut inside the take",
+                "accent": true
+              },
+              {
+                "indent": 0,
+                "icon": "🔒",
+                "name": "Fictional scenario + public data",
+                "tag": "PII rule: structurally impossible, not just careful",
+                "accent": false
+              },
+              {
+                "indent": 0,
+                "icon": "💡",
+                "name": "One thing you learned",
+                "tag": "authentic — from running or failing to run it",
+                "accent": false
+              },
+              {
+                "indent": 0,
+                "icon": "🚧",
+                "name": "One honest limitation",
+                "tag": "something it cannot verify — stated as strength, not apology",
+                "accent": true
+              }
+            ],
+            "calloutText": "The uncut live run is the graded core. Everything else supports it.",
+            "sparkLine": "Five parts. One graded core: the uncut live run, no PII, errors stay."
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": 39.91,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B01.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:46:15"
+      }
+    },
+    {
+      "beat_id": "B02",
+      "role": "PIPELINE",
+      "narration_text": "Five phases to the build. Plan — design the fictional scenario first: map the public dataset, name no real person, make PII structurally impossible before you open a terminal. Record — one unscripted live take, real terminal, no checkpoint saves mid-run. Keep — if it errors, that footage is better than a clean take; narrate the fix on camera, in real time. Narrate — explain one thing you genuinely learned and one thing the contribution cannot verify; write for a reader who has no context for the assignment. Submit — the honest package: live footage plus narration, nothing airbrushed or cut.",
+      "duration_s": 52,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownPipeline",
+          "props": {
+            "title": "Plan → Record → Keep → Narrate → Submit.",
+            "inputLabel": "fictional scenario + public dataset",
+            "outputLabel": "honest video package",
+            "phases": [
+              {
+                "label": "Plan",
+                "desc": "design fictional scenario · map public data · no PII structurally",
+                "accent": false
+              },
+              {
+                "label": "Record",
+                "desc": "one unscripted live take · real terminal · no checkpoint saves",
+                "accent": true
+              },
+              {
+                "label": "Keep",
+                "desc": "errors on camera stay · narrate the fix in real time",
+                "accent": true
+              },
+              {
+                "label": "Narrate",
+                "desc": "one genuine lesson + one verified limitation · write for the outside reader",
+                "accent": false
+              },
+              {
+                "label": "Submit",
+                "desc": "live footage + narration · nothing airbrushed or cut",
+                "accent": false
+              }
+            ],
+            "sparkLine": "Plan → Record → Keep → Narrate → Submit. The restriction is the discipline."
+          },
+          "rendered": {
+            "out": "media/B02.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": 36.05,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B02.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:46:15"
+      }
+    },
+    {
+      "beat_id": "B03",
+      "role": "PREDICT",
+      "narration_text": "Before the mechanism: your contribution throws a real error on camera during the live run. What is the right move?",
+      "duration_s": 8,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "PREDICT",
+            "segment": "The error is on camera.",
+            "greeting": "",
+            "command": "# Live run — error appears",
+            "runningText": "your contribution throws a real error during the uncut live segment",
+            "output": [
+              "what is the right move?"
+            ],
+            "folderLabel": "the-reallocation-engine/assignments/"
+          },
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B03.mp3",
+      "actual_duration_s": 6.89,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B03.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:46:15"
+      }
+    },
+    {
+      "beat_id": "B04",
+      "role": "SELF-DEMO",
+      "narration_text": "The Step 7 requirements, directly from the assignment.",
+      "duration_s": 20,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeCodeBeat",
+          "props": {
+            "title": "Step 7 — live, direct.",
+            "code": "$ sed -n '186,205p' assignments/ASSIGNMENT-professional-contribution-capstone-250pt.md\n## Step 7 — The explainer video (20 pts)\n\n3–6 minutes. Its graded core is at least one unscripted,\nuncut segment showing a live terminal run —\nthe real command, the real output appearing in real time,\nno cut inside the take.\n\nIf it errors on camera, leave it in and narrate the fix;\nthat is the most honest footage you can submit.",
+            "sparkLine": "unscripted · uncut · real terminal · errors stay · $0.00"
+          },
+          "rendered": {
+            "out": "media/B04.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B04.mp3",
+      "actual_duration_s": 3.2,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B04.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:46:15"
+      }
+    },
+    {
+      "beat_id": "B05",
+      "role": "MECHANISM_1",
+      "narration_text": "The graded core is the uncut take. The no-cut rule is what makes the footage evidence rather than presentation. A slide of pasted output and a live recording look the same in a screenshot — they are not the same. The live recording carries the real sequence: command issued, lag, output appearing in real time. That sequence is what the grader is attesting: that you ran it and that the output is real. One sentence from Step 7 defines this standard.",
+      "duration_s": 36,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "No cut inside the take.",
+            "body": "The real sequence — command, lag, output in real time — is what makes the footage evidence. A slide of pasted output looks the same in a screenshot. It is not the same. The live recording is part of what you are attesting.",
+            "quote": "the real command, the real output appearing in real time, no cut inside the take",
+            "cite": "assignments/ASSIGNMENT-professional-contribution-capstone-250pt.md, Step 7",
+            "sparkLine": "Cut = presentation. Uncut = evidence. The rule is the attestation."
+          },
+          "rendered": {
+            "out": "media/B05.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B05.mp3",
+      "actual_duration_s": 26.67,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B05.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:46:15"
+      }
+    },
+    {
+      "beat_id": "B06",
+      "role": "MECHANISM_2",
+      "narration_text": "The prediction reveal: leave it in. An error on camera followed by a real narrated fix is the most honest footage possible. It shows you understand the failure mode — not just the happy path. Students instinctively cut errors because they look like weakness. The assignment names this explicitly because the instinct is wrong. The error and the narrated fix demonstrate more competence than a clean take. That is what the grader is looking for. The fix you narrate in real time proves you own the understanding, not just the output.",
+      "duration_s": 38,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Leave the error in.",
+            "body": "An error on camera followed by a real narrated fix demonstrates more competence than a clean take. The instinct is to cut. The assignment names it explicitly because the instinct is wrong. The narrated fix proves you own the understanding.",
+            "quote": "If it errors on camera, leave it in and narrate the fix; that is the most honest footage you can submit.",
+            "cite": "assignments/ASSIGNMENT-professional-contribution-capstone-250pt.md, Step 7",
+            "sparkLine": "Error + narrated fix = evidence of ownership. Clean cut = presentation of polish."
+          },
+          "rendered": {
+            "out": "media/B06.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B06.mp3",
+      "actual_duration_s": 30.74,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B06.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:46:15"
+      }
+    },
+    {
+      "beat_id": "B07",
+      "role": "MECHANISM_3",
+      "narration_text": "Screen capture is the required medium because pasted output cannot carry the same trust. Pasted output can be selected, edited, or staged. A live terminal recording shows the cursor moving, the real timing of the run, the output appearing character by character. The difference is attestable: you can check the recording; you cannot check a paste. The assignment distinguishes these precisely because pasted output would otherwise be the path of least resistance — and it is exactly the kind of substitution the verified-data contract exists to prevent.",
+      "duration_s": 36,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Screen capture, not pasted output.",
+            "body": "Pasted output can be selected, edited, staged. A live recording shows cursor, timing, output in real time. The difference is attestable. The distinction prevents the exact substitution the verified-data contract exists to block.",
+            "quote": "the uncut run must be real screen capture, not a slide of pasted output",
+            "cite": "assignments/ASSIGNMENT-professional-contribution-capstone-250pt.md, Step 7",
+            "sparkLine": "Recording = attestable. Paste = substitutable. The medium is the attestation."
+          },
+          "rendered": {
+            "out": "media/B07.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B07.mp3",
+      "actual_duration_s": 33.07,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B07.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:46:15"
+      }
+    },
+    {
+      "beat_id": "B08",
+      "role": "THE_PICK",
+      "narration_text": "The pick for this step is the no-cut doctrine itself. It is the hardest requirement in Step 7 and the most valuable. The restriction forces depth. If you cannot narrate an error in real time, you do not own the fix. Students who have worked the honest run, the attestation, and the PR already have the understanding — the video is just showing it. The recording is the final application of the verified-data contract to the presentation: real output, real time, nothing staged. You built an engine that will not let numbers lie. Now film it working.",
+      "duration_s": 38,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "The restriction is the discipline.",
+            "body": "No cut inside the take. If you cannot narrate an error in real time, you do not own the fix. Students who worked the honest run and the attestation already have the depth — the video is just showing it. The recording is the verified-data contract applied to the presentation.",
+            "quote": "",
+            "cite": "",
+            "sparkLine": "The engine will not let numbers lie. Film it working."
+          },
+          "rendered": {
+            "out": "media/B08.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B08.mp3",
+      "actual_duration_s": 32.06,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B08.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:46:15"
+      }
+    },
+    {
+      "beat_id": "BVDT",
+      "role": "VERDICT",
+      "narration_text": "The video: three requirements earn full marks. One — uncut live run on a fictional scenario with public data; if it errors, narrate the fix on camera. Two — one thing you learned: authentic, from running or failing, not rehearsed. Three — one honest limitation: something the contribution cannot verify, stated plainly. The discipline, not the clean take, is what is graded.",
+      "duration_s": 24,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "artifactTitle": "CAPSTONE · E8 OF 8",
+            "artifactHeading": "The video.",
+            "artifactLines": [
+              "Uncut live run — fictional scenario + public data; errors stay, narrated on camera",
+              "One thing you learned — authentic, from running or failing, not rehearsed",
+              "One honest limitation — something it cannot verify, stated plainly"
+            ]
+          },
+          "rendered": {
+            "out": "media/BVDT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BVDT.mp3",
+      "actual_duration_s": 22.95,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BVDT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:46:15"
+      }
+    },
+    {
+      "beat_id": "BHTF",
+      "role": "YOUR_TURN",
+      "narration_text": "Your turn. Design the fictional scenario first — no real names, no real records, public data only, PII structurally impossible. Open the terminal. Run it unscripted. If it errors, narrate the fix on camera: that footage is better than a clean take. Then explain one thing you genuinely learned from running or failing to run it, and one thing the engine cannot verify. Submit the honest package. You built an engine that will not let numbers lie. Film it working.",
+      "duration_s": 26,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "REALLOCATION ENGINE CAPSTONE · E8 OF 8",
+            "segment": "Your turn.",
+            "greeting": "Salve, Liam.",
+            "command": "# Design fictional scenario → record uncut → keep errors → narrate fix",
+            "runningText": "fictional scenario → no PII → unscripted live run → errors stay → one lesson + one limitation → submit",
+            "output": [
+              "design fictional scenario — no real names, public data only",
+              "record unscripted: if it errors, narrate the fix on camera",
+              "explain one thing learned + one honest limitation — then submit"
+            ],
+            "folderLabel": "the-reallocation-engine/assignments/"
+          },
+          "rendered": {
+            "out": "media/BHTF.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BHTF.mp3",
+      "actual_duration_s": 26.24,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BHTF.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:46:15"
+      }
+    },
+    {
+      "beat_id": "BOUT",
+      "role": "OUTRO",
+      "narration_text": "Salve.",
+      "duration_s": 2,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "Leave the Error In.",
+            "handle": "@claude-liam",
+            "subline": "Ship Something Real · E8 of 8"
+          },
+          "rendered": {
+            "out": "media/BOUT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BOUT.mp3",
+      "actual_duration_s": 0.75,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BOUT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:46:15"
+      }
+    }
+  ]
+}

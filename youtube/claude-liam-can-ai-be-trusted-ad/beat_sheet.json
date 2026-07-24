@@ -1,0 +1,545 @@
+{
+  "metadata": {
+    "slug": "claude-liam-can-ai-be-trusted-ad",
+    "title": "The Ad That Answered Itself",
+    "channel": "claude-liam",
+    "persona": "Liam (in for Bear)",
+    "audience": "Claude",
+    "engine": "kokoro",
+    "voice": "am_onyx",
+    "palette": "claude",
+    "typography": {
+      "serif": "Tiempos/EB Garamond",
+      "ui": "system sans",
+      "mono": "SF Mono"
+    },
+    "register": "Teardown",
+    "format": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "source": "Anthropic — 'Can AI be trusted?' (Claude ad), YouTube jVbGX7zJHi8, and its comment-section reception (99+ comments captured 2026-07). Score: Duval Timothy, 'Ball' (2017), Apron Records.",
+    "greeting_check": {
+      "rule": "Wagwan is Bear's alone; Liam never takes it. Liam gets a world-language hello, up to two words.",
+      "chosen": "Yassou, Liam",
+      "language": "Greek"
+    },
+    "authoring_law": "SHOW-DON'T-TELL: every body beat carries a show block — ordered visual events the viewer WATCHES; narration reacts to the screen (~45–70 words). Evidence (verbatim comments, ad copy, counts) lands ON SCREEN as cards, sorts, strikes, and counters — never recited.",
+    "gate": "GATE P — SIGNED by Bear 2026-07-21 ('go'). Audio approved: Kokoro am_onyx, free/local. Build per BUILD-PROMPT.md. Never publish.",
+    "build": {
+      "at": "",
+      "cut": "slate",
+      "filled": 0,
+      "of": 9,
+      "slates": [
+        "B00",
+        "B01",
+        "B02",
+        "B03",
+        "B04",
+        "B05",
+        "B06",
+        "B07",
+        "B08"
+      ],
+      "skin_warnings": []
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "act": "ASK",
+      "engine": "kokoro",
+      "voice": "am_onyx",
+      "lead_silence_s": 0.5,
+      "narration_text": "Anthropic ran an ad. Sixty seconds of hard questions over grainy film — 'Can AI be trusted?' — then it just ends. No answers. This is Liam, in for Bear. The internet answered for them. Watch.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "type-on",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Yassou, Liam",
+            "topic": "AI CULTURE · ANTHROPIC AD",
+            "segment": "The Ad That Answered Itself",
+            "command": "Break down Anthropic's 'Can AI be trusted?' ad and the reaction to it — what it does, why the top read is that it answers itself, and whether that was even the right question.",
+            "runningText": "reading 99 comments…",
+            "output": [
+              "✓ 99 comments read — three camps found",
+              "→ the images answer the copy",
+              "→ the crowd swapped the noun: trust WHOM?"
+            ],
+            "folderLabel": "@NikBearBrown",
+            "modelLabel": "Fable 5",
+            "effortLabel": "High"
+          },
+          "show": [
+            {
+              "at": 0.0,
+              "event": "greeting + spark on screen; command TYPES ON as the voice sets up the ad"
+            },
+            {
+              "at": 0.55,
+              "event": "send button arms; runningText 'reading 99 comments…' pulses"
+            },
+            {
+              "at": 0.7,
+              "event": "RESULT lines land one per phrase (COLD OPEN LAW: the ask lands answered)"
+            }
+          ],
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": ""
+          }
+        }
+      },
+      "estimated_duration_s": 14,
+      "build": {
+        "status": "SLATE",
+        "src": "",
+        "filled_by": "pipeline",
+        "at": ""
+      }
+    },
+    {
+      "beat_id": "B01",
+      "act": "BODY",
+      "voice": "am_onyx",
+      "narration_text": "Here's the whole ad. Question after question — the brakes, the jobs, the caring machine — grain, a piano, no narrator, no demo. An ad shaped like a question mark. The pitch underneath: we're brave enough to ask. Hold that — because asking is not answering.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "AdQuestionChain",
+          "provenance": "PIPELINE — build post-GATE-P",
+          "props": {
+            "sparkLine": "Asking is not answering.",
+            "questions": [
+              "Can AI be trusted?",
+              "Who's gonna hit the brakes, if we need to?",
+              "If it takes almost all the jobs, what does it mean to work?",
+              "Why do we have to have this stuff?",
+              "If a machine can pretend to care better than I can actually care — where's the line?",
+              "What if we started to be more human again?"
+            ]
+          },
+          "show": [
+            {
+              "at": 0.0,
+              "event": "grain-textured polaroid cards: the ad's OWN questions type on one per phrase, stacking at slight angles"
+            },
+            {
+              "at": 0.45,
+              "event": "cards keep landing — 'why do we have to have this stuff?' hits on the spoken beat"
+            },
+            {
+              "at": 0.72,
+              "event": "the stack settles into the silhouette of a question mark (terracotta dot as the point)"
+            },
+            {
+              "at": 0.88,
+              "event": "spark line lands: 'Asking is not answering.'"
+            }
+          ],
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": ""
+          }
+        }
+      },
+      "estimated_duration_s": 16,
+      "build": {
+        "status": "SLATE",
+        "src": "",
+        "filled_by": "pipeline",
+        "at": ""
+      }
+    },
+    {
+      "beat_id": "B02",
+      "act": "BODY",
+      "voice": "am_onyx",
+      "narration_text": "And it worked. Look at this thread — people searched for an ad. Some came to praise it, most came swinging, everybody argued. If the brief was start-the-conversation: cleared. Credit where it's due. Now the honest part — what did the conversation conclude?",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "ReactionSplit",
+          "provenance": "PIPELINE — build post-GATE-P",
+          "props": {
+            "sparkLine": "It started the argument it staged.",
+            "comments": [
+              {
+                "handle": "@tchal2005",
+                "text": "Never in my life I thought I'd search for an ad.",
+                "likes": null
+              },
+              {
+                "handle": "@heyenergi",
+                "text": "Wow great ad. And even better that a company is not afraid of hard questions."
+              },
+              {
+                "handle": "@JimKellyCapital",
+                "text": "Perhaps the most dystopian marketing slop I've ever seen"
+              },
+              {
+                "handle": "@dedricreid",
+                "text": "Great ad. Captures the moment we are in exceptionally well."
+              },
+              {
+                "handle": "@seanofthezo",
+                "text": "What an own goal"
+              }
+            ]
+          },
+          "show": [
+            {
+              "at": 0.0,
+              "event": "verbatim comment cards DROP IN one per phrase — @tchal2005's 'searched for an ad' lands first, on the quote"
+            },
+            {
+              "at": 0.3,
+              "event": "cards alternate: praise lands left-tilted, attacks right-tilted — the split forms itself"
+            },
+            {
+              "at": 0.6,
+              "event": "a counter climbs behind the cards: 99+ comments, all arguing"
+            },
+            {
+              "at": 0.85,
+              "event": "spark line: 'It started the argument it staged.'"
+            }
+          ],
+          "rendered": {
+            "out": "media/B02.mp4",
+            "at": ""
+          }
+        }
+      },
+      "estimated_duration_s": 15,
+      "build": {
+        "status": "SLATE",
+        "src": "",
+        "filled_by": "pipeline",
+        "at": ""
+      }
+    },
+    {
+      "beat_id": "B03",
+      "act": "BODY",
+      "voice": "am_onyx",
+      "narration_text": "The read that got upvoted hardest — watch the images sort themselves. Every warm shot: a human, no AI in it. Every ominous shot: that's the AI. The copy asks the question. The pictures answer it. And the pictures voted no.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "JoyDreadSplit",
+          "provenance": "PIPELINE — build post-GATE-P",
+          "props": {
+            "sparkLine": "The pictures voted no.",
+            "warmFrames": [
+              "hiking a slot canyon",
+              "whale watching",
+              "a kid in a field"
+            ],
+            "darkFrames": [
+              "mining the minerals",
+              "children at screens",
+              "mass surveillance"
+            ],
+            "receipt": {
+              "handle": "@bong-garcia",
+              "text": "Looks like those rhetorical questions are answered. Bravo, Anthropic!"
+            }
+          },
+          "show": [
+            {
+              "at": 0.0,
+              "event": "six frame-cards enter MIXED in the center — the ad's shots as labeled polaroids"
+            },
+            {
+              "at": 0.25,
+              "event": "on 'sort themselves': cards physically SORT — warm shots slide LEFT under 'NO AI IN IT', ominous slide RIGHT under 'THE AI'"
+            },
+            {
+              "at": 0.5,
+              "event": "left column glows cream/warm; right column dims toward ink — the split IS the argument"
+            },
+            {
+              "at": 0.75,
+              "event": "@bong-garcia's verbatim card stamps across the bottom: 'Bravo, Anthropic!'"
+            },
+            {
+              "at": 0.9,
+              "event": "spark line: 'The pictures voted no.'"
+            }
+          ],
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": ""
+          }
+        }
+      },
+      "estimated_duration_s": 16,
+      "build": {
+        "status": "SLATE",
+        "src": "",
+        "filled_by": "pipeline",
+        "at": ""
+      }
+    },
+    {
+      "beat_id": "B04",
+      "act": "BODY",
+      "voice": "am_onyx",
+      "narration_text": "Then the sharpest comment fixes the question — live. AI can't earn trust; it can't be held accountable. Companies can. Swap the noun and one line lands very differently: 'if we all had a voice in it' — from one of the most powerful AI companies on earth. The swap moves the account off the people who decide.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "WrongQuestionSwap",
+          "provenance": "PIPELINE — build post-GATE-P",
+          "props": {
+            "sparkLine": "Trust whom?",
+            "before": "Can AI be trusted?",
+            "strike": "AI",
+            "after": "the companies building it",
+            "receipt": {
+              "handle": "@BenGrimm977",
+              "text": "AI is not an institution that can earn trust or be held accountable. The real question is whether we can trust the corporations building and controlling these systems."
+            }
+          },
+          "show": [
+            {
+              "at": 0.0,
+              "event": "the ad's title question fills the frame in the big serif: 'Can AI be trusted?'"
+            },
+            {
+              "at": 0.2,
+              "event": "on 'fixes the question': a terracotta strike draws through 'AI' — the edit happens ON the spoken word"
+            },
+            {
+              "at": 0.35,
+              "event": "'the companies building it' TYPES into the gap; the question re-reads itself"
+            },
+            {
+              "at": 0.6,
+              "event": "@BenGrimm977's verbatim card slides up beneath the edited question"
+            },
+            {
+              "at": 0.9,
+              "event": "spark line: 'Trust whom?'"
+            }
+          ],
+          "rendered": {
+            "out": "media/B04.mp4",
+            "at": ""
+          }
+        }
+      },
+      "estimated_duration_s": 18,
+      "build": {
+        "status": "SLATE",
+        "src": "",
+        "filled_by": "pipeline",
+        "at": ""
+      }
+    },
+    {
+      "beat_id": "B05",
+      "act": "BODY",
+      "voice": "am_onyx",
+      "narration_text": "And the tell. Half the thread isn't arguing about AI at all — it's asking for the song. A human at a piano, recorded nine years before this ad existed. In an ad about trusting AI, the one thing everybody loved is the one thing with no AI in it.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "HumanPianoBeat",
+          "provenance": "PIPELINE — build post-GATE-P",
+          "props": {
+            "sparkLine": "No AI in it.",
+            "track": "Duval Timothy — 'Ball' (2017) · Apron Records",
+            "stamp": "recorded 9 years before the ad",
+            "comments": [
+              {
+                "handle": "@nnicoleho",
+                "text": "anyone else who zoned out on the voiceover and wants the track ID instead – Ball by Duval Timothy. you're welcome!"
+              },
+              {
+                "handle": "@emilskovgaard5829",
+                "text": "Music credits please. That was the best part."
+              },
+              {
+                "handle": "@Bread9194",
+                "text": "Bro the piano melody I'm so addicted to it"
+              }
+            ]
+          },
+          "show": [
+            {
+              "at": 0.0,
+              "event": "a live piano waveform pulses across the frame — the only 'moving footage' in the beat"
+            },
+            {
+              "at": 0.2,
+              "event": "track-ID comment chips ping in one per phrase, like replies arriving"
+            },
+            {
+              "at": 0.5,
+              "event": "the track card flips up: Duval Timothy — 'Ball' (2017); stamp hits: 'recorded 9 years before the ad'"
+            },
+            {
+              "at": 0.8,
+              "event": "waveform keeps playing alone as the voice lands the line; spark: 'No AI in it.'"
+            }
+          ],
+          "rendered": {
+            "out": "media/B05.mp4",
+            "at": ""
+          }
+        }
+      },
+      "estimated_duration_s": 15,
+      "build": {
+        "status": "SLATE",
+        "src": "",
+        "filled_by": "pipeline",
+        "at": ""
+      }
+    },
+    {
+      "beat_id": "B06",
+      "act": "VERDICT",
+      "voice": "am_onyx",
+      "narration_text": "Verdict. Two things are true. The craft is real — the restraint, the score, the nerve to ask in public. The rhetoric is an own goal — the imagery undercuts the copy, and the framing walks accountability off the companies onto a tool that can't carry it. Top joke: out of tokens. Top argument: wrong question. Top love: a human playing piano. They trusted everything in it except the AI.",
+      "shot": {
+        "type": "CARD",
+        "source": "remotion",
+        "motion": "reveal-per-phrase",
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "provenance": "proven-core/ClaudeVerdictArtifact",
+          "version": "1",
+          "props": {
+            "artifactTitle": "Can AI be trusted? — the reaction",
+            "artifactHeading": "What the comments actually concluded",
+            "artifactLines": [
+              "Craft: real — restraint, Duval Timothy's 'Ball,' the nerve to ask in public.",
+              "Rhetoric: own goal — the joyful frames are AI-free; the ominous frames are the AI.",
+              "Framing: the question walks accountability off the companies onto the tool.",
+              "Top joke: out of tokens · top argument: wrong question · top love: a piano.",
+              "They trusted everything in it except the AI."
+            ]
+          },
+          "show": [
+            {
+              "at": 0.0,
+              "event": "artifact page opens with title + heading only — lines NOT pre-loaded"
+            },
+            {
+              "at": 0.12,
+              "event": "each artifact line REVEALS on its spoken phrase — the page writes itself with the voice"
+            },
+            {
+              "at": 0.85,
+              "event": "final line lands alone and holds: 'They trusted everything in it except the AI.'"
+            }
+          ],
+          "rendered": {
+            "out": "media/B06.mp4",
+            "at": ""
+          }
+        }
+      },
+      "estimated_duration_s": 22,
+      "build": {
+        "status": "SLATE",
+        "src": "",
+        "filled_by": "pipeline",
+        "at": ""
+      }
+    },
+    {
+      "beat_id": "B07",
+      "act": "HANDOFF",
+      "voice": "am_onyx",
+      "narration_text": "Your turn — paste this in. Watch the ad with the sound off, then with only the sound. The pictures say one thing, the piano says another, and the copy is the part nobody quoted. Make Claude commit to a read: which channel is the real message — and who does the ad let off the hook? Liam, in for Bear.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "type-on",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Your turn.",
+            "topic": "AI CULTURE · ANTHROPIC AD",
+            "segment": "The Ad That Answered Itself",
+            "command": "Watch the Anthropic 'Can AI be trusted?' ad once with the sound off, then once with only the sound. Which cut makes the stronger case — and for what?",
+            "runningText": "paste this into Claude…",
+            "folderLabel": "@NikBearBrown",
+            "modelLabel": "Fable 5",
+            "effortLabel": "High"
+          },
+          "show": [
+            {
+              "at": 0.0,
+              "event": "composer opens on 'Your turn.'; the prompt TYPES ON as the voice explains the split-the-channels move"
+            },
+            {
+              "at": 0.75,
+              "event": "send button arms; 'paste this into Claude…' pulses; holds through the sign-off"
+            }
+          ],
+          "rendered": {
+            "out": "media/B07.mp4",
+            "at": ""
+          }
+        }
+      },
+      "estimated_duration_s": 22,
+      "build": {
+        "status": "SLATE",
+        "src": "",
+        "filled_by": "pipeline",
+        "at": ""
+      }
+    },
+    {
+      "beat_id": "B08",
+      "act": "OUTRO",
+      "engine": "kokoro",
+      "voice": "am_onyx",
+      "narration_text": "The Ad That Answered Itself",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "The Ad That Answered Itself",
+            "handle": "@NikBearBrown",
+            "subline": "Liam, in for Bear."
+          },
+          "show": [
+            {
+              "at": 0.0,
+              "event": "title restates in the poster serif, terracotta period; handle + 'Liam, in for Bear.' beneath"
+            }
+          ],
+          "rendered": {
+            "out": "media/B08.mp4",
+            "at": ""
+          }
+        }
+      },
+      "estimated_duration_s": 5,
+      "build": {
+        "status": "SLATE",
+        "src": "",
+        "filled_by": "pipeline",
+        "at": ""
+      }
+    }
+  ]
+}

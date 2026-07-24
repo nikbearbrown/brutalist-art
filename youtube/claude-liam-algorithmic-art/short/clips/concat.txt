@@ -1,0 +1,8 @@
+file '/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-algorithmic-art/short/clips/B00.mp4'
+file '/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-algorithmic-art/short/clips/B01.mp4'
+file '/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-algorithmic-art/short/clips/B05.mp4'
+file '/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-algorithmic-art/short/clips/B06.mp4'
+file '/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-algorithmic-art/short/clips/B07.mp4'
+file '/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-algorithmic-art/short/clips/BHTF.mp4'
+file '/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-algorithmic-art/short/clips/BOUT.mp4'
+file '/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-algorithmic-art/short/clips/END.mp4'

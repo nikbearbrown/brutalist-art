@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Animated slate — The Ad That Answered Itself</title>
+<style>
+  :root{
+    --page:#FAF9F5; --card:#FFFFFF; --border:#E5E2D9;
+    --ink:#3D3929; --ink-soft:#73705F; --ghost:#A9A491;
+    --spark:#D97757; --send:#C6613F;
+    --serif:"Iowan Old Style","Palatino Linotype","EB Garamond",Georgia,serif;
+    --ui:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --mono:"SF Mono",ui-monospace,Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;background:#111;font-family:var(--ui);color:var(--ink)}
+  .wrap{min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:22px;gap:12px}
+  .stage{position:relative;width:min(96vw,1600px);aspect-ratio:16/9;background:var(--page);
+    border-radius:14px;overflow:hidden;box-shadow:0 24px 70px rgba(0,0,0,.5);border:1px solid #000}
+  .beat{position:absolute;inset:0;display:flex;flex-direction:column;padding:5% 6% 4.2%}
+  .meta{display:flex;align-items:center;gap:12px;font-size:.95vw;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+  .badge{font-weight:700;color:var(--send);border:1px solid var(--border);border-radius:999px;padding:.3em .8em;background:var(--card)}
+  .grow{flex:1}
+  .pattern{font-family:var(--mono);font-size:.9vw;color:var(--ghost);text-transform:none;letter-spacing:.02em}
+  .folder{position:absolute;right:6%;bottom:4%;font-size:1vw;color:var(--ink-soft)}
+  .folder .sp{color:var(--spark);margin-right:.3em}
+  .voice{position:absolute;left:6%;right:16%;bottom:3.6%;font-family:var(--serif);font-style:italic;
+    font-size:1.15vw;line-height:1.45;color:var(--ink-soft)}
+  .voice b{color:var(--send);font-style:normal;font-weight:600}
+  .center{flex:1;position:relative;display:flex;align-items:center;justify-content:center}
+  /* reveal machinery */
+  .rev{opacity:0;transform:translateY(16px);transition:opacity .45s ease,transform .45s ease}
+  .rev.on{opacity:1;transform:none}
+  .rev.pop{transform:scale(.9)}
+  .rev.pop.on{transform:scale(1)}
+  /* spark line */
+  .sparkline{position:absolute;left:0;right:0;top:9%;text-align:center;font-family:var(--serif);
+    font-size:2.6vw;font-weight:600;color:var(--ink)}
+  .sparkline .p{color:var(--spark)}
+  /* composer */
+  .greeting{font-family:var(--serif);font-size:3vw;margin:2vw 0 .6vw}
+  .greeting .p{color:var(--spark)}
+  .segline{font-size:.95vw;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:.5vw}
+  .composer{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.8% 2.2%;
+    box-shadow:0 10px 30px rgba(61,57,41,.06)}
+  .cmd{font-family:var(--serif);font-size:1.6vw;line-height:1.5;min-height:4.6vw}
+  .cmd .caret{display:inline-block;width:.55em;height:1.05em;background:var(--spark);vertical-align:-.15em;
+    animation:blink 1s steps(1) infinite;margin-left:2px}
+  @keyframes blink{50%{opacity:0}}
+  .composer-foot{display:flex;align-items:center;gap:12px;margin-top:1vw}
+  .send-btn{width:2.4vw;height:2.4vw;border-radius:50%;background:var(--border);display:flex;align-items:center;
+    justify-content:center;color:#fff;font-size:1.1vw;transition:background .4s}
+  .send-btn.armed{background:var(--send)}
+  .run{font-family:var(--mono);font-size:.95vw;color:var(--ghost)}
+  .run.pulse{animation:pulse 1.4s ease infinite}
+  @keyframes pulse{50%{opacity:.35}}
+  .outlines{margin-top:1vw;display:flex;flex-direction:column;gap:.5vw}
+  .outline{font-family:var(--mono);font-size:1.1vw;color:var(--ink)}
+  .outline .ok{color:var(--send);font-weight:700}
+  /* polaroid question cards (B01) */
+  .qstack{position:relative;width:100%;height:100%}
+  .qcard{position:absolute;background:var(--card);border:1px solid var(--border);border-radius:6px;
+    padding:1.1vw 1.4vw 1.6vw;font-family:var(--serif);font-size:1.45vw;line-height:1.35;color:var(--ink);
+    box-shadow:0 8px 24px rgba(61,57,41,.12);max-width:30vw;
+    background-image:repeating-linear-gradient(0deg,rgba(61,57,41,.02) 0 2px,transparent 2px 4px)}
+  .bigq{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+    font-family:var(--serif);font-size:26vw;color:var(--spark);opacity:0;transition:opacity .8s}
+  .bigq.on{opacity:.14}
+  /* comment cards (B02, B05 chips, receipts) */
+  .ccard{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:1vw 1.3vw;
+    box-shadow:0 8px 22px rgba(61,57,41,.1);max-width:34vw}
+  .ccard .h{font-family:var(--ui);font-size:.95vw;color:var(--ink-soft);margin-bottom:.3vw}
+  .ccard .t{font-family:var(--serif);font-size:1.3vw;line-height:1.4}
+  .ccard.neg{border-left:4px solid var(--send)}
+  .ccard.pos{border-left:4px solid #9BB89B}
+  .counter{position:absolute;right:2%;top:4%;font-family:var(--mono);font-size:1.2vw;color:var(--ghost)}
+  .counter b{color:var(--send);font-size:2vw}
+  /* B03 sort */
+  .sortwrap{position:relative;width:100%;height:100%}
+  .colhead{position:absolute;top:14%;width:38%;text-align:center;font-family:var(--ui);font-size:1.15vw;
+    letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft)}
+  .colhead.L{left:3%}.colhead.R{right:3%}
+  .fcard{position:absolute;left:50%;top:44%;width:20vw;padding:1vw 1.2vw;background:var(--card);
+    border:1px solid var(--border);border-radius:6px;font-family:var(--serif);font-size:1.25vw;text-align:center;
+    box-shadow:0 8px 22px rgba(61,57,41,.12);transition:all .9s cubic-bezier(.2,.7,.2,1)}
+  .sorted .fcard.warm{background:#FFFDF6;border-color:#E8D9B8}
+  .sorted .fcard.dark{background:#3D3929;color:#FAF9F5;border-color:#3D3929}
+  .receipt{position:absolute;left:50%;transform:translateX(-50%) rotate(-1deg);bottom:13%;}
+  /* B04 swap */
+  .bigline{font-family:var(--serif);font-size:4.6vw;font-weight:600;text-align:center;line-height:1.2}
+  .strike{position:relative;display:inline-block}
+  .strike::after{content:"";position:absolute;left:0;right:0;top:54%;height:.09em;background:var(--spark);
+    transform:scaleX(var(--sx,0));transform-origin:left center}
+  .swap-in{display:block;font-size:3.2vw;color:var(--send);min-height:3.6vw;margin-top:.6vw}
+  /* B05 waveform */
+  .wave{display:flex;align-items:center;gap:.45vw;height:9vw}
+  .wave i{width:.9vw;background:var(--ink);border-radius:99px;animation:wv 1.15s ease-in-out infinite}
+  .wave i:nth-child(4n){background:var(--spark)}
+  @keyframes wv{0%,100%{height:18%}50%{height:var(--h,80%)}}
+  .track{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:1vw 1.6vw;
+    font-family:var(--serif);font-size:1.6vw;box-shadow:0 8px 22px rgba(61,57,41,.1)}
+  .stamp{display:inline-block;border:2px solid var(--send);color:var(--send);border-radius:6px;
+    padding:.25em .7em;font-family:var(--mono);font-size:1.05vw;transform:rotate(-2deg)}
+  /* verdict artifact */
+  .art{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:2% 2.6%;width:100%;
+    box-shadow:0 10px 30px rgba(61,57,41,.06)}
+  .art-title{font-family:var(--serif);font-size:2.4vw;font-weight:600}
+  .art-head{font-size:1.05vw;letter-spacing:.1em;text-transform:uppercase;color:var(--send);margin:.4em 0 .9em}
+  .art ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.8vw}
+  .art li{font-family:var(--serif);font-size:1.5vw;line-height:1.45;padding-left:1.1em;position:relative}
+  .art li::before{content:"—";position:absolute;left:0;color:var(--spark)}
+  .art li.final{font-weight:600}
+  /* outro */
+  .otitle{font-family:var(--serif);font-size:5.2vw;font-weight:600;line-height:1.05;max-width:22ch}
+  .otitle .p{color:var(--spark)}
+  .ohandle{font-size:1.5vw;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin-top:1.1vw}
+  .osub{font-family:var(--serif);font-style:italic;font-size:1.4vw;color:var(--ink-soft);margin-top:.4vw}
+  /* chrome */
+  .bar{position:absolute;left:0;bottom:0;height:5px;background:var(--spark);width:0}
+  .controls{display:flex;align-items:center;gap:14px;color:#cfcabb;font-size:14px}
+  .controls button{background:#26251f;color:#f3efe4;border:1px solid #3a382f;border-radius:8px;padding:8px 14px;cursor:pointer}
+  .dots{display:flex;gap:7px}
+  .dot{width:9px;height:9px;border-radius:50%;background:#4a473c;cursor:pointer}
+  .dot.on{background:var(--spark)}
+  .note{color:#8f8b7d;font-size:12.5px;font-family:var(--mono);text-align:center;max-width:1000px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="stage" id="stage"></div>
+  <div class="controls">
+    <button id="prev">‹ Prev</button>
+    <button id="play">❚❚ Pause</button>
+    <button id="next">Next ›</button>
+    <div class="dots" id="dots"></div>
+    <span id="counter"></span>
+  </div>
+  <div class="note">ANIMATED SLATE · SHOW-DON'T-TELL · each beat plays its show events at estimated narration timing · GATE P — no audio spent</div>
+</div>
+<script>
+const B00CMD="Break down Anthropic's “Can AI be trusted?” ad and the reaction to it — what it does, why the top read is that it answers itself, and whether that was even the right question.";
+const B07CMD="Watch the Anthropic “Can AI be trusted?” ad once with the sound off, then once with only the sound. Which cut makes the stronger case — and for what?";
+const BEATS=[
+ {id:"B00",act:"ASK",est:14,pattern:"ClaudeComposerAsk",
+  vo:"Anthropic ran an ad. Sixty seconds of hard questions over grainy film — “Can AI be trusted?” — then it just ends. No answers. <b>This is Liam, in for Bear.</b> The internet answered for them. Watch."},
+ {id:"B01",act:"BODY",est:16,pattern:"PIPELINE → AdQuestionChain",
+  vo:"Here's the whole ad. Question after question — the brakes, the jobs, the caring machine — grain, a piano, no narrator, no demo. An ad shaped like a question mark. The pitch underneath: <b>we're brave enough to ask.</b> Hold that — because asking is not answering."},
+ {id:"B02",act:"BODY",est:15,pattern:"PIPELINE → ReactionSplit",
+  vo:"And it worked. Look at this thread — people <b>searched for an ad</b>. Some came to praise it, most came swinging, everybody argued. If the brief was start-the-conversation: cleared. Credit where it's due. Now the honest part — what did the conversation conclude?"},
+ {id:"B03",act:"BODY",est:16,pattern:"PIPELINE → JoyDreadSplit",
+  vo:"The read that got upvoted hardest — <b>watch the images sort themselves.</b> Every warm shot: a human, no AI in it. Every ominous shot: that's the AI. The copy asks the question. The pictures answer it. And the pictures voted no."},
+ {id:"B04",act:"BODY",est:18,pattern:"PIPELINE → WrongQuestionSwap",
+  vo:"Then the sharpest comment <b>fixes the question — live.</b> AI can't earn trust; it can't be held accountable. Companies can. Swap the noun and one line lands very differently: “if we all had a voice in it” — from one of the most powerful AI companies on earth."},
+ {id:"B05",act:"BODY",est:15,pattern:"PIPELINE → HumanPianoBeat",
+  vo:"And the tell. Half the thread isn't arguing about AI at all — it's asking for <b>the song</b>. A human at a piano, recorded nine years before this ad existed. In an ad about trusting AI, the one thing everybody loved is the one thing with no AI in it."},
+ {id:"B06",act:"VERDICT",est:22,pattern:"ClaudeVerdictArtifact",
+  vo:"Verdict. Two things are true. The craft is real. The rhetoric is an own goal. <b>Top joke: out of tokens. Top argument: wrong question. Top love: a human playing piano.</b>"},
+ {id:"B07",act:"HANDOFF",est:22,pattern:"ClaudeComposerAsk",
+  vo:"Your turn — paste this in. The pictures say one thing, the piano says another, and the copy is the part nobody quoted. Make Claude commit to a read: which channel is the real message — and who does the ad let off the hook? <b>Liam, in for Bear.</b>"},
+ {id:"B08",act:"OUTRO",est:5,pattern:"ClaudeTitleOutro",vo:""}
+];
+const stage=document.getElementById('stage'),dotsEl=document.getElementById('dots'),counterEl=document.getElementById('counter');
+let idx=0,playing=true,t0=0,raf=null;
+
+const chrome=(b,inner)=>`
+  <div class="beat">
+    <div class="meta"><span class="badge">${b.id} · ${b.act}</span><span class="grow"></span>
+      <span class="pattern">${b.pattern}</span></div>
+    <div class="center">${inner}</div>
+    ${b.vo?`<div class="voice">VO — ${b.vo}</div>`:""}
+    <div class="folder"><span class="sp">✦</span>@NikBearBrown</div>
+  </div><div class="bar" id="bar"></div>`;
+
+const ccard=(h,t,cls,at,extra)=>`<div class="ccard rev pop ${cls||""}" data-at="${at}" style="${extra||""}">
+  <div class="h">${h}</div><div class="t">${t}</div></div>`;
+
+function build(){
+  const b=BEATS[idx];let inner="";
+  if(b.id==="B00"){
+    inner=`<div style="width:100%">
+      <div class="greeting"><span class="p">✦</span> Yassou, Liam</div>
+      <div class="segline">The Ad That Answered Itself · AI CULTURE</div>
+      <div class="composer">
+        <div class="cmd"><span id="type"></span><span class="caret" id="caret"></span></div>
+        <div class="composer-foot"><span class="run" id="run">reading 99 comments…</span><span class="grow"></span>
+          <span class="send-btn" id="send">↑</span></div>
+      </div>
+      <div class="outlines">
+        <div class="outline rev" data-at="0.70"><span class="ok">✓</span> 99 comments read — three camps found</div>
+        <div class="outline rev" data-at="0.79">→ the images answer the copy</div>
+        <div class="outline rev" data-at="0.88">→ the crowd swapped the noun: trust <b>WHOM?</b></div>
+      </div></div>`;
+  }
+  if(b.id==="B01"){
+    const qs=["Can AI be trusted?","Who's gonna hit the brakes, if we need to?","If it takes almost all the jobs, what does it mean to work?","Why do we have to have this stuff?","If a machine can pretend to care better than I can actually care — where's the line?","What if we started to be more human again?"];
+    const pos=[[4,8,-3],[36,2,2],[66,12,-2],[8,46,2],[34,58,-1],[68,44,3]];
+    inner=`<div class="qstack">
+      <div class="bigq" data-at="0.72">?</div>
+      ${qs.map((q,i)=>`<div class="qcard rev pop" data-at="${0.05+i*0.11}" style="left:${pos[i][0]}%;top:${pos[i][1]}%;transform:rotate(${pos[i][2]}deg)">${q}</div>`).join("")}
+      <div class="sparkline rev" data-at="0.88" style="top:auto;bottom:6%"><span class="p">✦</span> Asking is not answering.</div>
+    </div>`;
+  }
+  if(b.id==="B02"){
+    inner=`<div style="position:relative;width:100%;height:100%">
+      <div class="counter rev" data-at="0.1">comments arguing<br><b id="cnum">0</b></div>
+      <div style="position:absolute;left:2%;top:6%">${ccard("@tchal2005","Never in my life I thought I'd search for an ad.","pos","0.06","transform:rotate(-1.5deg)")}</div>
+      <div style="position:absolute;right:14%;top:2%">${ccard("@heyenergi","Wow great ad. And even better that a company is not afraid of hard questions.","pos","0.24","transform:rotate(1.5deg)")}</div>
+      <div style="position:absolute;left:6%;top:44%">${ccard("@JimKellyCapital","Perhaps the most dystopian marketing slop I've ever seen","neg","0.40","transform:rotate(1deg)")}</div>
+      <div style="position:absolute;right:8%;top:40%">${ccard("@dedricreid","Great ad. Captures the moment we are in exceptionally well.","pos","0.54","transform:rotate(-1deg)")}</div>
+      <div style="position:absolute;left:38%;top:66%">${ccard("@seanofthezo","What an own goal","neg","0.66","transform:rotate(-2deg)")}</div>
+      <div class="sparkline rev" data-at="0.85" style="top:auto;bottom:2%"><span class="p">✦</span> It started the argument it staged.</div>
+    </div>`;
+  }
+  if(b.id==="B03"){
+    const warm=["hiking a slot canyon","whale watching","a kid in a field"];
+    const dark=["mining the minerals","children at screens","mass surveillance"];
+    inner=`<div class="sortwrap" id="sortwrap">
+      <div class="colhead L rev" data-at="0.2">no AI in it</div>
+      <div class="colhead R rev" data-at="0.2">the AI</div>
+      ${warm.map((t,i)=>`<div class="fcard warm rev pop" data-at="${0.04+i*0.06}" data-home="L${i}" style="margin-left:-10vw;margin-top:${(i-1)*3}vw">${t}</div>`).join("")}
+      ${dark.map((t,i)=>`<div class="fcard dark rev pop" data-at="${0.07+i*0.06}" data-home="R${i}" style="margin-left:-10vw;margin-top:${(i-1)*3+1.5}vw">${t}</div>`).join("")}
+      <div class="receipt">${ccard("@bong-garcia","“Looks like those rhetorical questions are answered. Bravo, Anthropic!”","","0.75")}</div>
+      <div class="sparkline rev" data-at="0.9" style="top:2%"><span class="p">✦</span> The pictures voted no.</div>
+    </div>`;
+  }
+  if(b.id==="B04"){
+    inner=`<div style="width:100%;text-align:center">
+      <div class="bigline rev on">Can <span class="strike" id="strike">AI</span> be trusted?
+        <span class="swap-in" id="swap"></span></div>
+      <div class="rev pop" data-at="0.6" style="display:inline-block;margin-top:1.6vw">${ccard("@BenGrimm977","“AI is not an institution that can earn trust or be held accountable. The real question is whether we can trust the corporations building and controlling these systems.”","","0.6","max-width:46vw")}</div>
+      <div class="sparkline rev" data-at="0.9" style="top:2%"><span class="p">✦</span> Trust whom?</div>
+    </div>`;
+  }
+  if(b.id==="B05"){
+    const bars=Array.from({length:26},(_,i)=>`<i style="--h:${35+Math.abs(Math.sin(i*1.7))*55}%;animation-delay:${(i%7)*.13}s"></i>`).join("");
+    inner=`<div style="width:100%;display:flex;flex-direction:column;align-items:center;gap:1.2vw">
+      <div class="wave rev on">${bars}</div>
+      <div style="display:flex;gap:1vw;flex-wrap:wrap;justify-content:center">
+        ${ccard("@nnicoleho","zoned out on the voiceover and wants the track ID instead – Ball by Duval Timothy. you're welcome!","","0.2")}
+        ${ccard("@emilskovgaard5829","Music credits please. That was the best part.","","0.32")}
+        ${ccard("@Bread9194","Bro the piano melody I'm so addicted to it","","0.44")}
+      </div>
+      <div class="track rev pop" data-at="0.5">Duval Timothy — “Ball” (2017) · Apron Records</div>
+      <div class="rev" data-at="0.62"><span class="stamp">recorded 9 years before the ad</span></div>
+      <div class="sparkline rev" data-at="0.8" style="top:2%"><span class="p">✦</span> No AI in it.</div>
+    </div>`;
+  }
+  if(b.id==="B06"){
+    const lines=["Craft: real — restraint, Duval Timothy's “Ball,” the nerve to ask in public.",
+      "Rhetoric: own goal — the joyful frames are AI-free; the ominous frames are the AI.",
+      "Framing: the question walks accountability off the companies onto the tool.",
+      "Top joke: out of tokens · top argument: wrong question · top love: a piano.",
+      "They trusted everything in it except the AI."];
+    inner=`<div class="art">
+      <div class="art-title">Can AI be trusted? — the reaction</div>
+      <div class="art-head">What the comments actually concluded</div>
+      <ul>${lines.map((l,i)=>`<li class="rev ${i===4?'final':''}" data-at="${0.12+i*0.16}">${l}</li>`).join("")}</ul>
+    </div>`;
+  }
+  if(b.id==="B07"){
+    inner=`<div style="width:100%">
+      <div class="greeting"><span class="p">✦</span> Your turn.</div>
+      <div class="segline">The Ad That Answered Itself · AI CULTURE</div>
+      <div class="composer">
+        <div class="cmd"><span id="type"></span><span class="caret" id="caret"></span></div>
+        <div class="composer-foot"><span class="run" id="run">paste this into Claude…</span><span class="grow"></span>
+          <span class="send-btn" id="send">↑</span></div>
+      </div></div>`;
+  }
+  if(b.id==="B08"){
+    inner=`<div style="width:100%">
+      <div class="otitle rev on">The Ad That Answered Itself<span class="p">.</span></div>
+      <div class="ohandle">@NikBearBrown</div>
+      <div class="osub">Liam, in for Bear.</div></div>`;
+  }
+  stage.innerHTML=chrome(b,inner);
+  [...dotsEl.children].forEach((d,i)=>d.classList.toggle('on',i===idx));
+  counterEl.textContent=`${idx+1}/${BEATS.length} · ${b.id} · ~${b.est}s`;
+  t0=performance.now();
+}
+function update(p){
+  const b=BEATS[idx];
+  stage.querySelectorAll('[data-at]').forEach(el=>el.classList.toggle('on',p>=+el.dataset.at));
+  if(b.id==="B00"||b.id==="B07"){
+    const full=b.id==="B00"?B00CMD:B07CMD,end=b.id==="B00"?0.5:0.7;
+    const n=Math.floor(Math.min(1,p/end)*full.length);
+    const t=stage.querySelector('#type');if(t)t.textContent=full.slice(0,n);
+    const done=p>=end;
+    const s=stage.querySelector('#send');if(s)s.classList.toggle('armed',done);
+    const r=stage.querySelector('#run');if(r)r.classList.toggle('pulse',done);
+    const c=stage.querySelector('#caret');if(c)c.style.display=done?"none":"inline-block";
+  }
+  if(b.id==="B02"){
+    const c=stage.querySelector('#cnum');
+    if(c)c.textContent=p>0.72?"99+":Math.floor(Math.min(1,p/0.72)*99);
+  }
+  if(b.id==="B03"){
+    const w=stage.querySelector('#sortwrap');
+    if(w&&p>=0.25&&!w.classList.contains('sorted')){
+      w.classList.add('sorted');
+      w.querySelectorAll('.fcard').forEach(el=>{
+        const h=el.dataset.home,i=+h.slice(1);
+        el.style.left=h[0]==="L"?"12%":"68%";
+        el.style.top=(22+i*17)+"%";
+        el.style.marginLeft="0";el.style.marginTop="0";
+      });
+    }
+  }
+  if(b.id==="B04"){
+    const st=stage.querySelector('#strike');
+    if(st)st.style.setProperty('--sx',Math.min(1,Math.max(0,(p-0.2)/0.1)));
+    const sw=stage.querySelector('#swap');
+    if(sw){const rep="→ the companies building it";
+      sw.textContent=rep.slice(0,Math.floor(Math.min(1,Math.max(0,(p-0.35)/0.2))*rep.length));}
+  }
+}
+function tick(now){
+  const b=BEATS[idx],dur=b.est*1000,p=Math.min(1,(now-t0)/dur);
+  const bar=document.getElementById('bar');if(bar)bar.style.width=(p*100)+"%";
+  update(p);
+  if(p>=1){idx=(idx+1)%BEATS.length;build();}
+  raf=requestAnimationFrame(tick);
+}
+function go(){cancelAnimationFrame(raf);if(playing)raf=requestAnimationFrame(tick);}
+BEATS.forEach((b,i)=>{const d=document.createElement('div');d.className='dot';d.onclick=()=>{idx=i;build();update(0);go();};dotsEl.appendChild(d);});
+document.getElementById('next').onclick=()=>{idx=(idx+1)%BEATS.length;build();update(0);go();};
+document.getElementById('prev').onclick=()=>{idx=(idx-1+BEATS.length)%BEATS.length;build();update(0);go();};
+document.getElementById('play').onclick=e=>{playing=!playing;e.target.textContent=playing?"❚❚ Pause":"▶ Play";
+  if(playing){t0=performance.now();go();}else cancelAnimationFrame(raf);};
+document.addEventListener('keydown',e=>{
+  if(e.key==="ArrowRight")document.getElementById('next').click();
+  else if(e.key==="ArrowLeft")document.getElementById('prev').click();
+  else if(e.key===" "){e.preventDefault();document.getElementById('play').click();}});
+build();go();
+</script>
+</body>
+</html>

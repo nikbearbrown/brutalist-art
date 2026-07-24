@@ -1,0 +1,63 @@
+1
+00:00:00,000 --> 00:00:18,300
+Hola — this is Liam, in for Bear. This
+video was made by the skill it explains.
+The ai-explainer skill — formerly claude-
+
+2
+00:00:18,350 --> 00:00:44,710
+A skill is a folder of instructions Claude
+reads before it works. The ai-explainer
+folder is about fourteen kilobytes of
+
+3
+00:00:44,760 --> 00:01:17,710
+The pipeline has five stages. First:
+author the beat sheet — every beat's
+narration in the Teardown register.
+
+4
+00:01:17,760 --> 00:01:37,320
+Let's self-demo. I can't run myself on
+myself — that gets recursive — so here's
+the next best thing: watch the skill run
+
+5
+00:01:37,370 --> 00:02:00,620
+And here's the result. A beat_sheet.json.
+Each beat has three required fields: the
+beat id, the narration, and the shot
+
+6
+00:02:00,670 --> 00:02:28,870
+The most distinctive law in the skill is
+the ILLUSTRATE law. The Claude interface
+appears in exactly five places: cold open,
+
+7
+00:02:28,920 --> 00:02:57,900
+The skill-teardown modifier is what arms
+this video. It kicks in automatically
+whenever the source is a SKILL.md file —
+
+8
+00:02:57,950 --> 00:03:25,930
+The design tell: the fidelity choice. This
+skill uses the actual Claude app palette —
+cream page, warm ink, one terracotta
+
+9
+00:03:25,980 --> 00:03:56,650
+Let's recap with Claude. The ai-explainer
+skill — formerly claude-explainer — is the
+production pipeline for this channel's
+
+10
+00:03:56,700 --> 00:04:25,620
+Your turn. Here's the prompt — read it
+with me. 'Use the ai-explainer skill on a
+SKILL.md you've written or found — pick
+
+11
+00:04:25,670 --> 00:04:28,500
+Claude, Self-Taught. Liam, in for Bear.

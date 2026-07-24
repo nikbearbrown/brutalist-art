@@ -1,0 +1,466 @@
+{
+  "metadata": {
+    "slug": "claude-liam-cap-06-ship-the-pr",
+    "title": "Fork. Branch. Verify. Ship.",
+    "series": "Ship Something Real: The Reallocation Engine Capstone",
+    "episode": "E6 of 8",
+    "brand": "claude-liam",
+    "engine": "kokoro",
+    "voice": "am_onyx",
+    "greeting": "Olá",
+    "chapter_number": 51,
+    "build": {
+      "at": "2026-07-19T01:18:35",
+      "cut": "master",
+      "filled": 12,
+      "of": 12,
+      "slates": [],
+      "skin_warnings": []
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "role": "OPEN",
+      "narration_text": "Olá, Liam. Episode six: ship the pull request. Step 5 is the smallest step in the capstone — twenty-five points, five requirements — but the requirements are exact. The wrong branch name fails. A leaked data file makes the PR not gradeable. And the PR description has four required fields, not three, not two. The discipline is the deliverable. Liam, in for Bear.",
+      "duration_s": 26,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "REALLOCATION ENGINE CAPSTONE · E6 OF 8",
+            "segment": "Liam, in for Bear.",
+            "greeting": "Olá, Liam.",
+            "command": "grep -n \"contrib\\|not gradeable\\|verify.*doctor\\|gap it closes\" assignments/ASSIGNMENT-professional-contribution-capstone-250pt.md | head -8",
+            "runningText": "* fork → branch contrib/<name>-<component> → verify + doctor → PR description (4 fields) → ship",
+            "output": [
+              "branch: contrib/<name>-<component>",
+              "npm run verify && npm run doctor — both required before push",
+              "PR description: gap · chapters · boundary · one limitation"
+            ],
+            "folderLabel": "the-reallocation-engine/assignments/"
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": 23.04,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B00.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:18:35"
+      }
+    },
+    {
+      "beat_id": "B01",
+      "role": "ANATOMY",
+      "narration_text": "Step 5 has five requirements. First: fork the repo. Second: branch correctly — the branch name is contrib slash your name slash your component. Not main. Not feature-branch. Not my-contribution. contrib slash your name slash your component. Third: place files correctly — contribution code under scripts/ and recipes/, docs and audit output under the right folder, and nothing generated committed as source of truth. Fourth: run npm run verify and npm run doctor before you push. Both must pass. Fifth: the PR description names four things — the gap it closes, the chapters it satisfies, the verified-vs-inferred boundary, and the one limitation it cannot verify. All four. Not three. The grading table treats this as a unit.",
+      "duration_s": 50,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownAnatomy",
+          "props": {
+            "skillName": "GitHub PR",
+            "title": "Five requirements. All exact.",
+            "files": [
+              {
+                "indent": 0,
+                "icon": "🍴",
+                "name": "Fork the repo",
+                "tag": "fork first — do not push directly to upstream",
+                "accent": false
+              },
+              {
+                "indent": 0,
+                "icon": "🌿",
+                "name": "Branch: contrib/<name>-<component>",
+                "tag": "exact convention — wrong branch name fails",
+                "accent": true
+              },
+              {
+                "indent": 0,
+                "icon": "📁",
+                "name": "File placement",
+                "tag": "scripts/ + recipes/ + docs — nothing generated as source of truth",
+                "accent": false
+              },
+              {
+                "indent": 0,
+                "icon": "✅",
+                "name": "npm run verify && npm run doctor",
+                "tag": "both required before push — PR that leaks data is not gradeable",
+                "accent": true
+              },
+              {
+                "indent": 0,
+                "icon": "📝",
+                "name": "PR description: 4 required fields",
+                "tag": "gap · chapters · boundary · the one limitation it cannot verify",
+                "accent": true
+              }
+            ],
+            "calloutText": "The discipline is the deliverable. The wrong branch, a leaked file, or a missing description field fails the step.",
+            "sparkLine": "Five requirements. Branch exact. Doctor clean. Four PR description fields. Discipline is the signal."
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": 47.72,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B01.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:18:35"
+      }
+    },
+    {
+      "beat_id": "B02",
+      "role": "PIPELINE",
+      "narration_text": "The PR pipeline runs in order. Fork the upstream repo. Create the branch with the exact naming convention — contrib slash your name slash your component. Place the contribution code under scripts/ and recipes/. Docs and audit output go in the right folder. Nothing generated goes in as source of truth — the output/ directory exists for generated artifacts, not scripts/. Run npm run verify. Run npm run doctor. Both must pass. If doctor reports a data/ats/ file staged, unstage it before pushing. Write the PR description with all four required fields: the gap it closes, the chapters it satisfies, the verified-vs-inferred boundary, and the one limitation it cannot verify. Then submit. If the upstream repo does not accept external PRs, submit the PR against your own fork with the full diff. The assignment is explicit: the discipline, not the merge, is what's graded.",
+      "duration_s": 50,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownPipeline",
+          "props": {
+            "title": "The PR.",
+            "inputLabel": "working contribution",
+            "outputLabel": "maintainer-ready PR",
+            "phases": [
+              {
+                "label": "Fork + branch",
+                "desc": "fork upstream · branch contrib/<name>-<component>",
+                "accent": false
+              },
+              {
+                "label": "Place files",
+                "desc": "scripts/ + recipes/ · nothing generated as source of truth",
+                "accent": false
+              },
+              {
+                "label": "verify + doctor",
+                "desc": "npm run verify && npm run doctor — both must pass before push",
+                "accent": true
+              },
+              {
+                "label": "Write description",
+                "desc": "gap · chapters · boundary · one limitation (all four — not three)",
+                "accent": false
+              },
+              {
+                "label": "Submit",
+                "desc": "the discipline, not the merge, is what's graded",
+                "accent": true
+              }
+            ],
+            "sparkLine": "Fork. Branch exact. Files right. Verify + doctor. Four-field description. Submit."
+          },
+          "rendered": {
+            "out": "media/B02.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": 55.66,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B02.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:18:35"
+      }
+    },
+    {
+      "beat_id": "B03",
+      "role": "PREDICT",
+      "narration_text": "A PR that fails conformance or leaks private data has a specific consequence in the grading table. What is it?",
+      "duration_s": 10,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "CAPSTONE E6 · PREDICT",
+            "segment": "The Question.",
+            "greeting": "PR conformance",
+            "command": "What happens to a PR that fails conformance or leaks private data?",
+            "runningText": "",
+            "output": []
+          },
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B03.mp3",
+      "actual_duration_s": 7.13,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B03.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:18:35"
+      }
+    },
+    {
+      "beat_id": "B04",
+      "role": "SELF-DEMO",
+      "narration_text": "Free demo: grep the assignment for the branch naming convention, the not-gradeable condition, the verify and doctor requirement, and the PR description fields. Real file, no generation, no credits. The not-gradeable line appears at line 154 and 155. The branch convention at line 151. The four PR description fields at lines 157 and 158. The whole Step 5 in eight lines of the assignment file.",
+      "duration_s": 26,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeCodeBeat",
+          "props": {
+            "title": "Step 5 requirements — from the assignment",
+            "code": "grep -n 'contrib\\|not gradeable\\|verify.*doctor\\|gap it closes\\|limitation' assignments/ASSIGNMENT-professional-contribution-capstone-250pt.md | head -8\n\n# → line 151: branch contrib/<name>-<component>\n# → line 154-155: not gradeable if fails verify/doctor\n#   or leaks private data\n# → line 157-158: PR desc: gap · chapters · boundary ·\n#   one limitation it cannot verify | $0.00",
+            "sparkLine": "5 requirements. Branch exact. Not gradeable = hard stop. 4-field description. $0.00."
+          },
+          "rendered": {
+            "out": "media/B04.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B04.mp3",
+      "actual_duration_s": 28.93,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B04.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:18:35"
+      }
+    },
+    {
+      "beat_id": "B05",
+      "role": "MECHANISM_1",
+      "narration_text": "The not-gradeable condition answers the prediction. A PR that fails conformance or leaks private data is not gradeable. The assignment is direct: not gradeable is the same bar the engine holds every run to. Not a point deduction. Not a retry opportunity. Not gradeable. The npm run doctor check exists specifically to catch a data/ats/ file accidentally staged for commit. The verify check exists to catch conformance failures before they become someone else's problem. Run both before you push. This is not extra credit. It is the floor.",
+      "duration_s": 42,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Not gradeable is the hard stop.",
+            "body": "A PR that fails conformance or leaks private data is not gradeable. Not a point deduction. Not a retry. npm run doctor catches staged data/ats/ before it becomes a leak. npm run verify catches conformance. Both must pass before push.",
+            "quote": "A PR that fails conformance or leaks private data is not gradeable — the same bar the engine holds every run to.",
+            "cite": "assignments/ASSIGNMENT-professional-contribution-capstone-250pt.md, Step 5",
+            "sparkLine": "Not gradeable = hard stop. doctor catches the leak. verify catches conformance. Both before push."
+          },
+          "rendered": {
+            "out": "media/B05.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B05.mp3",
+      "actual_duration_s": 35.33,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B05.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:18:35"
+      }
+    },
+    {
+      "beat_id": "B06",
+      "role": "MECHANISM_2",
+      "narration_text": "Tight and correct beats ambitious and fabricated. The assignment makes this explicit in the bar criteria: a tight, correct gate-behavior harness is worth more than an ambitious connector that fabricates coverage. This applies to the PR as much as it applies to the contribution. A PR that does one thing correctly — closes a named gap, satisfies the chapters it claims, names its limitation honestly — is worth more than a PR that claims to do three things and does none of them verifiably. The contribution is judged as a working professional's. Professionals ship what they can verify.",
+      "duration_s": 42,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Tight and correct beats ambitious.",
+            "body": "A contribution that does one thing verifiably is worth more than one that claims three things and verifies none. The PR description should say what the contribution does — and what it cannot. Naming the limitation is the professional signal.",
+            "quote": "A tight, correct gate-behavior harness is worth more than an ambitious connector that fabricates coverage.",
+            "cite": "assignments/ASSIGNMENT-professional-contribution-capstone-250pt.md, criteria section",
+            "sparkLine": "One thing done verifiably. Scope small. Limitation named. Tight and correct is the standard."
+          },
+          "rendered": {
+            "out": "media/B06.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B06.mp3",
+      "actual_duration_s": 36.59,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B06.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:18:35"
+      }
+    },
+    {
+      "beat_id": "B07",
+      "role": "MECHANISM_3",
+      "narration_text": "The PR is the professional artifact. The assignment states it in the preamble, before any step: you are not writing about the engine. You are adding something to it that runs, that a maintainer could merge, and that a hiring manager could open. That is the standard. Not the grader's standard — the maintainer's standard. The PR description written for the grader and the PR description written for the maintainer are different documents. Write the one a maintainer needs: the gap in clear terms, the chapters as the rationale, the verified-vs-inferred boundary as the precision, and the limitation as the honesty. That document is the professional signal.",
+      "duration_s": 46,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Write it for the maintainer.",
+            "body": "The PR description written for the grader and the one written for the maintainer are different documents. Write the second one. The gap in clear terms. The chapters as rationale. The boundary as precision. The limitation as honesty. That is the professional signal.",
+            "quote": "You are not writing about the engine. You are adding something to it that runs, that a maintainer could merge, and that a hiring manager could open.",
+            "cite": "assignments/ASSIGNMENT-professional-contribution-capstone-250pt.md, preamble",
+            "sparkLine": "Write for the maintainer, not the grader. Gap + rationale + boundary + limitation. That is the signal."
+          },
+          "rendered": {
+            "out": "media/B07.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B07.mp3",
+      "actual_duration_s": 36.95,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B07.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:18:35"
+      }
+    },
+    {
+      "beat_id": "B08",
+      "role": "THE_PICK",
+      "narration_text": "The one limitation field is not a weakness — it is the proof of professional judgment. Any contribution has things it cannot verify. A liveness classifier cannot distinguish a role that posted and filled from one that never filled. A fuzzy-match join cannot verify that two companies are actually the same entity without a registry. A timeline factor cannot know a visa extension was filed. Naming what your contribution cannot do is harder than listing what it does. It requires you to have actually thought about where the boundaries of your system are — which is the judgment the whole book is built on. Write the limitation clearly. It is the most valuable field in the description.",
+      "duration_s": 46,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "The limitation field is the proof.",
+            "body": "Naming what the contribution cannot verify is harder than listing what it does. It requires knowing where the system's boundaries are — which is the judgment the course is built on. Write it clearly. It is the most valuable field in the PR description.",
+            "quote": "",
+            "cite": "",
+            "sparkLine": "Name the limitation clearly. It is harder than listing features. It is also the most valuable field."
+          },
+          "rendered": {
+            "out": "media/B08.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B08.mp3",
+      "actual_duration_s": 39.96,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B08.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:18:35"
+      }
+    },
+    {
+      "beat_id": "BVDT",
+      "role": "VERDICT",
+      "narration_text": "Verdict: ship where a maintainer would review it. Fork, branch contrib slash your name slash your component, run verify and doctor, both clean. Nothing generated committed as source of truth. No PII, no data/ats/. PR description names the gap, the chapters, the boundary, and the one limitation. The discipline, not the merge, is what's graded. Next episode: the portfolio piece.",
+      "duration_s": 26,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "artifactTitle": "Verdict",
+            "artifactHeading": "The PR.",
+            "artifactLines": [
+              "Fork + branch contrib/<name>-<component> · verify + doctor both clean · no PII, no data/ats/",
+              "Tight and correct beats ambitious — one thing verifiable beats three unverified claims",
+              "PR description: gap · chapters · boundary · one limitation (the most valuable field)"
+            ]
+          },
+          "rendered": {
+            "out": "media/BVDT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BVDT.mp3",
+      "actual_duration_s": 23.91,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BVDT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:18:35"
+      }
+    },
+    {
+      "beat_id": "BHTF",
+      "role": "YOUR_TURN",
+      "narration_text": "Your turn. Write the four required fields of your PR description right now. The gap it closes — one sentence, specific. The chapters it satisfies — name them. The verified-vs-inferred boundary — what your contribution emits and which label it gets. The one limitation it cannot verify — write it clearly, not vaguely.",
+      "duration_s": 22,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "YOUR TURN",
+            "segment": "Your PR description.",
+            "greeting": "Your turn.",
+            "command": "# Four required fields:\n# 1. Gap it closes: [one specific sentence]\n# 2. Chapters it satisfies: [Ch N, Ch M]\n# 3. Verified-vs-inferred boundary: [field | label]\n# 4. One limitation it cannot verify: [specific]",
+            "runningText": "* write for the maintainer, not the grader",
+            "output": [
+              "→ 4 fields complete",
+              "→ limitation named clearly, not vaguely"
+            ]
+          },
+          "rendered": {
+            "out": "media/BHTF.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BHTF.mp3",
+      "actual_duration_s": 20.2,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BHTF.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:18:35"
+      }
+    },
+    {
+      "beat_id": "BOUT",
+      "role": "OUTRO",
+      "narration_text": "Fork. Branch. Verify. Ship.",
+      "duration_s": 4,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "Fork. Branch. Verify. Ship.",
+            "handle": "@NikBearBrown",
+            "subline": "Reallocation Engine Capstone · E6 of 8"
+          },
+          "rendered": {
+            "out": "media/BOUT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BOUT.mp3",
+      "actual_duration_s": 2.03,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BOUT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:18:35"
+      }
+    }
+  ]
+}

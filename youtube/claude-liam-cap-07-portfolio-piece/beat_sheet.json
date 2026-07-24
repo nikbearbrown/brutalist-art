@@ -1,0 +1,473 @@
+{
+  "metadata": {
+    "slug": "claude-liam-cap-07-portfolio-piece",
+    "title": "One Honest Metric.",
+    "series": "Ship Something Real: The Reallocation Engine Capstone",
+    "episode": "E7 of 8",
+    "brand": "claude-liam",
+    "engine": "kokoro",
+    "voice": "am_onyx",
+    "greeting": "Annyeong",
+    "chapter_number": 52,
+    "build": {
+      "at": "2026-07-19T01:33:24",
+      "cut": "master",
+      "filled": 12,
+      "of": 12,
+      "slates": [],
+      "skin_warnings": []
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "role": "OPEN",
+      "narration_text": "Annyeong, Liam. Episode seven: the portfolio piece. Step 6 is thirty-five points and it is the artifact that outlives the course. Six required elements — but the three that separate a professional case study from a class exercise are: one honest measurable metric, the verified-vs-inferred boundary stated plainly, and the failure modes section written as strength, not apology. Liam, in for Bear.",
+      "duration_s": 26,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "REALLOCATION ENGINE CAPSTONE · E7 OF 8",
+            "segment": "Liam, in for Bear.",
+            "greeting": "Annyeong, Liam.",
+            "command": "grep -n 'honest metric\\|strongest thing\\|outlives\\|calibrated verbs\\|no fabricated' assignments/ASSIGNMENT-professional-contribution-capstone-250pt.md | head -6",
+            "runningText": "* problem + what you built + one honest metric + boundary + failure modes + demo → employer-ready",
+            "output": [
+              "one honest metric beats three vague claims",
+              "naming what it can't do is the strongest thing on the page",
+              "this is the piece that outlives the course"
+            ],
+            "folderLabel": "the-reallocation-engine/assignments/"
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": 24.43,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B00.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:33:24"
+      }
+    },
+    {
+      "beat_id": "B01",
+      "role": "ANATOMY",
+      "narration_text": "The portfolio piece has six required elements. First: the problem — the specific information asymmetry your contribution attacks, for a specific person. Not 'the system has gaps.' A specific person facing a specific gap. Second: what you built — the component in plain professional language, with the architecture in a diagram or a few sentences. No jargon for its own sake. Third: the measurable improvement — the number that makes it real. Join-coverage before and after. Artifact Unknowns rescued. Skip rate moved into range. Parse PASS-rate. One honest metric. Fourth: the verified-vs-inferred boundary — stated plainly, because that is the professional signal. Fifth: the failure modes and the one limitation it cannot verify — named as the strongest thing on the page. Sixth: a demo — a screen capture, a linked PR, or a runnable snippet. Something a reader can open.",
+      "duration_s": 52,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownAnatomy",
+          "props": {
+            "skillName": "Portfolio Piece",
+            "title": "Six elements. Employer-ready.",
+            "files": [
+              {
+                "indent": 0,
+                "icon": "🎯",
+                "name": "The problem",
+                "tag": "specific information asymmetry · for a specific person",
+                "accent": false
+              },
+              {
+                "indent": 0,
+                "icon": "🔧",
+                "name": "What you built",
+                "tag": "plain professional language · architecture in a diagram or sentences",
+                "accent": false
+              },
+              {
+                "indent": 0,
+                "icon": "📊",
+                "name": "The measurable improvement",
+                "tag": "one honest metric — before/after, traced, not claimed",
+                "accent": true
+              },
+              {
+                "indent": 0,
+                "icon": "⚖️",
+                "name": "Verified vs. inferred",
+                "tag": "the boundary stated plainly — the professional signal",
+                "accent": false
+              },
+              {
+                "indent": 0,
+                "icon": "🚧",
+                "name": "Failure modes + one limitation",
+                "tag": "naming what it can't do is the strongest thing on the page",
+                "accent": true
+              },
+              {
+                "indent": 0,
+                "icon": "▶️",
+                "name": "A demo",
+                "tag": "screen capture · linked PR · runnable snippet — something openable",
+                "accent": false
+              }
+            ],
+            "calloutText": "Portfolio-grade writing: calibrated verbs, no fabricated metrics, no [ASK ME] placeholders left in.",
+            "sparkLine": "Six elements. One metric traced. Boundary stated. Limitation named. Written for the hiring manager."
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": 52.82,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B01.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:33:24"
+      }
+    },
+    {
+      "beat_id": "B02",
+      "role": "PIPELINE",
+      "narration_text": "Portfolio-grade writing moves in a specific order. Open with the problem — the information asymmetry, who it affects, why it matters now. Describe what you built in plain language: the component, what it does, how it fits the engine. Then the measurable improvement: name the metric, name the before, name the after. Trace it to the script that produced it — not 'coverage improved' but 'join-coverage went from forty-three percent to eighty-one percent, measured by scripts/sec/lca-match.py against USCIS quarterly.' Then the verified-vs-inferred boundary. Then the failure modes and the limitation. Then the demo. End with calibrated verbs: built, verified, measured, named. Not 'explored,' not 'attempted,' not 'aimed to improve.' The technical hiring manager has no patience for hedged claims. Use the verbs your attestation earned.",
+      "duration_s": 52,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownPipeline",
+          "props": {
+            "title": "The portfolio.",
+            "inputLabel": "contribution + honest run",
+            "outputLabel": "employer-ready case study",
+            "phases": [
+              {
+                "label": "Problem",
+                "desc": "specific asymmetry · specific person · why it matters now",
+                "accent": false
+              },
+              {
+                "label": "What you built",
+                "desc": "plain language · architecture · how it fits the engine",
+                "accent": false
+              },
+              {
+                "label": "One honest metric",
+                "desc": "before/after · named script · traced to a record — not 'coverage improved'",
+                "accent": true
+              },
+              {
+                "label": "Boundary + failure modes",
+                "desc": "verified/inferred stated · limitation named as strength",
+                "accent": true
+              },
+              {
+                "label": "Demo",
+                "desc": "something openable · calibrated verbs · no placeholders",
+                "accent": false
+              }
+            ],
+            "sparkLine": "Problem → built → traced metric → boundary → limitation → demo. Calibrated verbs. No hedging."
+          },
+          "rendered": {
+            "out": "media/B02.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": 49.45,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B02.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:33:24"
+      }
+    },
+    {
+      "beat_id": "B03",
+      "role": "PREDICT",
+      "narration_text": "The portfolio piece has six required elements. The assignment says one of them is 'the strongest thing on the page.' Which element is it?",
+      "duration_s": 10,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "CAPSTONE E7 · PREDICT",
+            "segment": "The Question.",
+            "greeting": "six elements",
+            "command": "Which portfolio element is 'the strongest thing on the page'?",
+            "runningText": "",
+            "output": []
+          },
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B03.mp3",
+      "actual_duration_s": 8.02,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B03.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:33:24"
+      }
+    },
+    {
+      "beat_id": "B04",
+      "role": "SELF-DEMO",
+      "narration_text": "Free demo: grep the assignment for the key quality signals in Step 6. Real file, no generation, no credits. Three lines show the doctrine: one honest metric beats three vague claims. Naming what it can't do is the strongest thing on the page. This is the piece that outlives the course. Those three lines are the portfolio evaluation criteria in a single grep.",
+      "duration_s": 26,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeCodeBeat",
+          "props": {
+            "title": "Portfolio quality signals — from the assignment",
+            "code": "grep -n 'honest metric\\|strongest thing\\|outlives\\|calibrated verbs\\|no fabricated' assignments/ASSIGNMENT-professional-contribution-capstone-250pt.md | head -6\n\n# → \"One honest metric beats three vague claims.\"\n# → \"Naming what it can't do is the strongest thing on the page.\"\n# → \"This is the piece that outlives the course.\"\n# → calibrated verbs · no fabricated metrics · $0.00",
+            "sparkLine": "3 quality signals. One metric. Limitation = strength. Outlives the course. $0.00."
+          },
+          "rendered": {
+            "out": "media/B04.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B04.mp3",
+      "actual_duration_s": 23.21,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B04.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:33:24"
+      }
+    },
+    {
+      "beat_id": "B05",
+      "role": "MECHANISM_1",
+      "narration_text": "The metric requirement is the answer to the first quality question. The assignment is direct: one honest metric beats three vague claims. Not 'coverage improved significantly.' Not 'the system is now more accurate.' The number that makes it real — join-coverage from forty-three to eighty-one percent, measured by a named script against a named record. Before and after. Traced. Not claimed. The metric that cannot be verified from the system you built is model-inference, and it must be labeled as such. The metric that traces is the evidence that you built something real. That is the difference between a portfolio piece and a class exercise.",
+      "duration_s": 44,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Trace the metric. Don't claim it.",
+            "body": "Not 'coverage improved.' The number — before and after — traced to the script that produced it. Join-coverage from 43% to 81%, measured by a named script against a named record. Traced is the evidence. Claimed is the class exercise.",
+            "quote": "One honest metric beats three vague claims.",
+            "cite": "assignments/ASSIGNMENT-professional-contribution-capstone-250pt.md, Step 6",
+            "sparkLine": "One metric. Before + after. Named script. Named record. Traced, not claimed."
+          },
+          "rendered": {
+            "out": "media/B05.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B05.mp3",
+      "actual_duration_s": 37.27,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B05.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:33:24"
+      }
+    },
+    {
+      "beat_id": "B06",
+      "role": "MECHANISM_2",
+      "narration_text": "The failure modes and limitation section answers the prediction. The assignment is explicit: naming what the contribution can't do is the strongest thing on the page. This is not a weakness. It is the proof that you understand the system's actual boundaries — not the boundaries you wish it had. A liveness classifier that cannot distinguish a role that posted and filled from one that never filled: that is a real limitation, and naming it specifically tells the hiring manager that you ran the system on real data and found where it stops. Vague limitations — 'results may vary' — tell the hiring manager nothing. Specific limitations tell them what to trust.",
+      "duration_s": 46,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Limitation named = the strongest section.",
+            "body": "Not a weakness — the proof you understand the actual boundaries. Specific: 'cannot distinguish a posted-and-filled role from one that never filled.' Vague: 'results may vary.' The specific limitation tells the reader what to trust. That is the professional signal.",
+            "quote": "Naming what it can't do is the strongest thing on the page.",
+            "cite": "assignments/ASSIGNMENT-professional-contribution-capstone-250pt.md, Step 6",
+            "sparkLine": "Specific limitation = professional signal. Vague limitation = class exercise. Name it specifically."
+          },
+          "rendered": {
+            "out": "media/B06.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B06.mp3",
+      "actual_duration_s": 39.66,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B06.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:33:24"
+      }
+    },
+    {
+      "beat_id": "B07",
+      "role": "MECHANISM_3",
+      "narration_text": "The portfolio piece is the artifact that survives the course. The assignment says it plainly: this is the piece that outlives the course. Every other deliverable — the attestation, the run report, the PR — is graded and archived. The portfolio piece goes on your site. It gets sent to hiring managers. It is read by people who have no context for the course, no knowledge of the assignment, and no patience for hedged claims. The grader knows what you were supposed to build. The hiring manager only sees what you actually built. Write the portfolio piece for the second reader, not the first.",
+      "duration_s": 44,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Write it for after the course.",
+            "body": "The attestation, run report, and PR get graded and archived. The portfolio goes on your site. It is read by hiring managers who have no context for the assignment. They only see what you built. Write for that reader.",
+            "quote": "This is the piece that outlives the course.",
+            "cite": "assignments/ASSIGNMENT-professional-contribution-capstone-250pt.md, Step 6",
+            "sparkLine": "Grader has context. Hiring manager has none. Write for the second reader. This one outlives the course."
+          },
+          "rendered": {
+            "out": "media/B07.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B07.mp3",
+      "actual_duration_s": 34.13,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B07.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:33:24"
+      }
+    },
+    {
+      "beat_id": "B08",
+      "role": "THE_PICK",
+      "narration_text": "Calibrated verbs are the last filter. The assignment is specific: calibrated verbs, no fabricated metrics, no bracket-ASK-ME placeholders left in. A portfolio piece with 'explored the possibility of improving coverage' as a key claim is a portfolio piece that says you did not do the thing. 'Built a join-coverage pipeline measuring LCA filings against ATS postings' is a portfolio piece that says you did. The verb is the evidence marker. After the attestation, after the honest run, after the PR — the verbs you earned are the ones you use. Replaced 'aimed to' with what happened. That is portfolio-grade writing.",
+      "duration_s": 44,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "The verb is the evidence marker.",
+            "body": "'Explored the possibility of improving coverage' — says you didn't. 'Built a join-coverage pipeline measuring LCA filings against ATS postings' — says you did. After the attestation and the honest run, you earned specific verbs. Use them. Remove every 'aimed to.'",
+            "quote": "",
+            "cite": "",
+            "sparkLine": "Calibrated verbs. No fabricated metrics. No placeholders. The verb you earned is the one you use."
+          },
+          "rendered": {
+            "out": "media/B08.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B08.mp3",
+      "actual_duration_s": 39.13,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B08.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:33:24"
+      }
+    },
+    {
+      "beat_id": "BVDT",
+      "role": "VERDICT",
+      "narration_text": "Verdict: the artifact that outlives the course. One honest metric — before, after, traced to a script and a record. Verified-vs-inferred boundary stated plainly. Failure modes and the one limitation named specifically — the strongest thing on the page. Calibrated verbs. No fabricated metrics. No placeholders. Write it for the hiring manager, not the grader. Next episode: the explainer video.",
+      "duration_s": 28,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "artifactTitle": "Verdict",
+            "artifactHeading": "The portfolio.",
+            "artifactLines": [
+              "One honest metric — before/after, traced to a script and a record, not claimed",
+              "Verified/inferred boundary stated plainly — the professional signal",
+              "Failure modes + limitation named specifically — the strongest thing on the page"
+            ]
+          },
+          "rendered": {
+            "out": "media/BVDT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BVDT.mp3",
+      "actual_duration_s": 24.17,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BVDT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:33:24"
+      }
+    },
+    {
+      "beat_id": "BHTF",
+      "role": "YOUR_TURN",
+      "narration_text": "Your turn. Name the one honest metric your contribution produced. Write the before and after numbers. Name the script that measured it and the record it came from. Then write the one specific limitation — the thing the contribution cannot verify. Not vague. Specific. One sentence each. That is the core of your portfolio piece.",
+      "duration_s": 22,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "YOUR TURN",
+            "segment": "Your metric + your limitation.",
+            "greeting": "Your turn.",
+            "command": "# One honest metric:\n# metric: [name] before: [X%] after: [Y%]\n# measured by: [script] reading: [record]\n#\n# One specific limitation:\n# [your contribution] cannot verify [specific thing]\n# because [specific reason]",
+            "runningText": "* one metric traced · one limitation specific",
+            "output": [
+              "→ metric traced — not claimed",
+              "→ limitation specific — not vague"
+            ]
+          },
+          "rendered": {
+            "out": "media/BHTF.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BHTF.mp3",
+      "actual_duration_s": 20.54,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BHTF.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:33:24"
+      }
+    },
+    {
+      "beat_id": "BOUT",
+      "role": "OUTRO",
+      "narration_text": "One Honest Metric.",
+      "duration_s": 4,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "One Honest Metric.",
+            "handle": "@NikBearBrown",
+            "subline": "Reallocation Engine Capstone · E7 of 8"
+          },
+          "rendered": {
+            "out": "media/BOUT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BOUT.mp3",
+      "actual_duration_s": 1.3,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BOUT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:33:24"
+      }
+    }
+  ]
+}

@@ -1,0 +1,480 @@
+{
+  "metadata": {
+    "slug": "claude-liam-cap-04-verified-data-attestation",
+    "title": "Every Number Traces.",
+    "series": "Ship Something Real: The Reallocation Engine Capstone",
+    "episode": "E4 of 8",
+    "brand": "claude-liam",
+    "engine": "kokoro",
+    "voice": "am_onyx",
+    "greeting": "Merhaba",
+    "chapter_number": 49,
+    "build": {
+      "at": "2026-07-19T00:50:35",
+      "cut": "master",
+      "filled": 12,
+      "of": 12,
+      "slates": [],
+      "skin_warnings": []
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "role": "OPEN",
+      "narration_text": "Merhaba, Liam. Episode four: the verified-data attestation. Every number your contribution emits must trace to a record — or be explicitly labeled model judgment, your input, or missing. The boundary table is how you prove that contract holds. Before any real run, two gates check it: privacy and honesty. Both must pass, or the run does not happen. The attestation is the discipline that separates a contribution from a fabrication. Liam, in for Bear.",
+      "duration_s": 26,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "REALLOCATION ENGINE CAPSTONE · E4 OF 8",
+            "segment": "Liam, in for Bear.",
+            "greeting": "Merhaba, Liam.",
+            "command": "sed -n '113,130p' assignments/ASSIGNMENT-professional-contribution-capstone-250pt.md",
+            "runningText": "* boundary table: every emitted number gets one of 7 labels → ethics gate → attestation signed by human",
+            "output": [
+              "seven labels: record / script-output / local-evidence /",
+              "external-source / model-inference / your-input / missing",
+              "+ ethics gate: privacy (doctor clean) · honesty (no invented metrics)"
+            ],
+            "folderLabel": "the-reallocation-engine/assignments/"
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": 26.84,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B00.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:50:35"
+      }
+    },
+    {
+      "beat_id": "B01",
+      "role": "ANATOMY",
+      "narration_text": "The boundary table assigns a label to every field and number your contribution emits. Seven labels are available. Record: the number came directly from a data source — a filing, a count, a federal record. Script-output: produced by a script run against verified records — the output is as reliable as the data it read. Local-evidence: drawn from the verified local cache — data already downloaded and checked. External-source: from a named external source, cited. Model-inference: the model's interpretation or estimate — labeled as judgment, not fact. Your-input: a value you supplied as a human decision — labeled so. And missing: the data doesn't exist yet and the field cannot be populated. Every emitted number gets one of these seven labels. Not filling in a label is not an option.",
+      "duration_s": 48,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownAnatomy",
+          "props": {
+            "skillName": "Boundary Table",
+            "title": "Seven labels. Every field gets one.",
+            "files": [
+              {
+                "indent": 0,
+                "icon": "📊",
+                "name": "record",
+                "tag": "direct from a data source — filing, count, federal record",
+                "accent": false
+              },
+              {
+                "indent": 0,
+                "icon": "🔧",
+                "name": "script-output",
+                "tag": "produced by a script run against verified records",
+                "accent": false
+              },
+              {
+                "indent": 0,
+                "icon": "💾",
+                "name": "local-evidence",
+                "tag": "from the verified local cache — already downloaded + checked",
+                "accent": false
+              },
+              {
+                "indent": 0,
+                "icon": "🌐",
+                "name": "external-source",
+                "tag": "from a named external source, cited",
+                "accent": false
+              },
+              {
+                "indent": 0,
+                "icon": "🤖",
+                "name": "model-inference",
+                "tag": "the model's estimate — labeled as judgment, never fact",
+                "accent": true
+              },
+              {
+                "indent": 0,
+                "icon": "👤",
+                "name": "your-input",
+                "tag": "a value you supplied as a human decision",
+                "accent": false
+              },
+              {
+                "indent": 0,
+                "icon": "❓",
+                "name": "missing",
+                "tag": "data doesn't exist yet — field cannot be populated",
+                "accent": true
+              }
+            ],
+            "calloutText": "Not filling in a label is not an option. model-inference is not shameful — unlabeled model-inference is the failure.",
+            "sparkLine": "Seven labels. Every emitted field gets one. Unlabeled model-inference is the failure, not the label itself."
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": 48.04,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B01.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:50:35"
+      }
+    },
+    {
+      "beat_id": "B02",
+      "role": "PIPELINE",
+      "narration_text": "The attestation has five steps. First: enumerate every field your contribution emits — every count, every rate, every score, every PASS-or-FAIL decision. Second: assign a label from the seven types. Third: for every label that is not model-inference or your-input, name the script that produced it and the record it came from. 'ATS scan coverage rate — from scripts/ats/analyze-patterns.py reading data/ats/portals.yml' is a real source. 'High' is not a label. Fourth: run the ethics gate — npm run doctor confirms data/ats/ is not staged for commit; a manual check confirms nothing invented or misrepresented. Fifth: show the gate passing. Privacy check clean. Honesty check clean. Both required. If either fails, the run does not happen, and the attestation cannot be signed.",
+      "duration_s": 48,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownPipeline",
+          "props": {
+            "title": "The attestation.",
+            "inputLabel": "contribution emitting numbers",
+            "outputLabel": "signed attestation",
+            "phases": [
+              {
+                "label": "Enumerate fields",
+                "desc": "every count, rate, score, PASS/FAIL your contribution emits",
+                "accent": false
+              },
+              {
+                "label": "Assign a label",
+                "desc": "record / script-output / local-evidence / external-source / model-inference / your-input / missing",
+                "accent": false
+              },
+              {
+                "label": "Name the source",
+                "desc": "for non-model labels: script name + record it came from",
+                "accent": false
+              },
+              {
+                "label": "Run ethics gate",
+                "desc": "privacy: npm run doctor clean · honesty: nothing invented or misrepresented",
+                "accent": true
+              },
+              {
+                "label": "Show gate passing",
+                "desc": "privacy PASS + honesty PASS — both required before the run. Human signs.",
+                "accent": true
+              }
+            ],
+            "sparkLine": "Five steps. Both gates required. Human signs. If either gate fails, the run does not happen."
+          },
+          "rendered": {
+            "out": "media/B02.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": 50.41,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B02.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:50:35"
+      }
+    },
+    {
+      "beat_id": "B03",
+      "role": "PREDICT",
+      "narration_text": "The ethics gate has two parts: privacy and honesty. What is the exact consequence when either part fails — not later, not after the run?",
+      "duration_s": 10,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "CAPSTONE E4 · PREDICT",
+            "segment": "The Question.",
+            "greeting": "ethics gate",
+            "command": "Privacy fails OR honesty fails — what happens to the run?",
+            "runningText": "",
+            "output": []
+          },
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B03.mp3",
+      "actual_duration_s": 8.7,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B03.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:50:35"
+      }
+    },
+    {
+      "beat_id": "B04",
+      "role": "SELF-DEMO",
+      "narration_text": "Free demo: read lines 113 through 130 of the assignment to see the seven label types and the ethics gate definition in full. Real file, no generation, no credits. Seven labels listed — record through missing. Ethics gate: privacy, no data/ats/ staged; honesty, no invented metrics. Both required before the run. 'If either fails, the run does not happen.' The assignment says it plainly. This is what the attestation proves.",
+      "duration_s": 28,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeCodeBeat",
+          "props": {
+            "title": "Boundary table labels + ethics gate — from the assignment",
+            "code": "sed -n '113,130p' assignments/ASSIGNMENT-professional-contribution-capstone-250pt.md\n\n# seven labels: record / script-output / local-evidence /\n#   external-source / model-inference / your-input / missing\n# ethics gate:\n#   (a) privacy — no data/ats/ staged, npm run doctor clean\n#   (b) honesty — no invented metrics, no misrepresented status\n# → \"If either fails, the run does not happen.\" | $0.00",
+            "sparkLine": "7 labels. 2 gates. Both required. Human signs. $0.00."
+          },
+          "rendered": {
+            "out": "media/B04.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B04.mp3",
+      "actual_duration_s": 27.9,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B04.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:50:35"
+      }
+    },
+    {
+      "beat_id": "B05",
+      "role": "MECHANISM_1",
+      "narration_text": "The boundary table is the Give to AI / Keep for yourself split, made concrete. Chapter 16 gives you the test in one sentence: can the model verify this against reality, or only against itself? If only against itself, it's yours. Scaffolding compiles — the model can check that. Weight calibration is a judgment call about your binding constraint — the model cannot check that. A script output is checkable: the script either ran or it did not. Plausibility judgment is not checkable from inside the model. Every field in your boundary table either traces to something real — or it belongs to you. The table makes the line visible. That is what the attestation is for.",
+      "duration_s": 42,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Give/Keep table — made concrete.",
+            "body": "Give to AI: anything where correctness is checkable against reality. Keep for yourself: anything the model can verify only against itself — weight calibration, plausibility audits, privacy and honesty calls. The boundary table is this split, applied to every field your contribution emits.",
+            "quote": "The test: can the model verify this against reality, or only against itself? If only against itself, it's yours.",
+            "cite": "chapters/16-the-build-and-the-honest-run.md",
+            "sparkLine": "Give/Keep table. Every field. Checkable or not. The table makes the line visible."
+          },
+          "rendered": {
+            "out": "media/B05.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B05.mp3",
+      "actual_duration_s": 39.38,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B05.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:50:35"
+      }
+    },
+    {
+      "beat_id": "B06",
+      "role": "MECHANISM_2",
+      "narration_text": "The honesty gate is not a style preference. Chapter 16 is direct: an engine that optimizes your search by shading the truth is the failure mode this book exists to prevent. Fluency in the service of a false impression is still a false impression, and it is worse when it arrives in a polished format. Model-inference is not a failure — it is the correct label for any estimate, interpretation, or suggestion. The failure is when model-inference enters the output as a count, a rate, or a score — dressed as a record. The boundary table catches this before the run. If the honesty gate fails, the attestation does not get signed. If the attestation does not get signed, the run does not happen.",
+      "duration_s": 44,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Honesty is a gate, not a preference.",
+            "body": "model-inference is the correct label for any estimate or interpretation. The failure is when it enters the output as a record — unlabeled, dressed as fact. If the honesty gate fails, the attestation is not signed. The run does not happen.",
+            "quote": "An engine that optimizes your search by shading the truth is the failure mode this book exists to prevent — fluency in the service of a false impression is still a false impression, and it is worse when it arrives in a polished format.",
+            "cite": "chapters/16-the-build-and-the-honest-run.md",
+            "sparkLine": "model-inference is a label. Unlabeled model-inference is the failure. Gate fails → run blocked."
+          },
+          "rendered": {
+            "out": "media/B06.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B06.mp3",
+      "actual_duration_s": 41.3,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B06.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:50:35"
+      }
+    },
+    {
+      "beat_id": "B07",
+      "role": "MECHANISM_3",
+      "narration_text": "The one-question test is how you label each sentence in your contribution's output. Chapter 3 states it plainly: for any sentence in a system output, one question settles it — could this sentence have been produced by counting records? If yes, it must trace to a script output or an audit report. If it cannot be traced, it is not allowed to stand. If no — if it is a reading, a framing, a suggestion — it is model judgment, and it is allowed, but it must be visible as such. This is how 'coverage improved substantially' becomes either a traced count or a labeled estimate. It cannot be neither. The one-question test is the atomic operation the boundary table is built on. Apply it once per sentence before the attestation is signed.",
+      "duration_s": 50,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "One question per sentence.",
+            "body": "Could this sentence have been produced by counting records? Yes → must trace to a script output or audit. No → model judgment, allowed but must be labeled. 'Coverage improved substantially' is neither — it becomes one or the other. It cannot stay unlabeled.",
+            "quote": "For any sentence in a system output, one question settles it: could this sentence have been produced by counting records? If yes, it must trace to a script output or an audit report. If it cannot be traced, it is not allowed to stand.",
+            "cite": "chapters/03-the-verified-data-contract.md",
+            "sparkLine": "One question. Trace it or label it. It cannot be neither. Every sentence, before you sign."
+          },
+          "rendered": {
+            "out": "media/B07.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B07.mp3",
+      "actual_duration_s": 43.9,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B07.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:50:35"
+      }
+    },
+    {
+      "beat_id": "B08",
+      "role": "THE_PICK",
+      "narration_text": "Model-inference is not a shameful label. It is the correct label for any estimate, interpretation, or suggestion your contribution produces. Writing it explicitly — 'model-judgment: the Unknown-tier company may sponsor, based on pattern matching, not a filing' — is more honest than leaving it unlabeled, and more useful to a reader than suppressing the estimate entirely. The failure is not having a model-inference field. The failure is calling a model-inference field a record. The attestation is the mechanism that catches this. And the attestation is signed by the human — never by the model. That is the verified-data contract at the attestation level: human judgment is the last step, not the model's.",
+      "duration_s": 44,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "model-inference is a label, not a failure.",
+            "body": "The failure is calling model-inference a record. Write it explicitly: 'model-judgment: Unknown-tier company may sponsor, based on pattern matching, not a filing.' The attestation is the mechanism that catches the mislabeled case. The human signs it — not the model.",
+            "quote": "",
+            "cite": "",
+            "sparkLine": "Label it correctly. model-inference + explicit → honest. model-inference + unlabeled → failure. Human signs."
+          },
+          "rendered": {
+            "out": "media/B08.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B08.mp3",
+      "actual_duration_s": 42.09,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B08.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:50:35"
+      }
+    },
+    {
+      "beat_id": "BVDT",
+      "role": "VERDICT",
+      "narration_text": "Verdict: prove the contract holds. Seven labels — every emitted field gets one. Ethics gate: privacy, no data/ats/ staged, npm run doctor clean; honesty, no invented metrics, nothing misrepresented. Both gates must pass before the run. The test for every sentence: can the model verify this against reality, or only against itself? If only against itself, it is yours — labeled. Next episode: the honest run.",
+      "duration_s": 26,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "artifactTitle": "Verdict",
+            "artifactHeading": "The attestation.",
+            "artifactLines": [
+              "Seven labels: every emitted field gets one — record, script-output, model-inference, your-input, or missing",
+              "Ethics gate: privacy (doctor clean) + honesty (no invented metrics) — both before the run",
+              "The test: can the model verify this against reality, or only against itself? If only itself, it's yours."
+            ]
+          },
+          "rendered": {
+            "out": "media/BVDT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BVDT.mp3",
+      "actual_duration_s": 26.58,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BVDT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:50:35"
+      }
+    },
+    {
+      "beat_id": "BHTF",
+      "role": "YOUR_TURN",
+      "narration_text": "Your turn. Draft the boundary table for your contribution's first three output fields. What label does each get — record, script-output, local-evidence, external-source, model-inference, your-input, or missing? For each non-model label, name the script and the record it came from. For any model-inference label, write the judgment explicitly. Three fields is enough to see where the line falls for your component.",
+      "duration_s": 22,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "YOUR TURN",
+            "segment": "Your boundary table.",
+            "greeting": "Your turn.",
+            "command": "# Draft boundary table for 3 output fields:\n# field_name | label | source (script + record) or explicit judgment\n# 1. [your field 1]\n# 2. [your field 2]\n# 3. [your field 3]",
+            "runningText": "* can the model verify this against reality, or only against itself?",
+            "output": [
+              "→ 3 fields labeled + sourced",
+              "→ model-inference fields written as explicit judgments"
+            ]
+          },
+          "rendered": {
+            "out": "media/BHTF.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BHTF.mp3",
+      "actual_duration_s": 23.96,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BHTF.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:50:35"
+      }
+    },
+    {
+      "beat_id": "BOUT",
+      "role": "OUTRO",
+      "narration_text": "Every Number Traces.",
+      "duration_s": 4,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "Every Number Traces.",
+            "handle": "@NikBearBrown",
+            "subline": "Reallocation Engine Capstone · E4 of 8"
+          },
+          "rendered": {
+            "out": "media/BOUT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BOUT.mp3",
+      "actual_duration_s": 1.32,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BOUT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:50:35"
+      }
+    }
+  ]
+}

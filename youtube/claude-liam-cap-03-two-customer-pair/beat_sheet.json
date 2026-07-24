@@ -1,0 +1,473 @@
+{
+  "metadata": {
+    "slug": "claude-liam-cap-03-two-customer-pair",
+    "title": "Recipe for AI, Card for Human.",
+    "series": "Ship Something Real: The Reallocation Engine Capstone",
+    "episode": "E3 of 8",
+    "brand": "claude-liam",
+    "engine": "kokoro",
+    "voice": "am_onyx",
+    "greeting": "Ciao",
+    "chapter_number": 48,
+    "build": {
+      "at": "2026-07-19T00:33:33",
+      "cut": "master",
+      "filled": 12,
+      "of": 12,
+      "slates": [],
+      "skin_warnings": []
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "role": "OPEN",
+      "narration_text": "Ciao, Liam. Episode three: the two-customer pair. Every contribution ships as two artifacts written for two different readers. The AI recipe is complete, explicit, imperative — written for an agent running the contribution at eleven PM tonight. The human card leads with a summary and drills down — written for you in three months, who has forgotten everything. The same contribution, twice. This episode is how you write both correctly. Liam, in for Bear.",
+      "duration_s": 24,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "REALLOCATION ENGINE CAPSTONE · E3 OF 8",
+            "segment": "Liam, in for Bear.",
+            "greeting": "Ciao, Liam.",
+            "command": "sed -n '105,109p' assignments/ASSIGNMENT-professional-contribution-capstone-250pt.md",
+            "runningText": "* AI recipe (9 sections) + human card (≥4 failure modes) → same commit",
+            "output": [
+              "nine required sections: executive summary, required reads, phase gates,",
+              "primary stored tools, workflow, output contract, verification checks,",
+              "logging rules, stop conditions + human card: ≥4 failure modes"
+            ],
+            "folderLabel": "the-reallocation-engine/assignments/"
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": 26.26,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B00.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:33:33"
+      }
+    },
+    {
+      "beat_id": "B01",
+      "role": "ANATOMY",
+      "narration_text": "The AI recipe has nine required sections, in a predictable order. First: executive summary — one or two sentences on what the recipe does and why. Second: required reads — what to load before running anything, starting with recipes/_shared.md. Third: phase gates — each with a failure path, not decoration. Fourth: primary stored tools, or 'no stored script exists' if none. Fifth: workflow — the imperative steps, verbatim commands, nothing left to inference. Sixth: output contract — what the recipe produces when everything works. Seventh: verification checks — what output proves the run succeeded. Eighth: logging rules — what to write to RUN_LOG.md and how. Ninth: stop conditions — what halts execution before completing.",
+      "duration_s": 44,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownAnatomy",
+          "props": {
+            "skillName": "AI Recipe",
+            "title": "Nine sections. Exact order.",
+            "files": [
+              {
+                "indent": 0,
+                "icon": "📝",
+                "name": "1. Executive summary",
+                "tag": "what it does + why — 1-2 sentences",
+                "accent": false
+              },
+              {
+                "indent": 0,
+                "icon": "📚",
+                "name": "2. Required reads",
+                "tag": "recipes/_shared.md FIRST — non-negotiable",
+                "accent": true
+              },
+              {
+                "indent": 0,
+                "icon": "🚦",
+                "name": "3. Phase gates",
+                "tag": "each with a failure path",
+                "accent": false
+              },
+              {
+                "indent": 0,
+                "icon": "🔧",
+                "name": "4–6. Tools / workflow / output contract",
+                "tag": "verbatim commands · what success looks like",
+                "accent": false
+              },
+              {
+                "indent": 0,
+                "icon": "✅",
+                "name": "7–8. Verification + logging rules",
+                "tag": "what passes · what to write to RUN_LOG.md",
+                "accent": false
+              },
+              {
+                "indent": 0,
+                "icon": "🛑",
+                "name": "9. Stop conditions",
+                "tag": "what halts execution before completing",
+                "accent": true
+              }
+            ],
+            "calloutText": "Terse in prose. Exhaustive in specification. The agent needs every case covered.",
+            "sparkLine": "Nine sections. Required reads first. Stop conditions last. Nothing left to inference."
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": 47.21,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B01.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:33:33"
+      }
+    },
+    {
+      "beat_id": "B02",
+      "role": "PIPELINE",
+      "narration_text": "The human card is structured opposite to the recipe — layered for a reader, not an executor. It opens with a one or two sentence purpose statement: what the recipe is for. Then dependencies: which files the recipe reads, which scripts it calls, which other recipes must have run first. Then annotated commands: the same commands as the recipe, but here each one has a note explaining what it does and what to notice in the result. Then what the recipe produces: which files are written, what an audit looks like, what a successful log entry contains. Then the failure modes — at least four, named, specific. Drift and contract-violation are required. And the failure modes section is the one that gets skipped when someone writes fast.",
+      "duration_s": 44,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownPipeline",
+          "props": {
+            "title": "The human card.",
+            "inputLabel": "contribution recipe",
+            "outputLabel": "maintainable card",
+            "phases": [
+              {
+                "label": "Purpose statement",
+                "desc": "1-2 sentences: what the recipe is for — leads everything",
+                "accent": false
+              },
+              {
+                "label": "Dependencies",
+                "desc": "files it reads · scripts it calls · recipes that must run first",
+                "accent": false
+              },
+              {
+                "label": "Annotated commands",
+                "desc": "same commands as recipe + what each does + what to notice",
+                "accent": false
+              },
+              {
+                "label": "What it produces",
+                "desc": "files written · what success looks like · what a log entry contains",
+                "accent": false
+              },
+              {
+                "label": "≥4 named failure modes",
+                "desc": "drift + contract-violation required — specific causes, not 'something might go wrong'",
+                "accent": true
+              }
+            ],
+            "sparkLine": "Purpose first. Failure modes last. Drift and contract-violation must be named."
+          },
+          "rendered": {
+            "out": "media/B02.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": 42.58,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B02.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:33:33"
+      }
+    },
+    {
+      "beat_id": "B03",
+      "role": "PREDICT",
+      "narration_text": "Of the five sections in the human card, one gets skipped most often when someone writes fast. Which section is it, and what is the failure that results?",
+      "duration_s": 10,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "CAPSTONE E3 · PREDICT",
+            "segment": "The Question.",
+            "greeting": "card sections",
+            "command": "Which card section gets skipped most often — and what fails when it does?",
+            "runningText": "",
+            "output": []
+          },
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B03.mp3",
+      "actual_duration_s": 8.98,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B03.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:33:33"
+      }
+    },
+    {
+      "beat_id": "B04",
+      "role": "SELF-DEMO",
+      "narration_text": "Free demo: read lines 105 through 109 of the assignment to see all nine recipe sections and the card fields in one place. Real output, no generation, no credits. Nine sections in three lines. Four card fields plus four or more failure modes. The whole two-customer pair contract in eight lines from the assignment itself. The section that is explicit about drift and contract-violation being required — that is also where the grader is looking first.",
+      "duration_s": 30,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeCodeBeat",
+          "props": {
+            "title": "Two-customer pair contract — from the assignment",
+            "code": "sed -n '105,109p' assignments/ASSIGNMENT-professional-contribution-capstone-250pt.md\n\n# nine required sections: executive summary, required reads,\n#   phase gates, primary stored tools, workflow, output contract,\n#   verification checks, logging rules, stop conditions\n# + human card: purpose, can/can't verify, dependencies,\n#   annotated commands, what it produces, ≥4 failure modes\n#   incl. drift + contract-violation | $0.00 | no generation",
+            "sparkLine": "9 recipe sections. 5 card sections. 4+ failure modes. All in the assignment."
+          },
+          "rendered": {
+            "out": "media/B04.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B04.mp3",
+      "actual_duration_s": 28.99,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B04.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:33:33"
+      }
+    },
+    {
+      "beat_id": "B05",
+      "role": "MECHANISM_1",
+      "narration_text": "Required reads first — and the first item is always recipes/_shared.md. This is not a convention. It is what makes the runtime honest by construction. Chapter 4 states the consequence: an agent that loads the shared contract before running the first command operates inside a defined constraint. An agent that skips it operates from its own priors. The priors are confident, fluent, and wrong in ways that look right. Loading the contract activates the prime directive for the entire run: use collected data and tested scripts first; never invent counts, rates, or coverage numbers; if a result comes from model judgment, label it as such. Every recipe opens with this line.",
+      "duration_s": 44,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "recipes/_shared.md is always first.",
+            "body": "Loading the shared contract activates the prime directive for the entire run: use collected data first, never invent numbers, label model judgment as such. Skip it and the agent operates from priors.",
+            "quote": "An agent that loads the shared contract before running the first command operates inside a defined constraint. An agent that skips it operates from its own priors.",
+            "cite": "chapters/04-two-customers.md",
+            "sparkLine": "Required reads section. recipes/_shared.md first. Every recipe. Always."
+          },
+          "rendered": {
+            "out": "media/B05.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B05.mp3",
+      "actual_duration_s": 42.56,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B05.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:33:33"
+      }
+    },
+    {
+      "beat_id": "B06",
+      "role": "MECHANISM_2",
+      "narration_text": "The failure modes section is the answer to the prediction. It is the one that gets skipped when someone writes fast. Chapter 4 is direct: that last section is the one that gets skipped when someone writes a recipe fast. And it is the one you need most at eleven PM on a Thursday when the output looks wrong and you don't know why. A failure mode is not 'something might go wrong.' It is a specific named cause with a specific observable symptom. 'If data/ats/portals.yml does not exist, the scan uses the example config and produces output against the example companies, not your companies' — that is a failure mode. Drift and contract-violation are two of the four required. Name the specific causes.",
+      "duration_s": 47,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Name the failure modes specifically.",
+            "body": "Not 'something might go wrong.' Specific cause, specific symptom. Drift: recipe changes, card doesn't — six weeks later the card is wrong. Contract-violation: script not called, model fills the gap. Four required, named, in the card.",
+            "quote": "That last section is the one that gets skipped when someone writes a recipe fast. And it is the one you need most at eleven PM on a Thursday when the output looks wrong and you don't know why.",
+            "cite": "chapters/04-two-customers.md",
+            "sparkLine": "Specific cause. Specific symptom. Four failure modes minimum. Never skip this section."
+          },
+          "rendered": {
+            "out": "media/B06.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B06.mp3",
+      "actual_duration_s": 41.96,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B06.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:33:33"
+      }
+    },
+    {
+      "beat_id": "B07",
+      "role": "MECHANISM_3",
+      "narration_text": "The human card is a letter to future-you. Chapter 4 names this explicitly: the reader who has forgotten everything is not a hypothetical. It is you in three months. The human artifact is a letter you are writing to that person. Write it like it is. That person — you in three months — has no context, no memory of why design choices were made, and needs to understand the recipe well enough to fix it when it breaks or extend it when your search changes. The annotated commands section exists for them. The dependencies section exists for them. The failure modes section exists for them. Write it like someone who has forgotten everything will need it on a Thursday night.",
+      "duration_s": 46,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Write it like a letter to future-you.",
+            "body": "You in three months has forgotten everything: why design choices were made, what the recipe does, what can go wrong. The annotated commands, dependencies, and failure modes sections exist for that person. Write it for them.",
+            "quote": "The reader who has forgotten everything is not a hypothetical. It is you in three months. The human artifact is a letter you are writing to that person. Write it like it is.",
+            "cite": "chapters/04-two-customers.md",
+            "sparkLine": "Three months, no context, Thursday night. Write for that person."
+          },
+          "rendered": {
+            "out": "media/B07.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B07.mp3",
+      "actual_duration_s": 38.85,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B07.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:33:33"
+      }
+    },
+    {
+      "beat_id": "B08",
+      "role": "THE_PICK",
+      "narration_text": "The enforcement mechanism for keeping both artifacts in sync is discipline, not automation. Chapter 4 is explicit: the system cannot automate this. The only enforcement is discipline — update both in the same commit, and the human card's failure-modes section explicitly lists 'human doc not updated when recipe changes' as one of the named failure modes. This is the mechanism. You use it or you do not. Six weeks from now, the card will either match the recipe or it will not. Make 'human doc not updated when recipe changes' a named failure mode in your card before you submit the PR. That entry is both a warning to future maintainers and the enforcement binding the two artifacts together.",
+      "duration_s": 44,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Same commit. Name drift in the card.",
+            "body": "The system cannot automate the sync between recipe and card. The only enforcement is discipline: update both in the same commit, and list 'human doc not updated when recipe changes' as a named failure mode. The entry is the enforcement.",
+            "quote": "",
+            "cite": "",
+            "sparkLine": "Same commit. Drift named in card. The naming is the enforcement."
+          },
+          "rendered": {
+            "out": "media/B08.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B08.mp3",
+      "actual_duration_s": 43.2,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B08.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:33:33"
+      }
+    },
+    {
+      "beat_id": "BVDT",
+      "role": "VERDICT",
+      "narration_text": "Verdict: write the two-customer pair twice, for two different readers. The AI recipe opens with required reads — recipes/_shared.md first, always. Nine sections, verbatim commands, stop conditions. The human card leads with purpose, names four failure modes including drift and contract-violation, and is a letter to you in three months. Update both in the same commit. Next episode: the verified-data attestation.",
+      "duration_s": 26,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "artifactTitle": "Verdict",
+            "artifactHeading": "The pair.",
+            "artifactLines": [
+              "AI recipe: 9 sections, recipes/_shared.md first, verbatim commands, stop conditions",
+              "Human card: purpose + 4 named failure modes (drift + contract-violation required)",
+              "Same commit, always — name 'human doc not updated when recipe changes' in the card"
+            ]
+          },
+          "rendered": {
+            "out": "media/BVDT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BVDT.mp3",
+      "actual_duration_s": 25.81,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BVDT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:33:33"
+      }
+    },
+    {
+      "beat_id": "BHTF",
+      "role": "YOUR_TURN",
+      "narration_text": "Your turn. Draft the failure modes section for your contribution's human card — just that section. Four entries minimum. Name each failure mode as a specific cause with a specific symptom. Drift and contract-violation are two. Add two more that are specific to your contribution: the thing that breaks when a dependency is missing, the thing that produces wrong output when the contract is violated in your component.",
+      "duration_s": 23,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "YOUR TURN",
+            "segment": "Your failure modes.",
+            "greeting": "Your turn.",
+            "command": "# Draft 4 named failure modes for your card:\n# 1. Drift: recipe changes, card doesn't — six weeks later card is wrong\n# 2. Contract-violation: script not called, model fills gap\n# 3. [your contribution-specific failure mode 1]\n# 4. [your contribution-specific failure mode 2]",
+            "runningText": "* specific cause → specific symptom → what you observe → recovery",
+            "output": [
+              "→ 4 failure modes named and specific",
+              "→ ready for the card's failure modes section"
+            ]
+          },
+          "rendered": {
+            "out": "media/BHTF.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BHTF.mp3",
+      "actual_duration_s": 24.68,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BHTF.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:33:33"
+      }
+    },
+    {
+      "beat_id": "BOUT",
+      "role": "OUTRO",
+      "narration_text": "Recipe for AI, Card for Human.",
+      "duration_s": 4,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "Recipe for AI, Card for Human.",
+            "handle": "@NikBearBrown",
+            "subline": "Reallocation Engine Capstone · E3 of 8"
+          },
+          "rendered": {
+            "out": "media/BOUT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BOUT.mp3",
+      "actual_duration_s": 2.35,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BOUT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:33:33"
+      }
+    }
+  ]
+}

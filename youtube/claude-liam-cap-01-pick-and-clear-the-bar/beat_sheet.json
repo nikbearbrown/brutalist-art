@@ -1,0 +1,478 @@
+{
+  "metadata": {
+    "slug": "claude-liam-cap-01-pick-and-clear-the-bar",
+    "title": "Pick and Clear the Bar.",
+    "series": "Ship Something Real: The Reallocation Engine Capstone",
+    "episode": "E1 of 8",
+    "brand": "claude-liam",
+    "engine": "kokoro",
+    "voice": "am_onyx",
+    "greeting": "Bonjour",
+    "chapter_number": 46,
+    "build": {
+      "at": "2026-07-19T00:11:02",
+      "cut": "master",
+      "filled": 12,
+      "of": 12,
+      "slates": [],
+      "skin_warnings": []
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "role": "OPEN",
+      "narration_text": "Bonjour, Liam. Ship Something Real — capstone series, episode one of eight. This is the 250-point capstone: a working professional contribution to the Reallocation Engine, attested to the verified-data contract, run honestly, and packaged as something a hiring manager can open. Before you write a line of code, you pick exactly what you are building — and you clear a seven-point bar that determines whether the contribution is gradeable at all. Pick wrong, or skip the bar, and the rest of the work does not count. This is how the choice gets made. Liam, in for Bear.",
+      "duration_s": 28,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "REALLOCATION ENGINE CAPSTONE · E1 OF 8",
+            "segment": "Liam, in for Bear.",
+            "greeting": "Bonjour, Liam.",
+            "command": "grep -n \"^[0-9]\\.\" assignments/ASSIGNMENT-professional-contribution-capstone-250pt.md",
+            "runningText": "* 7 criteria · 250 pts · 8 episodes → pick · clear the bar · ship it",
+            "output": [
+              "7 bar criteria found in assignment.",
+              "Fail one → pick a smaller contribution that clears all 7."
+            ],
+            "folderLabel": "the-reallocation-engine/assignments/"
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": 33.75,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B00.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:11:02"
+      }
+    },
+    {
+      "beat_id": "B01",
+      "role": "ANATOMY",
+      "narration_text": "The Reallocation Engine is an evidence-first job-search system built for international students and early-career technical workers. Five components: a SEC funding detector that finds which companies just got the money that forces them to hire, a sponsorship scorer built on DOL and USCIS public filings, an ATS posting and liveness checker that separates ghost jobs from real ones, a BLS role-quality scorer reading occupation demand and wage data, and a pipeline tracker whose key metric is the skip rate — a healthy run skips at least fifty percent, because skipping is the filter working, not the filter failing. Governance lives in three files: SNICKERDOODLE.md for project scope, DATA_CONTRACT.md for what data lives where and what stays private, and recipes/_shared.md — the shared contract every recipe reads first.",
+      "duration_s": 40,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownAnatomy",
+          "props": {
+            "skillName": "Reallocation Engine",
+            "title": "The engine you are adding to.",
+            "files": [
+              {
+                "indent": 0,
+                "icon": "⚙️",
+                "name": "the-reallocation-engine/",
+                "accent": false
+              },
+              {
+                "indent": 1,
+                "icon": "💰",
+                "name": "SEC funding detector",
+                "tag": "Ch 6 — who just got money",
+                "accent": false
+              },
+              {
+                "indent": 1,
+                "icon": "🏢",
+                "name": "sponsorship scorer",
+                "tag": "Ch 7 — DOL + USCIS records",
+                "accent": false
+              },
+              {
+                "indent": 1,
+                "icon": "🔍",
+                "name": "ATS liveness checker",
+                "tag": "Ch 8 — ghost vs. real",
+                "accent": false
+              },
+              {
+                "indent": 1,
+                "icon": "📈",
+                "name": "BLS role-quality scorer",
+                "tag": "Ch 9 — demand + wage",
+                "accent": false
+              },
+              {
+                "indent": 1,
+                "icon": "📋",
+                "name": "pipeline tracker",
+                "tag": "Ch 15 — skip-rate ≥50%",
+                "accent": true
+              },
+              {
+                "indent": 1,
+                "icon": "📄",
+                "name": "recipes/_shared.md",
+                "tag": "the verified-data contract",
+                "accent": true
+              }
+            ],
+            "calloutText": "Five components. One contract. Run the script, read the audit, then prompt.",
+            "sparkLine": "Evidence-first. No number without a record. Governance in three files."
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": 51.73,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B01.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:11:02"
+      }
+    },
+    {
+      "beat_id": "B02",
+      "role": "PIPELINE",
+      "narration_text": "The assignment names four categories of real contribution openings. Data connectors: new ATS providers like Workday or iCIMS, an entity-resolution module that normalizes employer names so DOL records can join USCIS records, an H-1B calendar feeding the visa-timeline gate, or a local wage-adjustment layer over BLS national numbers. Scorers and harnesses: a gate-behavior unit-test that proves liveness and timeline zero the composite, an ATS paste-test parser, a calibration-curve harness, a provenance inspector. Modes and ledgers: a fourth verify pipeline, an override ledger, a skip-rate dashboard. Any of these is fair game. The book names the chapters they satisfy. You may propose your own — it just clears the same bar. The question is not which is most impressive. The question is which one you can clear all seven criteria for.",
+      "duration_s": 44,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownPipeline",
+          "props": {
+            "title": "The named contribution openings.",
+            "inputLabel": "book-named gap",
+            "outputLabel": "merged contribution",
+            "phases": [
+              {
+                "label": "Data connectors",
+                "desc": "ATS provider · name-matcher · H-1B calendar · wage layer",
+                "accent": false
+              },
+              {
+                "label": "Scorers + harnesses",
+                "desc": "gate-behavior tests · paste-test parser · calibration curve",
+                "accent": true
+              },
+              {
+                "label": "Modes + ledgers",
+                "desc": "verify pipeline · override ledger · skip-rate dashboard",
+                "accent": false
+              },
+              {
+                "label": "7-point bar",
+                "desc": "all contributions clear same bar — tight + correct > ambitious",
+                "accent": true
+              },
+              {
+                "label": "PR to the real repo",
+                "desc": "fork → contrib/<name>-<component> → verify + doctor clean",
+                "accent": false
+              }
+            ],
+            "sparkLine": "Four categories. Any is fair game. The bar applies to all of them."
+          },
+          "rendered": {
+            "out": "media/B02.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": 54.12,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B02.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:11:02"
+      }
+    },
+    {
+      "beat_id": "B03",
+      "role": "PREDICT",
+      "narration_text": "Before seeing the seven criteria: what is the minimum requirement that makes a contribution gradeable at all? Not a coding convention, not a style rule — the one condition without which the grade begins at zero.",
+      "duration_s": 13,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "CAPSTONE E1 · PREDICT",
+            "segment": "The Question.",
+            "greeting": "before the bar",
+            "command": "What is the one condition without which a contribution grades at zero?",
+            "runningText": "",
+            "output": []
+          },
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B03.mp3",
+      "actual_duration_s": 12.93,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B03.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:11:02"
+      }
+    },
+    {
+      "beat_id": "B04",
+      "role": "SELF-DEMO",
+      "narration_text": "Free demo: grep the assignment for the seven numbered criteria. Real output, no generation, no credits. Seven lines. Criteria one through seven in order, from the file itself. If your chosen contribution cannot clear any one of them, the assignment is explicit: pick a smaller one that can. A tight, correct gate-behavior harness — proving liveness and timeline zero the composite — is worth more than an ambitious connector that fabricates coverage. The output you just read is the bar. Every contribution in this series clears all seven before the first line of code is written.",
+      "duration_s": 32,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeCodeBeat",
+          "props": {
+            "title": "The 7-point bar — live from the assignment",
+            "code": "cd the-reallocation-engine\ngrep -n \"^[0-9]\\.\" assignments/ASSIGNMENT-professional-contribution-capstone-250pt.md\n\n# 76: 1. Every number traces to a record\n# 77: 2. Ships as a two-customer pair (recipe + card)\n# 79: 3. Phase gates — each with a failure path\n# 81: 4. Writes an audit and RUN_LOG.md entry\n# 82: 5. Prefers \"not implemented yet\" to fabrication\n# 83: 6. Keeps data/ats/ uncommitted — never self-certifies\n# 85: 7. Finding-shaped output with no script → graded as zero\n# → 7 criteria | $0.00 | no generation",
+            "sparkLine": "7 criteria. Fail one → pick a smaller contribution that clears all 7."
+          },
+          "rendered": {
+            "out": "media/B04.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B04.mp3",
+      "actual_duration_s": 34.71,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B04.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:11:02"
+      }
+    },
+    {
+      "beat_id": "B05",
+      "role": "MECHANISM_1",
+      "narration_text": "Criteria one and two. First: every number your contribution emits traces to a record, or is labeled model-judgment or your-input. The assignment quotes the prime directive: run the script and read the audit before you prompt — never invent a count, a rate, or a coverage number. A coverage figure with no script behind it is not a contribution. It is the failure the engine exists to prevent. Second: your contribution ships as a two-customer pair. An AI recipe with nine required sections — executive summary, required reads, phase gates, stored tools, workflow, output contract, verification checks, logging rules, stop conditions. And a human card with at least four named failure modes, including drift and contract-violation. Update both in the same commit. Drift — the recipe changes and the card does not — is its own named failure mode.",
+      "duration_s": 46,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Every number traces.",
+            "body": "Bar criteria 1 + 2: every emitted number traces to a record or is labeled model-judgment. Ship as a two-customer pair — AI recipe (nine sections) and human card (≥4 failure modes including drift and contract-violation). Update both in the same commit.",
+            "quote": "Run the script and read the audit before you prompt. Never invent a count, a rate, or a coverage number.",
+            "cite": "assignments/ASSIGNMENT-professional-contribution-capstone-250pt.md (quoting recipes/_shared.md)",
+            "sparkLine": "Trace every number. Ship both artifacts together. Drift is a named failure mode."
+          },
+          "rendered": {
+            "out": "media/B05.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B05.mp3",
+      "actual_duration_s": 50.82,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B05.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:11:02"
+      }
+    },
+    {
+      "beat_id": "B06",
+      "role": "MECHANISM_2",
+      "narration_text": "Criteria three and four. Third: every phase gate in your contribution declares a failure path. The assignment states it directly: if a gate has no failure path, it is not a gate, it is decoration. A gate that can only say yes cannot protect the run. It passes every bad input, it approves every premature advance, and it looks exactly like a gate when nothing is wrong. Map the failure exit before you call the phase a gate. Fourth: your contribution writes an audit and a RUN_LOG.md entry. This is the engine's memory. Every run leaves a trace so a decision made on the strength of a number can be reconstructed and questioned later. Not a summary — a reconstructable record. A run that leaves no trace has no provenance.",
+      "duration_s": 44,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Every gate has a failure path.",
+            "body": "Bar criteria 3 + 4: gates must declare failure exits or they are decoration. Logs must be reconstructable — a RUN_LOG.md entry for every run. A gate that only says yes approves every bad input.",
+            "quote": "if a gate has no failure path, it is not a gate, it is decoration.",
+            "cite": "assignments/ASSIGNMENT-professional-contribution-capstone-250pt.md, criterion 3",
+            "sparkLine": "Gates block. Logs trace. No gate without a failure exit."
+          },
+          "rendered": {
+            "out": "media/B06.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B06.mp3",
+      "actual_duration_s": 46.23,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B06.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:11:02"
+      }
+    },
+    {
+      "beat_id": "B07",
+      "role": "MECHANISM_3",
+      "narration_text": "Criteria five, six, and seven. Fifth: prefer not-implemented-yet over fabrication. A stub that says this is not implemented yet is honest and maintainable. A stub that returns plausible-looking output from model priors is the failure mode the entire contract was built to stop — fluent, confident, and untrue. Sixth: data/ats/ and all private files stay uncommitted. The ethics gate — privacy and honesty — passes before any real run, or the run does not happen. Nothing self-certifies honesty; a human signs the attestation. Seventh — the zero condition — the assignment is explicit: a contribution that produces finding-shaped output with no script behind it is, by the book's own definition, the failure the engine exists to prevent — and is graded as such. Not a deduction. A zero on the affected components.",
+      "duration_s": 50,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "The zero condition.",
+            "body": "Bar criteria 5–7: prefer not-implemented-yet over fabrication. Keep data/ats/ uncommitted. Never self-certify. Criterion 7 is the zero: finding-shaped output with no script behind it caps the affected components at zero, not a deduction.",
+            "quote": "A contribution that produces finding-shaped output with no script behind it is, by the book's own definition, the failure the engine exists to prevent — and is graded as such.",
+            "cite": "assignments/ASSIGNMENT-professional-contribution-capstone-250pt.md, criterion 7",
+            "sparkLine": "Not-implemented-yet > fabrication. Data/ats/ private. Zero condition enforced."
+          },
+          "rendered": {
+            "out": "media/B07.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B07.mp3",
+      "actual_duration_s": 51.95,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B07.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:11:02"
+      }
+    },
+    {
+      "beat_id": "B08",
+      "role": "THE_PICK",
+      "narration_text": "The doctrine the assignment closes with: a tight, correct contribution is worth more than an ambitious one that fabricates coverage. The gate-behavior unit-test harness — proving that liveness and timeline zero the composite and do not act as weighted votes — is high value and tight scope. It directly catches the named build failure in Chapter 16. An entity-resolver that self-certifies its join-coverage rate fails criterion one immediately. The one question that settles every pick: can the model verify this against reality, or only against itself? If only against itself — the boundary table, the coverage figure, the calibration error — that number is yours to earn, from a record, not the model's to estimate from patterns in its training data.",
+      "duration_s": 44,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Tight and correct beats ambitious.",
+            "body": "The gate-behavior harness catches the Ch 16 named failure: liveness and timeline acting as weighted votes instead of multipliers. Pick by the one question: can the model verify this against reality, or only against itself?",
+            "quote": "",
+            "cite": "",
+            "sparkLine": "Tight + correct > ambitious + fabricated. One question settles every pick."
+          },
+          "rendered": {
+            "out": "media/B08.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B08.mp3",
+      "actual_duration_s": 45.12,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B08.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:11:02"
+      }
+    },
+    {
+      "beat_id": "BVDT",
+      "role": "VERDICT",
+      "narration_text": "Verdict: pick one contribution, run the seven-point bar before you commit to it, and reject any that fails one criterion. A tight, correct contribution that clears all seven is worth more than an ambitious one that fabricates coverage on criterion one. The two-customer pair ships in the same commit — recipe with nine sections, card with four failure modes. Every number traces. Every gate has a failure exit. Nothing self-certifies. Next episode: build it so it actually runs.",
+      "duration_s": 28,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "artifactTitle": "Verdict",
+            "artifactHeading": "The pick.",
+            "artifactLines": [
+              "Run the 7-point bar before committing — fail one criterion → pick smaller",
+              "Ship as two-customer pair: AI recipe (9 sections) + human card (≥4 failure modes)",
+              "Every number traces to a record or is labeled; no finding-shaped output without a script"
+            ]
+          },
+          "rendered": {
+            "out": "media/BVDT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BVDT.mp3",
+      "actual_duration_s": 29.12,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BVDT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:11:02"
+      }
+    },
+    {
+      "beat_id": "BHTF",
+      "role": "YOUR_TURN",
+      "narration_text": "Your turn. Read the assignment's contribution menu — data connectors, scorers, modes. Pick your top two choices. For each one, name the criterion from the seven-point bar it is most at risk of failing. Reject any that fails one. The one that clears all seven is your contribution. Write it down before episode two.",
+      "duration_s": 22,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "YOUR TURN",
+            "segment": "Your pick.",
+            "greeting": "Your turn.",
+            "command": "# 1. Read the contribution menu (Assignment Step 1)\n# 2. Pick your top 2 candidates\n# 3. For each: name the criterion most at risk of failing\n# 4. Pick the one that clears all 7",
+            "runningText": "* bar check → reject one → keep one → write it down",
+            "output": [
+              "→ your contribution: named, bar-verified",
+              "→ ready for E2: build it so it actually runs"
+            ]
+          },
+          "rendered": {
+            "out": "media/BHTF.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BHTF.mp3",
+      "actual_duration_s": 20.1,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BHTF.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:11:02"
+      }
+    },
+    {
+      "beat_id": "BOUT",
+      "role": "OUTRO",
+      "narration_text": "Pick and Clear the Bar.",
+      "duration_s": 4,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "Pick and Clear the Bar.",
+            "handle": "@NikBearBrown",
+            "subline": "Reallocation Engine Capstone · E1 of 8"
+          },
+          "rendered": {
+            "out": "media/BOUT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BOUT.mp3",
+      "actual_duration_s": 1.41,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BOUT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:11:02"
+      }
+    }
+  ]
+}

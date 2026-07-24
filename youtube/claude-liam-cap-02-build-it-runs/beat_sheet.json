@@ -1,0 +1,472 @@
+{
+  "metadata": {
+    "slug": "claude-liam-cap-02-build-it-runs",
+    "title": "Build It So It Runs.",
+    "series": "Ship Something Real: The Reallocation Engine Capstone",
+    "episode": "E2 of 8",
+    "brand": "claude-liam",
+    "engine": "kokoro",
+    "voice": "am_onyx",
+    "greeting": "Hola",
+    "chapter_number": 47,
+    "build": {
+      "at": "2026-07-19T00:22:41",
+      "cut": "master",
+      "filled": 12,
+      "of": 12,
+      "slates": [],
+      "skin_warnings": []
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "role": "OPEN",
+      "narration_text": "Hola, Liam. Episode two: build it so it actually runs. Step two of the capstone is ninety points — sixty for code that works and thirty for the two-customer pair. The code works means it runs, does what it claims, and clears its own testable handoff conditions. Not 'it looks done.' A testable condition. This episode is about the difference between those two things, and about the one class of build error that will look exactly like correct behavior while being wrong. Liam, in for Bear.",
+      "duration_s": 27,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "REALLOCATION ENGINE CAPSTONE · E2 OF 8",
+            "segment": "Liam, in for Bear.",
+            "greeting": "Hola, Liam.",
+            "command": "grep -n \"handoff\\|It works\\|two-customer\" assignments/ASSIGNMENT-professional-contribution-capstone-250pt.md",
+            "runningText": "* 90 pts → code (60) + two-customer pair (30) → testable handoff conditions",
+            "output": [
+              "99:  It works (60) — clears its own testable handoff conditions",
+              "104: The two-customer pair (30) — AI recipe + human card"
+            ],
+            "folderLabel": "the-reallocation-engine/assignments/"
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": 27.73,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B00.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:22:41"
+      }
+    },
+    {
+      "beat_id": "B01",
+      "role": "ANATOMY",
+      "narration_text": "Chapter 16 describes six build phases, each with a handoff condition. Phase one: foundation — directory layout, data contract, intake questions. Phase two: core skeleton — data structures and five component stubs. Phase three: integration — wiring the composite scorer, proving liveness and timeline act as multipliers, not votes. Phase four: full feature build — SEC, ATS, and BLS pipelines. Phase five: hardening — error handling, verification scripts, the audit trail. Phase six: release — the first real run. The build is not a linear march to 'it looks complete.' Each phase has a row for what the AI executes and a row for what you verify. The handoff condition between phases is the most important element of the whole build.",
+      "duration_s": 42,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownAnatomy",
+          "props": {
+            "skillName": "Capstone Build",
+            "title": "Six phases. Two rows each.",
+            "files": [
+              {
+                "indent": 0,
+                "icon": "🏗️",
+                "name": "Phase 1: Foundation",
+                "tag": "directory · data contract · intake",
+                "accent": false
+              },
+              {
+                "indent": 0,
+                "icon": "🦴",
+                "name": "Phase 2: Core skeleton",
+                "tag": "schemas · five component stubs",
+                "accent": false
+              },
+              {
+                "indent": 0,
+                "icon": "🔌",
+                "name": "Phase 3: Integration",
+                "tag": "composite scorer — liveness+timeline = multipliers",
+                "accent": true
+              },
+              {
+                "indent": 0,
+                "icon": "⚙️",
+                "name": "Phase 4: Full feature build",
+                "tag": "SEC · ATS · BLS pipelines",
+                "accent": false
+              },
+              {
+                "indent": 0,
+                "icon": "🔒",
+                "name": "Phase 5: Hardening",
+                "tag": "error handling · verification · audit trail",
+                "accent": false
+              },
+              {
+                "indent": 0,
+                "icon": "🚀",
+                "name": "Phase 6: Release",
+                "tag": "first real run — after ethics gate passes",
+                "accent": true
+              }
+            ],
+            "calloutText": "AI executes. You verify. No phase advances without a testable handoff condition.",
+            "sparkLine": "Six phases. Two rows. Handoff condition between every phase."
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": 45.29,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B01.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:22:41"
+      }
+    },
+    {
+      "beat_id": "B02",
+      "role": "PIPELINE",
+      "narration_text": "The two-customer pair is how the contribution ships. Two artifacts, written twice, from opposite directions. The AI recipe is complete, explicit, imperative — read-first order, verbatim commands, stop conditions, a log-entry template. It opens by loading recipes/_shared.md, which is what makes the runtime honest by construction. The human card leads with a purpose statement, then dependencies, annotated commands, what the recipe produces when it works, and — the section that gets skipped when someone writes fast and needs most at eleven PM on a Thursday — the named failure modes. Four required: drift and contract-violation among them. Update both in the same commit. Drift — the recipe changes and the card does not — is its own named failure mode, not a documentation miss.",
+      "duration_s": 44,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownPipeline",
+          "props": {
+            "title": "The two-customer pair.",
+            "inputLabel": "contribution code",
+            "outputLabel": "recipe + card (same commit)",
+            "phases": [
+              {
+                "label": "AI recipe (9 sections)",
+                "desc": "read-first · verbatim commands · stop conditions · log template",
+                "accent": true
+              },
+              {
+                "label": "Human card (≥4 failure modes)",
+                "desc": "purpose · dependencies · annotated commands · what it produces",
+                "accent": false
+              },
+              {
+                "label": "Failure modes required",
+                "desc": "drift + contract-violation must be named explicitly",
+                "accent": true
+              },
+              {
+                "label": "Same commit rule",
+                "desc": "recipe change without card update = drift failure mode triggered",
+                "accent": false
+              },
+              {
+                "label": "recipes/_shared.md first",
+                "desc": "first item in every AI recipe read-first list — non-negotiable",
+                "accent": false
+              }
+            ],
+            "sparkLine": "Two artifacts. Written twice. Opposite directions. Same commit."
+          },
+          "rendered": {
+            "out": "media/B02.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": 48.0,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B02.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:22:41"
+      }
+    },
+    {
+      "beat_id": "B03",
+      "role": "PREDICT",
+      "narration_text": "Phase three of the build is the integration phase: wiring the five components into the composite scorer. One specific error class will look exactly like correct behavior. The code runs. The numbers are in a plausible range. The build appears done. What is this error called, and why can the AI not catch it from the inside?",
+      "duration_s": 16,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "CAPSTONE E2 · PREDICT",
+            "segment": "The Question.",
+            "greeting": "phase three",
+            "command": "Name the error class in phase 3 integration that looks like correct behavior while being wrong.",
+            "runningText": "",
+            "output": []
+          },
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B03.mp3",
+      "actual_duration_s": 20.33,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B03.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:22:41"
+      }
+    },
+    {
+      "beat_id": "B04",
+      "role": "SELF-DEMO",
+      "narration_text": "Free demo: grep the assignment for 'testable handoff' and 'two-customer' — real output, no generation, no credits. The 90-point grading split is right there in the text. Sixty for code that works and clears testable handoff conditions. Thirty for the two-customer pair. The grader is not checking whether the code looks done. They are checking whether it does what it claims, whether connectors separate EMPTY from ERROR, and whether harnesses actually fail on the target bug and pass when fixed. That last one — harnesses that fail on the bug and pass when fixed — is the testable handoff for every harness contribution.",
+      "duration_s": 34,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeCodeBeat",
+          "props": {
+            "title": "Step 2 grading — live from the assignment",
+            "code": "grep -n \"handoff\\|It works\\|two-customer\" \\\n  assignments/ASSIGNMENT-professional-contribution-capstone-250pt.md\n\n# 77:  2. Ships as a two-customer pair\n# 93:  Step 2 — Build the contribution (code + two-customer pair) (90 pts)\n# 99:  It works (60) — clears its own testable handoff conditions\n# 104: The two-customer pair (30) — AI recipe + human .card.md\n# 208: 60 pts — runs, clears testable handoff; harnesses fail on bug, pass when fixed\n# → 90 pts: code (60) + two-customer pair (30) | $0.00",
+            "sparkLine": "60: works + testable handoffs. 30: AI recipe + human card. 90 total."
+          },
+          "rendered": {
+            "out": "media/B04.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B04.mp3",
+      "actual_duration_s": 34.86,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B04.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:22:41"
+      }
+    },
+    {
+      "beat_id": "B05",
+      "role": "MECHANISM_1",
+      "narration_text": "The gate-as-vote bug is the named build failure in Chapter 16. Phase three of the build wires liveness and timeline into the composite scorer. The correct wiring makes them multipliers — if liveness is zero, the composite is zero; if the timeline gate is closed, the composite is zero. The wrong wiring makes them weighted votes — a strong sponsorship score and a good fit score drag the composite up to 0.70, and a role that expires before you can start scores Consider. The code ran. The number looked reasonable. It was wrong in exactly the way fluency hides: internally consistent, grounded in nothing. The integration handoff condition is not 'the composite runs.' It is: prove liveness and timeline zero the score when closed.",
+      "duration_s": 46,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Liveness + timeline are multipliers.",
+            "body": "Gate-as-vote bug: strong sponsorship drags composite to 0.70 even when the role expires before OPT ends. Code runs. Number looks plausible. Wrong in exactly the way fluency hides. Integration handoff: prove closed gate zeros the composite.",
+            "quote": "The handoff condition is the most important element of the whole build. 'The scan returns real postings with provenance' is a handoff condition. 'It looks done' is not.",
+            "cite": "chapters/16-the-build-and-the-honest-run.md",
+            "sparkLine": "Multipliers gate. Votes average. Phase 3 integration handoff must prove the difference."
+          },
+          "rendered": {
+            "out": "media/B05.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B05.mp3",
+      "actual_duration_s": 46.59,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B05.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:22:41"
+      }
+    },
+    {
+      "beat_id": "B06",
+      "role": "MECHANISM_2",
+      "narration_text": "The handoff condition is the tool that prevents the build from ending on a feeling. You state precisely what must be true before the next phase begins. 'The scan returns real postings with provenance' is a handoff condition — you can run it, you can see whether it passed or failed. 'It looks done' is not — it is a feeling about state you have not measured. Chapter 16 states this plainly: the places where builds go wrong are almost always places where a phase ended on a feeling rather than a test. For your contribution, you write the handoff condition before the phase starts, not after. You verify it before advancing. You paste the verification output into your RUN_LOG.md entry.",
+      "duration_s": 44,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "State the handoff before the phase.",
+            "body": "Write the handoff condition before the phase starts. Verify it before advancing. Paste the verification into RUN_LOG.md. A condition you can't state precisely is a phase you haven't actually finished.",
+            "quote": "The places where builds go wrong are almost always places where a phase ended on a feeling rather than a test.",
+            "cite": "chapters/16-the-build-and-the-honest-run.md",
+            "sparkLine": "Handoff before phase starts. Verify before advancing. Log the evidence."
+          },
+          "rendered": {
+            "out": "media/B06.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B06.mp3",
+      "actual_duration_s": 41.26,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B06.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:22:41"
+      }
+    },
+    {
+      "beat_id": "B07",
+      "role": "MECHANISM_3",
+      "narration_text": "The two-customer pair has a structural failure mode that the assignment names explicitly: drift. You update the recipe because the recipe is what the agent runs, and the agent fails if the recipe is wrong. The human card also needs updating, but you are in a hurry, and it is just documentation, and you will do it later. Later does not come. Six weeks later you read the card to understand why something is behaving strangely. The card describes a workflow that no longer exists. As Chapter 4 states, drift is its own failure mode — not a consequence of forgetting to maintain the docs, but a structural property of having two artifacts with no enforcement binding them. The only enforcement is discipline: update both in the same commit, and list 'human doc not updated when recipe changes' as one of the named failure modes in the card itself.",
+      "duration_s": 50,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Drift is a named failure mode.",
+            "body": "Recipe changes. Card doesn't. Six weeks later the card describes a workflow that no longer exists. The fix: update both in the same commit and name 'human doc not updated when recipe changes' as a failure mode in the card.",
+            "quote": "Drift is its own failure mode — not a consequence of forgetting to maintain the docs, but a structural property of having two artifacts with no enforcement binding them.",
+            "cite": "chapters/04-two-customers.md",
+            "sparkLine": "Same commit. Both artifacts. Drift named in the card's failure modes section."
+          },
+          "rendered": {
+            "out": "media/B07.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B07.mp3",
+      "actual_duration_s": 50.5,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B07.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:22:41"
+      }
+    },
+    {
+      "beat_id": "B08",
+      "role": "THE_PICK",
+      "narration_text": "What belongs to the AI and what stays with you. The AI scaffolds, writes schemas, implements formulas, drafts documentation — anything where correctness is checkable against a test you run. What stays with you: weight calibration, plausibility audits, Unknown-tier interpretation, the privacy and honesty calls, the final go-or-no-go on real decisions. The test is not 'can the AI do it' — the test is 'can the model verify this against reality, or only against itself?' Scaffolding is checkable. Whether the weight on the timeline factor matches your actual binding constraint is yours. Write the handoff conditions. Run them. Paste the evidence. Then let the AI build.",
+      "duration_s": 42,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Give to AI. Keep for yourself.",
+            "body": "AI: scaffolding, schemas, formula implementation, boilerplate, documentation drafts — anything checkable against reality. You: weight calibration, plausibility audits, Unknown-tier interpretation, privacy + honesty calls, final go/no-go.",
+            "quote": "",
+            "cite": "",
+            "sparkLine": "Checkable → AI. Verifiable only against itself → yours."
+          },
+          "rendered": {
+            "out": "media/B08.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B08.mp3",
+      "actual_duration_s": 41.9,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B08.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:22:41"
+      }
+    },
+    {
+      "beat_id": "BVDT",
+      "role": "VERDICT",
+      "narration_text": "Verdict: 90 points is code that works plus the two-customer pair. The code works means it clears testable handoff conditions — not looks done, but passes a test you ran and pasted into the log. Wire liveness and timeline as multipliers before advancing from phase three. Drift is a named failure mode: update both artifacts in the same commit. Next episode: the two-customer pair in detail — writing the recipe and the card.",
+      "duration_s": 27,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "artifactTitle": "Verdict",
+            "artifactHeading": "The build.",
+            "artifactLines": [
+              "Handoff conditions before each phase — 'looks done' is not a handoff condition",
+              "Phase 3 integration: prove liveness+timeline zero the composite (not weighted votes)",
+              "Two-customer pair: AI recipe + human card in the same commit; drift is a named failure mode"
+            ]
+          },
+          "rendered": {
+            "out": "media/BVDT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BVDT.mp3",
+      "actual_duration_s": 26.01,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BVDT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:22:41"
+      }
+    },
+    {
+      "beat_id": "BHTF",
+      "role": "YOUR_TURN",
+      "narration_text": "Your turn. For your chosen contribution: write one handoff condition for the integration phase — the precisely stated test that proves the core behavior works. If it is a harness, the condition is: 'it fails on the target bug and passes when fixed.' If it is a connector, the condition is: 'it returns real records with provenance and separates EMPTY from ERROR.' Write it before you start phase three.",
+      "duration_s": 24,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "YOUR TURN",
+            "segment": "Your handoff.",
+            "greeting": "Your turn.",
+            "command": "# Write one testable handoff condition for your integration phase:\n# harness: \"fails on target bug, passes when fixed\"\n# connector: \"returns real records with provenance, separates EMPTY from ERROR\"\n# scorer: \"closed gate zeros the composite — not a weighted vote\"",
+            "runningText": "* state it before you start → verify it → paste evidence into RUN_LOG.md",
+            "output": [
+              "→ your handoff condition: written and testable",
+              "→ ready for the build"
+            ]
+          },
+          "rendered": {
+            "out": "media/BHTF.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BHTF.mp3",
+      "actual_duration_s": 24.04,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BHTF.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:22:41"
+      }
+    },
+    {
+      "beat_id": "BOUT",
+      "role": "OUTRO",
+      "narration_text": "Build It So It Runs.",
+      "duration_s": 4,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "Build It So It Runs.",
+            "handle": "@NikBearBrown",
+            "subline": "Reallocation Engine Capstone · E2 of 8"
+          },
+          "rendered": {
+            "out": "media/BOUT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BOUT.mp3",
+      "actual_duration_s": 1.28,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BOUT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T00:22:41"
+      }
+    }
+  ]
+}

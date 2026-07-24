@@ -1,0 +1,803 @@
+{
+  "metadata": {
+    "slug": "claude-liam-bear-brown-logo-remotion-showcase-16x9",
+    "title": "Bear Brown Logo, Every Remotion Move.",
+    "topic": "DESIGN · MOTION",
+    "channel": "claude-liam",
+    "brand": "claude-liam",
+    "register": "Teardown",
+    "audience": "Claude",
+    "persona": "Liam (in for Bear)",
+    "voice": "am_onyx",
+    "engine": "kokoro",
+    "voice_kokoro": "am_onyx",
+    "palette": "claude",
+    "style_preset": "claude",
+    "ground": "#FAF9F5",
+    "folderLabel": "@NikBearBrown",
+    "in_for_bear": true,
+    "playlist": "Brutalist — Claude for Video Production",
+    "description_blurb": "Twenty logo motion techniques built entirely in Remotion — no keyframes, no plugins. Every move is a pure function of the frame.",
+    "hashtags": [
+      "#Remotion",
+      "#LogoAnimation",
+      "#MotionDesign",
+      "#ClaudeAI",
+      "#BrutalistVideo"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "description": "A technique-showcase reel animating the Bear Brown full logo mark every way Remotion can — 16:9 landscape edition. One mark (viewBox 0 0 7500 5000, complex single path), 20 techniques, for review: which moves earn their beat?",
+    "build": {
+      "at": "2026-07-22T22:05:58",
+      "cut": "master",
+      "filled": 24,
+      "of": 24,
+      "slates": [],
+      "skin_warnings": []
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "t_start": 0,
+      "estimated_duration_s": 11.0,
+      "actual_duration_s": 10.92,
+      "narration_text": "Hey, this is Liam, in for Bear. One logo. Twenty techniques. We're going to run the Bear Brown mark through every motion move Remotion knows, back to back, so you can judge which ones deserve to live.",
+      "shot": {
+        "type": "CARD",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Hej, Bear.",
+            "topic": "BRUTALIST · REMOTION",
+            "ask": "Show me every logo motion technique in Remotion.",
+            "outputLines": [
+              "spring entrance",
+              "transforms",
+              "surface moves",
+              "physics + exits"
+            ],
+            "folderLabel": "@NikBearBrown"
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": ""
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B00.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T22:05:58"
+      }
+    },
+    {
+      "beat_id": "B01",
+      "t_start": 0,
+      "estimated_duration_s": 7.0,
+      "actual_duration_s": 6.66,
+      "narration_text": "Spring entrance. The mark arrives with mass — damping set to feel like a dropped object, not a PowerPoint click.",
+      "shot": {
+        "type": "CARD",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "heading": "Spring Entrance",
+            "artifactLines": [
+              "spring(frame, {fps, from, to})",
+              "damping=20 → standard settle",
+              "stiffness=100 default",
+              "overshoot controlled by damping"
+            ],
+            "folderLabel": "@NikBearBrown"
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B01.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T22:05:58"
+      }
+    },
+    {
+      "beat_id": "B02",
+      "t_start": 0,
+      "estimated_duration_s": 9.0,
+      "actual_duration_s": 8.43,
+      "narration_text": "Overshoot spring with squash-and-stretch on landing. Low damping, high stiffness — the mark overshoots its rest position and compresses when it hits.",
+      "shot": {
+        "type": "CARD",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "heading": "Overshoot Spring",
+            "artifactLines": [
+              "damping=5 → loose, bouncy",
+              "squash Y + stretch X on peak",
+              "spring settle after overshoot",
+              "low damping = personality"
+            ],
+            "folderLabel": "@NikBearBrown"
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B02.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T22:05:58"
+      }
+    },
+    {
+      "beat_id": "B03",
+      "t_start": 0,
+      "estimated_duration_s": 9.0,
+      "actual_duration_s": 8.49,
+      "narration_text": "Draw-on stroke using evolvePath. The pen traces the mark's single complex path — terracotta stroke first, then the ink floods in behind it.",
+      "shot": {
+        "type": "CARD",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "heading": "Draw-On Stroke",
+            "artifactLines": [
+              "evolvePath(frame, {duration})",
+              "terracotta stroke-dashoffset",
+              "svg path writes itself on",
+              "timing = frame / fps"
+            ],
+            "folderLabel": "@NikBearBrown"
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B03.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T22:05:58"
+      }
+    },
+    {
+      "beat_id": "B04",
+      "t_start": 0,
+      "estimated_duration_s": 8.0,
+      "actual_duration_s": 7.49,
+      "narration_text": "Mask reveal. Linear wipe left to right, then a radial iris opens from the center. Two revealing metaphors, one beat.",
+      "shot": {
+        "type": "CARD",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "heading": "Mask Reveal",
+            "artifactLines": [
+              "linear wipe: x from 0 to width",
+              "radial iris: clip-path circle",
+              "two reveals, one beat",
+              "interpolate(frame, [0, dur], [0, 1])"
+            ],
+            "folderLabel": "@NikBearBrown"
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B04.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T22:05:58"
+      }
+    },
+    {
+      "beat_id": "B05",
+      "t_start": 0,
+      "estimated_duration_s": 10.0,
+      "actual_duration_s": 9.09,
+      "narration_text": "Scale zoom, linear versus bezier. The first half scales linearly — mechanical, flat. The second half uses a cubic ease-in-out. The bezier version earns it.",
+      "shot": {
+        "type": "CARD",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "heading": "Scale Zoom",
+            "artifactLines": [
+              "scale: 0.8 → 1.0 → 0.95",
+              "linear vs cubic ease-in-out",
+              "easing curve IS the design",
+              "Easing.easeInOut built-in"
+            ],
+            "folderLabel": "@NikBearBrown"
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B05.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T22:05:58"
+      }
+    },
+    {
+      "beat_id": "B06",
+      "t_start": 0,
+      "estimated_duration_s": 8.0,
+      "actual_duration_s": 7.64,
+      "narration_text": "Rotation. Springs in on entrance with a slight pivot, then drifts through one-eighty degrees. Meditative when slow. Restless when fast.",
+      "shot": {
+        "type": "CARD",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "heading": "Rotation",
+            "artifactLines": [
+              "spring entrance + 180° drift",
+              "rotate: 0 → Math.PI",
+              "spring gives natural decel",
+              "combine translate + rotate"
+            ],
+            "folderLabel": "@NikBearBrown"
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B06.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T22:05:58"
+      }
+    },
+    {
+      "beat_id": "B07",
+      "t_start": 0,
+      "estimated_duration_s": 8.5,
+      "actual_duration_s": 8.0,
+      "narration_text": "Skew and shear. The mark leans into a skewX transform, holds the tension, then releases back to neutral. Feels italic. Feels rushed.",
+      "shot": {
+        "type": "CARD",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "heading": "Skew And Shear",
+            "artifactLines": [
+              "skewX(20deg) → skewX(0)",
+              "interpolate(f, [0, dur], [20, 0])",
+              "shear reads as energy",
+              "spring settle after skew"
+            ],
+            "folderLabel": "@NikBearBrown"
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B07.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T22:05:58"
+      }
+    },
+    {
+      "beat_id": "B08",
+      "t_start": 0,
+      "estimated_duration_s": 10.0,
+      "actual_duration_s": 9.73,
+      "narration_text": "Opacity through blur. The mark arrives out of focus and sharp at the same time — blur interpolates from eighteen pixels to zero as opacity rises from nothing.",
+      "shot": {
+        "type": "CARD",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "heading": "Opacity Through Blur",
+            "artifactLines": [
+              "blur: 18px → 0px",
+              "opacity: 0 → 1",
+              "both on same spring",
+              "combined: material snap-in"
+            ],
+            "folderLabel": "@NikBearBrown"
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B08.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T22:05:58"
+      }
+    },
+    {
+      "beat_id": "B09",
+      "t_start": 0,
+      "estimated_duration_s": 8.5,
+      "actual_duration_s": 8.13,
+      "narration_text": "Color interpolation — the color treatment beat. The mark cycles from ink black to terracotta and back. Signal, or decoration? You decide.",
+      "shot": {
+        "type": "CARD",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "heading": "Color Interpolation",
+            "artifactLines": [
+              "interpolateColors(t, [0,1], ['ink','terracotta'])",
+              "frame-accurate color blend",
+              "no CSS transition needed",
+              "brand palette in code"
+            ],
+            "folderLabel": "@NikBearBrown"
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B09.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T22:05:58"
+      }
+    },
+    {
+      "beat_id": "B10",
+      "t_start": 0,
+      "estimated_duration_s": 10.0,
+      "actual_duration_s": 9.62,
+      "narration_text": "Kinetic grid. The mark tiles across the full sixteen-by-nine frame in a staggered ripple — four columns, three rows, each instance springing in with a cascade delay.",
+      "shot": {
+        "type": "CARD",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "heading": "Kinetic Grid",
+            "artifactLines": [
+              "4×3 logo instances",
+              "cascade delay: i * 3 frames",
+              "each springs in offset",
+              "grid reads as system"
+            ],
+            "folderLabel": "@NikBearBrown"
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B10.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T22:05:58"
+      }
+    },
+    {
+      "beat_id": "B11",
+      "t_start": 0,
+      "estimated_duration_s": 10.0,
+      "actual_duration_s": 9.24,
+      "narration_text": "Glitch slices. The mark is cut into horizontal strips and each strip randomly offsets on the x-axis for a few frames — aggressive, then instantly gone.",
+      "shot": {
+        "type": "CARD",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "heading": "Glitch Slices",
+            "artifactLines": [
+              "7 horizontal strip divs",
+              "random x-offset per frame",
+              "Math.random() seeded by frame",
+              "snap-clean = the payoff"
+            ],
+            "folderLabel": "@NikBearBrown"
+          },
+          "rendered": {
+            "out": "media/B11.mp4",
+            "at": ""
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B11.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T22:05:58"
+      }
+    },
+    {
+      "beat_id": "B12",
+      "t_start": 0,
+      "estimated_duration_s": 9.0,
+      "actual_duration_s": 8.85,
+      "narration_text": "Trail echo. The mark slides across the canvas and five ghost copies trail behind it with decaying opacity — motion that lingers after the fact.",
+      "shot": {
+        "type": "CARD",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "heading": "Trail Echo",
+            "artifactLines": [
+              "5 ghost copies at -5f intervals",
+              "opacity: 1/n per copy",
+              "translateX follows leader",
+              "decay = persistence of motion"
+            ],
+            "folderLabel": "@NikBearBrown"
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B12.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T22:05:58"
+      }
+    },
+    {
+      "beat_id": "B13",
+      "t_start": 0,
+      "estimated_duration_s": 10.0,
+      "actual_duration_s": 9.86,
+      "narration_text": "Noise wobble. Three sine waves at different frequencies drive x, y, and rotation independently. Organic or anxious — depends entirely on the amplitude.",
+      "shot": {
+        "type": "CARD",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "heading": "Noise Wobble",
+            "artifactLines": [
+              "sin(f/7) + sin(f/13) + sin(f/19)",
+              "three frequencies → organic",
+              "amplitude 3px each axis",
+              "idle-state feel: alive"
+            ],
+            "folderLabel": "@NikBearBrown"
+          },
+          "rendered": {
+            "out": "media/B13.mp4",
+            "at": ""
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B13.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T22:05:58"
+      }
+    },
+    {
+      "beat_id": "B14",
+      "t_start": 0,
+      "estimated_duration_s": 8.0,
+      "actual_duration_s": 7.87,
+      "narration_text": "Elastic physics. The mark drops in from off-screen, hits the canvas floor, squashes on impact, then bounces back to rest. It hits.",
+      "shot": {
+        "type": "CARD",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "heading": "Elastic Physics",
+            "artifactLines": [
+              "drop from -200px, spring settle",
+              "squash Y on impact frame",
+              "stretch X at lowest point",
+              "weight = squash timing"
+            ],
+            "folderLabel": "@NikBearBrown"
+          },
+          "rendered": {
+            "out": "media/B14.mp4",
+            "at": ""
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B14.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T22:05:58"
+      }
+    },
+    {
+      "beat_id": "B15",
+      "t_start": 0,
+      "estimated_duration_s": 10.0,
+      "actual_duration_s": 9.62,
+      "narration_text": "Card flip — rotateY with perspective. The mark flips in from ninety degrees, holds, then spins a full three-sixty. The back face reveals a terracotta accent.",
+      "shot": {
+        "type": "CARD",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "heading": "Card Flip",
+            "artifactLines": [
+              "rotateY(0 → 180deg)",
+              "perspective: 800px on parent",
+              "terracotta back face",
+              "face swap at exactly 90°"
+            ],
+            "folderLabel": "@NikBearBrown"
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B15.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T22:05:58"
+      }
+    },
+    {
+      "beat_id": "B16",
+      "t_start": 0,
+      "estimated_duration_s": 7.5,
+      "actual_duration_s": 7.13,
+      "narration_text": "Shadow play. A ghost copy of the mark detaches and drifts behind the original, then snaps back. Detached, then grounded.",
+      "shot": {
+        "type": "CARD",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "heading": "Shadow Play",
+            "artifactLines": [
+              "ghost copy: opacity 0.15",
+              "translateX 8px, translateY 12px",
+              "snaps back with spring",
+              "shadow = cheapest depth"
+            ],
+            "folderLabel": "@NikBearBrown"
+          },
+          "rendered": {
+            "out": "media/B16.mp4",
+            "at": ""
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B16.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T22:05:58"
+      }
+    },
+    {
+      "beat_id": "B17",
+      "t_start": 0,
+      "estimated_duration_s": 11.0,
+      "actual_duration_s": 10.35,
+      "narration_text": "Composer summon. We watch the actual prompt get typed into the Claude interface, send fires a terracotta spark, and the mark materializes below. The interface is the origin.",
+      "shot": {
+        "type": "CARD",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "heading": "Composer Summon",
+            "artifactLines": [
+              "Claude interface types prompt",
+              "ClaudeComposerAsk pattern",
+              "mark appears on completion",
+              "animate the tool that makes it"
+            ],
+            "folderLabel": "@NikBearBrown"
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B17.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T22:05:58"
+      }
+    },
+    {
+      "beat_id": "B18",
+      "t_start": 0,
+      "estimated_duration_s": 9.0,
+      "actual_duration_s": 8.55,
+      "narration_text": "Stroke pulse. The mark switches to outline mode and a stroke-dashoffset heartbeat cycles across the entire path — a rhythm drawn in terracotta.",
+      "shot": {
+        "type": "CARD",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "heading": "Stroke Pulse",
+            "artifactLines": [
+              "stroke-dashoffset heartbeat",
+              "sin(frame/fps * 2π * 0.5)",
+              "half-hertz = 1 pulse per 2s",
+              "felt not counted"
+            ],
+            "folderLabel": "@NikBearBrown"
+          },
+          "rendered": {
+            "out": "media/B18.mp4",
+            "at": ""
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B18.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T22:05:58"
+      }
+    },
+    {
+      "beat_id": "B19",
+      "t_start": 0,
+      "estimated_duration_s": 7.5,
+      "actual_duration_s": 7.08,
+      "narration_text": "Scale breathe — a subtle continuous oscillation, just a few percent at about a half-hertz. Barely there. That's the point.",
+      "shot": {
+        "type": "CARD",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "heading": "Scale Breathe",
+            "artifactLines": [
+              "scale: 1 + 0.02 * sin(t)",
+              "half-hertz oscillation",
+              "barely there, always moving",
+              "alive without distracting"
+            ],
+            "folderLabel": "@NikBearBrown"
+          },
+          "rendered": {
+            "out": "media/B19.mp4",
+            "at": ""
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B19.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T22:05:58"
+      }
+    },
+    {
+      "beat_id": "B20",
+      "t_start": 0,
+      "estimated_duration_s": 11.0,
+      "actual_duration_s": 10.18,
+      "narration_text": "Exit family. Shrink-spin, blur-out, mask-close — three exits, one beat. Most reels only use one. Knowing all three means you can match the exit to what the moment deserves.",
+      "shot": {
+        "type": "CARD",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "ClaudeWindow",
+          "props": {
+            "heading": "Exit Family",
+            "artifactLines": [
+              "shrink-spin: scale+rotate out",
+              "blur-out: blur 0→20 + opacity 1→0",
+              "mask-close: iris wipe close",
+              "three exits, one brand picks one"
+            ],
+            "folderLabel": "@NikBearBrown"
+          },
+          "rendered": {
+            "out": "media/B20.mp4",
+            "at": ""
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B20.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T22:05:58"
+      }
+    },
+    {
+      "beat_id": "BVDT",
+      "t_start": 0,
+      "estimated_duration_s": 25.0,
+      "actual_duration_s": 9.94,
+      "narration_text": "Twenty techniques. Springs for motion. Interpolation for color. Trigonometry for life. Every one a pure function of the frame — no keyframes, no plugins, no timeline.",
+      "shot": {
+        "type": "CARD",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "heading": "Every Remotion Move",
+            "artifactLines": [
+              "4 entrances · 4 transforms · 4 surface moves",
+              "4 physics · 4 live marks + exits",
+              "spring() + interpolate() + sin() = the whole toolkit",
+              "no keyframes — every move is math"
+            ],
+            "folderLabel": "@NikBearBrown"
+          },
+          "rendered": {
+            "out": "media/BVDT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BVDT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T22:05:58"
+      },
+      "audio_file": "mp3/beat-BVDT.mp3"
+    },
+    {
+      "beat_id": "B21",
+      "t_start": 0,
+      "estimated_duration_s": 11.0,
+      "actual_duration_s": 10.77,
+      "narration_text": "Your turn. Take your own logo SVG and run it through spring entrance, draw-on stroke, and card flip. For each technique, build a six-second Remotion composition, then mark it keep or kill.",
+      "shot": {
+        "type": "CARD",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Your turn.",
+            "topic": "BRUTALIST · REMOTION",
+            "ask": "Pick one technique and add it to your own logo. Paste the spring() call into Claude and ask it to adjust the damping.",
+            "outputLines": [
+              "pick one technique",
+              "paste spring() call",
+              "adjust damping",
+              "make it yours"
+            ],
+            "folderLabel": "@NikBearBrown"
+          },
+          "rendered": {
+            "out": "media/B21.mp4",
+            "at": ""
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B21.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T22:05:58"
+      }
+    },
+    {
+      "beat_id": "B22",
+      "t_start": 0,
+      "estimated_duration_s": 2.0,
+      "actual_duration_s": 1.94,
+      "narration_text": "Liam, in for Bear.",
+      "shot": {
+        "type": "CARD",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "Bear Brown Logo, Every Remotion Move.",
+            "handle": "@NikBearBrown",
+            "subline": "twenty techniques · every move built in Remotion"
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B22.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T22:05:58"
+      }
+    }
+  ]
+}

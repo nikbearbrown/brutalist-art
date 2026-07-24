@@ -1,0 +1,466 @@
+{
+  "metadata": {
+    "slug": "claude-liam-cap-05-the-honest-run",
+    "title": "The Honest Run.",
+    "series": "Ship Something Real: The Reallocation Engine Capstone",
+    "episode": "E5 of 8",
+    "brand": "claude-liam",
+    "engine": "kokoro",
+    "voice": "am_onyx",
+    "greeting": "Namaste",
+    "chapter_number": 50,
+    "build": {
+      "at": "2026-07-19T01:03:37",
+      "cut": "master",
+      "filled": 12,
+      "of": 12,
+      "slates": [],
+      "skin_warnings": []
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "role": "OPEN",
+      "narration_text": "Namaste, Liam. Episode five: the honest run. Running is not the same as reporting honestly. Step 4 has five required deliverables, and the one most often skipped is the most valuable: the deliberate break attempt. Paste the real terminal output. Run the plausibility audit before you trust what you see. Read the skip rate. And close with what the machine could not know. Liam, in for Bear.",
+      "duration_s": 26,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "REALLOCATION ENGINE CAPSTONE · E5 OF 8",
+            "segment": "Liam, in for Bear.",
+            "greeting": "Namaste, Liam.",
+            "command": "sed -n '128,148p' assignments/ASSIGNMENT-professional-contribution-capstone-250pt.md",
+            "runningText": "* plausibility audit → pasted output → break attempt → skip rate → what the machine could not know",
+            "output": [
+              "plausibility audit · real terminal output pasted not described",
+              "deliberate break attempt · skip rate readout",
+              "\"what the machine could not know\" account — the honest close"
+            ],
+            "folderLabel": "the-reallocation-engine/assignments/"
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": 23.66,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B00.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:03:37"
+      }
+    },
+    {
+      "beat_id": "B01",
+      "role": "ANATOMY",
+      "narration_text": "Step 4 has five deliverables. First: the plausibility audit before you trust the output. Sanity-check a batch. Does a near-zero sponsorship collapse the composite the way it should? Does a role past the OPT window get gated, not merely down-weighted? Catch what ran and looked reasonable and was wrong. Second: real terminal output, pasted, not described. The actual commands, the actual results — not a summary of what you saw. Third: the deliberate break attempt. Try to make your own contribution produce a wrong answer. A fuzzy-match false join, a ghost posting scored live, a gate that behaves like a vote. Report what you found. The break attempt is worth more than a clean run. Fourth: the metric readout — skip rate in its working range, coverage, PASS-rate, calibration error. Fifth: the 'what the machine could not know' account — the honest close.",
+      "duration_s": 50,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownAnatomy",
+          "props": {
+            "skillName": "Honest Run",
+            "title": "Five deliverables. All five required.",
+            "files": [
+              {
+                "indent": 0,
+                "icon": "🔍",
+                "name": "1. Plausibility audit",
+                "tag": "sanity-check a batch before you trust output",
+                "accent": false
+              },
+              {
+                "indent": 0,
+                "icon": "💻",
+                "name": "2. Real terminal output",
+                "tag": "pasted, not described — actual commands and actual results",
+                "accent": false
+              },
+              {
+                "indent": 0,
+                "icon": "🔨",
+                "name": "3. Deliberate break attempt",
+                "tag": "try to make your contribution produce a wrong answer",
+                "accent": true
+              },
+              {
+                "indent": 0,
+                "icon": "📊",
+                "name": "4. Metric readout",
+                "tag": "skip rate · coverage · PASS-rate · calibration error",
+                "accent": false
+              },
+              {
+                "indent": 0,
+                "icon": "🧭",
+                "name": "5. What the machine could not know",
+                "tag": "the honest close — the judgment it hands back to you",
+                "accent": true
+              }
+            ],
+            "calloutText": "The break attempt is worth more than a clean run. A clean run proves the code compiled. A break attempt proves you understand where it fails.",
+            "sparkLine": "Five deliverables. Plausibility first. Break attempt worth more than a clean run. Honest close last."
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": 49.81,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B01.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:03:37"
+      }
+    },
+    {
+      "beat_id": "B02",
+      "role": "PIPELINE",
+      "narration_text": "The run pipeline moves in order. Start with the plausibility audit: run npm run ats:scan, npm run ats:liveness, npm run ats:verify, then python scripts/ats/analyze-patterns.py and read the skip rate first. Before you trust the output, sanity-check one batch: does a role past your OPT window score Skip, not Consider? Next: paste the actual terminal output — not a description, not a summary. The raw commands and what they returned. Then execute the break attempt: deliberately trigger a known edge case. A ghost posting fed as live. A missing phase gate. A fuzzy match you suspect is wrong. Write what you tried and what you found. If you find nothing, say what you attempted and why you believe it held. Then read the metric readout, and write the 'what the machine could not know' close.",
+      "duration_s": 50,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownPipeline",
+          "props": {
+            "title": "The run.",
+            "inputLabel": "contribution code",
+            "outputLabel": "honest run report",
+            "phases": [
+              {
+                "label": "Plausibility audit",
+                "desc": "npm run ats:scan → liveness → verify → analyze-patterns.py · read skip rate first",
+                "accent": false
+              },
+              {
+                "label": "Paste terminal output",
+                "desc": "raw commands + raw results — not described, not summarized",
+                "accent": false
+              },
+              {
+                "label": "Break attempt",
+                "desc": "trigger an edge case deliberately · report what you found",
+                "accent": true
+              },
+              {
+                "label": "Metric readout",
+                "desc": "skip rate · coverage before/after · PASS-rate · calibration error",
+                "accent": false
+              },
+              {
+                "label": "What the machine could not know",
+                "desc": "honest close — the judgment it cannot make, the human call it hands back",
+                "accent": true
+              }
+            ],
+            "sparkLine": "Audit first. Paste second. Break third. Read the dial. Close honestly."
+          },
+          "rendered": {
+            "out": "media/B02.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": 48.92,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B02.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:03:37"
+      }
+    },
+    {
+      "beat_id": "B03",
+      "role": "PREDICT",
+      "narration_text": "Of the five Step 4 deliverables, the assignment says one is worth more than a clean run. Which one?",
+      "duration_s": 10,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "CAPSTONE E5 · PREDICT",
+            "segment": "The Question.",
+            "greeting": "five deliverables",
+            "command": "Which Step 4 deliverable is worth more than a clean run?",
+            "runningText": "",
+            "output": []
+          },
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B03.mp3",
+      "actual_duration_s": 6.06,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B03.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:03:37"
+      }
+    },
+    {
+      "beat_id": "B04",
+      "role": "SELF-DEMO",
+      "narration_text": "Free demo: read lines 128 through 148 of the assignment to see all five Step 4 deliverables with their exact requirements. Real file, no generation, no credits. The break attempt line reads: 'The break attempt is worth more than a clean run.' The plausibility audit line names the gate-as-vote failure explicitly. The terminal output rule says 'pasted, not described.' All five deliverables, all five requirements, in twenty lines from the assignment.",
+      "duration_s": 28,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeCodeBeat",
+          "props": {
+            "title": "Step 4 deliverables — from the assignment",
+            "code": "sed -n '128,148p' assignments/ASSIGNMENT-professional-contribution-capstone-250pt.md\n\n# → plausibility audit before you trust output\n# → real terminal output, pasted not described\n# → deliberate break attempt\n#    \"The break attempt is worth more than a clean run.\"\n# → metric readout (skip rate etc.)\n# → what the machine could not know | $0.00",
+            "sparkLine": "5 deliverables. Break attempt worth more than clean run. $0.00."
+          },
+          "rendered": {
+            "out": "media/B04.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B04.mp3",
+      "actual_duration_s": 27.9,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B04.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:03:37"
+      }
+    },
+    {
+      "beat_id": "B05",
+      "role": "MECHANISM_1",
+      "narration_text": "The plausibility audit is the catch mechanism for the gate-as-vote bug. Chapter 16 describes it directly: a draft composite was treating the timeline factor as a weighted vote rather than a multiplier. A role that should have zeroed on the clock was scoring Consider. The code ran. The number looked reasonable. It was wrong in exactly the way fluency hides — internally consistent, grounded in nothing. That is the failure the plausibility audit exists to catch. Before you trust the batch, read one role that should have zeroed. Did it? Read one role with no sponsorship. Did the composite collapse? The audit is not a performance. It is the step that separates a run that looks right from a run that is right.",
+      "duration_s": 44,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "The audit catches what fluency hides.",
+            "body": "A role past the OPT window scored Consider — not because the logic was wrong but because the gate was a vote, not a multiplier. The code ran. The output looked reasonable. The plausibility audit caught it. Run the audit before you trust the batch.",
+            "quote": "The code ran. The number looked reasonable. It was wrong in exactly the way fluency hides: internally consistent, grounded in nothing.",
+            "cite": "chapters/16-the-build-and-the-honest-run.md",
+            "sparkLine": "Plausibility audit. One role that should have zeroed. Did it? Run it before you trust the batch."
+          },
+          "rendered": {
+            "out": "media/B05.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B05.mp3",
+      "actual_duration_s": 41.13,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B05.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:03:37"
+      }
+    },
+    {
+      "beat_id": "B06",
+      "role": "MECHANISM_2",
+      "narration_text": "The skip rate is the dial that reads the whole method. Chapter 15 states the target directly: at least fifty percent of the roles the engine evaluates should result in a Skip. If you are applying to nearly everything the engine surfaces, the filter is too loose — you have recreated spray-and-pray with extra steps. Chapter 15 is direct: the skip rate is the dial that tells you whether the reallocation principle is actually operating or has quietly collapsed. A low skip rate does not mean you are productive. It means the filter is failing. Read the skip rate first, every run. The metric is not an afterthought — it is how the engine reports on itself.",
+      "duration_s": 44,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Skip rate ≥50%: the filter working.",
+            "body": "Below 50%: the filter is too loose — spray-and-pray with extra steps. Above 50% with steady applies: the filter doing real work. The skip rate is not a sign of failure. It is the method operating. Read it first, every run.",
+            "quote": "The skip rate is the dial that tells you whether the reallocation principle is actually operating or has quietly collapsed.",
+            "cite": "chapters/15-the-pipeline-tracker-and-the-skip-rate.md",
+            "sparkLine": "Skip rate first. ≥50% target. Below 50% means the filter is failing, not that you're productive."
+          },
+          "rendered": {
+            "out": "media/B06.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B06.mp3",
+      "actual_duration_s": 38.38,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B06.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:03:37"
+      }
+    },
+    {
+      "beat_id": "B07",
+      "role": "MECHANISM_3",
+      "narration_text": "The 'what the machine could not know' account is the honest close. It is not a disclaimer. It is the specific list of judgments the engine cannot make — and therefore hands back to you. Chapter 16 names what a real engine cannot see: the engine knows what it measured — funding records, government filings, ATS postings, occupation demand curves, your dates. It could not know that the founder of a skipped startup is your former lab partner. It could not know that its own fit score missed the one project that makes you right for a role where no keyword captured it. These are not failures of the engine. They are the design. The engine handles what it can handle reliably. The account closes by naming what it cannot — so the human knows where to look next.",
+      "duration_s": 48,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Name what the machine could not know.",
+            "body": "Not a disclaimer — a specific list. The judgment it cannot make. The record it cannot see. The human call it hands back. One honest sentence per thing it missed. This is the honest close: the engineer accounting for the limits of their own tool.",
+            "quote": "The engine knows what it measured: funding records, government filings, ATS postings, occupation demand curves, your dates. It could not know that the founder of a skipped startup is your former lab partner.",
+            "cite": "chapters/16-the-build-and-the-honest-run.md",
+            "sparkLine": "Specific, not vague. What it measured. What it missed. The human call it hands back. One sentence each."
+          },
+          "rendered": {
+            "out": "media/B07.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B07.mp3",
+      "actual_duration_s": 43.01,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B07.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:03:37"
+      }
+    },
+    {
+      "beat_id": "B08",
+      "role": "THE_PICK",
+      "narration_text": "The break attempt is the proof of rigor. A clean run tells you the code compiled and the output looked reasonable. A break attempt tells you where the output stops being reasonable — the edge case the code did not handle, the join that produces false matches, the phase gate that lets a failing role through. You already know what you built. The break attempt is how you find out what you missed. And the assignment says it plainly: the break attempt is worth more than a clean run. Submit both. The clean run shows it works. The break attempt shows you understand where it does not. That is the professional signal.",
+      "duration_s": 44,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "The break attempt is the proof.",
+            "body": "A clean run proves the code compiled. A break attempt proves you understand where it fails. Try to trigger the edge case. The gate-as-vote. The false join. The ghost posting scored live. Submit both results — the clean run and what you found when you tried to break it.",
+            "quote": "",
+            "cite": "",
+            "sparkLine": "Clean run shows it works. Break attempt shows you understand where it doesn't. Submit both."
+          },
+          "rendered": {
+            "out": "media/B08.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B08.mp3",
+      "actual_duration_s": 32.83,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B08.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:03:37"
+      }
+    },
+    {
+      "beat_id": "BVDT",
+      "role": "VERDICT",
+      "narration_text": "Verdict: run it honestly. Plausibility audit first — catch the gate-as-vote before it propagates. Paste the real terminal output. Execute the break attempt — what you find is worth more than a clean result. Read the skip rate: fifty percent is the floor, not the ceiling. Close with what the machine could not know. Next episode: ship the pull request.",
+      "duration_s": 26,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "artifactTitle": "Verdict",
+            "artifactHeading": "The run.",
+            "artifactLines": [
+              "Plausibility audit first — catch the gate-as-vote before the batch is trusted",
+              "Break attempt required — what you found matters more than a clean run",
+              "Skip rate ≥50% · honest close: what the machine could not know"
+            ]
+          },
+          "rendered": {
+            "out": "media/BVDT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BVDT.mp3",
+      "actual_duration_s": 21.46,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BVDT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:03:37"
+      }
+    },
+    {
+      "beat_id": "BHTF",
+      "role": "YOUR_TURN",
+      "narration_text": "Your turn. Run one break attempt on your own contribution right now. Pick the failure mode most likely to produce a plausible-looking wrong answer. Try to trigger it. Then write two things: what you found, and one sentence naming what the machine could not know about the last role it evaluated.",
+      "duration_s": 22,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "YOUR TURN",
+            "segment": "Your break attempt.",
+            "greeting": "Your turn.",
+            "command": "# One break attempt:\n# 1. What failure mode did you target?\n# 2. What command did you run?\n# 3. What did you find?\n# + One sentence: what the machine could not know\n#   about the last role it evaluated",
+            "runningText": "* the break attempt worth more than a clean run",
+            "output": [
+              "→ 1 break attempt tried and reported",
+              "→ 1 honest sentence: what the machine could not know"
+            ]
+          },
+          "rendered": {
+            "out": "media/BHTF.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BHTF.mp3",
+      "actual_duration_s": 17.6,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BHTF.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:03:37"
+      }
+    },
+    {
+      "beat_id": "BOUT",
+      "role": "OUTRO",
+      "narration_text": "The Honest Run.",
+      "duration_s": 4,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "The Honest Run.",
+            "handle": "@NikBearBrown",
+            "subline": "Reallocation Engine Capstone · E5 of 8"
+          },
+          "rendered": {
+            "out": "media/BOUT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BOUT.mp3",
+      "actual_duration_s": 1.02,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BOUT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-19T01:03:37"
+      }
+    }
+  ]
+}
