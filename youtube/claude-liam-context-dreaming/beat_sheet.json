@@ -1,0 +1,2282 @@
+{
+  "metadata": {
+    "slug": "claude-liam-context-dreaming",
+    "title": "Claude, Dreaming.",
+    "topic": "CLAUDE · TALKS TORN DOWN",
+    "purpose": "Talk teardown — Lamis Mukta, 'Learning while you sleep: Beyond memory to dreaming', AI Native DevCon London, June 2026. Five acts: the amnesiac condition, the RAG ceiling, the dreaming paradigm, the mechanism (optimistic locking + RAD/DEG dual store), and the evidence. Teardown register, speaker-reported results kept framed, open problems given equal weight.",
+    "voice": "Liam",
+    "voice_kokoro": "am_onyx",
+    "engine": "kokoro",
+    "palette": "claude",
+    "register": "Teardown",
+    "brand": "claude-liam",
+    "persona": "Liam (in for Bear)",
+    "in_for_bear": true,
+    "greeting": "Konnichiwa, Liam",
+    "folderLabel": "@NikBearBrown",
+    "playlist": "Talks, Torn Down",
+    "channel": "NikBearBrown",
+    "aspect_ratio": "16:9",
+    "skill": "deep-explainer",
+    "sources": [
+      "Lamis Mukta, Anthropic Applied AI — 'Learning while you sleep: Beyond memory to dreaming', AI Native DevCon London, June 2026. https://www.youtube.com/watch?v=tTcxVv8HHNw"
+    ],
+    "total_estimated_duration_seconds": 510,
+    "hard_rules": {
+      "no_imagery_of_speaker": true,
+      "speaker_tier": 3,
+      "vox_stills_tier": 1,
+      "vox_source": "ai",
+      "one_terracotta_per_beat": true,
+      "logo_bug": "@NikBearBrown lower-right every beat",
+      "speaker_reported_always_tagged": true
+    },
+    "beat_mix": {
+      "total_body_beats": 43,
+      "non_card_body": 38,
+      "vox": 8,
+      "manim": 13,
+      "remotion": 17,
+      "card": 5,
+      "bookend_closing": 4,
+      "vox_pct": "21.1%",
+      "lint": "vox 21.1% — within 15-30% OK band"
+    },
+    "vox_runs": {
+      "R1": {
+        "beats": [
+          "B09",
+          "B10"
+        ],
+        "plate": "pantry/R1.png",
+        "note": "sleep/memory imagery; one kenburns move across two beats"
+      },
+      "R2": {
+        "beats": [
+          "B30",
+          "B31"
+        ],
+        "plate": "pantry/R2.png",
+        "note": "tiered data architecture imagery; zoom-out reveal across two beats"
+      }
+    },
+    "vox_singles": [
+      "B12",
+      "B16",
+      "B28",
+      "B33"
+    ],
+    "shopping_note": "SHOPPING.md written after audio lock (Gate D2). Six plates: R1 (B09+B10), R2 (B30+B31), singles B12, B16, B28, B33. All Tier 1, generate or stock. B33 needs clean margin space for draw-on annotation.",
+    "build": {
+      "at": "2026-07-22T03:14:49",
+      "cut": "master",
+      "filled": 17,
+      "of": 47,
+      "slates": [
+        "B01",
+        "B02",
+        "B03",
+        "B04",
+        "B07",
+        "B08",
+        "B09",
+        "B10",
+        "B11",
+        "B12",
+        "B14",
+        "B16",
+        "B17",
+        "B18",
+        "B19",
+        "B20",
+        "B24",
+        "B25",
+        "B26",
+        "B27",
+        "B28",
+        "B30",
+        "B31",
+        "B33",
+        "B34",
+        "B35",
+        "B37",
+        "B41",
+        "B42",
+        "B43"
+      ],
+      "skin_warnings": []
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "act": "cold-open",
+      "beat_type": "cold_open",
+      "narration_text": "Konnichiwa — this is Liam, in for Bear. Lamis Mukta went up at AI Native DevCon London in June twenty twenty-six with a talk called 'Learning while you sleep: beyond memory to dreaming.' The architecture she's describing is something that's been building for a while. I want to take it apart.",
+      "estimated_duration_s": 18,
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "scene_type": "ClaudeComposerAsk",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Composer opens on cream stage; greeting 'Konnichiwa, Liam' types in"
+          },
+          {
+            "at": "0.15",
+            "event": "Command types in: 'What does Lamis Mukta mean by dreaming — and how is it different from memory?'"
+          },
+          {
+            "at": "0.7",
+            "event": "Running indicator: 'reading the talk…'; output lines appear: 'one talk / five acts / one word that does a lot of work'"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Konnichiwa, Liam",
+            "topic": "CLAUDE · TALKS TORN DOWN",
+            "segment": "Claude, Dreaming.",
+            "command": "What does Lamis Mukta mean by dreaming — and how is it different from memory?",
+            "runningText": "reading the talk…",
+            "output": [
+              "one talk",
+              "five acts",
+              "one word that does a lot of work"
+            ],
+            "folderLabel": "@NikBearBrown",
+            "modelLabel": "Fable 5",
+            "effortLabel": "High",
+            "placeholder": "Type / for skills"
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": 15.62,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B00.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T03:14:49"
+      }
+    },
+    {
+      "beat_id": "B01",
+      "act": "act1",
+      "beat_type": "act_card",
+      "narration_text": "",
+      "estimated_duration_s": 4,
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "scene_type": "ClaudeSegmentCard",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Segment card: roman numeral I, title 'The Amnesiac', spark 'every session, a blank slate'"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeSegmentCard",
+          "props": {
+            "actNumber": "I",
+            "title": "The Amnesiac",
+            "sparkLine": "every session, a blank slate",
+            "folderLabel": "@NikBearBrown"
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": null,
+      "actual_duration_s": null,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-22T03:14:49",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for B01"
+      }
+    },
+    {
+      "beat_id": "B02",
+      "act": "act1",
+      "narration_text": "You have a conversation with Claude. You build something. You get somewhere. The session ends. Tomorrow, Claude doesn't know you. This is the fundamental condition: every session begins at zero, regardless of the history you've accumulated.",
+      "estimated_duration_s": 11,
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "scene_type": "C3_SessionReset",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Cream stage: a dialogue thread builds — three message pairs appear"
+          },
+          {
+            "at": "0.45",
+            "event": "Thread fades to blank on 'session ends'"
+          },
+          {
+            "at": "0.7",
+            "event": "New thread opens, completely empty; terracotta spark line: 'zero'"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeC3Illustration",
+          "props": {
+            "scene": "SessionReset",
+            "sparkLine": "zero.",
+            "folderLabel": "@NikBearBrown"
+          },
+          "rendered": {
+            "out": "media/B02.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": 12.52,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-22T03:14:49",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for B02"
+      }
+    },
+    {
+      "beat_id": "B03",
+      "act": "act1",
+      "narration_text": "The sessions are multiplying — more of them, longer ones, richer ones. The problem is everything they produce exists only inside the conversation that produced it. Nothing carries forward. The knowledge vanishes when the door closes.",
+      "estimated_duration_s": 12,
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "scene_type": "C2_Diverge",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Session count bar grows left-to-right; each session cell fills as sessions multiply"
+          },
+          {
+            "at": "0.3",
+            "event": "On 'multiplying': terracotta underline draws under the word in the spark line overlay"
+          },
+          {
+            "at": "0.65",
+            "event": "Each session cell dims and empties — knowledge not carried forward"
+          },
+          {
+            "at": "0.85",
+            "event": "Spark line: 'The knowledge vanishes.'"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeC2Diverge",
+          "props": {
+            "sparkLine": "The knowledge vanishes.",
+            "highlightWord": "multiplying",
+            "folderLabel": "@NikBearBrown"
+          },
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B03.mp3",
+      "actual_duration_s": 12.67,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-22T03:14:49",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for B03"
+      }
+    },
+    {
+      "beat_id": "B04",
+      "act": "act1",
+      "narration_text": "The first-generation fix: stuff context. Push relevant history back in at the start of each session. Works up to a point. Then you're injecting so much preamble that the actual work drowns in its own context.",
+      "estimated_duration_s": 11,
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "scene_type": "C2_Threshold",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Bar showing context tokens fills with 'preamble' and 'new work' sections"
+          },
+          {
+            "at": "0.55",
+            "event": "Preamble section crosses threshold line — labeled 'drowns in context'; terracotta at threshold"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeC2Threshold",
+          "props": {
+            "sparkLine": "The fix becomes the problem.",
+            "folderLabel": "@NikBearBrown"
+          },
+          "rendered": {
+            "out": "media/B04.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B04.mp3",
+      "actual_duration_s": 11.84,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-22T03:14:49",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for B04"
+      }
+    },
+    {
+      "beat_id": "B05",
+      "act": "act1",
+      "narration_text": "RAG is a very fast library. You search, you retrieve, you inject relevant passages. The library analogy carries a hidden assumption: that what you need is findable. That the understanding you're looking for has an address.",
+      "estimated_duration_s": 11,
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Ink-on-cream diagram: stacked document slabs, each with an embedding vector; search arrow points from query to nearest slab"
+          },
+          {
+            "at": "0.5",
+            "event": "On 'hidden assumption': terracotta question mark floats over the diagram"
+          },
+          {
+            "at": "0.8",
+            "event": "Spark label: 'findable'"
+          }
+        ]
+      },
+      "graphic": {
+        "engine": "manim",
+        "manim": "B05_RAGAsLibrary",
+        "production_viz": {
+          "label": "RAG as library",
+          "mechanic": "document slabs with embedding vectors; search arrow from query to nearest; question mark on 'findable'",
+          "colors": [
+            "#3D3929",
+            "#D97757",
+            "#F2F0E9"
+          ],
+          "note": "ink-on-cream; clean whiteboard style; one terracotta element"
+        }
+      },
+      "audio_file": "mp3/beat-B05.mp3",
+      "actual_duration_s": 12.78,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B05.mp4",
+        "filled_by": "manim",
+        "at": "2026-07-22T03:14:49"
+      }
+    },
+    {
+      "beat_id": "B06",
+      "act": "act1",
+      "narration_text": "Sleep research has a different model. During REM sleep, the brain doesn't just file experiences — it builds connections across them. Replay isn't retrieval. It's a synthesis operation: patterns emerge across experiences that weren't visible inside any one experience.",
+      "estimated_duration_s": 11,
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Ink diagram: three memory nodes (experience A, B, C) as circles; no connections initially"
+          },
+          {
+            "at": "0.45",
+            "event": "On 'builds connections': terracotta arcs draw between nodes"
+          },
+          {
+            "at": "0.75",
+            "event": "A new emergent node appears in the center — labeled 'pattern'; connections radiate to all three"
+          }
+        ]
+      },
+      "graphic": {
+        "engine": "manim",
+        "manim": "B06_SleepSynthesis",
+        "production_viz": {
+          "label": "Sleep: synthesis not retrieval",
+          "mechanic": "three experience nodes; REM draws arcs between them; emergent center pattern node",
+          "colors": [
+            "#3D3929",
+            "#D97757",
+            "#F2F0E9"
+          ],
+          "note": "terracotta on connection arcs and emergent node"
+        }
+      },
+      "audio_file": "mp3/beat-B06.mp3",
+      "actual_duration_s": 15.47,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B06.mp4",
+        "filled_by": "manim",
+        "at": "2026-07-22T03:14:49"
+      }
+    },
+    {
+      "beat_id": "B07",
+      "act": "act1",
+      "narration_text": "The question Mukta is building toward: what's the AI analog of that synthesis operation? Not retrieval from a stored archive. Something that runs between sessions, in the dark, constructing connections retrieval never could.",
+      "estimated_duration_s": 10,
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "scene_type": "C3_DarkBridge",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Cream stage dims; two session blocks separated by dark gap labeled 'between sessions'"
+          },
+          {
+            "at": "0.6",
+            "event": "A faint construction process appears in the gap — dotted lines building, terracotta"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeC3Illustration",
+          "props": {
+            "scene": "BetweenSessions",
+            "sparkLine": "Something that runs in the dark.",
+            "folderLabel": "@NikBearBrown"
+          },
+          "rendered": {
+            "out": "media/B07.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B07.mp3",
+      "actual_duration_s": 12.69,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-22T03:14:49",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for B07"
+      }
+    },
+    {
+      "beat_id": "B08",
+      "act": "act2",
+      "beat_type": "act_card",
+      "narration_text": "",
+      "estimated_duration_s": 4,
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "scene_type": "ClaudeSegmentCard",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Segment card: roman numeral II, title 'The Archive', spark 'RAG, and what it misses'"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeSegmentCard",
+          "props": {
+            "actNumber": "II",
+            "title": "The Archive",
+            "sparkLine": "RAG, and what it misses",
+            "folderLabel": "@NikBearBrown"
+          },
+          "rendered": {
+            "out": "media/B08.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": null,
+      "actual_duration_s": null,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-22T03:14:49",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for B08"
+      }
+    },
+    {
+      "beat_id": "B09",
+      "act": "act2",
+      "narration_text": "What AI has in place of dreaming is retrieval. Embed your documents, search the embedding space, inject the nearest neighbors into context. The archive is a library — and like every library, it excels at finding what's already been named.",
+      "estimated_duration_s": 11,
+      "shot": {
+        "type": "STILL",
+        "source": "ai",
+        "motion": "kenburns",
+        "focus": [
+          0.5,
+          0.45
+        ],
+        "tier": 1,
+        "pantry": "pantry/R1.png",
+        "treatment": "desaturate:80%, contrast:1.15, cream stage #F2F0E9, film-grain overlay, warm-ink vignette; one terracotta accent: underline on 'named'",
+        "vox_run": "R1",
+        "handoff": {
+          "camera": {
+            "x": 0.5,
+            "y": 0.45,
+            "scale": 1.35
+          },
+          "objects": []
+        },
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Plate B09 (R1): kenburns ease-out push-in from wide to 1.35× toward focus [0.5, 0.45]"
+          },
+          {
+            "at": "0.85",
+            "event": "Terracotta underline draws under 'named' on the spark line"
+          }
+        ],
+        "shopping_note": "R1: generic imagery of library/archive/filing — rows of documents, data stacks, or card catalog aesthetic. No real-world institution. Tier 1, generate. Min 1800px wide for kenburns headroom."
+      },
+      "audio_file": "mp3/beat-B09.mp3",
+      "actual_duration_s": 13.55,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-22T03:14:49",
+        "needs": "YOU → 5–10s gen-AI clip → pantry (as B09.mp4)",
+        "suggested": "suggested prompt: What AI has in place of dreaming is retrieval. Embed your documents, search the embedding space, inject the nearest neighbors into context. The archive is a lib"
+      }
+    },
+    {
+      "beat_id": "B10",
+      "act": "act2",
+      "narration_text": "A librarian who surfaces the right book is not the same as a teacher who synthesizes ten books into the insight you need. RAG finds. It doesn't build. The gap between finding and building is the gap Mukta is pointing at.",
+      "estimated_duration_s": 11,
+      "shot": {
+        "type": "STILL",
+        "source": "ai",
+        "motion": "kenburns",
+        "focus": [
+          0.52,
+          0.5
+        ],
+        "tier": 1,
+        "pantry": "pantry/R1.png",
+        "treatment": "desaturate:80%, contrast:1.15, cream stage #F2F0E9, film-grain overlay, warm-ink vignette; terracotta: circle on 'gap'",
+        "vox_run": "R1",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Continue kenburns from B09 handoff (camera starts at x:0.5, y:0.45, scale:1.35); ease continues to 1.5× at focus [0.52, 0.5]"
+          },
+          {
+            "at": "0.75",
+            "event": "Terracotta ring draws around the central subject of the plate on 'gap'"
+          }
+        ],
+        "note": "Last beat of vox run R1 — no handoff block needed."
+      },
+      "audio_file": "mp3/beat-B10.mp3",
+      "actual_duration_s": 12.57,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-22T03:14:49",
+        "needs": "YOU → 5–10s gen-AI clip → pantry (as B10.mp4)",
+        "suggested": "suggested prompt: A librarian who surfaces the right book is not the same as a teacher who synthesizes ten books into the insight you need. RAG finds. It doesn't build. The gap b"
+      }
+    },
+    {
+      "beat_id": "B11",
+      "act": "act2",
+      "narration_text": "RAG performs well when the knowledge you need is localized. One document, one answer. The failure mode emerges on queries whose answer requires synthesizing across multiple documents — patterns that live in the space between chunks, not inside any of them.",
+      "estimated_duration_s": 12,
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "scene_type": "C3_ChunkSpace",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Four document chunk squares; query arrow lands on one — 'localized' case highlighted"
+          },
+          {
+            "at": "0.45",
+            "event": "Multi-arrow query touches all four; answer appears in the GAP between them, not inside any chunk"
+          },
+          {
+            "at": "0.8",
+            "event": "Terracotta label in the gap: 'lives here'"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeC3Illustration",
+          "props": {
+            "scene": "BetweenChunks",
+            "sparkLine": "The answer lives between the chunks.",
+            "folderLabel": "@NikBearBrown"
+          },
+          "rendered": {
+            "out": "media/B11.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B11.mp3",
+      "actual_duration_s": 14.76,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-22T03:14:49",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for B11"
+      }
+    },
+    {
+      "beat_id": "B12",
+      "act": "act2",
+      "narration_text": "Mukta calls it the cross-chunk problem. Fragment A has an embedding. Fragment C has an embedding. The insight that only emerges when both are in context simultaneously — that understanding has no embedding, no address, no retrievable form.",
+      "estimated_duration_s": 10,
+      "shot": {
+        "type": "STILL",
+        "source": "ai",
+        "motion": "hold",
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "tier": 1,
+        "pantry": "pantry/B12.png",
+        "treatment": "desaturate:80%, contrast:1.15, cream stage #F2F0E9, film-grain overlay, warm-ink vignette; terracotta: question mark drawn on 'no address'",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Plate holds; two labeled points visible (A and C)"
+          },
+          {
+            "at": "0.7",
+            "event": "On 'no address': terracotta question mark appears between A and C"
+          }
+        ],
+        "shopping_note": "B12: two isolated data points / nodes on an abstract plane with clear space between them. No connection. Min 1600px. Tier 1, generate or stock."
+      },
+      "audio_file": "mp3/beat-B12.mp3",
+      "actual_duration_s": 14.61,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-22T03:14:49",
+        "needs": "YOU → 5–10s gen-AI clip → pantry (as B12.mp4)",
+        "suggested": "suggested prompt: Mukta calls it the cross-chunk problem. Fragment A has an embedding. Fragment C has an embedding. The insight that only emerges when both are in context simulta"
+      }
+    },
+    {
+      "beat_id": "B13",
+      "act": "act2",
+      "narration_text": "She draws a taxonomy: episodic, semantic, procedural. RAG is strong on episodic — what happened, what was said. Weaker on semantic — what things mean, how concepts relate. On procedural — how to act in a recurring situation — it falls apart.",
+      "estimated_duration_s": 11,
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Three-row table: Episodic / Semantic / Procedural; RAG score bars appear row by row"
+          },
+          {
+            "at": "0.3",
+            "event": "Episodic row: full bar (strong)"
+          },
+          {
+            "at": "0.55",
+            "event": "Semantic row: half bar"
+          },
+          {
+            "at": "0.75",
+            "event": "Procedural row: near-zero bar; terracotta marker at the low point"
+          }
+        ]
+      },
+      "graphic": {
+        "engine": "manim",
+        "manim": "B13_KnowledgeTaxonomy",
+        "production_viz": {
+          "label": "RAG by knowledge type",
+          "mechanic": "three-row horizontal bar chart; episodic full, semantic half, procedural near-zero; terracotta on procedural bar",
+          "colors": [
+            "#3D3929",
+            "#D97757",
+            "#F2F0E9"
+          ],
+          "note": "bars animate on spoken word for each row; label in ink, accent on procedural"
+        }
+      },
+      "audio_file": "mp3/beat-B13.mp3",
+      "actual_duration_s": 14.19,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B13.mp4",
+        "filled_by": "manim",
+        "at": "2026-07-22T03:14:49"
+      }
+    },
+    {
+      "beat_id": "B14",
+      "act": "act2",
+      "narration_text": "Semantic and procedural knowledge don't live in chunks. They form across chunks. They're properties of the whole that can't be recovered by examining any part. This is the retrieval ceiling.",
+      "estimated_duration_s": 11,
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "scene_type": "C2_Threshold",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Capability axis rising; hits a horizontal ceiling labeled 'retrieval ceiling'"
+          },
+          {
+            "at": "0.5",
+            "event": "Arrow continues pushing against ceiling; terracotta line holds the ceiling firm"
+          },
+          {
+            "at": "0.85",
+            "event": "Spark line: 'Retrieval ceiling.'"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeC2Threshold",
+          "props": {
+            "sparkLine": "Retrieval ceiling.",
+            "folderLabel": "@NikBearBrown"
+          },
+          "rendered": {
+            "out": "media/B14.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B14.mp3",
+      "actual_duration_s": 10.28,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-22T03:14:49",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for B14"
+      }
+    },
+    {
+      "beat_id": "B15",
+      "act": "act2",
+      "narration_text": "Sleep crosses this ceiling because it doesn't retrieve — it consolidates. The hippocampus replays fragmented experience; the neocortex extracts structure; what's stored isn't the fragments but the regularities they pointed toward.",
+      "estimated_duration_s": 11,
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Left side: fragmented experience blobs; right side: clean regularity pattern emerges"
+          },
+          {
+            "at": "0.4",
+            "event": "Arrow labeled 'consolidation' crosses from fragments to pattern"
+          },
+          {
+            "at": "0.75",
+            "event": "Terracotta label on the output: 'regularities'"
+          }
+        ]
+      },
+      "graphic": {
+        "engine": "manim",
+        "manim": "B15_ConsolidationCross",
+        "production_viz": {
+          "label": "Consolidation: fragments → regularities",
+          "mechanic": "left-right diagram; fragmented blobs consolidate to structured output via labeled arrow",
+          "colors": [
+            "#3D3929",
+            "#D97757",
+            "#F2F0E9"
+          ]
+        }
+      },
+      "audio_file": "mp3/beat-B15.mp3",
+      "actual_duration_s": 12.97,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B15.mp4",
+        "filled_by": "manim",
+        "at": "2026-07-22T03:14:49"
+      }
+    },
+    {
+      "beat_id": "B16",
+      "act": "act2",
+      "narration_text": "Here's the frame Mukta arrives at: declarative memory — the kind you can state — maps to what RAG does well. Procedural memory — the kind you enact, not state — forms during consolidation. The question she's answering: can AI consolidate?",
+      "estimated_duration_s": 11,
+      "shot": {
+        "type": "STILL",
+        "source": "ai",
+        "motion": "kenburns",
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "tier": 1,
+        "pantry": "pantry/B16.png",
+        "treatment": "desaturate:80%, contrast:1.15, cream stage #F2F0E9, film-grain overlay, warm-ink vignette; terracotta: bracket on 'consolidation' region",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Plate B16: slow kenburns ease toward center"
+          },
+          {
+            "at": "0.75",
+            "event": "On 'can AI consolidate': terracotta bracket or underline appears at bottom of frame"
+          }
+        ],
+        "shopping_note": "B16: two-sided imagery — one side organized/declarative, one side enacted/procedural. Abstract enough to carry both. Architecture, gesture, or flow diagram aesthetic. Tier 1, generate. Min 1800px."
+      },
+      "audio_file": "mp3/beat-B16.mp3",
+      "actual_duration_s": 13.78,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-22T03:14:49",
+        "needs": "YOU → 5–10s gen-AI clip → pantry (as B16.mp4)",
+        "suggested": "suggested prompt: Here's the frame Mukta arrives at: declarative memory — the kind you can state — maps to what RAG does well. Procedural memory — the kind you enact, not state —"
+      }
+    },
+    {
+      "beat_id": "B17",
+      "act": "act3",
+      "beat_type": "act_card",
+      "narration_text": "",
+      "estimated_duration_s": 4,
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "scene_type": "ClaudeSegmentCard",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Segment card: roman numeral III, title 'The Dream', spark 'a process that runs when the session ends'"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeSegmentCard",
+          "props": {
+            "actNumber": "III",
+            "title": "The Dream",
+            "sparkLine": "a process that runs when the session ends",
+            "folderLabel": "@NikBearBrown"
+          },
+          "rendered": {
+            "out": "media/B17.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": null,
+      "actual_duration_s": null,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-22T03:14:49",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for B17"
+      }
+    },
+    {
+      "beat_id": "B18",
+      "act": "act3",
+      "narration_text": "Mukta's dreaming process: when a session ends, instead of discarding the context, a background process runs. Not inference on a user query. A different kind of computation — the session's accumulated material gets worked.",
+      "estimated_duration_s": 11,
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "scene_type": "C3_BackgroundProcess",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Session block closes on the right; a background thread lights up below the main timeline"
+          },
+          {
+            "at": "0.5",
+            "event": "Thread label appears: 'dreaming process'; terracotta glow on the thread"
+          },
+          {
+            "at": "0.85",
+            "event": "Spark line: 'The session's material gets worked.'"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeC3Illustration",
+          "props": {
+            "scene": "BackgroundDream",
+            "sparkLine": "The material gets worked.",
+            "folderLabel": "@NikBearBrown"
+          },
+          "rendered": {
+            "out": "media/B18.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B18.mp3",
+      "actual_duration_s": 12.65,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-22T03:14:49",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for B18"
+      }
+    },
+    {
+      "beat_id": "B19",
+      "act": "act3",
+      "narration_text": "The dream loop has three steps. Read: ingest the session's full context. Synthesize: extract patterns that recurred or proved durable. Write: produce a condensed representation, denser than what went in, stored in a persistent dream store.",
+      "estimated_duration_s": 12,
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "scene_type": "C3_SourceFlow",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Three-step pipeline: READ → SYNTHESIZE → WRITE nodes appear sequentially"
+          },
+          {
+            "at": "0.25",
+            "event": "READ node lights up terracotta on spoken word"
+          },
+          {
+            "at": "0.5",
+            "event": "SYNTHESIZE lights up"
+          },
+          {
+            "at": "0.75",
+            "event": "WRITE lights up; output labeled 'dream store' appears at right"
+          },
+          {
+            "at": "0.9",
+            "event": "Spark: 'denser than what went in'"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeSourceFlow",
+          "props": {
+            "nodes": [
+              "READ",
+              "SYNTHESIZE",
+              "WRITE"
+            ],
+            "output": "dream store",
+            "sparkLine": "denser than what went in",
+            "folderLabel": "@NikBearBrown"
+          },
+          "rendered": {
+            "out": "media/B19.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B19.mp3",
+      "actual_duration_s": 13.4,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-22T03:14:49",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for B19"
+      }
+    },
+    {
+      "beat_id": "B20",
+      "act": "act3",
+      "narration_text": "The technical problem is concurrency. Active sessions read from the dream store while dreaming processes write to it. Mukta's solution: optimistic locking — the dreaming write assumes no conflict, commits, and reconciles only on actual collision. The live session never blocks.",
+      "estimated_duration_s": 12,
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "scene_type": "C3_ConcurrencyDiagram",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Two parallel arrows: one labeled 'active session reads' (left), one 'dream process writes' (right); shared store in center"
+          },
+          {
+            "at": "0.45",
+            "event": "On 'optimistic locking': terracotta label 'OPTIMISTIC LOCKING' slides in beneath the diagram"
+          },
+          {
+            "at": "0.75",
+            "event": "Write arrow commits; a small 'reconcile?' check mark appears only if collision; otherwise passes clean"
+          },
+          {
+            "at": "0.9",
+            "event": "Spark: 'The live session never blocks.'"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeC3Illustration",
+          "props": {
+            "scene": "OptimisticLock",
+            "label": "OPTIMISTIC LOCKING",
+            "sparkLine": "The live session never blocks.",
+            "folderLabel": "@NikBearBrown"
+          },
+          "rendered": {
+            "out": "media/B20.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B20.mp3",
+      "actual_duration_s": 15.74,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-22T03:14:49",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for B20"
+      }
+    },
+    {
+      "beat_id": "B21",
+      "act": "act3",
+      "narration_text": "Optimistic locking is borrowed from database theory. Pessimistic locking acquires an exclusive lock before any write, blocking all readers. Optimistic locking reads freely, writes tentatively, detects conflict at commit. The innovation here: applying a database concurrency primitive to AI memory.",
+      "estimated_duration_s": 12,
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Pessimistic row: lock icon blocks readers; red (ink) coloring"
+          },
+          {
+            "at": "0.4",
+            "event": "Optimistic row: readers and writer pass freely; small collision detector at end"
+          },
+          {
+            "at": "0.75",
+            "event": "Terracotta label on optimistic row: 'borrowed from databases'"
+          }
+        ]
+      },
+      "graphic": {
+        "engine": "manim",
+        "manim": "B21_PessimisticVsOptimistic",
+        "production_viz": {
+          "label": "Locking strategies compared",
+          "mechanic": "two-row diagram: pessimistic (blocked) vs optimistic (free+check); terracotta on optimistic row",
+          "colors": [
+            "#3D3929",
+            "#D97757",
+            "#F2F0E9"
+          ]
+        }
+      },
+      "audio_file": "mp3/beat-B21.mp3",
+      "actual_duration_s": 17.11,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B21.mp4",
+        "filled_by": "manim",
+        "at": "2026-07-22T03:14:49"
+      }
+    },
+    {
+      "beat_id": "B22",
+      "act": "act3",
+      "narration_text": "What does the dreaming process actually write? Not a transcript. Not a summary. Mukta calls it a knowledge delta — the difference between what the model knew entering the session and what the session produced. The store accumulates deltas.",
+      "estimated_duration_s": 11,
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Before circle (what was known) and After circle (post-session); delta arrow between them labeled 'Δ'"
+          },
+          {
+            "at": "0.5",
+            "event": "On 'knowledge delta': terracotta highlights the Δ symbol"
+          },
+          {
+            "at": "0.8",
+            "event": "Stack of Δ symbols below: 'store accumulates deltas'"
+          }
+        ]
+      },
+      "graphic": {
+        "engine": "manim",
+        "manim": "B22_KnowledgeDelta",
+        "production_viz": {
+          "label": "Knowledge delta",
+          "mechanic": "before/after circles; delta arrow; accumulating delta stack below; terracotta on Δ",
+          "colors": [
+            "#3D3929",
+            "#D97757",
+            "#F2F0E9"
+          ]
+        }
+      },
+      "audio_file": "mp3/beat-B22.mp3",
+      "actual_duration_s": 12.65,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B22.mp4",
+        "filled_by": "manim",
+        "at": "2026-07-22T03:14:49"
+      }
+    },
+    {
+      "beat_id": "B23",
+      "act": "act3",
+      "narration_text": "A worked example: three sessions debugging the same codebase. Session one finds a bug; session two finds a recurrence; only in session three does the pattern become visible — this component fails this way. The dream process extracts that cross-session insight and stores it.",
+      "estimated_duration_s": 13,
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Timeline: sessions 1, 2, 3 as horizontal segments; each session dot-marks a bug find"
+          },
+          {
+            "at": "0.35",
+            "event": "Session 1 mark appears; session 2 mark"
+          },
+          {
+            "at": "0.6",
+            "event": "Session 3 mark; terracotta arc connects all three: 'pattern'"
+          },
+          {
+            "at": "0.85",
+            "event": "Dream store receives a single card: 'component failure pattern'; arrow from arc to card"
+          }
+        ]
+      },
+      "graphic": {
+        "engine": "manim",
+        "manim": "B23_DebugPattern",
+        "production_viz": {
+          "label": "Cross-session pattern extraction",
+          "mechanic": "session timeline; bug markers; terracotta arc connecting pattern; dream store card output",
+          "colors": [
+            "#3D3929",
+            "#D97757",
+            "#F2F0E9"
+          ]
+        }
+      },
+      "audio_file": "mp3/beat-B23.mp3",
+      "actual_duration_s": 15.51,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B23.mp4",
+        "filled_by": "manim",
+        "at": "2026-07-22T03:14:49"
+      }
+    },
+    {
+      "beat_id": "B24",
+      "act": "act3",
+      "speaker_reported": true,
+      "narration_text": "Mukta's speaker-reported benchmarks: dreaming-plus-RAG outperforms RAG-only on multi-session tasks by thirty-four to forty-one percent. On single-session tasks, the gap drops to near zero. Speaker-reported, preliminary, on synthetic benchmarks.",
+      "estimated_duration_s": 11,
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "scene_type": "C2_Scale",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Two bars: RAG-only and Dreaming+RAG; multi-session task axis"
+          },
+          {
+            "at": "0.4",
+            "event": "Dreaming bar grows to +34–41% above RAG; terracotta accent on the gap"
+          },
+          {
+            "at": "0.7",
+            "event": "'Speaker-reported' chip appears in lower corner"
+          },
+          {
+            "at": "0.85",
+            "event": "Single-session axis: bars nearly equal; gap collapses to zero"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeC2Scale",
+          "props": {
+            "sparkLine": "The benefit is structural.",
+            "speakerReported": true,
+            "label": "Speaker-reported · preliminary · synthetic benchmarks",
+            "folderLabel": "@NikBearBrown"
+          },
+          "rendered": {
+            "out": "media/B24.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B24.mp3",
+      "actual_duration_s": 15.04,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-22T03:14:49",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for B24"
+      }
+    },
+    {
+      "beat_id": "B25",
+      "act": "act3",
+      "narration_text": "That's the structural principle embedded in those numbers: memory helps within a session — better recall, fewer repeated explanations. Dreaming helps across sessions — patterns that took ten conversations to become visible are one inference away.",
+      "estimated_duration_s": 10,
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "scene_type": "C2_Branch",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Fork diagram: 'within session' branch (labeled MEMORY) vs 'across sessions' branch (labeled DREAMING)"
+          },
+          {
+            "at": "0.5",
+            "event": "Terracotta on DREAMING branch"
+          },
+          {
+            "at": "0.85",
+            "event": "Spark: 'Two different tools.'"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeC2Branch",
+          "props": {
+            "branchA": "MEMORY — within session",
+            "branchB": "DREAMING — across sessions",
+            "sparkLine": "Two different tools.",
+            "folderLabel": "@NikBearBrown"
+          },
+          "rendered": {
+            "out": "media/B25.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B25.mp3",
+      "actual_duration_s": 14.08,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-22T03:14:49",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for B25"
+      }
+    },
+    {
+      "beat_id": "B26",
+      "act": "act4",
+      "beat_type": "act_card",
+      "narration_text": "",
+      "estimated_duration_s": 4,
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "scene_type": "ClaudeSegmentCard",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Segment card: roman numeral IV, title 'The Mechanism', spark 'persistence × coherence'"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeSegmentCard",
+          "props": {
+            "actNumber": "IV",
+            "title": "The Mechanism",
+            "sparkLine": "persistence × coherence",
+            "folderLabel": "@NikBearBrown"
+          },
+          "rendered": {
+            "out": "media/B26.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": null,
+      "actual_duration_s": null,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-22T03:14:49",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for B26"
+      }
+    },
+    {
+      "beat_id": "B27",
+      "act": "act4",
+      "narration_text": "How does the dream process decide what to consolidate? Mukta describes an attention-guided extraction step. The dreaming model attends to cross-session recurrence — concepts that appeared in multiple sessions, questions that kept coming back, solutions that traveled.",
+      "estimated_duration_s": 12,
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "scene_type": "C3_AttentionExtract",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Three session bands; attention beam sweeps across all three looking for recurrence"
+          },
+          {
+            "at": "0.5",
+            "event": "Recurring concepts light up where they appear across sessions"
+          },
+          {
+            "at": "0.8",
+            "event": "Terracotta: recurrence nodes highlighted; extraction arrow"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeC3Illustration",
+          "props": {
+            "scene": "AttentionSweep",
+            "sparkLine": "What recurs gets extracted.",
+            "folderLabel": "@NikBearBrown"
+          },
+          "rendered": {
+            "out": "media/B27.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B27.mp3",
+      "actual_duration_s": 14.68,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-22T03:14:49",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for B27"
+      }
+    },
+    {
+      "beat_id": "B28",
+      "act": "act4",
+      "narration_text": "Extraction produces candidate insights, each scored on two axes: persistence — did it survive across multiple contexts? — and coherence — does it form a complete thought? Fragments that fail either test are discarded. The store grows by what earns its place.",
+      "estimated_duration_s": 11,
+      "shot": {
+        "type": "STILL",
+        "source": "ai",
+        "motion": "kenburns",
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "tier": 1,
+        "pantry": "pantry/B28.png",
+        "treatment": "desaturate:80%, contrast:1.15, cream stage #F2F0E9, film-grain overlay, warm-ink vignette; terracotta: axis labels P and C",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Plate B28: kenburns ease-in from edges toward center focus"
+          },
+          {
+            "at": "0.6",
+            "event": "On 'persistence' and 'coherence': terracotta labels P and C appear at edges"
+          }
+        ],
+        "shopping_note": "B28: 2×2 scatter or axis plane imagery — points that pass dual criteria vs those that fail. Abstract, no real referents. Min 1800px. Tier 1, generate."
+      },
+      "audio_file": "mp3/beat-B28.mp3",
+      "actual_duration_s": 13.95,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-22T03:14:49",
+        "needs": "YOU → 5–10s gen-AI clip → pantry (as B28.mp4)",
+        "suggested": "suggested prompt: Extraction produces candidate insights, each scored on two axes: persistence — did it survive across multiple contexts? — and coherence — does it form a complet"
+      }
+    },
+    {
+      "beat_id": "B29",
+      "act": "act4",
+      "narration_text": "Persistence and coherence solve different failure modes. Without persistence, you'd consolidate noise — a one-off anomaly that felt significant in the moment. Without coherence, you'd store incoherent fragments that confuse as often as they help. The dual filter is the design decision.",
+      "estimated_duration_s": 12,
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Left failure mode: single-occurrence spike labeled 'noise'; filtered out by persistence gate"
+          },
+          {
+            "at": "0.4",
+            "event": "Right failure mode: fragment shards labeled 'incoherent'; filtered out by coherence gate"
+          },
+          {
+            "at": "0.75",
+            "event": "Center: dual gate structure; terracotta on gate intersection"
+          }
+        ]
+      },
+      "graphic": {
+        "engine": "manim",
+        "manim": "B29_DualFilter",
+        "production_viz": {
+          "label": "Persistence × coherence dual filter",
+          "mechanic": "two failure modes on each side; dual gate in center; terracotta on gate",
+          "colors": [
+            "#3D3929",
+            "#D97757",
+            "#F2F0E9"
+          ]
+        }
+      },
+      "audio_file": "mp3/beat-B29.mp3",
+      "actual_duration_s": 15.94,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B29.mp4",
+        "filled_by": "manim",
+        "at": "2026-07-22T03:14:49"
+      }
+    },
+    {
+      "beat_id": "B30",
+      "act": "act4",
+      "narration_text": "The store isn't flat. Recent insights land in hot storage; established patterns live in warm; foundational knowledge is cold. Dreaming writes to hot. Re-consolidation promotes items toward cold as they prove durable across many sessions.",
+      "estimated_duration_s": 11,
+      "shot": {
+        "type": "STILL",
+        "source": "ai",
+        "motion": "kenburns",
+        "focus": [
+          0.5,
+          0.48
+        ],
+        "tier": 1,
+        "pantry": "pantry/R2.png",
+        "treatment": "desaturate:80%, contrast:1.15, cream stage #F2F0E9, film-grain overlay, warm-ink vignette; terracotta: highlight on 'hot' tier",
+        "vox_run": "R2",
+        "handoff": {
+          "camera": {
+            "x": 0.5,
+            "y": 0.48,
+            "scale": 1.3
+          },
+          "objects": []
+        },
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Plate R2 (tiered storage imagery): kenburns ease toward center at focus [0.5, 0.48]"
+          },
+          {
+            "at": "0.5",
+            "event": "Terracotta accent on hot tier area"
+          }
+        ],
+        "shopping_note": "R2: layered/tiered data storage imagery — stacked horizontal layers with warm-to-cool gradient (hot at top, cold at bottom) suggesting depth and temperature. Abstract, no real hardware. Min 1800px. Tier 1, generate."
+      },
+      "audio_file": "mp3/beat-B30.mp3",
+      "actual_duration_s": 14.36,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-22T03:14:49",
+        "needs": "YOU → 5–10s gen-AI clip → pantry (as B30.mp4)",
+        "suggested": "suggested prompt: The store isn't flat. Recent insights land in hot storage; established patterns live in warm; foundational knowledge is cold. Dreaming writes to hot. Re-consoli"
+      }
+    },
+    {
+      "beat_id": "B31",
+      "act": "act4",
+      "narration_text": "The tiered architecture mirrors database caching: hot, warm, cold is a standard access-frequency stack. The novel part is the promotion criterion. A database cache promotes by recency or frequency. The dream store promotes by coherence with the model's evolving understanding.",
+      "estimated_duration_s": 11,
+      "shot": {
+        "type": "STILL",
+        "source": "ai",
+        "motion": "kenburns",
+        "focus": [
+          0.52,
+          0.52
+        ],
+        "tier": 1,
+        "pantry": "pantry/R2.png",
+        "treatment": "desaturate:80%, contrast:1.15, cream stage #F2F0E9, film-grain overlay, warm-ink vignette; terracotta: upward promotion arrow",
+        "vox_run": "R2",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Continues kenburns from B30 handoff (start: x:0.5, y:0.48, scale:1.3); continue to 1.5× at [0.52, 0.52]"
+          },
+          {
+            "at": "0.7",
+            "event": "On 'coherence with evolving understanding': terracotta upward arrow appears over tier stack"
+          }
+        ],
+        "note": "Last beat of vox run R2 — no handoff block needed."
+      },
+      "audio_file": "mp3/beat-B31.mp3",
+      "actual_duration_s": 16.3,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-22T03:14:49",
+        "needs": "YOU → 5–10s gen-AI clip → pantry (as B31.mp4)",
+        "suggested": "suggested prompt: The tiered architecture mirrors database caching: hot, warm, cold is a standard access-frequency stack. The novel part is the promotion criterion. A database ca"
+      }
+    },
+    {
+      "beat_id": "B32",
+      "act": "act4",
+      "narration_text": "Mukta calls the promotion step soft alignment. The model tests whether a hot insight remains consistent with cold-store knowledge. Consistent: promote. Contradictory: queue for reconciliation — a deliberate collision to resolve. The open problem is what reconciliation actually means.",
+      "estimated_duration_s": 12,
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Hot insight node; arrow tests against cold-store base; two outcomes branch"
+          },
+          {
+            "at": "0.4",
+            "event": "Consistent outcome: arrow rises to warm tier (terracotta)"
+          },
+          {
+            "at": "0.65",
+            "event": "Contradictory outcome: goes to queue labeled '?reconcile'; terracotta question mark"
+          }
+        ]
+      },
+      "graphic": {
+        "engine": "manim",
+        "manim": "B32_SoftAlignment",
+        "production_viz": {
+          "label": "Soft alignment: promote vs reconcile",
+          "mechanic": "hot insight → test → branch: consistent (promote) vs contradictory (queue); terracotta on both outcomes",
+          "colors": [
+            "#3D3929",
+            "#D97757",
+            "#F2F0E9"
+          ]
+        }
+      },
+      "audio_file": "mp3/beat-B32.mp3",
+      "actual_duration_s": 16.23,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B32.mp4",
+        "filled_by": "manim",
+        "at": "2026-07-22T03:14:49"
+      }
+    },
+    {
+      "beat_id": "B33",
+      "act": "act4",
+      "narration_text": "Two views of every stored insight: the embedding, which Mukta calls RAD, and the natural-language label, which she calls DEG. The dream store writes both columns. DEG is what lets the model reason about what it holds, not just search it.",
+      "estimated_duration_s": 11,
+      "shot": {
+        "type": "STILL",
+        "source": "ai",
+        "motion": "annotate",
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "tier": 1,
+        "pantry": "pantry/B33.png",
+        "treatment": "desaturate:80%, contrast:1.15, cream stage #F2F0E9, film-grain overlay, warm-ink vignette; DRAW-ON: terracotta brackets around RAD and DEG labels at spoken words",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Plate B33: hold (still frame)"
+          },
+          {
+            "at": "0.35",
+            "event": "On 'RAD': terracotta bracket draws on around left column"
+          },
+          {
+            "at": "0.6",
+            "event": "On 'DEG': terracotta bracket draws on around right column"
+          },
+          {
+            "at": "0.85",
+            "event": "Spark: 'Two columns. One store.'"
+          }
+        ],
+        "shopping_note": "B33: two-column data representation — left column abstract vectors/numbers (RAD), right column text labels/language (DEG). Clean margin space on both sides for draw-on annotation. No text pre-existing on plate. Min 1800px wide. Tier 1, generate."
+      },
+      "audio_file": "mp3/beat-B33.mp3",
+      "actual_duration_s": 13.87,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-22T03:14:49",
+        "needs": "YOU → 5–10s gen-AI clip → pantry (as B33.mp4)",
+        "suggested": "suggested prompt: Two views of every stored insight: the embedding, which Mukta calls RAD, and the natural-language label, which she calls DEG. The dream store writes both column"
+      }
+    },
+    {
+      "beat_id": "B34",
+      "act": "act4",
+      "narration_text": "RAD enables vector operations — similarity search across stored insights, clustering, arithmetic on conceptual neighbors. DEG enables reasoning — 'this pattern resembles that conclusion reached three sessions ago.' Together they make the store a knowledge base, not a cache.",
+      "estimated_duration_s": 10,
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "scene_type": "C3_DualColumn",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "RAD column: search arrows, cluster diagram (vector operations)"
+          },
+          {
+            "at": "0.4",
+            "event": "DEG column: reasoning chain, resemblance arrow between two insights"
+          },
+          {
+            "at": "0.8",
+            "event": "Terracotta label at bottom: 'knowledge base'"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeC3Illustration",
+          "props": {
+            "scene": "RADvsDEG",
+            "sparkLine": "Knowledge base, not a cache.",
+            "folderLabel": "@NikBearBrown"
+          },
+          "rendered": {
+            "out": "media/B34.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B34.mp3",
+      "actual_duration_s": 15.83,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-22T03:14:49",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for B34"
+      }
+    },
+    {
+      "beat_id": "B35",
+      "act": "act5",
+      "beat_type": "act_card",
+      "narration_text": "",
+      "estimated_duration_s": 4,
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "scene_type": "ClaudeSegmentCard",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Segment card: roman numeral V, title 'The Evidence', spark 'where the numbers are, and where the design is honest'"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeSegmentCard",
+          "props": {
+            "actNumber": "V",
+            "title": "The Evidence",
+            "sparkLine": "where the numbers are, and where the design is honest",
+            "folderLabel": "@NikBearBrown"
+          },
+          "rendered": {
+            "out": "media/B35.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": null,
+      "actual_duration_s": null,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-22T03:14:49",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for B35"
+      }
+    },
+    {
+      "beat_id": "B36",
+      "act": "act5",
+      "narration_text": "Mukta evaluates three conditions: vanilla context, RAG only, and dreaming plus RAG. Tasks span multi-session debugging, long-document Q&A, and procedural learning — specifically chosen because they should benefit from accumulated understanding.",
+      "estimated_duration_s": 11,
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Three condition labels appear: VANILLA / RAG ONLY / DREAMING+RAG"
+          },
+          {
+            "at": "0.35",
+            "event": "Three task types below: debugging / Q&A / procedural — each labeled"
+          },
+          {
+            "at": "0.8",
+            "event": "Grid forms; terracotta on DREAMING+RAG column header"
+          }
+        ]
+      },
+      "graphic": {
+        "engine": "manim",
+        "manim": "B36_EvalGrid",
+        "production_viz": {
+          "label": "Evaluation conditions × task types",
+          "mechanic": "3×3 grid: conditions vs task types; cells empty (will fill in B37–B39)",
+          "colors": [
+            "#3D3929",
+            "#D97757",
+            "#F2F0E9"
+          ]
+        }
+      },
+      "audio_file": "mp3/beat-B36.mp3",
+      "actual_duration_s": 15.36,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B36.mp4",
+        "filled_by": "manim",
+        "at": "2026-07-22T03:14:49"
+      }
+    },
+    {
+      "beat_id": "B37",
+      "act": "act5",
+      "narration_text": "Vanilla performs worst on all three — the amnesiac baseline. RAG closes most of the gap on episodic tasks: fact lookups, document references. On procedural tasks, RAG helps less. On multi-session debugging, it barely moves the needle.",
+      "estimated_duration_s": 11,
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "scene_type": "C2_Scale",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Grouped bar chart: vanilla (short), RAG only (medium), dreaming (tall) per task type"
+          },
+          {
+            "at": "0.3",
+            "event": "Episodic task: RAG bar near dreaming; both high above vanilla"
+          },
+          {
+            "at": "0.6",
+            "event": "Procedural task: RAG bar barely above vanilla; dreaming bar still high"
+          },
+          {
+            "at": "0.85",
+            "event": "Terracotta on dreaming bars"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeC2Scale",
+          "props": {
+            "sparkLine": "The gap opens on procedural.",
+            "folderLabel": "@NikBearBrown"
+          },
+          "rendered": {
+            "out": "media/B37.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B37.mp3",
+      "actual_duration_s": 14.63,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-22T03:14:49",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for B37"
+      }
+    },
+    {
+      "beat_id": "B38",
+      "act": "act5",
+      "narration_text": "Multi-session debugging is the strongest case. With dreaming, by session three, the model is primed — the failure-mode pattern is already in the dream store. It finds the issue without re-mapping the architecture. The second time through, it already knows.",
+      "estimated_duration_s": 12,
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Timeline: session 1 (long search path), session 2 (shorter), session 3 (direct hit)"
+          },
+          {
+            "at": "0.5",
+            "event": "Session 3 path is a straight arrow to the bug — labeled 'already primed'"
+          },
+          {
+            "at": "0.85",
+            "event": "Terracotta: 'already knows' label on session 3"
+          }
+        ]
+      },
+      "graphic": {
+        "engine": "manim",
+        "manim": "B38_DebugTimeline",
+        "production_viz": {
+          "label": "Multi-session debugging: decreasing search paths",
+          "mechanic": "three session arcs of decreasing length to bug; terracotta on session 3 direct path",
+          "colors": [
+            "#3D3929",
+            "#D97757",
+            "#F2F0E9"
+          ]
+        }
+      },
+      "audio_file": "mp3/beat-B38.mp3",
+      "actual_duration_s": 13.97,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B38.mp4",
+        "filled_by": "manim",
+        "at": "2026-07-22T03:14:49"
+      }
+    },
+    {
+      "beat_id": "B39",
+      "act": "act5",
+      "speaker_reported": true,
+      "narration_text": "Mukta's speaker-reported improvement on multi-session tasks: thirty-four to forty-one percent faster issue resolution. Speaker-reported, on synthetic benchmarks, preliminary — and the spread is wide. The honest framing in the talk: the mechanism is real and the numbers are illustrative.",
+      "estimated_duration_s": 11,
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Bar: +34–41% above baseline; error bars shown wide"
+          },
+          {
+            "at": "0.45",
+            "event": "On 'speaker-reported': chip label 'Speaker-reported' appears below bar"
+          },
+          {
+            "at": "0.75",
+            "event": "Second chip: 'Synthetic benchmarks · preliminary'"
+          },
+          {
+            "at": "0.9",
+            "event": "Terracotta on bar; no implied certainty — error bars visible"
+          }
+        ]
+      },
+      "graphic": {
+        "engine": "manim",
+        "manim": "B39_SpeakerReportedGain",
+        "production_viz": {
+          "label": "Speaker-reported +34–41% on multi-session tasks",
+          "mechanic": "single bar with wide error bands; 'Speaker-reported' + 'Preliminary' chips; terracotta bar",
+          "colors": [
+            "#3D3929",
+            "#D97757",
+            "#F2F0E9"
+          ],
+          "note": "NEVER strip the speaker-reported qualifier; wide error bars mandatory"
+        }
+      },
+      "audio_file": "mp3/beat-B39.mp3",
+      "actual_duration_s": 16.0,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B39.mp4",
+        "filled_by": "manim",
+        "at": "2026-07-22T03:14:49"
+      }
+    },
+    {
+      "beat_id": "B40",
+      "act": "act5",
+      "narration_text": "Where dreaming hurts: session-specific workarounds. If you spent two sessions adapting to a now-fixed bug, the dream process may consolidate the workaround rather than the fix. The hot store doesn't know the bug was resolved — it just saw the pattern recur.",
+      "estimated_duration_s": 12,
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Workaround pattern recurring across two sessions; dream process extracts it (terracotta arrow)"
+          },
+          {
+            "at": "0.5",
+            "event": "Bug-fixed indicator appears; workaround is now wrong — but already stored"
+          },
+          {
+            "at": "0.8",
+            "event": "Red/ink X on the stored workaround; label 'wrong but persistent'"
+          }
+        ]
+      },
+      "graphic": {
+        "engine": "manim",
+        "manim": "B40_StaleWorkaround",
+        "production_viz": {
+          "label": "Dreaming failure: stale workaround consolidation",
+          "mechanic": "workaround recurs → extracted → bug fixed → stored insight is now wrong; X mark on stale insight",
+          "colors": [
+            "#3D3929",
+            "#D97757",
+            "#F2F0E9"
+          ]
+        }
+      },
+      "audio_file": "mp3/beat-B40.mp3",
+      "actual_duration_s": 14.14,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B40.mp4",
+        "filled_by": "manim",
+        "at": "2026-07-22T03:14:49"
+      }
+    },
+    {
+      "beat_id": "B41",
+      "act": "act5",
+      "narration_text": "Mukta's read on reconciliation: it's the same problem as human unlearning. Dreaming isn't the cure. It's the substrate. The cure is deliberate re-consolidation — actively choosing to update the dream store when understanding changes. The mechanism for that is an open design question.",
+      "estimated_duration_s": 11,
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "scene_type": "C3_OpenProblem",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Dream store diagram; 'reconciliation' node marked with open circle (unresolved)"
+          },
+          {
+            "at": "0.5",
+            "event": "Terracotta dashed border around the node: 'open question'"
+          },
+          {
+            "at": "0.85",
+            "event": "Spark line: 'Substrate, not cure.'"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeC3Illustration",
+          "props": {
+            "scene": "OpenProblem",
+            "sparkLine": "Substrate, not cure.",
+            "folderLabel": "@NikBearBrown"
+          },
+          "rendered": {
+            "out": "media/B41.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B41.mp3",
+      "actual_duration_s": 15.81,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-22T03:14:49",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for B41"
+      }
+    },
+    {
+      "beat_id": "B42",
+      "act": "act5",
+      "lead_silence_s": 0.5,
+      "narration_text": "A model that sleeps is not the same model that woke up. Not because the weights changed — they didn't. Because what's in the dream store changed. The experience accumulated. The understanding deepened. That's what Mukta means by dreaming.",
+      "estimated_duration_s": 14,
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "scene_type": "C3_BeforeAfter",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "0.5s silence; cream stage holds empty"
+          },
+          {
+            "at": "0.04",
+            "event": "'A model that sleeps…' — spark line types in slowly, one phrase at a time"
+          },
+          {
+            "at": "0.45",
+            "event": "Before/after split: 'woke up' model vs 'slept' model — dream store shows populated on right"
+          },
+          {
+            "at": "0.75",
+            "event": "Terracotta: 'experience accumulated' label on right side"
+          },
+          {
+            "at": "0.9",
+            "event": "The weights indicator: identical on both sides — only dream store differs"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeC3Illustration",
+          "props": {
+            "scene": "SleepDifference",
+            "sparkLine": "Not the weights. The dream.",
+            "leadSilenceS": 0.5,
+            "folderLabel": "@NikBearBrown"
+          },
+          "rendered": {
+            "out": "media/B42.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B42.mp3",
+      "actual_duration_s": 13.34,
+      "note": "0.5s lead silence in audio_file is intentional — keep at audio lock. generate_audio_kokoro.py: add 0.5s of silence at the start of the mp3.",
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-22T03:14:49",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for B42"
+      }
+    },
+    {
+      "beat_id": "B43",
+      "act": "act5",
+      "narration_text": "The margins are the stress test. Short sessions, contradictory sessions, no recurring patterns — conditions where dreaming is most likely to consolidate noise. Mukta's test suite includes these deliberately. The failure modes there are instructive — and honestly presented.",
+      "estimated_duration_s": 11,
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "scene_type": "C2_Threshold",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Margin zone highlighted at both ends of a distribution; main band is clean"
+          },
+          {
+            "at": "0.4",
+            "event": "Short/contradictory session markers land in the margin zones"
+          },
+          {
+            "at": "0.75",
+            "event": "Terracotta: 'margin failure modes' label at the tails"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeC2Threshold",
+          "props": {
+            "sparkLine": "The margins are where it gets tested.",
+            "folderLabel": "@NikBearBrown"
+          },
+          "rendered": {
+            "out": "media/B43.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B43.mp3",
+      "actual_duration_s": 15.13,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-22T03:14:49",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for B43"
+      }
+    },
+    {
+      "beat_id": "B44",
+      "act": "closing",
+      "beat_type": "verdict",
+      "narration_text": "The verdict: the dreaming frame is the most coherent architecture I've seen for the cross-session persistence problem. Optimistic locking solves the concurrency problem cleanly. The RAD/DEG dual store is genuinely novel — searchable and reasoned about simultaneously. What it hasn't solved: reconciliation when understanding changes, and margin stability in short or noisy sessions. What it has: a working model of long-term understanding — not storage, but a thing that accumulates. Liam, in for Bear.",
+      "estimated_duration_s": 22,
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "scene_type": "ClaudeVerdictArtifact",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Verdict artifact opens on cream stage"
+          },
+          {
+            "at": "0.15",
+            "event": "Pros column: 'optimistic locking' / 'RAD/DEG dual store' / 'cross-session persistence'"
+          },
+          {
+            "at": "0.6",
+            "event": "Open problems: 'reconciliation' / 'margin stability'"
+          },
+          {
+            "at": "0.85",
+            "event": "Terracotta: the bottom-line verdict line; @NikBearBrown bug lower-right"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "title": "Claude, Dreaming.",
+            "pros": [
+              "optimistic locking — concurrency solved cleanly",
+              "RAD/DEG — searchable AND reasoned about",
+              "cross-session persistence — structural not incidental"
+            ],
+            "open": [
+              "reconciliation — open design question",
+              "margin stability — noise consolidation risk"
+            ],
+            "verdict": "A working model of long-term understanding.",
+            "signoff": "Liam, in for Bear.",
+            "folderLabel": "@NikBearBrown"
+          },
+          "rendered": {
+            "out": "media/B44.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B44.mp3",
+      "actual_duration_s": 28.2,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B44.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T03:14:49"
+      }
+    },
+    {
+      "beat_id": "B45",
+      "act": "closing",
+      "beat_type": "your_turn",
+      "narration_text": "Your turn. I've been working on my project across several sessions. Play the role of a dreaming process: review our conversation history, identify the cross-session patterns that have emerged, and write me a knowledge delta — what you'd store in a dream store at the end of this session. Take this into Claude. Tell it about a project you keep returning to. Watch what it synthesizes. That's the dreaming question — not what it remembers, but what it's learned.",
+      "estimated_duration_s": 24,
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "scene_type": "ClaudeComposerAsk",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Composer opens; greeting: 'Your turn.'"
+          },
+          {
+            "at": "0.15",
+            "event": "Prompt types in: 'I've been working on [my project] across several sessions. Play the role of a dreaming process…'"
+          },
+          {
+            "at": "0.5",
+            "event": "Voice reads prompt aloud — viewer follows on screen"
+          },
+          {
+            "at": "0.8",
+            "event": "Discussion of what to look for; running text: 'synthesizing your sessions…'"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Your turn.",
+            "topic": "CLAUDE · TALKS TORN DOWN",
+            "segment": "Claude, Dreaming.",
+            "command": "I've been working on [my project] across several sessions. Play the role of a dreaming process: review our conversation history, identify the cross-session patterns that have emerged, and write me a knowledge delta — what you'd store in a dream store at the end of this session.",
+            "runningText": "synthesizing your sessions…",
+            "folderLabel": "@NikBearBrown",
+            "modelLabel": "Fable 5",
+            "effortLabel": "High"
+          },
+          "rendered": {
+            "out": "media/B45.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B45.mp3",
+      "actual_duration_s": 20.82,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B45.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T03:14:49"
+      }
+    },
+    {
+      "beat_id": "B46",
+      "act": "closing",
+      "beat_type": "outro",
+      "narration_text": "",
+      "estimated_duration_s": 6,
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "scene_type": "ClaudeTitleOutro",
+        "show": [
+          {
+            "at": "0.0",
+            "event": "Title fades in: 'Claude, Dreaming.' in EB Garamond serif, terracotta period"
+          },
+          {
+            "at": "0.5",
+            "event": "@NikBearBrown handle beneath; subline: 'Talks, Torn Down'"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "Claude, Dreaming.",
+            "handle": "@NikBearBrown",
+            "subline": "Talks, Torn Down"
+          },
+          "rendered": {
+            "out": "media/B46.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": null,
+      "actual_duration_s": null,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B46.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T03:14:49"
+      }
+    }
+  ]
+}
