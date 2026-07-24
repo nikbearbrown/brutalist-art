@@ -39,3 +39,6 @@ examples/*/*.png
 /_to_delete/
 /media/
 runtime/remotion/_bench/
+
+# macOS/FUSE transient placeholders
+**/.fuse_hidden*
