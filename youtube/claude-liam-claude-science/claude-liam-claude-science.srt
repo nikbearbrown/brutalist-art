@@ -1,0 +1,81 @@
+1
+00:00:00,000 --> 00:00:29,450
+Anthropic's pitch for Claude Science comes
+down to one number: ten years every year.
+The CEO's 2023 forecast was fifty to a
+
+2
+00:00:29,500 --> 00:00:49,140
+Anthropic launched Claude Science. And
+this is Liam, in for Bear. The pitch video
+is ninety seconds — music, montage, and
+
+3
+00:00:49,190 --> 00:01:09,750
+The claim is a scale comparison. Dario's
+2023 essay: AI could compress fifty to a
+hundred years of scientific progress into
+
+4
+00:01:09,800 --> 00:01:32,000
+The first concrete evidence. An experiment
+takes three days to run — then three or
+more weeks to analyze. Those weeks aren't
+
+5
+00:01:32,050 --> 00:02:00,030
+The scientist in the video says it
+plainly: no human would have thought of
+that hypothesis. We needed the kind of
+
+6
+00:02:00,080 --> 00:02:27,380
+What ×10 actually looks like. Not ten
+times as many papers. Not ten times as
+many labs. The meter: a researcher who
+
+7
+00:02:27,430 --> 00:02:54,000
+The pitch's aspirational layer. More
+diseases treated. Undruggable targets
+drugged. Entire underexplored fields
+
+8
+00:02:54,050 --> 00:03:22,950
+The constraint the video doesn't mention.
+A serious research project — a protein
+structure, a clinical trial dataset, a
+
+9
+00:03:23,000 --> 00:03:50,900
+Here's where the comment section splits.
+Optimists: the toil-collapsing claim is
+already demonstrated — literature
+
+10
+00:03:50,950 --> 00:04:16,350
+What Claude Science cannot do. Design the
+experiment when the physics is genuinely
+unknown — that's still the human's job.
+
+11
+00:04:16,400 --> 00:04:41,990
+Two branches. If your rate-limiting step
+is cognitive — literature synthesis, data
+interpretation, hypothesis generation,
+
+12
+00:04:42,040 --> 00:05:10,360
+The scorecard. Pitch claim: ten years of
+progress every year. Column one — what it
+demonstrates: analysis time collapsing,
+
+13
+00:05:10,410 --> 00:05:27,790
+Your turn. Pick a research project you're
+running or know well. Identify the rate-
+limiting step — not the experiment, the
+
+14
+00:05:27,840 --> 00:05:30,970
+Ten Years Every Year. Liam, in for Bear.

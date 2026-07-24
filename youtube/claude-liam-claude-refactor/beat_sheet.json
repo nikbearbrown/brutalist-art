@@ -1,0 +1,437 @@
+{
+  "metadata": {
+    "slug": "claude-liam-claude-refactor",
+    "title": "Claude, Retrofitted.",
+    "skill": "claude-refactor",
+    "brand": "claude-liam",
+    "engine": "kokoro",
+    "voice": "am_onyx",
+    "greeting": "Jambo",
+    "chapter_number": 41,
+    "build": {
+      "at": "2026-07-18T22:30:44",
+      "cut": "master",
+      "filled": 11,
+      "of": 11,
+      "slates": [],
+      "skin_warnings": []
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "role": "OPEN",
+      "narration_text": "Jambo, Liam. Today: claude-refactor. Fifty-nine books. Six thousand three hundred and ninety-three reels — none of them in the Claude brand. One command writes the retrofit plan. New open, new outro, new handoff, zero inner beats re-rendered. Liam, in for Bear.",
+      "duration_s": 14,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "CLAUDE-REFACTOR · SKILL TEARDOWN",
+            "segment": "Liam, in for Bear.",
+            "greeting": "Jambo, Liam.",
+            "command": "refactor physics-quantum-mechanics",
+            "runningText": "* scan youtube/ → filter lectures/variants → draft ask per video → write REFACTOR.MD",
+            "output": [
+              "physics-quantum-mechanics: 47 reels in scope",
+              "excluded: 3 lecture, 8 brand-variant",
+              "→ REFACTOR.MD written in <1s | cost $0.00"
+            ],
+            "folderLabel": "books/*/youtube/*/"
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": 16.92,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B00.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:30:44"
+      }
+    },
+    {
+      "beat_id": "B01",
+      "role": "ANATOMY",
+      "narration_text": "Claude-refactor has two parts. A generator that scans a book's youtube directory, drafts the cold-open question for each reel, and writes one REFACTOR.MD with the full retrofit plan. And an executor that Claude Code reads — replacing only the open, outro, handoff, and ASK→RESULT micro-beats, while keeping every inner beat and its media untouched.",
+      "duration_s": 20,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownAnatomy",
+          "props": {
+            "skillName": "claude-refactor",
+            "title": "A skill is a folder.",
+            "files": [
+              {
+                "indent": 0,
+                "icon": "📁",
+                "name": "skills/make/claude-refactor/",
+                "accent": false
+              },
+              {
+                "indent": 1,
+                "icon": "📄",
+                "name": "SKILL.md",
+                "tag": "the retrofit contract",
+                "accent": true
+              },
+              {
+                "indent": 0,
+                "icon": "📁",
+                "name": "<book>/youtube/",
+                "accent": false
+              },
+              {
+                "indent": 1,
+                "icon": "📄",
+                "name": "REFACTOR.MD",
+                "tag": "the one artifact",
+                "accent": false
+              },
+              {
+                "indent": 1,
+                "icon": "📄",
+                "name": "<reel>/media/claude-cut.mp4",
+                "tag": "the output",
+                "accent": false
+              }
+            ],
+            "calloutText": "One artifact: REFACTOR.MD. One rule: inner media is never re-rendered.",
+            "sparkLine": "Generator writes the plan. Executor adds only what's new."
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": 22.53,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B01.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:30:44"
+      }
+    },
+    {
+      "beat_id": "B02",
+      "role": "PIPELINE",
+      "narration_text": "The pipeline: resolve the book's topic and target playlist. Inventory the youtube directory — exclude lectures and brand variants. Draft the cold-open question for each reel. Write REFACTOR.MD. Then per video: replace open, outro, handoff; insert ASK→RESULT micro-beats before each generated visual; keep all inner media. Generate audio only for new beats. Render new beats only. Report and stop.",
+      "duration_s": 22,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownPipeline",
+          "props": {
+            "title": "How claude-refactor works.",
+            "inputLabel": "book folder",
+            "outputLabel": "claude-cut.mp4",
+            "phases": [
+              {
+                "label": "Resolve topic + playlist",
+                "desc": "books/YouTube.json → \"Claude for <topic>\"",
+                "accent": false
+              },
+              {
+                "label": "Inventory youtube/",
+                "desc": "exclude lectures, brand-variant dirs",
+                "accent": true
+              },
+              {
+                "label": "Draft ask per video",
+                "desc": "cold-open question from reel title/premise",
+                "accent": false
+              },
+              {
+                "label": "Write REFACTOR.MD",
+                "desc": "full plan: laws digest + video table + procedure",
+                "accent": false
+              },
+              {
+                "label": "Per video: add new beats only",
+                "desc": "open + ASK→RESULT + handoff + outro; keep inner media",
+                "accent": false
+              },
+              {
+                "label": "Render new beats → claude-cut.mp4",
+                "desc": "report + STOP; wait for human",
+                "accent": false
+              }
+            ],
+            "sparkLine": "One REFACTOR.MD. Inner media untouched. Human gates every post."
+          },
+          "rendered": {
+            "out": "media/B02.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": 25.45,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B02.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:30:44"
+      }
+    },
+    {
+      "beat_id": "B03",
+      "role": "PREDICT",
+      "narration_text": "You ask Claude to retrofit thirty videos to the Claude brand. What prevents it from accidentally re-rendering the inner beats — overwriting weeks of paid Higgsfield and Manim footage?",
+      "duration_s": 9,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "CLAUDE-REFACTOR · PREDICT",
+            "segment": "The Question.",
+            "greeting": "30 videos.",
+            "command": "Why doesn't retrofitting 30 videos overwrite the inner footage?",
+            "runningText": "",
+            "output": []
+          },
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B03.mp3",
+      "actual_duration_s": 10.71,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B03.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:30:44"
+      }
+    },
+    {
+      "beat_id": "B04",
+      "role": "SELF-DEMO",
+      "narration_text": "Free demo: scan the actual books directory. Fifty-nine books with youtube reels. Six thousand three hundred and ninety-three beat sheets — not counting lecture folders or brand variants. Every one of them eligible to get a Claude cold open and a handoff beat. The scanner reads file paths, writes nothing, spends nothing.",
+      "duration_s": 21,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeCodeBeat",
+          "props": {
+            "title": "claude-refactor — scope scan",
+            "code": "find . -path '*/youtube/*/beat_sheet.json' \\\n  | grep -v 'brutalist-art\\|nbb-\\|hai-\\|medhavy-\\|lectures' \\\n  | tee /dev/stderr \\\n  | wc -l\n\n# 6393 beat sheets across 59 books\n# → all eligible for Claude cold open\n#\n# Pure filesystem read — no writes,\n# no audio spend, no network.\n# Runs in <1s | cost $0.00",
+            "sparkLine": "59 books. 6393 reels. 1 command. $0.00."
+          },
+          "rendered": {
+            "out": "media/B04.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B04.mp3",
+      "actual_duration_s": 19.48,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B04.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:30:44"
+      }
+    },
+    {
+      "beat_id": "B05",
+      "role": "MECHANISM_1",
+      "narration_text": "Law one: reuse before regenerate. The refactor adds only new beats — cold open, ASK→RESULT micro-beats, handoff, outro. As the SKILL says: an existing inner beat's media is never re-rendered unless the human asks. Your Higgsfield clips, your Manim animations, your narration audio — all kept exactly as they are.",
+      "duration_s": 19,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Reuse before regenerate.",
+            "body": "Cold open, ASK→RESULT micro-beats, handoff, outro — these are new. Every inner beat and its media stays untouched. Your paid footage is never at risk.",
+            "quote": "an existing inner beat's media is never re-rendered unless the human asks",
+            "cite": "skills/make/claude-refactor/SKILL.md",
+            "sparkLine": "New beats wrap the old ones. Inner footage is sacred."
+          },
+          "rendered": {
+            "out": "media/B05.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B05.mp3",
+      "actual_duration_s": 21.18,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B05.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:30:44"
+      }
+    },
+    {
+      "beat_id": "B06",
+      "role": "MECHANISM_2",
+      "narration_text": "Law two: ASK→RESULT applied retroactively. Every existing generated visual gets a composer micro-beat inserted immediately before it — a realistic prompt that could have produced that exact scene. The SKILL says: insert a composer micro-beat showing a realistic Claude prompt that could generate that scene. The result beat that follows is the existing media, untouched.",
+      "duration_s": 20,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "ASK→RESULT, retroactive.",
+            "body": "A composer micro-beat inserted before each generated visual — a realistic prompt that could produce that scene. The visual that follows is the original footage, untouched.",
+            "quote": "insert a composer micro-beat showing a realistic Claude prompt that could generate that scene",
+            "cite": "skills/make/claude-refactor/SKILL.md",
+            "sparkLine": "Make the prompt visible. Keep the footage intact."
+          },
+          "rendered": {
+            "out": "media/B06.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B06.mp3",
+      "actual_duration_s": 24.13,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B06.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:30:44"
+      }
+    },
+    {
+      "beat_id": "B07",
+      "role": "MECHANISM_3",
+      "narration_text": "Law three: GATE P per reel, per-video human approval before post. PEDAGOGY.md gets a refactor addendum and VERDICT: PASS before any audio spend. Posting requires explicit per-video human approval — never auto-post. As the SKILL says: never posts without per-video human approval. The playlist family is Claude for topic — never post refactored cuts to the Brutalist playlists.",
+      "duration_s": 20,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Gate P + per-video approval.",
+            "body": "PEDAGOGY.md refactor addendum required before audio spend. Posting requires explicit per-video approval. Refactored cuts route to 'Claude for <topic>' — never the Brutalist playlists.",
+            "quote": "Never posts without per-video human approval.",
+            "cite": "skills/make/claude-refactor/SKILL.md",
+            "sparkLine": "Audit before spend. Approve before post. Every time."
+          },
+          "rendered": {
+            "out": "media/B07.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B07.mp3",
+      "actual_duration_s": 24.53,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B07.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:30:44"
+      }
+    },
+    {
+      "beat_id": "BVDT",
+      "role": "VERDICT",
+      "narration_text": "Verdict: claude-refactor retrofits any book's videos to the Claude brand in one command — cold open, ASK→RESULT micro-beats, handoff, outro. Inner media is never re-rendered. Gate P audits every reel before audio spend. Human approves every post.",
+      "duration_s": 16,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "artifactTitle": "Verdict",
+            "artifactHeading": "The retrofit.",
+            "artifactLines": [
+              "Reuse before regenerate: inner media never re-rendered",
+              "ASK→RESULT retroactive: prompt visible, footage intact",
+              "Gate P + human approval: audit before spend, approve before post"
+            ]
+          },
+          "rendered": {
+            "out": "media/BVDT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BVDT.mp3",
+      "actual_duration_s": 17.45,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BVDT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:30:44"
+      }
+    },
+    {
+      "beat_id": "BHTF",
+      "role": "YOUR_TURN",
+      "narration_text": "Your turn. Run claude-refactor on one of your books. How many reels are in scope? Pick one reel and write the cold-open question yourself before running the skill. Does the skill's draft match yours?",
+      "duration_s": 11,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "YOUR TURN",
+            "segment": "Your book.",
+            "greeting": "Your turn.",
+            "command": "refactor <your-book-folder>",
+            "runningText": "* scan → filter → draft asks → write REFACTOR.MD",
+            "output": [
+              "→ check: how many reels in scope?",
+              "→ pick one, write the cold-open question first"
+            ]
+          },
+          "rendered": {
+            "out": "media/BHTF.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BHTF.mp3",
+      "actual_duration_s": 11.73,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BHTF.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:30:44"
+      }
+    },
+    {
+      "beat_id": "BOUT",
+      "role": "OUTRO",
+      "narration_text": "Claude, Retrofitted.",
+      "duration_s": 4,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "Claude, Retrofitted.",
+            "handle": "@NikBearBrown",
+            "subline": "claude-refactor skill teardown"
+          },
+          "rendered": {
+            "out": "media/BOUT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BOUT.mp3",
+      "actual_duration_s": 1.39,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BOUT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:30:44"
+      }
+    }
+  ]
+}

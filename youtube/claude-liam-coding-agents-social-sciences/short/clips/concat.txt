@@ -1,0 +1,8 @@
+file '/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-coding-agents-social-sciences/short/clips/B00.mp4'
+file '/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-coding-agents-social-sciences/short/clips/B01.mp4'
+file '/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-coding-agents-social-sciences/short/clips/B02.mp4'
+file '/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-coding-agents-social-sciences/short/clips/B04.mp4'
+file '/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-coding-agents-social-sciences/short/clips/B07.mp4'
+file '/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-coding-agents-social-sciences/short/clips/B08.mp4'
+file '/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-coding-agents-social-sciences/short/clips/B09.mp4'
+file '/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/claude-liam-coding-agents-social-sciences/short/clips/END.mp4'

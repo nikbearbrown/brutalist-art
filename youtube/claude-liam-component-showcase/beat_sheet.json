@@ -1,0 +1,441 @@
+{
+  "metadata": {
+    "slug": "claude-liam-component-showcase",
+    "title": "Claude, Riffing.",
+    "description": "component-showcase skill teardown: render a visual unit with a themed example, critique it in the NikBearBrown Teardown voice. Riff informs; it never promotes.",
+    "engine": "kokoro",
+    "voice": "am_onyx",
+    "brand": "claude-liam",
+    "aspect_ratio": "16:9",
+    "build": {
+      "at": "2026-07-18T21:27:17",
+      "cut": "master",
+      "filled": 11,
+      "of": 11,
+      "slates": [],
+      "skin_warnings": []
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "act": "open",
+      "narration_text": "Hej, Liam. Today: component-showcase — the riff skill. Render a visual unit with a themed educational example. Critique it in the Teardown voice: what it does, where it's useful, pros and cons. Then stop. Liam, in for Bear.",
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "component-showcase · SKILL TEARDOWN",
+            "segment": "Liam, in for Bear.",
+            "greeting": "Hej, Liam",
+            "command": "./art riff onda",
+            "runningText": "* select → fixture → render → riff script → assemble category reel",
+            "output": [
+              "category: MECHANISM | scenes: 3",
+              "fixture: SkillTeardownMechanism — quantum tunneling example",
+              "rendered: mechanism-riff-reel.mp4 (127s)",
+              "→ hand off to human for promotion decision"
+            ],
+            "folderLabel": "claude-liam-component-showcase/"
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": 14.95,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B00.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T21:27:17"
+      }
+    },
+    {
+      "beat_id": "B01",
+      "act": "anatomy",
+      "narration_text": "Two halves. Render: the harness renders each scene with a fixture — themed educational example content, teardown palette. Riff: author the NBB Teardown script per scene — what it does, pros and cons, educational usefulness — then ElevenLabs voice and captions. Assemble into one compilation reel per functional category.",
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownAnatomy",
+          "props": {
+            "skillName": "component-showcase (riff)",
+            "whatItDoes": [
+              "Render visual scenes with themed educational example fixtures",
+              "Critique each scene in NBB/Teardown register (what · pros/cons · edu use)",
+              "Batch into one reel per category: DATA/TEXT/SHAPE/TITLE/etc.",
+              "Inform arm only — surfaces trade-offs, never promotes"
+            ],
+            "skillFiles": [
+              "skills/make/component-showcase/SKILL.md",
+              "skills/make/component-showcase/remotion/SKILL.md",
+              "skills/make/component-showcase/remotion/src/harness/registry.ts"
+            ],
+            "phaseGates": [
+              "Select: resolve target (batch category / one scene / mp4 path)",
+              "Fixture: themed educational example (override content props only)",
+              "Render: harness renders each scene, logs every failure (never silent-drop)",
+              "Riff: NBB Teardown script per scene (human verifies before ElevenLabs)",
+              "Assemble: one reel per functional category; pilot lane verified first"
+            ]
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": 21.29,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B01.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T21:27:17"
+      }
+    },
+    {
+      "beat_id": "B02",
+      "act": "pipeline",
+      "narration_text": "Five phases. Select the target batch or scene. Fixture: supply themed educational example content via the fixture library. Render on the user's Mac — harness renders and logs failures, never drops silently. Riff: write the NBB script per scene. Assemble into a per-category compilation reel. Pilot one lane before scaling to all.",
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownPipeline",
+          "props": {
+            "steps": [
+              {
+                "label": "Select",
+                "detail": "category batch / one scene / mp4 path"
+              },
+              {
+                "label": "Fixture",
+                "detail": "themed educational example (src/fixtures/<category>.ts)"
+              },
+              {
+                "label": "Render",
+                "detail": "harness renders scene in teardown palette; logs every failure"
+              },
+              {
+                "label": "Riff script",
+                "detail": "NBB Teardown: what it does · pros/cons · educational use"
+              },
+              {
+                "label": "Assemble",
+                "detail": "one reel per category; pilot first before scaling"
+              }
+            ]
+          },
+          "rendered": {
+            "out": "media/B02.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": 22.42,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B02.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T21:27:17"
+      }
+    },
+    {
+      "beat_id": "B03",
+      "act": "bridge",
+      "narration_text": "The riff is written. The scene rendered. The pros and cons laid out. What does the skill do next?",
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "component-showcase · the refusal",
+            "segment": "riff informs · human promotes",
+            "greeting": "Hej, Liam",
+            "command": "riff onda --category MECHANISM",
+            "runningText": "* riff complete → pros/cons surfaced → waiting for human decision",
+            "output": [
+              "MECHANISM/SkillTeardownMechanism: riff complete",
+              "pros: quote box prominent · mechanism lines clear · scalable",
+              "cons: act label generic · no source citation animation",
+              "→ promote to production? [human decides]"
+            ],
+            "folderLabel": "claude-liam-component-showcase/"
+          },
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B03.mp3",
+      "actual_duration_s": 5.53,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B03.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T21:27:17"
+      }
+    },
+    {
+      "beat_id": "B04",
+      "act": "self-demo",
+      "narration_text": "Self-demo: fixture plus riff script for SkillTeardownMechanism — free, no harness render, no ElevenLabs. The fixture supplies a real educational example: quantum tunneling, act one. The riff script follows the NBB structure: what it does, pros, cons, educational use. This is the script the human reviews before approving ElevenLabs spend.",
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeCodeBeat",
+          "props": {
+            "codeLines": [
+              "// SELF-DEMO: fixture + riff script for SkillTeardownMechanism",
+              "// (free — no harness render, no ElevenLabs call)",
+              "",
+              "// FIXTURE (src/fixtures/mechanism.ts):",
+              "const mechanismFixture = {",
+              "  act: 1,",
+              "  quote: 'A particle does not pass through a barrier — it tunnels.',",
+              "  source: 'quantum-mechanics/ch04 — tunneling',",
+              "  mechanismLines: [",
+              "    'Wave function non-zero inside the barrier',",
+              "    'Probability decays exponentially with thickness',",
+              "  ],",
+              "};",
+              "",
+              "// RIFF SCRIPT (NBB Teardown register):",
+              "// WHAT IT DOES: quote box for mechanism laws + numbered evidence lines",
+              "// PROS: prominent quote, readable at speed, scales to 3 acts",
+              "// CONS: act label ('The design decision') is generic",
+              "// EDU USE: predict-before-reveal — show quote, reveal mechanism lines"
+            ],
+            "captionLines": [
+              "Fixture and script are free. Render + ElevenLabs happen after human review.",
+              "Riff authors; it does not spend."
+            ]
+          },
+          "rendered": {
+            "out": "media/B04.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B04.mp3",
+      "actual_duration_s": 22.93,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B04.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T21:27:17"
+      }
+    },
+    {
+      "beat_id": "B05",
+      "act": "mechanism-1",
+      "narration_text": "Law one: riff is the inform arm of bench promotion. It renders and critiques so the human can see each scene and hear its trade-offs. The human decides what to keep or promote. Riff is the evidence base for that decision — not the decision itself. Inform before decide. That's the phase boundary.",
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "act": 1,
+            "quote": "riff is the inform arm of bench promotion. It renders and critiques so the human can see each scene and hear its trade-offs.",
+            "source": "skills/make/component-showcase/SKILL.md — Brutalist role",
+            "mechanismLines": [
+              "Inform arm: renders evidence + critique; promotion decision is human-only",
+              "Phase gate: pilot one category before scaling to all",
+              "Every failure logged (slug + reason) — no silent drops",
+              "Seeded from meta.json (description, pickWhen) per scene"
+            ]
+          },
+          "rendered": {
+            "out": "media/B05.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B05.mp3",
+      "actual_duration_s": 19.01,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B05.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T21:27:17"
+      }
+    },
+    {
+      "beat_id": "B06",
+      "act": "mechanism-2",
+      "narration_text": "Law two: riff never decides what to keep or promote — it surfaces pros and cons and stops. That refusal is the point. Principles four, five, and six. The skill with the power to promote would be a different skill. Riff keeps the human in the promotion decision so the bench evolves under human editorial judgment, not automation.",
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "act": 2,
+            "quote": "Riff never decides what to keep or promote — it surfaces pros/cons and stops. That refusal is the point (principles 4 + 5 + 6).",
+            "source": "skills/make/component-showcase/SKILL.md — Refusal",
+            "mechanismLines": [
+              "Refusal is a design choice, not a limitation",
+              "Bench promotion is irreversible — requires human editorial judgment",
+              "Riff asked to promote → declines; lays out pros/cons instead",
+              "Human decides; riff generates the decision brief"
+            ]
+          },
+          "rendered": {
+            "out": "media/B06.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B06.mp3",
+      "actual_duration_s": 20.91,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B06.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T21:27:17"
+      }
+    },
+    {
+      "beat_id": "B07",
+      "act": "mechanism-3",
+      "narration_text": "Law three: rendering and ElevenLabs spend happen on the user's machine, after the human verifies the scripts. Riff authors; it does not spend. The script is reviewed before the voice runs. The render is gated behind the pilot lane. No unverified spend. No mass-produced reels before the pilot proves the harness.",
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "act": 3,
+            "quote": "Rendering and ElevenLabs spend happen on the user's machine, after the human verifies the scripts. Riff authors; it does not spend.",
+            "source": "skills/make/component-showcase/SKILL.md — Refusal",
+            "mechanismLines": [
+              "Riff authors scripts; human verifies; then ElevenLabs runs",
+              "Render happens on the user's machine after script approval",
+              "Pilot first: one lane verified before scaling to all categories",
+              "Mass-produce request before pilot pass → declined"
+            ]
+          },
+          "rendered": {
+            "out": "media/B07.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B07.mp3",
+      "actual_duration_s": 20.37,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B07.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T21:27:17"
+      }
+    },
+    {
+      "beat_id": "BVDT",
+      "act": "verdict",
+      "narration_text": "Claude, Riffing. The artifact is the riff script: what it does, pros and cons, educational use — one per scene. The reel assembles the evidence. The human promotes. Riff informs and stops. That refusal is the skill.",
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "verdict": "Claude, Riffing.",
+            "artifactLines": [
+              "riff onda  →  fixture → render → riff script",
+              "one reel per category (DATA/TEXT/SHAPE/TITLE/...)",
+              "riff script: what · pros/cons · educational use",
+              "→ hand off: human promotes from evidence"
+            ],
+            "deliveryLines": [
+              "Inform arm · never promotes · refusal is the point",
+              "Fixture: themed educational example per scene",
+              "Pilot one lane before scaling to all categories",
+              "Riff authors; it does not spend"
+            ]
+          },
+          "rendered": {
+            "out": "media/BVDT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BVDT.mp3",
+      "actual_duration_s": 14.87,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BVDT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T21:27:17"
+      }
+    },
+    {
+      "beat_id": "BHTF",
+      "act": "handoff",
+      "narration_text": "Your turn. Pick a bench collection or a single scene. Run the pilot lane. Review the riff scripts. Then decide what to promote. Liam, handing off to Bear.",
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "component-showcase · your turn",
+            "segment": "Liam, handing off to Bear.",
+            "greeting": "Hej, Liam",
+            "command": "./art riff <scene-or-collection> --pilot",
+            "runningText": "* select → fixture → render → riff → review → promote (you decide)",
+            "output": [
+              "start: riff onda (pilot one category)",
+              "verify riff scripts before ElevenLabs",
+              "review reel → promote or reject each scene",
+              "→ you decide what enters production"
+            ],
+            "folderLabel": "claude-liam-component-showcase/"
+          },
+          "rendered": {
+            "out": "media/BHTF.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BHTF.mp3",
+      "actual_duration_s": 9.79,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BHTF.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T21:27:17"
+      }
+    },
+    {
+      "beat_id": "BOUT",
+      "act": "outro",
+      "narration_text": "Claude, Riffing. At NikBearBrown. Liam, in for Bear.",
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "Claude, Riffing.",
+            "handle": "@NikBearBrown",
+            "tagLine": "Liam, in for Bear."
+          },
+          "rendered": {
+            "out": "media/BOUT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BOUT.mp3",
+      "actual_duration_s": 3.63,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BOUT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T21:27:17"
+      }
+    }
+  ]
+}
