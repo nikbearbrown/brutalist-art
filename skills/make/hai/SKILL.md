@@ -7,8 +7,9 @@ description: >
   the Pragmatist register (method, when to use it, and when NOT to/where it
   fails), adds an optional Irreducibly-Human tangent (0–1), inserts a CLI worked
   exercise as the second-to-last beat, and ends with the Humanitarians AI outro.
-  Voice: Kokoro af_heart. Palette: humanitarians (EB Garamond / Montserrat).
-  Use when the user types `hai <input>`, asks for the Humanitarians / practitioner
+  Persona / voice: Kore with Kokoro af_kore. Palette: humanitarians
+  (EB Garamond / Montserrat).
+  Use when the user types `hai [input]`, asks for the Humanitarians / practitioner
   cut, or wants content for HAI Fellows. Brand spec: brands/hai.md.
 ---
 
@@ -21,20 +22,20 @@ build scripts, media) is **never modified**.
 ## Trigger
 
 ```
-hai <input>
+hai [input]
 ```
 
-`<input>` is one of:
-- **Reel folder** — `<book>/youtube/<slug>/` (has `beat_sheet.json`)
-- **Lecture folder** — `<book>/lectures/<chapter>-lecture/` (has `beat_sheet.json`)
-- **Book folder** — `<book>/` → batch: convert every reel + lecture it contains
+`[input]` is one of:
+- **Reel folder** — `[book]/youtube/[slug]/` (has `beat_sheet.json`)
+- **Lecture folder** — `[book]/lectures/[chapter]-lecture/` (has `beat_sheet.json`)
+- **Book folder** — `[book]/` → batch: convert every reel + lecture it contains
 
 ## Output directory convention
 
 | Source path | hai- output directory | Beat sheet filename |
 |---|---|---|
-| `<book>/youtube/<slug>/` | `<book>/youtube/hai-<slug>/` | `beat_sheet.hai.json` |
-| `<book>/lectures/<chapter>-lecture/` | `<book>/hai-lectures/<chapter>-lecture/` | `beat_sheet.hai.json` |
+| `[book]/youtube/[slug]/` | `[book]/youtube/hai-[slug]/` | `beat_sheet.hai.json` |
+| `[book]/lectures/[chapter]-lecture/` | `[book]/hai-lectures/[chapter]-lecture/` | `beat_sheet.hai.json` |
 
 Inside that `hai-` directory:
 - `beat_sheet.hai.json` — the HAI cut
@@ -47,7 +48,7 @@ Inside that `hai-` directory:
 ### Step 1 — Scaffold (deterministic, no spend)
 
 ```bash
-python3 runtime/scripts/brand_variant.py <INPUT_PATH> hai
+python3 runtime/scripts/brand_variant.py [INPUT_PATH] hai
 ```
 
 Creates the `hai-` directory and writes `beat_sheet.hai.json` with audience metadata
@@ -58,8 +59,9 @@ the source dir. No API calls, no spend.
 ```json
 {
   "audience": "HAI",
+  "persona": "Kore, in for Humanitarians AI",
   "engine": "kokoro",
-  "voice_kokoro": "af_heart",
+  "voice_kokoro": "af_kore",
   "palette": "humanitarians",
   "typography": { "serif": "EB Garamond", "sans": "Montserrat" },
   "register": "Pragmatist",
@@ -73,7 +75,7 @@ ElevenLabs override: set `metadata.engine: "elevenlabs"` — `voice_id` from
 
 ### Step 2 — Rewrite the register (Pragmatist)
 
-Open the new `hai-<…>/beat_sheet.json` and **rewrite every beat's narration**
+Open the new `hai-[…]/beat_sheet.json` and **rewrite every beat's narration**
 in the Pragmatist register (`voices/pragmatist/VOICE.md`, `brands/hai.md`):
 
 - Lead with **method**: what it is, what it produces.
@@ -115,7 +117,7 @@ using cli-scout logic (`skills/make/cli-scout/SKILL.md`):
    - **OUTPUT** — what the run produces (concrete description).
    - One **CHANGE** — a single diff that deepens or stress-tests the result.
    - **OUTPUT 2** — what the revised run produces.
-   - **NEXT STEP** = "Run it on your own `<data/question>`." — always concrete.
+   - **NEXT STEP** = "Run it on your own `[data/question]`." — always concrete.
    - Genuinely runnable. Not illustrative. Not synthetic.
 
 3. **Beat schema:**
@@ -138,7 +140,7 @@ using cli-scout logic (`skills/make/cli-scout/SKILL.md`):
 ```
 
 Reference: `skills/make/cli-scout/SKILL.md` (lane classification + card schema),
-`skills/make/terminal-screencast/SKILL.md` (beat format, fixed spine).
+`skills/make/cli-explainer/SKILL.md` (beat format, fixed spine).
 
 ### Step 5 — Outro (LAST beat)
 
@@ -161,15 +163,15 @@ Confirm the beat sequence closes as:
 
 ## Batch mode (book input)
 
-When `<input>` is a book folder, run the scaffold for every source:
+When `[input]` is a book folder, run the scaffold for every source:
 
 ```bash
 # Reels
-find <book>/youtube/ -maxdepth 1 -mindepth 1 -type d ! -name 'hai-*' | \
+find [book]/youtube/ -maxdepth 1 -mindepth 1 -type d ! -name 'hai-*' | \
   while read d; do python3 runtime/scripts/brand_variant.py "$d" hai; done
 
 # Lectures
-find <book>/lectures/ -maxdepth 1 -mindepth 1 -type d -name '*-lecture' | \
+find [book]/lectures/ -maxdepth 1 -mindepth 1 -type d -name '*-lecture' | \
   while read d; do python3 runtime/scripts/brand_variant.py "$d" hai; done
 ```
 
@@ -183,17 +185,17 @@ From the `hai-` directory, build is audience-namespaced:
 
 ```bash
 # Audio (Kokoro default)
-python3 runtime/scripts/generate_audio_kokoro.py <hai-dir>/beat_sheet.hai.json
+python3 runtime/scripts/generate_audio_kokoro.py [hai-dir]/beat_sheet.hai.json
 
 # Audio (ElevenLabs override — set engine:"elevenlabs" first)
-python3 runtime/scripts/generate_audio.py <hai-dir>/beat_sheet.hai.json
+python3 runtime/scripts/generate_audio.py [hai-dir]/beat_sheet.hai.json
 
 # Lectures: deck + render from the copied build scripts
-python3 <hai-dir>/build_deck.py
-python3 <hai-dir>/render.py
+python3 [hai-dir]/build_deck.py
+python3 [hai-dir]/render.py
 
 # Compile (reels)
-python3 runtime/scripts/compile.py <hai-dir> --height 1080
+python3 runtime/scripts/compile.py [hai-dir] --height 1080
 ```
 
 GATE P applies: a `PEDAGOGY.md` pass before any spend.
@@ -219,9 +221,36 @@ Typography — Humanitarians house type: **EB Garamond** (serif body) +
 
 ---
 
+## Channel title — required on every HAI video
+
+Every HAI beat sheet **must** include `metadata.channel_title: "@HumanitariansAI"`.
+
+```json
+{
+  "metadata": {
+    "channel_title": "@HumanitariansAI",
+    ...
+  }
+}
+```
+
+`compile.py` reads this field and burns `@HumanitariansAI` as a **centered
+bottom-of-frame** text overlay — **on the first beat only**. Appearance:
+
+- **Ink** (`#2F2A26`) text on a transparent ground — no pill, no box.
+- **Serif house font** (EB Garamond) at 3% of frame height — same weight and
+  palette as the body type on the verdict card.
+- Positioned bottom center, 40px above the bottom edge.
+- Disappears when the first beat ends; no other beat carries it.
+
+The overlay must read as natural caption text on the first beat's cream
+background, not as a watermark or badge.
+
 ## Standing rules
 
 - Source files (`beat_sheet.json`, build scripts, media) are **never modified**.
 - GATE P applies before any audio spend.
+- `metadata.channel_title: "@HumanitariansAI"` is required in every HAI beat sheet
+  (see above — compile.py enforces the first-beat overlay automatically).
 - HAI Fellows take the slate cut and refine it further with Claude Code — the
   variant is a strong on-doctrine starting point, not a locked master.

@@ -1,8 +1,8 @@
 ---
 name: hai
 description: >
-  HAI (Humanitarians AI) brand spec — Pragmatist register, Kokoro af_heart
-  voice (ElevenLabs HUMANITARIANS override), humanitarians palette (muted
+  HAI (Humanitarians AI) brand spec — Pragmatist register, Kore using Kokoro
+  af_kore (ElevenLabs HUMANITARIANS override), humanitarians palette (muted
   editorial). Used by the audience-preset skill when brand=hai. For the
   first-class hai command (which creates a hai- directory and adds the CLI
   exercise + outro beats), see skills/make/hai/SKILL.md.
@@ -30,9 +30,11 @@ Voice reference: `voices/pragmatist/VOICE.md`
 
 ## Voice
 
+Default presenter: **Kore, in for Humanitarians AI**.
+
 | Engine | Default | Override |
 |---|---|---|
-| Kokoro | `af_heart` | — |
+| Kokoro | `af_kore` | — |
 | ElevenLabs | — | `ELEVENLABS_VOICE_HUMANITARIANS` env var; set `engine:"elevenlabs"` to activate |
 
 ## Palette — `humanitarians`

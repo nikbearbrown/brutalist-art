@@ -13,20 +13,20 @@ This script does the DETERMINISTIC half — it sets audience metadata (voice_id 
 into the register, the signature tangent, the audience outro — is done by Claude Code,
 guided by the hai / medhavy SKILL. No API calls, no spend.
 
-Directory convention for use_dir brands (hai/medhavy/nbb; source never modified):
+Directory convention for use_dir brands (hai/medhavy/nbb/claude; source never modified):
   <book>/youtube/<slug>/              →  <book>/youtube/<suffix>-<slug>/
   <book>/lectures/<chapter>-lecture/  →  <book>/<suffix>-lectures/<chapter>-lecture/
 Inside the <suffix>- dir: beat_sheet.<suffix>.json + copies of any lecture build scripts.
 
 Default TTS engine per brand (written into metadata.engine + metadata.voice_kokoro):
   nbb/brutalist  → ElevenLabs (ELEVENLABS_VOICE_NIKBEARBROWN) — the only paid brand default
-  hai            → kokoro / af_heart (override: engine="elevenlabs", use metadata.voice_id)
+  hai            → kokoro / af_kore  (override: engine="elevenlabs", use metadata.voice_id)
   medhavy        → kokoro / af_kore  (override: engine="elevenlabs", use metadata.voice_id)
   musinique      → kokoro / am_puck  (override: engine="elevenlabs", use metadata.voice_id)
   neu            → kokoro / bm_fable (override: engine="elevenlabs", use metadata.voice_id)
 
 Usage:
-  python3 scripts/brand_variant.py <REEL_OR_LECTURE> {neu|hai|medhavy|nbb|musinique}
+  python3 scripts/brand_variant.py <REEL_OR_LECTURE> {neu|hai|medhavy|nbb|musinique|claude|claude-liam|claude-hai|claude-medhavy|claude-musinique}
 """
 import argparse, json, os, re, shutil, sys
 from pathlib import Path
@@ -42,7 +42,8 @@ AUD = {
     "hai": {"suffix": "hai", "audience": "HAI", "voice_env": "ELEVENLABS_VOICE_HUMANITARIANS",
             "palette": "humanitarians", "register": "Pragmatist", "charter": "HAI.md",
             "author_section": "Humanitarians AI",
-            "engine": "kokoro", "voice_kokoro": "af_heart", "use_dir": True},
+            "persona": "Kore, in for Humanitarians AI",
+            "engine": "kokoro", "voice_kokoro": "af_kore", "use_dir": True},
     "medhavy": {"suffix": "medhavy", "audience": "MEDHAVY", "voice_env": "ELEVENLABS_VOICE_MEDHAVY",
                 "palette": "medhavy", "register": "Wonder", "charter": "MEDHAVY.md",
                 "author_section": "Medhavy.com",
@@ -50,9 +51,33 @@ AUD = {
     "nbb": {"suffix": "nbb", "audience": "NikBearBrown", "voice_env": "ELEVENLABS_VOICE_NIKBEARBROWN",
             "palette": "teardown", "register": "Teardown", "charter": "NIKBEARBROWN.md",
             "author_section": "NikBearBrown", "engine": "elevenlabs", "use_dir": True},
+    "claude": {"suffix": "claude", "audience": "Claude", "voice_env": "ELEVENLABS_VOICE_NIKBEARBROWN",
+               "palette": "claude", "register": "Teardown", "charter": "CLAUDE-BRAND.md",
+               "author_section": "NikBearBrown", "engine": "elevenlabs", "use_dir": True},
+    # Liam — the nbb persona's substitute narrator (IN-FOR-BEAR LAW, CLAUDE-BRAND.md):
+    # same @NikBearBrown channel and Teardown register, kokoro voice so batch/series
+    # builds spend no ElevenLabs credits. B00 narration must say "…this is Liam, in
+    # for Bear." and the outro signs off the same way. Wagwan stays Bear's.
+    "claude-liam": {"suffix": "claude-liam", "audience": "Claude", "voice_env": "ELEVENLABS_VOICE_LIAM",
+                    "palette": "claude", "register": "Teardown", "charter": "CLAUDE-BRAND.md",
+                    "author_section": "NikBearBrown",
+                    "engine": "kokoro", "voice_kokoro": "am_onyx", "use_dir": True},
+    "claude-hai": {"suffix": "claude-hai", "audience": "HAI", "voice_env": "ELEVENLABS_VOICE_HUMANITARIANS",
+                   "palette": "claude", "register": "Pragmatist", "charter": "CLAUDE-BRAND.md",
+                   "author_section": "Humanitarians AI",
+                   "persona": "Kore, in for Humanitarians AI",
+                   "engine": "kokoro", "voice_kokoro": "af_kore", "use_dir": True},
+    "claude-medhavy": {"suffix": "claude-medhavy", "audience": "MEDHAVY", "voice_env": "ELEVENLABS_VOICE_MEDHAVY",
+                       "palette": "claude", "register": "Wonder", "charter": "CLAUDE-BRAND.md",
+                       "author_section": "Medhavy.com",
+                       "engine": "kokoro", "voice_kokoro": "af_kore", "use_dir": True},
+    "claude-musinique": {"suffix": "claude-musinique", "audience": "MUSINIQUE", "voice_env": "ELEVENLABS_VOICE_MUSINIQUE",
+                         "palette": "claude", "register": "Baldwin", "charter": "CLAUDE-BRAND.md",
+                         "author_section": "Musinique",
+                         "engine": "kokoro", "voice_kokoro": "am_puck", "use_dir": True},
     "musinique": {"suffix": "musinique", "audience": "MUSINIQUE",
                   "voice_env": "ELEVENLABS_VOICE_MUSINIQUE",
-                  "palette": "musinique", "register": "Teardown", "charter": "MUSINIQUE.md",
+                  "palette": "musinique", "register": "Baldwin", "charter": "MUSINIQUE.md",
                   "author_section": "Musinique",
                   "engine": "kokoro", "voice_kokoro": "am_puck"},
 }
@@ -132,6 +157,8 @@ def main():
     meta["derived_from"] = "beat_sheet.json"
     meta["register"] = cfg["register"]
     meta["palette"] = cfg["palette"]
+    if cfg.get("persona"):
+        meta["persona"] = cfg["persona"]
     meta["outro_source"] = f"AUTHOR.MD :: {cfg['author_section']}"
     if voice_id:
         meta["voice_id"] = voice_id  # ElevenLabs override; change engine to "elevenlabs" to use it
