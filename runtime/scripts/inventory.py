@@ -7,7 +7,7 @@ current report; there is no partial state to resume.
 
 State per reel (by file presence, aspect by ffprobe):
   planned    beat_sheet.json exists, no review cut yet
-  slate-cut  <slug>-review.mp4 exists (preview with slates)
+  slate-cut  <slug>-slate.mp4 exists (preview with slates)
   16:9       a landscape final cut exists in mp4/ (master; slates filled)
   9:16       a portrait final cut exists in mp4/ (the short)
   complete   both 16:9 and 9:16 present
@@ -58,14 +58,16 @@ def analyze_reel(reel: Path):
     beats = sheet.get("beats", [])
     dur = sum(float(b.get("actual_duration_s") or 0) for b in beats)
 
-    review = bool(list(reel.glob("*-review.mp4"))) or \
-        (reel / "mp4").is_dir() and bool(list((reel / "mp4").glob("*-review.mp4")))
+    review = bool(list(reel.glob("*-slate.mp4"))) or \
+        (reel / "mp4").is_dir() and bool(list((reel / "mp4").glob("*-slate.mp4")))
 
     cuts = []
     mp4dir = reel / "mp4"
     if mp4dir.is_dir():
-        cuts += [f for f in mp4dir.glob("*.mp4") if "review" not in f.name.lower()]
-    cuts += [f for f in reel.glob("*-cut.mp4")]
+        cuts += [f for f in mp4dir.glob("*.mp4") if "slate" not in f.name.lower()]
+    _final = reel / f"{slug}.mp4"
+    if _final.exists():
+        cuts.append(_final)
     kinds = {classify_cut(f) for f in cuts}
     has169, has916 = "16:9" in kinds, "9:16" in kinds
 

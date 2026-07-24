@@ -193,7 +193,7 @@ def main():
             "-loop", "1", "-framerate", "24", "-i", str(handle_png),
             "-loop", "1", "-framerate", "24", "-i", str(next_png),
             "-filter_complex", fc, "-t", f"{target:.3f}",
-            "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
+            "-c:v", "libx264", "-preset", "slow", "-crf", "16",
             "-pix_fmt", "yuv420p", "-r", "24", "-an", str(out)])
     else:
         bh = int(H * 0.70)
@@ -210,7 +210,7 @@ def main():
             "-loop", "1", "-framerate", "24", "-i", str(handle_png),
             "-loop", "1", "-framerate", "24", "-i", str(next_png),
             "-filter_complex", fc, "-t", f"{target:.3f}",
-            "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
+            "-c:v", "libx264", "-preset", "slow", "-crf", "16",
             "-pix_fmt", "yuv420p", "-r", "24", "-an", str(out)])
 
     # --- pad the narration mp3 to the target (silence lives IN the clock)

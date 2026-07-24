@@ -63,7 +63,7 @@ export const SlateCard: React.FC<SlateCardProps> = ({ headline, eyebrow, topic }
         {topic ? (
           <div style={{
             fontFamily: FONT.display,
-            fontSize: height * 0.020,
+            fontSize: height * 0.038,
             fontWeight: 700,
             letterSpacing: 3,
             textTransform: 'uppercase' as const,
@@ -80,7 +80,7 @@ export const SlateCard: React.FC<SlateCardProps> = ({ headline, eyebrow, topic }
         {eyebrow ? (
           <div style={{
             fontFamily: FONT.display,
-            fontSize: height * 0.022,
+            fontSize: height * 0.038,
             fontWeight: 700,
             letterSpacing: 2,
             textTransform: 'uppercase' as const,

@@ -131,6 +131,8 @@ def main():
     ap.add_argument("--no-gate", action="store_true",
                     help="skip the GATE P (PEDAGOGY VERDICT: PASS) check")
     ap.add_argument("--list-voices", action="store_true")
+    ap.add_argument("--sheet", default="beat_sheet.json",
+                    help="beat sheet filename to read/write (default: beat_sheet.json)")
     a = ap.parse_args()
 
     if a.list_voices:
@@ -142,7 +144,7 @@ def main():
         sys.exit("[kokoro] need a video folder (or --list-voices)")
 
     folder = a.folder.resolve()
-    sheet_path = folder / "beat_sheet.json"
+    sheet_path = folder / a.sheet
     sheet = json.loads(sheet_path.read_text())
     md = sheet["metadata"]
     default_voice = md.get("voice_kokoro", DEFAULT_VOICE)

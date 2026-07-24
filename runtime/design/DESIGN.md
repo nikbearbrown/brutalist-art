@@ -110,6 +110,27 @@ drop shadows on type. White ground only.
 
 ---
 
+## Legibility floor — 14pt minimum, or a symbol (ALL palettes, global)
+
+**No on-screen text renders below 14pt.** Measured at the 1080 authoring baseline
+that is ≈**19px** (≈37px on the 4K master, ≈1.7% of frame height). This is a hard
+floor across every palette, every scene, every skill — Manim marks, Remotion chrome,
+axis ticks, legend entries, annotations, captions, credits.
+
+When a label will not fit at ≥14pt, you do **not** shrink it. You either resize the
+layout so it fits at legible size, or **replace the text with a symbol** — an icon
+from the doodle/SVG library, a single number, a ✓/✗, one glyph. A mark that reads at
+a glance beats a word that no one can read. This pairs with the house grammar
+(position + label carry meaning): a symbol in the right position is already doing the
+work small text was reaching for.
+
+Rationale: masters ship at 4K precisely so YouTube's VP9/AV1 recompression has bitrate
+to work with, but recompression + phone-sized playback still erase sub-14pt type. A
+symbol survives that pipeline; tiny text does not. Enforced as **Standing Rule #5** —
+verify on `qc-sheet.png`; any beat with sub-14pt text is a fail.
+
+---
+
 ## Data-visualization palette — separate from the brand palette
 
 The brand palettes above govern **general text, Manim marks, and Remotion chrome** —

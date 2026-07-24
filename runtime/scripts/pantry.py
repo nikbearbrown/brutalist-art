@@ -26,7 +26,7 @@ from pathlib import Path
 
 FFMPEG = shutil.which("ffmpeg") or "ffmpeg"
 FFPROBE = shutil.which("ffprobe") or "ffprobe"
-BID_RE = re.compile(r"^([A-Z]{1,3}\d{2})")
+BID_RE = re.compile(r"^([A-Z]{1,3}\d+)")
 
 
 def probe_dur(p):

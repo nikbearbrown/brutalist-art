@@ -14,13 +14,14 @@ Usage:
 Browser: on the Mac, Remotion's default works. In a constrained/allowlisted env set
   ART_CHROME=<chrome or headless-shell binary>  ART_CHROME_MODE=chrome-for-testing
 """
-import argparse, json, os, subprocess, sys, tempfile
+import argparse, json, os, shutil, subprocess, sys, tempfile
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parents[1]                       # runtime/
 PROJECT = HERE / "remotion"        # the Remotion project
 ENTRY = "src/index.ts"
 CONSUMERS = HERE / "remotion" / "_bench" / "consumers.json"
+FFMPEG = os.environ.get("FFMPEG", "ffmpeg")
 
 
 def load(p):
@@ -46,6 +47,24 @@ def browser_flags():
     return flags
 
 
+def extend_clip_to_duration(out: Path, duration_s: float) -> None:
+    """Extend a rendered clip to duration_s by freeze-holding the last frame.
+    Eliminates extreme slow-mo stretching in compile.py for short Remotion
+    compositions (e.g. ClaudeWindow=12s matched to 60s+ audio beats).
+    """
+    tmp = out.parent / f"_ext_{out.name}"
+    cmd = [FFMPEG, "-y", "-i", str(out),
+           "-vf", f"tpad=stop_mode=clone:stop_duration={duration_s:.3f}",
+           "-t", f"{duration_s:.3f}",
+           "-c:v", "libx264", "-preset", "medium", "-crf", "12",
+           "-pix_fmt", "yuv420p", str(tmp)]
+    r = subprocess.run(cmd, capture_output=True)
+    if r.returncode == 0:
+        shutil.move(str(tmp), str(out))
+    else:
+        tmp.unlink(missing_ok=True)
+
+
 def render_beat(folder: Path, beat: dict, force: bool) -> str:
     bid = beat["beat_id"]
     rem = beat.get("shot", {}).get("remotion") or {}
@@ -60,12 +79,23 @@ def render_beat(folder: Path, beat: dict, force: bool) -> str:
     with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False) as f:
         json.dump(rem.get("props", {}), f)
         props_path = f.name
+    # --scale=2 renders the 1920x1080 comps at true 3840x2160 (supersampled text).
+    # --image-format=png removes Remotion's default JPEG-q80 frame step (the hidden
+    # quality ceiling on flat brand color + text). --crf=16 for a clean master.
     cmd = ["npx", "remotion", "render", ENTRY, pattern, str(out.resolve()),
-           f"--props={props_path}", "--concurrency=1"] + browser_flags()
+           f"--props={props_path}", "--concurrency=1",
+           "--scale=2", "--image-format=png", "--crf=16"] + browser_flags()
     r = subprocess.run(cmd, cwd=PROJECT, capture_output=True, text=True)
     os.unlink(props_path)
     if r.returncode != 0:
         return f"FAIL: {pattern}\n{r.stderr[-800:]}"
+
+    # If beat has a measured audio duration, extend the render with freeze-hold so
+    # compile.py gets a clip at the exact beat length (no extreme slow-mo stretching).
+    duration_s = beat.get("actual_duration_s") or beat.get("estimated_duration_s")
+    if duration_s:
+        extend_clip_to_duration(out, float(duration_s))
+        return f"ok: {pattern} -> media/{bid}.mp4 (extended to {float(duration_s):.1f}s)"
     return f"ok: {pattern} -> media/{bid}.mp4"
 
 

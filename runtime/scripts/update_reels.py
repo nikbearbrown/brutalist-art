@@ -290,7 +290,7 @@ def apply_outro(d: dict) -> list:
     if r.returncode != 0:
         acts.append(f"ART_RUN FAIL: {(r.stderr or r.stdout)[-300:]}")
         return acts
-    review = reel / f"{reel.name}-review.mp4"
+    review = reel / f"{reel.name}-slate.mp4"
     sz = f"{review.stat().st_size // 1024}K" if review.exists() else "missing"
     acts.append(f"recut: {review.name} ({sz})")
     return acts

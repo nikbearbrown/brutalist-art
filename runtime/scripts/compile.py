@@ -5,7 +5,12 @@ Every beat on the timeline is a conformed per-beat mp4 in clips/.
 Slot precedence:  media/<beat>.mp4  >  manim/<beat>.(mp4|mov)  >
                   media/<beat>.png (animated per shot.motion)  >  slate.
 Rebuild recompiles ONLY slots whose input changed (sha1 manifest), then
-re-concats and muxes the master audio. Annotations/captions are NOT this
+re-concats and muxes the master audio. Every compile STAMPS the beat sheet:
+each beat gets a `build` record (status/src/filled_by/needs) and metadata.build
+summarizes the cut — the sheet is a build record, not just an intent document.
+A skin lint warns when the sheet claims a brand contract its beats don't
+request (e.g. palette=claude with no ClaudeComposerAsk cold open, or a sheet
+with zero machine-renderable beats). Annotations/captions are NOT this
 script's job — they belong to the Remotion assembly plane. The --review flag
 burns global timecode + per-beat id/status at assembly only; clips/ stay clean.
 
@@ -148,6 +153,23 @@ def make_teardown_label_png(out, bid, font_path, size):
     ImageDraw.Draw(img).text((pad_x, pad_y - tw[1]), bid, font=f, fill=WHITE)
     img.save(out)
 
+def make_channel_title_png(out, text, font_path, size):
+    """Centered channel handle for the first beat only.
+    Ink text on a fully transparent ground — no pill, no box. Blends naturally
+    with the first beat's cream background. Set metadata.channel_title in the
+    beat sheet; compile.py shows it only during the first beat's duration."""
+    from PIL import Image, ImageDraw
+    f = _pil_font(font_path, size)
+    tmp = Image.new("RGBA", (4, 4))
+    tw = ImageDraw.Draw(tmp).textbbox((0, 0), text, font=f)
+    pad_x, pad_y = 4, 4
+    img_w = tw[2] - tw[0] + pad_x * 2
+    img_h = tw[3] - tw[1] + pad_y * 2
+    img = Image.new("RGBA", (img_w, img_h), (0, 0, 0, 0))
+    ImageDraw.Draw(img).text((pad_x, pad_y - tw[1]), text, font=f,
+                             fill=(*INK_RGB, 255))
+    img.save(out)
+
 # ------------------------------------------------------------- slots
 
 def resolve_slot(folder, bid):
@@ -194,7 +216,10 @@ def compile_clip(folder, beat, out, w, h, fps, font, work, fit="crop"):
     dur = float(beat.get("actual_duration_s") or beat.get("estimated_duration_s") or 6.0)
     shot = beat.get("shot", {})
     src, status = resolve_slot(folder, bid)
-    enc = ["-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
+    # Per-clip normalize: near-visually-lossless so this pass is NOT a real
+    # generation of loss (medium/crf12). The one meaningful lossy encode is the
+    # final concat below (slow/crf16).
+    enc = ["-c:v", "libx264", "-preset", "medium", "-crf", "12",
            "-pix_fmt", "yuv420p", "-r", str(fps), "-an", str(out)]
     treat = vf_treatment(shot.get("source", "own"), shot.get("treatment"))
 
@@ -223,6 +248,8 @@ def compile_clip(folder, beat, out, w, h, fps, font, work, fit="crop"):
             if off > 0.05:
                 seek = ["-ss", f"{off:.3f}"]
                 print(f"[art] {bid}: clip {d:.1f}s center-cut to {dur:.1f}s (skip {off:.1f}s head/tail)")
+        # freeze-pad any sub-frame shortfall so clip totals match audio totals
+        vf.append(f"tpad=stop_mode=clone:stop_duration={dur:.3f}")
         cmd = [FFMPEG, "-y"] + seek + ["-i", src, "-vf", ",".join(vf), "-t", f"{dur:.3f}"] + enc
     elif status == "STILL":
         motion = shot.get("motion", "kenburns")
@@ -296,17 +323,158 @@ def make_qc_sheet(folder, beats, clips, work, font):
 
 
 def build_master_audio(folder, beats, cli_audio, tmp):
-    """Per-beat audio/ mp3s win; else --audio master; else silence."""
+    """Per-beat audio/ mp3s win; else --audio master; else silence.
+    Beats without audio_file (e.g. MANIM) get a silent placeholder of the
+    correct duration so the master track aligns with the video."""
     per_beat = [folder / (b.get("audio_file") or f"audio/{b['beat_id']}.mp3") for b in beats]
-    if all(p.exists() for p in per_beat):
+    has_any = any(p.exists() for p in per_beat)
+    if has_any:
+        segments = []
+        for b, p in zip(beats, per_beat):
+            if p.exists():
+                segments.append(str(p.resolve()))
+            else:
+                dur = b.get("actual_duration_s") or b.get("estimated_duration_s") or 6.0
+                sil = tmp / f"sil_{b['beat_id']}.mp3"
+                sh([FFMPEG, "-y", "-f", "lavfi", "-i", f"anullsrc=r=44100:cl=mono",
+                    "-t", str(dur), "-c:a", "libmp3lame", "-q:a", "9", str(sil)])
+                segments.append(str(sil.resolve()))
         lst = tmp / "audio.txt"
-        lst.write_text("".join(f"file '{p.resolve()}'\n" for p in per_beat))
+        lst.write_text("".join(f"file '{s}'\n" for s in segments))
         out = tmp / "master.m4a"
         sh([FFMPEG, "-y", "-f", "concat", "-safe", "0", "-i", lst, "-c:a", "aac", str(out)])
         return out, "per-beat narration"
     if cli_audio and Path(cli_audio).exists():
         return Path(cli_audio), "master track"
     return None, "silent"
+
+def _filled_by(beat, status):
+    """Name the thing that actually filled this slot, for the build stamp."""
+    shot = beat.get("shot") or {}
+    rem = shot.get("remotion") or {}
+    if status == "MANIM":
+        scene = (shot.get("manim") or {}).get("scene_class") or ""
+        return f"manim:{scene}" if scene else "manim"
+    if status == "VIDEO" and rem.get("pattern") and (rem.get("rendered") or {}).get("at"):
+        return f"remotion:{rem['pattern']}"
+    if status == "VIDEO":
+        return "media"          # capture / human drop / build-script copy
+    if status == "STILL":
+        return "still"
+    return None                  # SLATE
+
+
+def lint_skin(sheet):
+    """Machine-check the brand contract the sheet CLAIMS. Prose instructions
+    to an authoring agent don't survive; this does. Warning-only for now."""
+    warns = []
+    meta = sheet.get("metadata", {})
+    beats = sheet.get("beats") or []
+    if not beats:
+        return warns
+
+    def pat(b):
+        return ((b.get("shot") or {}).get("remotion") or {}).get("pattern") or ""
+
+    # A sheet with ZERO machine-fillable beats was authored blind — every
+    # slot falls to a human request card and the pipeline renders nothing.
+    from beat_plan import fill_plan
+    machine = [b["beat_id"] for b in beats
+               if fill_plan(b).get("responsible") == "pipeline"]
+    if not machine:
+        warns.append("NO RENDERABLE BEATS: no beat carries a shot.remotion.pattern "
+                     "or Manim annotation — the pipeline will render NOTHING and "
+                     "every slot becomes a YOU-slate. The sheet was authored "
+                     "without the scene contract.")
+
+    # SPARK-LINE LAW: an inner ClaudeComposerAsk beat must carry a spark line
+    # (its `greeting`) — never a lonely asterisk. B00 (cold open) and the handoff
+    # ("Your turn.") are the only composer beats allowed their own greetings; every
+    # other composer beat that is empty is a lonely-asterisk bug (e.g. a CHANGE beat).
+    for i, b in enumerate(beats):
+        if pat(b) != "ClaudeComposerAsk":
+            continue
+        g = ((b.get("shot") or {}).get("remotion") or {}).get("props", {}).get("greeting", "")
+        if i == 0:
+            continue  # cold open owns the hello
+        if str(g).strip().lower() in ("your turn.", "your turn"):
+            continue  # the handoff
+        if not str(g).strip():
+            warns.append(f"{b['beat_id']}: composer beat has an empty spark line — "
+                         f"SPARK-LINE LAW wants a short serif cue (e.g. \"The change,\").")
+
+    if str(meta.get("palette", "")).lower() == "claude":
+        p0, pN = pat(beats[0]), pat(beats[-1])
+        if p0 != "ClaudeComposerAsk":
+            warns.append(f"{beats[0]['beat_id']}: palette=claude but the cold open "
+                         f"is '{p0 or 'un-annotated'}' — COLD OPEN LAW wants "
+                         f"ClaudeComposerAsk")
+        if pN != "ClaudeTitleOutro":
+            warns.append(f"{beats[-1]['beat_id']}: palette=claude but the outro "
+                         f"is '{pN or 'un-annotated'}' — OUTRO LAW wants "
+                         f"ClaudeTitleOutro")
+    return warns
+
+
+def stamp_sheet(folder, sheet, report, cut, sheet_name="beat_sheet.json"):
+    """Write what THIS compile actually did back into beat_sheet.json.
+
+    Every beat gets a `build` record alongside its `shot` intent:
+      status    VIDEO | MANIM | STILL | SLATE   (resolve_slot's verdict)
+      src       reel-relative file that filled the slot, or null
+      filled_by 'remotion:<pattern>' | 'manim:<scene>' | 'media' | 'still' | null
+      needs     (SLATE only) the owner line — who owes this file
+      suggested (SLATE only) the request card's prompt line, if any
+      at        ISO timestamp of this compile
+
+    metadata.build summarizes the cut: counts, slate list, skin warnings.
+    Intent is never modified — build is a parallel record, so a reviewer can
+    diff what was ASKED against what actually RENDERED. Failure to stamp
+    never kills a compile.
+    """
+    try:
+        from datetime import datetime
+        from beat_plan import owner_line
+        now = datetime.now().isoformat(timespec="seconds")
+        status_by = {bid: status for bid, _, _, status, _ in report}
+        slates = []
+        for b in sheet["beats"]:
+            bid = b["beat_id"]
+            if bid not in status_by:
+                continue
+            status = status_by[bid]
+            src, _ = resolve_slot(folder, bid)
+            rec = {"status": status,
+                   "src": str(src.relative_to(folder)) if src else None,
+                   "filled_by": _filled_by(b, status),
+                   "at": now}
+            if status == "SLATE":
+                owner, prompt_line = owner_line(b)
+                rec["needs"] = owner
+                if prompt_line:
+                    rec["suggested"] = prompt_line
+                slates.append(bid)
+                rem = (b.get("shot") or {}).get("remotion") or {}
+                if rem.get("pattern"):
+                    print(f"[art] WARNING {bid}: sheet asks for Remotion "
+                          f"'{rem['pattern']}' but nothing rendered — run "
+                          f"remotion_scenes.py, then recompile")
+            b["build"] = rec
+        warns = lint_skin(sheet)
+        for wmsg in warns:
+            print(f"[art] SKIN LINT: {wmsg}")
+        sheet.setdefault("metadata", {})["build"] = {
+            "at": now, "cut": cut,
+            "filled": len(report) - len(slates), "of": len(report),
+            "slates": slates, "skin_warnings": warns,
+        }
+        (folder / sheet_name).write_text(
+            json.dumps(sheet, indent=2, ensure_ascii=False))
+        print(f"[art] build stamp → {sheet_name} "
+              f"({len(report) - len(slates)}/{len(report)} filled)")
+    except Exception as e:                                  # never fatal
+        print(f"[art] WARNING: build stamp failed: {e}", file=sys.stderr)
+
 
 def main():
     ap = argparse.ArgumentParser()
@@ -319,9 +487,24 @@ def main():
     ap.add_argument("--allow-slates", action="store_true",
                     help="permit slates in a CLEAN master (default: refuse — "
                          "a slate in a review cut is information, in a master it's a defect)")
+    ap.add_argument("--sheet", default="beat_sheet.json",
+                    help="beat sheet filename (default: beat_sheet.json)")
     a = ap.parse_args()
+
+    # THE 4K LAW: a clean master (non-review) is ALWAYS rendered at 4K.
+    # Final cuts MUST be 3840x2160 — no shippable master may be below it.
+    # Review cuts stay any height (fast QC). We RAISE rather than refuse so
+    # the pipeline can never accidentally emit a sub-4K final; --review is the
+    # only way to get a low-res cut, and it carries the review label so it can
+    # never be mistaken for a master.
+    UHD_H = 2160
+    if not a.review and a.height < UHD_H:
+        print(f"[art] 4K LAW: clean master forced from {a.height}p to {UHD_H}p "
+              f"(finals MUST be 4K — use --review for a fast low-res QC cut)")
+        a.height = UHD_H
+
     folder = a.folder.resolve()
-    sheet = json.loads((folder / "beat_sheet.json").read_text())
+    sheet = json.loads((folder / a.sheet).read_text())
     beats = sheet["beats"]
     ar = sheet.get("metadata", {}).get("aspect_ratio", "16:9")
     num, den = (int(x) for x in ar.split(":"))
@@ -341,7 +524,7 @@ def main():
         out = clips / f"{bid}.mp4"
         src, status = resolve_slot(folder, bid)
         bshot = b.get("shot", {})
-        key = (f"L2|{w}x{h}@{fps}|{sheet.get('metadata', {}).get('fit', 'crop')}"
+        key = (f"L3|{w}x{h}@{fps}|{sheet.get('metadata', {}).get('fit', 'crop')}"
                f"|{dur:.3f}|{bshot.get('motion', '')}"
                f"|{bshot.get('focus', '')}|{bshot.get('treatment', '')}|"
                + (sha1(src) if src else "slate"))
@@ -355,6 +538,11 @@ def main():
         report.append((bid, t0, dur, status, b.get("shot", {}).get("type", "?")))
         t0 += dur
     man_path.write_text(json.dumps(manifest, indent=1))
+
+    # BUILD STAMP: write what actually happened back into the beat sheet —
+    # before the master-law gate, so a refused master still leaves a record.
+    stamp_sheet(folder, sheet, report, cut=("review" if a.review else "master"),
+                sheet_name=a.sheet)
 
     # THE MASTER LAW: no slates in a clean master. Review cuts show slates as
     # information; a master with a slate is an unfinished film shipping.
@@ -387,7 +575,7 @@ def main():
     audio, akind = build_master_audio(folder, beats, a.audio, clips)
 
     slug = sheet.get("metadata", {}).get("slug", folder.name)
-    out = folder / (f"{slug}-review.mp4" if a.review else f"{slug}-cut.mp4")
+    out = folder / (f"{slug}-slate.mp4" if a.review else f"{slug}.mp4")
 
     # --- label overlay: review cuts only — never in clean finals
     meta_flags = sheet.get("metadata", {})
@@ -407,20 +595,39 @@ def main():
             make_teardown_label_png(png, bid, font, int(h * 0.020))
             label_pngs.append((png, ts, dur))
 
+    # --- channel title: ink text centered at the bottom of the FIRST BEAT ONLY.
+    # Set metadata.channel_title in beat_sheet.json (e.g. "@HumanitariansAI").
+    # Renders in the serif house font, no background, same palette as the beat card.
+    channel_title = meta_flags.get("channel_title", "")
+    title_png = None
+    first_beat_dur = float(beats[0].get("actual_duration_s")
+                           or beats[0].get("estimated_duration_s") or 6.0) if beats else 0.0
+    if channel_title and font:
+        title_png = work / "channel_title.png"
+        make_channel_title_png(title_png, channel_title, font, int(h * 0.030))
+
     cmd = [FFMPEG, "-y", "-f", "concat", "-safe", "0", "-i", lst]
     cmd += (["-i", str(audio)] if audio else
             ["-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo"])
     for png, ts, dur in label_pngs:
         cmd += ["-i", str(png)]
+    if title_png:
+        cmd += ["-i", str(title_png)]
 
     fc = []
-    if label_pngs:
+    n_label_inputs = 2 + len(label_pngs)   # 0=video, 1=audio, 2..=labels
+    if label_pngs or title_png:
         prev = "0:v"
         for i, (png, ts, dur) in enumerate(label_pngs):
             nxt = f"v{i}"
             fc.append(f"[{prev}][{i + 2}:v]overlay=16:H-h-16:"
                       f"enable='between(t,{ts:.3f},{ts + dur:.3f})'[{nxt}]")
             prev = nxt
+        if title_png:
+            fc.append(f"[{prev}][{n_label_inputs}:v]"
+                      f"overlay=(W-w)/2:H-h-40"
+                      f":enable='between(t,0,{first_beat_dur:.3f})'[vtitle]")
+            prev = "vtitle"
         if a.review and drawtext:
             fc.append(f"[{prev}]drawtext=fontfile={font}:text='%{{pts\\:hms}}'"
                       f":fontcolor=white:fontsize={int(h*0.04)}:box=1"
@@ -431,7 +638,7 @@ def main():
         cmd += ["-filter_complex", ";".join(fc), "-map", "[vout]", "-map", "1:a"]
     else:
         cmd += ["-map", "0:v", "-map", "1:a"]
-    cmd += ["-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
+    cmd += ["-c:v", "libx264", "-preset", "slow", "-crf", "16",
             "-pix_fmt", "yuv420p", "-c:a", "aac", "-shortest",
             "-t", f"{total:.3f}", str(out)]
     sh(cmd)

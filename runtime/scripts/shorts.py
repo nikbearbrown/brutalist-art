@@ -347,7 +347,7 @@ def main():
                           f"'max(0,min(iw-ow,iw*{fx:.4f}-ow/2))':0")
                     subprocess.run([FFMPEG, "-y", "-v", "error", "-i", str(p),
                                     "-vf", vf, "-c:v", "libx264", "-preset",
-                                    "veryfast", "-crf", "20", "-an", str(cut)],
+                                    "slow", "-crf", "16", "-an", str(cut)],
                                    check=True)
                 else:
                     from PIL import Image

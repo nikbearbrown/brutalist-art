@@ -10,7 +10,7 @@ What it does for each nbb/ directory:
   1. Reads beat_sheet.json to find all manim-source beats
   2. Removes the symlink (or stale file) in nbb/manim/
   3. Renders from the parent reel's scenes.py with ART_PALETTE=teardown
-  4. Recompiles with compile.py → nbb/<slug>-review.mp4 and nbb/mp4/
+  4. Recompiles with compile.py → nbb/<slug>-slate.mp4 and nbb/mp4/
 """
 import json
 import os

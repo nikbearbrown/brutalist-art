@@ -2,7 +2,7 @@
 """stage_publish.py — stage a reel for youtube_publish.py.
 
 Writes, in the reel folder, exactly what the publisher expects:
-  mp4/<slug>.mp4          -> symlink to the clean 16:9 master (<slug>-cut.mp4)
+  mp4/<slug>.mp4          -> symlink to the clean 16:9 master (<slug>.mp4 at reel root)
   mp4/<slug>-short.mp4    -> symlink to the clean 9:16 master (short/*-short-cut.mp4)
   <slug>.srt              captions from the 16:9 beat sheet (SOURCE text on
                           measured beat windows — 'E = hν' on screen while the
@@ -84,7 +84,7 @@ def main():
     # mp4 staging (symlinks; the publisher follows them)
     mp4 = folder / "mp4"
     mp4.mkdir(exist_ok=True)
-    land_src = folder / f"{slug}-cut.mp4"
+    land_src = folder / f"{slug}.mp4"
     short_src = folder / "short" / f"{slug}-short-cut.mp4"
     for src, name in ((land_src, f"{slug}.mp4"), (short_src, f"{slug}-short.mp4")):
         dst = mp4 / name

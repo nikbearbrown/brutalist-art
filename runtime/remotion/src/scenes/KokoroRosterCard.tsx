@@ -28,6 +28,7 @@ const ACCENT_TEAL = '#1F6F5C';
 const MONO = '"PT Mono", "SF Mono", Menlo, monospace';
 const FONT_JA = '"Noto Sans JP", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif';
 const FONT_ZH = '"Noto Sans SC", "PingFang SC", "Heiti SC", "STHeiti", sans-serif';
+const FONT_HI = '"Noto Sans Devanagari", "Mangal", "Arial Unicode MS", sans-serif';
 
 function gradeChipColor(grade: string): string {
   const first = grade.trim()[0]?.toUpperCase() ?? 'C';
@@ -36,13 +37,15 @@ function gradeChipColor(grade: string): string {
   return VOX.CRIMSON; // D or F
 }
 
-// Detect script from native subtitle text to apply correct CJK font + lang attribute.
-// Hiragana (U+3041-U+309F) or Katakana (U+30A0-U+30FF) → Japanese.
+// Detect script from native subtitle text; return correct font stack + lang attribute.
+// Devanagari (U+0900-U+097F) → Hindi. Hiragana/Katakana (U+3041-U+30FF) → Japanese.
 // Otherwise treat as Chinese.
-function cjkFont(text: string | undefined): {font: string; lang: string} {
+function nativeFont(text: string | undefined): {font: string; lang: string} {
   if (!text) return {font: FONT.display, lang: ''};
+  if (/[ऀ-ॿ]/.test(text)) return {font: FONT_HI, lang: 'hi'};
   if (/[ぁ-ヿ]/.test(text)) return {font: FONT_JA, lang: 'ja'};
-  return {font: FONT_ZH, lang: 'zh-Hans'};
+  if (/[一-鿿㐀-䶿]/.test(text)) return {font: FONT_ZH, lang: 'zh-Hans'};
+  return {font: FONT.display, lang: ''};
 }
 
 export const KokoroRosterCard: React.FC<KokoroRosterCardProps> = ({
@@ -59,7 +62,7 @@ export const KokoroRosterCard: React.FC<KokoroRosterCardProps> = ({
   const gradeIn = spring({frame: frame - 6, fps, config: SPRING_SMOOTH});
 
   const chipColor = gradeChipColor(grade);
-  const {font: subtitleFont, lang: subtitleLang} = cjkFont(subtitle);
+  const {font: subtitleFont, lang: subtitleLang} = nativeFont(subtitle);
 
   // Layout constants scale with frame dimensions
   const nameSz      = isPortrait ? height * 0.10  : height * 0.20;

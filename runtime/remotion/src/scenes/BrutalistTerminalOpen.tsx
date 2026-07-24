@@ -151,7 +151,10 @@ export const BrutalistTerminalOpen: React.FC<BrutalistTerminalOpenProps> = ({
             });
             return (
               <div key={i} style={{
-                whiteSpace: 'pre',
+                whiteSpace: 'pre-wrap',
+                overflowWrap: 'break-word',
+                paddingLeft: '2ch',
+                textIndent: '-2ch',
                 color: item.startsWith('✓') ? CHECK_CLR : '#6B6B6B',
                 opacity,
               }}>

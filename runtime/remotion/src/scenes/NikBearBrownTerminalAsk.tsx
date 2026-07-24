@@ -136,7 +136,7 @@ export const NikBearBrownTerminalAsk: React.FC<NikBearBrownTerminalAskProps> = (
           lineHeight: 1.75,
         }}>
           {/* Prompt + command */}
-          <div style={{whiteSpace: 'pre', color: TEXT_CLR}}>
+          <div style={{whiteSpace: 'pre-wrap', overflowWrap: 'break-word', color: TEXT_CLR}}>
             <span style={{color: VOX.CRIMSON, marginRight: 10}}>$</span>
             {command.slice(0, charsShown)}
             {isTyping && blinkOn && (
@@ -168,7 +168,10 @@ export const NikBearBrownTerminalAsk: React.FC<NikBearBrownTerminalAskProps> = (
             });
             return (
               <div key={i} style={{
-                whiteSpace: 'pre',
+                whiteSpace: 'pre-wrap',
+                overflowWrap: 'break-word',
+                paddingLeft: '2ch',
+                textIndent: '-2ch',
                 color: TEXT_CLR,
                 fontSize: MONO_SZ * 0.85,
                 opacity: lineOpacity,

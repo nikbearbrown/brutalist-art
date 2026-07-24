@@ -161,7 +161,10 @@ export const NikBearBrownCodeBlock: React.FC<NikBearBrownCodeBlockProps> = ({
               <div key={i} style={{
                 opacity,
                 transform: `translateY(${yShift}px)`,
-                whiteSpace: 'pre',
+                whiteSpace: 'pre-wrap',
+                overflowWrap: 'break-word',
+                paddingLeft: '2ch',
+                textIndent: '-2ch',
                 color,
               }}>
                 {line || '​'}

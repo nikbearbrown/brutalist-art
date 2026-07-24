@@ -65,10 +65,13 @@ def fill_plan(beat: dict) -> dict:
                 "slot": f"media/{bid}.mp4"}
 
     # 4. a named Manim scene, or a drawable spec → the pipeline animates it
-    if g.get("manim") or engine == "manim":
+    if g.get("manim") or shot.get("manim") or engine == "manim" or src == "manim":
         return {"method": "manim", "responsible": "pipeline",
                 "prompt": None, "slot": f"manim/{bid}.mp4"}
-    if engine == "remotion" or typ in ("REMOTION", "MOTION-GRAPHIC") or beat.get("remotion"):
+    # canonical location first: shot.remotion.pattern is what remotion_scenes.py reads
+    if ((shot.get("remotion") or {}).get("pattern")
+            or engine == "remotion" or typ in ("REMOTION", "MOTION-GRAPHIC")
+            or beat.get("remotion")):
         return {"method": "remotion", "responsible": "pipeline",
                 "prompt": None, "slot": f"media/{bid}.mp4"}
 

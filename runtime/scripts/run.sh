@@ -16,9 +16,10 @@
 #   Skip both with ART_QC=0.
 set -e
 REEL_IN="$1"; shift || true
-HEIGHT=1080
+HEIGHT=2160   # 4K-native master (was 1080). Pass --height 1080 for a faster QC pass.
 if [ "$1" = "--height" ]; then HEIGHT="$2"; fi
 ART_QC="${ART_QC:-1}"
+ART_STRICT="${ART_STRICT:-1}"   # gates BLOCK on warnings too (BLOCKER+MAJOR stop the build). ART_STRICT=0 = legacy warn-and-slot.
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"          # toolkit home — assets live here
 REPO="$(dirname "$ROOT")"; [ -f "$REPO/.env" ] && set -a && . "$REPO/.env" 2>/dev/null && set +a || true   # load repo-root .env; shell wins
@@ -78,6 +79,19 @@ if [ "${ART_FACTS:-1}" = "1" ] && [ -n "$PENDING" ]; then
   done
 fi
 
+# ---- GATE L: beat-mix lint (no single-sentence Remotion slide; two placeholder types)
+if [ "$ART_QC" = "1" ] && [ -f "$QC/beat_lint.py" ] && [ -f "$REEL_DIR/beat_sheet.json" ]; then
+  echo "[run] GATE L — beat-mix lint"
+  rc=0
+  python3 "$QC/beat_lint.py" "$REEL_DIR/beat_sheet.json" || rc=$?
+  if [ "$rc" -ge 2 ]; then
+    echo "[run] GATE L FAILED: a lane:remotion beat is a single-sentence text slide,"
+    echo "[run] or a stray text card. Give it a real illustration OR convert it to a"
+    echo "[run] VOX-ANIM placeholder (lane:vox, placeholder:vox-anim). Nothing rendered."
+    [ "$ART_STRICT" = "1" ] && exit 2 || echo "[run] ART_STRICT=0 — continuing anyway"
+  fi
+fi
+
 # ---- GATE A: render-free pre-flight on every pending scene (isolated copy)
 if [ "$ART_QC" = "1" ] && [ -n "$PENDING" ] && [ -f "$QC/static_scene_check.py" ]; then
   echo "[run] GATE A — static pre-flight"
@@ -117,9 +131,9 @@ cd "$GFX"
 for S in $PENDING; do
   BID="${S%%_*}"
   echo "[run] rendering $S"
-  RES="1920,1080"
-  if grep -q '"aspect_ratio": *"9:16"' "$REEL_DIR/beat_sheet.json" 2>/dev/null; then RES="1080,1920"; fi
-  manim -qh --fps 24 -r "$RES" "$GFXFILE" "$S"
+  RES="3840,2160"
+  if grep -q '"aspect_ratio": *"9:16"' "$REEL_DIR/beat_sheet.json" 2>/dev/null; then RES="2160,3840"; fi
+  manim -qk --fps 24 -r "$RES" "$GFXFILE" "$S"
   OUT=$(find media/videos -name "$S.mp4" | head -1)
   if [ -z "$OUT" ]; then echo "[run] ERROR: no output for $S"; exit 1; fi
   if [ "$ART_QC" = "1" ] && [ -f "$QC/manim_layout_audit.py" ]; then
@@ -132,6 +146,11 @@ for S in $PENDING; do
       echo "[run] see $GFX/layout_audit.md and the annotated PNGs beside it."
       exit 2
     elif [ "$rc" -eq 1 ]; then
+      if [ "$ART_STRICT" = "1" ]; then
+        echo "[run] GATE B (strict): $S has a layout warning — mp4 NOT slotted."
+        echo "[run] see $GFX/layout_audit.md. (ART_STRICT=0 to warn-and-slot instead.)"
+        exit 2
+      fi
       echo "[run] gate B warning on $S — slotting anyway, review $GFX/layout_audit.md"
     fi
   fi
@@ -140,13 +159,66 @@ done
 
 cd "$ROOT"
 
+# ---- Remotion fill-in: render every beat that carries shot.remotion.pattern to
+# media/<BID>.mp4 BEFORE compile, so annotated Remotion beats don't fall to slates.
+# run.sh renders Manim above; without this pass Remotion beats never rendered.
+# Soft-fail: a Remotion render error leaves that beat a slate, never aborts the run.
+if [ -f scripts/remotion_scenes.py ]; then
+  python3 scripts/remotion_scenes.py "$REEL_DIR" \
+    || echo "[run] remotion_scenes soft-fail — annotated Remotion beats stay slates"
+fi
+
 # ---- the outro law: brand the closing card (idempotent; needs audio + bears)
 if [ -d "$ROOT/bearbrown" ]; then
   python3 scripts/outro.py "$REEL_DIR" --bears "$ROOT/bearbrown" \
     || echo "[run] outro skipped (no narration mp3 yet? run generate_audio.py)"
 fi
 
+# slate cut — always ({slug}-slate.mp4: shows slates + beat labels)
 python3 scripts/compile.py "$REEL_DIR" --review --height "$HEIGHT"
+# final cut — clean master ({slug}.mp4) when no slates remain; refuses (soft) otherwise
+python3 scripts/compile.py "$REEL_DIR" --height "$HEIGHT" \
+  || echo "[run] final cut skipped — reel still has unfilled slates (the -slate.mp4 is ready)"
+
+# ---- GATE V: frame-level visual QC on the COMPILED reel (every beat: Manim,
+# Remotion, composer, slate). Catches edge-bleed/clipping, canvas underfill
+# (negative space), and low contrast — the classes the Manim gates never see.
+if [ "$ART_QC" = "1" ] && [ -f "$QC/final_frame_check.py" ]; then
+  echo "[run] GATE V — frame-level visual QC on the compiled reel"
+  rc=0
+  LENIENT=""; [ "$ART_STRICT" = "1" ] || LENIENT="--lenient"
+  python3 "$QC/final_frame_check.py" "$REEL_DIR" $LENIENT || rc=$?
+  if [ "$rc" -eq 3 ]; then
+    echo "[run] GATE V skipped — needs Pillow + numpy + ffmpeg (pip install pillow numpy)."
+  elif [ "$rc" -ge 2 ]; then
+    echo "[run] GATE V FAILED: visual defects in the compiled cut —"
+    echo "[run] see $REEL_DIR/_qc/REPORT.md and _qc/contact_sheet.png."
+    echo "[run] Fix the scene source and re-run. (ART_STRICT=0 downgrades MAJOR to warnings.)"
+    [ "$ART_STRICT" = "1" ] && exit 2
+  fi
+fi
+
+# ---- GATE T: type-lock — typography assertions per rendered frame (ALWAYS RUN,
+# like factcheck: no review cut and no final may report success while TYPECHECK.md
+# has any FAIL). Checks §8.1 min-size, §8.2 overflow, §8.3 contrast, §8.4 kerning
+# (Pango fallback catch), §8.5 no-wordy-card, §8.6 golden strings.
+if [ -f "scripts/type_check.py" ]; then
+  echo "[run] GATE T — type-lock (typography assertions)"
+  tc_rc=0
+  python3 scripts/type_check.py "$REEL_DIR" || tc_rc=$?
+  if [ "$tc_rc" -eq 3 ]; then
+    echo "[run] GATE T skipped — missing deps (pip install pillow numpy scipy)"
+  elif [ "$tc_rc" -ge 2 ]; then
+    echo "[run] GATE T FAILED: typography violations — see $REEL_DIR/TYPECHECK.md"
+    echo "[run] Fix the FAILed beats (de-wordify, re-face, refit) and re-run."
+    echo "[run] A reel with TYPECHECK.md FAILs is unfinished — the same way a"
+    echo "[run] reel without FACTCHECK.md is unfinished. ART_STRICT=0 to warn only."
+    [ "${ART_STRICT:-1}" = "1" ] && exit 2
+  fi
+fi
+
+# ToDo.md — human fill-list (what YOU still owe, pantry names, prompts, source links)
+python3 scripts/todo.py "$REEL_DIR" >/dev/null 2>&1 || true
 
 # ---- deliverables layout: finished cuts -> mp4/, filled stills -> images/
 for f in "$REEL_DIR"/*.mp4 "$REEL_DIR"/short/*.mp4; do

@@ -70,7 +70,7 @@ def build_ledger(folder: Path) -> dict:
             "label": (b.get("new_visual_element") or b.get("narration_text", ""))[:100],
         })
     open_n = sum(1 for e in entries if e["status"] == "needs-fill")
-    return {"video": folder.name,
+    return {"video": folder.name, "metadata": (data.get("metadata") if isinstance(data, dict) else {}) or {},
             "source_of_truth": "beat_sheet.json — edit the sheet, not this file",
             "beats_total": len(entries), "beats_open": open_n, "beats": entries}
 
@@ -89,7 +89,7 @@ def write_status_md(folder: Path, ledger: dict):
 
 
 def main():
-    ap = argparse.ArgumentParser(description="Per-video beat ledger (todo.json + STATUS.md)")
+    ap = argparse.ArgumentParser(description="Per-video beat ledger (todo.json + STATUS.md + ToDo.md)")
     ap.add_argument("reel", help="reel folder containing beat_sheet.json")
     ap.add_argument("--method", help="filter: only beats whose fill method matches "
                                      "(manim|remotion|ai-video-prompt|historical-image|user-capture "
@@ -102,6 +102,7 @@ def main():
     ledger = build_ledger(folder)
     (folder / "todo.json").write_text(json.dumps(ledger, indent=2) + "\n")
     write_status_md(folder, ledger)
+    write_todo_md(folder, ledger, ledger.get("metadata", {}))
 
     rows = ledger["beats"]
     if a.open:
@@ -114,10 +115,85 @@ def main():
         print(json.dumps({**ledger, "beats": rows}, indent=2))
         return
     print(f"[todo] {ledger['video']}: {ledger['beats_total'] - ledger['beats_open']}"
-          f"/{ledger['beats_total']} filled → todo.json + STATUS.md")
+          f"/{ledger['beats_total']} filled → todo.json + STATUS.md + ToDo.md")
     for e in rows:
         p = f"  · prompt: {e['prompt'][:80]}" if e["prompt"] else ""
         print(f"  {e['beat_id']:>5}  {e['status']:<10} {e['method']:<17} {e['who']:<8} {e['slot']}{p}")
+
+
+
+
+# --- ToDo.md: a human fill-list so you never re-watch the video ---------------
+import re as _re, urllib.parse as _url
+
+# free / open-license image & footage archives, as search-URL templates
+_ARCHIVES = {
+    "Smithsonian Open Access": "https://www.si.edu/search/collection-images?edan_q={q}",
+    "Wikimedia Commons":       "https://commons.wikimedia.org/w/index.php?search={q}&title=Special:MediaSearch&type=image",
+    "Library of Congress":     "https://www.loc.gov/search/?q={q}&fa=access-restricted:false",
+    "NASA Images":             "https://images.nasa.gov/search-results?q={q}",
+    "AIP Segrè (physics)":     "https://repository.aip.org/?f%5Bcollection_title%5D=Emilio+Segre+Visual+Archives&q={q}",
+    "Wellcome (science/med)":  "https://wellcomecollection.org/search/images?query={q}",
+    "Met Open Access":         "https://www.metmuseum.org/art/collection/search?q={q}&showOnly=openAccess",
+    "Internet Archive":        "https://archive.org/search?query={q}",
+}
+_STOP = set("the a an of to in on for with and or is are was were be as by at from into this that "
+            "we you it its their his her they how why what when where which one two both each".split())
+
+def _keywords(text, n=6):
+    words = _re.findall(r"[A-Za-z][A-Za-z\-]{2,}", text or "")
+    out, seen = [], set()
+    for w in words:
+        lw = w.lower()
+        if lw in _STOP or lw in seen:
+            continue
+        seen.add(lw); out.append(w)
+        if len(out) >= n:
+            break
+    return " ".join(out) or (text or "").strip()[:60]
+
+def _topic_extra(meta):
+    blob = " ".join(str(meta.get(k, "")) for k in ("series","book","topic","segment")).lower()
+    if any(k in blob for k in ("physics","quantum","electromag","mechanic","optic","particle","astro","cosmo")):
+        return ["NASA Images", "AIP Segrè (physics)"]
+    if any(k in blob for k in ("cancer","bio","medic","nano","cell","clinical","pharma","health")):
+        return ["Wellcome (science/med)"]
+    if any(k in blob for k in ("history","art","civic","policy","law","society","culture")):
+        return ["Met Open Access", "Internet Archive"]
+    return ["NASA Images"]
+
+def _sources_for(entry, meta):
+    q = _url.quote_plus(_keywords(entry.get("prompt") or entry.get("label") or ""))
+    method = entry["method"]
+    lines = []
+    if method == "user-capture":
+        lines.append("  - You capture this (screen / camera recording) — no archive source.")
+        return lines
+    if method in ("ai-video-prompt",):
+        lines.append(f"  - GENERATE (motion): paste the prompt into Higgsfield / Sora / Runway → save as `{entry['slot']}`.")
+        lines.append("  - If a STILL would teach as well, use an archive below (then it's a Ken-Burns still, not a clip):")
+    names = ["Smithsonian Open Access", "Wikimedia Commons", "Library of Congress"] + _topic_extra(meta)
+    for name in dict.fromkeys(names):
+        lines.append(f"  - {name}: {_ARCHIVES[name].format(q=q)}")
+    return lines
+
+def write_todo_md(folder: Path, ledger: dict, meta: dict):
+    human = [e for e in ledger["beats"] if e["status"] == "needs-fill" and e["who"] == "human"]
+    L = [f"# ToDo — {ledger['video']}", "",
+         f"{len(human)} slot(s) need YOU. Fill each, drop the file at the named pantry path, then re-run `run.sh`.",
+         "Everything you need is here — you do not need to re-watch the video.", ""]
+    if not human:
+        L.append("Nothing outstanding — every human slot is filled (or every beat is machine-made). ✅")
+    for e in human:
+        need = {"ai-video-prompt": "a 5–10s clip (generate or an archive still)",
+                "historical-image": "a real/archival image",
+                "user-capture": "a screen or camera recording"}.get(e["method"], "media")
+        L += [f"## {e['beat_id']} — {need}",
+              f"- **Teaches:** {(e['label'] or '').strip()[:140]}",
+              f"- **Drop it here (pantry):** `{e['slot']}`",
+              f"- **Suggested prompt / search:** {e['prompt'] or '(see the beat)'}",
+              "- **Where to find / make it:**", *(_sources_for(e, meta)), ""]
+    (folder / "ToDo.md").write_text("\n".join(L) + "\n")
 
 
 if __name__ == "__main__":

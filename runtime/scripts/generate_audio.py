@@ -27,7 +27,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-API_URL = "https://api.elevenlabs.io/v1/text-to-speech/{voice_id}"
+API_URL = "https://api.elevenlabs.io/v1/text-to-speech/{voice_id}?output_format=mp3_44100_128"
 
 # Math/symbol → spoken form. Applied to tts text as a safety net even if the beat
 # sheet already carries tts_normalized_text.
@@ -68,7 +68,6 @@ def generate_one(text, voice_id, settings, out_path, api_key):
     payload = {
         "text": text,
         "model_id": settings.get("model_id", "eleven_multilingual_v2"),
-        "output_format": "mp3_44100_128",
         "voice_settings": {
             "stability": settings.get("stability", 0.80),
             "similarity_boost": settings.get("similarity_boost", 0.75),
