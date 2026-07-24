@@ -1,0 +1,438 @@
+{
+  "metadata": {
+    "slug": "claude-liam-your-turn",
+    "title": "Claude, Handed Off.",
+    "description": "your-turn skill teardown: standardize the closing block of a claude-explainer reel — VERDICT recap → YOUR TURN prompt → TITLE re-read. Idempotent, phase-gated, never publishes.",
+    "engine": "kokoro",
+    "voice": "am_onyx",
+    "brand": "claude-liam",
+    "aspect_ratio": "16:9",
+    "build": {
+      "at": "2026-07-18T21:35:28",
+      "cut": "master",
+      "filled": 11,
+      "of": 11,
+      "slates": [],
+      "skin_warnings": []
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "act": "open",
+      "narration_text": "Annyeong, Liam. Today: your-turn — the standardized Liam sign-off. Every claude-explainer reel should end the same way. This skill makes that happen. Liam, in for Bear.",
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "your-turn · SKILL TEARDOWN",
+            "segment": "Liam, in for Bear.",
+            "greeting": "Annyeong, Liam",
+            "command": "python3 skills/make/your-turn/scripts/apply_your_turn.py --root . --drafts drafts.json",
+            "runningText": "* census → draft prompts → dry-run → apply → re-render closing beats",
+            "output": [
+              "scanned: 36 reels | needs_update: 18 | needs_prompt: 4",
+              "applying: claude-liam-scout (VERDICT → YOUR TURN → TITLE)",
+              "dry-run: 3 beats rewritten | 0 verdict cards inserted",
+              "→ review drafts.json before audio spend"
+            ],
+            "folderLabel": "claude-liam-your-turn/"
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": 10.77,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B00.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T21:35:28"
+      }
+    },
+    {
+      "beat_id": "B01",
+      "act": "anatomy",
+      "narration_text": "Three beats, in order. One: VERDICT recap — ClaudeVerdictArtifact, Liam-narrated, with a half-second lead pause and a handoff line. Two: YOUR TURN — ClaudeComposerAsk with a relevant prompt the viewer can run, greeting: Your turn. Three: TITLE re-read — ClaudeTitleOutro, Liam re-reads the title as the sign-off.",
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownAnatomy",
+          "props": {
+            "skillName": "your-turn",
+            "whatItDoes": [
+              "Standardize the closing 3 beats of any claude-explainer reel",
+              "Beat 1: VERDICT recap (ClaudeVerdictArtifact) with 0.5s lead + handoff line",
+              "Beat 2: YOUR TURN (ClaudeComposerAsk) — relevant per-reel prompt, Liam reads it",
+              "Beat 3: TITLE re-read (ClaudeTitleOutro) — Liam re-reads the title"
+            ],
+            "skillFiles": [
+              "skills/make/your-turn/SKILL.md",
+              "skills/make/your-turn/scripts/apply_your_turn.py"
+            ],
+            "phaseGates": [
+              "Draft: LLM drafts YOUR TURN prompts + recaps → drafts.json",
+              "Dry-run: apply_your_turn.py --dry-run → your-turn-report.json",
+              "Human review: gate on drafts.json + report before any audio spend",
+              "Apply: transformer edits closing 3 beats in place (idempotent)",
+              "Re-render: art run <reel> → then human decides re-upload"
+            ]
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": 20.37,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B01.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T21:35:28"
+      }
+    },
+    {
+      "beat_id": "B02",
+      "act": "pipeline",
+      "narration_text": "Five steps. Draft: LLM drafts the YOUR TURN prompts per slug from the reel's own material. Dry-run: see planned edits without writing anything. Human review: gate on drafts.json — the one non-deterministic step needs sign-off. Apply: transformer edits the closing three beats idempotently. Re-render: art run, then human decides re-upload.",
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownPipeline",
+          "props": {
+            "steps": [
+              {
+                "label": "Draft prompts",
+                "detail": "LLM drafts YOUR TURN per slug from reel material → drafts.json"
+              },
+              {
+                "label": "Dry-run",
+                "detail": "apply_your_turn.py --dry-run → census + planned edits"
+              },
+              {
+                "label": "Human review",
+                "detail": "gate: review drafts.json + your-turn-report.json before spend"
+              },
+              {
+                "label": "Apply",
+                "detail": "transformer edits closing 3 beats; idempotent, never stacks handoffs"
+              },
+              {
+                "label": "Re-render",
+                "detail": "art run <reel> → master; re-upload is separate human step"
+              }
+            ]
+          },
+          "rendered": {
+            "out": "media/B02.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": 23.08,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B02.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T21:35:28"
+      }
+    },
+    {
+      "beat_id": "B03",
+      "act": "bridge",
+      "narration_text": "A reel ends on a VERDICT card. Liam says the recap. Done — right? What two beats are missing?",
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "your-turn · closing block",
+            "segment": "before vs after",
+            "greeting": "Annyeong, Liam",
+            "command": "python3 apply_your_turn.py --root . --drafts drafts.json --dry-run",
+            "runningText": "* scanning claude-liam-scout → checking closing block",
+            "output": [
+              "VERDICT: present ✓",
+              "YOUR TURN: MISSING → needs drafts.json entry",
+              "TITLE re-read: MISSING → will be added on apply",
+              "→ 2 beats to add; review drafts.json first"
+            ],
+            "folderLabel": "claude-liam-your-turn/"
+          },
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B03.mp3",
+      "actual_duration_s": 5.65,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B03.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T21:35:28"
+      }
+    },
+    {
+      "beat_id": "B04",
+      "act": "self-demo",
+      "narration_text": "Self-demo: drafts.json entry and closing block transform for claude-liam-scout — free, no audio generated. The draft shows the YOUR TURN prompt drawn from the scout reel's material: a question a student would paste into Claude after watching. The transformer adds the YOUR TURN beat and TITLE re-read beat. The human reviews the drafts.json before approving audio spend.",
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeCodeBeat",
+          "props": {
+            "codeLines": [
+              "// SELF-DEMO: drafts.json entry for claude-liam-scout",
+              "// (free — no apply_your_turn.py run, no audio spend)",
+              "",
+              "{",
+              "  \"claude-liam-scout\": {",
+              "    \"prompt\": \"I just watched the scout skill teardown.",
+              "      I want to scan my physics-quantum-mechanics book for",
+              "      explainer candidates. Can you (1) run the scout skill",
+              "      on that book, (2) show me the top 3 scoring candidates,",
+              "      and (3) explain which one you'd build first and why?\",",
+              "    \"recap\": null",
+              "  }",
+              "}",
+              "",
+              "// TRANSFORM (would be applied on approval):",
+              "// BHTF: ClaudeComposerAsk · greeting: 'Your turn.'",
+              "//       command = narration_text (Liam reads the whole prompt)",
+              "// BOUT: ClaudeTitleOutro · title = 'Claude, Scouting.'"
+            ],
+            "captionLines": [
+              "Draft is free. Audio spend only after human reviews drafts.json.",
+              "The transformer is idempotent — re-running never stacks handoffs."
+            ]
+          },
+          "rendered": {
+            "out": "media/B04.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B04.mp3",
+      "actual_duration_s": 24.0,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B04.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T21:35:28"
+      }
+    },
+    {
+      "beat_id": "B05",
+      "act": "mechanism-1",
+      "narration_text": "Law one: every claude-explainer reel should end the same way — Liam hands off from the body, recaps on the artifact card, gives the viewer a prompt to run, and re-reads the title. The uniformity is a user experience guarantee. The viewer always knows what's coming: recap, try it, title. No endings that fade out on nothing.",
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "act": 1,
+            "quote": "Every claude-explainer reel should end the same way: Liam hands off from the body, recaps on the artifact card, gives the viewer a prompt to run, and re-reads the title.",
+            "source": "skills/make/your-turn/SKILL.md — opening",
+            "mechanismLines": [
+              "Three-beat structure: VERDICT → YOUR TURN → TITLE",
+              "Handoff wording: 'Thanks Bear' if Bear body; 'Let's recap' if Liam body",
+              "0.5s lead silence on VERDICT — pause before the recap",
+              "Uniformity = UX guarantee for the viewer"
+            ]
+          },
+          "rendered": {
+            "out": "media/B05.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B05.mp3",
+      "actual_duration_s": 20.16,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B05.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T21:35:28"
+      }
+    },
+    {
+      "beat_id": "B06",
+      "act": "mechanism-2",
+      "narration_text": "Law two: the prompt must be relevant to the video, so it is drafted per reel — never templated. A generic 'try this yourself' prompt is not a YOUR TURN prompt. The prompt is drawn from the reel's material: the mechanism it explained, the artifact it produced. A curious viewer should want to paste it into Claude the moment the video ends.",
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "act": 2,
+            "quote": "The prompt must be RELEVANT to the video, so it is drafted per reel, never templated.",
+            "source": "skills/make/your-turn/SKILL.md — Auto-drafting the YOUR TURN prompt",
+            "mechanismLines": [
+              "Prompt drawn from reel's material: mechanism + artifact",
+              "First person, 3–5 sentences, ending in a concrete multi-part ask",
+              "Grounded in the same mechanism as the video — one step deeper",
+              "Templated prompts are rejected; LLM drafts per slug from narration_text"
+            ]
+          },
+          "rendered": {
+            "out": "media/B06.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B06.mp3",
+      "actual_duration_s": 20.2,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B06.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T21:35:28"
+      }
+    },
+    {
+      "beat_id": "B07",
+      "act": "mechanism-3",
+      "narration_text": "Law three: audio-first — the handoff, the read prompt, and the title re-read are new Liam lines: regenerate audio, then conform. Never hand-time. The transformer edits the beat sheet; audio gen runs after human approval. The idempotent contract means re-running the transformer on an already-updated sheet adds nothing and stacks nothing.",
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "act": 3,
+            "quote": "Audio-first — the handoff, the read prompt, and the title re-read are new Liam lines: regenerate audio, then conform. Never hand-time.",
+            "source": "skills/make/your-turn/SKILL.md — Rules",
+            "mechanismLines": [
+              "Transformer edits beat_sheet.json → then generate_audio_kokoro.py",
+              "Never hand-time durations: audio gen produces actual_duration_s",
+              "Idempotent: re-running never stacks handoffs or re-numbers",
+              "Re-upload is separate human step (new URL, old views lost)"
+            ]
+          },
+          "rendered": {
+            "out": "media/B07.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B07.mp3",
+      "actual_duration_s": 21.74,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B07.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T21:35:28"
+      }
+    },
+    {
+      "beat_id": "BVDT",
+      "act": "verdict",
+      "narration_text": "Claude, Handed Off. The artifact is the three-beat closing block: VERDICT with handoff line, YOUR TURN with a per-reel prompt Liam reads in full, and TITLE re-read. One transformer. Idempotent. Every reel ends the same way.",
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "verdict": "Claude, Handed Off.",
+            "artifactLines": [
+              "Beat 1: ClaudeVerdictArtifact — 0.5s lead + handoff + recap",
+              "Beat 2: ClaudeComposerAsk — YOUR TURN · greeting: 'Your turn.'",
+              "Beat 3: ClaudeTitleOutro — Liam re-reads the title"
+            ],
+            "deliveryLines": [
+              "Idempotent transformer · never stacks handoffs",
+              "Draft prompts → human reviews → apply → re-render",
+              "Prompt = per-reel, relevant, first person, multi-part ask",
+              "Audio-first: regenerate after transform, never hand-time"
+            ]
+          },
+          "rendered": {
+            "out": "media/BVDT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BVDT.mp3",
+      "actual_duration_s": 14.76,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BVDT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T21:35:28"
+      }
+    },
+    {
+      "beat_id": "BHTF",
+      "act": "handoff",
+      "narration_text": "Your turn. Draft the YOUR TURN prompts for your reels. Run the dry-run. Review the drafts.json. Then apply and re-render. Liam, handing off to Bear.",
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "your-turn · your turn",
+            "segment": "Liam, handing off to Bear.",
+            "greeting": "Annyeong, Liam",
+            "command": "python3 skills/make/your-turn/scripts/apply_your_turn.py --root . --drafts drafts.json --dry-run",
+            "runningText": "* draft prompts → dry-run → review → apply → re-render",
+            "output": [
+              "step 1: draft YOUR TURN prompts per slug → drafts.json",
+              "step 2: dry-run to see planned edits",
+              "step 3: review drafts.json (human gate)",
+              "step 4: apply + re-render closing beats"
+            ],
+            "folderLabel": "claude-liam-your-turn/"
+          },
+          "rendered": {
+            "out": "media/BHTF.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BHTF.mp3",
+      "actual_duration_s": 9.94,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BHTF.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T21:35:28"
+      }
+    },
+    {
+      "beat_id": "BOUT",
+      "act": "outro",
+      "narration_text": "Claude, Handed Off. At NikBearBrown. Liam, in for Bear.",
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "Claude, Handed Off.",
+            "handle": "@NikBearBrown",
+            "tagLine": "Liam, in for Bear."
+          },
+          "rendered": {
+            "out": "media/BOUT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BOUT.mp3",
+      "actual_duration_s": 3.73,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BOUT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T21:35:28"
+      }
+    }
+  ]
+}

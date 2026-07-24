@@ -1,0 +1,438 @@
+{
+  "metadata": {
+    "slug": "claude-liam-video-inventory",
+    "title": "Claude, Audited.",
+    "skill": "video-inventory",
+    "brand": "claude-liam",
+    "engine": "kokoro",
+    "voice": "am_onyx",
+    "greeting": "Yassou",
+    "chapter_number": 40,
+    "build": {
+      "at": "2026-07-18T22:19:23",
+      "cut": "master",
+      "filled": 11,
+      "of": 11,
+      "slates": [],
+      "skin_warnings": []
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "role": "OPEN",
+      "narration_text": "Yassou, Liam. Today: video-inventory. Two thousand seven hundred and sixty-two reels across forty-nine books. How long does it take to audit them all? One second. And it never touches a credit. Liam, in for Bear.",
+      "duration_s": 12,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "VIDEO-INVENTORY · SKILL TEARDOWN",
+            "segment": "Liam, in for Bear.",
+            "greeting": "Yassou, Liam.",
+            "command": "python3 runtime/scripts/inventory.py /books",
+            "runningText": "* scan every youtube/ dir → check file presence → write YOUTUBE.MD",
+            "output": [
+              "2762 reels / 49 books → YOUTUBE.MD",
+              "complete:19 | 16:9:255 | 9:16:19",
+              "slate-only:22 | blocked:193",
+              "→ done in ~1s | cost $0.00"
+            ],
+            "folderLabel": "books/*/youtube/*/"
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": 13.97,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B00.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:19:23"
+      }
+    },
+    {
+      "beat_id": "B01",
+      "role": "ANATOMY",
+      "narration_text": "Video-inventory has two parts. A scanner that walks every book's youtube directory and checks which files exist — beat_sheet, review cut, final mp4, layout_audit. And a reporter that writes a single YOUTUBE.MD with the full fleet state: per-reel, per-book, and a summary with totals.",
+      "duration_s": 18,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownAnatomy",
+          "props": {
+            "skillName": "video-inventory",
+            "title": "A skill is a folder.",
+            "files": [
+              {
+                "indent": 0,
+                "icon": "📁",
+                "name": "skills/upload/video-inventory/",
+                "accent": false
+              },
+              {
+                "indent": 1,
+                "icon": "📄",
+                "name": "SKILL.md",
+                "tag": "the audit contract",
+                "accent": true
+              },
+              {
+                "indent": 0,
+                "icon": "📁",
+                "name": "runtime/scripts/",
+                "accent": false
+              },
+              {
+                "indent": 1,
+                "icon": "📄",
+                "name": "inventory.py",
+                "tag": "scan + report",
+                "accent": false
+              },
+              {
+                "indent": 0,
+                "icon": "📄",
+                "name": "YOUTUBE.MD",
+                "tag": "the fleet report",
+                "accent": false
+              }
+            ],
+            "calloutText": "Pure function: input is the filesystem, output is YOUTUBE.MD.",
+            "sparkLine": "Scan. Report. Never touch a file it reads."
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": 18.56,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B01.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:19:23"
+      }
+    },
+    {
+      "beat_id": "B02",
+      "role": "PIPELINE",
+      "narration_text": "The pipeline: for every book, walk youtube. For each reel slug, check: does beat_sheet.json exist? Is there a review cut? A 16:9 final? A 9:16 short? A layout_audit? Count open slates. Assign state: planned, slate-cut, 16:9, 9:16, complete, or blocked. Aggregate totals. Write YOUTUBE.MD. Done.",
+      "duration_s": 20,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownPipeline",
+          "props": {
+            "title": "How video-inventory works.",
+            "inputLabel": "books/ root",
+            "outputLabel": "YOUTUBE.MD",
+            "phases": [
+              {
+                "label": "Walk books/*/youtube/",
+                "desc": "find every reel slug",
+                "accent": false
+              },
+              {
+                "label": "Check files",
+                "desc": "beat_sheet / review / 16:9 / 9:16 / layout_audit",
+                "accent": true
+              },
+              {
+                "label": "Count slates",
+                "desc": "beats with no filled media/<BID>.mp4",
+                "accent": false
+              },
+              {
+                "label": "Assign state",
+                "desc": "planned / slate-cut / 16:9 / 9:16 / complete / blocked",
+                "accent": false
+              },
+              {
+                "label": "Aggregate totals",
+                "desc": "per-book and fleet summary",
+                "accent": false
+              },
+              {
+                "label": "Write YOUTUBE.MD",
+                "desc": "full report, always current",
+                "accent": false
+              }
+            ],
+            "sparkLine": "One pass. Full report. Always reproducible."
+          },
+          "rendered": {
+            "out": "media/B02.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": 21.99,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B02.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:19:23"
+      }
+    },
+    {
+      "beat_id": "B03",
+      "role": "PREDICT",
+      "narration_text": "You ask Claude to audit 2762 reels across 49 books. What prevents it from hitting a context limit or running out of tokens?",
+      "duration_s": 8,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "VIDEO-INVENTORY · PREDICT",
+            "segment": "The Question.",
+            "greeting": "2762 reels.",
+            "command": "Why doesn't auditing 2762 reels hit a context limit?",
+            "runningText": "",
+            "output": []
+          },
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B03.mp3",
+      "actual_duration_s": 9.71,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B03.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:19:23"
+      }
+    },
+    {
+      "beat_id": "B04",
+      "role": "SELF-DEMO",
+      "narration_text": "Free demo: run the actual audit. inventory dot py scans the full books directory — 2762 reels, 49 books. Complete: 19. Sixteen-nine: 255. Blocked: 193. Done in one second, cost zero. The script reads file paths and file sizes, nothing else. No LLM call, no network, no context window.",
+      "duration_s": 22,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeCodeBeat",
+          "props": {
+            "title": "inventory.py — live fleet audit",
+            "code": "python3 runtime/scripts/inventory.py \\\n  /Users/bear/Documents/CoWork/bear-textbooks/books\n\n# [audit] 2762 reels / 49 books\n#   → YOUTUBE.MD\n# complete:19 | 16:9:255 | 9:16:19\n# slate-only:22 | blocked:193\n# done in ~1s | cost $0.00\n\n# Pure filesystem read — no LLM,\n# no network, no context window.",
+            "sparkLine": "2762 reels. 49 books. 1 second. $0.00."
+          },
+          "rendered": {
+            "out": "media/B04.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B04.mp3",
+      "actual_duration_s": 23.49,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B04.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:19:23"
+      }
+    },
+    {
+      "beat_id": "B05",
+      "role": "MECHANISM_1",
+      "narration_text": "Law one: deterministic, not LLM. The audit cannot hit a context limit or stall on a rate limit because it is a script. It reads files, checks existence, counts beats. As the SKILL.md says: the audit is a deterministic script, not an LLM pass — it finishes in one shot and cannot run out of context.",
+      "duration_s": 19,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Deterministic, not LLM.",
+            "body": "Reads files, checks existence, counts beats. No LLM call, no rate limits, no context window. Re-run if interrupted — same result.",
+            "quote": "The audit is a deterministic script, not an LLM pass — it finishes in one shot and cannot run out of context.",
+            "cite": "skills/upload/video-inventory/SKILL.md",
+            "sparkLine": "Scripts finish. LLM passes stall. Know the difference."
+          },
+          "rendered": {
+            "out": "media/B05.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B05.mp3",
+      "actual_duration_s": 20.16,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B05.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:19:23"
+      }
+    },
+    {
+      "beat_id": "B06",
+      "role": "MECHANISM_2",
+      "narration_text": "Law two: pure function. The audit reads the filesystem and writes YOUTUBE.MD. It changes nothing it reads. No credits, no network, no partial state. If you run it twice, you get the same output twice — both reflecting the current disk state. As the SKILL says: a pure function of the filesystem — no partial state, no credits, no network.",
+      "duration_s": 20,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Pure function.",
+            "body": "Input: the filesystem. Output: YOUTUBE.MD. Changes nothing it reads. Run twice, get the same result. Safe at any time.",
+            "quote": "It is a pure function of the filesystem — no partial state, no credits, no network.",
+            "cite": "skills/upload/video-inventory/SKILL.md",
+            "sparkLine": "Pure functions are safe to run. Always."
+          },
+          "rendered": {
+            "out": "media/B06.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B06.mp3",
+      "actual_duration_s": 21.55,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B06.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:19:23"
+      }
+    },
+    {
+      "beat_id": "B07",
+      "role": "MECHANISM_3",
+      "narration_text": "Law three: idempotent and resumable. If Claude Code stalls or restarts mid-audit, just run the command again. It regenerates the full, current report from what's on disk. As the SKILL says: there is nothing to resume and no state to corrupt. The long, limit-prone work is finishing the reels the report flags — not the audit itself.",
+      "duration_s": 20,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Idempotent and resumable.",
+            "body": "Stall? Restart? Re-run. The script regenerates from disk. No partial state. The audit is instant; finishing flagged reels is the long work.",
+            "quote": "There is nothing to resume and no state to corrupt.",
+            "cite": "skills/upload/video-inventory/SKILL.md",
+            "sparkLine": "The audit is a snapshot. Snapshots are cheap."
+          },
+          "rendered": {
+            "out": "media/B07.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B07.mp3",
+      "actual_duration_s": 21.16,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B07.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:19:23"
+      }
+    },
+    {
+      "beat_id": "BVDT",
+      "role": "VERDICT",
+      "narration_text": "Verdict: video-inventory audits the whole fleet in one second by being a script, not an LLM. Pure function: reads the disk, writes the report, changes nothing. Deterministic: re-run anytime. The report tells you what needs finishing — the audit itself is never the bottleneck.",
+      "duration_s": 17,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "artifactTitle": "Verdict",
+            "artifactHeading": "The audit.",
+            "artifactLines": [
+              "Deterministic: a script, not LLM — no context limit, no stall",
+              "Pure function: reads disk, writes YOUTUBE.MD, changes nothing",
+              "Idempotent: re-run anytime — there is nothing to resume"
+            ]
+          },
+          "rendered": {
+            "out": "media/BVDT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BVDT.mp3",
+      "actual_duration_s": 17.94,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BVDT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:19:23"
+      }
+    },
+    {
+      "beat_id": "BHTF",
+      "role": "YOUR_TURN",
+      "narration_text": "Your turn. Run inventory dot py on your books directory. How many reels are blocked by a failed layout audit? What's your 16:9 to complete ratio? Pick one blocked reel and fix the layout issue.",
+      "duration_s": 13,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "YOUR TURN",
+            "segment": "Your fleet.",
+            "greeting": "Your turn.",
+            "command": "python3 runtime/scripts/inventory.py /path/to/books",
+            "runningText": "* scan → check file presence → write YOUTUBE.MD",
+            "output": [
+              "→ check: complete / blocked / slate-only counts",
+              "→ pick one blocked reel, fix the layout gate"
+            ]
+          },
+          "rendered": {
+            "out": "media/BHTF.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BHTF.mp3",
+      "actual_duration_s": 12.93,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BHTF.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:19:23"
+      }
+    },
+    {
+      "beat_id": "BOUT",
+      "role": "OUTRO",
+      "narration_text": "Claude, Audited.",
+      "duration_s": 4,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "Claude, Audited.",
+            "handle": "@NikBearBrown",
+            "subline": "video-inventory skill teardown"
+          },
+          "rendered": {
+            "out": "media/BOUT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BOUT.mp3",
+      "actual_duration_s": 1.11,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BOUT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:19:23"
+      }
+    }
+  ]
+}

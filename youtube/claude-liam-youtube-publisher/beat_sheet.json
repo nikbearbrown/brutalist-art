@@ -1,0 +1,439 @@
+{
+  "metadata": {
+    "slug": "claude-liam-youtube-publisher",
+    "title": "Claude, Published.",
+    "skill": "youtube-publisher",
+    "brand": "claude-liam",
+    "engine": "kokoro",
+    "voice": "am_onyx",
+    "greeting": "Privet",
+    "chapter_number": 43,
+    "build": {
+      "at": "2026-07-18T22:51:45",
+      "cut": "master",
+      "filled": 11,
+      "of": 11,
+      "slates": [],
+      "skin_warnings": []
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "role": "OPEN",
+      "narration_text": "Privet, Liam. Today: youtube-publisher. NotebookLM gives you a finished video. This skill gives it a Medhavy bookend, a timestamped description, a chapter number, and a playlist position — without touching a frame of the deep dive. Liam, in for Bear.",
+      "duration_s": 14,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "YOUTUBE-PUBLISHER · SKILL TEARDOWN",
+            "segment": "Liam, in for Bear.",
+            "greeting": "Privet, Liam.",
+            "command": "python scripts/pipeline.py Video.mp4 --chapters chapters/",
+            "runningText": "* transcribe → match chapter → bookend → sandwich → describe → publish",
+            "output": [
+              "ch1 What is Brutalist? → PLG9H-C6rp5RU",
+              "ch2 Installs, .env & Credentials",
+              "ch3 When Cowork Can Help Claude Code",
+              "→ 3 videos, chapter order confirmed | dry-run"
+            ],
+            "folderLabel": "<slug>/mp4/<slug>.mp4"
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": 16.13,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B00.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:51:45"
+      }
+    },
+    {
+      "beat_id": "B01",
+      "role": "ANATOMY",
+      "narration_text": "Youtube-publisher has three beats. B00: a Medhavy Remotion intro with AI narration naming the chapter. B50: the raw NotebookLM video — untouched, its own audio, never re-encoded. B99: the Medhavy outro. Plus the tooling around it: a Whisper transcript, a chapter matcher, a description builder, and publish_playlist.py for chapter-ordered upload.",
+      "duration_s": 20,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownAnatomy",
+          "props": {
+            "skillName": "youtube-publisher",
+            "title": "A skill is a folder.",
+            "files": [
+              {
+                "indent": 0,
+                "icon": "📁",
+                "name": "skills/upload/youtube-publisher/",
+                "accent": false
+              },
+              {
+                "indent": 1,
+                "icon": "📄",
+                "name": "SKILL.md",
+                "tag": "the publish contract",
+                "accent": true
+              },
+              {
+                "indent": 1,
+                "icon": "📁",
+                "name": "scripts/",
+                "tag": "pipeline.py + publish_playlist.py",
+                "accent": false
+              },
+              {
+                "indent": 0,
+                "icon": "📄",
+                "name": "beat_sheet.json",
+                "tag": "B00 / B50 / B99",
+                "accent": false
+              },
+              {
+                "indent": 0,
+                "icon": "📄",
+                "name": "<slug>-youtube.md",
+                "tag": "description draft",
+                "accent": false
+              }
+            ],
+            "calloutText": "B50 is the NotebookLM body — untouched, its own audio, never re-narrated.",
+            "sparkLine": "Bookend. Match. Describe. Publish in chapter order."
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": 24.09,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B01.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:51:45"
+      }
+    },
+    {
+      "beat_id": "B02",
+      "role": "PIPELINE",
+      "narration_text": "The pipeline: transcribe with faster-whisper. Match to a chapter — human gate. Write B00, B50, B99 beat sheet. Voice only the bookends — B50 is never sent to TTS. Render bookends via Remotion. Sandwich all three into the upload master. Propose chapter markers. Build and rewrite the description — human gate. Publish in chapter order — human gate. Defaults to unlisted until the audit passes.",
+      "duration_s": 24,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownPipeline",
+          "props": {
+            "title": "How youtube-publisher works.",
+            "inputLabel": "NotebookLM .mp4",
+            "outputLabel": "YouTube episode",
+            "phases": [
+              {
+                "label": "Transcribe",
+                "desc": "faster-whisper → transcript.json + .txt",
+                "accent": false
+              },
+              {
+                "label": "Match chapter",
+                "desc": "TF-IDF ranks → HUMAN GATE: confirm chapter number",
+                "accent": true
+              },
+              {
+                "label": "Bookend + sandwich",
+                "desc": "B00/B99 TTS → Remotion → concat with B50 untouched",
+                "accent": false
+              },
+              {
+                "label": "Build description",
+                "desc": "seed draft → HUMAN GATE: rewrite placeholders",
+                "accent": true
+              },
+              {
+                "label": "Publish in chapter order",
+                "desc": "HUMAN GATE: confirm dry-run order → upload",
+                "accent": false
+              },
+              {
+                "label": "Defaults unlisted",
+                "desc": "public is a manual Studio flip",
+                "accent": false
+              }
+            ],
+            "sparkLine": "Three human gates. Body untouched. Chapter order first."
+          },
+          "rendered": {
+            "out": "media/B02.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": 26.3,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B02.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:51:45"
+      }
+    },
+    {
+      "beat_id": "B03",
+      "role": "PREDICT",
+      "narration_text": "You have thirty NotebookLM videos and want them in a chapter-ordered playlist. What is the single most dangerous error the automation could make silently?",
+      "duration_s": 9,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "YOUTUBE-PUBLISHER · PREDICT",
+            "segment": "The Question.",
+            "greeting": "30 videos.",
+            "command": "What's the most dangerous silent error in publishing 30 videos?",
+            "runningText": "",
+            "output": []
+          },
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B03.mp3",
+      "actual_duration_s": 9.24,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B03.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:51:45"
+      }
+    },
+    {
+      "beat_id": "B04",
+      "role": "SELF-DEMO",
+      "narration_text": "Free demo: the actual dry-run output from the first Brutalist publish — three videos, correct chapter order, no upload, no quota spent. Playlist found. Chapter numbers confirmed. This is the preview gate before any video goes live. The command: publish_playlist.py with dash-dash dry-run. Output: your chapter order before you commit.",
+      "duration_s": 22,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeCodeBeat",
+          "props": {
+            "title": "youtube-publisher — dry-run preview",
+            "code": "python3 scripts/publish_playlist.py \\\n  youtube/what-is-brutalist youtube/installs \\\n  youtube/when-cowork-helps-claude-code \\\n  --playlist 'Brutalist' --dry-run\n\n# [yt] publish order (by chapter):\n#   ch1  What is Brutalist?\n#   ch2  Installs, .env & Credentials\n#   ch3  When Cowork Can Help Claude Code\n# [yt] found playlist 'Brutalist' → PLG9H-...\n# → no upload | no quota | $0.00",
+            "sparkLine": "Dry-run first. Confirm order. Then publish."
+          },
+          "rendered": {
+            "out": "media/B04.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B04.mp3",
+      "actual_duration_s": 21.25,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B04.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:51:45"
+      }
+    },
+    {
+      "beat_id": "B05",
+      "role": "MECHANISM_1",
+      "narration_text": "Law one: body untouched. The NotebookLM video is never re-encoded or re-narrated. As the SKILL says: keep the NotebookLM body untouched. The value of this skill is that it doesn't re-encode or re-narrate the deep dive — it only bookends and publishes it. B50 skips TTS. It skips Remotion. It goes straight into the sandwich as-is.",
+      "duration_s": 19,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Body untouched.",
+            "body": "B50 skips TTS. Skips Remotion. Goes into the sandwich as-is. Your NotebookLM hours are never re-encoded, re-narrated, or trimmed.",
+            "quote": "Keep the NotebookLM body untouched. The value of this skill is that it doesn't re-encode or re-narrate the deep dive; it only bookends and publishes it.",
+            "cite": "skills/upload/youtube-publisher/SKILL.md",
+            "sparkLine": "Bookends wrap it. The deep dive is sacred."
+          },
+          "rendered": {
+            "out": "media/B05.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B05.mp3",
+      "actual_duration_s": 22.59,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B05.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:51:45"
+      }
+    },
+    {
+      "beat_id": "B06",
+      "role": "MECHANISM_2",
+      "narration_text": "Law two: chapter match gates playlist position. TF-IDF ranks every chapter and the top hit sets the position. The auto-match is usually right — but as the SKILL says: a wrong match silently reorders the playlist. That's why the chapter match is a human gate. Show the ranking. Confirm before continuing. Override if the auto-match is wrong.",
+      "duration_s": 19,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Chapter match gates order.",
+            "body": "TF-IDF auto-match is usually right. But confirm it — wrong chapter number silently puts your video in the wrong playlist slot. Show the ranking; wait for human sign-off.",
+            "quote": "a wrong match silently reorders the playlist",
+            "cite": "skills/upload/youtube-publisher/SKILL.md",
+            "sparkLine": "Auto-match is fast. Wrong match is invisible. Confirm it."
+          },
+          "rendered": {
+            "out": "media/B06.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B06.mp3",
+      "actual_duration_s": 21.99,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B06.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:51:45"
+      }
+    },
+    {
+      "beat_id": "B07",
+      "role": "MECHANISM_3",
+      "narration_text": "Law three: three gates, then publish. Chapter match, description rewrite, upload confirm. As the SKILL says: treat steps 2, 8, and 9 as the places to slow down. The transcript and chapter match are cheap to redo. The upload is not. And publishing defaults to unlisted — public is a manual Studio flip. The human decides when the video goes live.",
+      "duration_s": 20,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Three gates, then publish.",
+            "body": "Chapter match → description rewrite → upload confirm. Defaults unlisted. Public is a manual Studio flip. The human decides when the video goes live.",
+            "quote": "Treat steps 2, 8, and 9 as the places to slow down.",
+            "cite": "skills/upload/youtube-publisher/SKILL.md",
+            "sparkLine": "The upload is not cheap to undo. Slow down at the gates."
+          },
+          "rendered": {
+            "out": "media/B07.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B07.mp3",
+      "actual_duration_s": 22.42,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B07.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:51:45"
+      }
+    },
+    {
+      "beat_id": "BVDT",
+      "role": "VERDICT",
+      "narration_text": "Verdict: youtube-publisher turns a NotebookLM video into a published, chapter-ordered YouTube episode — body untouched, bookends added, three human gates before anything goes live. Dry-run first. Confirm chapter order. Publish unlisted. Public is your call.",
+      "duration_s": 16,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "artifactTitle": "Verdict",
+            "artifactHeading": "The episode.",
+            "artifactLines": [
+              "Body untouched: B50 never re-encoded, never re-narrated",
+              "Chapter match gates order: wrong match silently reorders playlist",
+              "Three gates: match → describe → upload; public is a manual flip"
+            ]
+          },
+          "rendered": {
+            "out": "media/BVDT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BVDT.mp3",
+      "actual_duration_s": 17.49,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BVDT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:51:45"
+      }
+    },
+    {
+      "beat_id": "BHTF",
+      "role": "YOUR_TURN",
+      "narration_text": "Your turn. Run publish_playlist.py with dash-dash dry-run on your NotebookLM videos. Does the chapter order match what you expect? Pick one video whose chapter match looks wrong and fix it with dash-dash chapter.",
+      "duration_s": 12,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "YOUR TURN",
+            "segment": "Your playlist.",
+            "greeting": "Your turn.",
+            "command": "python scripts/publish_playlist.py --root notebooklm/ --dry-run",
+            "runningText": "* transcribe → match → order → preview",
+            "output": [
+              "→ confirm chapter order before publishing",
+              "→ fix wrong match with --chapter path/to/NN.md"
+            ]
+          },
+          "rendered": {
+            "out": "media/BHTF.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BHTF.mp3",
+      "actual_duration_s": 13.38,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BHTF.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:51:45"
+      }
+    },
+    {
+      "beat_id": "BOUT",
+      "role": "OUTRO",
+      "narration_text": "Claude, Published.",
+      "duration_s": 4,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "Claude, Published.",
+            "handle": "@NikBearBrown",
+            "subline": "youtube-publisher skill teardown"
+          },
+          "rendered": {
+            "out": "media/BOUT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BOUT.mp3",
+      "actual_duration_s": 1.13,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BOUT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T22:51:45"
+      }
+    }
+  ]
+}
