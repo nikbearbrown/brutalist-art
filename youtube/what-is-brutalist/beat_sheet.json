@@ -24,7 +24,22 @@
       "Manim",
       "explainer",
       "AI filmmaking"
-    ]
+    ],
+    "build": {
+      "at": "2026-07-20T21:31:34",
+      "cut": "master",
+      "filled": 12,
+      "of": 18,
+      "slates": [
+        "B00",
+        "B04",
+        "B10",
+        "B12",
+        "B13",
+        "B99"
+      ],
+      "skin_warnings": []
+    }
   },
   "beats": [
     {
@@ -54,7 +69,14 @@
       },
       "estimated_duration_s": 9,
       "audio_file": "mp3/beat-B00.mp3",
-      "actual_duration_s": 15.46
+      "actual_duration_s": 15.46,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-20T21:31:34",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for B00"
+      }
     },
     {
       "beat_id": "B00B",
@@ -73,7 +95,13 @@
         "voice_env": "ELEVENLABS_VOICE_NIKBEARBROWN"
       },
       "audio_file": "mp3/beat-B00B.mp3",
-      "actual_duration_s": 23.07
+      "actual_duration_s": 23.07,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B00B.mp4",
+        "filled_by": "manim",
+        "at": "2026-07-20T21:31:34"
+      }
     },
     {
       "beat_id": "B01",
@@ -97,7 +125,13 @@
       },
       "estimated_duration_s": 8,
       "audio_file": "mp3/beat-B01.mp3",
-      "actual_duration_s": 9.43
+      "actual_duration_s": 9.43,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B01.mp4",
+        "filled_by": "manim",
+        "at": "2026-07-20T21:31:34"
+      }
     },
     {
       "beat_id": "B02",
@@ -121,7 +155,13 @@
       },
       "estimated_duration_s": 8,
       "audio_file": "mp3/beat-B02.mp3",
-      "actual_duration_s": 5.93
+      "actual_duration_s": 5.93,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B02.mp4",
+        "filled_by": "manim",
+        "at": "2026-07-20T21:31:34"
+      }
     },
     {
       "beat_id": "B03",
@@ -145,7 +185,13 @@
       },
       "estimated_duration_s": 11,
       "audio_file": "mp3/beat-B03.mp3",
-      "actual_duration_s": 11.55
+      "actual_duration_s": 11.55,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B03.mp4",
+        "filled_by": "manim",
+        "at": "2026-07-20T21:31:34"
+      }
     },
     {
       "beat_id": "B04",
@@ -170,7 +216,14 @@
       },
       "estimated_duration_s": 8,
       "audio_file": "mp3/beat-B04.mp3",
-      "actual_duration_s": 7.13
+      "actual_duration_s": 7.13,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-20T21:31:34",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for B04"
+      }
     },
     {
       "beat_id": "B05",
@@ -194,7 +247,13 @@
       },
       "estimated_duration_s": 11,
       "audio_file": "mp3/beat-B05.mp3",
-      "actual_duration_s": 11.65
+      "actual_duration_s": 11.65,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B05.mp4",
+        "filled_by": "manim",
+        "at": "2026-07-20T21:31:34"
+      }
     },
     {
       "beat_id": "B06",
@@ -219,7 +278,13 @@
       },
       "estimated_duration_s": 14,
       "audio_file": "mp3/beat-B06.mp3",
-      "actual_duration_s": 16.61
+      "actual_duration_s": 16.61,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B06.mp4",
+        "filled_by": "manim",
+        "at": "2026-07-20T21:31:34"
+      }
     },
     {
       "beat_id": "B07",
@@ -244,7 +309,13 @@
       },
       "estimated_duration_s": 7,
       "audio_file": "mp3/beat-B07.mp3",
-      "actual_duration_s": 5.2
+      "actual_duration_s": 5.2,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B07.mp4",
+        "filled_by": "manim",
+        "at": "2026-07-20T21:31:34"
+      }
     },
     {
       "beat_id": "B08",
@@ -269,7 +340,13 @@
       },
       "estimated_duration_s": 13,
       "audio_file": "mp3/beat-B08.mp3",
-      "actual_duration_s": 14.99
+      "actual_duration_s": 14.99,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B08.mp4",
+        "filled_by": "manim",
+        "at": "2026-07-20T21:31:34"
+      }
     },
     {
       "beat_id": "B08B",
@@ -294,7 +371,13 @@
       },
       "estimated_duration_s": 14,
       "audio_file": "mp3/beat-B08B.mp3",
-      "actual_duration_s": 17.5
+      "actual_duration_s": 17.5,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B08B.mp4",
+        "filled_by": "manim",
+        "at": "2026-07-20T21:31:34"
+      }
     },
     {
       "beat_id": "B09",
@@ -318,7 +401,13 @@
       },
       "estimated_duration_s": 9,
       "audio_file": "mp3/beat-B09.mp3",
-      "actual_duration_s": 7.94
+      "actual_duration_s": 7.94,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B09.mp4",
+        "filled_by": "manim",
+        "at": "2026-07-20T21:31:34"
+      }
     },
     {
       "beat_id": "B10",
@@ -347,7 +436,14 @@
       },
       "estimated_duration_s": 14,
       "audio_file": "mp3/beat-B10.mp3",
-      "actual_duration_s": 15.23
+      "actual_duration_s": 15.23,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-20T21:31:34",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for B10"
+      }
     },
     {
       "beat_id": "B11",
@@ -372,7 +468,13 @@
       },
       "estimated_duration_s": 15,
       "audio_file": "mp3/beat-B11.mp3",
-      "actual_duration_s": 19.83
+      "actual_duration_s": 19.83,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B11.mp4",
+        "filled_by": "manim",
+        "at": "2026-07-20T21:31:34"
+      }
     },
     {
       "beat_id": "B12",
@@ -401,7 +503,14 @@
       },
       "estimated_duration_s": 10,
       "audio_file": "mp3/beat-B12.mp3",
-      "actual_duration_s": 4.21
+      "actual_duration_s": 4.21,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-20T21:31:34",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for B12"
+      }
     },
     {
       "beat_id": "B13",
@@ -426,7 +535,14 @@
       },
       "estimated_duration_s": 10,
       "audio_file": "mp3/beat-B13.mp3",
-      "actual_duration_s": 4.62
+      "actual_duration_s": 4.62,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-20T21:31:34",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for B13"
+      }
     },
     {
       "beat_id": "B14",
@@ -450,7 +566,13 @@
       },
       "estimated_duration_s": 14,
       "audio_file": "mp3/beat-B14.mp3",
-      "actual_duration_s": 15.7
+      "actual_duration_s": 15.7,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B14.mp4",
+        "filled_by": "manim",
+        "at": "2026-07-20T21:31:34"
+      }
     },
     {
       "beat_id": "B99",
@@ -475,7 +597,14 @@
       },
       "estimated_duration_s": 8,
       "audio_file": "mp3/beat-B99.mp3",
-      "actual_duration_s": 8.91
+      "actual_duration_s": 8.91,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-20T21:31:34",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for B99"
+      }
     }
   ]
 }
