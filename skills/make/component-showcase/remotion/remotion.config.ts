@@ -34,6 +34,13 @@ Config.overrideWebpackConfig((current) => ({
       react: path.join(NM, 'react'),
       'react-dom': path.join(NM, 'react-dom'),
       remotion: path.join(NM, 'remotion'),
+      zod: path.join(NM, 'zod'),
+      // Explicit aliases for all @remotion/* used by onda components imported from vox/.
+      // Without these, webpack walks up from vox/'s dir and misses this project's node_modules.
+      '@remotion/motion-blur': path.join(NM, '@remotion/motion-blur'),
+      '@remotion/paths': path.join(NM, '@remotion/paths'),
+      '@remotion/media-utils': path.join(NM, '@remotion/media-utils'),
+      '@remotion/player': path.join(NM, '@remotion/player'),
     },
   },
 }));

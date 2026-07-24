@@ -1,0 +1,133 @@
+{
+  "slug": "medhavy-preparing-class-lecture",
+  "totalFrames": 4071,
+  "beats": [
+    {
+      "id": "B00",
+      "kind": "ClaudeComposerAsk",
+      "frames": 348,
+      "audio": "mp3-medhavy-preparing-class-lecture/beat-B00.mp3",
+      "props": {
+        "greeting": "Sawadee, Medhavy",
+        "topic": "CLAUDE · FOR EDUCATORS",
+        "segment": "Claude, For Educators",
+        "command": "plan Monday — differentiated three ways",
+        "runningText": "drafting the lesson plan…",
+        "folderLabel": "@Medhavy",
+        "output": [
+          "lesson plan drafted in minutes",
+          "three readiness levels from one prompt",
+          "every source named, every line judged by you"
+        ]
+      }
+    },
+    {
+      "id": "B01",
+      "kind": "HaiConceptCard",
+      "frames": 573,
+      "audio": "mp3-medhavy-preparing-class-lecture/beat-B01.mp3",
+      "props": {
+        "heading": "The lesson plan is the first safe place to start.",
+        "body": "Claude drafts — it doesn't know your students, your timing constraints, or your school's context, so what it produces is always a starting point. You edit: cut what doesn't fit, adjust timing, add the examples that will actually land for this particular class. The draft takes two minutes. The editing is where your expertise shows.",
+        "sparkLine": "Drafting, not deciding."
+      }
+    },
+    {
+      "id": "B02",
+      "kind": "HaiConceptCard",
+      "frames": 533,
+      "audio": "mp3-medhavy-preparing-class-lecture/beat-B02.mp3",
+      "props": {
+        "heading": "Differentiation used to mean three separate plans for three tiers of learner.",
+        "body": "Now it means one prompt with three outputs: the same lesson adapted for students who are behind, students who are on track, and students who are ready to go deeper. You review all three, select the elements that fit, and merge them. One Sunday task, not three.",
+        "sparkLine": "Three levels, one evening."
+      }
+    },
+    {
+      "id": "B03",
+      "kind": "HaiTwoColumnCard",
+      "frames": 542,
+      "audio": "mp3-medhavy-preparing-class-lecture/beat-B03.mp3",
+      "props": {
+        "sparkLine": "More of you, not less.",
+        "leftHeader": "what Claude drafts",
+        "leftItems": [
+          "lesson structure + standard citations",
+          "three differentiation levels",
+          "exit ticket questions"
+        ],
+        "rightHeader": "what you own",
+        "rightItems": [
+          "verify every source",
+          "choose which student sees which level",
+          "decide what reaches the room"
+        ]
+      }
+    },
+    {
+      "id": "B04",
+      "kind": "HaiConceptCard",
+      "frames": 527,
+      "audio": "mp3-medhavy-preparing-class-lecture/beat-B04.mp3",
+      "props": {
+        "heading": "The 4pm routine: exit tickets arrive from third period.",
+        "body": "You hand them to Claude with a prompt: what are the three most common misconceptions in these student responses? In two minutes you have a diagnostic. You glance at the output, spot-check two or three responses yourself, and use the pattern in tomorrow's opening five minutes.",
+        "sparkLine": "More of you, not less."
+      }
+    },
+    {
+      "id": "B05",
+      "kind": "HaiConceptCard",
+      "frames": 409,
+      "audio": "mp3-medhavy-preparing-class-lecture/beat-B05.mp3",
+      "props": {
+        "heading": "Before the verdict: you're running this routine every day.",
+        "body": "Lesson draft on Sunday, differentiation in one prompt, exit ticket analysis at 4pm. What's the thing that would make this routine break down — the step you'd be most tempted to skip?",
+        "sparkLine": "Commit before the reveal."
+      }
+    },
+    {
+      "id": "B06",
+      "kind": "ClaudeVerdictArtifact",
+      "frames": 538,
+      "audio": "mp3-medhavy-preparing-class-lecture/beat-B06.mp3",
+      "props": {
+        "sparkLine": "",
+        "artifactTitle": "Claude, Preparing Class — one card",
+        "artifactHeading": "The discipline",
+        "artifactLines": [
+          "Drafting, not deciding: ninety seconds to a draft that names the standard per section. That's the material you judge.",
+          "Three levels, one evening: one prompt, three readiness tracks. You still decide which student sees which.",
+          "The review discipline: nothing reaches students unjudged. Verify sources. Check every section. The draft is the first pass, not the lesson.",
+          "The 4pm routine: exit tickets in, tomorrow's plan out before you drive home. Clerical work to Claude, judgment stays with you.",
+          "AI did: draft the lesson, suggest the levels · you do: judge every line · support fades at: the moment the judging is skipped"
+        ]
+      }
+    },
+    {
+      "id": "B07",
+      "kind": "ClaudeComposerAsk",
+      "frames": 414,
+      "audio": "mp3-medhavy-preparing-class-lecture/beat-B07.mp3",
+      "props": {
+        "greeting": "Your turn.",
+        "topic": "CLAUDE · FOR EDUCATORS",
+        "segment": "Claude, For Educators",
+        "command": "Write a lesson plan for [grade level] [subject], aligned to [state standard]. Include: objective, warm-up, direct instruction, guided practice, and exit ticket. Cite the specific standard for each section. Produce three versions: below grade readiness, at grade readiness, and above grade readiness. I will judge every line and verify every source before anything reaches students.",
+        "runningText": "drafting three levels…",
+        "folderLabel": "@Medhavy"
+      }
+    },
+    {
+      "id": "B08",
+      "kind": "ClaudeTitleOutro",
+      "frames": 187,
+      "audio": "mp3-medhavy-preparing-class-lecture/beat-B08.mp3",
+      "props": {
+        "title": "Claude, Preparing Class.",
+        "handle": "@Medhavy",
+        "subline": "subscribe · three levels, one evening"
+      }
+    }
+  ]
+}

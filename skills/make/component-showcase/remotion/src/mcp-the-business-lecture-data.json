@@ -1,0 +1,116 @@
+{
+  "slug": "mcp-the-business-lecture",
+  "totalFrames": 3755,
+  "beats": [
+    {
+      "id": "B00",
+      "kind": "ClaudeComposerAsk",
+      "frames": 377,
+      "audio": "mp3-mcp-the-business-lecture/beat-B00.mp3",
+      "props": {
+        "greeting": "Shalom, Medhavy",
+        "topic": "MEDHAVY · THE BUSINESS",
+        "segment": "What the Money Buys",
+        "command": "what exactly am I paying for?",
+        "runningText": "opening the ledger…",
+        "folderLabel": "@Medhavy"
+      }
+    },
+    {
+      "id": "B01",
+      "kind": "HaiConceptCard",
+      "frames": 501,
+      "audio": "mp3-mcp-the-business-lecture/beat-B01.mp3",
+      "props": {
+        "heading": "The shape is proven: Midjourney and Higgsfield sell subscriptions to starting po",
+        "body": "The AI capability is commoditizing; the curated corpus and the workflow defaults are what you're paying for. Subscription-to-connector is a model the market has already validated in adjacent creative categories.",
+        "sparkLine": "A proven shape."
+      }
+    },
+    {
+      "id": "B02",
+      "kind": "HaiConceptCard",
+      "frames": 486,
+      "audio": "mp3-mcp-the-business-lecture/beat-B02.mp3",
+      "props": {
+        "heading": "What the money buys is the starting point — the fact-checked corpus, the pedagog",
+        "body": "You keep your Claude subscription. The Medhavy subscription adds the ingredient layer that makes the generation trustworthy.",
+        "sparkLine": "The starting point is the product."
+      }
+    },
+    {
+      "id": "B03",
+      "kind": "HaiConceptCard",
+      "frames": 519,
+      "audio": "mp3-mcp-the-business-lecture/beat-B03.mp3",
+      "props": {
+        "heading": "The timing: the substrate went mainstream.",
+        "body": "Claude for Education launched at scale in 2025. The audience that would use an education MCP connector — teachers with Claude access — exists now at a scale it didn't two years ago. The distribution window opened when Claude for Education launched.",
+        "sparkLine": "The buyers are arriving."
+      }
+    },
+    {
+      "id": "B04",
+      "kind": "HaiConceptCard",
+      "frames": 421,
+      "audio": "mp3-mcp-the-business-lecture/beat-B04.mp3",
+      "props": {
+        "heading": "Predict the cost of distribution in tracks one and two.",
+        "body": "Remember: the corpus is already built, the server is already running, the content is already public. What does it cost to add a new subscriber on the consumer track versus the institutional track?",
+        "sparkLine": "Distribution is a URL."
+      }
+    },
+    {
+      "id": "B05",
+      "kind": "HaiConceptCard",
+      "frames": 501,
+      "audio": "mp3-mcp-the-business-lecture/beat-B05.mp3",
+      "props": {
+        "heading": "The institutional lane comes last, on purpose — entered with usage evidence from",
+        "body": "Individual subscribers and educational institution pilots produce the outcome data. Institutional procurement requires outcome data. The sequence is built to produce what the next stage needs.",
+        "sparkLine": "Earn the third track."
+      }
+    },
+    {
+      "id": "B06",
+      "kind": "ClaudeVerdictArtifact",
+      "frames": 484,
+      "audio": "mp3-mcp-the-business-lecture/beat-B06.mp3",
+      "props": {
+        "artifactTitle": "What the Money Buys — one page",
+        "artifactHeading": "The business",
+        "artifactLines": [
+          "Model: Midjourney/Higgsfield-shaped — subscriptions + credits on a connector.",
+          "Product: the starting point — spine, defaults, decision log, exercises. Generation stays commodity.",
+          "Timing: education runs on MCP now — Canvas · Panopto · Wiley; U.S. K-12 teachers free since July 2026.",
+          "Sequence: local proof → public connector → institutions, with usage evidence in hand."
+        ]
+      }
+    },
+    {
+      "id": "B07",
+      "kind": "ClaudeComposerAsk",
+      "frames": 304,
+      "audio": "mp3-mcp-the-business-lecture/beat-B07.mp3",
+      "props": {
+        "greeting": "Your turn.",
+        "topic": "MEDHAVY · THE BUSINESS",
+        "segment": "What the Money Buys",
+        "command": "Reply with one course you would pay to have built well. We will return week one — with its sources and its decision log.",
+        "runningText": "taking the order…",
+        "folderLabel": "@Medhavy"
+      }
+    },
+    {
+      "id": "B08",
+      "kind": "ClaudeTitleOutro",
+      "frames": 162,
+      "audio": "mp3-mcp-the-business-lecture/beat-B08.mp3",
+      "props": {
+        "title": "What the Money Buys.",
+        "handle": "@MedhavyAI",
+        "subline": "a pitch in seven parts · 7 of 7"
+      }
+    }
+  ]
+}

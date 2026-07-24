@@ -4,9 +4,9 @@ description: >
   Build a Medhavy-register "Build it with Claude Code + Manim" reel for a physics or
   math concept — the workflow video, NOT the physics explainer. Subject is the
   prompt→read→run→check→change loop; the chapter concept is the running example.
-  Use when the user types `simulation <book>` or `simulation <chapter>` or asks to
+  Use when the user types `simulation [book]` or `simulation [chapter]` or asks to
   make a Claude Code + Manim sim reel. Register: Medhavy (Wonder). Output: a
-  beat_sheet.json + scenes.py ready for `vox_run.sh`.
+  beat_sheet.json + scenes.py ready for `run.sh`.
 ---
 
 # simulation — the Claude Code + Manim workflow reel
@@ -91,7 +91,7 @@ errors before a wasted render. This is not optional.
 #### Act 3 — RUN (Manim scene, `scenes.py`)
 The running simulation. Show it for real; no placeholder.
 
-The Manim scene is in `scenes.py` (class `B{N}_<ConceptRun>`). It must:
+The Manim scene is in `scenes.py` (class `B{N}_[ConceptRun]`). It must:
 - Encode the physics correctly (gate below).
 - Follow `VISUAL-RULES.md`: short tags only, spectral colors for light, safe-area
   margins, no sentence-length labels.
@@ -149,13 +149,13 @@ From `VISUAL-RULES.md` — apply to every `scenes.py` scene:
 |---|---|---|
 | `beat_sheet.json` | reel folder | single source of truth: durations, tts, props |
 | `generate_audio.py` | `scripts/` | Gate P → ElevenLabs TTS → `mp3/` |
-| `vox_run.sh` | `scripts/` | Gate A/W/B → Manim renders → compile → review mp4 |
-| `vox_compile.py` | `scripts/` | assembles per-beat video + audio |
+| `run.sh` | `scripts/` | Gate A/W/B → Manim renders → compile → review mp4 |
+| `compile.py` | `scripts/` | assembles per-beat video + audio |
 | `static_scene_check.py` | `tmp/qc-tooling/` | Gate A |
 | `wcag_margin_check.py` | `tmp/qc-tooling/` | Gate W |
 | `manim_layout_audit.py` | `tmp/qc-tooling/` | Gate B |
 | `animated_graphics.py` | `aspects/explainer/vox-explainer/manim/` | Manim palette + components |
-| Onda terminal/code-block | `aspects/remotion-pass/remotion/` | MedhavyTerminalAsk, MedhavyCodeBlock |
+| Onda terminal/code-block | `runtime/remotion/` | MedhavyTerminalAsk, MedhavyCodeBlock |
 | `REGISTERS.md` | `vox/` | outro lookup + tts substitution table |
 | `PRONUNCIATION.md` | `vox/` | pronunciation dictionary |
 
@@ -166,24 +166,24 @@ Cross-reference `RIFFING.md` in `books/brutalist/remotion/` for riff doctrine
 
 ## Commands
 
-### `simulation <book-folder>` — scout + plan
+### `simulation [book-folder]` — scout + plan
 1. Read `MEDHAVY.md`, `VISUAL-RULES.md`, `REGISTERS.md`.
 2. Scan the book's chapters for simulatable concepts (see Front-end above).
 3. Propose: one deep sim or reel of 3–4. State which concepts and why.
 4. Wait for approval before writing anything.
 
-### `simulation <chapter file>` — build from a specific chapter
+### `simulation [chapter file]` — build from a specific chapter
 Same as above, restricted to that chapter.
 
-### `simulation build <slug>` — execute the build
+### `simulation build [slug]` — execute the build
 After the plan is approved:
 1. Write `FACTCHECK.md`, `SHOTLIST.md`, `PEDAGOGY.md` (with `VERDICT: PASS`).
 2. Write `beat_sheet.json` (B00 Medhavy intro → content beats → B_last Medhavy outro).
-3. Write `scenes.py` (one class per Manim beat, named `B{N}_<ConceptRun>`).
-4. Run Gate A + W (pre-flight): `VOX_FACTS=0 bash vox/scripts/vox_run.sh <reel>`.
+3. Write `scenes.py` (one class per Manim beat, named `B{N}_[ConceptRun]`).
+4. Run Gate A + W (pre-flight): `VOX_FACTS=0 bash scripts/run.sh [reel]`.
 5. Fix gate failures. Cap at 3 attempts; stop and report if still failing.
-6. Generate audio: `python3 vox/scripts/generate_audio.py <reel>`.
-7. Run full build: `bash vox/scripts/vox_run.sh <reel>`.
-8. Deliver: `<reel>/<slug>-review.mp4`.
+6. Generate audio: `python3 vox/scripts/generate_audio.py [reel]`.
+7. Run full build: `bash scripts/run.sh [reel]`.
+8. Deliver: `[reel]/[slug]-review.mp4`.
 
-For the 9:16 Short: run `python3 vox/scripts/vox_short.py <reel> --only <segment-beats> --handle @MedhavyAI --no-endcard`, write `short/scenes.py` for portrait Manim beats, re-run gates on `short/`.
+For the 9:16 Short: run `python3 vox/scripts/vox_short.py [reel] --only [segment-beats] --handle @MedhavyAI --no-endcard`, write `short/scenes.py` for portrait Manim beats, re-run gates on `short/`.

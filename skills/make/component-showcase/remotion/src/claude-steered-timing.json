@@ -1,0 +1,11 @@
+[
+  { "id": "B00", "frames": 464, "audio": "mp3/beat-B00.mp3", "duration_s": 15.05 },
+  { "id": "B01", "frames": 540, "audio": "mp3/beat-B01.mp3", "duration_s": 17.58 },
+  { "id": "B02", "frames": 665, "audio": "mp3/beat-B02.mp3", "duration_s": 21.76 },
+  { "id": "B03", "frames": 599, "audio": "mp3/beat-B03.mp3", "duration_s": 19.54 },
+  { "id": "B04", "frames": 604, "audio": "mp3/beat-B04.mp3", "duration_s": 19.72 },
+  { "id": "B05", "frames": 684, "audio": "mp3/beat-B05.mp3", "duration_s": 22.39 },
+  { "id": "B06", "frames": 585, "audio": "mp3/beat-B06.mp3", "duration_s": 19.07 },
+  { "id": "B07", "frames": 741, "audio": "mp3/beat-B07.mp3", "duration_s": 24.27 },
+  { "id": "B08", "frames": 143, "audio": "mp3/beat-B08.mp3", "duration_s": 4.36 }
+]

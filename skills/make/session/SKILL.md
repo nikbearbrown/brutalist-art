@@ -5,7 +5,7 @@ description: >
   The Songbird `session` pattern applied to the toolkit: turn narration or a
   poem into (1) a STYLE-box paste for Suno (global setup: voice, register,
   tempo, the breath rule, bed guidance) and (2) direction-tagged lyrics
-  ([spoken word — <delivery>] above every section). Use when the user types
+  ([spoken word — [delivery]] above every section). Use when the user types
   `session`, asks for session notes, wants to direct a Suno reading of a poem
   or narration, or the bare [spoken word] tag isn't enough. Output is text to
   paste — the human generates in Suno; the stem comes back through pantry/ to
@@ -25,19 +25,19 @@ per-section direction → production notes. No visuals, structured text only.
 
 ### A. Narration reels (automated)
 
-`./art suno <reel>` already emits the whole package from beat_sheet.json:
+`./art suno [reel]` already emits the whole package from beat_sheet.json:
 
-- `<slug>.suno.style.txt` — the session notes for Suno's STYLE box:
+- `[slug].suno.style.txt` — the session notes for Suno's STYLE box:
   voice + register, ~140 wpm, "no singing", the SLICER'S RULE ("leave a full
   breath of silence between sections"), sparse-bed guidance for stem
   separation.
-- `<slug>.suno.N.txt` — lyrics with a direction tag above every beat:
+- `[slug].suno.N.txt` — lyrics with a direction tag above every beat:
   `[spoken word — steady, plainspoken, dry]`. The delivery derives from the
   beat's role (hook / body / hero / close), or set it per beat with a
   `"delivery"` field in the sheet — that field is this skill's authoring
   surface: write direction like a producer ("slower, weighted — let each
   line land"), not like a style label.
-- `<slug>.suno.map.json` — which beats each lyric file carries (the slicer
+- `[slug].suno.map.json` — which beats each lyric file carries (the slicer
   trusts this over recomputation).
 
 ### B. Poems / recitations (authored)

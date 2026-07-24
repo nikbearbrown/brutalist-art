@@ -1,0 +1,142 @@
+{
+  "slug": "medhavy-on-the-hinge",
+  "totalFrames": 4305,
+  "beats": [
+    {
+      "id": "B00",
+      "kind": "ClaudeComposerAsk",
+      "frames": 437,
+      "audio": "mp3-medhavy-on-the-hinge/beat-B00.mp3",
+      "props": {
+        "greeting": "Vanakkam, Medhavy",
+        "topic": "CLAUDE · FOR EDUCATORS",
+        "segment": "Claude, For Educators",
+        "command": "should my students use AI for this assignment?",
+        "runningText": "reading the assignment design research…",
+        "folderLabel": "@Medhavy",
+        "output": [
+          "the hinge question: does it extend or replace the student's thinking?",
+          "Bastani 2024: practice +48%, exam −17% (single study)",
+          "the pair rule: every AI-yes needs a not-AI-here"
+        ]
+      }
+    },
+    {
+      "id": "B01",
+      "kind": "MedhavyConceptCard",
+      "frames": 549,
+      "audio": "mp3-medhavy-on-the-hinge/beat-B01.mp3",
+      "props": {
+        "sparkLine": "Extend or replace?",
+        "heading": "the one question",
+        "body": "Does this AI use extend the student's thinking, or replace it? Screen value, not screen time. The test: does the student still have to do genuine cognitive work?"
+      }
+    },
+    {
+      "id": "B02",
+      "kind": "MedhavyDivergentFates",
+      "frames": 613,
+      "audio": "mp3-medhavy-on-the-hinge/beat-B02.mp3",
+      "props": {
+        "sparkLine": "Fluency isn't mastery.",
+        "leftTrack": {
+          "label": "AI-assisted practice",
+          "direction": "up",
+          "delta": "+48%"
+        },
+        "rightTrack": {
+          "label": "exam (no AI)",
+          "direction": "down",
+          "delta": "−17%"
+        },
+        "evidenceNote": "Bastani et al. 2024 · single study — flagged"
+      }
+    },
+    {
+      "id": "B03",
+      "kind": "MedhavyTwoColumnCard",
+      "frames": 580,
+      "audio": "mp3-medhavy-on-the-hinge/beat-B03.mp3",
+      "props": {
+        "sparkLine": "Pair every yes with a no.",
+        "leftHeader": "AI-yes",
+        "leftItems": [
+          "quiz me · don't answer me",
+          "feedback on my draft · don't write it",
+          "explain why I got it wrong"
+        ],
+        "rightHeader": "not-AI-here",
+        "rightItems": [
+          "write the answer",
+          "write the draft for me",
+          "just correct it silently"
+        ]
+      }
+    },
+    {
+      "id": "B04",
+      "kind": "MedhavyConceptCard",
+      "frames": 599,
+      "audio": "mp3-medhavy-on-the-hinge/beat-B04.mp3",
+      "props": {
+        "sparkLine": "Visible beats banned.",
+        "heading": "the redesign move",
+        "body": "Make the AI use visible and graded, not banned and hidden. If students are going to use it anyway, make the assignment require disclosure + critique of AI output."
+      }
+    },
+    {
+      "id": "B05",
+      "kind": "MedhavyPredictCard",
+      "frames": 448,
+      "audio": "mp3-medhavy-on-the-hinge/beat-B05.mp3",
+      "props": {
+        "sparkLine": "Commit before the reveal.",
+        "question": "Which of these four uses is a crutch? A) 'Quiz me on this chapter' B) 'Write my essay' C) 'Give feedback on my draft' D) 'Explain why my answer is wrong'",
+        "commit": "commit — B, then check the pair rule"
+      }
+    },
+    {
+      "id": "B06",
+      "kind": "ClaudeVerdictArtifact",
+      "frames": 539,
+      "audio": "mp3-medhavy-on-the-hinge/beat-B06.mp3",
+      "props": {
+        "sparkLine": "",
+        "artifactTitle": "Claude, On the Hinge — one card",
+        "artifactHeading": "The hinge",
+        "artifactLines": [
+          "The hinge question: does this AI use extend or replace the student's thinking? Screen value, not screen time.",
+          "Bastani et al. 2024: practice +48%, exam −17% — fluency with the tool is not mastery of the concept. (Single study — flagged.)",
+          "The pair rule: every AI-yes needs a not-AI-here. Map the extend column and the replace column explicitly.",
+          "The redesign move: make AI use visible and graded — require disclosure and critique of AI output.",
+          "AI did: flag the extend/replace split · you do: redesign the assignment · support fades at: the visible, graded AI use"
+        ]
+      }
+    },
+    {
+      "id": "B07",
+      "kind": "ClaudeComposerAsk",
+      "frames": 401,
+      "audio": "mp3-medhavy-on-the-hinge/beat-B07.mp3",
+      "props": {
+        "greeting": "Your turn.",
+        "topic": "CLAUDE · FOR EDUCATORS",
+        "segment": "Claude, For Educators",
+        "command": "Here is an assignment I give students: [paste assignment]. Analyze it using the extend/replace framework: which parts of this assignment could be AI-assisted in a way that extends student thinking, and which parts would be replaced by AI use? Then suggest one redesign that makes AI use visible, graded, and requires students to critique the AI output.",
+        "runningText": "analyzing the assignment…",
+        "folderLabel": "@Medhavy"
+      }
+    },
+    {
+      "id": "B08",
+      "kind": "ClaudeTitleOutro",
+      "frames": 139,
+      "audio": "mp3-medhavy-on-the-hinge/beat-B08.mp3",
+      "props": {
+        "title": "Claude, On the Hinge.",
+        "handle": "@Medhavy",
+        "subline": "subscribe · the assignment question, taken apart"
+      }
+    }
+  ]
+}

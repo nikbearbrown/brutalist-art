@@ -65,14 +65,14 @@ Use repeated `--asset` only for custom subsets:
 
 Build and run one `higgsfield marketplace-cards create` command from the user's request.
 
-For common bundles, use `--scope <main|product-images|aplus|full-set>`, `--prompt "<short product and listing intent>"`, optional repeated `--image <path-or-upload-id>`, and optional context flags: `--product_context`, `--brand_context`, `--category`, `--visual_style`.
+For common bundles, use `--scope [main|product-images|aplus|full-set]`, `--prompt "[short product and listing intent]"`, optional repeated `--image [path-or-upload-id]`, and optional context flags: `--product_context`, `--brand_context`, `--category`, `--visual_style`.
 
 Examples to mirror when choosing arguments:
 
 - Product images: `higgsfield marketplace-cards create --scope product-images --prompt "sparkling peach lemonade can for marketplace listing" --image ./can.png --category "beverage"`
 - Full set: `higgsfield marketplace-cards create --scope full-set --prompt "premium skincare serum, clean clinical marketplace visual system" --image ./serum.jpg --brand_context "minimal white and sage palette"`
 - Custom subset: repeat `--asset`, for example `--asset main_image --asset infographic --asset lifestyle`.
-- Existing completed main image job: use `--main-job <completed_main_job_id>` with the requested secondary or A+ `--asset` values.
+- Existing completed main image job: use `--main-job [completed_main_job_id]` with the requested secondary or A+ `--asset` values.
 
 ## Delivery
 

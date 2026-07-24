@@ -1,0 +1,116 @@
+{
+  "slug": "mcp-in-your-hands-lecture",
+  "totalFrames": 3710,
+  "beats": [
+    {
+      "id": "B00",
+      "kind": "ClaudeComposerAsk",
+      "frames": 378,
+      "audio": "mp3-mcp-in-your-hands-lecture/beat-B00.mp3",
+      "props": {
+        "greeting": "Yassou, Medhavy",
+        "topic": "MEDHAVY · CONTROL",
+        "segment": "The Final Judge",
+        "command": "change D-014 to the red and ink pair",
+        "runningText": "patching one decision…",
+        "folderLabel": "@Medhavy"
+      }
+    },
+    {
+      "id": "B01",
+      "kind": "HaiConceptCard",
+      "frames": 482,
+      "audio": "mp3-mcp-in-your-hands-lecture/beat-B01.mp3",
+      "props": {
+        "heading": "Any CLI works — Claude Code, Codex, whatever ships next year.",
+        "body": "The workflow doesn't depend on a proprietary interface. You address a decision by its ID in the decisions.json, write your override, and the pipeline re-renders only the affected beat. The rest stays unchanged.",
+        "sparkLine": "Any CLI. Your judgment."
+      }
+    },
+    {
+      "id": "B02",
+      "kind": "HaiConceptCard",
+      "frames": 464,
+      "audio": "mp3-mcp-in-your-hands-lecture/beat-B02.mp3",
+      "props": {
+        "heading": "Patch, never regenerate.",
+        "body": "Override a palette and only the affected beats are re-rendered; the audio is preserved; the timing stays. This is the difference between surgical editing and starting over. A five-second color change should not require a twenty-minute full rebuild.",
+        "sparkLine": "Patch, not regenerate."
+      }
+    },
+    {
+      "id": "B03",
+      "kind": "HaiConceptCard",
+      "frames": 397,
+      "audio": "mp3-mcp-in-your-hands-lecture/beat-B03.mp3",
+      "props": {
+        "heading": "Now predict the hard case.",
+        "body": "You override an accessibility default — specifically, you want a color combination that fails WCAG contrast for aesthetic reasons. What does the pipeline do? Commit to an answer before the reveal.",
+        "sparkLine": "What should it do?"
+      }
+    },
+    {
+      "id": "B04",
+      "kind": "HaiConceptCard",
+      "frames": 453,
+      "audio": "mp3-mcp-in-your-hands-lecture/beat-B04.mp3",
+      "props": {
+        "heading": "It dissents, then complies — and logs it.",
+        "body": "Contrast drops to 3.8:1 for this beat, logged in decisions.json with the override noted. The system tells you what you've decided and what the consequence is. It doesn't block you; it informs you. You remain the judge.",
+        "sparkLine": "Dissent, then comply."
+      }
+    },
+    {
+      "id": "B05",
+      "kind": "HaiConceptCard",
+      "frames": 459,
+      "audio": "mp3-mcp-in-your-hands-lecture/beat-B05.mp3",
+      "props": {
+        "heading": "Why this matters to the business: creators leave tools that patronize them — tha",
+        "body": "The Medhavy MCP server treats creators as adults: inform, don't block.",
+        "sparkLine": "Control is retention."
+      }
+    },
+    {
+      "id": "B06",
+      "kind": "ClaudeVerdictArtifact",
+      "frames": 478,
+      "audio": "mp3-mcp-in-your-hands-lecture/beat-B06.mp3",
+      "props": {
+        "artifactTitle": "The Final Judge — one page",
+        "artifactHeading": "Who decides",
+        "artifactLines": [
+          "Every decision addressable by ID, from any CLI.",
+          "Patch-not-regenerate: overrides touch only what they name.",
+          "Dissent-then-comply: the system flags, records, and obeys — never resists, never forgets.",
+          "Phase gate: AI proposes with reasons · the human rules · the log remembers."
+        ]
+      }
+    },
+    {
+      "id": "B07",
+      "kind": "ClaudeComposerAsk",
+      "frames": 434,
+      "audio": "mp3-mcp-in-your-hands-lecture/beat-B07.mp3",
+      "props": {
+        "greeting": "Your turn.",
+        "topic": "MEDHAVY · CONTROL",
+        "segment": "The Final Judge",
+        "command": "Change exactly one design choice in the last thing you made for me — without regenerating anything else. Then tell me what you changed and what you kept.",
+        "runningText": "testing for amnesia…",
+        "folderLabel": "@Medhavy"
+      }
+    },
+    {
+      "id": "B08",
+      "kind": "ClaudeTitleOutro",
+      "frames": 165,
+      "audio": "mp3-mcp-in-your-hands-lecture/beat-B08.mp3",
+      "props": {
+        "title": "The Final Judge.",
+        "handle": "@MedhavyAI",
+        "subline": "a pitch in seven parts · 5 of 7"
+      }
+    }
+  ]
+}

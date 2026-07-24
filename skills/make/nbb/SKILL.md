@@ -10,7 +10,7 @@ description: >
   the NikBearBrown outro. Voice: ElevenLabs ELEVENLABS_VOICE_NIKBEARBROWN —
   the ONLY paid brand default; do NOT use Kokoro. Palette: teardown (white
   #FFFFFF / ink #2A1A0E / one red #C8102E). GATE P applies before audio spend.
-  Use when the user types `nbb <input>`, asks for the NikBearBrown / brutalist /
+  Use when the user types `nbb [input]`, asks for the NikBearBrown / brutalist /
   teardown cut of a reel, or wants the default-channel version of content.
   Brand spec: brands/nbb.md.
 ---
@@ -24,20 +24,20 @@ build scripts, media) is **never modified**.
 ## Trigger
 
 ```
-nbb <input>
+nbb [input]
 ```
 
-`<input>` is one of:
-- **Reel folder** — `<book>/youtube/<slug>/` (has `beat_sheet.json`)
-- **Lecture folder** — `<book>/lectures/<chapter>-lecture/` (has `beat_sheet.json`)
-- **Book folder** — `<book>/` → batch: convert every reel + lecture it contains
+`[input]` is one of:
+- **Reel folder** — `[book]/youtube/[slug]/` (has `beat_sheet.json`)
+- **Lecture folder** — `[book]/lectures/[chapter]-lecture/` (has `beat_sheet.json`)
+- **Book folder** — `[book]/` → batch: convert every reel + lecture it contains
 
 ## Output directory convention
 
 | Source path | nbb- output directory | Beat sheet filename |
 |---|---|---|
-| `<book>/youtube/<slug>/` | `<book>/youtube/nbb-<slug>/` | `beat_sheet.nbb.json` |
-| `<book>/lectures/<chapter>-lecture/` | `<book>/nbb-lectures/<chapter>-lecture/` | `beat_sheet.nbb.json` |
+| `[book]/youtube/[slug]/` | `[book]/youtube/nbb-[slug]/` | `beat_sheet.nbb.json` |
+| `[book]/lectures/[chapter]-lecture/` | `[book]/nbb-lectures/[chapter]-lecture/` | `beat_sheet.nbb.json` |
 
 Inside that `nbb-` directory:
 - `beat_sheet.nbb.json` — the NBB cut
@@ -52,7 +52,7 @@ Inside that `nbb-` directory:
 ### Step 1 — Scaffold (deterministic, no spend)
 
 ```bash
-python3 runtime/scripts/brand_variant.py <INPUT_PATH> nbb
+python3 runtime/scripts/brand_variant.py [INPUT_PATH] nbb
 ```
 
 Creates the `nbb-` directory and writes `beat_sheet.nbb.json` with audience
@@ -75,9 +75,19 @@ scripts from the source dir. No API calls, no spend.
 `voice_id` is read from `ELEVENLABS_VOICE_NIKBEARBROWN` in `.env`. This is
 the **only ElevenLabs brand** — do NOT switch to Kokoro.
 
+### Ask/intro scene rule (2026-07)
+
+The ASK / intro beat of every NBB (and claude-brand) beat sheet renders with
+**`ClaudeComposerAsk`** (`runtime/remotion` — the Claude desktop composer, cream
+page, terracotta spark, `@NikBearBrown` folder chip; comps `ClaudeComposerAsk` /
+`ClaudeComposerAsk916`). Same prop contract as the old scene — swap the scene
+name, keep the props. `NikBearBrownTerminalAsk` (dark Onda-style terminal) is
+**legacy**: keep it registered so historical reels re-render identically, but do
+not use it for new beat sheets.
+
 ### Step 2 — Rewrite the register (Teardown)
 
-Open the new `nbb-<…>/beat_sheet.nbb.json` and **rewrite every beat's narration**
+Open the new `nbb-[…]/beat_sheet.nbb.json` and **rewrite every beat's narration**
 in the Teardown register (`voices/teardown/VOICE.md`, `brands/nbb.md`):
 
 - **Take it apart**: explain how each piece actually works — the machinery, not
@@ -156,15 +166,15 @@ Confirm the beat sequence closes as:
 
 ## Batch mode (book input)
 
-When `<input>` is a book folder, run the scaffold for every source:
+When `[input]` is a book folder, run the scaffold for every source:
 
 ```bash
 # Reels
-find <book>/youtube/ -maxdepth 1 -mindepth 1 -type d ! -name 'nbb-*' | \
+find [book]/youtube/ -maxdepth 1 -mindepth 1 -type d ! -name 'nbb-*' | \
   while read d; do python3 runtime/scripts/brand_variant.py "$d" nbb; done
 
 # Lectures
-find <book>/lectures/ -maxdepth 1 -mindepth 1 -type d -name '*-lecture' | \
+find [book]/lectures/ -maxdepth 1 -mindepth 1 -type d -name '*-lecture' | \
   while read d; do python3 runtime/scripts/brand_variant.py "$d" nbb; done
 ```
 
@@ -179,14 +189,14 @@ Run a `PEDAGOGY.md` pass on the rewritten sheet before calling the audio script.
 
 ```bash
 # Audio (ElevenLabs — the only option for nbb)
-python3 runtime/scripts/generate_audio.py <nbb-dir>/beat_sheet.nbb.json
+python3 runtime/scripts/generate_audio.py [nbb-dir]/beat_sheet.nbb.json
 
 # Lectures: deck + render (scripts point at beat_sheet.nbb.json)
-python3 <nbb-dir>/build_deck.py beat_sheet.nbb.json
-python3 <nbb-dir>/render.py beat_sheet.nbb.json
+python3 [nbb-dir]/build_deck.py beat_sheet.nbb.json
+python3 [nbb-dir]/render.py beat_sheet.nbb.json
 
 # Compile (reels)
-python3 runtime/scripts/compile.py <nbb-dir> --height 1080
+python3 runtime/scripts/compile.py [nbb-dir] --height 1080
 ```
 
 ---

@@ -1,0 +1,154 @@
+{
+  "slug": "hai-on-the-job",
+  "totalFrames": 5558,
+  "beats": [
+    {
+      "id": "B00",
+      "kind": "ClaudeComposerAsk",
+      "frames": 480,
+      "audio": "mp3-hai-on-the-job/beat-B00.mp3",
+      "props": {
+        "greeting": "Ciao, HAI",
+        "topic": "CLAUDE · AI AT WORK",
+        "segment": "Claude, For Students",
+        "command": "am I too late to learn AI?",
+        "runningText": "mapping the tiers…",
+        "folderLabel": "@HumanitariansAI",
+        "output": [
+          "no — the durable skills are yours",
+          "Tier 1 is the machine's: recall, syntax, retrieval",
+          "Tier 4 is yours: judgment, audit, distrust-calibration"
+        ],
+        "sparkLine": ""
+      }
+    },
+    {
+      "id": "B01",
+      "kind": "HaiTierDiagram",
+      "frames": 906,
+      "audio": "mp3-hai-on-the-job/beat-B01.mp3",
+      "props": {
+        "sparkLine": "Conduct, don't compete.",
+        "tiers": [
+          {
+            "level": 1,
+            "label": "recall · syntax · retrieval",
+            "owner": "machine",
+            "note": "superhuman"
+          },
+          {
+            "level": 2,
+            "label": "synthesis · pattern-matching",
+            "owner": "machine + human",
+            "note": "contested"
+          },
+          {
+            "level": 3,
+            "label": "evaluation · quality judgment",
+            "owner": "human advantage",
+            "note": "your edge"
+          },
+          {
+            "level": 4,
+            "label": "problem formulation · audit · distrust-calibration",
+            "owner": "human",
+            "note": "irreducible"
+          }
+        ]
+      }
+    },
+    {
+      "id": "B02",
+      "kind": "HaiConceptCard",
+      "frames": 752,
+      "audio": "mp3-hai-on-the-job/beat-B02.mp3",
+      "props": {
+        "sparkLine": "Conduct, don't compete.",
+        "heading": "what's actually scarce",
+        "body": "Conducting — knowing what to ask, reading the output critically, catching the confabulation, deciding what to hand to the human — is what the working world pays for. Competing at Tier-1 with the machine is not the job."
+      }
+    },
+    {
+      "id": "B03",
+      "kind": "HaiConceptCard",
+      "frames": 809,
+      "audio": "mp3-hai-on-the-job/beat-B03.mp3",
+      "props": {
+        "sparkLine": "Audit everything.",
+        "heading": "the daily loop",
+        "body": "Use it on one real work task every day. Read every output critically. Name one thing it got wrong or weak. That's the practice — not volume, not novelty, judgment-building."
+      }
+    },
+    {
+      "id": "B04",
+      "kind": "HaiListCard",
+      "frames": 718,
+      "audio": "mp3-hai-on-the-job/beat-B04.mp3",
+      "props": {
+        "sparkLine": "Your name on it = your judgment.",
+        "heading": "never delegate",
+        "items": [
+          "facts you sign your name to",
+          "judgment calls where you bear the consequence",
+          "your professional reputation",
+          "decisions your organization will act on without reviewing"
+        ]
+      }
+    },
+    {
+      "id": "B05",
+      "kind": "HaiPredictCard",
+      "frames": 648,
+      "audio": "mp3-hai-on-the-job/beat-B05.mp3",
+      "props": {
+        "sparkLine": "Commit before the reveal.",
+        "question": "Which task is yours alone? A) Draft an email B) Find the answer to a factual question C) Decide whether to fire a vendor D) Summarize a meeting transcript",
+        "commit": "commit to C — then the verdict explains why"
+      }
+    },
+    {
+      "id": "B06",
+      "kind": "ClaudeVerdictArtifact",
+      "frames": 782,
+      "audio": "mp3-hai-on-the-job/beat-B06.mp3",
+      "props": {
+        "sparkLine": "",
+        "artifactTitle": "Claude, On the Job — one card",
+        "artifactHeading": "What you bring",
+        "artifactLines": [
+          "The tier picture: Tier 1 is the machine's (recall, syntax). Tier 4 is yours (problem formulation, audit, distrust-calibration). Conduct, don't compete.",
+          "What's scarce: knowing what to ask, reading output critically, catching confabulations, deciding what reaches the human.",
+          "The daily loop: one real task, every output audited, one weak point named. That's judgment-building.",
+          "Never delegate: facts you sign your name to, judgment calls where you bear the consequence, your professional reputation."
+        ]
+      }
+    },
+    {
+      "id": "B07",
+      "kind": "ClaudeComposerAsk",
+      "frames": 339,
+      "audio": "mp3-hai-on-the-job/beat-B07.mp3",
+      "props": {
+        "greeting": "Your turn.",
+        "topic": "CLAUDE · AI AT WORK",
+        "segment": "Claude, For Students",
+        "command": "Help me with [one real task from today's work]. After you give me the output, I'm going to tell you what I think you got wrong or weak — and you tell me if I'm right.",
+        "runningText": "starting your audit loop…",
+        "folderLabel": "@HumanitariansAI",
+        "sparkLine": ""
+      }
+    },
+    {
+      "id": "B08",
+      "kind": "ClaudeTitleOutro",
+      "frames": 124,
+      "audio": "mp3-hai-on-the-job/beat-B08.mp3",
+      "props": {
+        "title": "Claude, On the Job.",
+        "handle": "@HumanitariansAI",
+        "subline": "subscribe · the tier picture",
+        "sparkLine": ""
+      }
+    }
+  ]
+}

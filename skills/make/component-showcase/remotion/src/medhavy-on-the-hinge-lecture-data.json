@@ -1,0 +1,134 @@
+{
+  "slug": "medhavy-on-the-hinge-lecture",
+  "totalFrames": 3962,
+  "beats": [
+    {
+      "id": "B00",
+      "kind": "ClaudeComposerAsk",
+      "frames": 454,
+      "audio": "mp3-medhavy-on-the-hinge-lecture/beat-B00.mp3",
+      "props": {
+        "greeting": "Vanakkam, Medhavy",
+        "topic": "CLAUDE · FOR EDUCATORS",
+        "segment": "Claude, For Educators",
+        "command": "should my students use AI for this assignment?",
+        "runningText": "finding the hinge question…",
+        "folderLabel": "@Medhavy",
+        "output": [
+          "extend or replace? — the hinge question",
+          "pair every yes with a no",
+          "visible beats banned"
+        ]
+      }
+    },
+    {
+      "id": "B01",
+      "kind": "HaiConceptCard",
+      "frames": 537,
+      "audio": "mp3-medhavy-on-the-hinge-lecture/beat-B01.mp3",
+      "props": {
+        "heading": "The question isn't 'is AI allowed?' in some abstract sense — it's 'what does the",
+        "body": "If AI use removes the hinge skill, the assignment no longer works as a learning event. If it assists around the hinge skill, it can actually support learning.",
+        "sparkLine": "Extend or replace?"
+      }
+    },
+    {
+      "id": "B02",
+      "kind": "HaiConceptCard",
+      "frames": 540,
+      "audio": "mp3-medhavy-on-the-hinge-lecture/beat-B02.mp3",
+      "props": {
+        "heading": "The cautionary data — Bastani 2024, one study — found that students who used AI ",
+        "body": "The implication: AI removed the struggle at the hinge, and the struggle was what produced durable learning.",
+        "sparkLine": "Practice up. Exam down.",
+        "evidenceNote": "Bastani 2024 — single study, directional finding only. Flag on screen."
+      }
+    },
+    {
+      "id": "B03",
+      "kind": "HaiTwoColumnCard",
+      "frames": 452,
+      "audio": "mp3-medhavy-on-the-hinge-lecture/beat-B03.mp3",
+      "props": {
+        "sparkLine": "Pair every yes with a no.",
+        "leftHeader": "yes — AI extends",
+        "leftItems": [
+          "quiz me on this topic",
+          "give feedback on my draft",
+          "explain this concept differently"
+        ],
+        "rightHeader": "no — AI replaces",
+        "rightItems": [
+          "give me the answer",
+          "write my draft for me",
+          "summarize so I don't have to read"
+        ]
+      }
+    },
+    {
+      "id": "B04",
+      "kind": "HaiConceptCard",
+      "frames": 549,
+      "audio": "mp3-medhavy-on-the-hinge-lecture/beat-B04.mp3",
+      "props": {
+        "heading": "The redesign move that beats the ban: make the AI use visible and gradable.",
+        "body": "Instead of banning AI, redesign the assignment so that the AI interaction itself is part of the submission. Students submit their Claude conversation alongside their work. Now the AI use is observable — and you're assessing judgment, not just output.",
+        "sparkLine": "Visible beats banned."
+      }
+    },
+    {
+      "id": "B05",
+      "kind": "HaiConceptCard",
+      "frames": 359,
+      "audio": "mp3-medhavy-on-the-hinge-lecture/beat-B05.mp3",
+      "props": {
+        "heading": "Before the verdict — four uses: quiz me on this topic, give me the answer to thi",
+        "body": "Commit: which one is a crutch? Which one removes the hinge skill regardless of context?",
+        "sparkLine": "Commit before the reveal."
+      }
+    },
+    {
+      "id": "B06",
+      "kind": "ClaudeVerdictArtifact",
+      "frames": 435,
+      "audio": "mp3-medhavy-on-the-hinge-lecture/beat-B06.mp3",
+      "props": {
+        "sparkLine": "",
+        "artifactTitle": "Claude, On the Hinge — one card",
+        "artifactHeading": "The hinge",
+        "artifactLines": [
+          "Extend or replace: ask what the AI removed. If it removed the struggle, it removed the learning.",
+          "Bastani 2024 (one study): practice scores rose, exam scores fell when AI was removed. Flag on screen.",
+          "The pair rule: every yes gets a no. Quiz me yes / give me the answer no. Feedback yes / draft for me no.",
+          "The redesign move: make AI use visible and graded — submit the prompt, grade the judgment.",
+          "AI did: none of the cognitive struggle · you do: decide which uses stay · support fades at: the moment the student stops thinking"
+        ]
+      }
+    },
+    {
+      "id": "B07",
+      "kind": "ClaudeComposerAsk",
+      "frames": 452,
+      "audio": "mp3-medhavy-on-the-hinge-lecture/beat-B07.mp3",
+      "props": {
+        "greeting": "Your turn.",
+        "topic": "CLAUDE · FOR EDUCATORS",
+        "segment": "Claude, For Educators",
+        "command": "Here is an assignment I give students: [paste assignment]. Analyze each task in this assignment: does student AI use here extend their thinking or replace it? For each task that replaces, suggest one redesign that keeps the cognitive effort with the student. Pair every suggested AI use with one AI use I should explicitly ban.",
+        "runningText": "analyzing the assignment…",
+        "folderLabel": "@Medhavy"
+      }
+    },
+    {
+      "id": "B08",
+      "kind": "ClaudeTitleOutro",
+      "frames": 184,
+      "audio": "mp3-medhavy-on-the-hinge-lecture/beat-B08.mp3",
+      "props": {
+        "title": "Claude, On the Hinge.",
+        "handle": "@Medhavy",
+        "subline": "subscribe · extend or replace, decided"
+      }
+    }
+  ]
+}

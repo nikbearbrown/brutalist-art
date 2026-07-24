@@ -1,0 +1,135 @@
+{
+  "slug": "medhavy-in-the-classroom-lecture",
+  "totalFrames": 4007,
+  "beats": [
+    {
+      "id": "B00",
+      "kind": "ClaudeComposerAsk",
+      "frames": 456,
+      "audio": "mp3-medhavy-in-the-classroom-lecture/beat-B00.mp3",
+      "props": {
+        "greeting": "Namaste, Medhavy",
+        "topic": "CLAUDE · FOR EDUCATORS",
+        "segment": "Claude, For Educators",
+        "command": "I'm a teacher — where do I even start?",
+        "runningText": "finding your entry point…",
+        "folderLabel": "@Medhavy",
+        "output": [
+          "you're the variable that matters (RAND 2026)",
+          "start with one recipe, this week",
+          "free for verified US K-12 — no barrier to entry"
+        ]
+      }
+    },
+    {
+      "id": "B01",
+      "kind": "HaiConceptCard",
+      "frames": 514,
+      "audio": "mp3-medhavy-in-the-classroom-lecture/beat-B01.mp3",
+      "props": {
+        "heading": "Here's the thing worth saying plainly first: you didn't miss a class that was of",
+        "body": "AI-assisted pedagogy is new enough that there's no standard training. What exists is a set of low-risk starting moves that teachers with varying tech comfort are finding useful — and none of them require you to become a programmer.",
+        "sparkLine": "A date, not a deficit."
+      }
+    },
+    {
+      "id": "B02",
+      "kind": "HaiConceptCard",
+      "frames": 582,
+      "audio": "mp3-medhavy-in-the-classroom-lecture/beat-B02.mp3",
+      "props": {
+        "heading": "The RAND 2026 research looked at EdTech adoption in classrooms and found a consi",
+        "body": "The implication is that the first recipe matters — not because it has to be perfect, but because it has to succeed.",
+        "sparkLine": "You are the variable.",
+        "evidenceNote": "RAND 2026 — teacher training made or broke EdTech interventions"
+      }
+    },
+    {
+      "id": "B03",
+      "kind": "HaiTwoColumnCard",
+      "frames": 518,
+      "audio": "mp3-medhavy-in-the-classroom-lecture/beat-B03.mp3",
+      "props": {
+        "sparkLine": "Draft, then judge.",
+        "leftHeader": "what Claude does",
+        "leftItems": [
+          "draft the lesson plan",
+          "cite the standard per section",
+          "suggest differentiation levels"
+        ],
+        "rightHeader": "what you do",
+        "rightItems": [
+          "judge every line",
+          "catch the errors",
+          "decide what reaches students"
+        ]
+      }
+    },
+    {
+      "id": "B04",
+      "kind": "HaiConceptCard",
+      "frames": 552,
+      "audio": "mp3-medhavy-in-the-classroom-lecture/beat-B04.mp3",
+      "props": {
+        "heading": "What does this cost? Anthropic announced in July 2025 that Claude for Education ",
+        "body": "The recipe above runs on the standard Claude interface — no special integration, no IT project.",
+        "sparkLine": "No barrier to entry.",
+        "evidenceNote": "Anthropic Claude for Teachers · Jul 14 2026 · FERPA DPA · data not trained"
+      }
+    },
+    {
+      "id": "B05",
+      "kind": "HaiConceptCard",
+      "frames": 334,
+      "audio": "mp3-medhavy-in-the-classroom-lecture/beat-B05.mp3",
+      "props": {
+        "heading": "Before the verdict — one question to commit to.",
+        "body": "You've seen the Monday recipe. What's the failure mode? What's the specific thing a teacher would do with this workflow that would make it less useful, not more?",
+        "sparkLine": "Commit before the reveal."
+      }
+    },
+    {
+      "id": "B06",
+      "kind": "ClaudeVerdictArtifact",
+      "frames": 489,
+      "audio": "mp3-medhavy-in-the-classroom-lecture/beat-B06.mp3",
+      "props": {
+        "sparkLine": "",
+        "artifactTitle": "Claude, In the Classroom — one card",
+        "artifactHeading": "The recipe",
+        "artifactLines": [
+          "Not a deficit: nobody who started teaching before 2020 learned this — it didn't exist. A date, not a gap in you.",
+          "You are the variable: RAND 2026 found EdTech worked when teachers were trained, not when platforms improved.",
+          "The recipe: Claude drafts, cites standards, suggests differentiation. You judge every line before it reaches students.",
+          "No barrier: free for verified US K-12, FERPA DPA, your data never trains the model (Anthropic, Jul 14 2026).",
+          "AI did: draft the lesson plan · you do: judge every line · support fades at: the moment you stop judging"
+        ]
+      }
+    },
+    {
+      "id": "B07",
+      "kind": "ClaudeComposerAsk",
+      "frames": 377,
+      "audio": "mp3-medhavy-in-the-classroom-lecture/beat-B07.mp3",
+      "props": {
+        "greeting": "Your turn.",
+        "topic": "CLAUDE · FOR EDUCATORS",
+        "segment": "Claude, For Educators",
+        "command": "Write a lesson plan for [grade level] [subject], aligned to [state standard]. Include: objective, warm-up, direct instruction, guided practice, and exit ticket. Cite the specific standard for each section. Offer three differentiation levels: below, at, and above grade readiness. I will judge every line before anything reaches students.",
+        "runningText": "drafting the plan…",
+        "folderLabel": "@Medhavy"
+      }
+    },
+    {
+      "id": "B08",
+      "kind": "ClaudeTitleOutro",
+      "frames": 185,
+      "audio": "mp3-medhavy-in-the-classroom-lecture/beat-B08.mp3",
+      "props": {
+        "title": "Claude, In the Classroom.",
+        "handle": "@Medhavy",
+        "subline": "subscribe · the first recipe, taken apart"
+      }
+    }
+  ]
+}

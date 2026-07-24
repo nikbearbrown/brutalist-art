@@ -17,7 +17,7 @@ One episode teaches ONE categorical concept (a color, a shape, a number) to one
 age band. The design rules are research constraints, not style preferences —
 each traces to a finding in `reference/pedagogy.md`. The pipeline reuses the
 vox toolkit: `generate_audio.py` (per-beat mp3s; `"silent": true` beats ARE the
-response pauses), `vox_compile.py` (slot contract), Manim/geoplates for the
+response pauses), `compile.py` (slot contract), Manim/geoplates for the
 visuals, Gates A/B/W — plus **Gate K**, the pedagogy validator that runs FIRST.
 
 ## The laws (each one is validated by Gate K)
@@ -75,14 +75,14 @@ composites from `bearbrown/` clips.
 
 ## The loop (per episode)
 1. **Plan** — write `beat_sheet.json` per the laws. Folder:
-   `books/kids/<series>/<slug>/` (kebab-case, one per episode).
+   `books/kids/[series]/[slug]/` (kebab-case, one per episode).
 2. **GATE K (free, blocks everything):**
-   `python3 aspects/kids/scripts/kids_gate.py <episode>` — must PASS before
+   `python3 aspects/kids/scripts/kids_gate.py [episode]` — must PASS before
    audio. Fix the sheet, never annotate around a failure.
-3. **Audio** — `generate_audio.py <episode>` (slow, warm voice settings;
+3. **Audio** — `generate_audio.py [episode]` (slow, warm voice settings;
    pauses generate as silence — spends credits on spoken beats only).
 4. **Visuals** — geoplate SVGs / Manim scenes per beat; Gates A + W apply.
-5. **Compile** — `vox_compile.py`; mascot host beats composite from
+5. **Compile** — `compile.py`; mascot host beats composite from
    `bearbrown/`; review MP4 for the human.
 Never bypass Gate K. An episode that fails pedagogy does not get a voice.
 
@@ -90,11 +90,11 @@ Never bypass Gate K. An episode that fails pedagogy does not get a voice.
 ## SONG MODE — music videos, 100% Midjourney
 For song episodes (the family band): lyrics in, MJ video clips out, the song
 as the only audio track. Inputs in the episode folder
-(`books/kids/songs/<slug>/`): `lyrics.txt` (TITLE:/ARTIST: header + one line
+(`books/kids/songs/[slug]/`): `lyrics.txt` (TITLE:/ARTIST: header + one line
 per line), `characters.json` (token registry with GitHub-raw refs — see
 reference/star-tokens.md), `style.json`, and `song.mp3` when ready.
 
-1. **Segment:** `python3 aspects/kids/scripts/song_prompts.py <episode>` —
+1. **Segment:** `python3 aspects/kids/scripts/song_prompts.py [episode]` —
    groups the lyric into ~16-word beats (V01…), writes the beat-sheet
    skeleton + PROMPTS.md with scene placeholders.
 2. **Author scenes:** the builder writes one `scene` per beat in
@@ -105,10 +105,10 @@ reference/star-tokens.md), `style.json`, and `song.mp3` when ready.
    PROMPTS.md (each beat carries only the refs its scene uses).
 3. **Volunteers (the pick gate):** paste each block, generate grids, reject
    against the identity anchors, pick the keeper, animate it (MJ
-   image-to-video), download, rename `V##-<anything>.mp4`, drop in `pantry/`.
+   image-to-video), download, rename `V##-[anything].mp4`, drop in `pantry/`.
 4. **Build:** pantry intake strips the clips' audio (the SONG is the only
    track); beat timings come from forced alignment of the lyric against
-   song.mp3 (the lyric-match discipline); `vox_compile` conforms each clip
+   song.mp3 (the lyric-match discipline); `compile.py` conforms each clip
    (center-cut / slow-to-fit, replace_log for extremes) and compiles with
    `--audio song.mp3`. Karaoke captions ride as CC, never a second cut.
 

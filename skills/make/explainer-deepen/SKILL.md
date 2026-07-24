@@ -20,9 +20,9 @@ description: >
 This is written down because it keeps getting re-asked. Honor it exactly:
 
 1. **The human runs at most TWO commands per concept, ever.**
-   `python scripts/silent_run.py <folder>` renders EVERYTHING (audio, 16:9,
+   `python scripts/silent_run.py [folder]` renders EVERYTHING (audio, 16:9,
    9:16, karaoke captions, transcript, YouTube description). Then, only after he
-   has watched the masters, `python scripts/silent_publish.py <folder>` uploads
+   has watched the masters, `python scripts/silent_publish.py [folder]` uploads
    every surface private with captions + playlists. That is the whole interface.
    Never hand him a "bazillion" step-by-step commands, per-stage invocations, or
    manual copy-paste chains.
@@ -37,7 +37,7 @@ This is written down because it keeps getting re-asked. Honor it exactly:
    MUST include: the deep `beat_sheet.json`, the authored Manim **scene `.py`**
    (one draw per bespoke beat, `bn_layout` for both aspects) + a `bn_layout.py`
    copy in the folder, and the playlist routing metadata (`playlist` for 16:9,
-   `playlist_short` for the 9:16). Verify with `silent_run.py <folder> --dry-run`
+   `playlist_short` for the 9:16). Verify with `silent_run.py [folder] --dry-run`
    (no keys needed). Authoring the scene is part of the job — never leave it as a
    TODO or ask the human to run the `manim` step himself.
 4. **Playlist routing is fixed:** `metadata.playlist: "Quantum Mechanics"` (16:9),
@@ -69,7 +69,7 @@ everything downstream — beats, audio, manim, assemble — is brownblue's, unch
 
 ## What "Brown Blue depth" means (the audit rubric)
 
-`scripts/audit.py <folder>` scores a `beat_sheet.json` (and `script.md` if
+`scripts/audit.py [folder]` scores a `beat_sheet.json` (and `script.md` if
 present) against these. Checks marked **[critical]** decide the verdict; the rest
 are warnings that shape the rewrite.
 
@@ -94,13 +94,13 @@ those become the rewrite's punch list.
 
 Respond to the first word (`bb-convert`, `convert`, `bb-audit`, `audit`).
 
-### `audit <folder | book/youtube>` — score without changing anything
-Run `python3 scripts/audit.py <path>`. For a directory of folders, audit each
+### `audit [folder | book/youtube]` — score without changing anything
+Run `python3 scripts/audit.py [path]`. For a directory of folders, audit each
 and print the scorecard table + verdict per folder. Report which are already
 deep and which need conversion; change nothing. This is the "test on the repos"
 entry.
 
-### `convert <doodle-folder>` — rewrite one doodle into `-bb`
+### `convert [doodle-folder]` — rewrite one doodle into `-bb`
 1. **Audit first.** Run the audit. If it already `PASS`es, say so and stop —
    don't rewrite a video that's already deep.
 2. **Lift the concept, not the script.** Read the doodle's `script.md` +
@@ -117,7 +117,7 @@ entry.
    (mystery opener, discovery voice, ≥2 instances/abstraction, equation
    tangents from equations.md, BOUNDARY beat). Show the Gate-1 audit table.
    **Stop for approval (Gate 1).**
-5. **Target folder = `<same-book>/youtube/<slug>-bb/`.** If the source folder is
+5. **Target folder = `[same-book]/youtube/[slug]-bb/`.** If the source folder is
    the plain slug, create the `-bb` sibling; never overwrite the doodle (the
    HANDOFF rule: `-bb` *supersedes* the doodle, it doesn't delete it). `new` via
    brownblue with brownblue metadata (series, EB Garamond, dark, blue accent,
@@ -126,7 +126,7 @@ entry.
    the **brownblue** skill from `beats` onward; re-run `audit.py` on the result
    and confirm it now `PASS`es before showing a render.
 
-### `convert-all <book/youtube>` — batch, one at a time, gated
+### `convert-all [book/youtube]` — batch, one at a time, gated
 Audit the directory, list every `NEEDS-BB-CONVERSION` folder, and convert them
 **one at a time**, pausing at each Gate 1 for approval. Never emit 20 finished
 scripts in one shot — depth is authored per concept, and a batch that skips the

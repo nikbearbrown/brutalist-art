@@ -137,16 +137,16 @@ no command, assume `new`.
 ### `muzak` / `help`
 List the commands below and ask for the WAV + lyrics (and any format/design wishes).
 
-### `new <title>` — scaffold
+### `new [title]` — scaffold
 1. Derive a kebab-case `slug` from the title.
-2. Run `scripts/new_video.py --slug <slug> --title "<title>" --wav <path> [--width --height --fps]`.
-   It creates the project, copies the WAV to `public/<slug>/audio.wav`, and writes
+2. Run `scripts/new_video.py --slug [slug] --title "[title]" --wav [path] [--width --height --fps]`.
+   It creates the project, copies the WAV to `public/[slug]/audio.wav`, and writes
    `song.json` (slug, title, format, paths). Default format 1920×1080@30.
 3. Report the folder path and the next step (`analyze`). Generate no content yet.
 
 ### `analyze` — the audio is ground truth (audio-first gate)
 Confirm `librosa` is importable (the script prints an install hint if not). Run
-`scripts/analyze_audio.py <project>/public/<slug>/audio.wav --fps <fps> -o <project>/beat_data.json`.
+`scripts/analyze_audio.py [project]/public/[slug]/audio.wav --fps [fps] -o [project]/beat_data.json`.
 It writes the contract in `references/beat-data-schema.md`: `bpm`, `beatTimestamps[]`,
 `downbeatTimestamps[]`, `energyPerFrame[]`, `sections[]`, `durationInSeconds`,
 `durationInFrames`, and a **`features`** block (brightness, dynamic_range_db,
@@ -159,16 +159,16 @@ Two modes. **Prefer forced alignment** — it's the difference between words tha
 the vocal and words that merely drift past on a grid.
 
 - **Accurate (recommended): forced alignment.** Run
-  `scripts/align_lyrics_audio.py <lyrics.txt> --audio <project>/public/<slug>/audio.wav
-  --beat-data <project>/beat_data.json -o <project>/lyrics.json [--model base]`.
+  `scripts/align_lyrics_audio.py [lyrics.txt] --audio [project]/public/[slug]/audio.wav
+  --beat-data [project]/beat_data.json -o [project]/lyrics.json [--model base]`.
   Whisper (faster-whisper — plain `pip install faster-whisper`, no native-build pain)
   produces word-level timestamps; the script sequence-aligns them to the *known* lyrics,
   so a mis-heard sung word is corrected back to the real word while keeping its real
   timing, and any word Whisper dropped is interpolated. Output carries per-line `words[]`
   for true word-by-word / karaoke timing. Use a larger `--model` (small/medium) when the
   vocal is heavily stylized.
-- **Fallback (no Whisper): beat-grid seed.** Run `scripts/align_lyrics.py <lyrics.txt>
-  --beat-data <project>/beat_data.json -o <project>/lyrics.json`. It distributes lines
+- **Fallback (no Whisper): beat-grid seed.** Run `scripts/align_lyrics.py [lyrics.txt]
+  --beat-data [project]/beat_data.json -o [project]/lyrics.json`. It distributes lines
   across their section's beats — fine for a rough cut, but it does **not** know when a
   word is actually sung, so expect drift and plan to nudge anchors by ear.
 
@@ -177,8 +177,8 @@ style in `design`. Present the timed lines and invite corrections — fixing tim
 far cheaper than after a render. (Gate-ish: get the timing right before designing.)
 
 ### `design` — infer the look from the song
-Run `scripts/infer_design.py --beat-data <project>/beat_data.json --lyrics
-<project>/lyrics.json -o <project>/design.json --emit-theme <project>/src/theme.ts`.
+Run `scripts/infer_design.py --beat-data [project]/beat_data.json --lyrics
+[project]/lyrics.json -o [project]/design.json --emit-theme [project]/src/theme.ts`.
 That fills every **computed/safety** field from the rules in
 `references/design-inference.md` — beat-hit caps (from dynamic range), spring easing
 (from BPM), allowed lyric styles (from density), visualizer form (from brightness), a
@@ -211,7 +211,7 @@ Produce a short **plan** the user signs off on before any component code:
   List only the specific beats where supplied media genuinely beats code: e.g. a hero
   image on the first drop, an artist logo on the final hit, a piece of footage behind a
   chorus. For each, give the **exact filename**, the **target timestamp/section**, the
-  **aspect ratio**, and where it drops (`public/<slug>/media/`). If nothing truly needs
+  **aspect ratio**, and where it drops (`public/[slug]/media/`). If nothing truly needs
   custom media, say so and build it all in code. Never pad the list to seem thorough.
 
 - **Generated background media (optional, overlay).** Beyond the sparing one-off asks,
@@ -219,7 +219,7 @@ Produce a short **plan** the user signs off on before any component code:
   `scenes.json` following `references/lyrics-to-scene.md` — describe a *scene* per block
   (shot grammar: framing, camera move, light, palette), never echoing the lyric. Then run
   `scripts/media_prompts.py --beat-data … --lyrics … --design … --scenes scenes.json
-  --style "<your look>" --chunk 5 -o <project>/media-prompts.md` to chunk the song into
+  --style "[your look]" --chunk 5 -o [project]/media-prompts.md` to chunk the song into
   blocks `B01, B02, …` and emit a clean text-to-image + text-to-video prompt per block
   (each = authored scene + your `--style` suffix; every prompt starts with its block id).
   Without `--scenes` it falls back to lyric fragments, which don't describe a scene — so
@@ -235,23 +235,23 @@ Produce a short **plan** the user signs off on before any component code:
   `no text` since the overlay supplies the lyrics).
 - **Generate the images (step 1, image-first).** Drop `assets/templates/generate_images.sh`
   into the song folder. It reads `media-jobs.json` and produces **3 generations per beat**
-  (`gen/<id>_v1..v3.jpg`) via the Higgsfield CLI — character beats with the Soul ID, the
+  (`gen/[id]_v1..v3.jpg`) via the Higgsfield CLI — character beats with the Soul ID, the
   rest with `nano_banana`, 16:9 by default (9:16 on request). The user picks the best per
-  beat, copies it to `public/<slug>/media/<id>.jpg`, and adds it to `media-manifest.json`.
+  beat, copies it to `public/[slug]/media/[id].jpg`, and adds it to `media-manifest.json`.
   The skill writes the script and the job spec; the user runs it (it needs their
   authenticated Higgsfield CLI).
 - **Animate the stills (step 2, text+image→video).** `assets/templates/generate_videos.sh`
   reads each beat's kept still + its `video_prompt` from `media-jobs.json` and animates it
-  with **Minimax Hailuo** (`minimax_hailuo --model minimax-2.3 --image <still> --duration 6
+  with **Minimax Hailuo** (`minimax_hailuo --model minimax-2.3 --image [still] --duration 6
   --resolution 768`). Notes from the live schema: the image flag is `--image` (not
   `--input-images`); identity + 16:9 framing come from the still, so **no `--soul-id` and no
   `--aspect_ratio`** on the video call; duration is **6 or 10 only** — a 6s clip drops into
-  the 5s slot and the overlay clips the last second. Output: `public/<slug>/media/<id>.mp4`.
+  the 5s slot and the overlay clips the last second. Output: `public/[slug]/media/[id].mp4`.
 - **Rebuild the overlay manifest.** After picks/clips land, run
-  `assets/templates/rebuild_manifest.sh` — it scans `public/<slug>/media`, prefers a clip
+  `assets/templates/rebuild_manifest.sh` — it scans `public/[slug]/media`, prefers a clip
   over a still per beat, and writes `src/media-manifest.json`. (Kept separate so parallel
   shards never race on the manifest.) Then reload Studio / render. The user generates clips/stills, saves them as
-  `public/<slug>/media/B07.mp4` (or `.jpg`), and lists delivered files in
+  `public/[slug]/media/B07.mp4` (or `.jpg`), and lists delivered files in
   `media-manifest.json`. `BackgroundMedia.tsx` drops each into its slot **under** the wave
   + lyrics; un-generated blocks fall through to the energy gradient, so the project always
   renders. The overlay layers (waveform at the bottom band, lyrics upper-middle with the
@@ -273,8 +273,8 @@ components already consume it; if a human design doc wins, map its choices into
 - `LyricLayer.tsx` — renders `lyrics.json`; its animation style comes from the theme so a
   design doc can restyle it without touching timing.
 - `MusicVideo.tsx` — the composition: background (energy→color) ▸ visualizer ▸ media
-  slots (`<Sequence>` per planned asset; render a labeled placeholder if the file is
-  absent so the project still runs) ▸ beat layer ▸ lyric layer ▸ the single `<Audio>`.
+  slots (`[Sequence]` per planned asset; render a labeled placeholder if the file is
+  absent so the project still runs) ▸ beat layer ▸ lyric layer ▸ the single `[Audio]`.
 - Register in `Root.tsx` with the song's width/height/fps and
   `durationInFrames` from `beat_data.json`.
 
@@ -288,7 +288,7 @@ Don't render here. Hand the user these, run from the project dir:
 ```bash
 npx remotion studio                                   # preview live, scrub the sync
 npx remotion still MusicVideo out/frame.png --frame=N # one-frame sanity check
-npx remotion render MusicVideo out/<slug>.mp4         # full render
+npx remotion render MusicVideo out/[slug].mp4         # full render
 ```
 For long/high-res songs, mention `@remotion/lambda` for parallel cloud rendering.
 
@@ -298,7 +298,7 @@ muzak is part of **Songbird** — the project umbrella for the music-video skill
 a `youtube.md` in the project with a copy-ready **title** and **description**:
 
 - **Title MUST contain `(Claude Songbird Test)`** while these are early-stage tests,
-  e.g. `<Song> — Lyric Video (Claude Songbird Test)`.
+  e.g. `[Song] — Lyric Video (Claude Songbird Test)`.
 - **Description leads with a "this is ONE STEP, not the finished video" caveat** so
   viewers understand the current minimal look (some wav visualization + lyrics) is
   intentional — more visual layers, custom media, and art direction come later.
@@ -313,6 +313,18 @@ Read the project folder and report: WAV present? `beat_data.json` present
 (bpm/duration/features)? `lyrics.json` timed (+ density)? `design.json` present and its
 semantic fields filled? plan approved? which components built? which planned media files
 are still missing? and the next action.
+
+## CREDIT LAW — performing personas
+
+Nik Bear Brown records under the performing persona **Tuzi Brown**. In narration and
+description copy, always credit the persona as the performer — **"sung by Tuzi Brown"**,
+never "sung as Tuzi Brown". "By" treats Tuzi Brown as the artist; "as" treats the name
+as a costume and undercuts the artistic identity. The written credit line is:
+`Written by Nik Bear Brown · Performed as Tuzi Brown` (the "performed as" in the credit
+block is a disclosure of authorship, not the narration phrasing).
+
+This distinction applies everywhere a voice refers to a Tuzi Brown track in speech:
+narration beats, B00 cold opens, B03 handoffs, YouTube descriptions, captions.
 
 ## Core rules
 

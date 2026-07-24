@@ -1,0 +1,116 @@
+{
+  "slug": "mcp-the-connector-lecture",
+  "totalFrames": 4041,
+  "beats": [
+    {
+      "id": "B00",
+      "kind": "ClaudeComposerAsk",
+      "frames": 475,
+      "audio": "mp3-mcp-the-connector-lecture/beat-B00.mp3",
+      "props": {
+        "greeting": "Bonjour, Medhavy",
+        "topic": "MEDHAVY · DISTRIBUTION",
+        "segment": "A Connector, Not an App",
+        "command": "add connector → mcp.medhavy.com/mcp",
+        "runningText": "connecting the spine…",
+        "folderLabel": "@Medhavy"
+      }
+    },
+    {
+      "id": "B01",
+      "kind": "HaiConceptCard",
+      "frames": 526,
+      "audio": "mp3-mcp-the-connector-lecture/beat-B01.mp3",
+      "props": {
+        "heading": "Higgsfield proved the shape for cinematic media: a remote MCP any Claude user ca",
+        "body": "No new app to install. You add a URL in Claude's settings, and your existing Claude interface gains access to the Medhavy corpus and tools. Same interface, new starting material.",
+        "sparkLine": "The connector is the distribution."
+      }
+    },
+    {
+      "id": "B02",
+      "kind": "HaiConceptCard",
+      "frames": 527,
+      "audio": "mp3-mcp-the-connector-lecture/beat-B02.mp3",
+      "props": {
+        "heading": "The pantry layer — four tools, returning data, not prose.",
+        "body": "List what exists in the corpus for this topic. Retrieve a fact-checked claim set. Pull the exam bank for this unit. Surface the canonical video for this concept. The tools return structured data that your AI then assembles into the course you're building.",
+        "sparkLine": "Data, not prose."
+      }
+    },
+    {
+      "id": "B03",
+      "kind": "HaiConceptCard",
+      "frames": 487,
+      "audio": "mp3-mcp-the-connector-lecture/beat-B03.mp3",
+      "props": {
+        "heading": "One hard rule covering both layers: no corpus, no serving.",
+        "body": "If you ask for a claim set on a topic that isn't in the verified corpus, the server returns empty rather than hallucinating one. The constraint is the quality guarantee — the server will not produce unverified material.",
+        "sparkLine": "Refuses to improvise."
+      }
+    },
+    {
+      "id": "B04",
+      "kind": "HaiConceptCard",
+      "frames": 464,
+      "audio": "mp3-mcp-the-connector-lecture/beat-B04.mp3",
+      "props": {
+        "heading": "The lane already exists.",
+        "body": "Anthropic ships education connectors today — the Medhavy server is building in the lane Anthropic opened, not asking anyone to adopt a new paradigm. The connector pattern is already in Claude's settings menu. The infrastructure is there.",
+        "sparkLine": "The lane already exists."
+      }
+    },
+    {
+      "id": "B05",
+      "kind": "HaiConceptCard",
+      "frames": 448,
+      "audio": "mp3-mcp-the-connector-lecture/beat-B05.mp3",
+      "props": {
+        "heading": "Three tracks, rising friction.",
+        "body": "A local server on your own machine — days of setup. A remote connector you host yourself — an afternoon. The Medhavy hosted connector — a URL in settings, under a minute. The distribution strategy is designed around track three.",
+        "sparkLine": "Adoption is the review."
+      }
+    },
+    {
+      "id": "B06",
+      "kind": "ClaudeVerdictArtifact",
+      "frames": 534,
+      "audio": "mp3-mcp-the-connector-lecture/beat-B06.mp3",
+      "props": {
+        "artifactTitle": "A Connector, Not an App — one page",
+        "artifactHeading": "Distribution",
+        "artifactLines": [
+          "Distribution = a URL in Settings → Connectors (the Higgsfield route).",
+          "Four tools, returning data: get_spine · get_video · get_exercises · list_topics.",
+          "Refusal-on-gap: outside the corpus, Medhavy declines — it never invents.",
+          "Phase gate: the connector serves vetted parts · your AI assembles · you direct."
+        ]
+      }
+    },
+    {
+      "id": "B07",
+      "kind": "ClaudeComposerAsk",
+      "frames": 430,
+      "audio": "mp3-mcp-the-connector-lecture/beat-B07.mp3",
+      "props": {
+        "greeting": "Your turn.",
+        "topic": "MEDHAVY · DISTRIBUTION",
+        "segment": "A Connector, Not an App",
+        "command": "Open Settings → Connectors in Claude and add any remote MCP — Higgsfield's is a good test. Time the whole flow, from opening Settings to first output.",
+        "runningText": "timing the funnel…",
+        "folderLabel": "@Medhavy"
+      }
+    },
+    {
+      "id": "B08",
+      "kind": "ClaudeTitleOutro",
+      "frames": 150,
+      "audio": "mp3-mcp-the-connector-lecture/beat-B08.mp3",
+      "props": {
+        "title": "A Connector, Not an App.",
+        "handle": "@MedhavyAI",
+        "subline": "a pitch in seven parts · 3 of 7"
+      }
+    }
+  ]
+}

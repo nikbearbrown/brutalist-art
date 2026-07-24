@@ -1,0 +1,11 @@
+[
+  { "id": "B00", "frames": 474, "audio": "mp3/beat-B00.mp3", "duration_s": 15.37161 },
+  { "id": "B01", "frames": 403, "audio": "mp3/beat-B01.mp3", "duration_s": 13.003175 },
+  { "id": "B02", "frames": 589, "audio": "mp3/beat-B02.mp3", "duration_s": 19.226122 },
+  { "id": "B03", "frames": 474, "audio": "mp3/beat-B03.mp3", "duration_s": 15.37161 },
+  { "id": "B04", "frames": 581, "audio": "mp3/beat-B04.mp3", "duration_s": 18.947483 },
+  { "id": "B05", "frames": 514, "audio": "mp3/beat-B05.mp3", "duration_s": 16.718367 },
+  { "id": "B06", "frames": 481, "audio": "mp3/beat-B06.mp3", "duration_s": 15.60381 },
+  { "id": "B07", "frames": 598, "audio": "mp3/beat-B07.mp3", "duration_s": 19.504762 },
+  { "id": "B08", "frames": 132, "audio": "mp3/beat-B08.mp3", "duration_s": 3.993832 }
+]

@@ -35,7 +35,7 @@ give Phase 5 perfect caption timing for free (no whisper alignment needed).
 **Phase 2 — Beats / scenes.** The narration + measured durations *are* the beats. Each beat
 carries: `narration_text`, `scene_description`, `characters_present` (Soul ID or reference
 image), `dominant_action`, `camera` (one move), `style` preset, `actual_duration_s`. The whole
-reel lives in one file per reel — **`<reel>/beat_sheet.json`** — which every phase reads and
+reel lives in one file per reel — **`[reel]/beat_sheet.json`** — which every phase reads and
 writes back to (this is the exact filename `generate_audio.py` requires). See the worked
 examples in `reels/watchmakers-butterfly/` and `reels/little-red-cap/`.
 **GATE 0 — lock the audio before anything visual is generated.**
@@ -43,7 +43,7 @@ examples in `reels/watchmakers-butterfly/` and `reels/little-red-cap/`.
 **Phase 3 — Storyboard stills.** Generate **3 candidate images per scene**; keep the one you
 want per scene; regenerate only scenes where none land. Stills are cheap relative to video —
 iterate freely here.
-→ **`scripts/generate_storyboard.sh <reel_folder> [BEAT…]`** (built): prepends the `style_bible`,
+→ **`scripts/generate_storyboard.sh [reel_folder] [BEAT…]`** (built): prepends the `style_bible`,
 locks identity with Higgsfield Soul (`text2image_soul_v2`) per `metadata.characters`, falls back
 to `nano_banana` for object/world beats, retries on rate limits. **Multi-character beats (a Soul
 + a reference, e.g. Red Cap + Wolf) are flagged and skipped — they need the multi-ref runner

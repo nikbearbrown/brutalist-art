@@ -1,31 +1,23 @@
 ---
 version: 0.3.0
 name: ai-asset-gen
-description: |
-  Generate images/videos/3D assets/audio via Higgsfield AI. Defaults:
-  GPT Image 2 for image/design/text, Seedance 2.0 for
-  video, Nano Banana 2/Pro for character/reference images,
-  Marketing Studio for ads, Sonilo/Mirelo for audio, plus
-  Soul models and Kling 3.0.
-  Use when: "generate an image", "make a video", "animate
-  this photo", "image-to-video", "edit/stylize/remix this
-  image", "produce a clip", "reframe this video", "edit
-  this video from a sketch", "create a 3D model", "make a
-  GLB/mesh", "create a sound effect", "make music",
-  "text-to-audio", "create an ad", "make a UGC video",
-  "product demo", "unboxing", "brand video", "presenter
-  video", "import product from URL", "create avatar for ad",
-  or "analyze video virality". Supports image-to-image,
-  image-to-video, image-to-3D (`multi_image_to_3d`),
-  text-to-audio (`mirelo_text_to_audio`), text-to-music
-  (`sonilo_music`), workflow generation (`draw_to_video`,
-  `reframe`), references, job/upload IDs, Marketing Studio,
-  and Virality Predictor (`brain_activity`).
-  Chain with higgsfield-soul-id for face/identity consistency.
-  NOT for: Soul Character training (use higgsfield-soul-id),
-  product photoshoots, marketplace listing cards,
+description: >
+  Generate images/videos/3D assets/audio via Higgsfield AI. Defaults: GPT
+  Image 2 for image/design/text, Seedance 2.0 for video, Nano Banana 2/Pro
+  for character/reference images, Marketing Studio for ads, Sonilo/Mirelo
+  for audio, plus Soul models and Kling 3.0. Use when: "generate an image",
+  "make a video", "animate this photo", "image-to-video",
+  "edit/stylize/remix this image", "produce a clip", "reframe this video",
+  "create a 3D model", "make a GLB/mesh", "create a sound effect", "make
+  music", "text-to-audio", "create an ad", "make a UGC video", "product
+  demo", "brand video", or "analyze video virality". Supports image-to-
+  image, image-to-video, image-to-3D, text-to-audio, text-to-music, workflow
+  generation (draw_to_video, reframe), references, job/upload IDs, Marketing
+  Studio, and Virality Predictor (brain_activity). Chain with higgsfield-
+  soul-id for face/identity consistency. NOT for: Soul Character training
+  (use higgsfield-soul-id), product photoshoots, marketplace listing cards,
   text/chat/TTS tasks.
-argument-hint: "[prompt-or-analysis-request] [--model <name>] [--image|--video <path-or-id>]"
+argument-hint: "[prompt-or-analysis-request] [--model [name]] [--image|--video [path-or-id]]"
 allowed-tools: Bash
 ---
 
@@ -57,7 +49,7 @@ Before any other command:
 
 When looking for a Higgsfield feature/model, do not rely only on semantic search or CLI `--help`. First run an unfiltered model list, then inspect likely `job_set_type` names. If the user says a model exists but search returns no results, trust that signal and verify with the full model list before answering.
 
-Workflows are separate from models. Discover them with `higgsfield workflow list` and inspect params with `higgsfield workflow get <workflow_name>`.
+Workflows are separate from models. Discover them with `higgsfield workflow list` and inspect params with `higgsfield workflow get [workflow_name]`.
 
 Virality Predictor is exposed as:
 
@@ -117,36 +109,36 @@ If the user says "analyze this video", "score this ad", "evaluate the hook", or 
    For the actual `--model` ID to pass to `higgsfield generate create`, run `higgsfield model list --json | jq` to map display names to IDs. See `references/model-catalog.md` for the full table.
 
 2. **Pass media inputs straight to flags.** Media flags accept a local file path **or** a UUID. CLI auto-uploads paths and auto-detects job vs upload for UUIDs. No need to pre-upload. Each model declares accepted roles (`image`, `start_image`, `end_image`, `video`, `audio`) — see `references/media-inputs.md`.
-3. **Validate quickly.** If unsure of params, run `higgsfield model get <jst> --json` once and pass only what's needed. Validate the preferred model before falling back to an older one. Use schema defaults otherwise. The server returns `adjustments` for non-fatal coercions (e.g. `aspect_ratio=99:99` → closest match) and a structured error for invalid declared-param values.
-4. **Submit and wait in one shot.** `higgsfield generate create <jst> [--prompt "..."] [media flags] [param flags] --wait`. Blocks until terminal status and prints the result on stdout. Tunables: `--wait-timeout 20m` (default 10m), `--wait-interval 5s` (default 3s). Virality Predictor does not need a prompt; pass `--video`.
+3. **Validate quickly.** If unsure of params, run `higgsfield model get [jst] --json` once and pass only what's needed. Validate the preferred model before falling back to an older one. Use schema defaults otherwise. The server returns `adjustments` for non-fatal coercions (e.g. `aspect_ratio=99:99` → closest match) and a structured error for invalid declared-param values.
+4. **Submit and wait in one shot.** `higgsfield generate create [jst] [--prompt "..."] [media flags] [param flags] --wait`. Blocks until terminal status and prints the result on stdout. Tunables: `--wait-timeout 20m` (default 10m), `--wait-interval 5s` (default 3s). Virality Predictor does not need a prompt; pass `--video`.
 5. **Deliver.** For generated media and 3D assets, send the primary result URL plus a one-line summary (model, duration if video; GLB/asset URL for 3D). For Virality Predictor, deliver the scores, business interpretation, and the Open report link. Do not surface Virality Predictor `.glb`, `.bin`, or region-table internals in normal chat output.
 
-To inspect or rerun later, `higgsfield generate list --json` and `higgsfield generate get <id> --json` work for retrospection. `higgsfield generate wait <id>` is still available if you ever need to rejoin a job started without `--wait`.
+To inspect or rerun later, `higgsfield generate list --json` and `higgsfield generate get [id] --json` work for retrospection. `higgsfield generate wait [id]` is still available if you ever need to rejoin a job started without `--wait`.
 
-For workflow jobs, use `higgsfield generate workflow <workflow_name> ... --wait`. Cost syntax is `higgsfield generate cost workflow <workflow_name> ...`. See `references/workflows.md`.
+For workflow jobs, use `higgsfield generate workflow [workflow_name] ... --wait`. Cost syntax is `higgsfield generate cost workflow [workflow_name] ...`. See `references/workflows.md`.
 
 ## Media flags
 
 | Flag | Purpose | Models that accept it |
 |---|---|---|
-| `--image <path-or-id>` | reference image | most image models, `grok_video_v15`, `multi_image_to_3d`, `seedance_2_0`, `veo3`, `marketing_studio_video` |
-| `--start-image <path-or-id>` | first frame for image-to-video transitions | `grok_video_v15`, `kling3_0`, `kling3_0_turbo`, `kling2_6`, `veo3_1`, `seedance_2_0`, `marketing_studio_video` |
-| `--end-image <path-or-id>` | last frame for transitions | `kling3_0`, `seedance_2_0`, `marketing_studio_video` |
-| `--video <path-or-id>` | reference or analyzed video | `seedance_2_0`, `brain_activity` |
-| `--audio <path-or-id>` | reference audio (lipsync, soundtrack match) | `seedance_2_0` (use this, NOT `--generate-audio`) |
+| `--image [path-or-id]` | reference image | most image models, `grok_video_v15`, `multi_image_to_3d`, `seedance_2_0`, `veo3`, `marketing_studio_video` |
+| `--start-image [path-or-id]` | first frame for image-to-video transitions | `grok_video_v15`, `kling3_0`, `kling3_0_turbo`, `kling2_6`, `veo3_1`, `seedance_2_0`, `marketing_studio_video` |
+| `--end-image [path-or-id]` | last frame for transitions | `kling3_0`, `seedance_2_0`, `marketing_studio_video` |
+| `--video [path-or-id]` | reference or analyzed video | `seedance_2_0`, `brain_activity` |
+| `--audio [path-or-id]` | reference audio (lipsync, soundtrack match) | `seedance_2_0` (use this, NOT `--generate-audio`) |
 
 Each flag accepts either a local file path (auto-uploaded) or a UUID (upload id from `higgsfield upload create`, or a previous job id). Each model declares its own role set via `MEDIA_ROLES`. See `references/media-inputs.md` for the full table.
 
 ## Common params
 
-Flags pass through to model schema. Use `higgsfield model get <jst>` to discover.
+Flags pass through to model schema. Use `higgsfield model get [jst]` to discover.
 
 ```bash
 higgsfield generate create gpt_image_2 --prompt "neon city at dusk" --aspect_ratio 16:9 --resolution 2k --wait
 higgsfield generate create nano_banana_2 --prompt "anime character concept, expressive pose" --image ./ref.png --wait
 higgsfield generate create seedance_2_0 --prompt "camera dollies in" --start-image ./first.png --duration 12 --wait
 higgsfield generate create grok_video_v15 --prompt "cinematic handheld shot, neon rainy street" --start-image ./image.png --duration 5 --resolution 720p --wait
-higgsfield generate create text2image_soul_v2 --prompt "..." --soul-id <soul_ref_id> --quality 2k --wait
+higgsfield generate create text2image_soul_v2 --prompt "..." --soul-id [soul_ref_id] --quality 2k --wait
 higgsfield generate create multi_image_to_3d --image ./front.png --image ./side.png --should_texture true --wait
 higgsfield generate create sonilo_music --prompt "cinematic synthwave track" --duration 12 --wait
 higgsfield generate create mirelo_text_to_audio --prompt "glass breaking in a large hall" --duration 4 --wait
@@ -170,7 +162,7 @@ Branded image/video gen: avatars + products + optional setup hooks/settings + ad
 - **Webproduct** — App Store / web page version. Auto-routes when fetching App Store URLs.
 - **Hook** — reusable opening angle / ad hook. Browse with `higgsfield marketing-studio hooks list`. Hook text is prepended to the user's prompt; it does not replace `--prompt`.
 - **Setting** — reusable environment / scene context. Browse with `higgsfield marketing-studio settings list`.
-- **Ad reference** — reusable inspiration video that can be bound to an avatar and/or product. Created from an uploaded video (`--video-input <upload_id>`) or a previous generation job (`--job <job_id>`). Browse with `higgsfield marketing-studio ad-references list`. See `references/marketing-ad-references.md`.
+- **Ad reference** — reusable inspiration video that can be bound to an avatar and/or product. Created from an uploaded video (`--video-input [upload_id]`) or a previous generation job (`--job [job_id]`). Browse with `higgsfield marketing-studio ad-references list`. See `references/marketing-ad-references.md`.
 - **Brand kit** — captures a brand's identity (name, logo, hero images, colours, fonts, tone) for reuse across image generations. Created by handing in a website URL (`higgsfield marketing-studio brand-kits fetch --url https://… --wait`). See `references/marketing-brand-kits.md`.
 - **Ad format** — presets that drives the visual structure of a generated image (`headline`, `bullet-points`, etc.). Read-only, browse with `higgsfield marketing-studio ad-formats list`. Required input for `dtc-ads generate`.
 
@@ -202,24 +194,24 @@ higgsfield marketing-studio ad-formats list --json
 
 1. **Get product.**
    - Existing product → `higgsfield marketing-studio products list --json`
-   - URL → `higgsfield marketing-studio products fetch --url <url> --wait` (polls until import done)
-   - Local images → `higgsfield upload create <photo>...` then `higgsfield marketing-studio products create --title "..." --image <id>...`
+   - URL → `higgsfield marketing-studio products fetch --url [url] --wait` (polls until import done)
+   - Local images → `higgsfield upload create [photo]...` then `higgsfield marketing-studio products create --title "..." --image [id]...`
    Capture product id. When using `--hook_id`, strongly prefer passing `--product_ids`; hooks are designed to pivot into a product and work poorly without product context.
 2. **Pick avatar if needed.**
    - Default: `higgsfield marketing-studio avatars list` and pick a preset matching the brand voice.
-   - Custom: `higgsfield marketing-studio avatars create --name "..." --image <upload_id>`.
+   - Custom: `higgsfield marketing-studio avatars create --name "..." --image [upload_id]`.
    For UGC modes, you may omit `--avatars` when no specific presenter is required and the brief mentions a person; the backend can synthesize a Soul Character.
 3. **Optionally pick setup items.**
    - Hook: `higgsfield marketing-studio hooks list --json`
    - Setting: `higgsfield marketing-studio settings list --json`
-   Pass selected IDs as `--hook_id <hook_id>` and `--setting_id <setting_id>` for `marketing_studio_video` only. Do not copy the hook's prompt into `--prompt` unless the user explicitly wants to reinforce the same wording.
+   Pass selected IDs as `--hook_id [hook_id]` and `--setting_id [setting_id]` for `marketing_studio_video` only. Do not copy the hook's prompt into `--prompt` unless the user explicitly wants to reinforce the same wording.
 4. **Pick mode if needed.** Default is `ugc`; `--mode` is not required just because `--hook_id` is present. Other current slugs: `ugc_how_to`, `ugc_unboxing`, `product_showcase`, `product_review`, `tv_spot`, `wild_card`, `ugc_virtual_try_on`, `virtual_try_on`. **Hook/setting are valid only for `ugc`, `ugc_how_to`, `ugc_unboxing`, `product_review`, `ugc_virtual_try_on`** — do not pass `--hook_id` / `--setting_id` with the other modes. See `references/marketing-modes.md`.
 5. **Generate (one-shot).**
    ```bash
    PRODUCT_IDS_JSON=$(mktemp)
    AVATARS_JSON=$(mktemp)
-   printf '["<product_id>"]' > "$PRODUCT_IDS_JSON"
-   printf '[{"id":"<avatar_id>","type":"preset"}]' > "$AVATARS_JSON"
+   printf '["[product_id]"]' > "$PRODUCT_IDS_JSON"
+   printf '[{"id":"[avatar_id]","type":"preset"}]' > "$AVATARS_JSON"
 
    higgsfield generate create marketing_studio_video \
      --prompt "..." \
@@ -231,7 +223,7 @@ higgsfield marketing-studio ad-formats list --json
      --aspect_ratio 9:16 \
      --wait
    ```
-   Add `--hook_id <hook_id>` and/or `--setting_id <setting_id>` when a setup hook/setting was selected.
+   Add `--hook_id [hook_id]` and/or `--setting_id [setting_id]` when a setup hook/setting was selected.
    `product_ids` and `avatars` are JSON arrays; pass them via `@/path/to/file.json`. Do not pass a bare UUID to `--product_ids`.
    Resolution is `480p` or `720p`. Aspect ratio is one of `auto`/`21:9`/`16:9`/`4:3`/`1:1`/`3:4`/`9:16`. `--generate-audio true` is supported here (unlike `seedance_2_0`). `--wait` blocks until done; bump `--wait-timeout 30m` for longer ad runs.
 6. **Deliver.** URL + one-line summary (mode, duration).
@@ -277,7 +269,7 @@ higgsfield generate create brain_activity --video ./creative.mp4 --wait
 
 The result is text, not a generated image/video. Report the overall score, peak hook second, sustain score, strongest/weakest regions, and report URL if present. Interpret it as an objective attention proxy for creative testing: higher Visual/Auditory/Language/Attention scores suggest stronger stimulus and focus; lower Default Mode is better because it suggests less mind-wandering.
 
-The CLI prints an Open report URL like `https://<app-domain>/apps/virality-predictor?resultJobId=<job_id>`. Send that URL for the visual report. Raw artifact URLs such as `brain_example_url`, `vertexMapBinaryUrl`, and `vertexMapUrl` are implementation details; mention them only when the user asks for raw data or implementation details.
+The CLI prints an Open report URL like `https://[app-domain]/apps/virality-predictor?resultJobId=[job_id]`. Send that URL for the visual report. Raw artifact URLs such as `brain_example_url`, `vertexMapBinaryUrl`, and `vertexMapUrl` are implementation details; mention them only when the user asks for raw data or implementation details.
 
 Good final shape:
 
@@ -288,15 +280,15 @@ Sustain: 89%
 Strongest region: Visual Cortex
 Risk: Default Mode is high, which can indicate mind-wandering.
 
-Open report: <report_url>
+Open report: [report_url]
 ```
 
 ## Errors
 
 - `Missing required params: prompt` → user gave no prompt; ask for it.
-- `Missing required params: medias` on `brain_activity` / Virality Predictor → pass exactly one video via `--video <path-or-id>`.
+- `Missing required params: medias` on `brain_activity` / Virality Predictor → pass exactly one video via `--video [path-or-id]`.
 - `Invalid values: aspect_ratio=99:99 (allowed: ...)` → bad enum; pick from allowed.
-- `Unknown params: foo` → schema doesn't accept that flag; check `higgsfield model get <jst>`. If this happens for `hook_id` or `setting_id`, the selected model/job_set_type does not support Marketing Studio setup items.
+- `Unknown params: foo` → schema doesn't accept that flag; check `higgsfield model get [jst]`. If this happens for `hook_id` or `setting_id`, the selected model/job_set_type does not support Marketing Studio setup items.
 - `Session expired` → `higgsfield auth login`.
 
 See `references/troubleshooting.md` for more.

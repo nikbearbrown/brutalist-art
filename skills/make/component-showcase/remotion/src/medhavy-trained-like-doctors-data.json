@@ -1,0 +1,136 @@
+{
+  "slug": "medhavy-trained-like-doctors",
+  "totalFrames": 4251,
+  "beats": [
+    {
+      "id": "B00",
+      "kind": "ClaudeComposerAsk",
+      "frames": 325,
+      "audio": "mp3-medhavy-trained-like-doctors/beat-B00.mp3",
+      "props": {
+        "greeting": "Selam, Medhavy",
+        "topic": "CLAUDE · FOR EDUCATORS",
+        "segment": "Claude, For Educators",
+        "command": "how do I actually get good at this?",
+        "runningText": "building your practice plan…",
+        "folderLabel": "@Medhavy",
+        "output": [
+          "structured practice — one recipe per week",
+          "$847/teacher/year on EdTech PD · 62% feel unprepared (AI+1 T6)",
+          "the educator's when/when-not card"
+        ]
+      }
+    },
+    {
+      "id": "B01",
+      "kind": "MedhavyConceptCard",
+      "frames": 613,
+      "audio": "mp3-medhavy-trained-like-doctors/beat-B01.mp3",
+      "props": {
+        "sparkLine": "Doctors don't guess. Neither should you.",
+        "heading": "the doctor comparison",
+        "body": "Doctors get mandatory, structured continuing education — nobody tells them to figure out new medicine alone. Teachers get PD by school district discretion. The standard of care is not the same."
+      }
+    },
+    {
+      "id": "B02",
+      "kind": "MedhavyConceptCard",
+      "frames": 578,
+      "audio": "mp3-medhavy-trained-like-doctors/beat-B02.mp3",
+      "props": {
+        "sparkLine": "The budget bought hardware.",
+        "heading": "the spending gap",
+        "body": "$847 per teacher per year on EdTech PD. 62% of teachers feel unprepared for AI. Hardware absorbs the EdTech budget; teacher training is the afterthought.",
+        "evidenceNote": "AI+1 T6 · $847/teacher/year EdTech PD · 62% feel unprepared for AI"
+      }
+    },
+    {
+      "id": "B03",
+      "kind": "MedhavyConceptCard",
+      "frames": 571,
+      "audio": "mp3-medhavy-trained-like-doctors/beat-B03.mp3",
+      "props": {
+        "sparkLine": "One recipe a week.",
+        "heading": "the practice plan",
+        "body": "One recipe from this season per week. The AI Fluency course (Creative Commons, free, model-agnostic — Anthropic). A peer to compare drafts with. That's the practice plan."
+      }
+    },
+    {
+      "id": "B04",
+      "kind": "MedhavyTwoColumnCard",
+      "frames": 587,
+      "audio": "mp3-medhavy-trained-like-doctors/beat-B04.mp3",
+      "props": {
+        "sparkLine": "Drafting yes. Deciding no.",
+        "leftHeader": "AI for educators",
+        "leftItems": [
+          "drafting lesson plans",
+          "generating differentiated practice",
+          "scheduling recurring routines",
+          "practice generation"
+        ],
+        "rightHeader": "yours alone",
+        "rightItems": [
+          "deciding what reaches students",
+          "the relationship",
+          "reading the room",
+          "professional judgment you sign your name to"
+        ]
+      }
+    },
+    {
+      "id": "B05",
+      "kind": "MedhavyPredictCard",
+      "frames": 606,
+      "audio": "mp3-medhavy-trained-like-doctors/beat-B05.mp3",
+      "props": {
+        "sparkLine": "Your deck, your call.",
+        "question": "Which of the five season recipes will you run first next week? M1: lesson plan + judge every line · M2: assignment audit + extend/replace · M3: Monday plan + 4pm routine · M4: delegation audit · M5: personal PD plan",
+        "commit": "name the one before the verdict"
+      }
+    },
+    {
+      "id": "B06",
+      "kind": "ClaudeVerdictArtifact",
+      "frames": 465,
+      "audio": "mp3-medhavy-trained-like-doctors/beat-B06.mp3",
+      "props": {
+        "sparkLine": "",
+        "artifactTitle": "Claude, Trained Like Doctors — one card",
+        "artifactHeading": "The season's five pieces",
+        "artifactLines": [
+          "M1: first lesson plan + judge every line · M2: assignment audit + extend/replace · M3: Monday plan + 4pm routine · M4: delegation audit.",
+          "The spending gap: $847/teacher/year on EdTech PD · 62% unprepared. The budget bought hardware. The teacher is the investment. (AI+1 T6)",
+          "The practice plan: one recipe per week · AI Fluency course (CC, free) · a peer to compare drafts with.",
+          "The when/when-not card: drafting yes · deciding no · the relationship and professional judgment are yours alone.",
+          "AI did: practice recipes with you · you do: practice weekly, compare drafts with a peer · support fades at: one recipe per week, until it's reflex"
+        ]
+      }
+    },
+    {
+      "id": "B07",
+      "kind": "ClaudeComposerAsk",
+      "frames": 354,
+      "audio": "mp3-medhavy-trained-like-doctors/beat-B07.mp3",
+      "props": {
+        "greeting": "Your turn.",
+        "topic": "CLAUDE · FOR EDUCATORS",
+        "segment": "Claude, For Educators",
+        "command": "Build me a personal AI professional development plan for one school term. I teach [subject] at [grade level]. I want to practice one Claude recipe per week, building toward fluency. Start with the lowest-stakes recipe and progress to more complex uses. For each week: name the recipe, write the prompt I'll use, and suggest one thing to compare with a peer. Keep it practical and under 10 weeks.",
+        "runningText": "building your PD plan…",
+        "folderLabel": "@Medhavy"
+      }
+    },
+    {
+      "id": "B08",
+      "kind": "ClaudeTitleOutro",
+      "frames": 152,
+      "audio": "mp3-medhavy-trained-like-doctors/beat-B08.mp3",
+      "props": {
+        "title": "Claude, Trained Like Doctors.",
+        "handle": "@Medhavy",
+        "subline": "subscribe · the practice plan, taken apart"
+      }
+    }
+  ]
+}

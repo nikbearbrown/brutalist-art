@@ -89,7 +89,7 @@ longer ones — budget Soul-ID beats for *each* speaker.
 
 ## Commands
 
-### `bio <figure>` — author + scaffold
+### `bio [figure]` — author + scaffold
 1. Read `reference/style.md`, `reference/duration.md`, and `reference/prompts.md`.
 2. Gather the facts: dates/origin, the defining line or equation, a pivotal year, the
    world the story lives in, and the legacy. Verify dates/quotes/equations. (For fictional
@@ -98,7 +98,7 @@ longer ones — budget Soul-ID beats for *each* speaker.
 4. Write the **alternating** beat sheet (clip / card / clip / card …) covering who / why /
    impact, narrator line on every beat, one idea per beat, opening AND closing on
    `soul-id`, with Soul-ID density matching the length.
-5. Scaffold: `python scripts/new_bio.py "<Name>" --length short|medium|long`
+5. Scaffold: `python scripts/new_bio.py "[Name]" --length short|medium|long`
    (copies the scene + fonts, writes a starter beat sheet at that length). Replace the
    starter beats with the authored ones.
 6. List the clip beats' Higgsfield prompts as a shot list (one Soul ID per figure serves
@@ -110,7 +110,7 @@ After generating the Higgsfield clips and dropping them in a `TMP/` folder named
 ```
 python ../mini-bio/scripts/ingest_clips.py .
 ```
-It **copies** (never moves) each clip into `clips/<BEAT>.mp4`, **strips the audio**, and
+It **copies** (never moves) each clip into `clips/[BEAT].mp4`, **strips the audio**, and
 maps sources to the clip beats in order. TMP stays intact — delete it yourself once the
 video looks great.
 
@@ -118,13 +118,13 @@ video looks great.
 **16:9 (landscape):**
 ```
 python ../../sketch-explainer/scripts/generate_audio.py .          # narration (silent/reuse aware)
-manim -qh <slug>.py BearsDoodlesVideo                            # cards + placeholders
+manim -qh [slug].py BearsDoodlesVideo                            # cards + placeholders
 python ../../sketch-explainer/scripts/composite_clips.py .          # footage full-frame into clip windows
 python ../../sketch-explainer/scripts/assemble.py . --mode manim --manim-mp4 mp4/_composited.mp4
 ```
 **9:16 (Short) — same audio, no new footage generation:**
 ```
-manim -r 1080,1920 --fps 60 --disable_caching --flush_cache <slug>.py BearsDoodlesVideo
+manim -r 1080,1920 --fps 60 --disable_caching --flush_cache [slug].py BearsDoodlesVideo
 python ../../sketch-explainer/scripts/composite_clips.py . --portrait
 python ../../sketch-explainer/scripts/assemble.py . --mode manim --portrait --manim-mp4 mp4/_composited-short.mp4
 ```
@@ -139,7 +139,7 @@ API calls, run `generate_audio.py . --dry-run` — it sums per-beat word-count e
 ```
 python scripts/package_bio.py .
 ```
-Writes `<slug>-youtube.md`: title options, a description built from the narration (the bio
+Writes `[slug]-youtube.md`: title options, a description built from the narration (the bio
 IS the story), tags, hashtags, and a separate **#Shorts** block. Tags/hashtags are derived
 from the figure and the story, not hardcoded to a field. It's a draft — refine the hook
 line before posting, and verify the facts.

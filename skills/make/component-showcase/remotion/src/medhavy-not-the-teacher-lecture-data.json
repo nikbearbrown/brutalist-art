@@ -1,0 +1,133 @@
+{
+  "slug": "medhavy-not-the-teacher-lecture",
+  "totalFrames": 4171,
+  "beats": [
+    {
+      "id": "B00",
+      "kind": "ClaudeComposerAsk",
+      "frames": 470,
+      "audio": "mp3-medhavy-not-the-teacher-lecture/beat-B00.mp3",
+      "props": {
+        "greeting": "Yassou, Medhavy",
+        "topic": "CLAUDE · FOR EDUCATORS",
+        "segment": "Claude, For Educators",
+        "command": "can you teach my class?",
+        "runningText": "finding the honest limits…",
+        "folderLabel": "@Medhavy",
+        "output": [
+          "the honest no — Claude is not the teacher",
+          "what only you can carry: the relationship, the read",
+          "protect the struggle — friction law"
+        ]
+      }
+    },
+    {
+      "id": "B01",
+      "kind": "HaiConceptCard",
+      "frames": 555,
+      "audio": "mp3-medhavy-not-the-teacher-lecture/beat-B01.mp3",
+      "props": {
+        "heading": "The relationship is the first thing a model can't hold.",
+        "body": "When a student is struggling and frustrated, the thing that keeps them in the room is often a specific human who knows their name, their history, and what kind of encouragement works for them. Claude doesn't have that. It can simulate warmth, but it can't hold a relationship across time in the way a teacher does.",
+        "sparkLine": "Only you carry the kid."
+      }
+    },
+    {
+      "id": "B02",
+      "kind": "HaiConceptCard",
+      "frames": 537,
+      "audio": "mp3-medhavy-not-the-teacher-lecture/beat-B02.mp3",
+      "props": {
+        "heading": "The friction law from learning science: there are two kinds of difficulty.",
+        "body": "Unproductive difficulty makes you give up. Productive difficulty — the right kind of struggle — is what builds skill. A model optimized for helpful responses will often resolve the struggle before it becomes productive. A teacher knows when to let the friction stand.",
+        "sparkLine": "Protect the struggle."
+      }
+    },
+    {
+      "id": "B03",
+      "kind": "HaiTwoColumnCard",
+      "frames": 617,
+      "audio": "mp3-medhavy-not-the-teacher-lecture/beat-B03.mp3",
+      "props": {
+        "sparkLine": "Only you carry the kid.",
+        "leftHeader": "machine-shaped tasks",
+        "leftItems": [
+          "draft the quiz or rubric",
+          "generate practice problems",
+          "summarize the standard"
+        ],
+        "rightHeader": "yours alone",
+        "rightItems": [
+          "the parent call in crisis",
+          "which student needs which feedback",
+          "the read of the room today"
+        ]
+      }
+    },
+    {
+      "id": "B04",
+      "kind": "HaiConceptCard",
+      "frames": 569,
+      "audio": "mp3-medhavy-not-the-teacher-lecture/beat-B04.mp3",
+      "props": {
+        "heading": "The engagement trap: EdTech companies optimize for the metrics that keep users i",
+        "body": "Loved product, weak learning outcomes is the pattern the research keeps finding. AI can produce very high perceived engagement while producing low actual skill transfer. The teacher is the check on that gap.",
+        "sparkLine": "Loved isn't learned."
+      }
+    },
+    {
+      "id": "B05",
+      "kind": "HaiConceptCard",
+      "frames": 450,
+      "audio": "mp3-medhavy-not-the-teacher-lecture/beat-B05.mp3",
+      "props": {
+        "heading": "Predict: from your typical week, which of these four tasks is yours alone — mean",
+        "body": "Give feedback on a specific student's writing progress over the semester. Explain the concept three different ways. Generate five discussion questions.",
+        "sparkLine": "Commit before the reveal."
+      }
+    },
+    {
+      "id": "B06",
+      "kind": "ClaudeVerdictArtifact",
+      "frames": 447,
+      "audio": "mp3-medhavy-not-the-teacher-lecture/beat-B06.mp3",
+      "props": {
+        "sparkLine": "",
+        "artifactTitle": "Claude, Not the Teacher — one card",
+        "artifactHeading": "The split",
+        "artifactLines": [
+          "The relationship: when a student is about to give up, the thing that keeps them going is you — not the platform.",
+          "The friction law: remove extraneous load (logistics, confusion). Protect germane load (the struggle that is the learning).",
+          "The split: drafting is machine-shaped. The parent call, the room read, the which-student-gets-what — those are yours alone.",
+          "Loved isn't learned: engagement is not instruction. The tool optimized for clicks removed the friction that builds judgment.",
+          "AI did: draft content, generate options · you do: carry the relationship · support fades at: the moment AI is put between teacher and student"
+        ]
+      }
+    },
+    {
+      "id": "B07",
+      "kind": "ClaudeComposerAsk",
+      "frames": 350,
+      "audio": "mp3-medhavy-not-the-teacher-lecture/beat-B07.mp3",
+      "props": {
+        "greeting": "Your turn.",
+        "topic": "CLAUDE · FOR EDUCATORS",
+        "segment": "Claude, For Educators",
+        "command": "Here are the tasks on my plate this week as a teacher: [list your tasks]. Split this list into two columns: machine-shaped tasks (Claude can do the first pass) and yours-alone tasks (require the relationship, the read of the room, or judgment about a specific student). Explain your reasoning for any task where you are uncertain. I will check your judgment against mine.",
+        "runningText": "splitting the task list…",
+        "folderLabel": "@Medhavy"
+      }
+    },
+    {
+      "id": "B08",
+      "kind": "ClaudeTitleOutro",
+      "frames": 176,
+      "audio": "mp3-medhavy-not-the-teacher-lecture/beat-B08.mp3",
+      "props": {
+        "title": "Claude, Not the Teacher.",
+        "handle": "@Medhavy",
+        "subline": "subscribe · only you carry the kid"
+      }
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "slug": "medhavy-in-the-classroom",
+  "totalFrames": 4082,
+  "beats": [
+    {
+      "id": "B00",
+      "kind": "ClaudeComposerAsk",
+      "frames": 452,
+      "audio": "mp3-medhavy-in-the-classroom/beat-B00.mp3",
+      "props": {
+        "greeting": "Namaste, Medhavy",
+        "topic": "CLAUDE · FOR EDUCATORS",
+        "segment": "Claude, For Educators",
+        "command": "I'm a teacher — where do I even start?",
+        "runningText": "finding your entry point…",
+        "folderLabel": "@Medhavy",
+        "output": [
+          "you're the variable that matters (RAND 2026)",
+          "start with one recipe, this week",
+          "free for verified US K-12 — no barrier to entry"
+        ]
+      }
+    },
+    {
+      "id": "B01",
+      "kind": "MedhavyConceptCard",
+      "frames": 539,
+      "audio": "mp3-medhavy-in-the-classroom/beat-B01.mp3",
+      "props": {
+        "sparkLine": "A date, not a deficit.",
+        "heading": "not a deficit",
+        "body": "AI didn't exist when you were in school. Nobody who started teaching before 2020 learned this. That's a date, not a personal failing."
+      }
+    },
+    {
+      "id": "B02",
+      "kind": "MedhavyConceptCard",
+      "frames": 563,
+      "audio": "mp3-medhavy-in-the-classroom/beat-B02.mp3",
+      "props": {
+        "sparkLine": "You are the variable.",
+        "heading": "what the research says",
+        "body": "RAND 2026 found that when EdTech worked, it was because teachers were trained — not because the platform was better. You are the variable.",
+        "evidenceNote": "RAND 2026 — teacher training made or broke EdTech interventions"
+      }
+    },
+    {
+      "id": "B03",
+      "kind": "MedhavyTwoColumnCard",
+      "frames": 566,
+      "audio": "mp3-medhavy-in-the-classroom/beat-B03.mp3",
+      "props": {
+        "sparkLine": "Draft, then judge.",
+        "leftHeader": "what Claude does",
+        "leftItems": [
+          "draft the lesson plan",
+          "cite the standard per section",
+          "suggest differentiation levels"
+        ],
+        "rightHeader": "what you do",
+        "rightItems": [
+          "judge every line",
+          "catch the errors",
+          "decide what reaches students"
+        ]
+      }
+    },
+    {
+      "id": "B04",
+      "kind": "MedhavyConceptCard",
+      "frames": 551,
+      "audio": "mp3-medhavy-in-the-classroom/beat-B04.mp3",
+      "props": {
+        "sparkLine": "No barrier to entry.",
+        "heading": "the access question",
+        "body": "Free for verified US K-12 teachers. FERPA data processing agreement. Your data never trains the model. No cost barrier. No data risk.",
+        "evidenceNote": "Anthropic Claude for Teachers · Jul 14 2026 · FERPA DPA · data not trained"
+      }
+    },
+    {
+      "id": "B05",
+      "kind": "MedhavyPredictCard",
+      "frames": 358,
+      "audio": "mp3-medhavy-in-the-classroom/beat-B05.mp3",
+      "props": {
+        "sparkLine": "Commit before the reveal.",
+        "question": "What's the most common failure mode when teachers start using AI for lesson planning?",
+        "commit": "commit to an answer before the next beat"
+      }
+    },
+    {
+      "id": "B06",
+      "kind": "ClaudeVerdictArtifact",
+      "frames": 473,
+      "audio": "mp3-medhavy-in-the-classroom/beat-B06.mp3",
+      "props": {
+        "sparkLine": "",
+        "artifactTitle": "Claude, In the Classroom — one card",
+        "artifactHeading": "The recipe",
+        "artifactLines": [
+          "Not a deficit: nobody who started teaching before 2020 learned this — it didn't exist. A date, not a gap in you.",
+          "You are the variable: RAND 2026 found EdTech worked when teachers were trained, not when platforms improved.",
+          "The recipe: Claude drafts, cites standards, suggests differentiation. You judge every line before it reaches students.",
+          "No barrier: free for verified US K-12, FERPA DPA, your data never trains the model (Anthropic, Jul 14 2026).",
+          "AI did: draft the lesson plan · you do: judge every line · support fades at: the moment you stop judging"
+        ]
+      }
+    },
+    {
+      "id": "B07",
+      "kind": "ClaudeComposerAsk",
+      "frames": 437,
+      "audio": "mp3-medhavy-in-the-classroom/beat-B07.mp3",
+      "props": {
+        "greeting": "Your turn.",
+        "topic": "CLAUDE · FOR EDUCATORS",
+        "segment": "Claude, For Educators",
+        "command": "Write a lesson plan for [grade level] [subject], aligned to [state standard]. Include: objective, warm-up, direct instruction, guided practice, and exit ticket. Cite the specific standard for each section. Offer three differentiation levels: below, at, and above grade readiness. I will judge every line before anything reaches students.",
+        "runningText": "drafting the plan…",
+        "folderLabel": "@Medhavy"
+      }
+    },
+    {
+      "id": "B08",
+      "kind": "ClaudeTitleOutro",
+      "frames": 143,
+      "audio": "mp3-medhavy-in-the-classroom/beat-B08.mp3",
+      "props": {
+        "title": "Claude, In the Classroom.",
+        "handle": "@Medhavy",
+        "subline": "subscribe · the first recipe, taken apart"
+      }
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "slug": "mcp-by-design-lecture",
+  "totalFrames": 3782,
+  "beats": [
+    {
+      "id": "B00",
+      "kind": "ClaudeComposerAsk",
+      "frames": 481,
+      "audio": "mp3-mcp-by-design-lecture/beat-B00.mp3",
+      "props": {
+        "greeting": "Sawadee, Medhavy",
+        "topic": "MEDHAVY · DESIGN",
+        "segment": "Learning First, By Default",
+        "command": "make the slides pop more",
+        "runningText": "consulting the defaults…",
+        "folderLabel": "@Medhavy"
+      }
+    },
+    {
+      "id": "B01",
+      "kind": "HaiConceptCard",
+      "frames": 526,
+      "audio": "mp3-mcp-by-design-lecture/beat-B01.mp3",
+      "props": {
+        "heading": "Accessibility isn't a review step here — it's a generation default.",
+        "body": "WCAG AA contrast compliance is baked into the palette and enforced by the pipeline before a file is rendered. A creator doesn't have to know what 4.5:1 contrast ratio means; the system will not produce a slide that fails it.",
+        "sparkLine": "Accessible before it exists."
+      }
+    },
+    {
+      "id": "B02",
+      "kind": "HaiConceptCard",
+      "frames": 492,
+      "audio": "mp3-mcp-by-design-lecture/beat-B02.mp3",
+      "props": {
+        "heading": "Sequencing follows the arc — hook, predict, struggle, reveal, apply — because th",
+        "body": "The MCP server doesn't just generate content; it generates content in the specific sequence that makes cognitive processing work.",
+        "sparkLine": "One idea per beat."
+      }
+    },
+    {
+      "id": "B03",
+      "kind": "HaiConceptCard",
+      "frames": 436,
+      "audio": "mp3-mcp-by-design-lecture/beat-B03.mp3",
+      "props": {
+        "heading": "Facts get checked before render.",
+        "body": "Every stated magnitude in a generated course carries a source citation — not just a claim that sounds accurate. This is infrastructure, not policy: the pipeline routes through a fact-check step before the asset is finalized.",
+        "sparkLine": "Sources attached, flags kept."
+      }
+    },
+    {
+      "id": "B04",
+      "kind": "HaiConceptCard",
+      "frames": 405,
+      "audio": "mp3-mcp-by-design-lecture/beat-B04.mp3",
+      "props": {
+        "heading": "Quick prediction: how many design decisions does one ninety-second reel contain?",
+        "body": "Commit to a number — the reveal puts it in the hundreds.",
+        "sparkLine": "Count them yourself."
+      }
+    },
+    {
+      "id": "B05",
+      "kind": "HaiConceptCard",
+      "frames": 473,
+      "audio": "mp3-mcp-by-design-lecture/beat-B05.mp3",
+      "props": {
+        "heading": "Every artifact ships a decisions.json — one entry per choice.",
+        "body": "A stakeholder can open the file, query any decision by ID, and read why that choice was made. Auditability is built in, not bolted on. The design decisions are a first-class output, not a footnote.",
+        "sparkLine": "Choices, made inspectable."
+      }
+    },
+    {
+      "id": "B06",
+      "kind": "ClaudeVerdictArtifact",
+      "frames": 489,
+      "audio": "mp3-mcp-by-design-lecture/beat-B06.mp3",
+      "props": {
+        "artifactTitle": "Learning First, By Default — one page",
+        "artifactHeading": "The defaults",
+        "artifactLines": [
+          "Theory decides first: WCAG 2.2 AA · learning palettes · arc sequencing · cognitive load · sourced facts.",
+          "Applied silently, logged loudly — no blank canvas, no re-deciding solved problems.",
+          "decisions.json beside every artifact: ID, choice, reason, source, overridable.",
+          "Phase gate: theory sets defaults · the human overrides by ID · nothing is hidden."
+        ]
+      }
+    },
+    {
+      "id": "B07",
+      "kind": "ClaudeComposerAsk",
+      "frames": 327,
+      "audio": "mp3-mcp-by-design-lecture/beat-B07.mp3",
+      "props": {
+        "greeting": "Your turn.",
+        "topic": "MEDHAVY · DESIGN",
+        "segment": "Learning First, By Default",
+        "command": "Take the last deck or lesson an AI made for you and ask it: list every design decision you made, with a reason and a source for each.",
+        "runningText": "auditing the invisible…",
+        "folderLabel": "@Medhavy"
+      }
+    },
+    {
+      "id": "B08",
+      "kind": "ClaudeTitleOutro",
+      "frames": 153,
+      "audio": "mp3-mcp-by-design-lecture/beat-B08.mp3",
+      "props": {
+        "title": "Learning First, By Default.",
+        "handle": "@MedhavyAI",
+        "subline": "a pitch in seven parts · 4 of 7"
+      }
+    }
+  ]
+}

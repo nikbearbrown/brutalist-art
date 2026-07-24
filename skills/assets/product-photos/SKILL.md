@@ -18,7 +18,7 @@ description: |
   video (use higgsfield-generate Marketing Studio), marketplace listing cards
   (use higgsfield-marketplace-cards), Soul Character training (use
   higgsfield-soul-id).
-argument-hint: "[--mode <mode>] [--count N] [prompt]"
+argument-hint: "[--mode [mode]] [--count N] [prompt]"
 allowed-tools: Bash
 ---
 
@@ -139,11 +139,11 @@ Single command. Backend assembles the final prompt and submits to `gpt_image_2`.
 
 ```bash
 higgsfield product-photoshoot create \
-  --mode <mode> \
-  --prompt "<short user-intent description from interview answers>" \
-  [--image <path-or-upload-id>]... \
-  [--count <1-10>] \
-  [--aspect_ratio <override>]
+  --mode [mode] \
+  --prompt "[short user-intent description from interview answers]" \
+  [--image [path-or-upload-id]]... \
+  [--count [1-10]] \
+  [--aspect_ratio [override]]
 ```
 
 Examples:

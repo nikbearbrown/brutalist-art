@@ -1,6 +1,13 @@
 ---
 name: line-art-vectorizer
-description: Turn simple black-and-white line art into clean, gate-passing SVGs — and generate line art that converts well in the first place. Two halves: a Midjourney prompt-set for SVG-friendly art, and a tracer that tries each image and TOSSES anything too complex (or under-traced) rather than ship a messy vector. Use when asked to vectorize icons/line art, make an SVG icon set, convert PNGs to SVG, or generate clean b+w line art for figures/Remotion.
+description: >
+  Turn simple black-and-white line art into clean, gate-passing SVGs — and
+  generate line art that converts well in the first place. Two halves: a
+  Midjourney prompt-set for SVG-friendly art, and a tracer that tries each
+  image and TOSSES anything too complex (or under-traced) rather than ship a
+  messy vector. Use when asked to vectorize icons/line art, make an SVG icon
+  set, convert PNGs to SVG, or generate clean b+w line art for
+  figures/Remotion.
 metadata:
   tags: svg, vectorize, line-art, icons, midjourney, trace, vtracer, assets
 ---
@@ -29,7 +36,7 @@ Midjourney prompt-set  →  b+w line-art PNG  →  linework-to-svg.py  →  svg-
 
 ```bash
 pip install vtracer pillow      # once; no system libs needed
-python scripts/linework-to-svg.py <png-dir-or-file> -o <out-dir>
+python scripts/linework-to-svg.py [png-dir-or-file] -o [out-dir]
 ```
 
 What it does per image: flattens the art onto white (handles black-on-transparent exports —
@@ -69,11 +76,11 @@ simplify to manufacture simplicity that was never generated.
 For *geometric* icons, recreating the SVG by hand beats tracing — by a lot. The atom is just
 ellipses + circles; a bar chart is rects + axis lines. Hand-authored: **937 bytes, grouped,
 animatable.** Traced: ~29 KB, one blob path. So: if the agent recognizes a simple geometric
-subject, author it from `<ellipse>/<circle>/<rect>/<line>` (group logical parts in `<g>`,
-ASCII-safe, with `<title>`); fall back to the tracer for organic line art; toss the rest.
+subject, author it from `[ellipse]/[circle]/[rect]/[line]` (group logical parts in `[g]`,
+ASCII-safe, with `[title]`); fall back to the tracer for organic line art; toss the rest.
 
 ## Output contract
 
 Report: how many tried · kept · tossed (with the per-image reason); where the kept SVGs landed;
-and whether each passed `svg-format-audit`. Never embed a raster inside an `<svg>` (the Madison
+and whether each passed `svg-format-audit`. Never embed a raster inside an `[svg]` (the Madison
 cover mistake) — that's a fake vector and the gate fails it.

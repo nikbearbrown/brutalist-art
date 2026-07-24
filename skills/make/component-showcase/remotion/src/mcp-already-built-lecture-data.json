@@ -1,0 +1,116 @@
+{
+  "slug": "mcp-already-built-lecture",
+  "totalFrames": 3663,
+  "beats": [
+    {
+      "id": "B00",
+      "kind": "ClaudeComposerAsk",
+      "frames": 396,
+      "audio": "mp3-mcp-already-built-lecture/beat-B00.mp3",
+      "props": {
+        "greeting": "Selam, Medhavy",
+        "topic": "MEDHAVY · THE PROOF",
+        "segment": "Already Built",
+        "command": "what would the content moat cost to build?",
+        "runningText": "indexing the shelf…",
+        "folderLabel": "@Medhavy"
+      }
+    },
+    {
+      "id": "B01",
+      "kind": "HaiConceptCard",
+      "frames": 534,
+      "audio": "mp3-mcp-already-built-lecture/beat-B01.mp3",
+      "props": {
+        "heading": "A facts corpus: fact-checked claim sets with sources carried claim by claim.",
+        "body": "Not generated text that sounds plausible — structured claims where every stated magnitude has a citation. That kind of grounded starting material is what prevents the AI from hallucinating the substance while it generates the form.",
+        "sparkLine": "Facts, refusal-grade."
+      }
+    },
+    {
+      "id": "B02",
+      "kind": "HaiConceptCard",
+      "frames": 459,
+      "audio": "mp3-mcp-already-built-lecture/beat-B02.mp3",
+      "props": {
+        "heading": "Full textbooks, authored with the AI+1 CLI pipeline: chapters that don't just re",
+        "body": "The book and the course are coherent because they were built from the same source material.",
+        "sparkLine": "Textbooks become spines."
+      }
+    },
+    {
+      "id": "B03",
+      "kind": "HaiConceptCard",
+      "frames": 472,
+      "audio": "mp3-mcp-already-built-lecture/beat-B03.mp3",
+      "props": {
+        "heading": "Videos and exercise sets — reels in this exact house style, exercise banks teste",
+        "body": "Both already exist in the corpus. When the MCP server routes a prompt to course-building tools, it's drawing on assets that have already been produced and checked.",
+        "sparkLine": "The shelf is stocked."
+      }
+    },
+    {
+      "id": "B04",
+      "kind": "HaiConceptCard",
+      "frames": 401,
+      "audio": "mp3-mcp-already-built-lecture/beat-B04.mp3",
+      "props": {
+        "heading": "So the MCP server is an index over assets that exist — which moves very quickly ",
+        "body": "You can run the tools today, on real content, and verify the output against the canon that's already public.",
+        "sparkLine": "An index, not a moonshot."
+      }
+    },
+    {
+      "id": "B05",
+      "kind": "HaiConceptCard",
+      "frames": 343,
+      "audio": "mp3-mcp-already-built-lecture/beat-B05.mp3",
+      "props": {
+        "heading": "One prediction you can check right now: was this playlist — these six videos you",
+        "body": "The playlist is the demo.",
+        "sparkLine": "This video is the demo."
+      }
+    },
+    {
+      "id": "B06",
+      "kind": "ClaudeVerdictArtifact",
+      "frames": 456,
+      "audio": "mp3-mcp-already-built-lecture/beat-B06.mp3",
+      "props": {
+        "artifactTitle": "Already Built — one page",
+        "artifactHeading": "The shelf",
+        "artifactLines": [
+          "The corpus exists: fact-checked claim sets · CLI-authored textbooks · reels · exercise banks.",
+          "The MCP is an index over that shelf — v1 is a sprint, not a raise.",
+          "The proof ships with the pitch: this playlist's beat sheets, gates, and decision logs.",
+          "Phase gate: assets built · index next · the institutional lane waits for usage evidence."
+        ]
+      }
+    },
+    {
+      "id": "B07",
+      "kind": "ClaudeComposerAsk",
+      "frames": 446,
+      "audio": "mp3-mcp-already-built-lecture/beat-B07.mp3",
+      "props": {
+        "greeting": "Your turn.",
+        "topic": "MEDHAVY · THE PROOF",
+        "segment": "Already Built",
+        "command": "Show me this video's beat_sheet.json, PEDAGOGY.md, and decisions.json — then walk me through one decision and its source.",
+        "runningText": "opening the books…",
+        "folderLabel": "@Medhavy"
+      }
+    },
+    {
+      "id": "B08",
+      "kind": "ClaudeTitleOutro",
+      "frames": 156,
+      "audio": "mp3-mcp-already-built-lecture/beat-B08.mp3",
+      "props": {
+        "title": "Already Built.",
+        "handle": "@MedhavyAI",
+        "subline": "a pitch in seven parts · 6 of 7"
+      }
+    }
+  ]
+}

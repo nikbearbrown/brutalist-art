@@ -1,0 +1,116 @@
+{
+  "slug": "mcp-overview-lecture",
+  "totalFrames": 3728,
+  "beats": [
+    {
+      "id": "B00",
+      "kind": "ClaudeComposerAsk",
+      "frames": 484,
+      "audio": "mp3-mcp-overview-lecture/beat-B00.mp3",
+      "props": {
+        "greeting": "Namaste, Medhavy",
+        "topic": "MEDHAVY · THE PITCH",
+        "segment": "The Medhavy MCP",
+        "command": "build me a course on machine learning",
+        "runningText": "starting from the spine…",
+        "folderLabel": "@Medhavy"
+      }
+    },
+    {
+      "id": "B01",
+      "kind": "HaiConceptCard",
+      "frames": 492,
+      "audio": "mp3-mcp-overview-lecture/beat-B01.mp3",
+      "props": {
+        "heading": "First, the part that's already true: anyone with Claude or any other CLI can gen",
+        "body": "The capability exists. The question is what the starting material is — and right now, for most users, the starting material is the general training distribution of a large language model.",
+        "sparkLine": "Generation is a commodity."
+      }
+    },
+    {
+      "id": "B02",
+      "kind": "HaiConceptCard",
+      "frames": 496,
+      "audio": "mp3-mcp-overview-lecture/beat-B02.mp3",
+      "props": {
+        "heading": "Garbage in, garbage out cuts both ways.",
+        "body": "A blank prompt inherits whatever patterns dominated the training data for that subject — which may or may not reflect current research, may or may not be structured for learning, and almost certainly isn't fact-checked to the level of professional course material.",
+        "sparkLine": "Blank prompts inherit blanks."
+      }
+    },
+    {
+      "id": "B03",
+      "kind": "HaiConceptCard",
+      "frames": 499,
+      "audio": "mp3-mcp-overview-lecture/beat-B03.mp3",
+      "props": {
+        "heading": "Medhavy is a connector, not another app — like Higgsfield for cinematic video.",
+        "body": "You keep your Claude subscription. You add the MCP connector in settings. Now your Claude has access to the Humanitarians AI corpus: fact-checked claims, authored textbooks, tested exercises, produced videos.",
+        "sparkLine": "Connect. Start from vetted."
+      }
+    },
+    {
+      "id": "B04",
+      "kind": "HaiConceptCard",
+      "frames": 420,
+      "audio": "mp3-mcp-overview-lecture/beat-B04.mp3",
+      "props": {
+        "heading": "And the design decisions — accessibility compliance, pedagogical sequencing, fac",
+        "body": "The creator gets good defaults and full override on any choice.",
+        "sparkLine": "Defaults applied, reasons logged."
+      }
+    },
+    {
+      "id": "B05",
+      "kind": "HaiConceptCard",
+      "frames": 284,
+      "audio": "mp3-mcp-overview-lecture/beat-B05.mp3",
+      "props": {
+        "heading": "Before the six-episode detail series — write down one guess: what does the Medha",
+        "body": "Before the six-episode detail series — write down one guess: what does the Medhavy MCP server actually do that Claude alone doesn't? Commit to an answer.",
+        "sparkLine": "Write your guess down."
+      }
+    },
+    {
+      "id": "B06",
+      "kind": "ClaudeVerdictArtifact",
+      "frames": 505,
+      "audio": "mp3-mcp-overview-lecture/beat-B06.mp3",
+      "props": {
+        "artifactTitle": "The Medhavy MCP — one page",
+        "artifactHeading": "The pitch",
+        "artifactLines": [
+          "You keep your AI — Claude, Codex, any CLI.",
+          "We supply the starting point — fact-checked spine, learning-first defaults, a decision log.",
+          "You stay the final judge — every choice overridable, by ID.",
+          "Phase gate: AI drafts from the spine · you judge and shape · support fades as the course matures."
+        ]
+      }
+    },
+    {
+      "id": "B07",
+      "kind": "ClaudeComposerAsk",
+      "frames": 360,
+      "audio": "mp3-mcp-overview-lecture/beat-B07.mp3",
+      "props": {
+        "greeting": "Your turn.",
+        "topic": "MEDHAVY · THE PITCH",
+        "segment": "The Medhavy MCP",
+        "command": "Build week one of Intro to Machine Learning. Cite a primary source for every factual claim, and give me a decision log for every design choice you make.",
+        "runningText": "your course, your judge…",
+        "folderLabel": "@Medhavy"
+      }
+    },
+    {
+      "id": "B08",
+      "kind": "ClaudeTitleOutro",
+      "frames": 188,
+      "audio": "mp3-mcp-overview-lecture/beat-B08.mp3",
+      "props": {
+        "title": "The Medhavy MCP.",
+        "handle": "@MedhavyAI",
+        "subline": "a pitch in seven parts · overview"
+      }
+    }
+  ]
+}

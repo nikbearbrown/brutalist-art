@@ -1,14 +1,14 @@
 ---
 name: slate-filler
-description: Fill vox slate beats (beats with no mp4) with vox-palette Remotion motion graphics, template-first. Use when the user types `remotion pass`, `fill slates`, `remotion <reel>`, asks to turn slate beats into motion graphics, to render a Remotion scene for a beat, or to build/promote a Remotion scene pattern. Template-first, create-on-gap, human-gated promotion. Renders to media/<BID>.mp4; the vox compiler conforms duration.
+description: Fill vox slate beats (beats with no mp4) with vox-palette Remotion motion graphics, template-first. Use when the user types `remotion pass`, `fill slates`, `remotion [reel]`, asks to turn slate beats into motion graphics, to render a Remotion scene for a beat, or to build/promote a Remotion scene pattern. Template-first, create-on-gap, human-gated promotion. Renders to media/[BID].mp4; the vox compiler conforms duration.
 ---
 
 # remotion-pass — fill slate beats with vox Remotion motion graphics
 
 A vox aspect that fills **slate beats** (beats that resolve to a grey slate because
-they have no `media/<BID>.mp4` and no `manim/<BID>.mp4`) with a **vox-palette
-Remotion scene**, rendered to `media/<BID>.mp4`. The existing `vox_compile.py` slot
-contract does the rest: `media/<BID>.mp4` is the top slot, audio is stripped, and the
+they have no `media/[BID].mp4` and no `manim/[BID].mp4`) with a **vox-palette
+Remotion scene**, rendered to `media/[BID].mp4`. The existing `compile.py` slot
+contract does the rest: `media/[BID].mp4` is the top slot, audio is stripped, and the
 clip is **retimed to the beat's `actual_duration_s`** — so a Remotion scene fills any
 beat length.
 
@@ -36,7 +36,7 @@ fourth vector lane beside `geo` / `c2v` / `raster`, chosen per beat.
      compiler conforms it). Render.
    - **Doesn't fit** → author a new scene, **specific** (fastest path to a working
      reel — do not pay the generalization tax yet). Render. It ships reel-local.
-5. **Render → `media/<BID>.mp4`**, and **stamp provenance** on the beat (below).
+5. **Render → `media/[BID].mp4`**, and **stamp provenance** on the beat (below).
 
 ### The two gates (shipping ≠ promoting)
 - **Machine gate ("check it")** — does it render, pass Gate A/B layout QC, fill the
@@ -56,7 +56,7 @@ values (proof it is really parameterized, not a disguised one-off) + proposed
 `scene_type`. Bear vets the card in a ten-second look. On approval it moves into the
 vox-remotion project's `src/scenes/` and gets an `index.json` row.
 
-### Review → triage (the `change <reel>: …` conversation)
+### Review → triage (the `change [reel]: …` conversation)
 The review cut burns the **beat id + status + timecode** on every beat (`--review`),
 so a screenshot names the beat directly (timecode → beat via cumulative durations is
 the fallback). From the beat, the **provenance stamp** names the pattern. Then triage
@@ -86,7 +86,7 @@ Two new pieces on a beat's `shot`:
     "version": "1",
     "props": { "title": "…", "data": [ … ], "accentIndex": 3 },  // injected content
     "rendered": {                       // stamped by the driver after a successful render
-      "out": "media/B04.mp4", "frames": 180, "at": "<iso8601 passed in>"
+      "out": "media/B04.mp4", "frames": 180, "at": "[iso8601 passed in]"
     }
   }
 }
@@ -97,26 +97,26 @@ Two new pieces on a beat's `shot`:
 { "BarChart": [ { "video": "vox-comma-orphan", "beat": "B04" }, … ] }
 ```
 
-## Commands (driver: `scripts/vox_remotion.py`)
+## Commands (driver: `scripts/remotion_scenes.py`)
 
 ```bash
 # what would be filled? (slate beats that carry a shot.remotion.pattern)
-python3 scripts/vox_remotion.py <REEL> --list
-# render all remotion slate beats → media/<BID>.mp4, stamp provenance + consumers
-python3 scripts/vox_remotion.py <REEL>
+python3 scripts/remotion_scenes.py [REEL] --list
+# render all remotion slate beats → media/[BID].mp4, stamp provenance + consumers
+python3 scripts/remotion_scenes.py [REEL]
 # just one beat (instance fix after a change)
-python3 scripts/vox_remotion.py <REEL> --only B04
+python3 scripts/remotion_scenes.py [REEL] --only B04
 # then the normal machine pass picks the mp4s up:
-bash scripts/vox_run.sh <REEL>
+bash scripts/run.sh [REEL]
 ```
 
 The driver renders each beat's `shot.remotion.pattern` composition from the vox-remotion
-project (`aspects/remotion-pass/remotion/`), passing `shot.remotion.props` as
+project (`runtime/remotion/`), passing `shot.remotion.props` as
 `--props`. Browser: on the Mac, Remotion's default works. In a constrained/allowlisted
 environment set `VOX_CHROME` (a chrome/headless-shell binary) and
 `VOX_CHROME_MODE=chrome-for-testing` — the proven container invocation.
 
-## The vox-remotion project (`aspects/remotion-pass/remotion/`)
+## The vox-remotion project (`runtime/remotion/`)
 
 A standard Remotion project. `src/tokens/vox.ts` is the single palette/motion token
 source (cream/ink/teal/crimson/slate/gold + the house `SPRING_SMOOTH`) — the one place
@@ -125,7 +125,7 @@ the whole bench retints. Every scene is a `Composition` in `src/Root.tsx` with a
 `durationInFrames` so it fills any beat length. `src/scenes/BarChart.tsx` is the first
 proven, palette-locked scene — copy its shape.
 
-Setup (once, on the Mac): `cd aspects/remotion-pass/remotion && npm install`. Load the
+Setup (once, on the Mac): `cd runtime/remotion && npm install`. Load the
 bundled Montserrat / EB Garamond / PT Mono so the family names in `tokens/vox.ts`
 resolve (else Remotion substitutes system faces).
 
@@ -140,7 +140,7 @@ compositions**, each picking an "interesting" template (this is where the polish
 decorative bench keepers — kinetic type, particles, reveals — earn their place; a
 rotating pool per book keeps it fresh):
 - **`OutroSeries`** — a bear description of the series. Content from the book's
-  `ABOUT.MD` (`books/<book>/ABOUT.MD`, two levels up from the reel).
+  `ABOUT.MD` (`books/[book]/ABOUT.MD`, two levels up from the reel).
 - **`OutroCTA`** — the like/comment/subscribe blurb. Content from the book's
   `AUTHOR.MD`.
 `ABOUT.MD` + `AUTHOR.MD` exist for all 96 book folders with a `chapters/`. The driver

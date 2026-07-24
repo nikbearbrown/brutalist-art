@@ -60,12 +60,12 @@ If you only have the video, extract the audio from it first (`ffmpeg -i in.mp4 -
 **GATE 0 — lock the audio + lyric timing before touching frames.**
 
 **Phase 3 — Frames → one still per beat.**
-1. `scripts/extract_frames.sh <video> <out_dir> [FPS]` — pull frames at ~1 fps (a frame's
+1. `scripts/extract_frames.sh [video] [out_dir] [FPS]` — pull frames at ~1 fps (a frame's
    index then ≈ its second in the song) into the reel folder.
-2. `scripts/pick_stills.py <reel_folder>` — for each beat, take the frames whose timestamp
+2. `scripts/pick_stills.py [reel_folder]` — for each beat, take the frames whose timestamp
    falls in that beat's window and keep the **sharpest** (variance of the Laplacian); write
    `source_still` / `source_frame_number` / `source_frame_sharpness` back into the beat sheet
-   and copy the keeper to `stills/<beat_id>_v1.png`.
+   and copy the keeper to `stills/[beat_id]_v1.png`.
 
    Frames stay in temporal order, so beat *k*'s still comes from beat *k*'s moment. If the
    source holds one shot across several beats you'll get near-twin stills — that's honest;
@@ -84,15 +84,15 @@ For every beat, **open the chosen still and read its lyric line**, then write:
 This is a vision step, not a script: the whole point is that a human-or-model eye looked at
 **both** the picture and the words and decided they belong together.
 
-**Phase 5 — Video (Hailuo, cut to beat).** `generate_video_songbird.sh <reel_folder>` —
-per beat: `minimax_hailuo --image <chosen_still> --prompt <video_prompt>`, **request 10s**
+**Phase 5 — Video (Hailuo, cut to beat).** `generate_video_songbird.sh [reel_folder]` —
+per beat: `minimax_hailuo --image [chosen_still] --prompt [video_prompt]`, **request 10s**
 (`EXTRA_ARGS="--duration 10"`; use `--duration 6` only when the beat ≤ 6s), then ffmpeg
 **center-trims** the raw clip to the exact beat duration. Don't generate video until the
 still is approved — video costs more than stills.
 → `scripts/generate_video_songbird.sh`
 **GATE 2 — approve a clip before assembling.**
 
-**Phase 6 — Assemble.** `FINAL=1 generate_video_songbird.sh <reel_folder>` concatenates the
+**Phase 6 — Assemble.** `FINAL=1 generate_video_songbird.sh [reel_folder]` concatenates the
 cut clips in beat order and muxes the original WAV (the master audio). Add the title +
 lyric captions in the muzak Remotion overlay, timed from the Phase-2 word timestamps.
 
@@ -122,8 +122,8 @@ Same schema as `reels/mon-homme/beat_sheet.json`, plus:
   "source_frame_number": 36, "source_frame_sharpness": 1316.0,
   "chosen_still": "stills/B07_v1.png",                          // the keeper (Hailuo --image)
   "prompt_mode": "image-to-image",
-  "image_prompt": "Image-to-image from the source frame ... preserving subject/pose: <scene>. <lyric direction>.",
-  "video_prompt": "<scene>. <camera>; subtle motion; land the key moment early; duration 5.37s.",
+  "image_prompt": "Image-to-image from the source frame ... preserving subject/pose: [scene]. [lyric direction].",
+  "video_prompt": "[scene]. [camera]; subtle motion; land the key moment early; duration 5.37s.",
   "clip_tier": 6                                                // 6 if beat<=6s else 10
 }
 ```

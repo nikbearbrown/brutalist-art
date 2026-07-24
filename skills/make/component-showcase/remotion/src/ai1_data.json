@@ -1,0 +1,756 @@
+[
+  {
+    "slug": "ai1-into-canvas",
+    "compId": "Ai1IntoCanvas",
+    "title": "Straight Into Canvas — AI+1 series 4/4",
+    "items": [
+      {
+        "x": 0.78,
+        "y": 0.42,
+        "targetX": 0.56,
+        "targetY": 0.52,
+        "bend": -0.2,
+        "title": "the cartridge",
+        "body": ".imscc import.\nmodules + videos +\nexams, in place.",
+        "delay": 0
+      },
+      {
+        "x": 0.78,
+        "y": 0.66,
+        "targetX": 0.688,
+        "targetY": 0.632,
+        "bend": -0.15,
+        "title": "training",
+        "body": "custom training,\nlive workshops,\nour instructors.",
+        "delay": 0
+      },
+      {
+        "x": 0.22,
+        "y": 0.42,
+        "targetX": 0.34,
+        "targetY": 0.52,
+        "bend": 0.2,
+        "title": "white-label",
+        "body": "we build it.\nyour experts deliver.\nyour brand on it.",
+        "delay": 0
+      },
+      {
+        "x": 0.78,
+        "y": 0.2,
+        "targetX": 0.548,
+        "targetY": 0.242,
+        "bend": -0.2,
+        "title": "predict",
+        "body": "platform fee?\nseat license?\nrenewal? count it.",
+        "delay": 0
+      },
+      {
+        "x": 0.22,
+        "y": 0.2,
+        "targetX": 0.49,
+        "targetY": 0.242,
+        "bend": 0.2,
+        "title": "the reveal",
+        "body": "no fees, no seats,\nno renewal.\nfiles you own.",
+        "delay": 0
+      }
+    ],
+    "beats": [
+      {
+        "id": "B00",
+        "kind": "ClaudeComposerAsk",
+        "act": "ASK",
+        "frames": 317,
+        "audio": "mp3-ai1/ai1-into-canvas/beat-B00.mp3",
+        "props": {
+          "greeting": "Ciao, HAI",
+          "topic": "HUMANITARIANS AI · DELIVERY",
+          "segment": "Straight Into Canvas",
+          "command": "can this load straight into Canvas?",
+          "runningText": "packing the cartridge…",
+          "folderLabel": "@HumanitariansAI",
+          "output": [
+            ".imscc cartridge ready",
+            "upload → modules + videos + exams in place",
+            "no platform fee — files you own"
+          ]
+        },
+        "narration": "It can. The custom zip exports a Canvas cartridge — upload it, and your course is standing: modules, videos, exams, in place. Here's delivery, end to end."
+      },
+      {
+        "id": "B01",
+        "kind": "ClaudePitchBeat",
+        "act": "CLAIM-1",
+        "frames": 367,
+        "audio": "mp3-ai1/ai1-into-canvas/beat-B01.mp3",
+        "props": {
+          "calloutIndex": 0,
+          "sparkLine": "Upload. Confirm. Teach."
+        },
+        "narration": "The format is dot I M S C C — Canvas's own import format. No integration project, no I T ticket queue, no vendor review to schedule. Upload, confirm, teach."
+      },
+      {
+        "id": "B02",
+        "kind": "ClaudePitchBeat",
+        "act": "CLAIM-2",
+        "frames": 233,
+        "audio": "mp3-ai1/ai1-into-canvas/beat-B02.mp3",
+        "props": {
+          "calloutIndex": 1,
+          "sparkLine": "We can run the room."
+        },
+        "narration": "If you want humans in the room, we deliver custom training and workshops ourselves — your team, your cases, our instructors."
+      },
+      {
+        "id": "B03",
+        "kind": "ClaudePitchBeat",
+        "act": "CLAIM-3",
+        "frames": 265,
+        "audio": "mp3-ai1/ai1-into-canvas/beat-B03.mp3",
+        "props": {
+          "calloutIndex": 2,
+          "sparkLine": "Your experts, our base."
+        },
+        "narration": "Or white-label it: we build the workshop, your experts deliver it, and your brand carries it. Your bench gets the material. Your clients see you."
+      },
+      {
+        "id": "B04",
+        "kind": "ClaudePitchBeat",
+        "act": "PREDICT",
+        "frames": 231,
+        "audio": "mp3-ai1/ai1-into-canvas/beat-B04.mp3",
+        "props": {
+          "calloutIndex": 3,
+          "sparkLine": "Count the lock-in."
+        },
+        "narration": "Now predict the total lock-in here — the platform fee, the seat license, the annual renewal. Count it up. Take a second."
+      },
+      {
+        "id": "B05",
+        "kind": "ClaudePitchBeat",
+        "act": "CLAIM-5",
+        "frames": 374,
+        "audio": "mp3-ai1/ai1-into-canvas/beat-B05.mp3",
+        "props": {
+          "calloutIndex": 4,
+          "sparkLine": "You own the files."
+        },
+        "narration": "Zero. The cartridge is a file you own. The zip is a folder you own. The rights travel with them. If we disappeared tomorrow, your course keeps running — which is exactly how course material should work."
+      },
+      {
+        "id": "B06",
+        "kind": "ClaudeVerdictArtifact",
+        "act": "VERDICT",
+        "frames": 223,
+        "audio": "mp3-ai1/ai1-into-canvas/beat-B06.mp3",
+        "props": {
+          "artifactTitle": "Straight Into Canvas — one page",
+          "artifactHeading": "Delivery",
+          "artifactLines": [
+            ".imscc export → direct Canvas upload: modules, videos, exams standing in place.",
+            "Custom training and live workshops, delivered by Humanitarians AI.",
+            "White-label: we build it, your experts deliver it, your brand carries it.",
+            "Hiring us funds a 501(c)(3): fellows, mentorship, and free AI education.",
+            "Phase gate: files you own · no platform, no seats, no renewal · your course outlives us."
+          ]
+        },
+        "narration": "One page. A cartridge into Canvas, training if you want us, white-label if you want you — and files you own either way."
+      },
+      {
+        "id": "B07",
+        "kind": "ClaudeComposerAsk",
+        "act": "HANDOFF",
+        "frames": 162,
+        "audio": "mp3-ai1/ai1-into-canvas/beat-B07.mp3",
+        "props": {
+          "greeting": "Your turn.",
+          "topic": "HUMANITARIANS AI · DELIVERY",
+          "segment": "Straight Into Canvas",
+          "command": "When my AI+1 zip arrives: open the .imscc, list exactly what will land in Canvas — modules, videos, exams — and draft my week-one announcement to students.",
+          "runningText": "unpacking week one…",
+          "folderLabel": "@HumanitariansAI"
+        },
+        "narration": "Your turn — the day the zip lands, paste this. Ten minutes later you're announcing week one."
+      },
+      {
+        "id": "B08",
+        "kind": "ClaudeTitleOutro",
+        "act": "OUTRO",
+        "frames": 304,
+        "audio": "mp3-ai1/ai1-into-canvas/beat-B08.mp3",
+        "props": {
+          "title": "Straight Into Canvas.",
+          "handle": "@HumanitariansAI",
+          "subline": "your course, your version · every purchase funds the mission"
+        },
+        "narration": "Straight into Canvas. That's AI plus one — the canon is a dollar, the email is info at humanitarians dot A I, and every purchase funds the mission."
+      }
+    ],
+    "totalFrames": 2476
+  },
+  {
+    "slug": "ai1-overview",
+    "compId": "Ai1Overview",
+    "title": "AI+1 — AI+1 series 1/4",
+    "items": [
+      {
+        "x": 0.78,
+        "y": 0.42,
+        "targetX": 0.56,
+        "targetY": 0.52,
+        "bend": -0.2,
+        "title": "the canon",
+        "body": "$1 Kindle textbook.\nfree YouTube videos.\nvoiced decks on-site.",
+        "delay": 0
+      },
+      {
+        "x": 0.78,
+        "y": 0.66,
+        "targetX": 0.688,
+        "targetY": 0.632,
+        "bend": -0.15,
+        "title": "the zip",
+        "body": "base videos + exams\n+ transform rights.\nemail for a quote.",
+        "delay": 0
+      },
+      {
+        "x": 0.22,
+        "y": 0.42,
+        "targetX": 0.34,
+        "targetY": 0.52,
+        "bend": 0.2,
+        "title": "no lock-in",
+        "body": "open the zip,\npoint your CLI,\nmake it yours.",
+        "delay": 0
+      },
+      {
+        "x": 0.78,
+        "y": 0.2,
+        "targetX": 0.548,
+        "targetY": 0.242,
+        "bend": -0.2,
+        "title": "predict",
+        "body": "where does a\ncourse have to land?\nguess first.",
+        "delay": 0
+      },
+      {
+        "x": 0.22,
+        "y": 0.2,
+        "targetX": 0.49,
+        "targetY": 0.242,
+        "bend": 0.2,
+        "title": "delivery",
+        "body": ".imscc → Canvas.\ntraining + white-label\nworkshops.",
+        "delay": 0
+      }
+    ],
+    "beats": [
+      {
+        "id": "B00",
+        "kind": "ClaudeComposerAsk",
+        "act": "ASK",
+        "frames": 513,
+        "audio": "mp3-ai1/ai1-overview/beat-B00.mp3",
+        "props": {
+          "greeting": "Hi, HAI",
+          "topic": "HUMANITARIANS AI · AI+1",
+          "segment": "AI+1",
+          "command": "what is AI+1?",
+          "runningText": "pulling the offer…",
+          "folderLabel": "@HumanitariansAI",
+          "output": [
+            "canonical: $1 textbook · free videos · voiced decks",
+            "custom: quote → zip → your transform rights",
+            "from a 501(c)(3) — every purchase funds the mission"
+          ]
+        },
+        "narration": "AI plus one, in ninety seconds. Every course we make has a canonical version you can get today for about a dollar — and a custom version we build for you, that you own the rights to make yours. And it all comes from a nonprofit, so every purchase funds the mission. Here's the whole offer."
+      },
+      {
+        "id": "B01",
+        "kind": "ClaudePitchBeat",
+        "act": "CLAIM-1",
+        "frames": 501,
+        "audio": "mp3-ai1/ai1-overview/beat-B01.mp3",
+        "props": {
+          "calloutIndex": 0,
+          "sparkLine": "The canon costs a dollar."
+        },
+        "narration": "The canonical layer first. Every course is a textbook on Kindle for one dollar — free on Kindle Unlimited. Every lecture is on our YouTube, free. Every slide deck runs as a voiced, animated page on our site. That's not a sample. That's the whole course."
+      },
+      {
+        "id": "B02",
+        "kind": "ClaudePitchBeat",
+        "act": "CLAIM-2",
+        "frames": 483,
+        "audio": "mp3-ai1/ai1-overview/beat-B02.mp3",
+        "props": {
+          "calloutIndex": 1,
+          "sparkLine": "Your version, quoted."
+        },
+        "narration": "When you need your own version — your program, your examples, your name on it — you email info at humanitarians dot A I. We quote a price. You get a zip: the base videos, the exams, and the rights to transform it into your book, your course, your workshop."
+      },
+      {
+        "id": "B03",
+        "kind": "ClaudePitchBeat",
+        "act": "CLAIM-3",
+        "frames": 399,
+        "audio": "mp3-ai1/ai1-overview/beat-B03.mp3",
+        "props": {
+          "calloutIndex": 2,
+          "sparkLine": "Opens in any CLI."
+        },
+        "narration": "The zip opens in any C L I — Claude Code, Codex, whichever you use. Point your tools at it and start editing: rename, reorder, rewrite, rebrand. You're not locked to our software, because there isn't any."
+      },
+      {
+        "id": "B04",
+        "kind": "ClaudePitchBeat",
+        "act": "PREDICT",
+        "frames": 232,
+        "audio": "mp3-ai1/ai1-overview/beat-B04.mp3",
+        "props": {
+          "calloutIndex": 3,
+          "sparkLine": "Guess the export."
+        },
+        "narration": "Quick check before the next part. If your world is a university learning system, guess what the zip exports to. Got a guess?"
+      },
+      {
+        "id": "B05",
+        "kind": "ClaudePitchBeat",
+        "act": "CLAIM-5",
+        "frames": 435,
+        "audio": "mp3-ai1/ai1-overview/beat-B05.mp3",
+        "props": {
+          "calloutIndex": 4,
+          "sparkLine": "Straight into Canvas."
+        },
+        "narration": "Canvas. The zip exports a dot I M S C C cartridge you upload directly — modules, videos, exams, in place. And if you'd rather we run it: custom training, or a white-label workshop your own experts deliver."
+      },
+      {
+        "id": "B06",
+        "kind": "ClaudeVerdictArtifact",
+        "act": "VERDICT",
+        "frames": 503,
+        "audio": "mp3-ai1/ai1-overview/beat-B06.mp3",
+        "props": {
+          "artifactTitle": "AI+1 — one page",
+          "artifactHeading": "The offer",
+          "artifactLines": [
+            "Canonical: $1 Kindle textbook (free on Kindle Unlimited) · free YouTube videos · voiced animated decks.",
+            "Custom: email info@humanitarians.ai for a quote — the zip ships base videos, exams, transform rights.",
+            "Yours: opens in any CLI · exports .imscc straight into Canvas · white-label workshops available.",
+            "From a 501(c)(3): purchases fund fellows, mentorship, and free AI education.",
+            "Phase gate: we build the base · you make it yours · your experts deliver it."
+          ]
+        },
+        "narration": "One page. The canon is a dollar. The custom version is a quote away, ships as a zip, opens in any C L I, lands in Canvas, and your experts can deliver it as a workshop. And every purchase funds a nonprofit's programs. That's AI plus one."
+      },
+      {
+        "id": "B07",
+        "kind": "ClaudeComposerAsk",
+        "act": "HANDOFF",
+        "frames": 286,
+        "audio": "mp3-ai1/ai1-overview/beat-B07.mp3",
+        "props": {
+          "greeting": "Your turn.",
+          "topic": "HUMANITARIANS AI · AI+1",
+          "segment": "AI+1",
+          "command": "List the Humanitarians AI courses at humanitarians.ai/courses, find the one closest to what I teach, and show me its three canonical forms: the $1 Kindle book, the YouTube playlist, and the voiced deck on the site.",
+          "runningText": "finding your course…",
+          "folderLabel": "@HumanitariansAI"
+        },
+        "narration": "Your turn — this takes two minutes. Paste this and find your course. The dollar version is the honest demo; the custom version is one email after that."
+      },
+      {
+        "id": "B08",
+        "kind": "ClaudeTitleOutro",
+        "act": "OUTRO",
+        "frames": 251,
+        "audio": "mp3-ai1/ai1-overview/beat-B08.mp3",
+        "props": {
+          "title": "AI+1.",
+          "handle": "@HumanitariansAI",
+          "subline": "your course, your version · every course free on this channel"
+        },
+        "narration": "AI plus one. The details are next — the canon, your version, and Canvas. And every course is watchable free on this channel."
+      }
+    ],
+    "totalFrames": 3603
+  },
+  {
+    "slug": "ai1-the-canon",
+    "compId": "Ai1TheCanon",
+    "title": "The Dollar Canon — AI+1 series 2/4",
+    "items": [
+      {
+        "x": 0.78,
+        "y": 0.42,
+        "targetX": 0.56,
+        "targetY": 0.52,
+        "bend": -0.2,
+        "title": "the book",
+        "body": "$1 on Kindle.\nfree on KU.\nfull text, no teaser.",
+        "delay": 0
+      },
+      {
+        "x": 0.78,
+        "y": 0.66,
+        "targetX": 0.688,
+        "targetY": 0.632,
+        "bend": -0.15,
+        "title": "the videos",
+        "body": "complete course,\nfree on YouTube.\nassign or audit.",
+        "delay": 0
+      },
+      {
+        "x": 0.22,
+        "y": 0.42,
+        "targetX": 0.34,
+        "targetY": 0.52,
+        "bend": 0.2,
+        "title": "the decks",
+        "body": "voiced + animated,\nin the browser.\nno downloads.",
+        "delay": 0
+      },
+      {
+        "x": 0.78,
+        "y": 0.2,
+        "targetX": 0.548,
+        "targetY": 0.242,
+        "bend": -0.2,
+        "title": "predict",
+        "body": "what does a $1\ncanon buy the\nnonprofit? guess.",
+        "delay": 0
+      },
+      {
+        "x": 0.22,
+        "y": 0.2,
+        "targetX": 0.49,
+        "targetY": 0.242,
+        "bend": 0.2,
+        "title": "the reveal",
+        "body": "audit before you buy.\nnonprofit reach\nover canon margin.",
+        "delay": 0
+      }
+    ],
+    "beats": [
+      {
+        "id": "B00",
+        "kind": "ClaudeComposerAsk",
+        "act": "ASK",
+        "frames": 252,
+        "audio": "mp3-ai1/ai1-the-canon/beat-B00.mp3",
+        "props": {
+          "greeting": "Ola, HAI",
+          "topic": "HUMANITARIANS AI · THE CANON",
+          "segment": "The Dollar Canon",
+          "command": "is the textbook really a dollar?",
+          "runningText": "checking the shelf…",
+          "folderLabel": "@HumanitariansAI",
+          "output": [
+            "yes — full text, all courses",
+            "$1 Kindle · free on KU",
+            "audit the base before you buy"
+          ]
+        },
+        "narration": "Yes — a dollar, on purpose. Here's why the canonical version of every course is priced like a coffee tip, and what you actually get for it."
+      },
+      {
+        "id": "B01",
+        "kind": "ClaudePitchBeat",
+        "act": "CLAIM-1",
+        "frames": 293,
+        "audio": "mp3-ai1/ai1-the-canon/beat-B01.mp3",
+        "props": {
+          "calloutIndex": 0,
+          "sparkLine": "A dollar. The whole book."
+        },
+        "narration": "One dollar on Kindle — free if you have Kindle Unlimited. Every course. And it's the full canonical textbook, not a teaser chapter with an upsell at the end."
+      },
+      {
+        "id": "B02",
+        "kind": "ClaudePitchBeat",
+        "act": "CLAIM-2",
+        "frames": 344,
+        "audio": "mp3-ai1/ai1-the-canon/beat-B02.mp3",
+        "props": {
+          "calloutIndex": 1,
+          "sparkLine": "The course is watchable, free."
+        },
+        "narration": "The lectures are free on the Humanitarians AI YouTube — the complete course in video, public. Assign it to a class, binge it yourself, check our teaching before you spend anything."
+      },
+      {
+        "id": "B03",
+        "kind": "ClaudePitchBeat",
+        "act": "CLAIM-3",
+        "frames": 361,
+        "audio": "mp3-ai1/ai1-the-canon/beat-B03.mp3",
+        "props": {
+          "calloutIndex": 2,
+          "sparkLine": "Decks that talk."
+        },
+        "narration": "The slide decks run on our site as voiced, animated pages — every deck narrated, every build animated, right in the browser. No download, no license key, no viewer to install."
+      },
+      {
+        "id": "B04",
+        "kind": "ClaudePitchBeat",
+        "act": "PREDICT",
+        "frames": 249,
+        "audio": "mp3-ai1/ai1-the-canon/beat-B04.mp3",
+        "props": {
+          "calloutIndex": 3,
+          "sparkLine": "Why a dollar?"
+        },
+        "narration": "So predict the business logic: why would we price the canon at a dollar, when the custom versions are what pay for the work? Take a second."
+      },
+      {
+        "id": "B05",
+        "kind": "ClaudePitchBeat",
+        "act": "CLAIM-5",
+        "frames": 520,
+        "audio": "mp3-ai1/ai1-the-canon/beat-B05.mp3",
+        "props": {
+          "calloutIndex": 4,
+          "sparkLine": "The canon is the audit."
+        },
+        "narration": "Because the canon is the audit. You can read the book, watch the course, and hear the decks before you ever email us — so when you buy a custom version, you know exactly what the base is. No demo call. And we're a five-oh-one-C-three: on the canon, reach matters more than margin."
+      },
+      {
+        "id": "B06",
+        "kind": "ClaudeVerdictArtifact",
+        "act": "VERDICT",
+        "frames": 271,
+        "audio": "mp3-ai1/ai1-the-canon/beat-B06.mp3",
+        "props": {
+          "artifactTitle": "The Dollar Canon — one page",
+          "artifactHeading": "What a dollar gets",
+          "artifactLines": [
+            "$1 Kindle textbook (free on Kindle Unlimited) — the full canonical text, every course.",
+            "The complete course in video, free on the Humanitarians AI YouTube.",
+            "Every slide deck voiced and animated on the site — nothing to install.",
+            "Phase gate: audit the canon first · buy custom only when the base has earned it."
+          ]
+        },
+        "narration": "One page. A dollar buys the audit: the full book, the full videos, the talking decks. Read the base before you ever pay for a version of it."
+      },
+      {
+        "id": "B07",
+        "kind": "ClaudeComposerAsk",
+        "act": "HANDOFF",
+        "frames": 284,
+        "audio": "mp3-ai1/ai1-the-canon/beat-B07.mp3",
+        "props": {
+          "greeting": "Your turn.",
+          "topic": "HUMANITARIANS AI · THE CANON",
+          "segment": "The Dollar Canon",
+          "command": "Pick one Humanitarians AI course. Pull its $1 Kindle textbook and its free YouTube playlist, and check the chapters against the videos — does the coverage match?",
+          "runningText": "auditing the canon…",
+          "folderLabel": "@HumanitariansAI"
+        },
+        "narration": "Your turn — audit us. Paste this, pick a course, and check the book against the videos. If the canon holds up, the custom conversation is worth your time."
+      },
+      {
+        "id": "B08",
+        "kind": "ClaudeTitleOutro",
+        "act": "OUTRO",
+        "frames": 79,
+        "audio": "mp3-ai1/ai1-the-canon/beat-B08.mp3",
+        "props": {
+          "title": "The Dollar Canon.",
+          "handle": "@HumanitariansAI",
+          "subline": "your course, your version"
+        },
+        "narration": "The dollar canon. Next: your version."
+      }
+    ],
+    "totalFrames": 2653
+  },
+  {
+    "slug": "ai1-your-version",
+    "compId": "Ai1YourVersion",
+    "title": "Your Version — AI+1 series 3/4",
+    "items": [
+      {
+        "x": 0.78,
+        "y": 0.42,
+        "targetX": 0.56,
+        "targetY": 0.52,
+        "bend": -0.2,
+        "title": "the ask",
+        "body": "name the course +\nyour audience.\nwe quote a price.",
+        "delay": 0
+      },
+      {
+        "x": 0.78,
+        "y": 0.66,
+        "targetX": 0.688,
+        "targetY": 0.632,
+        "bend": -0.15,
+        "title": "the zip",
+        "body": "base videos + exams\n+ the RIGHT to make\nit your book.",
+        "delay": 0
+      },
+      {
+        "x": 0.22,
+        "y": 0.42,
+        "targetX": 0.34,
+        "targetY": 0.52,
+        "bend": 0.2,
+        "title": "no lock-in",
+        "body": "open in any CLI.\nrewrite, cut, add.\nyour name on it.",
+        "delay": 0
+      },
+      {
+        "x": 0.78,
+        "y": 0.2,
+        "targetX": 0.548,
+        "targetY": 0.242,
+        "bend": -0.2,
+        "title": "predict",
+        "body": "something stays out\nof the zip.\nwhat is it?",
+        "delay": 0
+      },
+      {
+        "x": 0.22,
+        "y": 0.2,
+        "targetX": 0.49,
+        "targetY": 0.242,
+        "bend": 0.2,
+        "title": "the reveal",
+        "body": "we sell the base.\nthe judgment\nwas always yours.",
+        "delay": 0
+      }
+    ],
+    "beats": [
+      {
+        "id": "B00",
+        "kind": "ClaudeComposerAsk",
+        "act": "ASK",
+        "frames": 215,
+        "audio": "mp3-ai1/ai1-your-version/beat-B00.mp3",
+        "props": {
+          "greeting": "Hej, HAI",
+          "topic": "HUMANITARIANS AI · CUSTOM",
+          "segment": "Your Version",
+          "command": "can I get a custom version of this course?",
+          "runningText": "quoting your version…",
+          "folderLabel": "@HumanitariansAI",
+          "output": [
+            "email → quote → zip",
+            "base videos + exam banks + transform rights",
+            "opens in any CLI — no lock-in"
+          ]
+        },
+        "narration": "You can — and it ends with a zip you own the rights to transform. Here's the whole path, from one email to your course."
+      },
+      {
+        "id": "B01",
+        "kind": "ClaudePitchBeat",
+        "act": "CLAIM-1",
+        "frames": 378,
+        "audio": "mp3-ai1/ai1-your-version/beat-B01.mp3",
+        "props": {
+          "calloutIndex": 0,
+          "sparkLine": "One email, one quote."
+        },
+        "narration": "Step one: email info at humanitarians dot A I. Tell us the course, your audience, and what custom means for you. We quote a price for your version. No subscription, no platform fee — a quote."
+      },
+      {
+        "id": "B02",
+        "kind": "ClaudePitchBeat",
+        "act": "CLAIM-2",
+        "frames": 299,
+        "audio": "mp3-ai1/ai1-your-version/beat-B02.mp3",
+        "props": {
+          "calloutIndex": 1,
+          "sparkLine": "Transform rights included."
+        },
+        "narration": "What ships: the base videos, the exam banks, and — the part that matters — the rights to transform them. Into your book. Your course. Your workshop. Your brand on it."
+      },
+      {
+        "id": "B03",
+        "kind": "ClaudePitchBeat",
+        "act": "CLAIM-3",
+        "frames": 341,
+        "audio": "mp3-ai1/ai1-your-version/beat-B03.mp3",
+        "props": {
+          "calloutIndex": 2,
+          "sparkLine": "Any CLI. Your judgment."
+        },
+        "narration": "It opens in any C L I — Claude Code, Codex, next year's tool. Rewrite the examples for your industry, cut what you don't teach, add what you do. Our content, your judgment."
+      },
+      {
+        "id": "B04",
+        "kind": "ClaudePitchBeat",
+        "act": "PREDICT",
+        "frames": 258,
+        "audio": "mp3-ai1/ai1-your-version/beat-B04.mp3",
+        "props": {
+          "calloutIndex": 3,
+          "sparkLine": "What's not for sale?"
+        },
+        "narration": "Before the reveal, one question: what's the one thing we don't sell you? Think about what stays out of the zip — and what was never ours in the first place."
+      },
+      {
+        "id": "B05",
+        "kind": "ClaudePitchBeat",
+        "act": "CLAIM-5",
+        "frames": 412,
+        "audio": "mp3-ai1/ai1-your-version/beat-B05.mp3",
+        "props": {
+          "calloutIndex": 4,
+          "sparkLine": "You stay the teacher."
+        },
+        "narration": "The judgment. We sell the starting point — vetted videos, tested exams — but what to teach, what to cut, what your learners actually need: that was never ours to sell. The zip makes you faster. It does not make you optional."
+      },
+      {
+        "id": "B06",
+        "kind": "ClaudeVerdictArtifact",
+        "act": "VERDICT",
+        "frames": 247,
+        "audio": "mp3-ai1/ai1-your-version/beat-B06.mp3",
+        "props": {
+          "artifactTitle": "Your Version — one page",
+          "artifactHeading": "Email to course",
+          "artifactLines": [
+            "Email info@humanitarians.ai: the course + your audience → a quoted price. No subscription.",
+            "The zip: base videos · exam banks · transform rights — your book, your course, your workshop.",
+            "Opens in any CLI — rewrite, rebrand, reorder. No platform, no lock-in.",
+            "Phase gate: we ship the base · you transform it · your learners get your version."
+          ]
+        },
+        "narration": "One page. Email, quote, zip. Videos, exams, and the rights to make them yours — in whatever C L I you already use."
+      },
+      {
+        "id": "B07",
+        "kind": "ClaudeComposerAsk",
+        "act": "HANDOFF",
+        "frames": 268,
+        "audio": "mp3-ai1/ai1-your-version/beat-B07.mp3",
+        "props": {
+          "greeting": "Your turn.",
+          "topic": "HUMANITARIANS AI · CUSTOM",
+          "segment": "Your Version",
+          "command": "Draft the email to info@humanitarians.ai: name the course I want, describe my audience in two sentences, and ask what a custom version costs and exactly what ships in the zip.",
+          "runningText": "drafting the email…",
+          "folderLabel": "@HumanitariansAI"
+        },
+        "narration": "Your turn. Paste this, and send what comes out. The quote costs nothing — and the zip is the fastest course you'll never have to build from scratch."
+      },
+      {
+        "id": "B08",
+        "kind": "ClaudeTitleOutro",
+        "act": "OUTRO",
+        "frames": 88,
+        "audio": "mp3-ai1/ai1-your-version/beat-B08.mp3",
+        "props": {
+          "title": "Your Version.",
+          "handle": "@HumanitariansAI",
+          "subline": "your course, your version"
+        },
+        "narration": "Your version. Last: straight into Canvas."
+      }
+    ],
+    "totalFrames": 2506
+  }
+]

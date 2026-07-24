@@ -1,0 +1,135 @@
+{
+  "slug": "medhavy-not-the-teacher",
+  "totalFrames": 4156,
+  "beats": [
+    {
+      "id": "B00",
+      "kind": "ClaudeComposerAsk",
+      "frames": 235,
+      "audio": "mp3-medhavy-not-the-teacher/beat-B00.mp3",
+      "props": {
+        "greeting": "Yassou, Medhavy",
+        "topic": "CLAUDE · FOR EDUCATORS",
+        "segment": "Claude, For Educators",
+        "command": "can you teach my class?",
+        "runningText": "thinking carefully…",
+        "folderLabel": "@Medhavy",
+        "output": [
+          "the honest no",
+          "the relationship: yours alone",
+          "the struggle students must keep: protect it"
+        ]
+      }
+    },
+    {
+      "id": "B01",
+      "kind": "MedhavyConceptCard",
+      "frames": 560,
+      "audio": "mp3-medhavy-not-the-teacher/beat-B01.mp3",
+      "props": {
+        "sparkLine": "Only you carry the kid.",
+        "heading": "what a model cannot hold",
+        "body": "The relationship that makes a student push past the first wrong answer. The read of the room. The judgment of what THIS student needs today. None of this is held in the model."
+      }
+    },
+    {
+      "id": "B02",
+      "kind": "MedhavyConceptCard",
+      "frames": 617,
+      "audio": "mp3-medhavy-not-the-teacher/beat-B02.mp3",
+      "props": {
+        "sparkLine": "Protect the struggle.",
+        "heading": "the friction law",
+        "body": "Remove extraneous cognitive load (unclear instructions, formatting noise) — good. Protect germane difficulty (the confusion before the insight, the effort that builds the schema) — never remove it."
+      }
+    },
+    {
+      "id": "B03",
+      "kind": "MedhavyConceptCard",
+      "frames": 577,
+      "audio": "mp3-medhavy-not-the-teacher/beat-B03.mp3",
+      "props": {
+        "sparkLine": "Loved isn't learned.",
+        "heading": "the engagement trap",
+        "body": "Products optimized for engagement maximize time-on-app. But if the goal is durable learning, the metric is wrong. Loved products that don't teach are still failures. The measure is Tier 4 capability, not completion rate."
+      }
+    },
+    {
+      "id": "B04",
+      "kind": "MedhavyTwoColumnCard",
+      "frames": 565,
+      "audio": "mp3-medhavy-not-the-teacher/beat-B04.mp3",
+      "props": {
+        "sparkLine": "Know the split.",
+        "leftHeader": "machine-shaped",
+        "leftItems": [
+          "drafting plans",
+          "generating practice problems",
+          "formatting content",
+          "scheduling routines"
+        ],
+        "rightHeader": "yours alone",
+        "rightItems": [
+          "the student relationship",
+          "reading the room",
+          "judgment under uncertainty",
+          "the struggle that must be kept"
+        ]
+      }
+    },
+    {
+      "id": "B05",
+      "kind": "MedhavyPredictCard",
+      "frames": 487,
+      "audio": "mp3-medhavy-not-the-teacher/beat-B05.mp3",
+      "props": {
+        "sparkLine": "Commit before the reveal.",
+        "question": "Which task on this list is yours alone? A) Generate 20 quiz questions B) Write a student's recommendation letter without input C) Schedule a tutoring reminder D) Format a rubric",
+        "commit": "commit to B — then the verdict explains why"
+      }
+    },
+    {
+      "id": "B06",
+      "kind": "ClaudeVerdictArtifact",
+      "frames": 563,
+      "audio": "mp3-medhavy-not-the-teacher/beat-B06.mp3",
+      "props": {
+        "sparkLine": "",
+        "artifactTitle": "Claude, Not the Teacher — one card",
+        "artifactHeading": "The split",
+        "artifactLines": [
+          "What a model cannot hold: the relationship, the read of the room, the judgment of what THIS student needs today.",
+          "The friction law: remove extraneous load — good. Protect germane difficulty — never. The struggle is the mechanism.",
+          "The engagement trap: completion rate is not the measure. Tier 4 capability is — can the student do the thing without the platform?",
+          "The split: machine-shaped work goes to the machine. The relationship, the room, the judgment — those are yours alone.",
+          "AI did: carry the content · you do: carry the kid · support fades at: the moment the algorithm optimizes for engagement over learning"
+        ]
+      }
+    },
+    {
+      "id": "B07",
+      "kind": "ClaudeComposerAsk",
+      "frames": 412,
+      "audio": "mp3-medhavy-not-the-teacher/beat-B07.mp3",
+      "props": {
+        "greeting": "Your turn.",
+        "topic": "CLAUDE · FOR EDUCATORS",
+        "segment": "Claude, For Educators",
+        "command": "Here are my tasks for this week as a teacher: [paste your task list]. Categorize each task as either 'machine-shaped' (AI can do this with my oversight) or 'mine alone' (requires my professional judgment, my relationship with a specific student, or my in-the-room presence). For each 'mine alone' task, explain briefly why it cannot be delegated to AI.",
+        "runningText": "auditing your task list…",
+        "folderLabel": "@Medhavy"
+      }
+    },
+    {
+      "id": "B08",
+      "kind": "ClaudeTitleOutro",
+      "frames": 140,
+      "audio": "mp3-medhavy-not-the-teacher/beat-B08.mp3",
+      "props": {
+        "title": "Claude, Not the Teacher.",
+        "handle": "@Medhavy",
+        "subline": "subscribe · the split, made clear"
+      }
+    }
+  ]
+}

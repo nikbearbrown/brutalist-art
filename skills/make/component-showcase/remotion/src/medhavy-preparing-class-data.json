@@ -1,0 +1,134 @@
+{
+  "slug": "medhavy-preparing-class",
+  "totalFrames": 3935,
+  "beats": [
+    {
+      "id": "B00",
+      "kind": "ClaudeComposerAsk",
+      "frames": 378,
+      "audio": "mp3-medhavy-preparing-class/beat-B00.mp3",
+      "props": {
+        "greeting": "Sawadee, Medhavy",
+        "topic": "CLAUDE · FOR EDUCATORS",
+        "segment": "Claude, For Educators",
+        "command": "plan Monday — differentiated three ways",
+        "runningText": "drafting the plan…",
+        "folderLabel": "@Medhavy",
+        "output": [
+          "plan drafted · standards cited per section",
+          "three readiness levels from one prompt",
+          "4pm routine: it runs while you drive home"
+        ]
+      }
+    },
+    {
+      "id": "B01",
+      "kind": "MedhavyConceptCard",
+      "frames": 535,
+      "audio": "mp3-medhavy-preparing-class/beat-B01.mp3",
+      "props": {
+        "sparkLine": "Draft, then judge.",
+        "heading": "lesson plan with receipts",
+        "body": "The prompt asks for a specific grade, subject, and state standard. Every section names its standard. That's the receipt. You judge whether the standard maps to your students."
+      }
+    },
+    {
+      "id": "B02",
+      "kind": "MedhavyTwoColumnCard",
+      "frames": 576,
+      "audio": "mp3-medhavy-preparing-class/beat-B02.mp3",
+      "props": {
+        "sparkLine": "Three levels, one evening.",
+        "leftHeader": "before AI",
+        "leftItems": [
+          "one plan per class",
+          "differentiation = rewrite by hand",
+          "evening spent in prep"
+        ],
+        "rightHeader": "with AI",
+        "rightItems": [
+          "three readiness levels per plan",
+          "standards preserved",
+          "evening spent judging, not drafting"
+        ]
+      }
+    },
+    {
+      "id": "B03",
+      "kind": "MedhavyConceptCard",
+      "frames": 584,
+      "audio": "mp3-medhavy-preparing-class/beat-B03.mp3",
+      "props": {
+        "sparkLine": "Claude works while you drive home.",
+        "heading": "the 4pm routine",
+        "body": "Hand off one recurring task — review exit tickets, adapt tomorrow's plan — and it runs every school day at 4pm. The task is yours to design; the execution can run on schedule.",
+        "evidenceNote": "Anthropic Claude for Teachers · Jul 14 2026 · recurring task capability"
+      }
+    },
+    {
+      "id": "B04",
+      "kind": "MedhavyConceptCard",
+      "frames": 540,
+      "audio": "mp3-medhavy-preparing-class/beat-B04.mp3",
+      "props": {
+        "sparkLine": "Nothing reaches students unjudged.",
+        "heading": "the review discipline",
+        "body": "The draft is never the decision. Every plan that reaches a student was read and approved by you. You're multiplying the hours you spend on judgment rather than generation."
+      }
+    },
+    {
+      "id": "B05",
+      "kind": "MedhavyPredictCard",
+      "frames": 276,
+      "audio": "mp3-medhavy-preparing-class/beat-B05.mp3",
+      "props": {
+        "sparkLine": "Commit before the reveal.",
+        "question": "Where does the lesson-plan-by-AI workflow most often go wrong?",
+        "commit": "commit to an answer before the verdict"
+      }
+    },
+    {
+      "id": "B06",
+      "kind": "ClaudeVerdictArtifact",
+      "frames": 516,
+      "audio": "mp3-medhavy-preparing-class/beat-B06.mp3",
+      "props": {
+        "sparkLine": "",
+        "artifactTitle": "Claude, Preparing Class — one card",
+        "artifactHeading": "The workflow",
+        "artifactLines": [
+          "The receipt: every section of the plan names its standard. You judge whether the standard maps to your students.",
+          "The killer app: three readiness levels from one prompt. Below, at, and above grade — standards preserved across all three.",
+          "The 4pm routine: hand off one recurring task that runs on schedule. Yours to design; AI executes. (Anthropic, Jul 14 2026)",
+          "The review discipline: the draft is never the decision. Everything that reaches students was read and approved by you.",
+          "AI did: draft, differentiate, schedule · you do: review, judge, decide what reaches students · support fades at: the lesson meeting the room"
+        ]
+      }
+    },
+    {
+      "id": "B07",
+      "kind": "ClaudeComposerAsk",
+      "frames": 383,
+      "audio": "mp3-medhavy-preparing-class/beat-B07.mp3",
+      "props": {
+        "greeting": "Your turn.",
+        "topic": "CLAUDE · FOR EDUCATORS",
+        "segment": "Claude, For Educators",
+        "command": "Write a lesson plan for [grade level] on [topic], aligned to [state standard]. Include objective, warm-up, direct instruction, guided practice, and exit ticket. Cite the specific standard under each section. Then produce three versions: below grade readiness, at grade readiness, and above grade readiness — with standards preserved across all three. I will review every line before anything reaches students.",
+        "runningText": "drafting three-level plan…",
+        "folderLabel": "@Medhavy"
+      }
+    },
+    {
+      "id": "B08",
+      "kind": "ClaudeTitleOutro",
+      "frames": 147,
+      "audio": "mp3-medhavy-preparing-class/beat-B08.mp3",
+      "props": {
+        "title": "Claude, Preparing Class.",
+        "handle": "@Medhavy",
+        "subline": "subscribe · prep time, rethought"
+      }
+    }
+  ]
+}

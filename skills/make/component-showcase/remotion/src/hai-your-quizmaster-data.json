@@ -1,0 +1,141 @@
+{
+  "slug": "hai-your-quizmaster",
+  "totalFrames": 5318,
+  "beats": [
+    {
+      "id": "B00",
+      "kind": "ClaudeComposerAsk",
+      "frames": 524,
+      "audio": "mp3-hai-your-quizmaster/beat-B00.mp3",
+      "props": {
+        "greeting": "Hej, HAI",
+        "topic": "CLAUDE · AI IN SCHOOL",
+        "segment": "Claude, For Students",
+        "command": "quiz me on chapter 5 — and don't go easy",
+        "runningText": "building the quiz stack…",
+        "folderLabel": "@HumanitariansAI",
+        "output": [
+          "retrieval practice — testing beats rereading",
+          "spaced schedule — one week, one month out",
+          "explain-it-back — teach it; gaps surface"
+        ],
+        "sparkLine": ""
+      }
+    },
+    {
+      "id": "B01",
+      "kind": "HaiConceptCard",
+      "frames": 723,
+      "audio": "mp3-hai-your-quizmaster/beat-B01.mp3",
+      "props": {
+        "sparkLine": "Testing beats rereading.",
+        "heading": "why quizzing works",
+        "body": "Retrieval — pulling the answer out yourself — strengthens the memory trace. The testing effect: testing yourself is not a check on whether you learned something. It is a significant part of how you learn it. Rereading feels productive because you recognize the words. Testing reveals what you actually own."
+      }
+    },
+    {
+      "id": "B02",
+      "kind": "HaiConceptCard",
+      "frames": 665,
+      "audio": "mp3-hai-your-quizmaster/beat-B02.mp3",
+      "props": {
+        "sparkLine": "Commit before the reveal.",
+        "heading": "how to use it",
+        "body": "Commit before you see the answer — not after. The commitment is what drives encoding. When you predict first, your brain is in retrieval mode. The answer that follows either confirms or corrects. Both outcomes strengthen the trace. After-the-fact recognition is not the same mechanism."
+      }
+    },
+    {
+      "id": "B03",
+      "kind": "HaiTimelineCard",
+      "frames": 773,
+      "audio": "mp3-hai-your-quizmaster/beat-B03.mp3",
+      "props": {
+        "sparkLine": "Space the repetitions.",
+        "slots": [
+          {
+            "label": "today",
+            "detail": "first quiz"
+          },
+          {
+            "label": "+1 day",
+            "detail": "second pass"
+          },
+          {
+            "label": "+1 week",
+            "detail": "spaced review"
+          },
+          {
+            "label": "+1 month",
+            "detail": "long-term check"
+          }
+        ]
+      }
+    },
+    {
+      "id": "B04",
+      "kind": "HaiConceptCard",
+      "frames": 730,
+      "audio": "mp3-hai-your-quizmaster/beat-B04.mp3",
+      "props": {
+        "sparkLine": "Teach it back.",
+        "heading": "the explain-it-back move",
+        "body": "You explain the concept to Claude; gaps surface when you get it wrong or hesitate. Tell Claude what you think you know. It reads your explanation and shows you what's right, incomplete, or missing. The hesitation is the signal — it tells you exactly what to study next."
+      }
+    },
+    {
+      "id": "B05",
+      "kind": "HaiConceptCard",
+      "frames": 729,
+      "audio": "mp3-hai-your-quizmaster/beat-B05.mp3",
+      "props": {
+        "sparkLine": "Same moves, your field.",
+        "heading": "for mid-career learners",
+        "body": "Same techniques apply to workplace material — quiz yourself on the new process, the new regulatory change, the new product. Claude doesn't know your industry's edge; you bring that. The tool handles repetition mechanics. You bring the judgment about what matters in your context."
+      }
+    },
+    {
+      "id": "B06",
+      "kind": "ClaudeVerdictArtifact",
+      "frames": 665,
+      "audio": "mp3-hai-your-quizmaster/beat-B06.mp3",
+      "props": {
+        "sparkLine": "",
+        "artifactTitle": "The Study Stack — one card",
+        "artifactHeading": "The moves",
+        "artifactLines": [
+          "Quiz not answer: you do the retrieval, Claude is the question generator. Testing beats rereading — the testing effect is real.",
+          "Commit before the reveal: predict first, then see the answer. Commitment drives encoding. After-the-fact recognition is not the same.",
+          "Space the reviews: today · +1 day · +1 week · +1 month. Memory decays — spacing catches it at the fade.",
+          "Explain it back: tell Claude what you know; it shows you the gaps. Hesitation is information."
+        ]
+      }
+    },
+    {
+      "id": "B07",
+      "kind": "ClaudeComposerAsk",
+      "frames": 369,
+      "audio": "mp3-hai-your-quizmaster/beat-B07.mp3",
+      "props": {
+        "greeting": "Your turn.",
+        "topic": "CLAUDE · AI IN SCHOOL",
+        "segment": "Claude, For Students",
+        "command": "Quiz me on [topic or chapter]. Ask one question at a time. Wait for my answer. Tell me if I'm right and why. After 5 questions, give me a spaced review schedule: when should I quiz again to lock this in?",
+        "runningText": "loading your quiz…",
+        "folderLabel": "@HumanitariansAI",
+        "sparkLine": ""
+      }
+    },
+    {
+      "id": "B08",
+      "kind": "ClaudeTitleOutro",
+      "frames": 140,
+      "audio": "mp3-hai-your-quizmaster/beat-B08.mp3",
+      "props": {
+        "title": "Claude, Your Quizmaster.",
+        "handle": "@HumanitariansAI",
+        "subline": "subscribe · the study stack",
+        "sparkLine": ""
+      }
+    }
+  ]
+}

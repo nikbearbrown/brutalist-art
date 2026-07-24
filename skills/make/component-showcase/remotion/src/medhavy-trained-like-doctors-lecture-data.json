@@ -1,0 +1,134 @@
+{
+  "slug": "medhavy-trained-like-doctors-lecture",
+  "totalFrames": 4085,
+  "beats": [
+    {
+      "id": "B00",
+      "kind": "ClaudeComposerAsk",
+      "frames": 388,
+      "audio": "mp3-medhavy-trained-like-doctors-lecture/beat-B00.mp3",
+      "props": {
+        "greeting": "Selam, Medhavy",
+        "topic": "CLAUDE · FOR EDUCATORS",
+        "segment": "Claude, For Educators",
+        "command": "how do I actually get good at this?",
+        "runningText": "building the practice plan…",
+        "folderLabel": "@Medhavy",
+        "output": [
+          "doctors get structured CE — so should you",
+          "$847/year of EdTech PD, 62% feel unprepared",
+          "one recipe per week, one term, it becomes reflex"
+        ]
+      }
+    },
+    {
+      "id": "B01",
+      "kind": "HaiConceptCard",
+      "frames": 612,
+      "audio": "mp3-medhavy-trained-like-doctors-lecture/beat-B01.mp3",
+      "props": {
+        "heading": "When a new treatment enters clinical practice, doctors don't just read about it ",
+        "body": "The AI+1 approach to teacher professional development borrows that structure: recipes first, calibration through repetition, feedback from outcomes rather than compliance.",
+        "sparkLine": "Doctors don't guess. Neither should you."
+      }
+    },
+    {
+      "id": "B02",
+      "kind": "HaiConceptCard",
+      "frames": 669,
+      "audio": "mp3-medhavy-trained-like-doctors-lecture/beat-B02.mp3",
+      "props": {
+        "heading": "The spending gap: the AI+1 touchpoints report puts EdTech professional developme",
+        "body": "Teachers are expected to adopt AI-assisted pedagogy with a fraction of the support doctors receive when adopting new clinical tools. That gap is real — and working around it requires a self-directed practice plan.",
+        "sparkLine": "The budget bought hardware.",
+        "evidenceNote": "AI+1 Touchpoints T6 — $847/teacher/year EdTech PD; 62% feel unprepared. Sourced finding."
+      }
+    },
+    {
+      "id": "B03",
+      "kind": "HaiTwoColumnCard",
+      "frames": 513,
+      "audio": "mp3-medhavy-trained-like-doctors-lecture/beat-B03.mp3",
+      "props": {
+        "sparkLine": "Doctors don't guess. Neither should you.",
+        "leftHeader": "use AI here",
+        "leftItems": [
+          "drafting — lesson plans, quizzes, rubrics",
+          "logistics — scheduling, exit ticket review",
+          "extraneous load — formatting, citations"
+        ],
+        "rightHeader": "not here",
+        "rightItems": [
+          "deciding — which student, which level, which feedback",
+          "the relationship — the parent call, the kid about to quit",
+          "the struggle — the germane load that is the learning"
+        ]
+      }
+    },
+    {
+      "id": "B04",
+      "kind": "HaiConceptCard",
+      "frames": 526,
+      "audio": "mp3-medhavy-trained-like-doctors-lecture/beat-B04.mp3",
+      "props": {
+        "heading": "The practice plan: one recipe per week from this season.",
+        "body": "Four weeks, four recipes: Monday lesson plan, differentiation, exit ticket diagnostic, the hinge-skill assignment audit. By week four you have calibration data — you know what Claude does well for your subject and grade, and where you always need to add your own judgment.",
+        "sparkLine": "One recipe a week."
+      }
+    },
+    {
+      "id": "B05",
+      "kind": "HaiConceptCard",
+      "frames": 328,
+      "audio": "mp3-medhavy-trained-like-doctors-lecture/beat-B05.mp3",
+      "props": {
+        "heading": "Before the verdict: what is the biggest obstacle to your own AI professional dev",
+        "body": "Time, trust, lack of support, uncertainty about policy — name it.",
+        "sparkLine": "Commit before the reveal."
+      }
+    },
+    {
+      "id": "B06",
+      "kind": "ClaudeVerdictArtifact",
+      "frames": 455,
+      "audio": "mp3-medhavy-trained-like-doctors-lecture/beat-B06.mp3",
+      "props": {
+        "sparkLine": "",
+        "artifactTitle": "Claude, Trained Like Doctors — the season card",
+        "artifactHeading": "The educator's deck",
+        "artifactLines": [
+          "M1 — draft, then judge: one lesson plan, judge every line (AI+1 T5: you are the variable, RAND 2026).",
+          "M2 — extend or replace: pair every yes with a no; redesign to make AI use visible and graded (Bastani 2024).",
+          "M3 — three levels, one evening: draft the plan, own the judgment, schedule the 4pm routine.",
+          "M4 — only you carry the kid: protect the struggle, audit machine-shaped vs yours-alone every week.",
+          "AI did: draft content, flag claims, surface options · you do: practice one recipe per week · support fades at: the week you stop running the routine"
+        ]
+      }
+    },
+    {
+      "id": "B07",
+      "kind": "ClaudeComposerAsk",
+      "frames": 406,
+      "audio": "mp3-medhavy-trained-like-doctors-lecture/beat-B07.mp3",
+      "props": {
+        "greeting": "Your turn.",
+        "topic": "CLAUDE · FOR EDUCATORS",
+        "segment": "Claude, For Educators",
+        "command": "I am a [subject] teacher for [grade level]. I want to build AI fluency over one school term. Using the four recipes from the Claude, For Educators series (lesson plan draft, assignment audit, Monday differentiated plan + 4pm routine, delegation audit), build me a personal PD plan: one recipe per week for four weeks, a prompt for finding a peer to compare drafts with, and a note on where the free AI Fluency for Teachers course fits. Keep each practice to 15 minutes or less.",
+        "runningText": "building the PD plan…",
+        "folderLabel": "@Medhavy"
+      }
+    },
+    {
+      "id": "B08",
+      "kind": "ClaudeTitleOutro",
+      "frames": 188,
+      "audio": "mp3-medhavy-trained-like-doctors-lecture/beat-B08.mp3",
+      "props": {
+        "title": "Claude, Trained Like Doctors.",
+        "handle": "@Medhavy",
+        "subline": "subscribe · the educator's when/when-not card"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1378 @@
+[
+  {
+    "slug": "mcp-already-built",
+    "compId": "McpAlreadyBuilt",
+    "title": "Already Built — Medhavy MCP pitch 6/7",
+    "items": [
+      {
+        "x": 0.78,
+        "y": 0.42,
+        "targetX": 0.56,
+        "targetY": 0.52,
+        "bend": -0.2,
+        "title": "facts/",
+        "body": "claim sets,\nsources attached,\nbuilt to be served.",
+        "delay": 0
+      },
+      {
+        "x": 0.78,
+        "y": 0.66,
+        "targetX": 0.688,
+        "targetY": 0.632,
+        "bend": -0.15,
+        "title": "books",
+        "body": "CLI-authored\ntextbooks. chapters\ndecompose into spines.",
+        "delay": 0
+      },
+      {
+        "x": 0.22,
+        "y": 0.42,
+        "targetX": 0.34,
+        "targetY": 0.52,
+        "bend": 0.2,
+        "title": "media",
+        "body": "reels + exercise\nbanks, per chapter.\nproduction is routine.",
+        "delay": 0
+      },
+      {
+        "x": 0.78,
+        "y": 0.2,
+        "targetX": 0.548,
+        "targetY": 0.242,
+        "bend": -0.2,
+        "title": "v1",
+        "body": "server = index.\nlocal proof: days.\npublic: weeks.",
+        "delay": 0
+      },
+      {
+        "x": 0.22,
+        "y": 0.2,
+        "targetX": 0.49,
+        "targetY": 0.242,
+        "bend": 0.2,
+        "title": "proof",
+        "body": "this playlist:\nbeat sheets + gates +\nlogs, in the repo.",
+        "delay": 0
+      }
+    ],
+    "beats": [
+      {
+        "id": "B00",
+        "kind": "ClaudeComposerAsk",
+        "act": "ASK",
+        "frames": 397,
+        "audio": "mp3-pitch/mcp-already-built/beat-B00.mp3",
+        "props": {
+          "greeting": "Selam, Medhavy",
+          "topic": "MEDHAVY · THE PROOF",
+          "segment": "Already Built",
+          "command": "what would the content moat cost to build?",
+          "runningText": "indexing the shelf…",
+          "folderLabel": "@Medhavy",
+          "output": [
+            "the corpus exists — on disk",
+            "v1 = an index, not a raise",
+            "sprint not a moonshot"
+          ]
+        },
+        "narration": "The standard risk in a content pitch: the corpus doesn't exist yet, and slide ten asks you to fund its creation. Different story here. Ask what the moat costs — the answer is, it's already on disk."
+      },
+      {
+        "id": "B01",
+        "kind": "ClaudePitchBeat",
+        "act": "CLAIM-1",
+        "frames": 304,
+        "audio": "mp3-pitch/mcp-already-built/beat-B01.mp3",
+        "props": {
+          "calloutIndex": 0,
+          "sparkLine": "Facts, refusal-grade."
+        },
+        "narration": "A facts corpus: fact-checked claim sets, sources carried claim by claim — built for refusal-grade serving, where the connector declines rather than invents."
+      },
+      {
+        "id": "B02",
+        "kind": "ClaudePitchBeat",
+        "act": "CLAIM-2",
+        "frames": 384,
+        "audio": "mp3-pitch/mcp-already-built/beat-B02.mp3",
+        "props": {
+          "calloutIndex": 1,
+          "sparkLine": "Textbooks become spines."
+        },
+        "narration": "Full textbooks, authored with our own C L I pipeline — chapters that decompose directly into spines: claims, sequences, prerequisites. The format was designed to be served."
+      },
+      {
+        "id": "B03",
+        "kind": "ClaudePitchBeat",
+        "act": "CLAIM-3",
+        "frames": 359,
+        "audio": "mp3-pitch/mcp-already-built/beat-B03.mp3",
+        "props": {
+          "calloutIndex": 2,
+          "sparkLine": "The shelf is stocked."
+        },
+        "narration": "Videos and exercise sets — reels in this exact house style, exercise banks per chapter. The three content types the MCP serves are the three we already mass-produce."
+      },
+      {
+        "id": "B04",
+        "kind": "IlluPattern",
+        "act": "CLAIM-4",
+        "frames": 391,
+        "audio": "mp3-pitch/mcp-already-built/beat-B04.mp3",
+        "props": {
+          "spark": "An index, not a moonshot.",
+          "patternType": "BinaryBranch",
+          "patternData": {
+            "slideMeta": "// B04 — THE COST",
+            "question": "what does v1 cost to build?",
+            "branches": [
+              {"label": "fund the corpus", "detail": "create facts + books + media", "fix": "a fundraise", "tone": "warn"},
+              {"label": "index the corpus", "detail": "the shelf already exists", "fix": "an engineering sprint", "tone": "good"}
+            ],
+            "resolver": {"label": "the shelf already exists", "detail": "on disk · days to index · weeks to ship"}
+          }
+        },
+        "narration": "So the MCP server is an index over assets that exist — which moves version one from a funding milestone to an engineering sprint. Days for the local proof. Weeks for the public connector."
+      },
+      {
+        "id": "B05",
+        "kind": "ClaudePitchBeat",
+        "act": "PREDICT",
+        "frames": 401,
+        "audio": "mp3-pitch/mcp-already-built/beat-B05.mp3",
+        "props": {
+          "calloutIndex": 4,
+          "sparkLine": "This video is the demo."
+        },
+        "narration": "One prediction you can check right now: was this playlist itself made by the pipeline it's pitching? Decide... Yes. Beat sheets, pedagogy gates, decision logs — all shipped beside these videos, inspectable."
+      },
+      {
+        "id": "B06",
+        "kind": "ClaudeVerdictArtifact",
+        "act": "VERDICT",
+        "frames": 334,
+        "audio": "mp3-pitch/mcp-already-built/beat-B06.mp3",
+        "props": {
+          "artifactTitle": "Already Built — one page",
+          "artifactHeading": "The shelf",
+          "artifactLines": [
+            "The corpus exists: fact-checked claim sets · CLI-authored textbooks · reels · exercise banks.",
+            "The MCP is an index over that shelf — v1 is a sprint, not a raise.",
+            "The proof ships with the pitch: this playlist's beat sheets, gates, and decision logs.",
+            "Phase gate: assets built · index next · the institutional lane waits for usage evidence."
+          ]
+        },
+        "narration": "The proof, one page. The corpus exists. The server is an index over it. And the pitch ships with its own receipts — this playlist's gates and logs are in the repo."
+      },
+      {
+        "id": "B07",
+        "kind": "ClaudeComposerAsk",
+        "act": "HANDOFF",
+        "frames": 318,
+        "audio": "mp3-pitch/mcp-already-built/beat-B07.mp3",
+        "props": {
+          "greeting": "Your turn.",
+          "topic": "MEDHAVY · THE PROOF",
+          "segment": "Already Built",
+          "command": "Show me this video's beat_sheet.json, PEDAGOGY.md, and decisions.json — then walk me through one decision and its source.",
+          "runningText": "opening the books…",
+          "folderLabel": "@Medhavy"
+        },
+        "narration": "Your turn — audit the pitch with the pitch's own tools. The beat sheet, the pedagogy gate, and the decision log for this very video ship beside it. Ask for them."
+      },
+      {
+        "id": "B08",
+        "kind": "ClaudeTitleOutro",
+        "act": "OUTRO",
+        "frames": 80,
+        "audio": "mp3-pitch/mcp-already-built/beat-B08.mp3",
+        "props": {
+          "title": "Already Built.",
+          "handle": "@MedhavyAI",
+          "subline": "a pitch in seven parts · 6 of 7"
+        },
+        "narration": "Already built. Last: what the money buys."
+      }
+    ],
+    "totalFrames": 2968
+  },
+  {
+    "slug": "mcp-by-design",
+    "compId": "McpByDesign",
+    "title": "Learning First, By Default — Medhavy MCP pitch 4/7",
+    "items": [
+      {
+        "x": 0.78,
+        "y": 0.42,
+        "targetX": 0.56,
+        "targetY": 0.52,
+        "bend": -0.2,
+        "title": "defaults",
+        "body": "WCAG 2.2 AA.\ncolorblind-safe.\none accent, always.",
+        "delay": 0
+      },
+      {
+        "x": 0.78,
+        "y": 0.66,
+        "targetX": 0.688,
+        "targetY": 0.632,
+        "bend": -0.15,
+        "title": "the arc",
+        "body": "hook → predict →\nstruggle → reveal → apply.\nload kept honest.",
+        "delay": 0
+      },
+      {
+        "x": 0.22,
+        "y": 0.42,
+        "targetX": 0.34,
+        "targetY": 0.52,
+        "bend": 0.2,
+        "title": "evidence",
+        "body": "checked before render.\nsourced claims.\nflags survive.",
+        "delay": 0
+      },
+      {
+        "x": 0.78,
+        "y": 0.2,
+        "targetX": 0.548,
+        "targetY": 0.242,
+        "bend": -0.2,
+        "title": "predict",
+        "body": "how many choices\nin 90 seconds?\nthe log knows.",
+        "delay": 0
+      },
+      {
+        "x": 0.22,
+        "y": 0.2,
+        "targetX": 0.49,
+        "targetY": 0.242,
+        "bend": 0.2,
+        "title": "the log",
+        "body": "decisions.json:\nid · choice · reason ·\nsource · overridable.",
+        "delay": 0
+      }
+    ],
+    "beats": [
+      {
+        "id": "B00",
+        "kind": "ClaudeComposerAsk",
+        "act": "ASK",
+        "frames": 388,
+        "audio": "mp3-pitch/mcp-by-design/beat-B00.mp3",
+        "props": {
+          "greeting": "Sawadee, Medhavy",
+          "topic": "MEDHAVY · DESIGN",
+          "segment": "Learning First, By Default",
+          "command": "make the slides pop more",
+          "runningText": "consulting the defaults…",
+          "folderLabel": "@Medhavy",
+          "output": [
+            "dissent — pops reduce signal (lxd Ch 7)",
+            "WCAG AA contrast maintained",
+            "no changes applied — defaults hold"
+          ]
+        },
+        "narration": "Ask most tools to make it pop, and they will — brighter, louder, and measurably worse for learning. Ask Medhavy, and something more interesting happens: it does what the theory says, and shows you its reasoning."
+      },
+      {
+        "id": "B01",
+        "kind": "ClaudePitchBeat",
+        "act": "CLAIM-1",
+        "frames": 459,
+        "audio": "mp3-pitch/mcp-by-design/beat-B01.mp3",
+        "props": {
+          "calloutIndex": 0,
+          "sparkLine": "Accessible before it exists."
+        },
+        "narration": "Accessibility isn't a review step here — it's a generation default. WCAG two point two double-A contrast, captions, structure, enforced before the artifact exists. Colorblind-safe palettes, calm grounds, one accent."
+      },
+      {
+        "id": "B02",
+        "kind": "ClaudePitchBeat",
+        "act": "CLAIM-2",
+        "frames": 426,
+        "audio": "mp3-pitch/mcp-by-design/beat-B02.mp3",
+        "props": {
+          "calloutIndex": 1,
+          "sparkLine": "One idea per beat."
+        },
+        "narration": "Sequencing follows the arc — hook, predict, struggle, reveal, apply — because prediction error is what makes memory stick. And cognitive load has rules: one idea per beat, signal don't decorate, no redundancy."
+      },
+      {
+        "id": "B03",
+        "kind": "ClaudePitchBeat",
+        "act": "CLAIM-3",
+        "frames": 381,
+        "audio": "mp3-pitch/mcp-by-design/beat-B03.mp3",
+        "props": {
+          "calloutIndex": 2,
+          "sparkLine": "Sources attached, flags kept."
+        },
+        "narration": "Facts get checked before render, every stated magnitude carries a source, and single-source findings carry a flag that says so. You saw one in video two — flagged on screen, on purpose."
+      },
+      {
+        "id": "B04",
+        "kind": "ClaudePitchBeat",
+        "act": "PREDICT",
+        "frames": 369,
+        "audio": "mp3-pitch/mcp-by-design/beat-B04.mp3",
+        "props": {
+          "calloutIndex": 3,
+          "sparkLine": "Count them yourself."
+        },
+        "narration": "Quick prediction: how many design decisions does one ninety-second reel make? Pick a number and hold it... This one logged more than a dozen. And that's the point — you can count them, because they're written down."
+      },
+      {
+        "id": "B05",
+        "kind": "OndaCodeBlock",
+        "act": "CLAIM-5",
+        "frames": 402,
+        "audio": "mp3-pitch/mcp-by-design/beat-B05.mp3",
+        "props": {
+          "spark": "Choices, made inspectable.",
+          "codeTitle": "decisions.json",
+          "code": "{\n  \"id\": \"D-003\",\n  \"beat\": \"ALL\",\n  \"choice\": \"arc: hook → predict → struggle → reveal → apply\",\n  \"default_applied\": \"Willingham desirable difficulty sequence\",\n  \"reason\": \"prediction error drives retention\",\n  \"source\": \"lxd Ch 6 · Roediger & Karpicke 2006\",\n  \"overridable\": true\n}"
+        },
+        "narration": "Every artifact ships decisions dot json — one entry per choice. A stable ID, the default applied, the reason, the source, and whether you can override it. Spoiler: you always can."
+      },
+      {
+        "id": "B06",
+        "kind": "ClaudeVerdictArtifact",
+        "act": "VERDICT",
+        "frames": 407,
+        "audio": "mp3-pitch/mcp-by-design/beat-B06.mp3",
+        "props": {
+          "artifactTitle": "Learning First, By Default — one page",
+          "artifactHeading": "The defaults",
+          "artifactLines": [
+            "Theory decides first: WCAG 2.2 AA · learning palettes · arc sequencing · cognitive load · sourced facts.",
+            "Applied silently, logged loudly — no blank canvas, no re-deciding solved problems.",
+            "decisions.json beside every artifact: ID, choice, reason, source, overridable.",
+            "Phase gate: theory sets defaults · the human overrides by ID · nothing is hidden."
+          ]
+        },
+        "narration": "Design, one page. Theory decides first — accessibility, palettes, arcs, load, sources. Applied silently, logged loudly. And nothing is hidden, because the log ships beside the artifact."
+      },
+      {
+        "id": "B07",
+        "kind": "ClaudeComposerAsk",
+        "act": "HANDOFF",
+        "frames": 340,
+        "audio": "mp3-pitch/mcp-by-design/beat-B07.mp3",
+        "props": {
+          "greeting": "Your turn.",
+          "topic": "MEDHAVY · DESIGN",
+          "segment": "Learning First, By Default",
+          "command": "Take the last deck or lesson an AI made for you and ask it: list every design decision you made, with a reason and a source for each.",
+          "runningText": "auditing the invisible…",
+          "folderLabel": "@Medhavy"
+        },
+        "narration": "Your turn to audit the invisible. Ask your current tool to list its design decisions, with reasons and sources. The silence you get back is this video's whole argument."
+      },
+      {
+        "id": "B08",
+        "kind": "ClaudeTitleOutro",
+        "act": "OUTRO",
+        "frames": 111,
+        "audio": "mp3-pitch/mcp-by-design/beat-B08.mp3",
+        "props": {
+          "title": "Learning First, By Default.",
+          "handle": "@MedhavyAI",
+          "subline": "a pitch in seven parts · 4 of 7"
+        },
+        "narration": "Learning first, by default. Next: who's in charge."
+      }
+    ],
+    "totalFrames": 3283
+  },
+  {
+    "slug": "mcp-in-your-hands",
+    "compId": "McpInYourHands",
+    "title": "The Final Judge — Medhavy MCP pitch 5/7",
+    "items": [
+      {
+        "x": 0.78,
+        "y": 0.42,
+        "targetX": 0.56,
+        "targetY": 0.52,
+        "bend": -0.2,
+        "title": "agnostic",
+        "body": "Claude Code, Codex,\nnext year's tool.\nthe log is the API.",
+        "delay": 0
+      },
+      {
+        "x": 0.78,
+        "y": 0.66,
+        "targetX": 0.688,
+        "targetY": 0.632,
+        "bend": -0.15,
+        "title": "surgical",
+        "body": "one ID changes.\naffected beats re-render.\nthe rest survives.",
+        "delay": 0
+      },
+      {
+        "x": 0.22,
+        "y": 0.42,
+        "targetX": 0.34,
+        "targetY": 0.52,
+        "bend": 0.2,
+        "title": "predict",
+        "body": "override a safety\ndefault. refuse,\nobey silently, or…?",
+        "delay": 0
+      },
+      {
+        "x": 0.78,
+        "y": 0.2,
+        "targetX": 0.548,
+        "targetY": 0.242,
+        "bend": -0.2,
+        "title": "the reveal",
+        "body": "'flagged, complied.'\nnever resisted.\nnever forgotten.",
+        "delay": 0
+      },
+      {
+        "x": 0.22,
+        "y": 0.2,
+        "targetX": 0.49,
+        "targetY": 0.242,
+        "bend": 0.2,
+        "title": "the moat",
+        "body": "no paternalism.\nno amnesia.\ncreators stay.",
+        "delay": 0
+      }
+    ],
+    "beats": [
+      {
+        "id": "B00",
+        "kind": "ClaudeComposerAsk",
+        "act": "ASK",
+        "frames": 381,
+        "audio": "mp3-pitch/mcp-in-your-hands/beat-B00.mp3",
+        "props": {
+          "greeting": "Yassou, Medhavy",
+          "topic": "MEDHAVY · CONTROL",
+          "segment": "The Final Judge",
+          "command": "change D-014 to the red and ink pair",
+          "runningText": "patching one decision…",
+          "folderLabel": "@Medhavy",
+          "output": [
+            "D-014 patched — palette updated",
+            "contrast checked: 3.8:1 — below AA — flagged, complied",
+            "decisions.json updated · 1 beat re-rendered"
+          ]
+        },
+        "narration": "This is what control looks like: one line, addressed to a decision by its ID. No regenerate roulette, no starting over. Change D fourteen — and only D fourteen changes."
+      },
+      {
+        "id": "B01",
+        "kind": "ClaudePitchBeat",
+        "act": "CLAIM-1",
+        "frames": 405,
+        "audio": "mp3-pitch/mcp-in-your-hands/beat-B01.mp3",
+        "props": {
+          "calloutIndex": 0,
+          "sparkLine": "Any CLI. Your judgment."
+        },
+        "narration": "Any C L I works — Claude Code, Codex, whatever ships next year. The workflow is deliberately tool-agnostic, because your judgment shouldn't be locked to our interface. The decision log is the API."
+      },
+      {
+        "id": "B02",
+        "kind": "OndaCodeBlock",
+        "act": "CLAIM-2",
+        "frames": 339,
+        "audio": "mp3-pitch/mcp-in-your-hands/beat-B02.mp3",
+        "props": {
+          "spark": "Patch, not regenerate.",
+          "codeTitle": "decisions.json",
+          "code": "{\n  \"id\": \"D-014\",\n  \"beat\": \"B03\",\n  \"choice\": \"palette: ink on cream, one accent\",\n  \"default_applied\": \"colorblind-safe (Okabe-Ito)\",\n  \"reason\": \"signal, not decoration\",\n  \"source\": \"lxd Ch 9 · WCAG 2.2 AA\",\n  \"overridable\": true\n}"
+        },
+        "narration": "Patch, never regenerate. Override a palette and only the affected beats re-render. Every other choice you've made survives. Your course stops being a slot machine."
+      },
+      {
+        "id": "B03",
+        "kind": "ClaudePitchBeat",
+        "act": "PREDICT",
+        "frames": 402,
+        "audio": "mp3-pitch/mcp-in-your-hands/beat-B03.mp3",
+        "props": {
+          "calloutIndex": 2,
+          "sparkLine": "What should it do?"
+        },
+        "narration": "Now predict the hard case. You override an accessibility default — contrast drops below double-A. What should the system do? Refuse you? Comply silently? Commit to an answer before I show you ours."
+      },
+      {
+        "id": "B04",
+        "kind": "IlluPattern",
+        "act": "CLAIM-4",
+        "frames": 579,
+        "audio": "mp3-pitch/mcp-in-your-hands/beat-B04.mp3",
+        "props": {
+          "spark": "Dissent, then comply.",
+          "patternType": "Threshold",
+          "patternData": {
+            "slideMeta": "// B04 — DISSENT THEN COMPLY",
+            "subject": {"label": "WCAG AA min", "size": 4.5, "unit": ":1"},
+            "modes": [
+              {"label": "DEFAULT PALETTE", "sub": "palette: ink on cream · contrast 10.9:1", "limit": 10.9, "resolves": false},
+              {"label": "OVERRIDE D-014", "sub": "contrast: 3.8:1 — below AA", "limit": 3.8, "resolves": true}
+            ],
+            "axis": {"min": 1, "max": 21, "unit": ":1", "log": false},
+            "axisLabel": "contrast ratio",
+            "verdicts": {"yes": "BELOW AA — FLAGGED, COMPLIED", "no": "COMPLIANT"}
+          }
+        },
+        "narration": "It dissents, then complies — and logs it. Contrast now three point eight to one, below double-A, flagged, complied. The log is how pick and override are the same muscle: you change a decision by ID, the receipt is automatic. Defaults without overrides are paternalism. Overrides without memory are amnesia."
+      },
+      {
+        "id": "B05",
+        "kind": "ClaudePitchBeat",
+        "act": "CLAIM-5",
+        "frames": 328,
+        "audio": "mp3-pitch/mcp-in-your-hands/beat-B05.mp3",
+        "props": {
+          "calloutIndex": 4,
+          "sparkLine": "Control is retention."
+        },
+        "narration": "Why this matters to the business: creators leave tools that patronize them, and distrust tools that forget. Selection and override are the same muscle — control with a receipt. That's the retention story."
+      },
+      {
+        "id": "B06",
+        "kind": "ClaudeVerdictArtifact",
+        "act": "VERDICT",
+        "frames": 532,
+        "audio": "mp3-pitch/mcp-in-your-hands/beat-B06.mp3",
+        "props": {
+          "artifactTitle": "The Final Judge — one page",
+          "artifactHeading": "Who decides",
+          "artifactLines": [
+            "Every decision addressable by ID, from any CLI.",
+            "Patch-not-regenerate: overrides touch only what they name.",
+            "Dissent-then-comply: the system flags, records, and obeys — never resists, never forgets.",
+            "Phase gate: AI proposes with reasons · the human rules · the log remembers."
+          ]
+        },
+        "narration": "Control, one page. Every decision addressable by ID, from any C L I. Overrides touch only what they name. The system dissents, then complies — it never resists, it never forgets. Selection and override are the same muscle: pick with a reason, and the receipt is automatic."
+      },
+      {
+        "id": "B07",
+        "kind": "ClaudeComposerAsk",
+        "act": "HANDOFF",
+        "frames": 333,
+        "audio": "mp3-pitch/mcp-in-your-hands/beat-B07.mp3",
+        "props": {
+          "greeting": "Your turn.",
+          "topic": "MEDHAVY · CONTROL",
+          "segment": "The Final Judge",
+          "command": "Change exactly one design choice in the last thing you made for me — without regenerating anything else. Then tell me what you changed and what you kept.",
+          "runningText": "testing for amnesia…",
+          "folderLabel": "@Medhavy"
+        },
+        "narration": "Your turn — run the amnesia test. Ask your current tool to change one choice without touching the rest, then check its answer honestly. That gap is this video."
+      },
+      {
+        "id": "B08",
+        "kind": "ClaudeTitleOutro",
+        "act": "OUTRO",
+        "frames": 128,
+        "audio": "mp3-pitch/mcp-in-your-hands/beat-B08.mp3",
+        "props": {
+          "title": "The Final Judge.",
+          "handle": "@MedhavyAI",
+          "subline": "a pitch in seven parts · 5 of 7"
+        },
+        "narration": "The final judge — that's you. Next: the shelf we already stocked."
+      }
+    ],
+    "totalFrames": 3427
+  },
+  {
+    "slug": "mcp-overview",
+    "compId": "McpOverview",
+    "title": "The Medhavy MCP — Medhavy MCP pitch 1/7",
+    "items": [
+      {
+        "x": 0.78,
+        "y": 0.42,
+        "targetX": 0.56,
+        "targetY": 0.52,
+        "bend": -0.2,
+        "title": "already true",
+        "body": "any Claude, any CLI.\ncourses in minutes.\nthat part is solved.",
+        "delay": 0
+      },
+      {
+        "x": 0.78,
+        "y": 0.66,
+        "targetX": 0.688,
+        "targetY": 0.632,
+        "bend": -0.15,
+        "title": "the catch",
+        "body": "cold generation.\nquality of input\nbecomes the output.",
+        "delay": 0
+      },
+      {
+        "x": 0.22,
+        "y": 0.42,
+        "targetX": 0.34,
+        "targetY": 0.52,
+        "bend": 0.2,
+        "title": "the shape",
+        "body": "an MCP connector.\nyour AI, our spine.\nno new app to learn.",
+        "delay": 0
+      },
+      {
+        "x": 0.78,
+        "y": 0.2,
+        "targetX": 0.548,
+        "targetY": 0.242,
+        "bend": -0.2,
+        "title": "by design",
+        "body": "WCAG. arcs. sources.\nevery choice logged\nwith its reason.",
+        "delay": 0
+      },
+      {
+        "x": 0.22,
+        "y": 0.2,
+        "targetX": 0.49,
+        "targetY": 0.242,
+        "bend": 0.2,
+        "title": "predict",
+        "body": "what does the\nmoney buy?\ncommit before video seven.",
+        "delay": 0
+      }
+    ],
+    "beats": [
+      {
+        "id": "B00",
+        "kind": "ClaudeComposerAsk",
+        "act": "ASK",
+        "frames": 409,
+        "audio": "mp3-pitch/mcp-overview/beat-B00.mp3",
+        "props": {
+          "greeting": "Namaste, Medhavy",
+          "topic": "MEDHAVY · THE PITCH",
+          "segment": "The Medhavy MCP",
+          "command": "build me a course on machine learning",
+          "runningText": "starting from the spine…",
+          "folderLabel": "@Medhavy",
+          "output": [
+            "spine served — vetted claims, sources attached",
+            "week one drafted from the spine",
+            "decisions.json — every choice logged"
+          ]
+        },
+        "narration": "Ask any AI to build you a course, and it will — in minutes. Here's the question that decides whether it's worth anything: what did it start from? This playlist is a pitch, and the pitch fits in one sentence. Watch."
+      },
+      {
+        "id": "B01",
+        "kind": "ClaudePitchBeat",
+        "act": "CLAIM-1",
+        "frames": 354,
+        "audio": "mp3-pitch/mcp-overview/beat-B01.mp3",
+        "props": {
+          "calloutIndex": 0,
+          "sparkLine": "Generation is a commodity."
+        },
+        "narration": "First, the part that's already true: anyone with Claude, or any C L I, can make a real course today. Generation is a commodity now. That's not our product — that's our premise."
+      },
+      {
+        "id": "B02",
+        "kind": "IlluPattern",
+        "act": "CLAIM-2",
+        "frames": 397,
+        "audio": "mp3-pitch/mcp-overview/beat-B02.mp3",
+        "props": {
+          "spark": "Blank prompts inherit blanks.",
+          "patternType": "DivergentFates",
+          "patternData": {
+            "slideMeta": "// B02 — THE CATCH",
+            "startLabel": "the same AI",
+            "splitLabel": "what it starts from",
+            "tracks": [
+              {"label": "VETTED SPINE", "outcome": "teaches — the exam agrees", "tone": "good", "path": "up", "notes": ["claims with sources", "exercises built in", "struggle protected"]},
+              {"label": "BLANK PROMPT", "outcome": "demos well — the exam disagrees", "tone": "warn", "path": "down", "notes": ["cold generation", "no sources", "fluency ≠ mastery"]}
+            ]
+          }
+        },
+        "narration": "But garbage in, garbage out cuts both ways. A blank prompt inherits whatever the prompter happens to know. Most AI courseware starts from thin air — and it shows on the exam, not in the demo."
+      },
+      {
+        "id": "B03",
+        "kind": "ClaudePitchBeat",
+        "act": "CLAIM-3",
+        "frames": 485,
+        "audio": "mp3-pitch/mcp-overview/beat-B03.mp3",
+        "props": {
+          "calloutIndex": 2,
+          "sparkLine": "Connect. Start from vetted."
+        },
+        "narration": "Medhavy is a connector, not another app — like Higgsfield for cinema. Settings, Connectors, paste one URL: your Claude now has a pantry. Vetted claims, exercises built for struggle, sources attached. The same chef. Better ingredients."
+      },
+      {
+        "id": "B04",
+        "kind": "ClaudePitchBeat",
+        "act": "CLAIM-4",
+        "frames": 409,
+        "audio": "mp3-pitch/mcp-overview/beat-B04.mp3",
+        "props": {
+          "calloutIndex": 3,
+          "sparkLine": "Defaults applied, reasons logged."
+        },
+        "narration": "And the design decisions? Made by learning science before you arrive — accessibility, palettes, sequencing, cognitive load — each one applied silently and logged loudly, with its reason, in a file you can read."
+      },
+      {
+        "id": "B05",
+        "kind": "ClaudePitchBeat",
+        "act": "PREDICT",
+        "frames": 331,
+        "audio": "mp3-pitch/mcp-overview/beat-B05.mp3",
+        "props": {
+          "calloutIndex": 4,
+          "sparkLine": "Write your guess down."
+        },
+        "narration": "Before the details — six short videos — write down one guess: what does the money actually buy? Hold that thought. The last video answers it, and the fun is checking yourself."
+      },
+      {
+        "id": "B06",
+        "kind": "ClaudeVerdictArtifact",
+        "act": "VERDICT",
+        "frames": 424,
+        "audio": "mp3-pitch/mcp-overview/beat-B06.mp3",
+        "props": {
+          "artifactTitle": "The Medhavy MCP — one page",
+          "artifactHeading": "The pitch",
+          "artifactLines": [
+            "You keep your AI — Claude, Codex, any CLI.",
+            "We supply the starting point — fact-checked spine, learning-first defaults, a decision log.",
+            "You stay the final judge — every choice overridable, by ID.",
+            "Phase gate: AI drafts from the spine · you judge and shape · support fades as the course matures."
+          ]
+        },
+        "narration": "The whole pitch, one page. You keep your AI. We supply the starting point. You stay the final judge. The AI drafts from the spine, you shape it from your own C L I — and the scaffolding fades as your course matures."
+      },
+      {
+        "id": "B07",
+        "kind": "ClaudeComposerAsk",
+        "act": "HANDOFF",
+        "frames": 298,
+        "audio": "mp3-pitch/mcp-overview/beat-B07.mp3",
+        "props": {
+          "greeting": "Your turn.",
+          "topic": "MEDHAVY · THE PITCH",
+          "segment": "The Medhavy MCP",
+          "command": "Build week one of Intro to Machine Learning. Cite a primary source for every factual claim, and give me a decision log for every design choice you make.",
+          "runningText": "your course, your judge…",
+          "folderLabel": "@Medhavy"
+        },
+        "narration": "Your turn — and this works today, with the Claude you already have. Paste this, and watch closely where the quality has to come from. That gap is what we sell."
+      },
+      {
+        "id": "B08",
+        "kind": "ClaudeTitleOutro",
+        "act": "OUTRO",
+        "frames": 147,
+        "audio": "mp3-pitch/mcp-overview/beat-B08.mp3",
+        "props": {
+          "title": "The Medhavy MCP.",
+          "handle": "@MedhavyAI",
+          "subline": "a pitch in seven parts · overview"
+        },
+        "narration": "The Medhavy MCP. Six details follow — start with the problem."
+      }
+    ],
+    "totalFrames": 3254
+  },
+  {
+    "slug": "mcp-the-business",
+    "compId": "McpTheBusiness",
+    "title": "What the Money Buys — Medhavy MCP pitch 7/7",
+    "items": [
+      {
+        "x": 0.78,
+        "y": 0.42,
+        "targetX": 0.56,
+        "targetY": 0.52,
+        "bend": -0.2,
+        "title": "the shape",
+        "body": "subscribe or credits.\nconnect. generate.\nMidjourney-shaped.",
+        "delay": 0
+      },
+      {
+        "x": 0.78,
+        "y": 0.66,
+        "targetX": 0.688,
+        "targetY": 0.632,
+        "bend": -0.15,
+        "title": "the product",
+        "body": "spine + defaults +\nlog + exercises.\nnot generation.",
+        "delay": 0
+      },
+      {
+        "x": 0.22,
+        "y": 0.42,
+        "targetX": 0.34,
+        "targetY": 0.52,
+        "bend": 0.2,
+        "title": "timing",
+        "body": "CfE since 2025.\nteachers free, 2026.\nMCP is mainstream.",
+        "delay": 0
+      },
+      {
+        "x": 0.78,
+        "y": 0.2,
+        "targetX": 0.548,
+        "targetY": 0.242,
+        "bend": -0.2,
+        "title": "predict",
+        "body": "CAC when the\nfunnel is a URL?\nadoption reviews us.",
+        "delay": 0
+      },
+      {
+        "x": 0.22,
+        "y": 0.2,
+        "targetX": 0.49,
+        "targetY": 0.242,
+        "bend": 0.2,
+        "title": "sequencing",
+        "body": "institutions last.\narrive with usage,\nnot promises.",
+        "delay": 0
+      }
+    ],
+    "beats": [
+      {
+        "id": "B00",
+        "kind": "ClaudeComposerAsk",
+        "act": "ASK",
+        "frames": 381,
+        "audio": "mp3-pitch/mcp-the-business/beat-B00.mp3",
+        "props": {
+          "greeting": "Shalom, Medhavy",
+          "topic": "MEDHAVY · THE BUSINESS",
+          "segment": "What the Money Buys",
+          "command": "what exactly am I paying for?",
+          "runningText": "opening the ledger…",
+          "folderLabel": "@Medhavy",
+          "output": [
+            "the starting point — vetted spine, learning defaults, decision log",
+            "the connector is a URL",
+            "generation stays commodity"
+          ]
+        },
+        "narration": "The only honest question in a subscription pitch. Generation is a commodity — models will keep making it cheaper. So what, exactly, is the money for? Hold your guess from video one."
+      },
+      {
+        "id": "B01",
+        "kind": "ClaudePitchBeat",
+        "act": "CLAIM-1",
+        "frames": 390,
+        "audio": "mp3-pitch/mcp-the-business/beat-B01.mp3",
+        "props": {
+          "calloutIndex": 0,
+          "sparkLine": "A proven shape."
+        },
+        "narration": "The shape is proven: Midjourney and Higgsfield sell subscriptions and credits on top of commodity generation — connect, create, pay for the difference. We take the shape, and change what the difference is."
+      },
+      {
+        "id": "B02",
+        "kind": "ClaudePitchBeat",
+        "act": "CLAIM-2",
+        "frames": 576,
+        "audio": "mp3-pitch/mcp-the-business/beat-B02.mp3",
+        "props": {
+          "calloutIndex": 1,
+          "sparkLine": "The starting point is the product."
+        },
+        "narration": "What the money buys is the starting point — the ingredients and the choosing of them, never the finished meal. The vetted spine instead of a blank prompt. Learning-first defaults instead of engagement-shaped ones. The decision log instead of an unexplained artifact. Exercises built in, because the learning loop is part of the product."
+      },
+      {
+        "id": "B03",
+        "kind": "ClaudePitchBeat",
+        "act": "CLAIM-3",
+        "frames": 628,
+        "audio": "mp3-pitch/mcp-the-business/beat-B03.mp3",
+        "props": {
+          "calloutIndex": 2,
+          "sparkLine": "The buyers are arriving."
+        },
+        "narration": "And the timing: the substrate went mainstream. Claude for Education has run since April twenty twenty-five — Canvas, Panopto, and Wiley already connect. As of July twenty twenty-six, Claude is free for U.S. K-through-12 teachers. Two lanes of buyers are arriving: program builders who want the market — to pick, inspect, and log — and busy teachers who want delivery, with a receipt. Same pantry, different checkout."
+      },
+      {
+        "id": "B04",
+        "kind": "ClaudePitchBeat",
+        "act": "PREDICT",
+        "frames": 367,
+        "audio": "mp3-pitch/mcp-the-business/beat-B04.mp3",
+        "props": {
+          "calloutIndex": 3,
+          "sparkLine": "Distribution is a URL."
+        },
+        "narration": "Predict our cost of distribution in tracks one and two. Remember — the product is a URL in a settings page. No procurement, no pilot committee. Adoption is the review."
+      },
+      {
+        "id": "B05",
+        "kind": "ClaudePitchBeat",
+        "act": "CLAIM-5",
+        "frames": 438,
+        "audio": "mp3-pitch/mcp-the-business/beat-B05.mp3",
+        "props": {
+          "calloutIndex": 4,
+          "sparkLine": "Earn the third track."
+        },
+        "narration": "The institutional lane comes last, on purpose — entered with usage evidence, not ahead of it. Assume every university's opening posture is: not approved for our data. Then arrive with track-two numbers instead of promises."
+      },
+      {
+        "id": "B06",
+        "kind": "ClaudeVerdictArtifact",
+        "act": "VERDICT",
+        "frames": 496,
+        "audio": "mp3-pitch/mcp-the-business/beat-B06.mp3",
+        "props": {
+          "artifactTitle": "What the Money Buys — one page",
+          "artifactHeading": "The business",
+          "artifactLines": [
+            "Model: Midjourney/Higgsfield-shaped — subscriptions + credits on a connector.",
+            "Product: ingredients and the choosing of them — spine, defaults, decision log, exercises. The cooking is the learning.",
+            "Timing: education runs on MCP now — Canvas · Panopto · Wiley; U.S. K-12 teachers free since July 2026.",
+            "Sequence: local proof → public connector → institutions, with usage evidence in hand."
+          ]
+        },
+        "narration": "The business, one page. A proven subscription shape on a connector. The product: the ingredients and the choosing of them, never the meal — that's where the learning happens. Mainstream timing. And a sequence that earns the institutional market with usage evidence, not pitches."
+      },
+      {
+        "id": "B07",
+        "kind": "ClaudeComposerAsk",
+        "act": "HANDOFF",
+        "frames": 341,
+        "audio": "mp3-pitch/mcp-the-business/beat-B07.mp3",
+        "props": {
+          "greeting": "Your turn.",
+          "topic": "MEDHAVY · THE BUSINESS",
+          "segment": "What the Money Buys",
+          "command": "Reply with one course you would pay to have built well. We will return week one — with its sources and its decision log.",
+          "runningText": "taking the order…",
+          "folderLabel": "@Medhavy"
+        },
+        "narration": "Your turn closes the pitch. Reply with one course you'd pay to have built well — and we'll return week one, with its sources and its decision log. Judge the product, not the deck."
+      },
+      {
+        "id": "B08",
+        "kind": "ClaudeTitleOutro",
+        "act": "OUTRO",
+        "frames": 145,
+        "audio": "mp3-pitch/mcp-the-business/beat-B08.mp3",
+        "props": {
+          "title": "What the Money Buys.",
+          "handle": "@MedhavyAI",
+          "subline": "a pitch in seven parts · 7 of 7"
+        },
+        "narration": "What the money buys. That was the pitch — and the playlist is the demo. Medhavy."
+      }
+    ],
+    "totalFrames": 3762
+  },
+  {
+    "slug": "mcp-the-connector",
+    "compId": "McpTheConnector",
+    "title": "A Connector, Not an App — Medhavy MCP pitch 3/7",
+    "items": [
+      {
+        "x": 0.78,
+        "y": 0.42,
+        "targetX": 0.56,
+        "targetY": 0.52,
+        "bend": -0.2,
+        "title": "proven shape",
+        "body": "Higgsfield ships\nmcp.higgsfield.ai/mcp.\nsign in and go.",
+        "delay": 0
+      },
+      {
+        "x": 0.78,
+        "y": 0.66,
+        "targetX": 0.688,
+        "targetY": 0.632,
+        "bend": -0.15,
+        "title": "four tools",
+        "body": "get_spine ·\nget_video ·\nget_exercises · list_topics.",
+        "delay": 0
+      },
+      {
+        "x": 0.22,
+        "y": 0.42,
+        "targetX": 0.34,
+        "targetY": 0.52,
+        "bend": 0.2,
+        "title": "the refusal",
+        "body": "outside the corpus?\nsay so.\nnever invent.",
+        "delay": 0
+      },
+      {
+        "x": 0.78,
+        "y": 0.2,
+        "targetX": 0.548,
+        "targetY": 0.242,
+        "bend": -0.2,
+        "title": "the substrate",
+        "body": "Canvas · Panopto ·\nWiley already connect.\nMCP is the lane.",
+        "delay": 0
+      },
+      {
+        "x": 0.22,
+        "y": 0.2,
+        "targetX": 0.49,
+        "targetY": 0.242,
+        "bend": 0.2,
+        "title": "three tracks",
+        "body": "local: days.\npublic: weeks.\ninstitutional: earned.",
+        "delay": 0
+      }
+    ],
+    "beats": [
+      {
+        "id": "B00",
+        "kind": "ClaudeComposerAsk",
+        "act": "ASK",
+        "frames": 405,
+        "audio": "mp3-pitch/mcp-the-connector/beat-B00.mp3",
+        "props": {
+          "greeting": "Bonjour, Medhavy",
+          "topic": "MEDHAVY · DISTRIBUTION",
+          "segment": "A Connector, Not an App",
+          "command": "add connector → mcp.medhavy.com/mcp",
+          "runningText": "connecting the spine…",
+          "folderLabel": "@Medhavy",
+          "output": [
+            "connector added — pantry live",
+            "nine tools available: retrieval + selection",
+            "first course drafts from vetted claims"
+          ]
+        },
+        "narration": "No download, no dashboard, no new habits to learn. Settings, Connectors, paste one URL — and your Claude just grew a curriculum spine. That's the entire onboarding. Let me show you why that's the moat."
+      },
+      {
+        "id": "B01",
+        "kind": "ClaudePitchBeat",
+        "act": "CLAIM-1",
+        "frames": 422,
+        "audio": "mp3-pitch/mcp-the-connector/beat-B01.mp3",
+        "props": {
+          "calloutIndex": 0,
+          "sparkLine": "The connector is the distribution."
+        },
+        "narration": "Higgsfield proved the shape for cinematic media: a remote MCP any Claude user adds in three steps. No procurement meeting, no sales call, no pilot committee. The connector is the distribution."
+      },
+      {
+        "id": "B02",
+        "kind": "ClaudePitchBeat",
+        "act": "CLAIM-2",
+        "frames": 517,
+        "audio": "mp3-pitch/mcp-the-connector/beat-B02.mp3",
+        "props": {
+          "calloutIndex": 1,
+          "sparkLine": "Data, not prose."
+        },
+        "narration": "The pantry layer: four tools, returning data, not prose. List what exists. Get the spine for a topic and level. Get the video for a concept. Get exercises by chapter and mix. Versioned, patchable — the chef's mise en place, served over MCP."
+      },
+      {
+        "id": "B03",
+        "kind": "ClaudePitchBeat",
+        "act": "CLAIM-3",
+        "frames": 487,
+        "audio": "mp3-pitch/mcp-the-connector/beat-B03.mp3",
+        "props": {
+          "calloutIndex": 2,
+          "sparkLine": "Refuses to improvise."
+        },
+        "narration": "One hard rule, covering both layers: no corpus, no serving. Ask for a topic that isn't there, and Medhavy says so — it won't invent, and it won't serve stale. We don't call frozen catch of the day. In education, refusing to improvise is a feature you can sell."
+      },
+      {
+        "id": "B04",
+        "kind": "ClaudePitchBeat",
+        "act": "CLAIM-4",
+        "frames": 482,
+        "audio": "mp3-pitch/mcp-the-connector/beat-B04.mp3",
+        "props": {
+          "calloutIndex": 3,
+          "sparkLine": "The lane already exists."
+        },
+        "narration": "The lane already exists. Anthropic ships education connectors today — Canvas by Instructure, Panopto, Wiley. Claude is the front end; vendors serve content through MCP. Medhavy speaks the substrate's native protocol."
+      },
+      {
+        "id": "B05",
+        "kind": "IlluPattern",
+        "act": "PREDICT",
+        "frames": 442,
+        "audio": "mp3-pitch/mcp-the-connector/beat-B05.mp3",
+        "props": {
+          "spark": "Adoption is the review.",
+          "patternType": "ScaleComparison",
+          "patternData": {
+            "slideMeta": "// B05 — THREE TRACKS",
+            "axis": {"min": 1, "max": 365, "unit": "days"},
+            "axisLabel": "time to first output",
+            "band": {"from": 1, "to": 30, "label": "no procurement"},
+            "items": [
+              {"label": "local server", "value": 3, "hot": false},
+              {"label": "public connector", "value": 14, "hot": true},
+              {"label": "institutional", "value": 120, "hot": false}
+            ]
+          }
+        },
+        "narration": "Three tracks, rising friction. A local server on your own machine — days. A public connector anyone can add — weeks. Institutional, through procurement — quarters. Predict which two earn the right to attempt the third... exactly."
+      },
+      {
+        "id": "B06",
+        "kind": "ClaudeVerdictArtifact",
+        "act": "VERDICT",
+        "frames": 487,
+        "audio": "mp3-pitch/mcp-the-connector/beat-B06.mp3",
+        "props": {
+          "artifactTitle": "A Connector, Not an App — one page",
+          "artifactHeading": "Distribution",
+          "artifactLines": [
+            "Distribution = a URL in Settings → Connectors (the Higgsfield route).",
+            "Four tools, returning data: get_spine · get_video · get_exercises · list_topics.",
+            "Refusal-on-gap: outside the corpus, Medhavy declines — it never invents.",
+            "Phase gate: the connector serves vetted parts · your AI assembles · you direct."
+          ]
+        },
+        "narration": "Distribution, one page. The funnel is a URL in settings. Two layers: a pantry for retrieval, a market for selection. Both floored by the vetted corpus, both logged. And the refusal covers both: outside the corpus, Medhavy declines."
+      },
+      {
+        "id": "B07",
+        "kind": "ClaudeComposerAsk",
+        "act": "HANDOFF",
+        "frames": 327,
+        "audio": "mp3-pitch/mcp-the-connector/beat-B07.mp3",
+        "props": {
+          "greeting": "Your turn.",
+          "topic": "MEDHAVY · DISTRIBUTION",
+          "segment": "A Connector, Not an App",
+          "command": "Open Settings → Connectors in Claude and add any remote MCP — Higgsfield's is a good test. Time the whole flow, from opening Settings to first output.",
+          "runningText": "timing the funnel…",
+          "folderLabel": "@Medhavy"
+        },
+        "narration": "Your turn — time the funnel yourself. Add any remote connector to your own Claude and clock it, settings to first output. That number is our cost of distribution."
+      },
+      {
+        "id": "B08",
+        "kind": "ClaudeTitleOutro",
+        "act": "OUTRO",
+        "frames": 104,
+        "audio": "mp3-pitch/mcp-the-connector/beat-B08.mp3",
+        "props": {
+          "title": "A Connector, Not an App.",
+          "handle": "@MedhavyAI",
+          "subline": "a pitch in seven parts · 3 of 7"
+        },
+        "narration": "A connector, not an app. Next: what the defaults know."
+      }
+    ],
+    "totalFrames": 3673
+  },
+  {
+    "slug": "mcp-the-problem",
+    "compId": "McpTheProblem",
+    "title": "The Blank Prompt Problem — Medhavy MCP pitch 2/7",
+    "items": [
+      {
+        "x": 0.78,
+        "y": 0.42,
+        "targetX": 0.56,
+        "targetY": 0.52,
+        "bend": -0.2,
+        "title": "the trap",
+        "body": "clicks, streaks,\ncompletion — engagement\nisn't learning.",
+        "delay": 0
+      },
+      {
+        "x": 0.78,
+        "y": 0.66,
+        "targetX": 0.688,
+        "targetY": 0.632,
+        "bend": -0.15,
+        "title": "the evidence",
+        "body": "practice: +48%.\nexam: −17%.\nBastani et al., 2024.",
+        "delay": 0
+      },
+      {
+        "x": 0.22,
+        "y": 0.42,
+        "targetX": 0.34,
+        "targetY": 0.52,
+        "bend": 0.2,
+        "title": "the plumbing",
+        "body": "blank prompt in,\nimprovisation out.\nGIGO, industrialized.",
+        "delay": 0
+      },
+      {
+        "x": 0.78,
+        "y": 0.2,
+        "targetX": 0.548,
+        "targetY": 0.242,
+        "bend": -0.2,
+        "title": "predict",
+        "body": "model, prompt,\nor starting point?\npick before the reveal.",
+        "delay": 0
+      },
+      {
+        "x": 0.22,
+        "y": 0.2,
+        "targetX": 0.49,
+        "targetY": 0.242,
+        "bend": 0.2,
+        "title": "the reveal",
+        "body": "same model.\nvetted spine in,\nteaching out.",
+        "delay": 0
+      }
+    ],
+    "beats": [
+      {
+        "id": "B00",
+        "kind": "ClaudeComposerAsk",
+        "act": "ASK",
+        "frames": 300,
+        "audio": "mp3-pitch/mcp-the-problem/beat-B00.mp3",
+        "props": {
+          "greeting": "Merhaba, Medhavy",
+          "topic": "MEDHAVY · THE PROBLEM",
+          "segment": "The Blank Prompt Problem",
+          "command": "why does AI courseware demo so well and teach so little?",
+          "runningText": "checking the exam, not the demo…",
+          "folderLabel": "@Medhavy",
+          "output": [
+            "demo optimizes engagement metrics",
+            "exam measures retention",
+            "the starting point is the gap"
+          ]
+        },
+        "narration": "Here's a puzzle worth an investment thesis: AI tutoring demos beautifully, learners genuinely love it — and then the exam disagrees. Why?"
+      },
+      {
+        "id": "B01",
+        "kind": "ClaudePitchBeat",
+        "act": "CLAIM-1",
+        "frames": 358,
+        "audio": "mp3-pitch/mcp-the-problem/beat-B01.mp3",
+        "props": {
+          "calloutIndex": 0,
+          "sparkLine": "The demo isn't the product."
+        },
+        "narration": "Education software learned to optimize the wrong thing. Clicks, streaks, completion — learners adore products that don't teach. The market rewarded the demo for twenty years."
+      },
+      {
+        "id": "B02",
+        "kind": "IlluPattern",
+        "act": "CLAIM-2",
+        "frames": 549,
+        "audio": "mp3-pitch/mcp-the-problem/beat-B02.mp3",
+        "props": {
+          "spark": "Fluency isn't mastery.",
+          "patternType": "DivergentFates",
+          "patternData": {
+            "slideMeta": "// B02 — THE EVIDENCE · Bastani et al. 2024",
+            "startLabel": "same students",
+            "splitLabel": "GPT-4 practice help",
+            "tracks": [
+              {"label": "PRACTICE SCORE", "outcome": "+48% · fluency rises", "tone": "good", "path": "up", "notes": ["AI scaffolds every step", "demo looks great", "Bastani et al. 2024 — one study"]},
+              {"label": "EXAM SCORE", "outcome": "−17% · mastery falls", "tone": "warn", "path": "down", "notes": ["exam measures retention", "vs no-AI group", "single-source flag"]}
+            ]
+          }
+        },
+        "narration": "One number, carefully sourced. In a randomized study of about a thousand students, GPT-4 practice help lifted practice performance forty-eight percent — and left exam scores seventeen percent worse than the no-AI group. One study — we flag it as one study. But that is the shape of the trap."
+      },
+      {
+        "id": "B03",
+        "kind": "ClaudePitchBeat",
+        "act": "CLAIM-3",
+        "frames": 485,
+        "audio": "mp3-pitch/mcp-the-problem/beat-B03.mp3",
+        "props": {
+          "calloutIndex": 2,
+          "sparkLine": "Cold generation, confident output."
+        },
+        "narration": "Underneath the trap is plumbing: garbage in, garbage out. A blank prompt starts from nothing — no vetted facts, no sequencing, no sources. The model improvises, confidently. Cold generation is the input problem wearing an output costume."
+      },
+      {
+        "id": "B04",
+        "kind": "ClaudePitchBeat",
+        "act": "PREDICT",
+        "frames": 292,
+        "audio": "mp3-pitch/mcp-the-problem/beat-B04.mp3",
+        "props": {
+          "calloutIndex": 3,
+          "sparkLine": "Commit to one."
+        },
+        "narration": "So pause and predict: if the exam keeps disagreeing, what would you fix first — the model, the prompt, or what the prompt starts from? Commit to one."
+      },
+      {
+        "id": "B05",
+        "kind": "IlluPattern",
+        "act": "CLAIM-5",
+        "frames": 427,
+        "audio": "mp3-pitch/mcp-the-problem/beat-B05.mp3",
+        "props": {
+          "spark": "Fix the starting point.",
+          "patternType": "BinaryBranch",
+          "patternData": {
+            "slideMeta": "// B05 — THE FIX",
+            "question": "the exam disagrees — fix what?",
+            "branches": [
+              {"label": "better model", "detail": "larger, newer, smarter", "fix": "still cold generation", "tone": "warn"},
+              {"label": "better prompt", "detail": "few-shot, chain-of-thought", "fix": "still cold generation", "tone": "warn"}
+            ],
+            "resolver": {"label": "the starting point", "detail": "same model · vetted spine in · teaching out"}
+          }
+        },
+        "narration": "The starting point. Feed the same AI a fact-checked spine — claims with sources, exercises that make the learner do the work, sequencing that protects the struggle — and the demo and the exam finally point the same way."
+      },
+      {
+        "id": "B06",
+        "kind": "ClaudeVerdictArtifact",
+        "act": "VERDICT",
+        "frames": 390,
+        "audio": "mp3-pitch/mcp-the-problem/beat-B06.mp3",
+        "props": {
+          "artifactTitle": "The Blank Prompt Problem — one page",
+          "artifactHeading": "What's actually broken",
+          "artifactLines": [
+            "Engagement metrics reward the demo, not the learning.",
+            "Evidence: +48% in practice, −17% on the exam (Bastani et al. 2024 — single study, flagged).",
+            "Root cause: cold generation — the blank prompt is the weakest input in the pipeline.",
+            "Phase gate: AI drafts · the learner still does the cognitive work · nothing here optimizes clicks."
+          ]
+        },
+        "narration": "The problem, one page. Engagement metrics reward the demo. The evidence says fluency and mastery diverge. And the root cause is the blank prompt — the weakest input in the whole pipeline."
+      },
+      {
+        "id": "B07",
+        "kind": "ClaudeComposerAsk",
+        "act": "HANDOFF",
+        "frames": 330,
+        "audio": "mp3-pitch/mcp-the-problem/beat-B07.mp3",
+        "props": {
+          "greeting": "Your turn.",
+          "topic": "MEDHAVY · THE PROBLEM",
+          "segment": "The Blank Prompt Problem",
+          "command": "Build me a one-week lesson on a topic I know well. Then cite a primary source for every factual claim you made. List the claims you cannot source.",
+          "runningText": "counting the unsourced…",
+          "folderLabel": "@Medhavy"
+        },
+        "narration": "Your turn to see it firsthand. Paste this into any AI you use — and count what comes back unsourced. Don't let it answer for you; the counting is the exercise."
+      },
+      {
+        "id": "B08",
+        "kind": "ClaudeTitleOutro",
+        "act": "OUTRO",
+        "frames": 139,
+        "audio": "mp3-pitch/mcp-the-problem/beat-B08.mp3",
+        "props": {
+          "title": "The Blank Prompt Problem.",
+          "handle": "@MedhavyAI",
+          "subline": "a pitch in seven parts · 2 of 7"
+        },
+        "narration": "The blank prompt problem. Next: the connector that fixes the input."
+      }
+    ],
+    "totalFrames": 3270
+  }
+]

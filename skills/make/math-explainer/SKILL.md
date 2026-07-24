@@ -21,9 +21,9 @@ the intuition — no SVG doodles, no photoreal enrichment.
 
 **Two versions ship, in this order.** The pipeline produces:
 
-1. **Clean master** (`<slug>.mp4`) — pure Manim + Bear Brown voiceover, no
+1. **Clean master** (`[slug].mp4`) — pure Manim + Bear Brown voiceover, no
    on-screen captions. This is rendered and **approved first**.
-2. **Captioned cut** (`<slug>-caption.mp4`) — only after the clean master is
+2. **Captioned cut** (`[slug]-caption.mp4`) — only after the clean master is
    approved, a caption pass lays **karaoke captions** (per-word, forced-aligned
    with faster-whisper) over the *approved* master. Nothing about the Manim is
    re-rendered; captions are an overlay burned on top.
@@ -93,7 +93,7 @@ bears-doodles-only — never run them for a brownblue video.)
    rules.
 8. **One folder per video**, kebab-case slug: `mp3/`, `mp4/`, `media/`,
    `fonts/`, `beat_sheet.json`. **A brownblue video is a book asset — its folder
-   lives in the source book's repo under `youtube/<slug>/`, never in `Manim/`.**
+   lives in the source book's repo under `youtube/[slug]/`, never in `Manim/`.**
    See "Where a video folder lives" below.
 9. **The 9:16 Short is hard-gated under 3:00.** Before any portrait render or
    caption burn, `scripts/short_guard.py` must pass (audio total strictly < 180s,
@@ -111,16 +111,16 @@ bears-doodles-only — never run them for a brownblue video.)
 A brownblue video is an **asset of the book it teaches**, so it lives *with the
 book*, not in the animation scratch dir:
 
-- **Video project folder → `<book-repo>/youtube/<slug>/`.** Derive the book from
+- **Video project folder → `[book-repo]/youtube/[slug]/`.** Derive the book from
   the concept's source chapter (recorded in the beat sheet's `source`). A Vol-1
-  concept lands in `quantum-mechanics-vol1/youtube/<slug>-bb/`. The `youtube/`
+  concept lands in `quantum-mechanics-vol1/youtube/[slug]-bb/`. The `youtube/`
   sibling of the book's `vids/` (scout *ideas*) holds finished video *projects*.
 - **Never author a brownblue folder in `Manim/`.** `Manim/` stays the doodle /
   scratch home and the central **publish workspace**.
 - **Credentials + ledger stay central and gitignored** in `Manim/`
   (`youtube_token.json`, `client_secret.json`, `youtube_publish_ledger.json`).
   They are channel-wide, not book-specific, and must **never** be committed to a
-  book repo. The ledger keys off the folder **name** (`<slug>::landscape`), so a
+  book repo. The ledger keys off the folder **name** (`[slug]::landscape`), so a
   folder can move between repos without breaking it.
 - **Each book's `youtube/` is self-contained.** It carries its own verified copy
   of the pipeline in `youtube/scripts/` (render + package + captions + publish +
@@ -130,7 +130,7 @@ book*, not in the animation scratch dir:
   Rule: *a script is copied into a book only after it's verified* — prove a change
   upstream, then refresh the copy. (`svg_doodles.py`, `composite_doodles.py`,
   `enhance_suggest.py`, `make_short.py` are doodle-only — never copy them here.)
-- **Bootstrapping a new book:** `mkdir <book>/youtube/{scripts,brands}`, copy the
+- **Bootstrapping a new book:** `mkdir [book]/youtube/{scripts,brands}`, copy the
   brownblue script subset + `brand.brownblue.json` in, add the `youtube/.gitignore`
   below, then `new`.
 - **What git tracks vs ignores.** Push the small stuff — `script.md`,
@@ -143,7 +143,7 @@ book*, not in the animation scratch dir:
 - **Publishing is run from `Manim/`** (so it finds the token/ledger) with an
   **explicit path** to the book's video folder — or from anywhere with explicit
   `--token/--client/--ledger` flags. Example (full paths, works from any terminal):
-  `python ${ART_PUBLISH_WORKSPACE:-./publish-workspace}/quantum-mechanics-vol1/youtube/scripts/youtube_publish.py ${ART_PUBLISH_WORKSPACE:-./publish-workspace}/quantum-mechanics-vol1/youtube/<slug>-bb --token ${ART_YOUTUBE_TOKEN:-./youtube_token.json} --ledger ${ART_PUBLISH_LEDGER:-./youtube_publish_ledger.json} --client ${ART_YOUTUBE_CLIENT_SECRET:-./client_secret.json} ...`
+  `python ${ART_PUBLISH_WORKSPACE:-./publish-workspace}/quantum-mechanics-vol1/youtube/scripts/youtube_publish.py ${ART_PUBLISH_WORKSPACE:-./publish-workspace}/quantum-mechanics-vol1/youtube/[slug]-bb --token ${ART_YOUTUBE_TOKEN:-./youtube_token.json} --ledger ${ART_PUBLISH_LEDGER:-./youtube_publish_ledger.json} --client ${ART_YOUTUBE_CLIENT_SECRET:-./client_secret.json} ...`
   Every pipeline script already takes a folder path and works folder-relative.
 
 ## Commands
@@ -153,17 +153,17 @@ Respond to the first word (`brownblue`, `bb`, or a bare paste = `script`).
 ### `brownblue` / `help`
 List these commands and ask what concept to teach.
 
-### `new <title>`
+### `new [title]`
 Read `reference/style.md`. Derive the kebab-case slug (append `-bb` when a
 same-concept doodle already owns the plain slug). **Resolve the target book from
-the source chapter and create the folder at `<book-repo>/youtube/<slug>/`** (make
+the source chapter and create the folder at `[book-repo]/youtube/[slug]/`** (make
 `youtube/` if absent) — never in `Manim/`. Run
 `../sketch-explainer/scripts/new_video.py` with that path, then patch the skeleton's
 `metadata` to brownblue defaults (series, voice, style, fonts — style.md has the
 block; also set `playlist`/`playlist_short` per the book's queue). Copy the EB
 Garamond TTFs into the video's `fonts/`. Report the path. No content yet.
 
-### `script <concept | chapter path | candidate>`
+### `script [concept | chapter path | candidate]`
 Read `reference/pedagogy.md`, then:
 
 1. **Scope** — name the ONE insight; classify as *problem* (has a key
@@ -195,16 +195,16 @@ derived duration. No dollar estimates. Ask approval. Stop. (Gate 2.)
 
 ### `audio`
 Confirm `ELEVENLABS_API_KEY` and `mutagen`. Run
-`python ../sketch-explainer/scripts/generate_audio.py <folder>`. Voice is Bear
+`python ../sketch-explainer/scripts/generate_audio.py [folder]`. Voice is Bear
 Brown (`TyW6NH39JcFb5M3xdIIk`) from metadata; settings in style.md. Report
 total + per-beat durations. Confirm before rendering. (Gate 3.)
 
 ### `manim`
 Copy `../sketch-explainer/scripts/manim_template.py` into the folder as
-`<slug_underscored>.py` **and copy `bn_layout.py` alongside it**. Set the style
+`[slug_underscored].py` **and copy `bn_layout.py` alongside it**. Set the style
 constants from style.md (`dark` unless metadata says `light`). Fill one draw
 function per beat honoring transform-don't-cut. Scene is silent; `assemble`
-muxes audio. Render `manim -qh <file>.py BearsDoodlesVideo`, then run
+muxes audio. Render `manim -qh [file].py BearsDoodlesVideo`, then run
 `manim_layout_audit.py --curve-strict` — exit 0 before showing the user. The
 auditor catches text-on-text, out-of-frame, AND **text-on-curve** (a label
 struck by a graph/line); `--curve-strict` makes the last one a hard error. Run
@@ -231,16 +231,16 @@ equation per zone.
 16:9 first (no limit):
 
 ```
-manim -qh <scene>.py BearsDoodlesVideo
-python ../sketch-explainer/scripts/assemble.py <folder> --mode manim              # → <slug>.mp4
+manim -qh [scene].py BearsDoodlesVideo
+python ../sketch-explainer/scripts/assemble.py [folder] --mode manim              # → [slug].mp4
 ```
 
 Then the 9:16 Short — **gated at 3:00 first**:
 
 ```
-python scripts/short_guard.py <folder>                                        # must exit 0 (< 3:00)
-manim -r 1080,1920 --fps 60 --disable_caching --flush_cache <scene>.py BearsDoodlesVideo
-python ../sketch-explainer/scripts/assemble.py <folder> --mode manim --portrait   # → <slug>-short.mp4
+python scripts/short_guard.py [folder]                                        # must exit 0 (< 3:00)
+manim -r 1080,1920 --fps 60 --disable_caching --flush_cache [scene].py BearsDoodlesVideo
+python ../sketch-explainer/scripts/assemble.py [folder] --mode manim --portrait   # → [slug]-short.mp4
 ```
 
 If `short_guard.py` blocks (audio total ≥ 180s), do **not** render the Short.
@@ -250,8 +250,8 @@ long-form ships regardless.
 
 Then package the metadata (both from the beat sheet's real durations):
 ```
-python scripts/emit_transcript.py <folder>   # <slug>.srt / .vtt / -transcript.txt
-python scripts/emit_youtube.py <folder>       # <slug>-youtube.md + -youtube.json (autoposter manifest)
+python scripts/emit_transcript.py [folder]   # [slug].srt / .vtt / -transcript.txt
+python scripts/emit_youtube.py [folder]       # [slug]-youtube.md + -youtube.json (autoposter manifest)
 ```
 `emit_youtube.py` writes timestamped chapters (0:00 first, ≥10s apart) and a
 YouTube Data API v3 autoposter manifest (long + short entries, tags, category,
@@ -264,23 +264,23 @@ Only after Gate 4. Produces the second deliverable by overlaying per-word
 karaoke captions on the *already-approved* clean master — the Manim is never
 re-rendered.
 
-1. `python ../../../skills/deck-lecture/scripts/align_captions.py <folder>` —
+1. `python ../../../skills/deck-lecture/scripts/align_captions.py [folder]` —
    forced alignment (faster-whisper supplies timing only; the words are the
-   known `narration_text`) → `<folder>/captions.json`, per-beat word-level
+   known `narration_text`) → `[folder]/captions.json`, per-beat word-level
    frames. Captions are timed from `narration_text` (correct spelling), never
    `tts_normalized_text` (which holds pronunciation respellings) — so the
    on-screen text never shows a respelling.
-2. `python scripts/burn_captions.py <folder> --input mp4/<slug>.mp4` — turns the
+2. `python scripts/burn_captions.py [folder] --input mp4/[slug].mp4` — turns the
    per-beat word timings into absolute-timed ASS karaoke and ffmpeg-burns it onto
-   the approved master → `mp4/<slug>-caption.mp4`. Pure ffmpeg + libass — no
+   the approved master → `mp4/[slug]-caption.mp4`. Pure ffmpeg + libass — no
    Remotion project. Upcoming words in ink, each word lighting to `--highlight`
    as spoken, in the lower safe band.
    For the 9:16, **probe the rendered non-caption Short first**, then burn:
    ```
-   python scripts/short_guard.py <folder> --probe mp4/<slug>-short.mp4   # must exit 0 (< 3:00)
-   python scripts/burn_captions.py <folder> --input mp4/<slug>-short.mp4 --portrait
+   python scripts/short_guard.py [folder] --probe mp4/[slug]-short.mp4   # must exit 0 (< 3:00)
+   python scripts/burn_captions.py [folder] --input mp4/[slug]-short.mp4 --portrait
    ```
-   → `mp4/<slug>-short-caption.mp4`. `burn_captions --portrait` also self-guards
+   → `mp4/[slug]-short-caption.mp4`. `burn_captions --portrait` also self-guards
    as a safety net, so an over-limit Short can never be captioned.
 3. Present both `-caption` cuts. The clean master and the captioned cut are the
    two published surfaces. Nothing auto-publishes; the human approves the caption
@@ -290,7 +290,7 @@ Caption style: one line at a time, EB Garamond, ink on a subtle scrim, the
 current word in `--highlight`. Never cover the active Manim element — captions
 sit in the lower safe band the scenes already keep clear (`bn_layout`).
 
-### `silent <concept | chapter path | candidate>` — no gates, two pastes total
+### `silent [concept | chapter path | candidate]` — no gates, two pastes total
 Full-auto mode, opted into by Bear. Everything above still applies EXCEPT the
 approval gates: the skill makes every creative call itself (script, palette
 mappings, pacing, titles, descriptions) and Bear reviews finished videos, not
@@ -299,10 +299,10 @@ after watching; then re-author what changed and hand the same command again.
 
 **Four surfaces ship per concept** — two cuts × two aspects:
 
-- `<folder>/` — the LONG cut: `<slug>.mp4` (16:9) + `<slug>-short.mp4` (9:16
+- `[folder]/` — the LONG cut: `[slug].mp4` (16:9) + `[slug]-short.mp4` (9:16
   long — a regular vertical video, NOT a Short; exempt from the 3:00 guard,
   captioned with `burn_captions.py --allow-long`).
-- `<folder>/short/` — the SHORT cut, its own beat sheet and scene, audio
+- `[folder]/short/` — the SHORT cut, its own beat sheet and scene, audio
   hard-gated < 3:00. Slug convention: insert `-short` before the `-bb` suffix
   (`dim-blue-beats-blinding-red-bb` → `dim-blue-beats-blinding-red-short-bb`).
 
@@ -336,7 +336,7 @@ What the skill authors in-session, with no approval stops:
 Then hand Bear EXACTLY ONE command (full absolute path):
 
 ```
-python "<book>/youtube/scripts/silent_run.py" "<book>/youtube/<slug>"
+python "[book]/youtube/scripts/silent_run.py" "[book]/youtube/[slug]"
 ```
 
 `silent_run.py` does the rest: audio → renders → layout audits → assembles →
@@ -345,7 +345,7 @@ paste-able error block. When Bear has watched and approved, the SECOND (and
 last) paste publishes all four surfaces private with captions + playlists:
 
 ```
-python "<book>/youtube/scripts/silent_publish.py" "<book>/youtube/<slug>"
+python "[book]/youtube/scripts/silent_publish.py" "[book]/youtube/[slug]"
 ```
 
 Never hand more than these two commands per concept.

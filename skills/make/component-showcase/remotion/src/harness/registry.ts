@@ -40,6 +40,12 @@ import { Vignette } from '../../../../vox/remotion/_bench/onda/registry/componen
 import { vignetteSchema } from '../../../../vox/remotion/_bench/onda/registry/components/vignette/schema';
 import { CameraShake } from '../../../../vox/remotion/_bench/onda/registry/components/camera-shake/CameraShake';
 import { cameraShakeSchema } from '../../../../vox/remotion/_bench/onda/registry/components/camera-shake/schema';
+import { ClaudeComposer } from '../../../../vox/remotion/_bench/onda/registry/components/claude-composer/ClaudeComposer';
+import { claudeComposerSchema } from '../../../../vox/remotion/_bench/onda/registry/components/claude-composer/schema';
+import { ClaudeWindow } from '../../../../vox/remotion/_bench/onda/registry/components/claude-window/ClaudeWindow';
+import { claudeWindowSchema } from '../../../../vox/remotion/_bench/onda/registry/components/claude-window/schema';
+import { ClaudeCallout } from '../../../../vox/remotion/_bench/onda/registry/components/claude-callout/ClaudeCallout';
+import { claudeCalloutSchema } from '../../../../vox/remotion/_bench/onda/registry/components/claude-callout/schema';
 
 export type OndaEntry = { slug: string; title: string; Component: ComponentType<any>; schema: ZodTypeAny };
 
@@ -63,6 +69,9 @@ export const ONDA_DATA: OndaEntry[] = [
   { slug: 'grain-overlay', title: 'GrainOverlay', Component: GrainOverlay, schema: grainOverlaySchema },
   { slug: 'vignette', title: 'Vignette', Component: Vignette, schema: vignetteSchema },
   { slug: 'camera-shake', title: 'CameraShake', Component: CameraShake, schema: cameraShakeSchema },
+  { slug: 'claude-composer', title: 'ClaudeComposer', Component: ClaudeComposer, schema: claudeComposerSchema },
+  { slug: 'claude-window', title: 'ClaudeWindow', Component: ClaudeWindow, schema: claudeWindowSchema },
+  { slug: 'claude-callout', title: 'ClaudeCallout', Component: ClaudeCallout, schema: claudeCalloutSchema },
 ];
 
 export const ONDA_DATA_MAP: Record<string, OndaEntry> = Object.fromEntries(ONDA_DATA.map((e) => [e.slug, e]));

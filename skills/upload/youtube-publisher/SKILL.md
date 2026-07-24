@@ -33,8 +33,8 @@ and the YouTube OAuth pattern. This skill only adds the NotebookLM-specific glue
 ```
 
 One folder per video, named by slug, holding `beat_sheet.json`, `mp3/`, `media/`,
-`mp4/<slug>.mp4` (the upload master), `chapters.json`, `description.txt`, and
-`<slug>-youtube.md`.
+`mp4/[slug].mp4` (the upload master), `chapters.json`, `description.txt`, and
+`[slug]-youtube.md`.
 
 ## Before you start — dependencies and secrets
 
@@ -91,22 +91,22 @@ the last frame so the voice never clips → `media/B00.mp4`, `media/B99.mp4`.
 ### 6. Sandwich (`sandwich.py`)
 Normalizes all three segments to one canonical format (1920×1080, 30 fps, h264, AAC) —
 this matters because Remotion and NotebookLM outputs differ and ffmpeg's concat corrupts
-mismatched inputs — then concatenates → `mp4/<slug>.mp4`, the upload master.
+mismatched inputs — then concatenates → `mp4/[slug].mp4`, the upload master.
 
 ### 7. Chapter markers (`chapter_markers.py`)
 Proposes YouTube timestamped chapters from the transcript, **offset by the real intro
 length** (so the timestamps point at the right place in the final video). Labels come in
-as `<rewrite me>` with a snippet — they are placeholders.
+as `[rewrite me]` with a snippet — they are placeholders.
 
 ### 8. Description — HUMAN GATE (`build_description.py`)
-Seeds `<slug>-youtube.md` in the Medhavy house style (hook, "What you'll learn", "The
+Seeds `[slug]-youtube.md` in the Medhavy house style (hook, "What you'll learn", "The
 physics", timestamped chapters, brand footer, hashtags). The seeded hook is the chapter's
 first paragraph and the chapter labels are raw snippets — **rewrite them**. Turn each
-`<rewrite me>` into a real topic title, sharpen the hook, and fill "The physics" with the
+`[rewrite me]` into a real topic title, sharpen the hook, and fill "The physics" with the
 chapter's key result and numbers. Then flatten to the upload text:
 
 ```bash
-python scripts/build_description.py <folder> --refresh
+python scripts/build_description.py [folder] --refresh
 ```
 
 ### 9. Publish in chapter order — HUMAN GATE (`publish_playlist.py`)
@@ -129,7 +129,7 @@ Google approves an audit — see the setup reference). Confirm with the user bef
 
 1. Run `pipeline.py` on each `.mp4` (they can share `--chapters`). Confirm each chapter match.
 2. Refine each `-youtube.md`, run `build_description.py --refresh` on each.
-3. One `publish_playlist.py --root <parent>` posts them all in chapter order.
+3. One `publish_playlist.py --root [parent]` posts them all in chapter order.
 
 Two NotebookLM videos can map to the same chapter (e.g. Ch 1 blackbody + Ch 1
 photoelectric). That's fine — they'll sit adjacent in the playlist; order them by tweaking
@@ -149,9 +149,9 @@ See `references/medhavy-brand.md` for the fixed brand constants and
 
 ## Credentials (per channel)
 
-OAuth credentials live in `youtube/credentials/<channel>/` (gitignored), each holding
+OAuth credentials live in `youtube/credentials/[channel]/` (gitignored), each holding
 `client_secret.json`, `youtube_token.json`, and `youtube_publish_ledger.json`. Choose the channel
-with `ART_YOUTUBE_CHANNEL` (default `nikbearbrown`) or `publish_playlist.py --channel <name>`.
+with `ART_YOUTUBE_CHANNEL` (default `nikbearbrown`) or `publish_playlist.py --channel [name]`.
 Most people have one channel; add more folders for multiple. `./art keys` validates the selected
 channel's OAuth for free.
 
@@ -173,6 +173,6 @@ the link.
 that appears on a Short; that's a YouTube Studio / mobile-app action. The description link above is the
 automatable funnel; set the native chip manually in Studio if you want it in addition.
 
-**Credentials resolution:** the publisher now resolves `youtube/credentials/<channel>/` from the repo
+**Credentials resolution:** the publisher now resolves `youtube/credentials/[channel]/` from the repo
 root automatically (fixed a `parents[]` bug), so you no longer need `ART_HOME` set or `--client`/
 `--token`/`--ledger` passed when running the script directly from the repo root.

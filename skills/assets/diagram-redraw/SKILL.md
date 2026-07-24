@@ -1,7 +1,7 @@
 ---
 name: diagram-redraw
 description: >-
-  Mine a facts/<topic> Wikipedia knowledge slice for figures worth redrawing, and
+  Mine a facts/[topic] Wikipedia knowledge slice for figures worth redrawing, and
   render them in the book's house style into an images subfolder. Use when the user
   types `figure-harvest`, asks to harvest/redraw diagrams from the facts data, to find
   "doable and useful images" for a book, or to turn a topic's Wikipedia media into
@@ -31,15 +31,15 @@ logos and product photos (≈ 8%). The skill finds the signal wherever it lives.
 
 ## Inputs
 
-- `facts/<topic>/terms.json` — media references: `{file, type, strategy, commons_url}` per term.
-- `facts/<topic>/graph.json` — concept link graph; `in_degree` = how foundational a concept is.
-- Optional target book: `books/<slug>/` with `chapters/` (for relevance filtering) and a house
+- `facts/[topic]/terms.json` — media references: `{file, type, strategy, commons_url}` per term.
+- `facts/[topic]/graph.json` — concept link graph; `in_degree` = how foundational a concept is.
+- Optional target book: `books/[slug]/` with `chapters/` (for relevance filtering) and a house
   style authority (`brutalist/DESIGN.md` + the cajal `svg-style.md`).
 
 ## Output
 
-- `figure-harvest/out/<topic>-figures.{json,md}` — ranked, classified candidate plan.
-- `books/<slug>/images/harvested/` — redrawn SVG + PNG figures in house style, one per selected concept.
+- `figure-harvest/out/[topic]-figures.{json,md}` — ranked, classified candidate plan.
+- `books/[slug]/images/harvested/` — redrawn SVG + PNG figures in house style, one per selected concept.
 - A short log of what was drawn and what each figure references.
 
 ---
@@ -49,7 +49,7 @@ logos and product photos (≈ 8%). The skill finds the signal wherever it lives.
 ### Stage 1 — Classify & rank (deterministic, no AI)
 
 ```
-node figure-harvest/harvest.mjs --topic <topic> [--book books/<slug>] [--top 60]
+node figure-harvest/harvest.mjs --topic [topic] [--book books/[slug]] [--top 60]
 ```
 
 Classifies every media ref into doable / logo / photo / other, dedupes, and ranks the doable
@@ -71,10 +71,10 @@ the book's `brutalist/DESIGN.md` + cajal `svg-style.md`:
 - White canvas, `#F5F5F5` plot region, ink `#121212`, hairlines `#D4D4D4`, neutral grays.
 - **Greyscale-first:** structure in greyscale; add the red `#C8102E` accent only on the one
   element the reader must look at first; most figures use no red.
-- EB Garamond titles / Inter labels / JetBrains Mono numerics; `role="img"` + `<title>`/`<desc>`.
+- EB Garamond titles / Inter labels / JetBrains Mono numerics; `role="img"` + `[title]`/`[desc]`.
 - Use the Commons image **only as a reference** for what the concept looks like. Never trace,
   embed, or copy it. Redraw from the idea.
-- Save to `books/<slug>/images/harvested/<concept-slug>.svg`, then convert to PNG (sharp).
+- Save to `books/[slug]/images/harvested/[concept-slug].svg`, then convert to PNG (sharp).
 
 ---
 

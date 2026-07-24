@@ -8,7 +8,7 @@ description: >
   (Higgsfield/Hailuo/Seedance), public-domain footage, and a Remotion
   annotation plane (REMOTION.md) — all unified by the editorial newsprint treatment
   and assembled per beat. Two-axis shot system (type × source), slot contract
-  (swap media/<beat>.png|.mp4 by filename, rebuild recompiles only changed
+  (swap media/[beat].png|.mp4 by filename, rebuild recompiles only changed
   slots). Use when the user types `vox`, `vox-explainer`, `vox style`, or asks
   for a Vox-style / editorial-collage / isotype explainer. Audio-first,
   phase-gated; generation costs are LOW and expected (FLUX/nano-banana stills,
@@ -96,28 +96,28 @@ of each language: `MOTION.md`.
 ## THE SLOT CONTRACT
 
 ```
-reels/<slug>/
+reels/[slug]/
   beat_sheet.json     single source of truth
   audio/              per-beat mp3s + word timestamps (the clock)
   media/              YOURS — inputs: B07.png, B07.mp4, B07.source.txt
-  manim/              rendered graphic fragments land here as <beat>.mov|mp4
+  manim/              rendered graphic fragments land here as [beat].mov|mp4
   clips/              MACHINE'S — conformed per-beat mp4s. Never hand-edit.
   SHOTLIST.md         typed work order: prompts + archive links per slot
 ```
 
 - Everything on the timeline is a per-beat conformed clip. Precedence at
-  compile: `media/<beat>.mp4` > `manim/<beat>.mp4` > `media/<beat>.png`
+  compile: `media/[beat].mp4` > `manim/[beat].mp4` > `media/[beat].png`
   (animated per `shot.motion`) > **slate** (charcoal, beat id — a missing-media
   marker, standard production slate, so pass 1 is always watchable).
 - Conform at ingest: scale/crop → duration ladder (retime ±5% exact; SHORT
   clips SLOW to fit — never freeze, i2v motion is usually too fast anyway,
   loud warning past 3× — LONG clips trim the tail, so key action goes early)
   → treatment per source. Rebuild recompiles ONLY slots whose input hash
-  changed, then re-concats. `scripts/vox_compile.py` implements this.
+  changed, then re-concats. `scripts/compile.py` implements this.
 - The png in a FOOTAGE slot is both the placeholder and the i2v seed; the mp4
   is the upgrade. Stills + Ken Burns carry most beats; AI video where motion
   earns it (~5s beats sit in the i2v sweet spot).
-- Provenance sidecar (`<beat>.source.txt`: URL, license, credit) required on
+- Provenance sidecar (`[beat].source.txt`: URL, license, credit) required on
   `archive` slots → auto-credits block. Real people/events → real archives.
 - Annotations, captions, and the `--review` burn-in (global TC + beat id +
   beat-local clock + slot status) live on the assembly overlay — never baked
@@ -131,18 +131,30 @@ any audio, rename to slot names for compositing (length conforms to the beat
 at compile: the slow-to-fit ladder). Then reconcile the source axis (generated
 media of real people → `source: ai` + disclosure sidecar) and report.
 
-Raw finds never go straight into `media/`. They land in `reels/<slug>/pantry/`,
+**LIBRARY FIRST — before any still lands on `SHOTLIST.md` as a request.**
+The toolkit carries its own still stock: `svg/svg/images/` (~1,500 generated
+PNGs) plus the doodle icon library, indexed in `svg/svg/icons.json`. For every
+STILL slot you don't already have, search it:
+`python3 runtime/scripts/pantry_search.py "<beat's visual terms>"` — then
+LOOK at the top candidates (open the png; a token match is a lead, not a
+verdict). A real match gets copied straight into the reel:
+`... --copy <reel> --beat <BID>` → `pantry/<BID>-<id>.png`, ready for the
+normal intake. Library stills are `source: ai` unless their provenance says
+otherwise. NO GOOD MATCH → write the SHOTLIST card exactly as before; the
+human searches. Never let a near-miss through on filename similarity alone.
+
+Raw finds never go straight into `media/`. They land in `reels/[slug]/pantry/`,
 prefixed with their beat id, already RESTORED: nanobanana (via Higgsfield)
 restoration pass — WARMONO for period images, NATGEO for modern ones
 (`aspects/stock-styles.md`) — and upscaled to survive the Ken Burns crop.
 Then one command does the mechanical rest:
-`python3 scripts/vox_pantry.py reels/<slug>` — strips audio from video
+`python3 scripts/vox_pantry.py reels/[slug]` — strips audio from video
 (narration is the only voice on the timeline), crops non-16:9 DOCUMENT scans
 to 16:9 anchored so the title survives (verify by eye), renames everything to
-`media/<beat>.png|.mp4`, and writes sidecar stubs (ai/Higgsfield assets get
+`media/[beat].png|.mp4`, and writes sidecar stubs (ai/Higgsfield assets get
 the disclosure line). It warns on clips shorter than their beat, undersized
 stills, and source-axis contradictions. After intake: set `shot.focus` per
-still, fill the sidecars, rerun `vox_run`.
+still, fill the sidecars, rerun `run.sh`.
 
 ## The Manim graphics library (`manim/animated_graphics.py`)
 
@@ -151,7 +163,7 @@ beat's audio window), `IsotypeFraction`, `StateCardPair` (slate-teal cards,
 serif labels, figure lines), `QuoteCard` (highlighter sweep timed to words),
 `LabelChip`, hand-drawn `AnnotationRing`/`StrikeX` strokes. Transparent or
 newsprint-ground renders at beat duration:
-`manim -qh --fps 24 animated_graphics.py <Scene> -o <beat>.mp4`. Counts are claims
+`manim -qh --fps 24 animated_graphics.py [Scene] -o [beat].mp4`. Counts are claims
 — `viz.note` records what to verify before render.
 
 ## The equation tangent (rule owner: `EQUATIONS.md`, bundled beside this file)
@@ -229,16 +241,16 @@ picked deterministically from the reel slug — random across reels,
 reproducible within one. The outro may run past the narration; the silence
 tail is padded INTO the beat's mp3 (audio stays the master clock), and
 `actual_duration_s` updates to match. One command after audio lock:
-`python3 scripts/vox_outro.py reels/<slug>` — then recompile; only the outro
+`python3 scripts/vox_outro.py reels/[slug]` — then recompile; only the outro
 slot rebuilds.
 
 ## THE COMMAND WORD: `slate cut`
 
-When the user says **`slate cut <candidate card | chapter | concept>`**, run the
+When the user says **`slate cut [candidate card | chapter | concept]`**, run the
 whole chain end-to-end and STOP at the finished review cut: plan → SHOTLIST →
 factcheck (FACTCHECK.md) → audio (ask before TTS spend) → reel-local
 `scenes.py` (one Scene per GRAPHIC/CARD/DOCUMENT beat — never the shared
-fixture file) → `vox_run.sh`. The deliverable is a complete watchable film with
+fixture file) → `run.sh`. The deliverable is a complete watchable film with
 slates in every human media slot; the user fills `media/` later (directly or
 via `pantry`) and reruns — only changed slots recompile. A slate cut is a
 finished film awaiting plates, not a previz.
@@ -252,11 +264,11 @@ finished film awaiting plates, not a previz.
    chapter, primary sources, and independent computation of every number —
    and written to the reel's `FACTCHECK.md`: claim | verdict (✓ / minor /
    WRONG) | source/derivation | fix if needed. Editorial flourishes are
-   labeled as such, simplifications defended or reworded. vox_run REFUSES
+   labeled as such, simplifications defended or reworded. run.sh REFUSES
    to render without FACTCHECK.md (Gate F; `VOX_FACTS=0` for previz only).
    Regenerate whenever narration or viz data changes. **GATE: claims hold.**
 3. `audio` — ElevenLabs per beat, measure, lock. **GATE: hear it.**
-4. `run` — `bash scripts/vox_run.sh reels/<slug>` — THE FULL MACHINE PASS,
+4. `run` — `bash scripts/run.sh reels/[slug]` — THE FULL MACHINE PASS,
    one command, free/local: Gate A (static check) → render every pending
    Manim scene to the measured durations → Gate B (pixel layout audit) →
    slot → outro law (branded closing card) → compile `--review`. The result
@@ -265,7 +277,7 @@ finished film awaiting plates, not a previz.
    **GATE: watch the cut — timing, pacing, beat-to-visual map.**
 5. `stills` — FLUX / nano-banana plates for ai slots (cheap — batch with
    per-step go-ahead); download archive picks for archive slots (free) with
-   `.source.txt` sidecars; set `shot.focus` per still. Rerun `vox_run` —
+   `.source.txt` sidecars; set `shot.focus` per still. Rerun `run.sh` —
    only changed slots recompile.
 6. `video` — Higgsfield i2v only for beats where the still + audio demand
    motion (the expensive step, last, per-beat approval).
@@ -292,7 +304,7 @@ THE COMPOSITION LOGIC: 16:9 lays out SIDE BY SIDE; 9:16 stacks TOP AND
 BOTTOM. Portrait relayouts re-band the same content vertically — they never
 merely scale the landscape composition down. (Machinery note: animated_graphics
 syncs frame_width to the real pixel aspect at import — Manim CE does not —
-so portrait scenes truly get the 4.5×8 frame they compose for.) `python3 scripts/vox_short.py reels/<slug> --drop B14 B16`
+so portrait scenes truly get the 4.5×8 frame they compose for.) `python3 scripts/vox_short.py reels/[slug] --drop B14 B16`
 writes `short/` with symlinked slots (nothing re-renders), the endcard, and
 a 9:16 `fit: pad` sheet — the film letterboxes on the newsprint ground, so
 graphics beats read as native portrait layouts. Then compile `short/` with
@@ -302,11 +314,11 @@ graphics beats read as native portrait layouts. Then compile `short/` with
 
 ## Converting an existing video (physics/ doodle & brownblue folders)
 
-`python3 scripts/vox_convert.py physics/<slug>` → `reels/vox-<slug>/` with the
+`python3 scripts/vox_convert.py physics/[slug]` → `reels/vox-[slug]/` with the
 source narration, mp3 references, and measured durations carried per beat, every
 visual re-planned: heuristic shot types (all `needs_review`), a conversion
 SHOTLIST (old visual → assigned type), and a per-reel `scenes.py` scaffold
-that `vox_run.sh` picks up automatically. Old Manim scenes are NOT ported —
+that `run.sh` picks up automatically. Old Manim scenes are NOT ported —
 convert first, then let the QC gates audit only what survives. Narration is
 per-beat `keep` (reuse mp3, free) or `rewrite` (Vox-register rewrites are
 expected — regenerate only those beats with `generate_audio.py --only`).
@@ -315,5 +327,5 @@ expected — regenerate only those beats with `generate_audio.py --only`).
 
 `reels/vox-electoral-college/` — ~133s excerpt recreation of Vox's Electoral
 College explainer (transcript clock, `vox/` frames as ground truth), every
-shot type exercised. Rerun `vox_compile.py` on it after changing this skill
+shot type exercised. Rerun `compile.py` on it after changing this skill
 or the scripts.

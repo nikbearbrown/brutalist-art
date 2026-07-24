@@ -1,0 +1,116 @@
+{
+  "slug": "mcp-the-problem-lecture",
+  "totalFrames": 4086,
+  "beats": [
+    {
+      "id": "B00",
+      "kind": "ClaudeComposerAsk",
+      "frames": 458,
+      "audio": "mp3-mcp-the-problem-lecture/beat-B00.mp3",
+      "props": {
+        "greeting": "Merhaba, Medhavy",
+        "topic": "MEDHAVY · THE PROBLEM",
+        "segment": "The Blank Prompt Problem",
+        "command": "why does AI courseware demo so well and teach so little?",
+        "runningText": "checking the exam, not the demo…",
+        "folderLabel": "@Medhavy"
+      }
+    },
+    {
+      "id": "B01",
+      "kind": "HaiConceptCard",
+      "frames": 525,
+      "audio": "mp3-mcp-the-problem-lecture/beat-B01.mp3",
+      "props": {
+        "heading": "Education software learned to optimize the wrong metric.",
+        "body": "Streaks, engagement scores, session length — these metrics correlate with retention in entertainment products. They don't correlate with learning outcomes. When the optimization target is engagement, you get a product students like to use that doesn't improve their performance.",
+        "sparkLine": "The demo isn't the product."
+      }
+    },
+    {
+      "id": "B02",
+      "kind": "HaiConceptCard",
+      "frames": 634,
+      "audio": "mp3-mcp-the-problem-lecture/beat-B02.mp3",
+      "props": {
+        "heading": "One number, carefully sourced.",
+        "body": "In a randomized study of about a thousand students — Bastani et al. 2024, flag it as one study — those who used AI assistance for math problem sets scored roughly 17% lower on subsequent assessments than those who solved problems without AI. The AI was removing the productive struggle that generated durable learning.",
+        "sparkLine": "Fluency isn't mastery."
+      }
+    },
+    {
+      "id": "B03",
+      "kind": "HaiConceptCard",
+      "frames": 519,
+      "audio": "mp3-mcp-the-problem-lecture/beat-B03.mp3",
+      "props": {
+        "heading": "Underneath the trap is a plumbing problem: garbage in, garbage out.",
+        "body": "A blank prompt to a large language model inherits the general distribution of its training data — which may be accurate, may be outdated, may be structured for readability rather than learning. The AI is only as good as what you start it from.",
+        "sparkLine": "Cold generation, confident output."
+      }
+    },
+    {
+      "id": "B04",
+      "kind": "HaiConceptCard",
+      "frames": 396,
+      "audio": "mp3-mcp-the-problem-lecture/beat-B04.mp3",
+      "props": {
+        "heading": "So pause and predict: if the exam keeps disagreeing with the AI's outputs — if s",
+        "body": "So pause and predict: if the exam keeps disagreeing with the AI's outputs — if students who use AI do worse on independent assessments — what would you fix first? The AI itself, the prompting strategy, or the starting material?",
+        "sparkLine": "Commit to one."
+      }
+    },
+    {
+      "id": "B05",
+      "kind": "HaiConceptCard",
+      "frames": 490,
+      "audio": "mp3-mcp-the-problem-lecture/beat-B05.mp3",
+      "props": {
+        "heading": "The starting point.",
+        "body": "Feed the same AI a fact-checked spine — claims with sources, structured claims matched to learning objectives — and the outputs change. The AI doesn't hallucinate when the material it's drawing on is verified. The model's capability was never the problem; the input was.",
+        "sparkLine": "Fix the starting point."
+      }
+    },
+    {
+      "id": "B06",
+      "kind": "ClaudeVerdictArtifact",
+      "frames": 542,
+      "audio": "mp3-mcp-the-problem-lecture/beat-B06.mp3",
+      "props": {
+        "artifactTitle": "The Blank Prompt Problem — one page",
+        "artifactHeading": "What's actually broken",
+        "artifactLines": [
+          "Engagement metrics reward the demo, not the learning.",
+          "Evidence: +48% in practice, −17% on the exam (Bastani et al. 2024 — single study, flagged).",
+          "Root cause: cold generation — the blank prompt is the weakest input in the pipeline.",
+          "Phase gate: AI drafts · the learner still does the cognitive work · nothing here optimizes clicks."
+        ]
+      }
+    },
+    {
+      "id": "B07",
+      "kind": "ClaudeComposerAsk",
+      "frames": 342,
+      "audio": "mp3-mcp-the-problem-lecture/beat-B07.mp3",
+      "props": {
+        "greeting": "Your turn.",
+        "topic": "MEDHAVY · THE PROBLEM",
+        "segment": "The Blank Prompt Problem",
+        "command": "Build me a one-week lesson on a topic I know well. Then cite a primary source for every factual claim you made. List the claims you cannot source.",
+        "runningText": "counting the unsourced…",
+        "folderLabel": "@Medhavy"
+      }
+    },
+    {
+      "id": "B08",
+      "kind": "ClaudeTitleOutro",
+      "frames": 180,
+      "audio": "mp3-mcp-the-problem-lecture/beat-B08.mp3",
+      "props": {
+        "title": "The Blank Prompt Problem.",
+        "handle": "@MedhavyAI",
+        "subline": "a pitch in seven parts · 2 of 7"
+      }
+    }
+  ]
+}

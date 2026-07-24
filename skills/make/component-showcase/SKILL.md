@@ -1,6 +1,6 @@
 ---
 name: component-showcase
-description: Render a visual unit — a few frames of an mp4, a Remotion scene, or a Manim scene — with a made-up themed-educational example, and riff on it in the NikBearBrown / Teardown voice — what it does, pros and cons, and above all its usefulness for education. Batches into one compilation reel per functional category. Use when the user types `riff <target>`, asks to review/showcase/critique scenes or components, or to see the vox Remotion bench rendered with examples. The inform step of bench promotion — riff surfaces trade-offs; the human decides what to promote. Lives in brutalist/remotion/; renders on the user's machine.
+description: Render a visual unit — a few frames of an mp4, a Remotion scene, or a Manim scene — with a made-up themed-educational example, and riff on it in the NikBearBrown / Teardown voice — what it does, pros and cons, and above all its usefulness for education. Batches into one compilation reel per functional category. Use when the user types `riff [target]`, asks to review/showcase/critique scenes or components, or to see the vox Remotion bench rendered with examples. The inform step of bench promotion — riff surfaces trade-offs; the human decides what to promote. Lives in brutalist/remotion/; renders on the user's machine.
 ---
 
 # riff — render-and-critique a visual unit in the NikBearBrown voice
@@ -22,7 +22,7 @@ is the point (principles 4 + 5 + 6). Project state + the audited contract: `PROJ
 ## Phases (audio-first, phase-gated — the vox spine)
 1. **Select** — resolve the target list: a functional-category batch, one scene, or a path.
 2. **Fixture** — supply each scene a themed-educational example (override content props only;
-   onda schemas default the rest). Fixtures: `src/fixtures/<category>.ts`.
+   onda schemas default the rest). Fixtures: `src/fixtures/[category].ts`.
 3. **Render (user's Mac)** — one short clip per scene in the **teardown** palette. The harness
    renders what renders and **logs every failure** (slug + reason); it never silent-drops.
 4. **Riff** — author the NBB Teardown script per scene (*what it does · pros/cons · educational
@@ -34,8 +34,8 @@ is the point (principles 4 + 5 + 6). Project state + the audited contract: `PROJ
 
 ## Commands
 - `riff onda` — pilot: render + riff onda's components, one reel per category present.
-- `riff <collection>` — a bench collection (once the pilot proves the harness).
-- `riff <path-to.mp4>` / `riff <path-to-scene>` — a single unit.
+- `riff [collection]` — a bench collection (once the pilot proves the harness).
+- `riff [path-to.mp4]` / `riff [path-to-scene]` — a single unit.
 
 ## Refusal (Brutalist teeth)
 - Asked to **decide which scenes are good / to promote** → declines; riff informs, the human

@@ -48,7 +48,7 @@ alignment scripts (single source of truth) and stamps the `templates/` project.
      good enough to preview layout, but it does not know *when* each word is sung).
    - `--whisper` = `align_lyrics_audio.py` **forced alignment** (faster-whisper):
      true per-word karaoke timing locked to the vocal. **Use this for the final.**
-5. **Stamp** the Remotion project (`templates/` → `<slug>/`) and drop the JSON +
+5. **Stamp** the Remotion project (`templates/` → `[slug]/`) and drop the JSON +
    assets where Remotion expects them.
 
 Then **finish locally** (Node + Chromium): `npm install` → `npm run studio` to
@@ -81,7 +81,7 @@ Layer order, bottom → top:
 3. **`LyricLayer.tsx`** — karaoke captions centered on the waveform line: the current
    word is brightest, sung words recede, upcoming words sit dim. Uses real per-word
    frames when forced-aligned (`words[]` in `lyrics.json`), else an even stagger.
-4. **`<Audio src={audio.wav}>`** — the only sound source (the same track extracted
+4. **`[Audio src={audio.wav}]`** — the only sound source (the same track extracted
    from the video), so playback and the waveform stay locked.
 
 `useBeatData.ts` is the single place timing is read. `theme.ts` is the only place the

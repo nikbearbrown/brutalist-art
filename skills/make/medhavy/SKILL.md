@@ -7,7 +7,7 @@ description: >
   register (first principles, genuine wonder, intellectual honesty, no drills),
   keeps an optional experiment tangent (0–1), and ends with the Medhavy.com outro.
   No CLI/LLM exercise beat. Voice: Kokoro af_kore. Palette: medhavy (Okabe-Ito,
-  colorblind-safe). Use when the user types `medhavy <input>`, or asks for the
+  colorblind-safe). Use when the user types `medhavy [input]`, or asks for the
   research-student / MEDHAVY cut. Brand spec: brands/medhavy.md.
 ---
 
@@ -20,20 +20,20 @@ beat sheet as `beat_sheet.medhavy.json` inside it. The canonical source
 ## Trigger
 
 ```
-medhavy <input>
+medhavy [input]
 ```
 
-`<input>` is one of:
-- **Reel folder** — `<book>/youtube/<slug>/` (has `beat_sheet.json`)
-- **Lecture folder** — `<book>/lectures/<chapter>-lecture/` (has `beat_sheet.json`)
-- **Book folder** — `<book>/` → batch: convert every reel + lecture it contains
+`[input]` is one of:
+- **Reel folder** — `[book]/youtube/[slug]/` (has `beat_sheet.json`)
+- **Lecture folder** — `[book]/lectures/[chapter]-lecture/` (has `beat_sheet.json`)
+- **Book folder** — `[book]/` → batch: convert every reel + lecture it contains
 
 ## Output directory convention
 
 | Source path | medhavy- output directory | Beat sheet filename |
 |---|---|---|
-| `<book>/youtube/<slug>/` | `<book>/youtube/medhavy-<slug>/` | `beat_sheet.medhavy.json` |
-| `<book>/lectures/<chapter>-lecture/` | `<book>/medhavy-lectures/<chapter>-lecture/` | `beat_sheet.medhavy.json` |
+| `[book]/youtube/[slug]/` | `[book]/youtube/medhavy-[slug]/` | `beat_sheet.medhavy.json` |
+| `[book]/lectures/[chapter]-lecture/` | `[book]/medhavy-lectures/[chapter]-lecture/` | `beat_sheet.medhavy.json` |
 
 Inside that `medhavy-` directory:
 - `beat_sheet.medhavy.json` — the MEDHAVY cut
@@ -46,7 +46,7 @@ Inside that `medhavy-` directory:
 ### Step 1 — Scaffold (deterministic, no spend)
 
 ```bash
-python3 runtime/scripts/brand_variant.py <INPUT_PATH> medhavy
+python3 runtime/scripts/brand_variant.py [INPUT_PATH] medhavy
 ```
 
 Creates the `medhavy-` directory and writes `beat_sheet.medhavy.json` with audience
@@ -72,7 +72,7 @@ ElevenLabs override: set `metadata.engine: "elevenlabs"` — `voice_id` from
 
 ### Step 2 — Rewrite the register (Wonder)
 
-Open the new `medhavy-<…>/beat_sheet.medhavy.json` and **rewrite every beat's
+Open the new `medhavy-[…]/beat_sheet.medhavy.json` and **rewrite every beat's
 narration** in the Wonder register (`voices/wonder/VOICE.md`, `brands/medhavy.md`):
 
 - First principles — build the idea up from what the viewer already knows.
@@ -119,15 +119,15 @@ Confirm the beat sequence closes as:
 
 ## Batch mode (book input)
 
-When `<input>` is a book folder, run the scaffold for every source:
+When `[input]` is a book folder, run the scaffold for every source:
 
 ```bash
 # Reels
-find <book>/youtube/ -maxdepth 1 -mindepth 1 -type d ! -name 'medhavy-*' | \
+find [book]/youtube/ -maxdepth 1 -mindepth 1 -type d ! -name 'medhavy-*' | \
   while read d; do python3 runtime/scripts/brand_variant.py "$d" medhavy; done
 
 # Lectures
-find <book>/lectures/ -maxdepth 1 -mindepth 1 -type d -name '*-lecture' | \
+find [book]/lectures/ -maxdepth 1 -mindepth 1 -type d -name '*-lecture' | \
   while read d; do python3 runtime/scripts/brand_variant.py "$d" medhavy; done
 ```
 
@@ -141,17 +141,17 @@ From the `medhavy-` directory:
 
 ```bash
 # Audio (Kokoro default)
-python3 runtime/scripts/generate_audio_kokoro.py <medhavy-dir>/beat_sheet.medhavy.json
+python3 runtime/scripts/generate_audio_kokoro.py [medhavy-dir]/beat_sheet.medhavy.json
 
 # Audio (ElevenLabs override — set engine:"elevenlabs" first)
-python3 runtime/scripts/generate_audio.py <medhavy-dir>/beat_sheet.medhavy.json
+python3 runtime/scripts/generate_audio.py [medhavy-dir]/beat_sheet.medhavy.json
 
 # Lectures: deck + render from the copied build scripts (point them at beat_sheet.medhavy.json)
-python3 <medhavy-dir>/build_deck.py
-python3 <medhavy-dir>/render.py
+python3 [medhavy-dir]/build_deck.py
+python3 [medhavy-dir]/render.py
 
 # Compile (reels)
-python3 runtime/scripts/compile.py <medhavy-dir> --height 1080
+python3 runtime/scripts/compile.py [medhavy-dir] --height 1080
 ```
 
 GATE P applies: a `PEDAGOGY.md` pass before any spend.

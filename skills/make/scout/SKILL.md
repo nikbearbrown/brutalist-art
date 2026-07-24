@@ -2,10 +2,10 @@
 name: scout
 description: >
   Mine a textbook for vox-explainer candidates. Scans a book's chapters and
-  writes a reviewable card list into <book>/youtube/video-ideas.md — each card
+  writes a reviewable card list into [book]/youtube/video-ideas.md — each card
   detailed enough that the vox slate-cut builder (SLATE-RUNNER.md) can turn an
   approved one straight into a film. Runs inside the vox workshop on the Mac
-  (Claude Code): `scout <book>`. Produces review cards, never videos. The human
+  (Claude Code): `scout [book]`. Produces review cards, never videos. The human
   picks; the builder builds.
 ---
 
@@ -33,31 +33,31 @@ teaching, then apply the vox bar (reference/selection.md).
 - `reference/selection.md` — the selection bar, score rubric, Manim move
   vocabulary, still-lane guidance, and the exclusion discipline.
 
-Helper: `scripts/scan_book.py <book>` — creates `<book>/youtube/`, writes
+Helper: `scripts/scan_book.py [book]` — creates `[book]/youtube/`, writes
 `youtube/_chapters.json` (chapter manifest). Run it first; it lays the
 worktable, it does not invent ideas. From the vox folder:
-`python3 aspects/scout/scripts/scan_book.py ../<book>`.
+`python3 aspects/scout/scripts/scan_book.py ../[book]`.
 
 ## Commands
 
-### `scout <book-folder>` — mine one book
+### `scout [book-folder]` — mine one book
 1. Read `reference/selection.md` and `reference/candidate-format.md`.
-2. Run `scripts/scan_book.py <book-folder>` for the manifest.
+2. Run `scripts/scan_book.py [book-folder]` for the manifest.
 3. Read each chapter (or the ones named). Detect high-assertion zones (MC/VG/PQ);
    keep zones where the learner must see HOW the transition happens (motion
    test); apply the vox bar — in particular: if you cannot write THE QUESTION
    as a gap formula and name a concrete KEY CASE, the concept is not a card yet.
-4. Write (or append to) `<book-folder>/youtube/video-ideas.md`:
-   header `# <Book Title> Video Ideas`, one card per surviving concept,
+4. Write (or append to) `[book-folder]/youtube/video-ideas.md`:
+   header `# [Book Title] Video Ideas`, one card per surviving concept,
    numbered `Candidate NN`, ordered by Score (highest first). NEVER renumber
    or rewrite existing cards; continue the numbering.
 5. Report: candidates found, how many ≥8, the file path. The human adds picks
-   to `vox/reels/QUEUE.md` or says `slate cut <card>`.
+   to `vox/reels/QUEUE.md` or says `slate cut [card]`.
 
-### `scout <chapter file(s)>` — mine specific chapters only
+### `scout [chapter file(s)]` — mine specific chapters only
 Same flow, restricted; append new cards to the existing file.
 
-### `rank <book-folder>` — re-score an existing list
+### `rank [book-folder]` — re-score an existing list
 Re-apply the rubric fresh; adjust scores/order; flag cards to split, merge, or
 drop; one line of reasoning per change. Never delete a card — mark it.
 
@@ -75,7 +75,7 @@ drop; one line of reasoning per change. Never delete a card — mark it.
 ## Merged styles (Phase 2 refactor)
 
 `scout` is the single idea scout (formerly `vox-scout`; `bears-doodles-scout` merged in).
-It writes `<book>/youtube/video-ideas.md`. The sketch-explainer card format and selection
+It writes `[book]/youtube/video-ideas.md`. The sketch-explainer card format and selection
 doctrine from the former bears-doodles-scout live in `reference-sketch/` — use them when
 scouting specifically for sketch-explainer candidates. CLI-video scouting is its own skill:
 `cli-scout` (writes `cli-ideas.md`).

@@ -112,9 +112,29 @@ def get_service(client_secret: Path, token_path: Path):
                 sys.exit(f"[yt] missing OAuth client secret: {client_secret}\n"
                          f"    See references/youtube-setup.md.")
             flow = InstalledAppFlow.from_client_secrets_file(str(client_secret), SCOPES)
-            creds = flow.run_local_server(port=0)
+            creds = flow.run_local_server(port=0, prompt="select_account")
         token_path.write_text(creds.to_json())
     return build("youtube", "v3", credentials=creds)
+
+
+def verify_authenticated_channel(youtube, expected_id: str = "") -> str:
+    """Print the authenticated channel name/ID; abort if it doesn't match expected_id."""
+    resp = youtube.channels().list(part="snippet", mine=True, maxResults=1).execute()
+    items = resp.get("items", [])
+    if not items:
+        print("[yt] WARNING: could not read authenticated channel — no channel linked to this account?")
+        return ""
+    name = items[0]["snippet"]["title"]
+    cid  = items[0]["id"]
+    print(f"[yt] authenticated as: {name}  (channel ID: {cid})")
+    if expected_id and cid != expected_id:
+        raise SystemExit(
+            f"[yt] ABORT — wrong account.\n"
+            f"    Expected channel ID : {expected_id}\n"
+            f"    Got                 : {cid} ({name})\n"
+            f"    Delete youtube_token.json and re-run to pick the correct account."
+        )
+    return cid
 
 
 def find_or_create_playlist(youtube, title: str, privacy: str, dry: bool) -> str | None:
@@ -299,6 +319,11 @@ def main() -> int:
         sys.exit(f"[yt] no client_secret at {client_p} — put OAuth creds in "
                  f"youtube/credentials/{args.channel}/ (see .env.example)")
     youtube = get_service(client_p, token_p)
+    _expected = ""
+    _eid_file = _cred / "expected_channel_id.txt"
+    if _eid_file.exists():
+        _expected = _eid_file.read_text().strip()
+    verify_authenticated_channel(youtube, expected_id=_expected)
     playlist_id = find_or_create_playlist(youtube, args.playlist, args.privacy, args.dry_run)
     in_pl = already_in_playlist(youtube, playlist_id) if (playlist_id and not args.dry_run) else {}
 

@@ -1,0 +1,152 @@
+{
+  "slug": "hai-when-not",
+  "totalFrames": 5000,
+  "beats": [
+    {
+      "id": "B00",
+      "kind": "ClaudeComposerAsk",
+      "frames": 460,
+      "audio": "mp3-hai-when-not/beat-B00.mp3",
+      "props": {
+        "greeting": "Halo, HAI",
+        "topic": "CLAUDE · AI IN SCHOOL",
+        "segment": "Claude, For Students",
+        "command": "when should I NOT use you?",
+        "runningText": "drawing the line…",
+        "folderLabel": "@HumanitariansAI",
+        "output": [
+          "graded work submitted without disclosure",
+          "the first draft of anything you're learning to draft",
+          "facts you won't verify, decisions you'd hide"
+        ],
+        "sparkLine": ""
+      }
+    },
+    {
+      "id": "B01",
+      "kind": "HaiListCard",
+      "frames": 657,
+      "audio": "mp3-hai-when-not/beat-B01.mp3",
+      "props": {
+        "sparkLine": "Use it for leverage.",
+        "heading": "use AI for",
+        "items": [
+          "quizzing yourself on your own material",
+          "feedback on a draft YOU wrote",
+          "explanations of things you're confused about",
+          "practice generation (problems, flashcards)",
+          "planning and scheduling"
+        ]
+      }
+    },
+    {
+      "id": "B02",
+      "kind": "HaiListCard",
+      "frames": 633,
+      "audio": "mp3-hai-when-not/beat-B02.mp3",
+      "props": {
+        "sparkLine": "The skill is the line.",
+        "heading": "don't use AI for",
+        "items": [
+          "graded work without disclosure",
+          "the first draft of anything you're supposed to learn by drafting",
+          "facts you won't verify",
+          "anything you'd hide from your teacher or boss"
+        ]
+      }
+    },
+    {
+      "id": "B03",
+      "kind": "HaiConceptCard",
+      "frames": 715,
+      "audio": "mp3-hai-when-not/beat-B03.mp3",
+      "props": {
+        "sparkLine": "Would you hide it?",
+        "heading": "the one question",
+        "body": "Would you hide this use from your teacher or your boss? If yes, don't. Not because you'll get caught — because the hiding means the use is removing something that was supposed to be yours."
+      }
+    },
+    {
+      "id": "B04",
+      "kind": "HaiPredictCard",
+      "frames": 596,
+      "audio": "mp3-hai-when-not/beat-B04.mp3",
+      "props": {
+        "sparkLine": "Commit before the reveal.",
+        "question": "Which of these is a 'don't use'? A) Ask Claude to quiz you on a chapter B) Ask Claude to write your essay C) Ask Claude to explain a confusing concept D) Ask Claude to give feedback on your draft",
+        "commit": "commit to B — then the season recap shows you why"
+      }
+    },
+    {
+      "id": "B05",
+      "kind": "HaiSeasonDeck",
+      "frames": 844,
+      "audio": "mp3-hai-when-not/beat-B05.mp3",
+      "props": {
+        "sparkLine": "Your card, your call.",
+        "heading": "the season's five pieces",
+        "cards": [
+          {
+            "title": "ask permission · H1"
+          },
+          {
+            "title": "quiz don't answer · H2"
+          },
+          {
+            "title": "quizmaster stack · H3"
+          },
+          {
+            "title": "daily audit loop · H4"
+          },
+          {
+            "title": "when not · H5 (this card)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "B06",
+      "kind": "ClaudeVerdictArtifact",
+      "frames": 616,
+      "audio": "mp3-hai-when-not/beat-B06.mp3",
+      "props": {
+        "sparkLine": "",
+        "artifactTitle": "When Not — your card",
+        "artifactHeading": "The line",
+        "artifactLines": [
+          "USE for: quizzing yourself, feedback on YOUR draft, explanations of confusing concepts, practice generation, planning.",
+          "DON'T USE for: graded work without disclosure, first drafts you're supposed to learn by drafting, unverified facts, anything you'd hide.",
+          "The one question: would you hide this use from your teacher or boss? If yes — don't. Not fear of being caught. The hiding means the use is taking something that was supposed to be yours.",
+          "Knowing when not to use it IS the AI skill."
+        ]
+      }
+    },
+    {
+      "id": "B07",
+      "kind": "ClaudeComposerAsk",
+      "frames": 322,
+      "audio": "mp3-hai-when-not/beat-B07.mp3",
+      "props": {
+        "greeting": "Your turn.",
+        "topic": "CLAUDE · AI IN SCHOOL",
+        "segment": "Claude, For Students",
+        "command": "Give me a short wallet-card version of when I should and shouldn't use AI as a [student / mid-career professional]. Max 6 bullet points total. Practical and direct.",
+        "runningText": "printing your card…",
+        "folderLabel": "@HumanitariansAI",
+        "sparkLine": ""
+      }
+    },
+    {
+      "id": "B08",
+      "kind": "ClaudeTitleOutro",
+      "frames": 157,
+      "audio": "mp3-hai-when-not/beat-B08.mp3",
+      "props": {
+        "title": "Claude, When Not.",
+        "handle": "@HumanitariansAI",
+        "subline": "subscribe · the line, drawn",
+        "sparkLine": ""
+      }
+    }
+  ]
+}

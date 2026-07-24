@@ -86,7 +86,7 @@ it's an illustrate beat.
 ## Karaoke = closed captions, never a second cut
 
 ONE master. The words ride as a synced caption track cut at the source's
-own line breaks (`<slug>.srt` from `align/lines.json` — verse lines, not
+own line breaks (`[slug].srt` from `align/lines.json` — verse lines, not
 transcription paraphrase), uploaded as the official CC track; viewers who
 want the words turn them on. Optional word-timed karaoke highlight is a
 Remotion overlay variant (`vox_karaoke.py`) rendered ONLY on request — same
@@ -127,10 +127,10 @@ scene, generate it.
    declared; chips authored under the laws; margin lint runs →
    `SHOTLIST.md`. **GATE: approve the plan (lint must be clean).**
 2. `scholarship` — every chip sourced in FACTCHECK.md. **GATE: citations hold.**
-3. `align` — `python3 reels/<slug>/_align.py` on the Mac → words.json,
+3. `align` — `python3 reels/[slug]/_align.py` on the Mac → words.json,
    lines.json, breath map; builder re-snaps; word-timed features flip to
    TRUSTED; CC srt regenerates from lines.json. **GATE 0: alignment lock.**
-4. `run` — inherited vox_run/vox_compile machine pass; slates in unfilled
+4. `run` — inherited run.sh/compile.py machine pass; slates in unfilled
    slots; master audio muxed. **GATE: watch the cut.**
 5. `stills` / `video` / `assemble` — inherited unchanged (FLUX plates,
    archive downloads + sidecars, Higgsfield i2v where motion earns it,
