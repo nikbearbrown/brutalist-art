@@ -1,0 +1,51 @@
+post_id,timestamp,email,post_type,post_audience,active_subscription,country,city,region,device_type,client_os,client_type,user_agent
+188220135,2026-02-17T04:24:26.536Z,hasithreddy0313@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+188220135,2026-02-17T04:24:40.680Z,dave.ven@northeastern.edu,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"
+188220135,2026-02-17T04:30:19.251Z,im.chandankmapp@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+188220135,2026-02-17T04:30:20.136Z,im.chandankmapp@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+188220135,2026-02-17T04:31:28.263Z,piyush.a@northeastern.edu,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"
+188220135,2026-02-17T04:34:39.493Z,shah.darshilr@outlook.com,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0 OneOutlook/1.2026.203.300"
+188220135,2026-02-17T04:38:39.019Z,nina@wire-head.net,newsletter,everyone,false,US,,,,,,Mozilla/5.0
+188220135,2026-02-17T04:44:03.036Z,shah.darshilr@outlook.com,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0 OneOutlook/1.2026.203.300"
+188220135,2026-02-17T04:44:56.505Z,nina@wire-head.net,newsletter,everyone,false,US,,,,,,Mozilla/5.0
+188220135,2026-02-17T04:44:56.506Z,Harris.Nina@Humanitarians.ai,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+188220135,2026-02-17T04:47:21.641Z,patel.niraju@northeastern.edu,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"
+188220135,2026-02-17T04:47:21.781Z,patel.niraju@northeastern.edu,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"
+188220135,2026-02-17T04:51:13.501Z,Harris.Nina@Humanitarians.ai,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+188220135,2026-02-17T04:57:07.179Z,shah.darshilr@outlook.com,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0 OneOutlook/1.2026.203.300"
+188220135,2026-02-17T04:57:10.440Z,shah.darshilr@outlook.com,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0 OneOutlook/1.2026.203.300"
+188220135,2026-02-17T04:58:35.586Z,karumuri.r@northeastern.edu,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"
+188220135,2026-02-17T04:58:35.702Z,karumuri.r@northeastern.edu,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"
+188220135,2026-02-17T05:01:10.207Z,advaithkrishna7@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+188220135,2026-02-17T05:01:57.130Z,pudanshive@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+188220135,2026-02-17T05:05:06.632Z,muqeetwork@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+188220135,2026-02-17T05:05:12.541Z,muqeetwork@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+188220135,2026-02-17T05:08:23.256Z,nikitagarhewal1203@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+188220135,2026-02-17T05:17:24.223Z,shah.darshilr@outlook.com,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0 OneOutlook/1.2026.203.300"
+188220135,2026-02-17T05:35:52.838Z,rohitck2013@gmail.com,newsletter,everyone,true,NL,,,,,,Mozilla/5.0
+188220135,2026-02-17T05:36:14.167Z,nikbearbrown@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+188220135,2026-02-17T05:45:51.830Z,dwarkeshr@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+188220135,2026-02-17T05:54:00.250Z,nina@wire-head.net,newsletter,everyone,false,US,,,,,,Mozilla/5.0
+188220135,2026-02-17T06:29:55.366Z,Rithanya.Chandran@su.suffolk.edu,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+188220135,2026-02-17T06:46:31.895Z,nikbearbrown@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+188220135,2026-02-17T11:43:40.353Z,ingle.a@northeastern.edu,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"
+188220135,2026-02-17T11:43:40.529Z,ingle.a@northeastern.edu,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"
+188220135,2026-02-17T11:49:09.264Z,dhruvishah.2119@gmail.com,newsletter,everyone,true,NL,,,,,,Mozilla/5.0
+188220135,2026-02-17T12:26:07.973Z,hasithreddy0313@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+188220135,2026-02-17T14:12:27.568Z,vadukoot.a@northeastern.edu,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (Linux; Android 15; CPH2417 Build/AP3A.240617.008; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.132 Mobile Safari/537.36"
+188220135,2026-02-17T14:12:51.972Z,vadukoot.a@northeastern.edu,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (Linux; Android 15; CPH2417 Build/AP3A.240617.008; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.132 Mobile Safari/537.36"
+188220135,2026-02-17T14:16:15.271Z,jcalsavage@mac.com,newsletter,everyone,true,NL,,,,,,Mozilla/5.0
+188220135,2026-02-17T15:50:27.692Z,shivpriyamane@gmail.com,newsletter,everyone,true,NL,,,,,,Mozilla/5.0
+188220135,2026-02-17T16:45:01.847Z,shivpriyamane@gmail.com,newsletter,everyone,true,NL,,,,,,Mozilla/5.0
+188220135,2026-02-17T17:11:37.305Z,anasbaig104@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+188220135,2026-02-17T17:18:15.216Z,katte.shradha@humanitarians.ai,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+188220135,2026-02-17T18:53:06.731Z,dhruvishah.2119@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+188220135,2026-02-18T01:40:41.623Z,dwarkeshr@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+188220135,2026-02-18T04:25:41.957Z,anasbaig104@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+188220135,2026-02-18T06:57:42.249Z,muqeetwork@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+188220135,2026-02-18T10:30:46.327Z,harris.robert@humanitarians.ai,newsletter,everyone,false,US,,,,,,Mozilla/5.0
+188220135,2026-02-18T10:30:46.328Z,Harr0987@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+188220135,2026-02-19T05:14:51.842Z,muqeetwork@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+188220135,2026-02-19T14:14:28.004Z,sanika2402@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+188220135,2026-03-05T05:27:11.693Z,rohitck2013@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+188220135,2026-03-15T03:17:12.871Z,rohitck2013@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0

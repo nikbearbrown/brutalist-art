@@ -1,0 +1,9 @@
+post_id,timestamp,email,post_type,post_audience,active_subscription
+188864399,2026-02-23T04:06:50.438Z,jonbrown1608@gmail.com,newsletter,everyone,false
+188864399,2026-02-23T04:06:50.612Z,bear@humanitarians.ai,newsletter,everyone,false
+188864399,2026-02-23T04:06:51.221Z,xue.f1@northeastern.edu,newsletter,everyone,false
+188864399,2026-02-23T04:06:51.384Z,nikbearbrown@gmail.com,newsletter,everyone,true
+188864399,2026-02-23T04:06:51.508Z,seth.brown.gaming@gmail.com,newsletter,everyone,false
+188864399,2026-02-23T04:06:52.044Z,jaiswal.ra@northeastern.edu,newsletter,everyone,true
+188864399,2026-02-23T04:06:52.985Z,kotavishwesh01@gmail.com,newsletter,everyone,true
+188864399,2026-02-23T04:06:54.270Z,kota.vi@northeastern.edu,newsletter,everyone,true

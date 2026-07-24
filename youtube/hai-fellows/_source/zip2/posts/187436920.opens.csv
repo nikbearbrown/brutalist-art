@@ -1,0 +1,30 @@
+post_id,timestamp,email,post_type,post_audience,active_subscription,country,city,region,device_type,client_os,client_type,user_agent
+187436920,2026-02-09T20:09:01.824Z,1999sanyam@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187436920,2026-02-09T20:09:18.252Z,uchil.n@northeastern.edu,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"
+187436920,2026-02-09T20:12:01.834Z,dhruvishah.2119@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187436920,2026-02-09T20:13:01.583Z,nina@wire-head.net,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187436920,2026-02-09T20:15:21.627Z,katte.shradha@humanitarians.ai,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187436920,2026-02-09T20:16:00.449Z,jcalsavage@mac.com,newsletter,everyone,true,NL,,,,,,Mozilla/5.0
+187436920,2026-02-09T20:30:25.830Z,1999sanyam@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187436920,2026-02-09T20:47:32.278Z,nikitagarhewal1203@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187436920,2026-02-09T20:59:49.307Z,khandelwal.anshika11@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187436920,2026-02-09T21:13:57.591Z,shethia.n@northeastern.edu,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"
+187436920,2026-02-09T21:13:57.650Z,shethia.n@northeastern.edu,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"
+187436920,2026-02-09T21:50:06.654Z,fitzpatrickliam365@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187436920,2026-02-09T22:01:08.147Z,nikbearbrown@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187436920,2026-02-09T22:14:19.478Z,rohitck2013@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187436920,2026-02-10T01:57:03.791Z,shivpriyamane@gmail.com,newsletter,everyone,true,NL,,,,,,Mozilla/5.0
+187436920,2026-02-10T02:46:44.476Z,dhruvishah.2119@gmail.com,newsletter,everyone,true,NL,,,,,,Mozilla/5.0
+187436920,2026-02-10T04:08:21.594Z,nina@wire-head.net,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187436920,2026-02-10T12:51:57.817Z,jcalsavage@mac.com,newsletter,everyone,true,IT,,,,,,Mozilla/5.0
+187436920,2026-02-10T12:57:22.294Z,ghobashomar@gmail.com,newsletter,everyone,true,AE,,,,,,Mozilla/5.0
+187436920,2026-02-10T14:00:16.118Z,Harris.Nina@Humanitarians.ai,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187436920,2026-02-10T14:00:16.122Z,nina@wire-head.net,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187436920,2026-02-10T14:26:38.549Z,pankhurig1@gmail.com,newsletter,everyone,true,GB,,,,,,Mozilla/5.0
+187436920,2026-02-10T15:35:44.114Z,khandelwal.anshika11@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187436920,2026-02-11T01:52:32.412Z,khandelwal.anshika11@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187436920,2026-02-12T04:52:08.090Z,Harr0987@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187436920,2026-02-12T16:26:20.353Z,Rithanya.Chandran@su.suffolk.edu,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187436920,2026-02-14T20:08:41.870Z,shivpriyamane@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187436920,2026-02-27T08:44:50.306Z,rohitck2013@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187436920,2026-02-28T06:02:21.087Z,jcalsavage@mac.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0

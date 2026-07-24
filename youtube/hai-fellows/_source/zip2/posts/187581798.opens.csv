@@ -1,0 +1,40 @@
+post_id,timestamp,email,post_type,post_audience,active_subscription,country,city,region,device_type,client_os,client_type,user_agent
+187581798,2026-02-11T01:13:02.113Z,mittapalli.d@northeastern.edu,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"
+187581798,2026-02-11T01:13:38.596Z,uchil.n@northeastern.edu,newsletter,everyone,true,GB,,,,,,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"
+187581798,2026-02-11T01:14:17.800Z,rohitck2013@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187581798,2026-02-11T01:14:30.190Z,1999sanyam@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187581798,2026-02-11T01:18:40.145Z,kushwaha.su@northeastern.edu,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"
+187581798,2026-02-11T01:18:40.221Z,kushwaha.su@northeastern.edu,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"
+187581798,2026-02-11T01:18:51.028Z,dhruvishah.2119@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187581798,2026-02-11T01:23:03.103Z,nikbearbrown@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187581798,2026-02-11T01:23:08.000Z,nina@wire-head.net,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187581798,2026-02-11T01:23:08.001Z,Harris.Nina@Humanitarians.ai,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187581798,2026-02-11T01:24:36.742Z,bhatt.mal@northeastern.edu,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"
+187581798,2026-02-11T01:29:43.406Z,jcalsavage@mac.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187581798,2026-02-11T01:52:26.383Z,khandelwal.anshika11@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187581798,2026-02-11T01:53:26.275Z,khandelwal.anshika11@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187581798,2026-02-11T01:56:14.809Z,anasbaig104@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187581798,2026-02-11T02:15:18.074Z,pankhurig1@gmail.com,newsletter,everyone,true,NL,,,,,,Mozilla/5.0
+187581798,2026-02-11T02:17:03.693Z,1999sanyam@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187581798,2026-02-11T02:35:42.313Z,niyatii.gohel@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187581798,2026-02-11T02:35:55.071Z,niyatii.gohel@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187581798,2026-02-11T02:52:36.801Z,rohitck2013@gmail.com,newsletter,everyone,true,NL,,,,,,Mozilla/5.0
+187581798,2026-02-11T02:55:36.644Z,muqeetwork@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187581798,2026-02-11T02:57:40.500Z,nina@wire-head.net,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187581798,2026-02-11T03:05:35.167Z,Rithanya.Chandran@su.suffolk.edu,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"
+187581798,2026-02-11T03:05:35.303Z,Rithanya.Chandran@su.suffolk.edu,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"
+187581798,2026-02-11T03:31:40.554Z,nedunchezhiyan2005@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187581798,2026-02-11T03:34:48.084Z,Harris.Nina@Humanitarians.ai,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187581798,2026-02-11T04:03:18.508Z,anasbaig104@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187581798,2026-02-11T05:03:56.911Z,nina@wire-head.net,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187581798,2026-02-11T14:29:09.891Z,nikitagarhewal1203@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187581798,2026-02-11T15:17:57.537Z,dhruvishah.2119@gmail.com,newsletter,everyone,true,NL,,,,,,Mozilla/5.0
+187581798,2026-02-11T17:50:35.112Z,sanika2402@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187581798,2026-02-11T18:35:30.939Z,sanika2402@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187581798,2026-02-11T20:25:34.117Z,shivpriyamane@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187581798,2026-02-12T00:27:27.252Z,jcalsavage@mac.com,newsletter,everyone,true,IR,,,,,,Mozilla/5.0
+187581798,2026-02-12T04:52:08.094Z,Harr0987@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187581798,2026-02-12T15:38:22.806Z,katte.shradha@humanitarians.ai,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187581798,2026-02-12T16:53:49.248Z,Rithanya.Chandran@su.suffolk.edu,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187581798,2026-02-14T10:27:15.210Z,ghobashomar@gmail.com,newsletter,everyone,true,AE,,,,,,Mozilla/5.0
+187581798,2026-02-14T20:08:41.867Z,shivpriyamane@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0

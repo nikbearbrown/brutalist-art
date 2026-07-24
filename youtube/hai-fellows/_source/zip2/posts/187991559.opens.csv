@@ -1,0 +1,40 @@
+post_id,timestamp,email,post_type,post_audience,active_subscription,country,city,region,device_type,client_os,client_type,user_agent
+187991559,2026-02-14T22:47:39.832Z,patel.niraju@northeastern.edu,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"
+187991559,2026-02-14T22:47:46.491Z,jaiswal.ra@northeastern.edu,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"
+187991559,2026-02-14T22:48:02.225Z,mallikagaikwad12@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187991559,2026-02-14T22:49:16.836Z,nikbearbrown@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187991559,2026-02-14T22:54:03.444Z,anasbaig104@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187991559,2026-02-14T22:57:15.052Z,gajarla.v@northeastern.edu,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"
+187991559,2026-02-14T23:01:06.302Z,jcalsavage@mac.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187991559,2026-02-14T23:03:59.420Z,vadukoot.a@northeastern.edu,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"
+187991559,2026-02-14T23:10:04.687Z,im.chandankmapp@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187991559,2026-02-14T23:10:05.622Z,im.chandankmapp@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187991559,2026-02-14T23:12:01.914Z,nina@wire-head.net,newsletter,everyone,false,US,,,,,,Mozilla/5.0
+187991559,2026-02-14T23:12:01.915Z,Harris.Nina@Humanitarians.ai,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187991559,2026-02-14T23:20:11.547Z,fitzpatrickliam365@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187991559,2026-02-14T23:31:04.535Z,shah.darshilr@outlook.com,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0 OneOutlook/1.2026.203.300"
+187991559,2026-02-14T23:36:38.851Z,shan.somashekar@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187991559,2026-02-14T23:36:41.736Z,shivpriyamane@gmail.com,newsletter,everyone,true,NL,,,,,,Mozilla/5.0
+187991559,2026-02-14T23:36:43.818Z,shivpriyamane@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187991559,2026-02-14T23:44:26.840Z,Rithanya.Chandran@su.suffolk.edu,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187991559,2026-02-15T00:30:25.695Z,dhruvishah.2119@gmail.com,newsletter,everyone,true,NL,,,,,,Mozilla/5.0
+187991559,2026-02-15T02:08:54.971Z,shah.darshilr@outlook.com,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0 OneOutlook/1.2026.203.300"
+187991559,2026-02-15T02:29:43.975Z,anasbaig104@gmail.com,newsletter,everyone,true,NL,,,,,,Mozilla/5.0
+187991559,2026-02-15T02:31:08.485Z,sanika2402@gmail.com,newsletter,everyone,true,NL,,,,,,Mozilla/5.0
+187991559,2026-02-15T02:58:40.832Z,vnthakur.95@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187991559,2026-02-15T03:23:25.881Z,shivpriyamane@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187991559,2026-02-15T03:28:28.727Z,nina@wire-head.net,newsletter,everyone,false,US,,,,,,Mozilla/5.0
+187991559,2026-02-15T03:49:42.245Z,rohitck2013@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187991559,2026-02-15T04:26:43.747Z,nina@wire-head.net,newsletter,everyone,false,US,,,,,,Mozilla/5.0
+187991559,2026-02-15T04:26:43.749Z,Harris.Nina@Humanitarians.ai,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187991559,2026-02-15T06:46:11.993Z,dwarkeshr@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187991559,2026-02-15T07:21:06.600Z,muqeetwork@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187991559,2026-02-15T12:25:15.330Z,dhruvishah.2119@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187991559,2026-02-16T00:43:08.865Z,jcalsavage@mac.com,newsletter,everyone,true,IR,,,,,,Mozilla/5.0
+187991559,2026-02-16T03:50:26.946Z,vadukoot.a@northeastern.edu,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (Linux; Android 15; CPH2417 Build/AP3A.240617.008; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.132 Mobile Safari/537.36"
+187991559,2026-02-16T07:48:55.902Z,Harr0987@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187991559,2026-02-16T08:06:46.969Z,harris.robert@humanitarians.ai,newsletter,everyone,false,US,,,,,,Mozilla/5.0
+187991559,2026-02-16T19:28:54.945Z,muqeetwork@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187991559,2026-02-17T20:53:18.026Z,katte.shradha@humanitarians.ai,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187991559,2026-02-20T04:52:35.886Z,ghobashomar@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187991559,2026-02-23T20:47:53.079Z,shah.darshilr@outlook.com,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0 OneOutlook/1.2026.210.300"

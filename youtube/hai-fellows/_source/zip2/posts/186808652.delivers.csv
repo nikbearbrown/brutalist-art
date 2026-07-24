@@ -1,0 +1,3 @@
+post_id,timestamp,email,post_type,post_audience,active_subscription
+186808652,2026-02-04T01:02:37.932Z,bear@humanitarians.ai,newsletter,everyone,false
+186808652,2026-02-04T01:02:38.188Z,deodhar.ad@northeastern.edu,newsletter,everyone,true

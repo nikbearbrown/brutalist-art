@@ -1,0 +1,30 @@
+post_id,timestamp,email,post_type,post_audience,active_subscription,country,city,region,device_type,client_os,client_type,user_agent
+187012750,2026-02-05T19:31:15.310Z,khandelwal.anshika11@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187012750,2026-02-05T19:33:49.983Z,rohitck2013@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187012750,2026-02-05T19:36:57.948Z,gkarana2@ncsu.edu,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187012750,2026-02-05T19:38:14.971Z,khandelwal.anshika11@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187012750,2026-02-05T19:38:15.528Z,khandelwal.anshika11@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187012750,2026-02-05T19:39:28.907Z,eolano@arrowdx.com,newsletter,everyone,true,NL,,,,,,Mozilla/5.0
+187012750,2026-02-05T19:39:37.361Z,nina@wire-head.net,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187012750,2026-02-05T19:43:24.047Z,matlaninishi@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187012750,2026-02-05T19:46:21.309Z,shethia.n@northeastern.edu,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"
+187012750,2026-02-05T19:46:21.398Z,shethia.n@northeastern.edu,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"
+187012750,2026-02-05T19:46:51.013Z,shethia.n@northeastern.edu,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"
+187012750,2026-02-05T19:50:05.931Z,katte.shradha@humanitarians.ai,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187012750,2026-02-05T20:02:02.858Z,soumyanayak.neu@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187012750,2026-02-05T20:19:50.832Z,kruthish18@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187012750,2026-02-05T20:27:09.967Z,kruthish18@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187012750,2026-02-05T20:29:55.594Z,kruthish18@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187012750,2026-02-05T21:06:26.953Z,gkarana2@ncsu.edu,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187012750,2026-02-06T01:00:06.924Z,rohitck2013@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187012750,2026-02-06T01:41:25.728Z,jnthnmllr@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187012750,2026-02-06T04:26:31.344Z,nina@wire-head.net,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187012750,2026-02-06T05:04:53.717Z,nina@wire-head.net,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187012750,2026-02-06T05:04:53.717Z,Harris.Nina@Humanitarians.ai,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187012750,2026-02-06T17:15:20.842Z,soumyanayak.neu@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187012750,2026-02-06T17:25:13.370Z,muqeetwork@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187012750,2026-02-06T18:58:39.815Z,shivpriyamane@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187012750,2026-02-09T00:11:44.308Z,Harr0987@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187012750,2026-02-10T06:42:00.487Z,Rithanya.Chandran@su.suffolk.edu,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187012750,2026-02-14T21:07:40.948Z,shivpriyamane@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187012750,2026-02-27T11:05:49.093Z,rohitck2013@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0

@@ -1,0 +1,28 @@
+post_id,timestamp,email,post_type,post_audience,active_subscription,country,city,region,device_type,client_os,client_type,user_agent
+187042164,2026-02-06T01:16:58.843Z,deodhar.ad@northeastern.edu,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"
+187042164,2026-02-06T01:26:35.521Z,eolano@arrowdx.com,newsletter,everyone,true,NL,,,,,,Mozilla/5.0
+187042164,2026-02-06T01:28:09.315Z,gkarana2@ncsu.edu,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187042164,2026-02-06T01:30:17.587Z,kruthish18@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187042164,2026-02-06T01:31:43.761Z,nikbearbrown@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187042164,2026-02-06T01:34:49.553Z,snehshah74@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187042164,2026-02-06T01:39:46.340Z,jaiswal.ra@northeastern.edu,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"
+187042164,2026-02-06T01:39:46.571Z,jaiswal.ra@northeastern.edu,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"
+187042164,2026-02-06T01:40:10.608Z,nina@wire-head.net,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187042164,2026-02-06T01:41:18.141Z,Harris.Nina@Humanitarians.ai,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187042164,2026-02-06T02:12:03.557Z,jnthnmllr@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187042164,2026-02-06T03:17:56.852Z,jnthnmllr@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187042164,2026-02-06T04:19:36.225Z,jnthnmllr@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187042164,2026-02-06T04:49:00.690Z,nina@wire-head.net,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187042164,2026-02-06T05:04:53.719Z,nina@wire-head.net,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187042164,2026-02-06T05:08:27.948Z,rohitck2013@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187042164,2026-02-06T09:20:54.494Z,khandelwal.anshika11@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187042164,2026-02-06T11:13:10.236Z,matlaninishi@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187042164,2026-02-06T12:48:13.291Z,muqeetwork@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187042164,2026-02-06T15:31:42.340Z,katte.shradha@humanitarians.ai,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187042164,2026-02-06T18:58:39.817Z,shivpriyamane@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187042164,2026-02-08T00:21:09.221Z,rohitck2013@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187042164,2026-02-09T00:11:44.309Z,Harr0987@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187042164,2026-02-10T06:05:09.318Z,Rithanya.Chandran@su.suffolk.edu,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187042164,2026-02-12T03:08:00.778Z,matlaninishi@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187042164,2026-02-14T21:07:40.947Z,shivpriyamane@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187042164,2026-02-27T11:05:49.092Z,rohitck2013@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0

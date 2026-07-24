@@ -1,0 +1,10 @@
+post_id,timestamp,email,post_type,post_audience,active_subscription,country,city,region,device_type,client_os,client_type,user_agent
+195403748,2026-04-25T14:23:17.023Z,dougwerby@mac.com,newsletter,only_paid,false,US,,,,,,Mozilla/5.0
+195403748,2026-04-25T14:26:16.347Z,dougwerby@mac.com,newsletter,only_paid,false,US,,,,,,Mozilla/5.0
+195403748,2026-04-25T14:31:41.536Z,dhruv0128@gmail.com,newsletter,only_paid,false,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+195403748,2026-04-25T14:44:54.716Z,nina@wire-head.net,newsletter,only_paid,false,US,,,,,,Mozilla/5.0
+195403748,2026-04-26T02:40:19.853Z,nina@wire-head.net,newsletter,only_paid,false,US,,,,,,Mozilla/5.0
+195403748,2026-04-26T03:08:10.817Z,nina@wire-head.net,newsletter,only_paid,false,US,,,,,,Mozilla/5.0
+195403748,2026-04-27T11:23:00.538Z,harris.robert@humanitarians.ai,newsletter,only_paid,false,US,,,,,,Mozilla/5.0
+195403748,2026-04-27T12:58:48.685Z,niralibhansali1709@gmail.com,newsletter,only_paid,false,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+195403748,2026-04-27T17:19:58.139Z,niralibhansali1709@gmail.com,newsletter,only_paid,false,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)

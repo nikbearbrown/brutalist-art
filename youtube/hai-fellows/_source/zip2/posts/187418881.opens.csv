@@ -1,0 +1,22 @@
+post_id,timestamp,email,post_type,post_audience,active_subscription,country,city,region,device_type,client_os,client_type,user_agent
+187418881,2026-02-09T17:31:01.856Z,nallamolu.s@northeastern.edu,newsletter,everyone,true,US,,,,,,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"
+187418881,2026-02-09T17:35:16.518Z,nikbearbrown@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187418881,2026-02-09T17:36:12.690Z,jcalsavage@mac.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187418881,2026-02-09T18:04:44.057Z,Harris.Nina@Humanitarians.ai,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187418881,2026-02-09T18:04:44.087Z,nina@wire-head.net,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187418881,2026-02-09T18:49:28.741Z,nikbearbrown@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187418881,2026-02-09T19:10:54.446Z,dhruvishah.2119@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187418881,2026-02-09T19:59:03.043Z,katte.shradha@humanitarians.ai,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187418881,2026-02-09T20:16:34.135Z,katte.shradha@humanitarians.ai,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187418881,2026-02-10T00:30:12.820Z,Rithanya.Chandran@su.suffolk.edu,newsletter,everyone,true,NL,,,,,,Mozilla/5.0
+187418881,2026-02-10T00:40:28.797Z,rohitck2013@gmail.com,newsletter,everyone,true,NL,,,,,,Mozilla/5.0
+187418881,2026-02-10T02:26:00.823Z,shivpriyamane@gmail.com,newsletter,everyone,true,NL,,,,,,Mozilla/5.0
+187418881,2026-02-10T04:08:21.591Z,nina@wire-head.net,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187418881,2026-02-10T12:33:53.101Z,jcalsavage@mac.com,newsletter,everyone,true,IT,,,,,,Mozilla/5.0
+187418881,2026-02-10T14:00:16.115Z,Harris.Nina@Humanitarians.ai,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187418881,2026-02-11T02:57:40.495Z,nina@wire-head.net,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187418881,2026-02-12T04:52:08.087Z,Harr0987@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187418881,2026-02-12T15:45:43.282Z,nikitagarhewal1203@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+187418881,2026-02-14T20:08:44.305Z,shivpriyamane@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187418881,2026-02-27T08:44:50.308Z,rohitck2013@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0
+187418881,2026-02-28T06:02:21.088Z,jcalsavage@mac.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0

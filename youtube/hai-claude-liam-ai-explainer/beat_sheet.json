@@ -1,0 +1,516 @@
+{
+  "metadata": {
+    "title": "Claude, Self-Taught.",
+    "slug": "claude-liam-ai-explainer",
+    "topic": "AI-EXPLAINER · HAI PRAGMATIST",
+    "register": "Pragmatist",
+    "audience": "HAI",
+    "brand": "claude-liam-hai",
+    "persona": "Liam (in for Bear)",
+    "voice": "am_onyx",
+    "engine": "kokoro",
+    "voice_kokoro": "am_onyx",
+    "palette": "humanitarians",
+    "style_preset": "claude",
+    "ground": "#FAF9F5",
+    "greeting": "Hello.",
+    "folderLabel": "@HumanitariansAI",
+    "channel_title": "@HumanitariansAI",
+    "in_for_bear": true,
+    "playlist": "Brutalist",
+    "modifier": "skill-teardown",
+    "source_skill": "skills/make/ai-explainer/SKILL.md",
+    "derived_from": "../claude-liam-ai-explainer/beat_sheet.json",
+    "build": {
+      "at": "2026-07-22T01:56:06",
+      "cut": "master",
+      "filled": 12,
+      "of": 12,
+      "slates": [],
+      "skin_warnings": [
+        "B03: composer beat has an empty spark line — SPARK-LINE LAW wants a short serif cue (e.g. \"The change,\")."
+      ]
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "act": "cold open",
+      "narration_text": "This video was built by the skill it explains. The ai-explainer skill turns a Claude concept or a SKILL.md file into a narrated educational video. If you are teaching teammates how to use Claude — or documenting a workflow you've built — this skill is the pipeline. Here is how it works, when to reach for it, and what it will not do.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 22,
+      "actual_duration_s": 17.41,
+      "audio_file": "mp3/beat-B00.mp3",
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Hello.",
+            "topic": "AI-EXPLAINER · HAI PRAGMATIST",
+            "segment": "Claude, Self-Taught.",
+            "command": "Show me the ai-explainer skill — what does it actually do?",
+            "runningText": "reading ai-explainer SKILL.md…",
+            "output": [
+              "Step 1: Scaffold beat sheet — 11 beats, Pragmatist register, GATE P queued.",
+              "Step 2: Pedagogy check — human signs before any audio spend.",
+              "Step 3: Self-demo — this video was made by the skill it explains."
+            ],
+            "folderLabel": "@HumanitariansAI",
+            "modelLabel": "Fable 5",
+            "effortLabel": "High"
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": ""
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B00.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T01:56:06"
+      }
+    },
+    {
+      "beat_id": "B01",
+      "act": "Act 1 — anatomy",
+      "narration_text": "A skill is a folder Claude reads before it acts. The ai-explainer folder is one file — SKILL.md, roughly fourteen kilobytes. That file declares everything: the fidelity palette, the channel table, the ILLUSTRATE law, the GATE P pedagogy check, and the skill-teardown modifier. You point it at content; it returns a beat sheet. The folder is the contract between the human and the machine.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 24,
+      "actual_duration_s": 19.9,
+      "audio_file": "mp3/beat-B01.mp3",
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownAnatomy",
+          "props": {
+            "skillName": "ai-explainer",
+            "oldName": "claude-explainer",
+            "eyebrow": "AI-EXPLAINER · HAI PRAGMATIST · ANATOMY",
+            "title": "A skill is a folder.",
+            "files": [
+              {
+                "indent": 0,
+                "icon": "📁",
+                "name": "skills/make/ai-explainer/",
+                "accent": false
+              },
+              {
+                "indent": 1,
+                "icon": "📄",
+                "name": "SKILL.md",
+                "size": "~14 KB",
+                "accent": true,
+                "tag": "THE INSTRUCTION FILE"
+              },
+              {
+                "indent": 1,
+                "icon": "📁",
+                "name": "reference/",
+                "accent": false
+              },
+              {
+                "indent": 2,
+                "icon": "📄",
+                "name": "example-beat_sheet.json",
+                "size": "exemplar",
+                "accent": false
+              },
+              {
+                "indent": 2,
+                "icon": "📄",
+                "name": "MOTION.md",
+                "size": "animation doctrine",
+                "accent": false
+              }
+            ],
+            "calloutText": "Declared inside: <span>channels · palette laws · ILLUSTRATE law · GATE P · modifiers</span>",
+            "calloutSub": "Old name: claude-explainer (renamed: vendor names aren't skill identities)",
+            "sparkLine": "The folder is the contract."
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": ""
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B01.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T01:56:06"
+      }
+    },
+    {
+      "beat_id": "B02",
+      "act": "Act 2 — pipeline",
+      "narration_text": "Five stages. Beat sheet: Claude authors structured narration in your chosen register. GATE P: a human signs off before any audio generation — no spend without approval. Audio: Kokoro narration, locally generated and measured. Measured durations become the master clock. Visuals: Remotion scenes, Manim fragments, and code blocks, all sized to the audio. Compile: a finished mp4. One invariant governs everything: audio first. Duration is a measured output, never a fixed input.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 26,
+      "actual_duration_s": 26.67,
+      "audio_file": "mp3/beat-B02.mp3",
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownPipeline",
+          "props": {
+            "eyebrow": "AI-EXPLAINER · HAI PRAGMATIST · PIPELINE",
+            "title": "How the skill builds.",
+            "inputLabel": "SKILL.md or concept",
+            "phases": [
+              {
+                "label": "BEAT SHEET",
+                "desc": "Teardown register narration",
+                "accent": false
+              },
+              {
+                "label": "PEDAGOGY GATE",
+                "desc": "GATE P — human signs before spend",
+                "accent": true
+              },
+              {
+                "label": "KOKORO AUDIO",
+                "desc": "durations → master clock",
+                "accent": false
+              },
+              {
+                "label": "VISUALS",
+                "desc": "Remotion + Manim + code beats",
+                "accent": false
+              }
+            ],
+            "outputLabel": "<slug>.mp4",
+            "footerNote": "Audio-first: measured durations are the master clock — never hand-time.",
+            "sparkLine": "Duration is an output."
+          },
+          "rendered": {
+            "out": "media/B02.mp4",
+            "at": ""
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B02.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T01:56:06"
+      }
+    },
+    {
+      "beat_id": "B03",
+      "act": "Act 3 — self-demo (ask)",
+      "narration_text": "Here is the method demonstrated. The skill cannot recurse on itself — that loops — so it runs on its nearest sibling, sketch-explainer. Command: ./art ai-explainer skills/make/sketch-explainer/SKILL.md. Claude reads the entire SKILL.md. It writes an eleven-beat script. The pedagogy check runs. Audio is queued. One argument, no configuration.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 18,
+      "actual_duration_s": 20.18,
+      "audio_file": "mp3/beat-B03.mp3",
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "",
+            "topic": "AI-EXPLAINER · SELF-DEMO · THE METHOD",
+            "segment": "Run it on a sibling skill",
+            "command": "./art ai-explainer skills/make/sketch-explainer/SKILL.md",
+            "runningText": "reading sketch-explainer SKILL.md · authoring beat sheet…",
+            "output": [
+              "Beat sheet: 11 beats, Teardown register, skill-teardown modifier active.",
+              "PEDAGOGY VERDICT: PASS.",
+              "Audio queued: Kokoro am_onyx · zero spend."
+            ],
+            "folderLabel": "@HumanitariansAI",
+            "modelLabel": "Fable 5",
+            "effortLabel": "High"
+          },
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": ""
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B03.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T01:56:06"
+      }
+    },
+    {
+      "beat_id": "B04",
+      "act": "Act 3 — self-demo (result)",
+      "narration_text": "The output is a beat sheet. Each beat has three required fields: beat id, narration, and shot definition. The shot definition names the Remotion component and its props. The metadata block sets the brand: voice, palette, channel. That file is what the machine returns from one command. What remains for the human: listen to the audio, check the narration against the visual, watch the frames. The script is the draft; the human is the editor.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 22,
+      "actual_duration_s": 21.99,
+      "audio_file": "mp3/beat-B04.mp3",
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeCodeBeat",
+          "props": {
+            "title": "beat_sheet.json — ai-explainer output",
+            "code": "// Generated by: ./art ai-explainer skills/make/sketch-explainer/SKILL.md\n// Source: Claude Sonnet 4.6 · brand: claude-liam · 2026-07-18\n{\n  \"metadata\": {\n    \"title\": \"Claude, Sketching.\",\n    \"brand\": \"claude-liam\",\n    \"engine\": \"kokoro\",\n    \"voice_kokoro\": \"am_onyx\",\n    \"palette\": \"claude\",\n    \"modifier\": \"skill-teardown\",\n    \"source_skill\": \"skills/make/sketch-explainer/SKILL.md\"\n  },\n  \"beats\": [\n    { \"beat_id\": \"B00\", \"act\": \"cold open\",\n      \"narration_text\": \"Olá — this is Liam, in for Bear…\",\n      \"shot\": { \"type\": \"REMOTION\",\n        \"remotion\": { \"pattern\": \"ClaudeComposerAsk\" } } },\n    // anatomy · pipeline · mechanism acts · design tell …\n    { \"beat_id\": \"BOUT\",\n      \"narration_text\": \"Claude, Sketching. Liam, in for Bear.\",\n      \"shot\": { \"type\": \"REMOTION\",\n        \"remotion\": { \"pattern\": \"ClaudeTitleOutro\" } } }\n  ]\n}",
+            "sparkLine": "The script is the draft."
+          },
+          "rendered": {
+            "out": "media/B04.mp4",
+            "at": ""
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B04.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T01:56:06"
+      }
+    },
+    {
+      "beat_id": "B05",
+      "act": "Act 4 — ILLUSTRATE LAW",
+      "narration_text": "The ILLUSTRATE law governs the middle beats. The Claude composer window appears in exactly five places per video: cold open, ask micro-beats, verdict page, handoff, and outro. Every other beat must illustrate its concept — a Remotion diagram, a Manim fragment, or a code block. The law exists because a reel of composer windows teaches nothing about the subject. In practice: if your beat sheet has the same visual pattern in two consecutive beats, redesign the second one.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 24,
+      "actual_duration_s": 25.66,
+      "audio_file": "mp3/beat-B05.mp3",
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "eyebrow": "AI-EXPLAINER · HAI PRAGMATIST · ILLUSTRATE LAW",
+            "heading": "The UI earns its appearances.",
+            "body": "Five appearances only: cold open · ask micro-beats · verdict page · handoff · outro. Every other inner beat illustrates — Remotion diagram, Manim fragment, or code block.",
+            "quote": "Two consecutive beats on the same visual scheme is the smell; a reel of composer wallpaper is the failure this law prevents.",
+            "cite": "brutalist-art/skills/make/ai-explainer/SKILL.md — ILLUSTRATE LAW",
+            "sparkLine": "Repeated pattern is the signal."
+          },
+          "rendered": {
+            "out": "media/B05.mp4",
+            "at": ""
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B05.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T01:56:06"
+      }
+    },
+    {
+      "beat_id": "B06",
+      "act": "Act 4 — skill-teardown modifier",
+      "narration_text": "The skill-teardown modifier activates when your source is a SKILL.md file. You do not invoke it by name. What it adds: an anatomy beat mapping the folder, a pipeline beat diagramming the build, two to four mechanism acts for the key laws, and a design tell. The self-demo law follows from it: the reel must run the skill it explains. Real output only. A fabricated demo is an explicit DOUBLE-CHECK LAW violation — the SKILL.md names it as such.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 24,
+      "actual_duration_s": 24.34,
+      "audio_file": "mp3/beat-B06.mp3",
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "eyebrow": "AI-EXPLAINER · HAI PRAGMATIST · SKILL-TEARDOWN MODIFIER",
+            "heading": "Modifier activates on SKILL.md source.",
+            "body": "Source is SKILL.md → modifier arms without being named. Adds: anatomy · pipeline · 2–4 mechanism acts · design tell · self-demo (real output required).",
+            "quote": "A faked demo is a DOUBLE-CHECK LAW violation, not a shortcut.",
+            "cite": "brutalist-art/skills/make/ai-explainer/SKILL.md — SELF-DEMO LAW",
+            "sparkLine": "Real output only."
+          },
+          "rendered": {
+            "out": "media/B06.mp4",
+            "at": ""
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B06.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T01:56:06"
+      }
+    },
+    {
+      "beat_id": "B07",
+      "act": "Act 5 — design tell",
+      "narration_text": "The fidelity constraint: the palette replicates the actual Claude application interface. Cream page, warm ink, one terracotta accent. The constraint is not aesthetic. The skill's own rule is strict: the moment the visual drifts from the real product, the skill loses its reason to exist. If you are building a Claude-branded video, do not retheme it. The channel is the brand; the palette is fixed.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 24,
+      "actual_duration_s": 19.86,
+      "audio_file": "mp3/beat-B07.mp3",
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "eyebrow": "AI-EXPLAINER · HAI PRAGMATIST · DESIGN TELL",
+            "heading": "Palette is fixed.",
+            "body": "Cream page, warm ink, terracotta accent — the real Claude app interface by design. The channel is the brand; the palette is the contract.",
+            "quote": "The moment it stops looking like the actual Claude app it loses its reason to exist.",
+            "cite": "brutalist-art/skills/make/ai-explainer/SKILL.md — FIDELITY BRAND",
+            "verdictLabel": "WHEN TO OVERRIDE",
+            "verdictPositive": false,
+            "sparkLine": "Palette is the contract."
+          },
+          "rendered": {
+            "out": "media/B07.mp4",
+            "at": ""
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B07.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T01:56:06"
+      }
+    },
+    {
+      "beat_id": "BVDT",
+      "act": "verdict",
+      "lead_silence_s": 0.5,
+      "narration_text": "Method summary. The ai-explainer skill runs on three fixed rules: fidelity palette, Teardown register, and the ILLUSTRATE law. On a SKILL.md source, the teardown modifier activates automatically — anatomy, pipeline, mechanism acts, design tell, and a required self-demo. The ILLUSTRATE law limits the Claude interface to five appearances. The fidelity rule ties the palette to the real product. What breaks: two consecutive beats with the same visual scheme, a fabricated demo, or a palette that drifts. Command: ./art ai-explainer your-source.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 28,
+      "actual_duration_s": 29.82,
+      "audio_file": "mp3/beat-BVDT.mp3",
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "artifactTitle": "Claude, Self-Taught.",
+            "artifactHeading": "Method summary",
+            "artifactLines": [
+              "The ai-explainer skill turns any Claude concept or SKILL.md into a narrated video on the fidelity palette: cream page, terracotta spark, Teardown register.",
+              "On a SKILL.md source, the teardown modifier arms automatically — anatomy + pipeline + mechanism acts + design tell + self-demo (real output required).",
+              "ILLUSTRATE LAW: the Claude interface earns exactly five appearances. Every other beat illustrates its concept natively.",
+              "What breaks: repeated visual scheme in consecutive beats, a fabricated demo, or a palette that drifts from the real app."
+            ]
+          },
+          "rendered": {
+            "out": "media/BVDT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BVDT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T01:56:06"
+      }
+    },
+    {
+      "beat_id": "BHTF",
+      "act": "your turn handoff",
+      "narration_text": "Your turn. Read this with me. 'Use the ai-explainer skill on a SKILL.md from a project you are working on. Pick the mechanism your team consistently misunderstands. The pedagogy gate stops you before any spend. If you cannot produce a working demo, the skill will say so — do not substitute a description for the demo.' Paste that into Claude Code. Point it at a real SKILL.md. The machine will flag what it cannot build. Your job is to supply it.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 28,
+      "actual_duration_s": 21.55,
+      "audio_file": "mp3/beat-BHTF.mp3",
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Your turn.",
+            "topic": "AI-EXPLAINER · HAI PRAGMATIST",
+            "segment": "Claude, Self-Taught.",
+            "command": "Use the ai-explainer skill on a SKILL.md from your project. Pick the mechanism your team misunderstands. The pedagogy gate stops you before any spend. If you can't produce a working demo, flag the gap — do not fabricate the demo.",
+            "runningText": "paste into Claude Code…",
+            "folderLabel": "@HumanitariansAI",
+            "modelLabel": "Fable 5",
+            "effortLabel": "High"
+          },
+          "rendered": {
+            "out": "media/BHTF.mp4",
+            "at": ""
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BHTF.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T01:56:06"
+      }
+    },
+    {
+      "beat_id": "BCLI",
+      "act": "HAI CLI exercise",
+      "narration_text": "Three commands to start. First: ./art keys — validates every credential before any spend. Second: ./art ai-explainer skills/make/your-skill/SKILL.md — runs the skill on a SKILL.md from your own project. Third: ./art todo your-reel-path — shows what the machine built and what it left for you. That third command is where the human work begins.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 20,
+      "actual_duration_s": 19.71,
+      "audio_file": "mp3/beat-BCLI.mp3",
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeCodeBeat",
+          "props": {
+            "title": "Three commands.",
+            "code": "# 1. validate credentials before any spend\n./art keys\n\n# 2. run the skill on your SKILL.md\n./art ai-explainer skills/make/<your-skill>/SKILL.md\n\n# 3. see what the machine filled — and what it left\n./art todo <your-reel-path>",
+            "sparkLine": "Start with keys."
+          },
+          "rendered": {
+            "out": "media/BCLI.mp4",
+            "at": ""
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BCLI.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T01:56:06"
+      }
+    },
+    {
+      "beat_id": "BOUT",
+      "act": "outro",
+      "narration_text": "Claude, Self-Taught. Humanitarians AI.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 5,
+      "actual_duration_s": 3.18,
+      "audio_file": "mp3/beat-BOUT.mp3",
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "Claude, Self-Taught.",
+            "handle": "@HumanitariansAI",
+            "subline": "Pragmatist Register"
+          },
+          "rendered": {
+            "out": "media/BOUT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BOUT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T01:56:06"
+      }
+    }
+  ]
+}
