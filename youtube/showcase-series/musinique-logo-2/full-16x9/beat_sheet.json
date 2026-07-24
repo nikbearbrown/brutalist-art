@@ -1,0 +1,42 @@
+{
+ "metadata": {
+  "slug": "musinique-logo-2-full-16x9",
+  "title": "Musinique, In Motion",
+  "engine": "kokoro",
+  "voice_kokoro": "am_onyx",
+  "clock": "narration",
+  "purpose": "showcase-series bookend audio"
+ },
+ "beats": [
+  {
+   "beat_id": "E90",
+   "narration_text": "Let's recap with Claude. Twenty techniques, one SVG mark, zero keyframes. Every move you watched is a pure function of the frame number: spring configs carry the weight, interpolate plus easing carries every glide, and the reveals are nothing but masks, slices, and stroke-dashoffset. The mark never changed. Only the math around it did.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E90.mp3",
+   "actual_duration_s": 18.18
+  },
+  {
+   "beat_id": "E91",
+   "narration_text": "Your turn. Here's the prompt, word for word: take my logo SVG and build a Remotion showcase that runs it through every entrance, emphasis, and exit technique you know — one labeled technique per beat — then flag the three moves that fit my brand's weight. That last clause is the real work: twenty moves is a catalog, three is a decision. Run it, and watch which springs Claude picks for you.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E91.mp3",
+   "actual_duration_s": 19.5
+  },
+  {
+   "beat_id": "E92",
+   "narration_text": "One logo mark, every move Remotion knows. Liam, in for Bear.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E92.mp3",
+   "actual_duration_s": 4.57
+  }
+ ]
+}

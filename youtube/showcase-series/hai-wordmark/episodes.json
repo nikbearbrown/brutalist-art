@@ -1,0 +1,197 @@
+{
+  "mark": "hai-wordmark",
+  "handle": "@HumanitariansAI",
+  "series_title": "HAI Wordmark, In Motion",
+  "_gate": "GATE — human approves every narration line in this file before Kokoro audio is generated.",
+  "build_full_16x9": false,
+
+  "episodes": [
+    {
+      "n": 1,
+      "title": "How a Wordmark Arrives",
+      "techniques": ["B01", "B04"],
+      "include_comp_intro": true,
+      "intro": null,
+      "your_turn": {
+        "narration": "Your turn. Paste this: animate the HUMANITARIANS AI wordmark with a letter cascade — each glyph springs in left to right, staggered — then tell me the right stagger delay. Too fast and it reads as a pop. Too slow and it reads as a typing error.",
+        "prompt": "Animate the HUMANITARIANS AI wordmark with a letter cascade — each glyph springs in staggered left to right — and tell me the right stagger delay.",
+        "greeting": "Your turn.",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "How a Wordmark Arrives",
+        "runningText": "paste this into Claude…"
+      },
+      "title_out": {
+        "narration": "H A I wordmark, in motion. Part one. Liam, in for Bear.",
+        "title": "HAI Wordmark, In Motion — Part One.",
+        "subline": "four arrivals · every move built in Remotion · @HumanitariansAI"
+      },
+      "recap": {
+        "narration": "Let's recap with Claude. Letter cascade: each glyph springs in left to right — stagger delay is everything. Word slam: HUMANITARIANS lands heavy, then AI hits with a screen shake — the two-weight structure is the wordmark's whole argument. Draw-on glyphs: the outline traces then the fill floods, letter by letter. Baseline wave: sine pushing each letter up and down in sequence.",
+        "artifactTitle": "Recap",
+        "artifactHeading": "How a Wordmark Arrives",
+        "artifactLines": [
+          "Letter cascade — stagger delay is the design.",
+          "Word slam — HUMANITARIANS heavy, AI shakes.",
+          "Draw-on glyphs — outline traces, fill floods.",
+          "Baseline wave — sine traveling through the word."
+        ]
+      }
+    },
+    {
+      "n": 2,
+      "title": "Type as Motion",
+      "techniques": ["B05", "B08"],
+      "include_comp_intro": false,
+      "intro": {
+        "narration": "Liam, in for Bear — part two of the HAI wordmark. Type as motion: tracking breathe where letter-spacing expands and contracts, a typewriter with a terracotta caret, a clip-path wipe that reveals the full marquee, and a highlight sweep — a light band passing across the ink once. These are type-native moves.",
+        "greeting": "Hola, Liam",
+        "command": "animate hai-wordmark.svg — type as motion: tracking, typewriter, mask, highlight — part 2 of 5",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Type as Motion",
+        "runningText": "rendering part two…",
+        "output": ["Tracking Breathe · Typewriter", "Mask Wipe · Highlight Sweep"]
+      },
+      "your_turn": {
+        "narration": "Your turn. Paste this: build me a typewriter animation for HUMANITARIANS AI — one glyph per tick, terracotta caret — and then tell me whether the caret should blink between glyphs or stay solid. Blink says terminal. Solid says confidence.",
+        "prompt": "Build a typewriter animation for HUMANITARIANS AI — one glyph per tick, terracotta caret — should the caret blink between glyphs or stay solid? Tell me why.",
+        "greeting": "Your turn.",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Type as Motion",
+        "runningText": "paste this into Claude…"
+      },
+      "title_out": {
+        "narration": "H A I wordmark, in motion. Part two. Liam, in for Bear.",
+        "title": "HAI Wordmark, In Motion — Part Two.",
+        "subline": "four type-native moves · every move built in Remotion"
+      },
+      "recap": {
+        "narration": "Let's recap with Claude. Tracking breathe expands to wide then contracts — the wordmark inhales and exhales through its own letter-spacing. Typewriter, glyph by glyph, terracotta caret — classic read but watch whether it respects the two-word structure. Mask wipe reveals the full marquee. Highlight sweep passes once — the restraint is correct.",
+        "artifactTitle": "Recap",
+        "artifactHeading": "Type as Motion",
+        "artifactLines": [
+          "Tracking breathe — letterspace expands, contracts.",
+          "Typewriter — one glyph per tick, caret in terracotta.",
+          "Mask wipe — clip-path reveals the full marquee.",
+          "Highlight sweep — one pass; restraint is the move."
+        ]
+      }
+    },
+    {
+      "n": 3,
+      "title": "Structure & Depth",
+      "techniques": ["B09", "B12"],
+      "include_comp_intro": false,
+      "intro": {
+        "narration": "Liam, in for Bear — part three. Structure and depth: the H and AI glyphs counter-rotate in a ligature spotlight, each letter card-flips on its X axis in sequence, a scale focus pushes from the full word into a single glyph and back, and a blur rack focuses front to back across the word. These moves reveal what the wordmark is made of.",
+        "greeting": "Bonjour, Liam",
+        "command": "animate hai-wordmark.svg — structure + depth: spotlight, flip, focus, blur — part 3 of 5",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Structure & Depth",
+        "runningText": "rendering part three…",
+        "output": ["Ligature Spotlight · Per-Letter Flip", "Scale Focus · Blur Depth"]
+      },
+      "your_turn": {
+        "narration": "Your turn. Paste this: push a scale focus from the full HUMANITARIANS AI wordmark into a single glyph — the H — then pull back out — and tell me which glyph is worth this zoom. Not every glyph earns an iris-in. The H earns it.",
+        "prompt": "Push a scale focus from the full HUMANITARIANS AI wordmark into the H glyph, then pull back out — does the H earn the iris-in?",
+        "greeting": "Your turn.",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Structure & Depth",
+        "runningText": "paste this into Claude…"
+      },
+      "title_out": {
+        "narration": "H A I wordmark, in motion. Part three. Liam, in for Bear.",
+        "title": "HAI Wordmark, In Motion — Part Three.",
+        "subline": "four structural moves · every move built in Remotion"
+      },
+      "recap": {
+        "narration": "Let's recap with Claude. Ligature spotlight: the leading H and the diagonal counter-rotate — only words with an internal relationship can do this. Per-letter flip: each glyph cards on its X axis in sequence. Scale focus: full word in, single glyph out, back. Blur rack: sharpness travels across the word like rack focus through a lens. Structure is the subject.",
+        "artifactTitle": "Recap",
+        "artifactHeading": "Structure & Depth",
+        "artifactLines": [
+          "Ligature spotlight — H and AI diagonal counter-rotate.",
+          "Per-letter flip — each glyph cards on X in sequence.",
+          "Scale focus — full word to single glyph and back.",
+          "Blur rack — rack focus across the word."
+        ]
+      }
+    },
+    {
+      "n": 4,
+      "title": "Energy & System",
+      "techniques": ["B13", "B16"],
+      "include_comp_intro": false,
+      "intro": {
+        "narration": "Liam, in for Bear — part four. Energy and system: color interpolation sweeping terracotta letter by letter, the full wordmark dropping in as one mass on elastic physics, glitch slices offset across the word then snap clean, and kinetic stack — the stacked HUMANITARIANS-over-AI layout rippling letter by letter. The wordmark has a structure. These four moves argue with it.",
+        "greeting": "Namaste, Liam",
+        "command": "animate hai-wordmark.svg — energy: color, elastic, glitch, stack — part 4 of 5",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Energy & System",
+        "runningText": "rendering part four…",
+        "output": ["Color Interpolation · Elastic Physics", "Glitch Slices · Kinetic Stack"]
+      },
+      "your_turn": {
+        "narration": "Your turn. Paste this: drop the full HUMANITARIANS AI wordmark as one unit with an elastic spring, squash it on impact, and tell me whether the full word reads as heavier than the split-line layout. One mass versus two lines — the weight is different even at the same size.",
+        "prompt": "Drop the HUMANITARIANS AI wordmark as one unit on an elastic spring, squash on impact — does it read heavier than the stacked two-line layout?",
+        "greeting": "Your turn.",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Energy & System",
+        "runningText": "paste this into Claude…"
+      },
+      "title_out": {
+        "narration": "H A I wordmark, in motion. Part four. Liam, in for Bear.",
+        "title": "HAI Wordmark, In Motion — Part Four.",
+        "subline": "four energy moves · every move built in Remotion"
+      },
+      "recap": {
+        "narration": "Let's recap with Claude. Color sweep: terracotta letter by letter across HUMANITARIANS AI — seventeen letters is a long sweep, so duration is the design decision. Elastic physics: the full word lands as one mass. Glitch: horizontal slices across the whole wordmark, then snap clean. Kinetic stack: the stacked layout ripples — two lines of type moving as one system.",
+        "artifactTitle": "Recap",
+        "artifactHeading": "Energy & System",
+        "artifactLines": [
+          "Color sweep — 17 letters; duration is the design.",
+          "Elastic — full word lands as one mass.",
+          "Glitch — slices across the full wordmark, then SNAP.",
+          "Kinetic stack — stacked layout ripples as one system."
+        ]
+      }
+    },
+    {
+      "n": 5,
+      "title": "Loop, Assembly & Exit",
+      "techniques": ["B17", "B19"],
+      "include_comp_intro": false,
+      "intro": {
+        "narration": "Liam, in for Bear — the last part of the HAI wordmark. Three moves: a marquee loop at three speeds — slow, medium, fast — every letter flying in from scattered positions and rotations to land as the full wordmark, and the exit family. How the HAI wordmark loops, how it assembles from nothing, and how it leaves.",
+        "greeting": "Aloha, Liam",
+        "command": "animate hai-wordmark.svg — loop, assembly + exits — part 5 of 5",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Loop, Assembly & Exit",
+        "runningText": "rendering part five…",
+        "output": ["Marquee Loop · Assembly", "Exit Family"]
+      },
+      "your_turn": {
+        "narration": "Your turn. Paste this: scatter every glyph in HUMANITARIANS AI to a random position and rotation, then spring them all home into the wordmark — and tell me the right duration. Too fast reads as a snap. Too slow reads as chaos. The right duration reads as intention.",
+        "prompt": "Scatter every glyph in HUMANITARIANS AI to random positions and rotations, spring them home into the wordmark — what duration reads as intention, not snap or chaos?",
+        "greeting": "Your turn.",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Loop, Assembly & Exit",
+        "runningText": "paste this into Claude…"
+      },
+      "title_out": {
+        "narration": "H A I wordmark, in motion. Part five. All nineteen. Liam, in for Bear.",
+        "title": "HAI Wordmark, In Motion — Part Five.",
+        "subline": "loop, assembly and exits · @HumanitariansAI"
+      },
+      "recap": {
+        "narration": "Let's recap with Claude. Marquee loop at three speeds — slow reads as ambient, medium as active, fast as urgency. Assembly: every glyph flies from scattered chaos to the full wordmark. The spring duration decides everything. Exit family: letter-drop, blur-out, wipe-close. Nineteen techniques, one mark. HUMANITARIANS AI has range.",
+        "artifactTitle": "Recap",
+        "artifactHeading": "Loop, Assembly & Exit",
+        "artifactLines": [
+          "Marquee — slow: ambient. Medium: active. Fast: urgent.",
+          "Assembly — every glyph from chaos to mark.",
+          "Duration decides: snap vs intention vs chaos.",
+          "Exits — letter-drop, blur-out, wipe-close."
+        ]
+      }
+    }
+  ]
+}

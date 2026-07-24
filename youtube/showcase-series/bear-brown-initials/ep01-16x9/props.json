@@ -1,0 +1,33 @@
+{
+ "mark": "bear-brown-initials",
+ "bodyStartFrame": 0,
+ "bodyEndFrame": 1602,
+ "intro": null,
+ "verdict": {
+  "artifactTitle": "Recap",
+  "artifactHeading": "First Moves",
+  "artifactLines": [
+   "Spring — soft damping, the settle is the character.",
+   "Overshoot — over-corrects; that is the design.",
+   "Draw-on stroke — terracotta path, fill follows.",
+   "Mask + iris — wipe then radial open."
+  ],
+  "durationF": 491
+ },
+ "yourTurn": {
+  "greeting": "Your turn.",
+  "command": "Animate my initials mark with a spring entrance, then show the same entrance as a draw-on stroke — and tell me which feels authored and which feels generated.",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "First Moves",
+  "runningText": "paste this into Claude…",
+  "output": [],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 381
+ },
+ "titleOut": {
+  "title": "Bear Brown Initials, In Motion — Part One.",
+  "handle": "@NikBearBrown",
+  "subline": "four first moves · every move built in Remotion",
+  "durationF": 138
+ }
+}

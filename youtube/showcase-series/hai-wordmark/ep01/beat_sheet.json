@@ -1,0 +1,32 @@
+{
+ "metadata": {
+  "slug": "hai-wordmark-ep01",
+  "title": "HAI Wordmark, In Motion",
+  "engine": "kokoro",
+  "voice_kokoro": "am_onyx",
+  "clock": "narration",
+  "purpose": "showcase-series bookend audio"
+ },
+ "beats": [
+  {
+   "beat_id": "E91",
+   "narration_text": "Your turn. Paste this: animate the HUMANITARIANS AI wordmark with a letter cascade — each glyph springs in left to right, staggered — then tell me the right stagger delay. Too fast and it reads as a pop. Too slow and it reads as a typing error.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E91.mp3",
+   "actual_duration_s": 13.53
+  },
+  {
+   "beat_id": "E92",
+   "narration_text": "H A I wordmark, in motion. Part one. Liam, in for Bear.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E92.mp3",
+   "actual_duration_s": 4.1
+  }
+ ]
+}

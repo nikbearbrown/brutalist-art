@@ -1,0 +1,45 @@
+{
+ "mark": "bear-brown-logo",
+ "bodyStartFrame": 3372,
+ "bodyEndFrame": 4408,
+ "intro": {
+  "greeting": "Namaste, Liam",
+  "command": "animate bear-brown-logo.svg — physics: wobble, elastic, flip, shadow — part 4 of 5",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Physics",
+  "runningText": "rendering part four…",
+  "output": [
+   "Noise Wobble · Elastic Physics",
+   "Card Flip · Shadow Play"
+  ],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 484
+ },
+ "verdict": {
+  "artifactTitle": "Recap",
+  "artifactHeading": "Physics",
+  "artifactLines": [
+   "Noise wobble — decays; stillness is the destination.",
+   "Elastic drop — squash burst, spring config is all.",
+   "Card flip — perspective rotateY, two passes.",
+   "Shadow — stretches ahead, snaps; cheapest depth."
+  ],
+  "durationF": 566
+ },
+ "yourTurn": {
+  "greeting": "Your turn.",
+  "command": "Drop my logo with an elastic spring — squash on impact — add a shadow that stretches ahead then snaps back, and tell me whether it reads as object or character.",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Physics",
+  "runningText": "paste this into Claude…",
+  "output": [],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 407
+ },
+ "titleOut": {
+  "title": "Bear Brown Logo, In Motion — Part Four.",
+  "handle": "@NikBearBrown",
+  "subline": "four physics moves · every move built in Remotion",
+  "durationF": 134
+ }
+}

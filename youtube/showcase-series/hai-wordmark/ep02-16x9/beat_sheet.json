@@ -1,0 +1,52 @@
+{
+ "metadata": {
+  "slug": "hai-wordmark-ep02-16x9",
+  "title": "HAI Wordmark, In Motion",
+  "engine": "kokoro",
+  "voice_kokoro": "am_onyx",
+  "clock": "narration",
+  "purpose": "showcase-series bookend audio"
+ },
+ "beats": [
+  {
+   "beat_id": "E00",
+   "narration_text": "Liam, in for Bear — part two of the HAI wordmark. Type as motion: tracking breathe where letter-spacing expands and contracts, a typewriter with a terracotta caret, a clip-path wipe that reveals the full marquee, and a highlight sweep — a light band passing across the ink once. These are type-native moves.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E00.mp3",
+   "actual_duration_s": 16.87
+  },
+  {
+   "beat_id": "E90",
+   "narration_text": "Let's recap with Claude. Tracking breathe expands to wide then contracts — the wordmark inhales and exhales through its own letter-spacing. Typewriter, glyph by glyph, terracotta caret — classic read but watch whether it respects the two-word structure. Mask wipe reveals the full marquee. Highlight sweep passes once — the restraint is correct.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E90.mp3",
+   "actual_duration_s": 18.13
+  },
+  {
+   "beat_id": "E91",
+   "narration_text": "Your turn. Paste this: build me a typewriter animation for HUMANITARIANS AI — one glyph per tick, terracotta caret — and then tell me whether the caret should blink between glyphs or stay solid. Blink says terminal. Solid says confidence.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E91.mp3",
+   "actual_duration_s": 13.46
+  },
+  {
+   "beat_id": "E92",
+   "narration_text": "H A I wordmark, in motion. Part two. Liam, in for Bear.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E92.mp3",
+   "actual_duration_s": 4.18
+  }
+ ]
+}

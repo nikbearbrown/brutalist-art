@@ -1,0 +1,35 @@
+{
+ "mark": "hai-wordmark",
+ "bodyStartFrame": 2120,
+ "bodyEndFrame": 3130,
+ "intro": {
+  "greeting": "Bonjour, Liam",
+  "command": "animate hai-wordmark.svg — structure + depth: spotlight, flip, focus, blur — part 3 of 5",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Structure & Depth",
+  "runningText": "rendering part three…",
+  "output": [
+   "Ligature Spotlight · Per-Letter Flip",
+   "Scale Focus · Blur Depth"
+  ],
+  "folderLabel": "@HumanitariansAI",
+  "durationF": 548
+ },
+ "verdict": null,
+ "yourTurn": {
+  "greeting": "Your turn.",
+  "command": "Push a scale focus from the full HUMANITARIANS AI wordmark into the H glyph, then pull back out — does the H earn the iris-in?",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Structure & Depth",
+  "runningText": "paste this into Claude…",
+  "output": [],
+  "folderLabel": "@HumanitariansAI",
+  "durationF": 388
+ },
+ "titleOut": {
+  "title": "HAI Wordmark, In Motion — Part Three.",
+  "handle": "@HumanitariansAI",
+  "subline": "four structural moves · every move built in Remotion",
+  "durationF": 134
+ }
+}

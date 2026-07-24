@@ -1,0 +1,35 @@
+{
+ "mark": "musinique-logo",
+ "bodyStartFrame": 4030,
+ "bodyEndFrame": 5154,
+ "intro": {
+  "greeting": "Hola, Liam",
+  "command": "animate musinique-logo.svg — physics: echo, wobble, elastic, cascade — part 4 of 5",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Physics & Weight",
+  "runningText": "rendering part four…",
+  "output": [
+   "Trail Echo · Noise Wobble",
+   "Elastic Physics · Path Cascade"
+  ],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 480
+ },
+ "verdict": null,
+ "yourTurn": {
+  "greeting": "Your turn.",
+  "command": "Drop my logo from above with a low-damping elastic spring — squash on impact — then run the same entrance as a path cascade and tell me which reads heavier.",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Physics & Weight",
+  "runningText": "paste this into Claude…",
+  "output": [],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 450
+ },
+ "titleOut": {
+  "title": "Musinique Logo, In Motion — Part Four.",
+  "handle": "@NikBearBrown",
+  "subline": "four physics moves · every move built in Remotion",
+  "durationF": 134
+ }
+}

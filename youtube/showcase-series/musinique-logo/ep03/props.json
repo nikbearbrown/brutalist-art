@@ -1,0 +1,35 @@
+{
+ "mark": "musinique-logo",
+ "bodyStartFrame": 2755,
+ "bodyEndFrame": 4030,
+ "intro": {
+  "greeting": "Aloha, Liam",
+  "command": "animate musinique-logo.svg — surface energy: blur, color, scatter, glitch — part 3 of 5",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Surface Energy",
+  "runningText": "rendering part three…",
+  "output": [
+   "Opacity Through Blur · Color Interpolation",
+   "Kinetic Scatter · Glitch Slices"
+  ],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 481
+ },
+ "verdict": null,
+ "yourTurn": {
+  "greeting": "Your turn.",
+  "command": "Scatter all paths in my logo outward from center, then spring them back — and tell me whether it reads as chaos-resolving or explosion.",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Surface Energy",
+  "runningText": "paste this into Claude…",
+  "output": [],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 362
+ },
+ "titleOut": {
+  "title": "Musinique Logo, In Motion — Part Three.",
+  "handle": "@NikBearBrown",
+  "subline": "four surface moves · every move built in Remotion",
+  "durationF": 135
+ }
+}

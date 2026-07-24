@@ -1,0 +1,35 @@
+{
+ "mark": "h-logo",
+ "bodyStartFrame": 3819,
+ "bodyEndFrame": 4803,
+ "intro": {
+  "greeting": "Xin chào, Liam",
+  "command": "animate h-logo.svg — depth + exits — part 5 of 5",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Depth & Exit",
+  "runningText": "rendering part five…",
+  "output": [
+   "Card Flip · Shadow Play",
+   "Composer Summon · Exit Family"
+  ],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 363
+ },
+ "verdict": null,
+ "yourTurn": {
+  "greeting": "Your turn.",
+  "command": "Run the H logo through three exits back to back — shrink-spin, blur-out, mask-close — and tell me which makes it feel like the mark will come back.",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Depth & Exit",
+  "runningText": "paste this into Claude…",
+  "output": [],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 396
+ },
+ "titleOut": {
+  "title": "H Logo, In Motion — Part Five.",
+  "handle": "@NikBearBrown",
+  "subline": "depth and exits · every move built in Remotion",
+  "durationF": 143
+ }
+}

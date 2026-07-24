@@ -1,0 +1,52 @@
+{
+ "metadata": {
+  "slug": "musinique-logo-2-ep05-16x9",
+  "title": "Musinique, In Motion",
+  "engine": "kokoro",
+  "voice_kokoro": "am_onyx",
+  "clock": "narration",
+  "purpose": "showcase-series bookend audio"
+ },
+ "beats": [
+  {
+   "beat_id": "E00",
+   "narration_text": "Liam, in for Bear — the last part of the Musinique mark. The living set: the mark summoned inside the Claude composer, a stroke pulse on a heartbeat rhythm, a four-percent breathing scale, and three exits back to back. Every logo needs a way out.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E00.mp3",
+   "actual_duration_s": 13.4
+  },
+  {
+   "beat_id": "E90",
+   "narration_text": "Let's recap with Claude. The living set: the mark summoned inside the composer, a stroke pulse on a heartbeat rhythm, a four percent breathing scale, and three exits back to back. Idle states and exits are the forgotten half of logo motion — a mark that never rests never feels real, and every mark needs a way out.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E90.mp3",
+   "actual_duration_s": 17.07
+  },
+  {
+   "beat_id": "E91",
+   "narration_text": "Your turn. Paste this: give my logo an idle state — a slow four percent breathe and a stroke pulse — plus one exit, and argue for which exit my brand should actually use. Idle states are the most underrated logo motion there is.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E91.mp3",
+   "actual_duration_s": 13.08
+  },
+  {
+   "beat_id": "E92",
+   "narration_text": "Musinique, in motion. Part five. That's all twenty moves. Liam, in for Bear.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E92.mp3",
+   "actual_duration_s": 4.78
+  }
+ ]
+}

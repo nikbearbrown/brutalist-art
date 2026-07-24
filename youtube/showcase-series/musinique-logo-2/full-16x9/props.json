@@ -1,0 +1,33 @@
+{
+ "mark": "musinique-logo-2",
+ "bodyStartFrame": 0,
+ "bodyEndFrame": 6413,
+ "intro": null,
+ "verdict": {
+  "artifactTitle": "Verdict",
+  "artifactHeading": "One mark, twenty moves",
+  "artifactLines": [
+   "Springs carry weight — damping is the personality.",
+   "interpolate() + easing is every glide and settle.",
+   "Reveals are masks, slices, and stroke-dashoffset.",
+   "The mark is constant; the math is the motion."
+  ],
+  "durationF": 556
+ },
+ "yourTurn": {
+  "greeting": "Your turn.",
+  "command": "Take my logo SVG and build a Remotion showcase that runs it through every entrance, emphasis, and exit technique you know — one labeled technique per beat — then flag the three moves that fit my brand's weight.",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Your Logo, Every Move",
+  "runningText": "paste this into Claude…",
+  "output": [],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 595
+ },
+ "titleOut": {
+  "title": "One Logo Mark, Every Move Remotion Knows.",
+  "handle": "@NikBearBrown",
+  "subline": "Brutalist — Claude for video production",
+  "durationF": 147
+ }
+}

@@ -1,0 +1,8 @@
+Lord Byron's "She Walks in Beauty" (1814), read by Nate — a Suno voice clone, directed with the toolkit's session command. Video 7 of "Brutalist: Claude for Video Production."
+
+Every word is karaoke-synced: faster-whisper forced-alignment locks each syllable to the frame it's spoken. The audiogram shows the vocal waveform live. Watch whether the highlight bar tracks the voice — that's the toolkit's recitation-film + lyric-overlay pipeline in a single take.
+
+The whole toolkit: https://www.brutalist.art
+More from Nik Bear Brown: https://www.youtube.com/@NikBearBrown
+
+You bring the taste. The machine brings the hands.

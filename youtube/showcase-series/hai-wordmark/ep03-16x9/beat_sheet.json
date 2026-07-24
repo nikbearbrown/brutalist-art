@@ -1,0 +1,52 @@
+{
+ "metadata": {
+  "slug": "hai-wordmark-ep03-16x9",
+  "title": "HAI Wordmark, In Motion",
+  "engine": "kokoro",
+  "voice_kokoro": "am_onyx",
+  "clock": "narration",
+  "purpose": "showcase-series bookend audio"
+ },
+ "beats": [
+  {
+   "beat_id": "E00",
+   "narration_text": "Liam, in for Bear — part three. Structure and depth: the H and AI glyphs counter-rotate in a ligature spotlight, each letter card-flips on its X axis in sequence, a scale focus pushes from the full word into a single glyph and back, and a blur rack focuses front to back across the word. These moves reveal what the wordmark is made of.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E00.mp3",
+   "actual_duration_s": 17.92
+  },
+  {
+   "beat_id": "E90",
+   "narration_text": "Let's recap with Claude. Ligature spotlight: the leading H and the diagonal counter-rotate — only words with an internal relationship can do this. Per-letter flip: each glyph cards on its X axis in sequence. Scale focus: full word in, single glyph out, back. Blur rack: sharpness travels across the word like rack focus through a lens. Structure is the subject.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E90.mp3",
+   "actual_duration_s": 19.2
+  },
+  {
+   "beat_id": "E91",
+   "narration_text": "Your turn. Paste this: push a scale focus from the full HUMANITARIANS AI wordmark into a single glyph — the H — then pull back out — and tell me which glyph is worth this zoom. Not every glyph earns an iris-in. The H earns it.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E91.mp3",
+   "actual_duration_s": 12.59
+  },
+  {
+   "beat_id": "E92",
+   "narration_text": "H A I wordmark, in motion. Part three. Liam, in for Bear.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E92.mp3",
+   "actual_duration_s": 4.12
+  }
+ ]
+}

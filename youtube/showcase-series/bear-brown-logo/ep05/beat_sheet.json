@@ -1,0 +1,42 @@
+{
+ "metadata": {
+  "slug": "bear-brown-logo-ep05",
+  "title": "Bear Brown Logo, In Motion",
+  "engine": "kokoro",
+  "voice_kokoro": "am_onyx",
+  "clock": "narration",
+  "purpose": "showcase-series bookend audio"
+ },
+ "beats": [
+  {
+   "beat_id": "E00",
+   "narration_text": "Liam, in for Bear — the last part of the Bear Brown logo. Composer summon, stroke pulse, scale breathe, and the exit family. Everything after the entrance and before the silence: how a mark idles, and how it leaves.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E00.mp3",
+   "actual_duration_s": 11.8
+  },
+  {
+   "beat_id": "E91",
+   "narration_text": "Your turn. Paste this: give my logo an idle state using a stroke dashoffset heartbeat and a one-percent scale breathe — then argue for which of the three exits in the family best suits an education brand. Idle states are the most forgotten tool in logo motion.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E91.mp3",
+   "actual_duration_s": 14.63
+  },
+  {
+   "beat_id": "E92",
+   "narration_text": "Bear Brown logo, in motion. Part five. All twenty. Liam, in for Bear.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E92.mp3",
+   "actual_duration_s": 4.74
+  }
+ ]
+}

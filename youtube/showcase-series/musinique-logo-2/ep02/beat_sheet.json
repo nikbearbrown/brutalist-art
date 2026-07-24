@@ -1,0 +1,36 @@
+{
+ "metadata": {
+  "slug": "musinique-logo-2-ep02",
+  "title": "Musinique, In Motion",
+  "engine": "kokoro",
+  "voice_kokoro": "am_onyx",
+  "clock": "narration",
+  "purpose": "showcase-series bookend audio"
+ },
+ "beats": [
+  {
+   "beat_id": "E00",
+   "narration_text": "Liam, in for Bear — part two of the Musinique mark. Four transforms this time: scale, rotation, skew, and a blur that fades in as it sharpens. Same rule as part one: no keyframes anywhere — every move is a function of the frame.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   }
+  },
+  {
+   "beat_id": "E91",
+   "narration_text": "Your turn. Paste this: rotate my logo three hundred sixty degrees with a spring settle, then show the same spin with linear timing — and tell me why the spring reads better.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   }
+  },
+  {
+   "beat_id": "E92",
+   "narration_text": "Musinique, in motion. Part two. Liam, in for Bear.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   }
+  }
+ ]
+}

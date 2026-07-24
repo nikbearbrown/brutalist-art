@@ -1,0 +1,52 @@
+{
+ "metadata": {
+  "slug": "bear-brown-initials-ep03-16x9",
+  "title": "Bear Brown Initials, In Motion",
+  "engine": "kokoro",
+  "voice_kokoro": "am_onyx",
+  "clock": "narration",
+  "purpose": "showcase-series bookend audio"
+ },
+ "beats": [
+  {
+   "beat_id": "E00",
+   "narration_text": "Liam, in for Bear — part three. Texture and motion: color sweeping to terracotta and back, a kinetic grid tiling the initials across the nine-sixteen frame in a four-beat ripple, glitch slices each offset independently then snap clean, and a trail echo with five ghost copies.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E00.mp3",
+   "actual_duration_s": 15.49
+  },
+  {
+   "beat_id": "E90",
+   "narration_text": "Let's recap with Claude. Color interpolation — terracotta, the one treatment beat in the set. Kinetic grid: mark tiled, four-beat ripple, the whole frame. Glitch: six slices each offset independently, deterministic snap. Trail echo: the mark slides fast, five ghost copies fade behind it at four-frame lag. Surface is the argument.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E90.mp3",
+   "actual_duration_s": 18.28
+  },
+  {
+   "beat_id": "E91",
+   "narration_text": "Your turn. Paste this: tile my initials across the full frame in a four-by-four kinetic grid with a staggered ripple on each copy — and tell me at what point it stops being a logo animation and starts being a pattern. That line is the one you want to know.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E91.mp3",
+   "actual_duration_s": 13.85
+  },
+  {
+   "beat_id": "E92",
+   "narration_text": "Bear Brown initials, in motion. Part three. Liam, in for Bear.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E92.mp3",
+   "actual_duration_s": 4.29
+  }
+ ]
+}

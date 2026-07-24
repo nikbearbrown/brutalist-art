@@ -1,0 +1,42 @@
+{
+ "metadata": {
+  "slug": "hai-wordmark-ep01-16x9",
+  "title": "HAI Wordmark, In Motion",
+  "engine": "kokoro",
+  "voice_kokoro": "am_onyx",
+  "clock": "narration",
+  "purpose": "showcase-series bookend audio"
+ },
+ "beats": [
+  {
+   "beat_id": "E90",
+   "narration_text": "Let's recap with Claude. Letter cascade: each glyph springs in left to right — stagger delay is everything. Word slam: HUMANITARIANS lands heavy, then AI hits with a screen shake — the two-weight structure is the wordmark's whole argument. Draw-on glyphs: the outline traces then the fill floods, letter by letter. Baseline wave: sine pushing each letter up and down in sequence.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E90.mp3",
+   "actual_duration_s": 19.46
+  },
+  {
+   "beat_id": "E91",
+   "narration_text": "Your turn. Paste this: animate the HUMANITARIANS AI wordmark with a letter cascade — each glyph springs in left to right, staggered — then tell me the right stagger delay. Too fast and it reads as a pop. Too slow and it reads as a typing error.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E91.mp3",
+   "actual_duration_s": 13.53
+  },
+  {
+   "beat_id": "E92",
+   "narration_text": "H A I wordmark, in motion. Part one. Liam, in for Bear.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E92.mp3",
+   "actual_duration_s": 4.1
+  }
+ ]
+}

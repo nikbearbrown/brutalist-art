@@ -1,0 +1,42 @@
+{
+ "metadata": {
+  "slug": "musinique-logo-ep03",
+  "title": "Musinique Logo, In Motion",
+  "engine": "kokoro",
+  "voice_kokoro": "am_onyx",
+  "clock": "narration",
+  "purpose": "showcase-series bookend audio"
+ },
+ "beats": [
+  {
+   "beat_id": "E00",
+   "narration_text": "Liam, in for Bear — part three. Surface energy: an opacity-blur entrance, color interpolation sweeping path by path, a kinetic scatter where all forty-seven paths explode then spring back, and glitch slices that snap clean. The mark barely moves. The surface does the work.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E00.mp3",
+   "actual_duration_s": 15.68
+  },
+  {
+   "beat_id": "E91",
+   "narration_text": "Your turn. Paste this: scatter all paths in my logo outward from center, then spring them back home — and tell me whether it reads as chaos-resolving or explosion. The answer tells you whether you own the move.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E91.mp3",
+   "actual_duration_s": 11.73
+  },
+  {
+   "beat_id": "E92",
+   "narration_text": "Musinique logo, in motion. Part three. Liam, in for Bear.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E92.mp3",
+   "actual_duration_s": 4.16
+  }
+ ]
+}

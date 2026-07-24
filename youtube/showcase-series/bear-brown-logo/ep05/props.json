@@ -1,0 +1,35 @@
+{
+ "mark": "bear-brown-logo",
+ "bodyStartFrame": 3783,
+ "bodyEndFrame": 4606,
+ "intro": {
+  "greeting": "Shalom, Liam",
+  "command": "animate bear-brown-logo.svg — pulse, breath + exits — part 5 of 5",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Pulse, Breath & Exit",
+  "runningText": "rendering part five…",
+  "output": [
+   "Composer Summon · Stroke Pulse",
+   "Scale Breathe · Exit Family"
+  ],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 364
+ },
+ "verdict": null,
+ "yourTurn": {
+  "greeting": "Your turn.",
+  "command": "Give my logo an idle state using a stroke dashoffset heartbeat and a 1% scale breathe — then argue for which of the three exits best suits an education brand.",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Pulse, Breath & Exit",
+  "runningText": "paste this into Claude…",
+  "output": [],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 449
+ },
+ "titleOut": {
+  "title": "Bear Brown Logo, In Motion — Part Five.",
+  "handle": "@NikBearBrown",
+  "subline": "pulse, breath and exits · every move built in Remotion",
+  "durationF": 152
+ }
+}

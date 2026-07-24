@@ -1,0 +1,42 @@
+{
+ "metadata": {
+  "slug": "musinique-logo-2-ep01-16x9",
+  "title": "Musinique, In Motion",
+  "engine": "kokoro",
+  "voice_kokoro": "am_onyx",
+  "clock": "narration",
+  "purpose": "showcase-series bookend audio"
+ },
+ "beats": [
+  {
+   "beat_id": "E90",
+   "narration_text": "Let's recap with Claude. Four entrances: a standard spring where damping is the personality, an overshoot spring that squashes on landing, a draw-on stroke that traces the path before the fill floods in, and a mask reveal. An entrance is a first impression — pick one and commit; four entrances is no entrance.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E90.mp3",
+   "actual_duration_s": 16.87
+  },
+  {
+   "beat_id": "E91",
+   "narration_text": "Your turn. Paste this: animate my logo's entrance with a Remotion spring — show me damping five, twenty, and eighty side by side. Three numbers, three personalities.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E91.mp3",
+   "actual_duration_s": 9.51
+  },
+  {
+   "beat_id": "E92",
+   "narration_text": "Musinique, in motion. Part one. Liam, in for Bear.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E92.mp3",
+   "actual_duration_s": 3.63
+  }
+ ]
+}

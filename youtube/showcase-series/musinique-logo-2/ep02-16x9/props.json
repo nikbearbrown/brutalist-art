@@ -1,0 +1,45 @@
+{
+ "mark": "musinique-logo-2",
+ "bodyStartFrame": 1444,
+ "bodyEndFrame": 2679,
+ "intro": {
+  "greeting": "Merhaba, Liam",
+  "command": "animate musinique-logo-2.svg — transforms: scale, rotation, skew, blur — part 2 of 5",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Transforms",
+  "runningText": "rendering part two…",
+  "output": [
+   "Scale Zoom · Rotation",
+   "Skew And Shear · Opacity Through Blur"
+  ],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 414
+ },
+ "verdict": {
+  "artifactTitle": "Recap",
+  "artifactHeading": "Transforms",
+  "artifactLines": [
+   "Scale zoom · rotation · skew · blur-fade.",
+   "All four are interpolate() + easing.",
+   "The easing curve is the design decision.",
+   "Spring settle beats linear every time."
+  ],
+  "durationF": 448
+ },
+ "yourTurn": {
+  "greeting": "Your turn.",
+  "command": "Rotate my logo 360° with a spring settle, then show the same spin with linear timing — and tell me why the spring reads better.",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Transforms",
+  "runningText": "paste this into Claude…",
+  "output": [],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 306
+ },
+ "titleOut": {
+  "title": "Musinique, In Motion — Part Two.",
+  "handle": "@NikBearBrown",
+  "subline": "four transforms · every move built in Remotion",
+  "durationF": 119
+ }
+}

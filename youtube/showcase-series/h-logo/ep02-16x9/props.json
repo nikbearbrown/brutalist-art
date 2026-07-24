@@ -1,0 +1,45 @@
+{
+ "mark": "h-logo",
+ "bodyStartFrame": 1183,
+ "bodyEndFrame": 2042,
+ "intro": {
+  "greeting": "Merhaba, Liam",
+  "command": "animate h-logo.svg — camera + space: mask, zoom, rotation, skew — part 2 of 5",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Camera & Space",
+  "runningText": "rendering part two…",
+  "output": [
+   "Mask Reveal · Scale Zoom",
+   "Rotation · Skew And Shear"
+  ],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 500
+ },
+ "verdict": {
+  "artifactTitle": "Recap",
+  "artifactHeading": "Camera & Space",
+  "artifactLines": [
+   "Mask wipe — H shape defines the reveal.",
+   "Scale zoom — linear vs bezier; hear the landing.",
+   "Rotation — spring entrance, slow continuous hold.",
+   "Skew and shear — italic lean, symmetric H survives."
+  ],
+  "durationF": 524
+ },
+ "yourTurn": {
+  "greeting": "Your turn.",
+  "command": "Rotate the H logo on a spring from −45°, then hold a slow continuous rotation — at what speed does it stop being a letter and become a shape?",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Camera & Space",
+  "runningText": "paste this into Claude…",
+  "output": [],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 451
+ },
+ "titleOut": {
+  "title": "H Logo, In Motion — Part Two.",
+  "handle": "@NikBearBrown",
+  "subline": "four space moves · every move built in Remotion",
+  "durationF": 124
+ }
+}

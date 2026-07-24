@@ -1,0 +1,23 @@
+{
+ "mark": "h-logo",
+ "bodyStartFrame": 0,
+ "bodyEndFrame": 1183,
+ "intro": null,
+ "verdict": null,
+ "yourTurn": {
+  "greeting": "Your turn.",
+  "command": "Run the H logo through spring entrance and draw-on stroke — tell me which reads as confident and which reads as patient.",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "How a Mark Arrives",
+  "runningText": "paste this into Claude…",
+  "output": [],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 362
+ },
+ "titleOut": {
+  "title": "H Logo, In Motion — Part One.",
+  "handle": "@NikBearBrown",
+  "subline": "four arrivals · every move built in Remotion",
+  "durationF": 124
+ }
+}

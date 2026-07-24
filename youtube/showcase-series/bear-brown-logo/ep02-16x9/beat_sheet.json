@@ -1,0 +1,52 @@
+{
+ "metadata": {
+  "slug": "bear-brown-logo-ep02-16x9",
+  "title": "Bear Brown Logo, In Motion",
+  "engine": "kokoro",
+  "voice_kokoro": "am_onyx",
+  "clock": "narration",
+  "purpose": "showcase-series bookend audio"
+ },
+ "beats": [
+  {
+   "beat_id": "E00",
+   "narration_text": "Liam, in for Bear — part two of the Bear Brown logo. Four transforms: scale zoom linear then bezier, rotation with a spring pivot and a slow hold, a skew-and-shear lean to eighteen degrees, and a blur entrance — eighteen pixels clearing to zero. Every one of them is interpolate plus an easing curve.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E00.mp3",
+   "actual_duration_s": 16.13
+  },
+  {
+   "beat_id": "E90",
+   "narration_text": "Let's recap with Claude. Linear scale versus bezier — you can hear the difference even watching it. Spring rotation, then a meditative slow hold. Skew and shear: Italian lean, eighteen degrees, then back to vertical. Blur clearing — the mark arrives out of focus and sharpens. Easing is design.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E90.mp3",
+   "actual_duration_s": 15.59
+  },
+  {
+   "beat_id": "E91",
+   "narration_text": "Your turn. Paste this: skew my logo to eighteen degrees, hold it there for a beat, then release back to vertical — and tell me whether the lean reads as italic or as unstable. That's a brand question, not a code question.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E91.mp3",
+   "actual_duration_s": 12.27
+  },
+  {
+   "beat_id": "E92",
+   "narration_text": "Bear Brown logo, in motion. Part two. Liam, in for Bear.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E92.mp3",
+   "actual_duration_s": 4.12
+  }
+ ]
+}

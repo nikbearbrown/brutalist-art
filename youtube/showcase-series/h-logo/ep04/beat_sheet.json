@@ -1,0 +1,42 @@
+{
+ "metadata": {
+  "slug": "h-logo-ep04",
+  "title": "H Logo, In Motion",
+  "engine": "kokoro",
+  "voice_kokoro": "am_onyx",
+  "clock": "narration",
+  "purpose": "showcase-series bookend audio"
+ },
+ "beats": [
+  {
+   "beat_id": "E00",
+   "narration_text": "Liam, in for Bear — part four. Physics: trail echo with low-opacity copies chasing a fast slide, noise wobble on sine-driven micro-jitter that settles to stillness, elastic physics with scale-Y squash and rebound, and orbit parts — the two paths that make the H split, orbit each other, and rejoin. That last one is unique to this mark.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E00.mp3",
+   "actual_duration_s": 18.79
+  },
+  {
+   "beat_id": "E91",
+   "narration_text": "Your turn. Paste this: split the two paths of the H logo, orbit them around each other on a spring, then rejoin them into the mark — and tell me whether the orbit reads as playful or as structural. The H is two structures. That's the move.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E91.mp3",
+   "actual_duration_s": 12.89
+  },
+  {
+   "beat_id": "E92",
+   "narration_text": "H logo, in motion. Part four. Liam, in for Bear.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E92.mp3",
+   "actual_duration_s": 3.84
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "mark": "bear-brown-initials",
+ "bodyStartFrame": 1515,
+ "bodyEndFrame": 2612,
+ "intro": {
+  "greeting": "Talofa, Liam",
+  "command": "animate bear-brown-initials.svg — camera + lean: zoom, rotation, skew, blur — part 2 of 5",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Camera & Lean",
+  "runningText": "rendering part two…",
+  "output": [
+   "Scale Zoom · Rotation",
+   "Skew And Shear · Opacity Through Blur"
+  ],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 463
+ },
+ "verdict": null,
+ "yourTurn": {
+  "greeting": "Your turn.",
+  "command": "Push a camera into my initials from 8× scale — linear first half, bezier second — and tell me what the bezier landing adds.",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Camera & Lean",
+  "runningText": "paste this into Claude…",
+  "output": [],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 363
+ },
+ "titleOut": {
+  "title": "Bear Brown Initials, In Motion — Part Two.",
+  "handle": "@NikBearBrown",
+  "subline": "four camera and lean moves · every move built in Remotion",
+  "durationF": 140
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "mark": "musinique-logo-2",
+ "bodyStartFrame": 3993,
+ "bodyEndFrame": 4957,
+ "intro": {
+  "greeting": "Jambo, Liam",
+  "command": "animate musinique-logo-2.svg — live marks + exits — part 5 of 5",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Live Marks & Exits",
+  "runningText": "rendering part five…",
+  "output": [
+   "Composer Summon · Stroke Pulse",
+   "Scale Breathe · Exit Family"
+  ],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 412
+ },
+ "verdict": null,
+ "yourTurn": {
+  "greeting": "Your turn.",
+  "command": "Give my logo an idle state — a slow 4% breathe and a stroke pulse — plus one exit, and argue for which exit my brand should actually use.",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Live Marks & Exits",
+  "runningText": "paste this into Claude…",
+  "output": [],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 402
+ },
+ "titleOut": {
+  "title": "Musinique, In Motion — Part Five.",
+  "handle": "@NikBearBrown",
+  "subline": "live marks + exits · every move built in Remotion",
+  "durationF": 154
+ }
+}

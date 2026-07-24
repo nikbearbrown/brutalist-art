@@ -1,0 +1,197 @@
+{
+  "mark": "h-logo",
+  "handle": "@NikBearBrown",
+  "series_title": "H Logo, In Motion",
+  "_gate": "GATE — human approves every narration line in this file before Kokoro audio is generated.",
+  "build_full_16x9": false,
+
+  "episodes": [
+    {
+      "n": 1,
+      "title": "How a Mark Arrives",
+      "techniques": ["B01", "B04"],
+      "include_comp_intro": true,
+      "intro": null,
+      "your_turn": {
+        "narration": "Your turn. Paste this: run the H logo through spring entrance and draw-on stroke, then tell me which one reads as confident and which reads as patient. Confidence arrives all at once. Patience shows its work.",
+        "prompt": "Run the H logo through spring entrance and draw-on stroke — tell me which reads as confident and which reads as patient.",
+        "greeting": "Your turn.",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "How a Mark Arrives",
+        "runningText": "paste this into Claude…"
+      },
+      "title_out": {
+        "narration": "H logo, in motion. Part one. Liam, in for Bear.",
+        "title": "H Logo, In Motion — Part One.",
+        "subline": "four arrivals · every move built in Remotion"
+      },
+      "recap": {
+        "narration": "Let's recap with Claude. Spring entrance: pop-in, watch it settle — the bounce is the whole statement. Overshoot spring: the mark slams in and corrects; high bounce, judge the rebound. Draw-on stroke: the outline traces first, fill floods. Per-path stagger: the H body arrives, the diagonal follows. The H shape makes stagger visible.",
+        "artifactTitle": "Recap",
+        "artifactHeading": "How a Mark Arrives",
+        "artifactLines": [
+          "Spring — bounce is the statement.",
+          "Overshoot — slams in; rebound is the design.",
+          "Draw-on stroke — outline traces, fill floods.",
+          "Per-path stagger — body first, diagonal second."
+        ]
+      }
+    },
+    {
+      "n": 2,
+      "title": "Camera & Space",
+      "techniques": ["B05", "B08"],
+      "include_comp_intro": false,
+      "intro": {
+        "narration": "Liam, in for Bear — part two of the H logo. Four moves about the space around the mark: clip-path wipe from the left, scale zoom from eight times down to fit, a rotation that holds, and a skew and shear. The H is nearly square — that geometry changes everything about how transforms read.",
+        "greeting": "Merhaba, Liam",
+        "command": "animate h-logo.svg — camera + space: mask, zoom, rotation, skew — part 2 of 5",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Camera & Space",
+        "runningText": "rendering part two…",
+        "output": ["Mask Reveal · Scale Zoom", "Rotation · Skew And Shear"]
+      },
+      "your_turn": {
+        "narration": "Your turn. Paste this: rotate the H logo on a spring from negative forty-five degrees, then hold the slow continuous rotation — and tell me at what rotational speed the H stops being a letter and starts being a shape. The answer changes your design options.",
+        "prompt": "Rotate the H logo on a spring from −45°, then hold a slow continuous rotation — at what speed does it stop being a letter and become a shape?",
+        "greeting": "Your turn.",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Camera & Space",
+        "runningText": "paste this into Claude…"
+      },
+      "title_out": {
+        "narration": "H logo, in motion. Part two. Liam, in for Bear.",
+        "title": "H Logo, In Motion — Part Two.",
+        "subline": "four space moves · every move built in Remotion"
+      },
+      "recap": {
+        "narration": "Let's recap with Claude. Clip-path wipe: the shape of the mark defines the reveal. Scale zoom from eight-times: linear versus bezier — you can hear the difference. Rotation spring entrance then a slow hold. Skew and shear: italic lean, dynamic entrance. The H geometry means symmetry survives every transform.",
+        "artifactTitle": "Recap",
+        "artifactHeading": "Camera & Space",
+        "artifactLines": [
+          "Mask wipe — H shape defines the reveal.",
+          "Scale zoom — linear vs bezier; hear the landing.",
+          "Rotation — spring entrance, slow continuous hold.",
+          "Skew and shear — italic lean, symmetric H survives."
+        ]
+      }
+    },
+    {
+      "n": 3,
+      "title": "Surface",
+      "techniques": ["B09", "B12"],
+      "include_comp_intro": false,
+      "intro": {
+        "narration": "Liam, in for Bear — part three. Surface: blur-in where the mark arrives out of focus and sharpens, color interpolation ink to terracotta and back, a kinetic grid tiling the H across the frame on staggered delay, and glitch slices that offset and snap clean. The mark holds position; the surface carries the energy.",
+        "greeting": "Hej, Liam",
+        "command": "animate h-logo.svg — surface: blur, color, grid, glitch — part 3 of 5",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Surface",
+        "runningText": "rendering part three…",
+        "output": ["Opacity Through Blur · Color Interpolation", "Kinetic Grid · Glitch Slices"]
+      },
+      "your_turn": {
+        "narration": "Your turn. Paste this: tile the H logo across the full frame in a kinetic grid, then add a glitch-slice offset to every copy — and tell me at what grid size it reads as wallpaper versus as system. That line is a brand decision.",
+        "prompt": "Tile the H logo across the frame in a kinetic grid, add glitch-slice offsets to every copy — at what grid size does it read as wallpaper versus system?",
+        "greeting": "Your turn.",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Surface",
+        "runningText": "paste this into Claude…"
+      },
+      "title_out": {
+        "narration": "H logo, in motion. Part three. Liam, in for Bear.",
+        "title": "H Logo, In Motion — Part Three.",
+        "subline": "four surface moves · every move built in Remotion"
+      },
+      "recap": {
+        "narration": "Let's recap with Claude. Blur arrival: out of focus, sharpens. Color: ink to terracotta and back — the one color beat in this set. Kinetic grid: H tiled, staggered ripple. Glitch: horizontal slices offset for eight frames then snap clean. The snap is why the glitch works. Without the clean resolution it's just noise.",
+        "artifactTitle": "Recap",
+        "artifactHeading": "Surface",
+        "artifactLines": [
+          "Blur-in — arrives out of focus, sharpens.",
+          "Color — ink to terracotta and back.",
+          "Kinetic grid — tiled H, staggered ripple.",
+          "Glitch — 8 frames of chaos, then SNAP."
+        ]
+      }
+    },
+    {
+      "n": 4,
+      "title": "Physics",
+      "techniques": ["B13", "B16"],
+      "include_comp_intro": false,
+      "intro": {
+        "narration": "Liam, in for Bear — part four. Physics: trail echo with low-opacity copies chasing a fast slide, noise wobble on sine-driven micro-jitter that settles to stillness, elastic physics with scale-Y squash and rebound, and orbit parts — the two paths that make the H split, orbit each other, and rejoin. That last one is unique to this mark.",
+        "greeting": "Jambo, Liam",
+        "command": "animate h-logo.svg — physics: echo, wobble, elastic, orbit — part 4 of 5",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Physics",
+        "runningText": "rendering part four…",
+        "output": ["Trail Echo · Noise Wobble", "Elastic Physics · Orbit Parts"]
+      },
+      "your_turn": {
+        "narration": "Your turn. Paste this: split the two paths of the H logo, orbit them around each other on a spring, then rejoin them into the mark — and tell me whether the orbit reads as playful or as structural. The H is two structures. That's the move.",
+        "prompt": "Split the H logo's two paths, orbit them around each other on a spring, then rejoin — does it read as playful or structural?",
+        "greeting": "Your turn.",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Physics",
+        "runningText": "paste this into Claude…"
+      },
+      "title_out": {
+        "narration": "H logo, in motion. Part four. Liam, in for Bear.",
+        "title": "H Logo, In Motion — Part Four.",
+        "subline": "four physics moves · every move built in Remotion"
+      },
+      "recap": {
+        "narration": "Let's recap with Claude. Trail echo: copies fade behind a fast slide. Noise wobble: sine-driven micro-jitter that settles — the question it asks is whether quiet is interesting. Elastic: drop-in, scale-Y squash, rebound. Orbit parts: the H splits along its own construction and reunites. Most logos can't do this one.",
+        "artifactTitle": "Recap",
+        "artifactHeading": "Physics",
+        "artifactLines": [
+          "Trail echo — ghost copies on a fast slide.",
+          "Noise wobble — micro-jitter settles; is quiet interesting?",
+          "Elastic drop — scale-Y squash, spring rebound.",
+          "Orbit parts — H splits, orbits, rejoins. Mark-specific."
+        ]
+      }
+    },
+    {
+      "n": 5,
+      "title": "Depth & Exit",
+      "techniques": ["B17", "B20"],
+      "include_comp_intro": false,
+      "intro": {
+        "narration": "Liam, in for Bear — the last part of the H logo. Card flip, shadow play, composer summon, and the exit family. How the H shows depth, how it arrives from the Claude composer, and how it knows to leave.",
+        "greeting": "Xin chào, Liam",
+        "command": "animate h-logo.svg — depth + exits — part 5 of 5",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Depth & Exit",
+        "runningText": "rendering part five…",
+        "output": ["Card Flip · Shadow Play", "Composer Summon · Exit Family"]
+      },
+      "your_turn": {
+        "narration": "Your turn. Paste this: run the H logo through all three exits back to back — shrink-spin, blur-out, mask-close — and tell me which exit makes the mark feel like it will come back. The one that feels like a return is your brand exit.",
+        "prompt": "Run the H logo through three exits back to back — shrink-spin, blur-out, mask-close — and tell me which makes it feel like the mark will come back.",
+        "greeting": "Your turn.",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Depth & Exit",
+        "runningText": "paste this into Claude…"
+      },
+      "title_out": {
+        "narration": "H logo, in motion. Part five. All twenty. Liam, in for Bear.",
+        "title": "H Logo, In Motion — Part Five.",
+        "subline": "depth and exits · every move built in Remotion"
+      },
+      "recap": {
+        "narration": "Let's recap with Claude. Card flip: perspective rotateY. Shadow: animates independently, stretches ahead, snaps back. Composer summon: the H typed as a prompt in the Claude UI, terracotta cursor, then the reveal. Exits: shrink-spin, blur-out, mask-close. The H geometry makes every exit feel architectural — like closing a door.",
+        "artifactTitle": "Recap",
+        "artifactHeading": "Depth & Exit",
+        "artifactLines": [
+          "Card flip — perspective rotateY, two-sided.",
+          "Shadow — moves before the mark does.",
+          "Composer summon — typed into Claude, then revealed.",
+          "Exits — three; the H makes every one architectural."
+        ]
+      }
+    }
+  ]
+}

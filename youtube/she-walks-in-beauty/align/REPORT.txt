@@ -1,0 +1,10 @@
+lines matched: 16/18
+breaths (>= 350ms): 5
+unmatched (interpolated): [16, 17]
+
+SPOT-CHECK 5 (GATE 0 — alignment lock):
+    19.73-  20.55  Meet in her aspect and her eyes
+     0.00-   6.78  She walks in beauty, like the night
+    55.17-  56.19  How pure, how dear their dwelling-place
+    31.40-  32.88  Thus mellowed to that tender light
+    66.74-  81.78  A heart whose love is innocent!

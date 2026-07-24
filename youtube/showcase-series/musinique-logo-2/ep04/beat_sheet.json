@@ -1,0 +1,36 @@
+{
+ "metadata": {
+  "slug": "musinique-logo-2-ep04",
+  "title": "Musinique, In Motion",
+  "engine": "kokoro",
+  "voice_kokoro": "am_onyx",
+  "clock": "narration",
+  "purpose": "showcase-series bookend audio"
+ },
+ "beats": [
+  {
+   "beat_id": "E00",
+   "narration_text": "Liam, in for Bear — part four of the Musinique mark. The physics set: sinusoid wobble, a heavy elastic spring that squashes on impact, a card flip that swaps faces at ninety degrees, and shadow play. Weight is the whole trick here.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   }
+  },
+  {
+   "beat_id": "E91",
+   "narration_text": "Your turn. Paste this: drop my logo with a heavy elastic spring — squash it four percent on impact — then flip it like a card and tell me which read matches a music brand.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   }
+  },
+  {
+   "beat_id": "E92",
+   "narration_text": "Musinique, in motion. Part four. Liam, in for Bear.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   }
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "mark": "bear-brown-logo",
+ "bodyStartFrame": 0,
+ "bodyEndFrame": 1152,
+ "intro": null,
+ "verdict": null,
+ "yourTurn": {
+  "greeting": "Your turn.",
+  "command": "Animate my logo's entrance with a spring, then a mask wipe — and tell me which one feels like a reveal and which one feels like a pop.",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Arrivals",
+  "runningText": "paste this into Claude…",
+  "output": [],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 403
+ },
+ "titleOut": {
+  "title": "Bear Brown Logo, In Motion — Part One.",
+  "handle": "@NikBearBrown",
+  "subline": "four arrivals · every move built in Remotion",
+  "durationF": 132
+ }
+}

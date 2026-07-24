@@ -1,0 +1,197 @@
+{
+  "mark": "bear-brown-logo",
+  "handle": "@NikBearBrown",
+  "series_title": "Bear Brown Logo, In Motion",
+  "_gate": "GATE — human approves every narration line in this file before Kokoro audio is generated.",
+  "build_full_16x9": false,
+
+  "episodes": [
+    {
+      "n": 1,
+      "title": "Arrivals",
+      "techniques": ["B01", "B04"],
+      "include_comp_intro": true,
+      "intro": null,
+      "your_turn": {
+        "narration": "Your turn. Paste this: animate my logo's entrance with a spring, then a mask wipe — and tell me which one feels like a reveal and which one feels like a pop. A reveal implies something was hidden. A pop implies it just decided to exist.",
+        "prompt": "Animate my logo's entrance with a spring, then a mask wipe — and tell me which one feels like a reveal and which one feels like a pop.",
+        "greeting": "Your turn.",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Arrivals",
+        "runningText": "paste this into Claude…"
+      },
+      "title_out": {
+        "narration": "Bear Brown logo, in motion. Part one. Liam, in for Bear.",
+        "title": "Bear Brown Logo, In Motion — Part One.",
+        "subline": "four arrivals · every move built in Remotion"
+      },
+      "recap": {
+        "narration": "Let's recap with Claude. Spring entrance — clean, settles into position. Overshoot spring — high stiffness, the mark slams in, squashes, rebounds; it's overconfident and that's useful. Draw-on stroke in terracotta, then the fill. Mask reveal with a clip-path wipe then an iris. Four arrivals, four personalities.",
+        "artifactTitle": "Recap",
+        "artifactHeading": "Arrivals",
+        "artifactLines": [
+          "Spring — the settle is the whole statement.",
+          "Overshoot — slams in, squashes, confident.",
+          "Draw-on stroke — terracotta traces, fill follows.",
+          "Mask + iris — clip-path wipe into a center open."
+        ]
+      }
+    },
+    {
+      "n": 2,
+      "title": "Transforms",
+      "techniques": ["B05", "B08"],
+      "include_comp_intro": false,
+      "intro": {
+        "narration": "Liam, in for Bear — part two of the Bear Brown logo. Four transforms: scale zoom linear then bezier, rotation with a spring pivot and a slow hold, a skew-and-shear lean to eighteen degrees, and a blur entrance — eighteen pixels clearing to zero. Every one of them is interpolate plus an easing curve.",
+        "greeting": "Salut, Liam",
+        "command": "animate bear-brown-logo.svg — transforms: zoom, rotation, skew, blur — part 2 of 5",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Transforms",
+        "runningText": "rendering part two…",
+        "output": ["Scale Zoom · Rotation", "Skew And Shear · Opacity Through Blur"]
+      },
+      "your_turn": {
+        "narration": "Your turn. Paste this: skew my logo to eighteen degrees, hold it there for a beat, then release back to vertical — and tell me whether the lean reads as italic or as unstable. That's a brand question, not a code question.",
+        "prompt": "Skew my logo to 18°, hold for a beat, release to vertical — and tell me whether the lean reads as italic or unstable.",
+        "greeting": "Your turn.",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Transforms",
+        "runningText": "paste this into Claude…"
+      },
+      "title_out": {
+        "narration": "Bear Brown logo, in motion. Part two. Liam, in for Bear.",
+        "title": "Bear Brown Logo, In Motion — Part Two.",
+        "subline": "four transforms · every move built in Remotion"
+      },
+      "recap": {
+        "narration": "Let's recap with Claude. Linear scale versus bezier — you can hear the difference even watching it. Spring rotation, then a meditative slow hold. Skew and shear: Italian lean, eighteen degrees, then back to vertical. Blur clearing — the mark arrives out of focus and sharpens. Easing is design.",
+        "artifactTitle": "Recap",
+        "artifactHeading": "Transforms",
+        "artifactLines": [
+          "Scale zoom — linear indifference vs bezier landing.",
+          "Rotation — spring pivot, then a slow meditative hold.",
+          "Skew and shear — italic lean, holds tension, releases.",
+          "Blur-in — eighteen pixels to zero; arrives in focus."
+        ]
+      }
+    },
+    {
+      "n": 3,
+      "title": "Surface",
+      "techniques": ["B09", "B12"],
+      "include_comp_intro": false,
+      "intro": {
+        "narration": "Liam, in for Bear — part three. The treatment beats: color interpolation sweeping through terracotta path by path, a kinetic grid tiling the mark across the frame on staggered delays, glitch slices that offset and snap clean, and a trail echo with five ghost copies chasing the slide.",
+        "greeting": "Konnichiwa, Liam",
+        "command": "animate bear-brown-logo.svg — surface: color, grid, glitch, echo — part 3 of 5",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Surface",
+        "runningText": "rendering part three…",
+        "output": ["Color Interpolation · Kinetic Grid", "Glitch Slices · Trail Echo"]
+      },
+      "your_turn": {
+        "narration": "Your turn. Paste this: sweep my logo through terracotta and back, path by path, left to right — and tell me whether the sweep reads as brand moment or as loading indicator. If it reads as loading, the duration is wrong.",
+        "prompt": "Sweep my logo through terracotta and back, path by path left to right — and tell me whether it reads as brand moment or loading indicator.",
+        "greeting": "Your turn.",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Surface",
+        "runningText": "paste this into Claude…"
+      },
+      "title_out": {
+        "narration": "Bear Brown logo, in motion. Part three. Liam, in for Bear.",
+        "title": "Bear Brown Logo, In Motion — Part Three.",
+        "subline": "four surface moves · every move built in Remotion"
+      },
+      "recap": {
+        "narration": "Let's recap with Claude. Color sweep through terracotta — this is the one treatment beat in the set, and it earns its place by cycling back. Kinetic grid tiles the mark across the full frame. Glitch: six slices offset, then snap clean — the clean snap is what sells it. Trail echo, five ghost copies at four-frame lag each.",
+        "artifactTitle": "Recap",
+        "artifactHeading": "Surface",
+        "artifactLines": [
+          "Color sweep — terracotta, path by path, and back.",
+          "Kinetic grid — mark tiles, staggered delay.",
+          "Glitch — six slices, deterministic snap.",
+          "Trail echo — five ghosts at 4-frame lag."
+        ]
+      }
+    },
+    {
+      "n": 4,
+      "title": "Physics",
+      "techniques": ["B13", "B16"],
+      "include_comp_intro": false,
+      "intro": {
+        "narration": "Liam, in for Bear — part four. Physics: sine-driven noise wobble that decays to stillness, elastic drop with a squash burst on impact, a card flip in perspective that reads as two-sided, and a shadow layer that stretches ahead of the mark then snaps back. Weight, mass, and depth.",
+        "greeting": "Namaste, Liam",
+        "command": "animate bear-brown-logo.svg — physics: wobble, elastic, flip, shadow — part 4 of 5",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Physics",
+        "runningText": "rendering part four…",
+        "output": ["Noise Wobble · Elastic Physics", "Card Flip · Shadow Play"]
+      },
+      "your_turn": {
+        "narration": "Your turn. Paste this: drop my logo from above with an elastic spring — squash burst on impact — then add a shadow that stretches ahead and snaps back. Tell me whether the combo reads as object or as character. That gap is where brand lives.",
+        "prompt": "Drop my logo with an elastic spring — squash on impact — add a shadow that stretches ahead then snaps back, and tell me whether it reads as object or character.",
+        "greeting": "Your turn.",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Physics",
+        "runningText": "paste this into Claude…"
+      },
+      "title_out": {
+        "narration": "Bear Brown logo, in motion. Part four. Liam, in for Bear.",
+        "title": "Bear Brown Logo, In Motion — Part Four.",
+        "subline": "four physics moves · every move built in Remotion"
+      },
+      "recap": {
+        "narration": "Let's recap with Claude. Sine jitter that decays — stillness is the destination. Elastic drop with a squash burst — the spring config is the entire personality. Card flip at perspective rotateY, second pass slow. Shadow stretches to fifty pixels, blurs, then snaps. Four different ways to give a flat SVG a sense of mass.",
+        "artifactTitle": "Recap",
+        "artifactHeading": "Physics",
+        "artifactLines": [
+          "Noise wobble — decays; stillness is the destination.",
+          "Elastic drop — squash burst, spring config is all.",
+          "Card flip — perspective rotateY, two passes.",
+          "Shadow — stretches ahead, snaps; cheapest depth."
+        ]
+      }
+    },
+    {
+      "n": 5,
+      "title": "Pulse, Breath & Exit",
+      "techniques": ["B17", "B20"],
+      "include_comp_intro": false,
+      "intro": {
+        "narration": "Liam, in for Bear — the last part of the Bear Brown logo. Composer summon, stroke pulse, scale breathe, and the exit family. Everything after the entrance and before the silence: how a mark idles, and how it leaves.",
+        "greeting": "Shalom, Liam",
+        "command": "animate bear-brown-logo.svg — pulse, breath + exits — part 5 of 5",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Pulse, Breath & Exit",
+        "runningText": "rendering part five…",
+        "output": ["Composer Summon · Stroke Pulse", "Scale Breathe · Exit Family"]
+      },
+      "your_turn": {
+        "narration": "Your turn. Paste this: give my logo an idle state using a stroke dashoffset heartbeat and a one-percent scale breathe — then argue for which of the three exits in the family best suits an education brand. Idle states are the most forgotten tool in logo motion.",
+        "prompt": "Give my logo an idle state using a stroke dashoffset heartbeat and a 1% scale breathe — then argue for which of the three exits best suits an education brand.",
+        "greeting": "Your turn.",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Pulse, Breath & Exit",
+        "runningText": "paste this into Claude…"
+      },
+      "title_out": {
+        "narration": "Bear Brown logo, in motion. Part five. All twenty. Liam, in for Bear.",
+        "title": "Bear Brown Logo, In Motion — Part Five.",
+        "subline": "pulse, breath and exits · every move built in Remotion"
+      },
+      "recap": {
+        "narration": "Let's recap with Claude. Composer summon: the mark appears as if sent from a Claude prompt, terracotta typing, send button, reveal. Stroke pulse: dashoffset cycling like a heartbeat — the outline breathes. Scale breathe: one percent oscillation, continuous. Exit family: shrink-spin, blur-out, iris close. A mark that never rests never feels real.",
+        "artifactTitle": "Recap",
+        "artifactHeading": "Pulse, Breath & Exit",
+        "artifactLines": [
+          "Composer summon — typed into the Claude UI.",
+          "Stroke pulse — dashoffset heartbeat, outline breathes.",
+          "Scale breathe — 1% sine oscillation, continuous.",
+          "Exits — shrink-spin, blur-out, iris. Pick one."
+        ]
+      }
+    }
+  ]
+}

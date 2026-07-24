@@ -1,0 +1,45 @@
+{
+ "mark": "hai-wordmark",
+ "bodyStartFrame": 4268,
+ "bodyEndFrame": 5081,
+ "intro": {
+  "greeting": "Aloha, Liam",
+  "command": "animate hai-wordmark.svg — loop, assembly + exits — part 5 of 5",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Loop, Assembly & Exit",
+  "runningText": "rendering part five…",
+  "output": [
+   "Marquee Loop · Assembly",
+   "Exit Family"
+  ],
+  "folderLabel": "@HumanitariansAI",
+  "durationF": 543
+ },
+ "verdict": {
+  "artifactTitle": "Recap",
+  "artifactHeading": "Loop, Assembly & Exit",
+  "artifactLines": [
+   "Marquee — slow: ambient. Medium: active. Fast: urgent.",
+   "Assembly — every glyph from chaos to mark.",
+   "Duration decides: snap vs intention vs chaos.",
+   "Exits — letter-drop, blur-out, wipe-close."
+  ],
+  "durationF": 584
+ },
+ "yourTurn": {
+  "greeting": "Your turn.",
+  "command": "Scatter every glyph in HUMANITARIANS AI to random positions and rotations, spring them home into the wordmark — what duration reads as intention, not snap or chaos?",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Loop, Assembly & Exit",
+  "runningText": "paste this into Claude…",
+  "output": [],
+  "folderLabel": "@HumanitariansAI",
+  "durationF": 465
+ },
+ "titleOut": {
+  "title": "HAI Wordmark, In Motion — Part Five.",
+  "handle": "@HumanitariansAI",
+  "subline": "loop, assembly and exits · @HumanitariansAI",
+  "durationF": 155
+ }
+}

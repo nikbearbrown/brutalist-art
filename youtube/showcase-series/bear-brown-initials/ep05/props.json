@@ -1,0 +1,35 @@
+{
+ "mark": "bear-brown-initials",
+ "bodyStartFrame": 5116,
+ "bodyEndFrame": 6230,
+ "intro": {
+  "greeting": "Selam, Liam",
+  "command": "animate bear-brown-initials.svg — living marks + exits — part 5 of 5",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Living Marks & Exits",
+  "runningText": "rendering part five…",
+  "output": [
+   "Composer Summon · Stroke Pulse",
+   "Scale Breathe · Exit Family"
+  ],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 482
+ },
+ "verdict": null,
+ "yourTurn": {
+  "greeting": "Your turn.",
+  "command": "Build me a living idle for my initials — stroke dashoffset heartbeat plus 96–104% scale breathe — and tell me whether it feels like breathing or anxiety.",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Living Marks & Exits",
+  "runningText": "paste this into Claude…",
+  "output": [],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 459
+ },
+ "titleOut": {
+  "title": "Bear Brown Initials, In Motion — Part Five.",
+  "handle": "@NikBearBrown",
+  "subline": "living marks and exits · every move built in Remotion",
+  "durationF": 158
+ }
+}

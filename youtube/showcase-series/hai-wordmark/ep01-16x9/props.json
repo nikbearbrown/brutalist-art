@@ -1,0 +1,33 @@
+{
+ "mark": "hai-wordmark",
+ "bodyStartFrame": 0,
+ "bodyEndFrame": 1241,
+ "intro": null,
+ "verdict": {
+  "artifactTitle": "Recap",
+  "artifactHeading": "How a Wordmark Arrives",
+  "artifactLines": [
+   "Letter cascade — stagger delay is the design.",
+   "Word slam — HUMANITARIANS heavy, AI shakes.",
+   "Draw-on glyphs — outline traces, fill floods.",
+   "Baseline wave — sine traveling through the word."
+  ],
+  "durationF": 594
+ },
+ "yourTurn": {
+  "greeting": "Your turn.",
+  "command": "Animate the HUMANITARIANS AI wordmark with a letter cascade — each glyph springs in staggered left to right — and tell me the right stagger delay.",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "How a Wordmark Arrives",
+  "runningText": "paste this into Claude…",
+  "output": [],
+  "folderLabel": "@HumanitariansAI",
+  "durationF": 416
+ },
+ "titleOut": {
+  "title": "HAI Wordmark, In Motion — Part One.",
+  "handle": "@HumanitariansAI",
+  "subline": "four arrivals · every move built in Remotion · @HumanitariansAI",
+  "durationF": 133
+ }
+}

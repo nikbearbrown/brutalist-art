@@ -1,0 +1,42 @@
+{
+ "metadata": {
+  "slug": "bear-brown-initials-ep05",
+  "title": "Bear Brown Initials, In Motion",
+  "engine": "kokoro",
+  "voice_kokoro": "am_onyx",
+  "clock": "narration",
+  "purpose": "showcase-series bookend audio"
+ },
+ "beats": [
+  {
+   "beat_id": "E00",
+   "narration_text": "Liam, in for Bear — the last part of the Bear Brown initials. Composer summon, stroke pulse, scale breathe, and the exit family. The idle state is the part of logo motion that almost nobody designs. These three moves — pulse, breathe, summon — are the mark alive between actions.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E00.mp3",
+   "actual_duration_s": 15.72
+  },
+  {
+   "beat_id": "E91",
+   "narration_text": "Your turn. Paste this: build me a living idle state for my initials — stroke pulse on a heartbeat rhythm and a continuous ninety-six to a hundred and four percent scale breathe — and tell me whether the combination feels like breathing or like anxiety. Amplitude is the answer.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E91.mp3",
+   "actual_duration_s": 14.98
+  },
+  {
+   "beat_id": "E92",
+   "narration_text": "Bear Brown initials, in motion. Part five. All twenty. Liam, in for Bear.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E92.mp3",
+   "actual_duration_s": 4.93
+  }
+ ]
+}

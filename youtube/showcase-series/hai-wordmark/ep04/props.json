@@ -1,0 +1,35 @@
+{
+ "mark": "hai-wordmark",
+ "bodyStartFrame": 3130,
+ "bodyEndFrame": 4268,
+ "intro": {
+  "greeting": "Namaste, Liam",
+  "command": "animate hai-wordmark.svg — energy: color, elastic, glitch, stack — part 4 of 5",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Energy & System",
+  "runningText": "rendering part four…",
+  "output": [
+   "Color Interpolation · Elastic Physics",
+   "Glitch Slices · Kinetic Stack"
+  ],
+  "folderLabel": "@HumanitariansAI",
+  "durationF": 601
+ },
+ "verdict": null,
+ "yourTurn": {
+  "greeting": "Your turn.",
+  "command": "Drop the HUMANITARIANS AI wordmark as one unit on an elastic spring, squash on impact — does it read heavier than the stacked two-line layout?",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Energy & System",
+  "runningText": "paste this into Claude…",
+  "output": [],
+  "folderLabel": "@HumanitariansAI",
+  "durationF": 463
+ },
+ "titleOut": {
+  "title": "HAI Wordmark, In Motion — Part Four.",
+  "handle": "@HumanitariansAI",
+  "subline": "four energy moves · every move built in Remotion",
+  "durationF": 134
+ }
+}

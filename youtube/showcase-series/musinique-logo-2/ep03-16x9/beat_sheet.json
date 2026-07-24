@@ -1,0 +1,52 @@
+{
+ "metadata": {
+  "slug": "musinique-logo-2-ep03-16x9",
+  "title": "Musinique, In Motion",
+  "engine": "kokoro",
+  "voice_kokoro": "am_onyx",
+  "clock": "narration",
+  "purpose": "showcase-series bookend audio"
+ },
+ "beats": [
+  {
+   "beat_id": "E00",
+   "narration_text": "Liam, in for Bear — part three of the Musinique mark. Surface moves: color interpolation, a kinetic tile grid, glitch slices that snap clean, and a five-layer trail echo. The mark holds still-ish; the surface does the talking.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E00.mp3",
+   "actual_duration_s": 13.03
+  },
+  {
+   "beat_id": "E90",
+   "narration_text": "Let's recap with Claude. Four surface moves: color interpolation, a staggered kinetic grid, glitch slices that snap clean, and a five-layer trail echo. Notice the mark itself barely moves — the surface carries the energy. These are emphasis moves. Use them mid-scene, never as entrances.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E90.mp3",
+   "actual_duration_s": 15.7
+  },
+  {
+   "beat_id": "E91",
+   "narration_text": "Your turn. Paste this: glitch my logo into seven horizontal slices for half a second, then snap it perfectly clean — and make the clean snap land on a beat.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E91.mp3",
+   "actual_duration_s": 9.39
+  },
+  {
+   "beat_id": "E92",
+   "narration_text": "Musinique, in motion. Part three. Liam, in for Bear.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E92.mp3",
+   "actual_duration_s": 3.71
+  }
+ ]
+}

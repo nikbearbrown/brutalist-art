@@ -1,0 +1,87 @@
+{
+ "metadata": {
+  "slug": "she-walks-in-beauty-short",
+  "title": "She Walks in Beauty — Lord Byron, 1814",
+  "channel": "NikBearBrown",
+  "aspect_ratio": "9:16",
+  "chapter_number": 7,
+  "voice_actor": "Nate (Suno clone) + NikBearBrown intro",
+  "voice_engine": "human-recording + ElevenLabs (B00 intro)",
+  "skill": "recitation-film + lyric-overlay",
+  "notes": "Continuous WAV master clock. GATE 0 alignment complete (align/words.json + align/lines.json). Karaoke + audiogram rendered via Remotion in she-walks-in-beauty-karaoke/. Review cut: mp4/she-walks-in-beauty-review.mp4",
+  "fit": "crop",
+  "kind": "short",
+  "reformat": "center-cut, focus-aware; pantry/<bid>-916.* is the human replacement slot; -916 overrides honored",
+  "derived_from": "she-walks-in-beauty",
+  "dropped_beats": [],
+  "playlist_short": "Shorts",
+  "total_estimated_duration_seconds": 150.61
+ },
+ "beats": [
+  {
+   "beat_id": "B00",
+   "label": "Intro",
+   "shot": {
+    "type": "GRAPHIC",
+    "source": "own"
+   },
+   "narration_text": "The voice you're about to hear reading Lord Byron's 'She Walks in Beauty' isn't me — it's a Suno clone of my voice, directed with the toolkit's session command to shape the delivery musically. The test: watch the karaoke. Every word on screen should light up at the moment you hear it.",
+   "actual_duration_s": 16.3,
+   "audio_file": "mp3/beat-B00.mp3"
+  },
+  {
+   "beat_id": "B01",
+   "label": "Poem (karaoke film)",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own",
+    "notes": "Rendered via she-walks-in-beauty-karaoke/ Remotion project (MusicVideo-Wave composition). Source: continuous WAV + background clips B00-B08 concatenated. Forced alignment: 119/119 words anchored by faster-whisper small.en."
+   },
+   "narration_text": "She walks in beauty, like the night\nOf cloudless climes and starry skies\nAnd all that's best of dark and bright\nMeet in her aspect and her eyes\n\nThus mellowed to that tender light\nWhich heaven to gaudy day denies\nOne shade the more, one ray the less\nHad half impaired the nameless grace\nWhich waves in every raven tress\n\nOr softly lightens o'er her face\nWhere thoughts serenely sweet express\nHow pure, how dear their dwelling-place\nAnd on that cheek, and o'er that brow\nSo soft, so calm, yet eloquent\n\nThe smiles that win, the tints that glow\nBut tell of days in goodness spent\nA mind at peace with all below\nA heart whose love is innocent!",
+   "actual_duration_s": 114.75,
+   "audio_file": "pantry/SheWalksinBeautybyLordByron1814NateSpoken-mastered.wav"
+  },
+  {
+   "beat_id": "B99",
+   "label": "Outro",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own",
+    "motion": "type-on",
+    "remotion": {
+     "pattern": "BrutalistCommentCTA916",
+     "props": {
+      "filename": "brutalist.art",
+      "variant": "A",
+      "topic": "SHE WALKS IN BEAUTY",
+      "code": "// Lord Byron — 1814\n// read by Nate\n// @NikBearBrown · brutalist.art"
+     },
+     "rendered": {
+      "out": "media/B99.mp4",
+      "at": ""
+     }
+    }
+   },
+   "narration_text": "",
+   "actual_duration_s": 15.061,
+   "audio_file": "mp3/beat-B99.mp3"
+  },
+  {
+   "beat_id": "END",
+   "narration_text": "",
+   "actual_duration_s": 4.5,
+   "audio_file": "mp3/beat-END.mp3",
+   "shot": {
+    "type": "CARD",
+    "source": "own",
+    "motion": "hold",
+    "treatment": "none"
+   },
+   "card": {
+    "handle": "@nikbearbrown",
+    "next": "",
+    "silent": true
+   }
+  }
+ ]
+}

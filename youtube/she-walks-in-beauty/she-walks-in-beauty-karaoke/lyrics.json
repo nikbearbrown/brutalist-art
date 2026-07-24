@@ -1,0 +1,789 @@
+{
+  "version": 1,
+  "fps": 24,
+  "lines": [
+    {
+      "index": 0,
+      "text": "She walks in beauty, like the night",
+      "section": "poem",
+      "tag": null,
+      "startFrame": 0,
+      "endFrame": 185,
+      "words": [
+        {
+          "text": "She",
+          "startFrame": 0,
+          "endFrame": 10
+        },
+        {
+          "text": "walks",
+          "startFrame": 10,
+          "endFrame": 24
+        },
+        {
+          "text": "in",
+          "startFrame": 24,
+          "endFrame": 39
+        },
+        {
+          "text": "beauty,",
+          "startFrame": 39,
+          "endFrame": 64
+        },
+        {
+          "text": "like",
+          "startFrame": 64,
+          "endFrame": 124
+        },
+        {
+          "text": "the",
+          "startFrame": 124,
+          "endFrame": 146
+        },
+        {
+          "text": "night",
+          "startFrame": 146,
+          "endFrame": 185
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "text": "Of cloudless climes and starry skies",
+      "section": "poem",
+      "tag": null,
+      "startFrame": 255,
+      "endFrame": 379,
+      "words": [
+        {
+          "text": "Of",
+          "startFrame": 255,
+          "endFrame": 272
+        },
+        {
+          "text": "cloudless",
+          "startFrame": 272,
+          "endFrame": 296
+        },
+        {
+          "text": "climes",
+          "startFrame": 309,
+          "endFrame": 320
+        },
+        {
+          "text": "and",
+          "startFrame": 322,
+          "endFrame": 341
+        },
+        {
+          "text": "starry",
+          "startFrame": 341,
+          "endFrame": 365
+        },
+        {
+          "text": "skies",
+          "startFrame": 365,
+          "endFrame": 379
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "text": "And all that's best of dark and bright",
+      "section": "poem",
+      "tag": null,
+      "startFrame": 401,
+      "endFrame": 537,
+      "words": [
+        {
+          "text": "And",
+          "startFrame": 401,
+          "endFrame": 418
+        },
+        {
+          "text": "all",
+          "startFrame": 418,
+          "endFrame": 429
+        },
+        {
+          "text": "that's",
+          "startFrame": 429,
+          "endFrame": 438
+        },
+        {
+          "text": "best",
+          "startFrame": 438,
+          "endFrame": 450
+        },
+        {
+          "text": "of",
+          "startFrame": 450,
+          "endFrame": 460
+        },
+        {
+          "text": "dark",
+          "startFrame": 460,
+          "endFrame": 477
+        },
+        {
+          "text": "and",
+          "startFrame": 477,
+          "endFrame": 514
+        },
+        {
+          "text": "bright",
+          "startFrame": 514,
+          "endFrame": 537
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "text": "Meet in her aspect and her eyes",
+      "section": "poem",
+      "tag": null,
+      "startFrame": 570,
+      "endFrame": 748,
+      "words": [
+        {
+          "text": "Meet",
+          "startFrame": 570,
+          "endFrame": 600
+        },
+        {
+          "text": "in",
+          "startFrame": 603,
+          "endFrame": 633
+        },
+        {
+          "text": "her",
+          "startFrame": 636,
+          "endFrame": 653
+        },
+        {
+          "text": "aspect",
+          "startFrame": 665,
+          "endFrame": 676
+        },
+        {
+          "text": "and",
+          "startFrame": 677,
+          "endFrame": 721
+        },
+        {
+          "text": "her",
+          "startFrame": 721,
+          "endFrame": 731
+        },
+        {
+          "text": "eyes",
+          "startFrame": 731,
+          "endFrame": 748
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "text": "Thus mellowed to that tender light",
+      "section": "poem",
+      "tag": null,
+      "startFrame": 757,
+      "endFrame": 835,
+      "words": [
+        {
+          "text": "Thus",
+          "startFrame": 757,
+          "endFrame": 765
+        },
+        {
+          "text": "mellowed",
+          "startFrame": 766,
+          "endFrame": 773
+        },
+        {
+          "text": "to",
+          "startFrame": 774,
+          "endFrame": 784
+        },
+        {
+          "text": "that",
+          "startFrame": 784,
+          "endFrame": 802
+        },
+        {
+          "text": "tender",
+          "startFrame": 802,
+          "endFrame": 812
+        },
+        {
+          "text": "light",
+          "startFrame": 812,
+          "endFrame": 835
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "text": "Which heaven to gaudy day denies",
+      "section": "poem",
+      "tag": null,
+      "startFrame": 885,
+      "endFrame": 971,
+      "words": [
+        {
+          "text": "Which",
+          "startFrame": 885,
+          "endFrame": 907
+        },
+        {
+          "text": "heaven",
+          "startFrame": 907,
+          "endFrame": 916
+        },
+        {
+          "text": "to",
+          "startFrame": 916,
+          "endFrame": 924
+        },
+        {
+          "text": "gaudy",
+          "startFrame": 933,
+          "endFrame": 941
+        },
+        {
+          "text": "day",
+          "startFrame": 942,
+          "endFrame": 950
+        },
+        {
+          "text": "denies",
+          "startFrame": 950,
+          "endFrame": 971
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "text": "One shade the more, one ray the less",
+      "section": "poem",
+      "tag": null,
+      "startFrame": 971,
+      "endFrame": 1046,
+      "words": [
+        {
+          "text": "One",
+          "startFrame": 971,
+          "endFrame": 984
+        },
+        {
+          "text": "shade",
+          "startFrame": 984,
+          "endFrame": 990
+        },
+        {
+          "text": "the",
+          "startFrame": 990,
+          "endFrame": 996
+        },
+        {
+          "text": "more,",
+          "startFrame": 996,
+          "endFrame": 1007
+        },
+        {
+          "text": "one",
+          "startFrame": 1009,
+          "endFrame": 1015
+        },
+        {
+          "text": "ray",
+          "startFrame": 1015,
+          "endFrame": 1021
+        },
+        {
+          "text": "the",
+          "startFrame": 1022,
+          "endFrame": 1026
+        },
+        {
+          "text": "less",
+          "startFrame": 1026,
+          "endFrame": 1046
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "text": "Had half impaired the nameless grace",
+      "section": "poem",
+      "tag": null,
+      "startFrame": 1046,
+      "endFrame": 1112,
+      "words": [
+        {
+          "text": "Had",
+          "startFrame": 1046,
+          "endFrame": 1057
+        },
+        {
+          "text": "half",
+          "startFrame": 1057,
+          "endFrame": 1065
+        },
+        {
+          "text": "impaired",
+          "startFrame": 1065,
+          "endFrame": 1081
+        },
+        {
+          "text": "the",
+          "startFrame": 1081,
+          "endFrame": 1086
+        },
+        {
+          "text": "nameless",
+          "startFrame": 1086,
+          "endFrame": 1098
+        },
+        {
+          "text": "grace",
+          "startFrame": 1098,
+          "endFrame": 1112
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "text": "Which waves in every raven tress",
+      "section": "poem",
+      "tag": null,
+      "startFrame": 1112,
+      "endFrame": 1187,
+      "words": [
+        {
+          "text": "Which",
+          "startFrame": 1112,
+          "endFrame": 1128
+        },
+        {
+          "text": "waves",
+          "startFrame": 1128,
+          "endFrame": 1135
+        },
+        {
+          "text": "in",
+          "startFrame": 1135,
+          "endFrame": 1142
+        },
+        {
+          "text": "every",
+          "startFrame": 1142,
+          "endFrame": 1157
+        },
+        {
+          "text": "raven",
+          "startFrame": 1157,
+          "endFrame": 1167
+        },
+        {
+          "text": "tress",
+          "startFrame": 1178,
+          "endFrame": 1187
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "text": "Or softly lightens o'er her face",
+      "section": "poem",
+      "tag": null,
+      "startFrame": 1188,
+      "endFrame": 1259,
+      "words": [
+        {
+          "text": "Or",
+          "startFrame": 1188,
+          "endFrame": 1198
+        },
+        {
+          "text": "softly",
+          "startFrame": 1199,
+          "endFrame": 1210
+        },
+        {
+          "text": "lightens",
+          "startFrame": 1210,
+          "endFrame": 1233
+        },
+        {
+          "text": "o'er",
+          "startFrame": 1235,
+          "endFrame": 1237
+        },
+        {
+          "text": "her",
+          "startFrame": 1237,
+          "endFrame": 1242
+        },
+        {
+          "text": "face",
+          "startFrame": 1242,
+          "endFrame": 1259
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "text": "Where thoughts serenely sweet express",
+      "section": "poem",
+      "tag": null,
+      "startFrame": 1259,
+      "endFrame": 1322,
+      "words": [
+        {
+          "text": "Where",
+          "startFrame": 1259,
+          "endFrame": 1271
+        },
+        {
+          "text": "thoughts",
+          "startFrame": 1271,
+          "endFrame": 1278
+        },
+        {
+          "text": "serenely",
+          "startFrame": 1287,
+          "endFrame": 1296
+        },
+        {
+          "text": "sweet",
+          "startFrame": 1297,
+          "endFrame": 1307
+        },
+        {
+          "text": "express",
+          "startFrame": 1307,
+          "endFrame": 1322
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "text": "How pure, how dear their dwelling-place",
+      "section": "poem",
+      "tag": null,
+      "startFrame": 1322,
+      "endFrame": 1458,
+      "words": [
+        {
+          "text": "How",
+          "startFrame": 1322,
+          "endFrame": 1338
+        },
+        {
+          "text": "pure,",
+          "startFrame": 1338,
+          "endFrame": 1346
+        },
+        {
+          "text": "how",
+          "startFrame": 1355,
+          "endFrame": 1357
+        },
+        {
+          "text": "dear",
+          "startFrame": 1356,
+          "endFrame": 1364
+        },
+        {
+          "text": "their",
+          "startFrame": 1396,
+          "endFrame": 1426
+        },
+        {
+          "text": "dwelling-place",
+          "startFrame": 1429,
+          "endFrame": 1458
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "text": "And on that cheek, and o'er that brow",
+      "section": "poem",
+      "tag": null,
+      "startFrame": 1461,
+      "endFrame": 1542,
+      "words": [
+        {
+          "text": "And",
+          "startFrame": 1461,
+          "endFrame": 1481
+        },
+        {
+          "text": "on",
+          "startFrame": 1484,
+          "endFrame": 1487
+        },
+        {
+          "text": "that",
+          "startFrame": 1488,
+          "endFrame": 1493
+        },
+        {
+          "text": "cheek,",
+          "startFrame": 1493,
+          "endFrame": 1504
+        },
+        {
+          "text": "and",
+          "startFrame": 1504,
+          "endFrame": 1518
+        },
+        {
+          "text": "o'er",
+          "startFrame": 1521,
+          "endFrame": 1524
+        },
+        {
+          "text": "that",
+          "startFrame": 1524,
+          "endFrame": 1530
+        },
+        {
+          "text": "brow",
+          "startFrame": 1530,
+          "endFrame": 1542
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "text": "So soft, so calm, yet eloquent",
+      "section": "poem",
+      "tag": null,
+      "startFrame": 1542,
+      "endFrame": 1611,
+      "words": [
+        {
+          "text": "So",
+          "startFrame": 1542,
+          "endFrame": 1558
+        },
+        {
+          "text": "soft,",
+          "startFrame": 1558,
+          "endFrame": 1566
+        },
+        {
+          "text": "so",
+          "startFrame": 1569,
+          "endFrame": 1571
+        },
+        {
+          "text": "calm,",
+          "startFrame": 1571,
+          "endFrame": 1584
+        },
+        {
+          "text": "yet",
+          "startFrame": 1584,
+          "endFrame": 1591
+        },
+        {
+          "text": "eloquent",
+          "startFrame": 1591,
+          "endFrame": 1611
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "text": "The smiles that win, the tints that glow",
+      "section": "poem",
+      "tag": null,
+      "startFrame": 1611,
+      "endFrame": 1687,
+      "words": [
+        {
+          "text": "The",
+          "startFrame": 1611,
+          "endFrame": 1623
+        },
+        {
+          "text": "smiles",
+          "startFrame": 1623,
+          "endFrame": 1634
+        },
+        {
+          "text": "that",
+          "startFrame": 1634,
+          "endFrame": 1642
+        },
+        {
+          "text": "win,",
+          "startFrame": 1642,
+          "endFrame": 1650
+        },
+        {
+          "text": "the",
+          "startFrame": 1650,
+          "endFrame": 1660
+        },
+        {
+          "text": "tints",
+          "startFrame": 1660,
+          "endFrame": 1667
+        },
+        {
+          "text": "that",
+          "startFrame": 1667,
+          "endFrame": 1672
+        },
+        {
+          "text": "glow",
+          "startFrame": 1672,
+          "endFrame": 1687
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "text": "But tell of days in goodness spent",
+      "section": "poem",
+      "tag": null,
+      "startFrame": 1687,
+      "endFrame": 1754,
+      "words": [
+        {
+          "text": "But",
+          "startFrame": 1687,
+          "endFrame": 1701
+        },
+        {
+          "text": "tell",
+          "startFrame": 1701,
+          "endFrame": 1710
+        },
+        {
+          "text": "of",
+          "startFrame": 1710,
+          "endFrame": 1715
+        },
+        {
+          "text": "days",
+          "startFrame": 1715,
+          "endFrame": 1725
+        },
+        {
+          "text": "in",
+          "startFrame": 1725,
+          "endFrame": 1732
+        },
+        {
+          "text": "goodness",
+          "startFrame": 1732,
+          "endFrame": 1740
+        },
+        {
+          "text": "spent",
+          "startFrame": 1747,
+          "endFrame": 1754
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "text": "A mind at peace with all below",
+      "section": "poem",
+      "tag": null,
+      "startFrame": 1754,
+      "endFrame": 1823,
+      "words": [
+        {
+          "text": "A",
+          "startFrame": 1754,
+          "endFrame": 1767
+        },
+        {
+          "text": "mind",
+          "startFrame": 1775,
+          "endFrame": 1781
+        },
+        {
+          "text": "at",
+          "startFrame": 1782,
+          "endFrame": 1789
+        },
+        {
+          "text": "peace",
+          "startFrame": 1790,
+          "endFrame": 1796
+        },
+        {
+          "text": "with",
+          "startFrame": 1797,
+          "endFrame": 1809
+        },
+        {
+          "text": "all",
+          "startFrame": 1809,
+          "endFrame": 1815
+        },
+        {
+          "text": "below",
+          "startFrame": 1815,
+          "endFrame": 1823
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "text": "A heart whose love is innocent!",
+      "section": "poem",
+      "tag": null,
+      "startFrame": 1892,
+      "endFrame": 1958,
+      "words": [
+        {
+          "text": "A",
+          "startFrame": 1892,
+          "endFrame": 1912
+        },
+        {
+          "text": "heart",
+          "startFrame": 1912,
+          "endFrame": 1926
+        },
+        {
+          "text": "whose",
+          "startFrame": 1928,
+          "endFrame": 1931
+        },
+        {
+          "text": "love",
+          "startFrame": 1931,
+          "endFrame": 1946
+        },
+        {
+          "text": "is",
+          "startFrame": 1946,
+          "endFrame": 1951
+        },
+        {
+          "text": "innocent!",
+          "startFrame": 1951,
+          "endFrame": 1958
+        }
+      ]
+    }
+  ],
+  "timing_source": "whisper-forced-alignment",
+  "density": {
+    "words_per_second": 1.45,
+    "density_class": "sparse",
+    "avg_line_length": 6.6,
+    "line_count": 18,
+    "word_count": 119
+  }
+}

@@ -1,0 +1,35 @@
+{
+ "mark": "bear-brown-initials",
+ "bodyStartFrame": 3871,
+ "bodyEndFrame": 5116,
+ "intro": {
+  "greeting": "Ciao, Liam",
+  "command": "animate bear-brown-initials.svg — weight: wobble, elastic, flip, shadow — part 4 of 5",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Weight & Depth",
+  "runningText": "rendering part four…",
+  "output": [
+   "Noise Wobble · Elastic Physics",
+   "Card Flip · Shadow Play"
+  ],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 482
+ },
+ "verdict": null,
+ "yourTurn": {
+  "greeting": "Your turn.",
+  "command": "Animate my initials with a card flip — perspective rotateY — and show me what's on the second face. Blank, inverted, or branded: show all three.",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Weight & Depth",
+  "runningText": "paste this into Claude…",
+  "output": [],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 401
+ },
+ "titleOut": {
+  "title": "Bear Brown Initials, In Motion — Part Four.",
+  "handle": "@NikBearBrown",
+  "subline": "four weight moves · every move built in Remotion",
+  "durationF": 139
+ }
+}

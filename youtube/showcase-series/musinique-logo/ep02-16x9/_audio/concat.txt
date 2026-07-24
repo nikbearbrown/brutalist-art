@@ -1,0 +1,8 @@
+file 'p000.wav'
+file 'p001.wav'
+file 'p002.wav'
+file 'p003.wav'
+file 'p004.wav'
+file 'p005.wav'
+file 'p006.wav'
+file 'p007.wav'

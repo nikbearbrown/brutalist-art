@@ -1,0 +1,45 @@
+{
+ "mark": "bear-brown-logo",
+ "bodyStartFrame": 1261,
+ "bodyEndFrame": 2296,
+ "intro": {
+  "greeting": "Salut, Liam",
+  "command": "animate bear-brown-logo.svg — transforms: zoom, rotation, skew, blur — part 2 of 5",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Transforms",
+  "runningText": "rendering part two…",
+  "output": [
+   "Scale Zoom · Rotation",
+   "Skew And Shear · Opacity Through Blur"
+  ],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 494
+ },
+ "verdict": {
+  "artifactTitle": "Recap",
+  "artifactHeading": "Transforms",
+  "artifactLines": [
+   "Scale zoom — linear indifference vs bezier landing.",
+   "Rotation — spring pivot, then a slow meditative hold.",
+   "Skew and shear — italic lean, holds tension, releases.",
+   "Blur-in — eighteen pixels to zero; arrives in focus."
+  ],
+  "durationF": 478
+ },
+ "yourTurn": {
+  "greeting": "Your turn.",
+  "command": "Skew my logo to 18°, hold for a beat, release to vertical — and tell me whether the lean reads as italic or unstable.",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Transforms",
+  "runningText": "paste this into Claude…",
+  "output": [],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 379
+ },
+ "titleOut": {
+  "title": "Bear Brown Logo, In Motion — Part Two.",
+  "handle": "@NikBearBrown",
+  "subline": "four transforms · every move built in Remotion",
+  "durationF": 134
+ }
+}

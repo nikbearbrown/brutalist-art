@@ -1,0 +1,42 @@
+{
+ "metadata": {
+  "slug": "musinique-logo-ep01-16x9",
+  "title": "Musinique Logo, In Motion",
+  "engine": "kokoro",
+  "voice_kokoro": "am_onyx",
+  "clock": "narration",
+  "purpose": "showcase-series bookend audio"
+ },
+ "beats": [
+  {
+   "beat_id": "E90",
+   "narration_text": "Let's recap with Claude. Four entrances: a spring that settles, an overshoot that squashes on landing, a per-path stagger across forty-seven paths, and a draw-on stroke where the outline traces before the fill floods. All four say arrival — they say it at very different volumes.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E90.mp3",
+   "actual_duration_s": 15.17
+  },
+  {
+   "beat_id": "E91",
+   "narration_text": "Your turn. Here's the prompt, verbatim: take my logo SVG, run it through spring entrance, draw-on stroke, and stagger — and tell me which one reads as deliberate versus which one just looks busy. That last question is the actual design work.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E91.mp3",
+   "actual_duration_s": 13.4
+  },
+  {
+   "beat_id": "E92",
+   "narration_text": "Musinique logo, in motion. Part one. Liam, in for Bear.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E92.mp3",
+   "actual_duration_s": 4.18
+  }
+ ]
+}

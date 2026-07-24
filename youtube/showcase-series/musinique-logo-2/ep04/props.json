@@ -1,0 +1,35 @@
+{
+ "mark": "musinique-logo-2",
+ "bodyStartFrame": 3033,
+ "bodyEndFrame": 3993,
+ "intro": {
+  "greeting": "Hej, Liam",
+  "command": "animate musinique-logo-2.svg — physics: wobble, elastic, flip, shadow — part 4 of 5",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Physics",
+  "runningText": "rendering part four…",
+  "output": [
+   "Noise Wobble · Elastic Physics",
+   "Card Flip · Shadow Play"
+  ],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 413
+ },
+ "verdict": null,
+ "yourTurn": {
+  "greeting": "Your turn.",
+  "command": "Drop my logo with a heavy elastic spring — squash it 4% on impact — then flip it like a card, and tell me which read matches a music brand.",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Physics",
+  "runningText": "paste this into Claude…",
+  "output": [],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 301
+ },
+ "titleOut": {
+  "title": "Musinique, In Motion — Part Four.",
+  "handle": "@NikBearBrown",
+  "subline": "four physics moves · every move built in Remotion",
+  "durationF": 122
+ }
+}

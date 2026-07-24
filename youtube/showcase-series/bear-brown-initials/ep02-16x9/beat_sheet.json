@@ -1,0 +1,52 @@
+{
+ "metadata": {
+  "slug": "bear-brown-initials-ep02-16x9",
+  "title": "Bear Brown Initials, In Motion",
+  "engine": "kokoro",
+  "voice_kokoro": "am_onyx",
+  "clock": "narration",
+  "purpose": "showcase-series bookend audio"
+ },
+ "beats": [
+  {
+   "beat_id": "E00",
+   "narration_text": "Liam, in for Bear — part two of the Bear Brown initials. Four moves that play with the camera and the mark's own axis: scale zoom with a contrast between linear and bezier, a rotation spring that holds, a skew and shear, and a blur entrance that arrives out of focus and sharpens.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E00.mp3",
+   "actual_duration_s": 15.08
+  },
+  {
+   "beat_id": "E90",
+   "narration_text": "Let's recap with Claude. Linear zoom: uniform, machine-like. Bezier zoom: the landing has an opinion. Rotation springs to negative forty-five then corrects to upright — the spring IS the personality. Skew and shear leans in, holds tension, releases. Blur fade: arrives in fog, sharpens into presence.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E90.mp3",
+   "actual_duration_s": 17.02
+  },
+  {
+   "beat_id": "E91",
+   "narration_text": "Your turn. Paste this: push a camera into my initials mark from eight-times scale — linear in the first half, bezier in the second — and tell me what the bezier landing adds. Linear says machine; bezier says intention.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E91.mp3",
+   "actual_duration_s": 11.78
+  },
+  {
+   "beat_id": "E92",
+   "narration_text": "Bear Brown initials, in motion. Part two. Liam, in for Bear.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E92.mp3",
+   "actual_duration_s": 4.31
+  }
+ ]
+}

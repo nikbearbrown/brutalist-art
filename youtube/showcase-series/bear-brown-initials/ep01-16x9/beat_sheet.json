@@ -1,0 +1,42 @@
+{
+ "metadata": {
+  "slug": "bear-brown-initials-ep01-16x9",
+  "title": "Bear Brown Initials, In Motion",
+  "engine": "kokoro",
+  "voice_kokoro": "am_onyx",
+  "clock": "narration",
+  "purpose": "showcase-series bookend audio"
+ },
+ "beats": [
+  {
+   "beat_id": "E90",
+   "narration_text": "Let's recap with Claude. Spring entrance from zero — the soft damping is the whole character. Overshoot spring: low damping, the mark overshoots past itself then corrects. That over-correction is a design choice. Draw-on stroke in terracotta, then fill. Mask wipe and iris open. Four first impressions.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E90.mp3",
+   "actual_duration_s": 16.02
+  },
+  {
+   "beat_id": "E91",
+   "narration_text": "Your turn. Paste this: animate my initials mark with a spring entrance, then show the same entrance as a draw-on stroke — and tell me which one feels authored and which one feels generated. The answer is in the timing, not the shape.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E91.mp3",
+   "actual_duration_s": 12.37
+  },
+  {
+   "beat_id": "E92",
+   "narration_text": "Bear Brown initials, in motion. Part one. Liam, in for Bear.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E92.mp3",
+   "actual_duration_s": 4.27
+  }
+ ]
+}

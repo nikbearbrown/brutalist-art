@@ -1,0 +1,42 @@
+{
+ "metadata": {
+  "slug": "bear-brown-initials-ep04",
+  "title": "Bear Brown Initials, In Motion",
+  "engine": "kokoro",
+  "voice_kokoro": "am_onyx",
+  "clock": "narration",
+  "purpose": "showcase-series bookend audio"
+ },
+ "beats": [
+  {
+   "beat_id": "E00",
+   "narration_text": "Liam, in for Bear — part four. Weight and depth: noise wobble on three axes that settles, an elastic drop with low damping and a squash on impact, a card flip as if the initials are on a physical card, and a shadow layer that operates independently — stretching, blurring, snapping.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E00.mp3",
+   "actual_duration_s": 15.74
+  },
+  {
+   "beat_id": "E91",
+   "narration_text": "Your turn. Paste this: animate my initials with a card flip — perspective rotateY — and show me what's on the second face. It can be blank, inverted, or branded. The choice of what you put on the back is the design decision, not the flip.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E91.mp3",
+   "actual_duration_s": 13.01
+  },
+  {
+   "beat_id": "E92",
+   "narration_text": "Bear Brown initials, in motion. Part four. Liam, in for Bear.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E92.mp3",
+   "actual_duration_s": 4.29
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "mark": "bear-brown-logo",
+ "bodyStartFrame": 1990,
+ "bodyEndFrame": 2880,
+ "intro": {
+  "greeting": "Konnichiwa, Liam",
+  "command": "animate bear-brown-logo.svg — surface: color, grid, glitch, echo — part 3 of 5",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Surface",
+  "runningText": "rendering part three…",
+  "output": [
+   "Color Interpolation · Kinetic Grid",
+   "Glitch Slices · Trail Echo"
+  ],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 476
+ },
+ "verdict": null,
+ "yourTurn": {
+  "greeting": "Your turn.",
+  "command": "Sweep my logo through terracotta and back, path by path left to right — and tell me whether it reads as brand moment or loading indicator.",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Surface",
+  "runningText": "paste this into Claude…",
+  "output": [],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 379
+ },
+ "titleOut": {
+  "title": "Bear Brown Logo, In Motion — Part Three.",
+  "handle": "@NikBearBrown",
+  "subline": "four surface moves · every move built in Remotion",
+  "durationF": 134
+ }
+}

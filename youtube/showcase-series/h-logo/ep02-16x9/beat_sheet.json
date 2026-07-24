@@ -1,0 +1,52 @@
+{
+ "metadata": {
+  "slug": "h-logo-ep02-16x9",
+  "title": "H Logo, In Motion",
+  "engine": "kokoro",
+  "voice_kokoro": "am_onyx",
+  "clock": "narration",
+  "purpose": "showcase-series bookend audio"
+ },
+ "beats": [
+  {
+   "beat_id": "E00",
+   "narration_text": "Liam, in for Bear — part two of the H logo. Four moves about the space around the mark: clip-path wipe from the left, scale zoom from eight times down to fit, a rotation that holds, and a skew and shear. The H is nearly square — that geometry changes everything about how transforms read.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E00.mp3",
+   "actual_duration_s": 16.3
+  },
+  {
+   "beat_id": "E90",
+   "narration_text": "Let's recap with Claude. Clip-path wipe: the shape of the mark defines the reveal. Scale zoom from eight-times: linear versus bezier — you can hear the difference. Rotation spring entrance then a slow hold. Skew and shear: italic lean, dynamic entrance. The H geometry means symmetry survives every transform.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E90.mp3",
+   "actual_duration_s": 17.13
+  },
+  {
+   "beat_id": "E91",
+   "narration_text": "Your turn. Paste this: rotate the H logo on a spring from negative forty-five degrees, then hold the slow continuous rotation — and tell me at what rotational speed the H stops being a letter and starts being a shape. The answer changes your design options.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E91.mp3",
+   "actual_duration_s": 14.68
+  },
+  {
+   "beat_id": "E92",
+   "narration_text": "H logo, in motion. Part two. Liam, in for Bear.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E92.mp3",
+   "actual_duration_s": 3.78
+  }
+ ]
+}

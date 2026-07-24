@@ -1,0 +1,52 @@
+{
+ "metadata": {
+  "slug": "h-logo-ep03-16x9",
+  "title": "H Logo, In Motion",
+  "engine": "kokoro",
+  "voice_kokoro": "am_onyx",
+  "clock": "narration",
+  "purpose": "showcase-series bookend audio"
+ },
+ "beats": [
+  {
+   "beat_id": "E00",
+   "narration_text": "Liam, in for Bear — part three. Surface: blur-in where the mark arrives out of focus and sharpens, color interpolation ink to terracotta and back, a kinetic grid tiling the H across the frame on staggered delay, and glitch slices that offset and snap clean. The mark holds position; the surface carries the energy.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E00.mp3",
+   "actual_duration_s": 17.0
+  },
+  {
+   "beat_id": "E90",
+   "narration_text": "Let's recap with Claude. Blur arrival: out of focus, sharpens. Color: ink to terracotta and back — the one color beat in this set. Kinetic grid: H tiled, staggered ripple. Glitch: horizontal slices offset for eight frames then snap clean. The snap is why the glitch works. Without the clean resolution it's just noise.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E90.mp3",
+   "actual_duration_s": 17.43
+  },
+  {
+   "beat_id": "E91",
+   "narration_text": "Your turn. Paste this: tile the H logo across the full frame in a kinetic grid, then add a glitch-slice offset to every copy — and tell me at what grid size it reads as wallpaper versus as system. That line is a brand decision.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E91.mp3",
+   "actual_duration_s": 13.25
+  },
+  {
+   "beat_id": "E92",
+   "narration_text": "H logo, in motion. Part three. Liam, in for Bear.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E92.mp3",
+   "actual_duration_s": 3.82
+  }
+ ]
+}

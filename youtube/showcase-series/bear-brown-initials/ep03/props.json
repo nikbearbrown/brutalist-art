@@ -1,0 +1,35 @@
+{
+ "mark": "bear-brown-initials",
+ "bodyStartFrame": 2612,
+ "bodyEndFrame": 3871,
+ "intro": {
+  "greeting": "Kalimera, Liam",
+  "command": "animate bear-brown-initials.svg — texture: color, grid, glitch, echo — part 3 of 5",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Texture & Motion",
+  "runningText": "rendering part three…",
+  "output": [
+   "Color Interpolation · Kinetic Grid",
+   "Glitch Slices · Trail Echo"
+  ],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 475
+ },
+ "verdict": null,
+ "yourTurn": {
+  "greeting": "Your turn.",
+  "command": "Tile my initials across the full frame in a 4×4 kinetic grid with a staggered ripple — and tell me at what point it stops being logo and becomes pattern.",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Texture & Motion",
+  "runningText": "paste this into Claude…",
+  "output": [],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 425
+ },
+ "titleOut": {
+  "title": "Bear Brown Initials, In Motion — Part Three.",
+  "handle": "@NikBearBrown",
+  "subline": "four texture moves · every move built in Remotion",
+  "durationF": 139
+ }
+}

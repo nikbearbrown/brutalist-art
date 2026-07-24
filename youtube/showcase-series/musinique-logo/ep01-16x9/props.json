@@ -1,0 +1,33 @@
+{
+ "mark": "musinique-logo",
+ "bodyStartFrame": 0,
+ "bodyEndFrame": 1598,
+ "intro": null,
+ "verdict": {
+  "artifactTitle": "Recap",
+  "artifactHeading": "Entrances",
+  "artifactLines": [
+   "Spring entrance — the settle IS the character.",
+   "Overshoot — squash on landing, stretch on rise.",
+   "Per-path stagger — forty-seven paths, one wave.",
+   "Draw-on stroke — outline first, fill second."
+  ],
+  "durationF": 465
+ },
+ "yourTurn": {
+  "greeting": "Your turn.",
+  "command": "Take my logo SVG, run it through spring entrance, draw-on stroke, and stagger — and tell me which one reads as deliberate versus which one just looks busy.",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Entrances",
+  "runningText": "paste this into Claude…",
+  "output": [],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 412
+ },
+ "titleOut": {
+  "title": "Musinique Logo, In Motion — Part One.",
+  "handle": "@NikBearBrown",
+  "subline": "four entrances · every move built in Remotion",
+  "durationF": 136
+ }
+}

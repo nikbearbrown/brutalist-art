@@ -1,0 +1,4 @@
+file '/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/she-walks-in-beauty/short/clips/B00.mp4'
+file '/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/she-walks-in-beauty/short/clips/B01.mp4'
+file '/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/she-walks-in-beauty/short/clips/B99.mp4'
+file '/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/she-walks-in-beauty/short/clips/END.mp4'

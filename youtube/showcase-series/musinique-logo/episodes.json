@@ -1,0 +1,197 @@
+{
+  "mark": "musinique-logo",
+  "handle": "@NikBearBrown",
+  "series_title": "Musinique Logo, In Motion",
+  "_gate": "GATE — human approves every narration line in this file before Kokoro audio is generated.",
+  "build_full_16x9": false,
+
+  "episodes": [
+    {
+      "n": 1,
+      "title": "Entrances",
+      "techniques": ["B01", "B04"],
+      "include_comp_intro": true,
+      "intro": null,
+      "your_turn": {
+        "narration": "Your turn. Here's the prompt, verbatim: take my logo SVG, run it through spring entrance, draw-on stroke, and stagger — and tell me which one reads as deliberate versus which one just looks busy. That last question is the actual design work.",
+        "prompt": "Take my logo SVG, run it through spring entrance, draw-on stroke, and stagger — and tell me which one reads as deliberate versus which one just looks busy.",
+        "greeting": "Your turn.",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Entrances",
+        "runningText": "paste this into Claude…"
+      },
+      "title_out": {
+        "narration": "Musinique logo, in motion. Part one. Liam, in for Bear.",
+        "title": "Musinique Logo, In Motion — Part One.",
+        "subline": "four entrances · every move built in Remotion"
+      },
+      "recap": {
+        "narration": "Let's recap with Claude. Four entrances: a spring that settles, an overshoot that squashes on landing, a per-path stagger across forty-seven paths, and a draw-on stroke where the outline traces before the fill floods. All four say arrival — they say it at very different volumes.",
+        "artifactTitle": "Recap",
+        "artifactHeading": "Entrances",
+        "artifactLines": [
+          "Spring entrance — the settle IS the character.",
+          "Overshoot — squash on landing, stretch on rise.",
+          "Per-path stagger — forty-seven paths, one wave.",
+          "Draw-on stroke — outline first, fill second."
+        ]
+      }
+    },
+    {
+      "n": 2,
+      "title": "Reveals & Transforms",
+      "techniques": ["B05", "B08"],
+      "include_comp_intro": false,
+      "intro": {
+        "narration": "Liam, in for Bear — part two of the Musinique logo. Four moves: a clip-path mask reveal, a scale push from eight times down to fit, a rotation spring, and a blur-in. All four are transforms. The difference is what they suggest about the camera.",
+        "greeting": "Bonjour, Liam",
+        "command": "animate musinique-logo.svg — reveals + transforms — part 2 of 5",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Reveals & Transforms",
+        "runningText": "rendering part two…",
+        "output": ["Mask Reveal · Scale Zoom", "Rotation · Opacity Through Blur"]
+      },
+      "your_turn": {
+        "narration": "Your turn. Paste this: wipe my logo left to right with a clip-path mask, then follow it with a scale zoom from eight times — and tell me which one says cinematic and which one says product. One frame is a curtain; the other is a camera.",
+        "prompt": "Wipe my logo left to right with a clip-path mask, then follow with a scale zoom from 8×, and tell me which one says cinematic and which says product.",
+        "greeting": "Your turn.",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Reveals & Transforms",
+        "runningText": "paste this into Claude…"
+      },
+      "title_out": {
+        "narration": "Musinique logo, in motion. Part two. Liam, in for Bear.",
+        "title": "Musinique Logo, In Motion — Part Two.",
+        "subline": "four reveals and transforms · every move built in Remotion"
+      },
+      "recap": {
+        "narration": "Let's recap with Claude. Mask reveal is a curtain. Scale zoom is a camera. Rotation is a pivot — the mark turns as if on an axis. Blur-in materialises it from nothing. All four are about the moment of arrival — they just disagree about what's moving: the mark, the frame, or the air around it.",
+        "artifactTitle": "Recap",
+        "artifactHeading": "Reveals & Transforms",
+        "artifactLines": [
+          "Mask wipe — clip-path is a curtain.",
+          "Scale zoom — camera, not mark, is moving.",
+          "Rotation — spring pivot then a slow hold.",
+          "Blur-in — the mark materialises from nothing."
+        ]
+      }
+    },
+    {
+      "n": 3,
+      "title": "Surface Energy",
+      "techniques": ["B09", "B12"],
+      "include_comp_intro": false,
+      "intro": {
+        "narration": "Liam, in for Bear — part three. Surface energy: an opacity-blur entrance, color interpolation sweeping path by path, a kinetic scatter where all forty-seven paths explode then spring back, and glitch slices that snap clean. The mark barely moves. The surface does the work.",
+        "greeting": "Aloha, Liam",
+        "command": "animate musinique-logo.svg — surface energy: blur, color, scatter, glitch — part 3 of 5",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Surface Energy",
+        "runningText": "rendering part three…",
+        "output": ["Opacity Through Blur · Color Interpolation", "Kinetic Scatter · Glitch Slices"]
+      },
+      "your_turn": {
+        "narration": "Your turn. Paste this: scatter all paths in my logo outward from center, then spring them back home — and tell me whether it reads as chaos-resolving or explosion. The answer tells you whether you own the move.",
+        "prompt": "Scatter all paths in my logo outward from center, then spring them back — and tell me whether it reads as chaos-resolving or explosion.",
+        "greeting": "Your turn.",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Surface Energy",
+        "runningText": "paste this into Claude…"
+      },
+      "title_out": {
+        "narration": "Musinique logo, in motion. Part three. Liam, in for Bear.",
+        "title": "Musinique Logo, In Motion — Part Three.",
+        "subline": "four surface moves · every move built in Remotion"
+      },
+      "recap": {
+        "narration": "Let's recap with Claude. Blur arrival, color sweep path by path, forty-seven paths scatter and spring home, glitch snaps clean. Emphasis moves — all four of them. None of these are entrances or exits. They live in the middle of a sequence, between a hold and whatever comes next.",
+        "artifactTitle": "Recap",
+        "artifactHeading": "Surface Energy",
+        "artifactLines": [
+          "Blur arrival — mark materialises, not appears.",
+          "Color sweep — terracotta, path by path.",
+          "Kinetic scatter — explode out, spring home.",
+          "Glitch — earns the snap by snapping CLEAN."
+        ]
+      }
+    },
+    {
+      "n": 4,
+      "title": "Physics & Weight",
+      "techniques": ["B13", "B16"],
+      "include_comp_intro": false,
+      "intro": {
+        "narration": "Liam, in for Bear — part four. Physics and weight: a trail echo with ghost copies chasing a slide, noise wobble that settles to stillness, elastic physics with a squash burst on impact, and path cascade — all forty-seven paths raining in from above. Weight is the subject.",
+        "greeting": "Hola, Liam",
+        "command": "animate musinique-logo.svg — physics: echo, wobble, elastic, cascade — part 4 of 5",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Physics & Weight",
+        "runningText": "rendering part four…",
+        "output": ["Trail Echo · Noise Wobble", "Elastic Physics · Path Cascade"]
+      },
+      "your_turn": {
+        "narration": "Your turn. Paste this: drop my logo from above with a low-damping elastic spring, squash it on impact, and let the forty-seven paths arrive in a staggered cascade. Then tell me which of the two reads heavier — elastic or cascade. Heaviness is a design choice.",
+        "prompt": "Drop my logo from above with a low-damping elastic spring — squash on impact — then run the same entrance as a path cascade and tell me which reads heavier.",
+        "greeting": "Your turn.",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Physics & Weight",
+        "runningText": "paste this into Claude…"
+      },
+      "title_out": {
+        "narration": "Musinique logo, in motion. Part four. Liam, in for Bear.",
+        "title": "Musinique Logo, In Motion — Part Four.",
+        "subline": "four physics moves · every move built in Remotion"
+      },
+      "recap": {
+        "narration": "Let's recap with Claude. Trail echo, noise wobble, elastic with squash, path cascade raining in. Weight and afterthought — four different ways to make a mark feel like it has mass. The cascade is the wildest bet: forty-seven individual decisions landing in sequence.",
+        "artifactTitle": "Recap",
+        "artifactHeading": "Physics & Weight",
+        "artifactLines": [
+          "Trail echo — low-opacity ghosts on a fast slide.",
+          "Noise wobble — settles; stillness is the punchline.",
+          "Elastic physics — squash burst, spring config is all.",
+          "Path cascade — forty-seven paths, top to bottom."
+        ]
+      }
+    },
+    {
+      "n": 5,
+      "title": "Living & Leaving",
+      "techniques": ["B17", "B20"],
+      "include_comp_intro": false,
+      "intro": {
+        "narration": "Liam, in for Bear — the last part of the Musinique logo. Card flip, shadow play, composer summon, and three exits back to back. Everything after the entrance: how a mark holds space, how it shows its depth, and how it knows when to go.",
+        "greeting": "Olá, Liam",
+        "command": "animate musinique-logo.svg — living + exits — part 5 of 5",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Living & Leaving",
+        "runningText": "rendering part five…",
+        "output": ["Card Flip · Shadow Play", "Composer Summon · Exit Family"]
+      },
+      "your_turn": {
+        "narration": "Your turn. Paste this: build me three exits for my logo — shrink-spin, blur-out, and mask-close — and tell me which one matches a music brand that wants to feel like it still exists after it's gone. Exit is the last thing the audience remembers.",
+        "prompt": "Build me three exits for my logo — shrink-spin, blur-out, and mask-close — and tell me which one matches a music brand that wants to feel like it still exists after it's gone.",
+        "greeting": "Your turn.",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Living & Leaving",
+        "runningText": "paste this into Claude…"
+      },
+      "title_out": {
+        "narration": "Musinique logo, in motion. Part five. All twenty. Liam, in for Bear.",
+        "title": "Musinique Logo, In Motion — Part Five.",
+        "subline": "living marks + exits · every move built in Remotion"
+      },
+      "recap": {
+        "narration": "Let's recap with Claude. Card flip reveals a second face at ninety degrees. Shadow play animates independently — it stretches ahead, snaps back. Composer summon types the mark into existence in the Claude UI. Then three exits, back to back: shrink-spin, blur-out, mask-close. The exit is the last vote.",
+        "artifactTitle": "Recap",
+        "artifactHeading": "Living & Leaving",
+        "artifactLines": [
+          "Card flip — second face at 90°.",
+          "Shadow play — it moves before the mark does.",
+          "Composer summon — typed into existence.",
+          "Exit family — three votes; your brand picks one."
+        ]
+      }
+    }
+  ]
+}

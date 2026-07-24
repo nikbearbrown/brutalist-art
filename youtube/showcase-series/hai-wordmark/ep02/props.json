@@ -1,0 +1,35 @@
+{
+ "mark": "hai-wordmark",
+ "bodyStartFrame": 1241,
+ "bodyEndFrame": 2120,
+ "intro": {
+  "greeting": "Hola, Liam",
+  "command": "animate hai-wordmark.svg — type as motion: tracking, typewriter, mask, highlight — part 2 of 5",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Type as Motion",
+  "runningText": "rendering part two…",
+  "output": [
+   "Tracking Breathe · Typewriter",
+   "Mask Wipe · Highlight Sweep"
+  ],
+  "folderLabel": "@HumanitariansAI",
+  "durationF": 517
+ },
+ "verdict": null,
+ "yourTurn": {
+  "greeting": "Your turn.",
+  "command": "Build a typewriter animation for HUMANITARIANS AI — one glyph per tick, terracotta caret — should the caret blink between glyphs or stay solid? Tell me why.",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Type as Motion",
+  "runningText": "paste this into Claude…",
+  "output": [],
+  "folderLabel": "@HumanitariansAI",
+  "durationF": 414
+ },
+ "titleOut": {
+  "title": "HAI Wordmark, In Motion — Part Two.",
+  "handle": "@HumanitariansAI",
+  "subline": "four type-native moves · every move built in Remotion",
+  "durationF": 136
+ }
+}

@@ -1,0 +1,45 @@
+{
+ "mark": "h-logo",
+ "bodyStartFrame": 2950,
+ "bodyEndFrame": 3819,
+ "intro": {
+  "greeting": "Jambo, Liam",
+  "command": "animate h-logo.svg — physics: echo, wobble, elastic, orbit — part 4 of 5",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Physics",
+  "runningText": "rendering part four…",
+  "output": [
+   "Trail Echo · Noise Wobble",
+   "Elastic Physics · Orbit Parts"
+  ],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 574
+ },
+ "verdict": {
+  "artifactTitle": "Recap",
+  "artifactHeading": "Physics",
+  "artifactLines": [
+   "Trail echo — ghost copies on a fast slide.",
+   "Noise wobble — micro-jitter settles; is quiet interesting?",
+   "Elastic drop — scale-Y squash, spring rebound.",
+   "Orbit parts — H splits, orbits, rejoins. Mark-specific."
+  ],
+  "durationF": 543
+ },
+ "yourTurn": {
+  "greeting": "Your turn.",
+  "command": "Split the H logo's two paths, orbit them around each other on a spring, then rejoin — does it read as playful or structural?",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Physics",
+  "runningText": "paste this into Claude…",
+  "output": [],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 397
+ },
+ "titleOut": {
+  "title": "H Logo, In Motion — Part Four.",
+  "handle": "@NikBearBrown",
+  "subline": "four physics moves · every move built in Remotion",
+  "durationF": 125
+ }
+}

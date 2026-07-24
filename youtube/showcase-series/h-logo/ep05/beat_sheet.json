@@ -1,0 +1,42 @@
+{
+ "metadata": {
+  "slug": "h-logo-ep05",
+  "title": "H Logo, In Motion",
+  "engine": "kokoro",
+  "voice_kokoro": "am_onyx",
+  "clock": "narration",
+  "purpose": "showcase-series bookend audio"
+ },
+ "beats": [
+  {
+   "beat_id": "E00",
+   "narration_text": "Liam, in for Bear — the last part of the H logo. Card flip, shadow play, composer summon, and the exit family. How the H shows depth, how it arrives from the Claude composer, and how it knows to leave.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E00.mp3",
+   "actual_duration_s": 11.75
+  },
+  {
+   "beat_id": "E91",
+   "narration_text": "Your turn. Paste this: run the H logo through all three exits back to back — shrink-spin, blur-out, mask-close — and tell me which exit makes the mark feel like it will come back. The one that feels like a return is your brand exit.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E91.mp3",
+   "actual_duration_s": 12.86
+  },
+  {
+   "beat_id": "E92",
+   "narration_text": "H logo, in motion. Part five. All twenty. Liam, in for Bear.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E92.mp3",
+   "actual_duration_s": 4.44
+  }
+ ]
+}

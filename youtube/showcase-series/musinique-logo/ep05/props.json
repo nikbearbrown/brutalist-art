@@ -1,0 +1,35 @@
+{
+ "mark": "musinique-logo",
+ "bodyStartFrame": 5154,
+ "bodyEndFrame": 6312,
+ "intro": {
+  "greeting": "Olá, Liam",
+  "command": "animate musinique-logo.svg — living + exits — part 5 of 5",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Living & Leaving",
+  "runningText": "rendering part five…",
+  "output": [
+   "Card Flip · Shadow Play",
+   "Composer Summon · Exit Family"
+  ],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 399
+ },
+ "verdict": null,
+ "yourTurn": {
+  "greeting": "Your turn.",
+  "command": "Build me three exits for my logo — shrink-spin, blur-out, and mask-close — and tell me which one matches a music brand that wants to feel like it still exists after it's gone.",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Living & Leaving",
+  "runningText": "paste this into Claude…",
+  "output": [],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 415
+ },
+ "titleOut": {
+  "title": "Musinique Logo, In Motion — Part Five.",
+  "handle": "@NikBearBrown",
+  "subline": "living marks + exits · every move built in Remotion",
+  "durationF": 156
+ }
+}

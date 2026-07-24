@@ -1,0 +1,45 @@
+{
+ "mark": "h-logo",
+ "bodyStartFrame": 2042,
+ "bodyEndFrame": 2950,
+ "intro": {
+  "greeting": "Hej, Liam",
+  "command": "animate h-logo.svg — surface: blur, color, grid, glitch — part 3 of 5",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Surface",
+  "runningText": "rendering part three…",
+  "output": [
+   "Opacity Through Blur · Color Interpolation",
+   "Kinetic Grid · Glitch Slices"
+  ],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 520
+ },
+ "verdict": {
+  "artifactTitle": "Recap",
+  "artifactHeading": "Surface",
+  "artifactLines": [
+   "Blur-in — arrives out of focus, sharpens.",
+   "Color — ink to terracotta and back.",
+   "Kinetic grid — tiled H, staggered ripple.",
+   "Glitch — 8 frames of chaos, then SNAP."
+  ],
+  "durationF": 533
+ },
+ "yourTurn": {
+  "greeting": "Your turn.",
+  "command": "Tile the H logo across the frame in a kinetic grid, add glitch-slice offsets to every copy — at what grid size does it read as wallpaper versus system?",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Surface",
+  "runningText": "paste this into Claude…",
+  "output": [],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 407
+ },
+ "titleOut": {
+  "title": "H Logo, In Motion — Part Three.",
+  "handle": "@NikBearBrown",
+  "subline": "four surface moves · every move built in Remotion",
+  "durationF": 125
+ }
+}

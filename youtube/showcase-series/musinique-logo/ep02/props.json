@@ -1,0 +1,35 @@
+{
+ "mark": "musinique-logo",
+ "bodyStartFrame": 1598,
+ "bodyEndFrame": 2755,
+ "intro": {
+  "greeting": "Bonjour, Liam",
+  "command": "animate musinique-logo.svg — reveals + transforms — part 2 of 5",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Reveals & Transforms",
+  "runningText": "rendering part two…",
+  "output": [
+   "Mask Reveal · Scale Zoom",
+   "Rotation · Opacity Through Blur"
+  ],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 428
+ },
+ "verdict": null,
+ "yourTurn": {
+  "greeting": "Your turn.",
+  "command": "Wipe my logo left to right with a clip-path mask, then follow with a scale zoom from 8×, and tell me which one says cinematic and which says product.",
+  "topic": "BRUTALIST · REMOTION",
+  "segment": "Reveals & Transforms",
+  "runningText": "paste this into Claude…",
+  "output": [],
+  "folderLabel": "@NikBearBrown",
+  "durationF": 397
+ },
+ "titleOut": {
+  "title": "Musinique Logo, In Motion — Part Two.",
+  "handle": "@NikBearBrown",
+  "subline": "four reveals and transforms · every move built in Remotion",
+  "durationF": 134
+ }
+}

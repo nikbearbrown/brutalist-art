@@ -1,0 +1,42 @@
+{
+ "metadata": {
+  "slug": "musinique-logo-ep02",
+  "title": "Musinique Logo, In Motion",
+  "engine": "kokoro",
+  "voice_kokoro": "am_onyx",
+  "clock": "narration",
+  "purpose": "showcase-series bookend audio"
+ },
+ "beats": [
+  {
+   "beat_id": "E00",
+   "narration_text": "Liam, in for Bear — part two of the Musinique logo. Four moves: a clip-path mask reveal, a scale push from eight times down to fit, a rotation spring, and a blur-in. All four are transforms. The difference is what they suggest about the camera.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E00.mp3",
+   "actual_duration_s": 13.91
+  },
+  {
+   "beat_id": "E91",
+   "narration_text": "Your turn. Paste this: wipe my logo left to right with a clip-path mask, then follow it with a scale zoom from eight times — and tell me which one says cinematic and which one says product. One frame is a curtain; the other is a camera.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E91.mp3",
+   "actual_duration_s": 12.89
+  },
+  {
+   "beat_id": "E92",
+   "narration_text": "Musinique logo, in motion. Part two. Liam, in for Bear.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E92.mp3",
+   "actual_duration_s": 4.14
+  }
+ ]
+}

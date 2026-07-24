@@ -1,0 +1,197 @@
+{
+  "mark": "bear-brown-initials",
+  "handle": "@NikBearBrown",
+  "series_title": "Bear Brown Initials, In Motion",
+  "_gate": "GATE — human approves every narration line in this file before Kokoro audio is generated.",
+  "build_full_16x9": false,
+
+  "episodes": [
+    {
+      "n": 1,
+      "title": "First Moves",
+      "techniques": ["B01", "B04"],
+      "include_comp_intro": true,
+      "intro": null,
+      "your_turn": {
+        "narration": "Your turn. Paste this: animate my initials mark with a spring entrance, then show the same entrance as a draw-on stroke — and tell me which one feels authored and which one feels generated. The answer is in the timing, not the shape.",
+        "prompt": "Animate my initials mark with a spring entrance, then show the same entrance as a draw-on stroke — and tell me which feels authored and which feels generated.",
+        "greeting": "Your turn.",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "First Moves",
+        "runningText": "paste this into Claude…"
+      },
+      "title_out": {
+        "narration": "Bear Brown initials, in motion. Part one. Liam, in for Bear.",
+        "title": "Bear Brown Initials, In Motion — Part One.",
+        "subline": "four first moves · every move built in Remotion"
+      },
+      "recap": {
+        "narration": "Let's recap with Claude. Spring entrance from zero — the soft damping is the whole character. Overshoot spring: low damping, the mark overshoots past itself then corrects. That over-correction is a design choice. Draw-on stroke in terracotta, then fill. Mask wipe and iris open. Four first impressions.",
+        "artifactTitle": "Recap",
+        "artifactHeading": "First Moves",
+        "artifactLines": [
+          "Spring — soft damping, the settle is the character.",
+          "Overshoot — over-corrects; that is the design.",
+          "Draw-on stroke — terracotta path, fill follows.",
+          "Mask + iris — wipe then radial open."
+        ]
+      }
+    },
+    {
+      "n": 2,
+      "title": "Camera & Lean",
+      "techniques": ["B05", "B08"],
+      "include_comp_intro": false,
+      "intro": {
+        "narration": "Liam, in for Bear — part two of the Bear Brown initials. Four moves that play with the camera and the mark's own axis: scale zoom with a contrast between linear and bezier, a rotation spring that holds, a skew and shear, and a blur entrance that arrives out of focus and sharpens.",
+        "greeting": "Talofa, Liam",
+        "command": "animate bear-brown-initials.svg — camera + lean: zoom, rotation, skew, blur — part 2 of 5",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Camera & Lean",
+        "runningText": "rendering part two…",
+        "output": ["Scale Zoom · Rotation", "Skew And Shear · Opacity Through Blur"]
+      },
+      "your_turn": {
+        "narration": "Your turn. Paste this: push a camera into my initials mark from eight-times scale — linear in the first half, bezier in the second — and tell me what the bezier landing adds. Linear says machine; bezier says intention.",
+        "prompt": "Push a camera into my initials from 8× scale — linear first half, bezier second — and tell me what the bezier landing adds.",
+        "greeting": "Your turn.",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Camera & Lean",
+        "runningText": "paste this into Claude…"
+      },
+      "title_out": {
+        "narration": "Bear Brown initials, in motion. Part two. Liam, in for Bear.",
+        "title": "Bear Brown Initials, In Motion — Part Two.",
+        "subline": "four camera and lean moves · every move built in Remotion"
+      },
+      "recap": {
+        "narration": "Let's recap with Claude. Linear zoom: uniform, machine-like. Bezier zoom: the landing has an opinion. Rotation springs to negative forty-five then corrects to upright — the spring IS the personality. Skew and shear leans in, holds tension, releases. Blur fade: arrives in fog, sharpens into presence.",
+        "artifactTitle": "Recap",
+        "artifactHeading": "Camera & Lean",
+        "artifactLines": [
+          "Scale zoom — linear is a machine; bezier has intent.",
+          "Rotation — springs to −45°, corrects upright.",
+          "Skew and shear — leans, holds tension, releases.",
+          "Blur-in — arrives in fog, sharpens into presence."
+        ]
+      }
+    },
+    {
+      "n": 3,
+      "title": "Texture & Motion",
+      "techniques": ["B09", "B12"],
+      "include_comp_intro": false,
+      "intro": {
+        "narration": "Liam, in for Bear — part three. Texture and motion: color sweeping to terracotta and back, a kinetic grid tiling the initials across the nine-sixteen frame in a four-beat ripple, glitch slices each offset independently then snap clean, and a trail echo with five ghost copies.",
+        "greeting": "Kalimera, Liam",
+        "command": "animate bear-brown-initials.svg — texture: color, grid, glitch, echo — part 3 of 5",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Texture & Motion",
+        "runningText": "rendering part three…",
+        "output": ["Color Interpolation · Kinetic Grid", "Glitch Slices · Trail Echo"]
+      },
+      "your_turn": {
+        "narration": "Your turn. Paste this: tile my initials across the full frame in a four-by-four kinetic grid with a staggered ripple on each copy — and tell me at what point it stops being a logo animation and starts being a pattern. That line is the one you want to know.",
+        "prompt": "Tile my initials across the full frame in a 4×4 kinetic grid with a staggered ripple — and tell me at what point it stops being logo and becomes pattern.",
+        "greeting": "Your turn.",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Texture & Motion",
+        "runningText": "paste this into Claude…"
+      },
+      "title_out": {
+        "narration": "Bear Brown initials, in motion. Part three. Liam, in for Bear.",
+        "title": "Bear Brown Initials, In Motion — Part Three.",
+        "subline": "four texture moves · every move built in Remotion"
+      },
+      "recap": {
+        "narration": "Let's recap with Claude. Color interpolation — terracotta, the one treatment beat in the set. Kinetic grid: mark tiled, four-beat ripple, the whole frame. Glitch: six slices each offset independently, deterministic snap. Trail echo: the mark slides fast, five ghost copies fade behind it at four-frame lag. Surface is the argument.",
+        "artifactTitle": "Recap",
+        "artifactHeading": "Texture & Motion",
+        "artifactLines": [
+          "Color sweep — terracotta and back, the treatment.",
+          "Kinetic grid — tiled full frame, four-beat ripple.",
+          "Glitch — six independent slices, deterministic snap.",
+          "Trail echo — slide fast, five ghost copies follow."
+        ]
+      }
+    },
+    {
+      "n": 4,
+      "title": "Weight & Depth",
+      "techniques": ["B13", "B16"],
+      "include_comp_intro": false,
+      "intro": {
+        "narration": "Liam, in for Bear — part four. Weight and depth: noise wobble on three axes that settles, an elastic drop with low damping and a squash on impact, a card flip as if the initials are on a physical card, and a shadow layer that operates independently — stretching, blurring, snapping.",
+        "greeting": "Ciao, Liam",
+        "command": "animate bear-brown-initials.svg — weight: wobble, elastic, flip, shadow — part 4 of 5",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Weight & Depth",
+        "runningText": "rendering part four…",
+        "output": ["Noise Wobble · Elastic Physics", "Card Flip · Shadow Play"]
+      },
+      "your_turn": {
+        "narration": "Your turn. Paste this: animate my initials with a card flip — perspective rotateY — and show me what's on the second face. It can be blank, inverted, or branded. The choice of what you put on the back is the design decision, not the flip.",
+        "prompt": "Animate my initials with a card flip — perspective rotateY — and show me what's on the second face. Blank, inverted, or branded: show all three.",
+        "greeting": "Your turn.",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Weight & Depth",
+        "runningText": "paste this into Claude…"
+      },
+      "title_out": {
+        "narration": "Bear Brown initials, in motion. Part four. Liam, in for Bear.",
+        "title": "Bear Brown Initials, In Motion — Part Four.",
+        "subline": "four weight moves · every move built in Remotion"
+      },
+      "recap": {
+        "narration": "Let's recap with Claude. Sine noise wobble on X, Y, and rotation — settles, because stillness is the point. Elastic drop: low damping, squash on impact, rebound. Card flip: perspective rotateY as if physical. Shadow: offset duplicate, stretches ahead, blurs, snaps back. Weight is not size — it's consequence.",
+        "artifactTitle": "Recap",
+        "artifactHeading": "Weight & Depth",
+        "artifactLines": [
+          "Noise wobble — X, Y, rotation; stillness is the goal.",
+          "Elastic drop — low damping, squash, rebound.",
+          "Card flip — perspective rotateY; what's on the back?",
+          "Shadow — stretches ahead, blurs, snaps back."
+        ]
+      }
+    },
+    {
+      "n": 5,
+      "title": "Living Marks & Exits",
+      "techniques": ["B17", "B20"],
+      "include_comp_intro": false,
+      "intro": {
+        "narration": "Liam, in for Bear — the last part of the Bear Brown initials. Composer summon, stroke pulse, scale breathe, and the exit family. The idle state is the part of logo motion that almost nobody designs. These three moves — pulse, breathe, summon — are the mark alive between actions.",
+        "greeting": "Selam, Liam",
+        "command": "animate bear-brown-initials.svg — living marks + exits — part 5 of 5",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Living Marks & Exits",
+        "runningText": "rendering part five…",
+        "output": ["Composer Summon · Stroke Pulse", "Scale Breathe · Exit Family"]
+      },
+      "your_turn": {
+        "narration": "Your turn. Paste this: build me a living idle state for my initials — stroke pulse on a heartbeat rhythm and a continuous ninety-six to a hundred and four percent scale breathe — and tell me whether the combination feels like breathing or like anxiety. Amplitude is the answer.",
+        "prompt": "Build me a living idle for my initials — stroke dashoffset heartbeat plus 96–104% scale breathe — and tell me whether it feels like breathing or anxiety.",
+        "greeting": "Your turn.",
+        "topic": "BRUTALIST · REMOTION",
+        "segment": "Living Marks & Exits",
+        "runningText": "paste this into Claude…"
+      },
+      "title_out": {
+        "narration": "Bear Brown initials, in motion. Part five. All twenty. Liam, in for Bear.",
+        "title": "Bear Brown Initials, In Motion — Part Five.",
+        "subline": "living marks and exits · every move built in Remotion"
+      },
+      "recap": {
+        "narration": "Let's recap with Claude. Composer summon: typed into the Claude UI, terracotta cursor, send, reveal. Stroke pulse: dashoffset heartbeat — the outline of the mark breathes at its own rhythm. Scale breathe: ninety-six to a hundred and four percent, continuous oscillation. Exits: shrink-spin, blur-out, mask-close iris. A mark that rests feels real.",
+        "artifactTitle": "Recap",
+        "artifactHeading": "Living Marks & Exits",
+        "artifactLines": [
+          "Composer summon — typed in, terracotta cursor.",
+          "Stroke pulse — outline breathes, its own rhythm.",
+          "Scale breathe — 96–104%, continuous.",
+          "Exits — shrink-spin, blur-out, iris. Own your exit."
+        ]
+      }
+    }
+  ]
+}

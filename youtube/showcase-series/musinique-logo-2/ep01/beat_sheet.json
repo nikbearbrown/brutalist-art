@@ -1,0 +1,28 @@
+{
+ "metadata": {
+  "slug": "musinique-logo-2-ep01",
+  "title": "Musinique, In Motion",
+  "engine": "kokoro",
+  "voice_kokoro": "am_onyx",
+  "clock": "narration",
+  "purpose": "showcase-series bookend audio"
+ },
+ "beats": [
+  {
+   "beat_id": "E91",
+   "narration_text": "Your turn. Paste this: animate my logo's entrance with a Remotion spring — show me damping five, twenty, and eighty side by side. Three numbers, three personalities.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   }
+  },
+  {
+   "beat_id": "E92",
+   "narration_text": "Musinique, in motion. Part one. Liam, in for Bear.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   }
+  }
+ ]
+}

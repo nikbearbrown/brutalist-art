@@ -1,0 +1,52 @@
+{
+ "metadata": {
+  "slug": "hai-wordmark-ep04-16x9",
+  "title": "HAI Wordmark, In Motion",
+  "engine": "kokoro",
+  "voice_kokoro": "am_onyx",
+  "clock": "narration",
+  "purpose": "showcase-series bookend audio"
+ },
+ "beats": [
+  {
+   "beat_id": "E00",
+   "narration_text": "Liam, in for Bear — part four. Energy and system: color interpolation sweeping terracotta letter by letter, the full wordmark dropping in as one mass on elastic physics, glitch slices offset across the word then snap clean, and kinetic stack — the stacked HUMANITARIANS-over-AI layout rippling letter by letter. The wordmark has a structure. These four moves argue with it.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E00.mp3",
+   "actual_duration_s": 19.69
+  },
+  {
+   "beat_id": "E90",
+   "narration_text": "Let's recap with Claude. Color sweep: terracotta letter by letter across HUMANITARIANS AI — seventeen letters is a long sweep, so duration is the design decision. Elastic physics: the full word lands as one mass. Glitch: horizontal slices across the whole wordmark, then snap clean. Kinetic stack: the stacked layout ripples — two lines of type moving as one system.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E90.mp3",
+   "actual_duration_s": 20.48
+  },
+  {
+   "beat_id": "E91",
+   "narration_text": "Your turn. Paste this: drop the full HUMANITARIANS AI wordmark as one unit with an elastic spring, squash it on impact, and tell me whether the full word reads as heavier than the split-line layout. One mass versus two lines — the weight is different even at the same size.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E91.mp3",
+   "actual_duration_s": 15.08
+  },
+  {
+   "beat_id": "E92",
+   "narration_text": "H A I wordmark, in motion. Part four. Liam, in for Bear.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E92.mp3",
+   "actual_duration_s": 4.12
+  }
+ ]
+}

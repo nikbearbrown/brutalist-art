@@ -1,0 +1,42 @@
+{
+ "metadata": {
+  "slug": "musinique-logo-ep05",
+  "title": "Musinique Logo, In Motion",
+  "engine": "kokoro",
+  "voice_kokoro": "am_onyx",
+  "clock": "narration",
+  "purpose": "showcase-series bookend audio"
+ },
+ "beats": [
+  {
+   "beat_id": "E00",
+   "narration_text": "Liam, in for Bear — the last part of the Musinique logo. Card flip, shadow play, composer summon, and three exits back to back. Everything after the entrance: how a mark holds space, how it shows its depth, and how it knows when to go.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E00.mp3",
+   "actual_duration_s": 12.95
+  },
+  {
+   "beat_id": "E91",
+   "narration_text": "Your turn. Paste this: build me three exits for my logo — shrink-spin, blur-out, and mask-close — and tell me which one matches a music brand that wants to feel like it still exists after it's gone. Exit is the last thing the audience remembers.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E91.mp3",
+   "actual_duration_s": 13.5
+  },
+  {
+   "beat_id": "E92",
+   "narration_text": "Musinique logo, in motion. Part five. All twenty. Liam, in for Bear.",
+   "shot": {
+    "type": "REMOTION",
+    "source": "own"
+   },
+   "audio_file": "mp3/beat-E92.mp3",
+   "actual_duration_s": 4.86
+  }
+ ]
+}
