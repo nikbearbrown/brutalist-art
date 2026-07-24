@@ -1,19 +1,35 @@
 {
   "metadata": {
     "slug": "installs",
-    "title": "Installs, .env & Credentials",
+    "title": "Claude, Installed.",
+    "brand": "claude-liam",
+    "register": "Teardown",
+    "audience": "Claude",
+    "persona": "Liam (in for Bear)",
+    "voice": "am_onyx",
+    "engine": "kokoro",
+    "voice_kokoro": "am_onyx",
+    "palette": "claude",
+    "style_preset": "claude",
+    "ground": "#FAF9F5",
+    "folderLabel": "@NikBearBrown",
+    "in_for_bear": true,
     "topic": "SET UP ONCE",
     "purpose": "Video 2 of 'Brutalist — Claude for Video Production' on @NikBearBrown. The setup video: .env and credentials, what npx/pip/venvs are and why the toolkit uses them, the paid services, and the highest-leverage step — cloning your voice. Meta: built by the toolkit, about the toolkit. Basis doc: docs/Installs.md.",
-    "voice_env": "ELEVENLABS_VOICE_NIKBEARBROWN",
-    "voice_id": "",
-    "clock": "narration (ElevenLabs) — the master clock; every beat conforms to its measured audio",
-    "style_preset": "teardown",
-    "palette": "teardown",
     "playlist": "Brutalist — Claude for Video Production",
+    "chapter_number": 2,
+    "description_blurb": "One file, one clone, one setup that pays off forever. The full Brutalist toolkit install: dot env, Python venvs, the paid services, and the voice clone that saves you thirty minutes every session.",
+    "hashtags": [
+      "#ClaudeCode",
+      "#BrutalistPipeline",
+      "#Remotion",
+      "#Kokoro",
+      "#ElevenLabs",
+      "#AIVideo"
+    ],
     "url": "https://www.brutalist.art/",
     "basis_doc": "docs/Installs.md",
     "total_estimated_duration_seconds": 224.71,
-    "chapter_number": 2,
     "tags": [
       "Claude",
       "Claude Code",
@@ -25,29 +41,39 @@
       "API keys",
       "voice cloning",
       "ElevenLabs"
-    ]
+    ],
+    "build": {
+      "at": "2026-07-22T21:40:07",
+      "cut": "master",
+      "filled": 17,
+      "of": 17,
+      "slates": [],
+      "skin_warnings": []
+    }
   },
   "beats": [
     {
       "beat_id": "B00",
       "act": "INTRO",
-      "narration_text": "Before you make a single video with this toolkit, you set up — once. Keys, credentials, a couple of tools. This is that setup. Not every install: just the parts people trip on, and the one that saves you the most time.",
+      "narration_text": "Hey — this is Liam, in for Bear. One file, one clone, one setup that pays off forever. This is the install video for the Brutalist toolkit: dot env, venvs, the paid services, and the voice clone that saves you thirty minutes every session you'd otherwise spend fighting a microphone.",
       "estimated_duration_s": 9,
       "shot": {
         "type": "REMOTION",
         "source": "own",
         "motion": "type-on",
         "remotion": {
-          "pattern": "BrutalistTerminalOpen",
+          "pattern": "ClaudeComposerAsk",
           "props": {
-            "command": "$ art installs \"set up once\"",
-            "checklist": [
-              "one file: .env",
-              "blank key = feature off",
-              "clone your voice once",
-              "then just make videos"
+            "greeting": "Salut, Bear.",
+            "topic": "BRUTALIST · INSTALLS",
+            "ask": "Install the Brutalist toolkit from scratch.",
+            "outputLines": [
+              "dot env",
+              "venvs",
+              "paid services",
+              "voice clone"
             ],
-            "topic": "SET UP ONCE"
+            "folderLabel": "@NikBearBrown"
           },
           "rendered": {
             "out": "media/B00.mp4",
@@ -56,8 +82,14 @@
         }
       },
       "t_start": 0.0,
-      "actual_duration_s": 13.37,
-      "audio_file": "mp3/beat-B00.mp3"
+      "actual_duration_s": 15.87,
+      "audio_file": "mp3/beat-B00.mp3",
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B00.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T21:40:07"
+      }
     },
     {
       "beat_id": "B01",
@@ -84,7 +116,13 @@
       },
       "t_start": 9.0,
       "actual_duration_s": 18.57,
-      "audio_file": "mp3/beat-B01.mp3"
+      "audio_file": "mp3/beat-B01.mp3",
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B01.mp4",
+        "filled_by": "manim",
+        "at": "2026-07-22T21:40:07"
+      }
     },
     {
       "beat_id": "B02",
@@ -96,14 +134,17 @@
         "source": "own",
         "motion": "type-on",
         "remotion": {
-          "pattern": "NikBearBrownCodeBlock",
+          "pattern": "ClaudeWindow",
           "props": {
             "filename": ".env",
             "segment": "ENV",
-            "topic": "SET UP ONCE",
-            "code": "$ cp .env.example .env    # gitignored — your keys never get committed",
-            "language": "bash",
-            "caption": "one file, blank = off"
+            "topic": "BRUTALIST · INSTALLS",
+            "artifactLines": [
+              "$ cp .env.example .env",
+              "# gitignored — keys never committed",
+              "ELEVENLABS_API_KEY=sk-...",
+              "# blank line = feature off"
+            ]
           },
           "rendered": {
             "out": "media/B02.mp4",
@@ -113,7 +154,13 @@
       },
       "t_start": 25.0,
       "actual_duration_s": 10.63,
-      "audio_file": "mp3/beat-B02.mp3"
+      "audio_file": "mp3/beat-B02.mp3",
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B02.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T21:40:07"
+      }
     },
     {
       "beat_id": "B03",
@@ -140,7 +187,13 @@
       },
       "t_start": 36.0,
       "actual_duration_s": 17.74,
-      "audio_file": "mp3/beat-B03.mp3"
+      "audio_file": "mp3/beat-B03.mp3",
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B03.mp4",
+        "filled_by": "manim",
+        "at": "2026-07-22T21:40:07"
+      }
     },
     {
       "beat_id": "B04",
@@ -167,7 +220,13 @@
       },
       "t_start": 52.0,
       "actual_duration_s": 15.05,
-      "audio_file": "mp3/beat-B04.mp3"
+      "audio_file": "mp3/beat-B04.mp3",
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B04.mp4",
+        "filled_by": "manim",
+        "at": "2026-07-22T21:40:07"
+      }
     },
     {
       "beat_id": "B05",
@@ -179,14 +238,17 @@
         "source": "own",
         "motion": "type-on",
         "remotion": {
-          "pattern": "NikBearBrownCodeBlock",
+          "pattern": "ClaudeWindow",
           "props": {
             "filename": "render.sh",
             "segment": "REMOTION",
-            "topic": "SET UP ONCE",
-            "code": "$ npx remotion render src/index.ts BarChart out/chart.mp4",
-            "language": "bash",
-            "caption": "npx = the version this project pins"
+            "topic": "BRUTALIST · INSTALLS",
+            "artifactLines": [
+              "$ npx remotion render src/index.ts BarChart out/chart.mp4",
+              "# same command on every machine",
+              "# npx picks the pinned version",
+              "# no global install needed"
+            ]
           },
           "rendered": {
             "out": "media/B05.mp4",
@@ -196,7 +258,13 @@
       },
       "t_start": 67.0,
       "actual_duration_s": 9.01,
-      "audio_file": "mp3/beat-B05.mp3"
+      "audio_file": "mp3/beat-B05.mp3",
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B05.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T21:40:07"
+      }
     },
     {
       "beat_id": "B06",
@@ -223,7 +291,13 @@
       },
       "t_start": 77.0,
       "actual_duration_s": 14.39,
-      "audio_file": "mp3/beat-B06.mp3"
+      "audio_file": "mp3/beat-B06.mp3",
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B06.mp4",
+        "filled_by": "manim",
+        "at": "2026-07-22T21:40:07"
+      }
     },
     {
       "beat_id": "B07",
@@ -250,7 +324,13 @@
       },
       "t_start": 90.0,
       "actual_duration_s": 15.07,
-      "audio_file": "mp3/beat-B07.mp3"
+      "audio_file": "mp3/beat-B07.mp3",
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B07.mp4",
+        "filled_by": "manim",
+        "at": "2026-07-22T21:40:07"
+      }
     },
     {
       "beat_id": "B08",
@@ -262,19 +342,16 @@
         "source": "own",
         "motion": "type-on",
         "remotion": {
-          "pattern": "NikBearBrownTerminalAsk",
+          "pattern": "ClaudeWindow",
           "props": {
-            "command": "$ python3 -m venv .venv && . .venv/bin/activate && ./setup",
-            "topic": "SET UP ONCE",
+            "filename": "setup",
             "segment": "PYTHON VENV",
-            "runningText": "checking dependencies…",
-            "output": [
-              "key readiness (live, free)",
+            "topic": "BRUTALIST · INSTALLS",
+            "artifactLines": [
+              "$ python3 -m venv .venv && . .venv/bin/activate",
+              "$ ./setup",
               "  ffmpeg .............. ok",
-              "  Pillow / numpy ...... ok",
-              "  manim ............... ok",
-              "  librosa ............. ok",
-              "green = ready to build"
+              "  manim ............... ok"
             ]
           },
           "rendered": {
@@ -285,7 +362,13 @@
       },
       "t_start": 104.0,
       "actual_duration_s": 9.27,
-      "audio_file": "mp3/beat-B08.mp3"
+      "audio_file": "mp3/beat-B08.mp3",
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B08.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T21:40:07"
+      }
     },
     {
       "beat_id": "B09",
@@ -312,7 +395,13 @@
       },
       "t_start": 117.0,
       "actual_duration_s": 21.13,
-      "audio_file": "mp3/beat-B09.mp3"
+      "audio_file": "mp3/beat-B09.mp3",
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B09.mp4",
+        "filled_by": "manim",
+        "at": "2026-07-22T21:40:07"
+      }
     },
     {
       "beat_id": "B10",
@@ -339,7 +428,13 @@
       },
       "t_start": 134.0,
       "actual_duration_s": 15.6,
-      "audio_file": "mp3/beat-B10.mp3"
+      "audio_file": "mp3/beat-B10.mp3",
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B10.mp4",
+        "filled_by": "manim",
+        "at": "2026-07-22T21:40:07"
+      }
     },
     {
       "beat_id": "B11",
@@ -366,7 +461,13 @@
       },
       "t_start": 148.0,
       "actual_duration_s": 26.17,
-      "audio_file": "mp3/beat-B11.mp3"
+      "audio_file": "mp3/beat-B11.mp3",
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B11.mp4",
+        "filled_by": "manim",
+        "at": "2026-07-22T21:40:07"
+      }
     },
     {
       "beat_id": "B12",
@@ -393,7 +494,13 @@
       },
       "t_start": 169.0,
       "actual_duration_s": 12.85,
-      "audio_file": "mp3/beat-B12.mp3"
+      "audio_file": "mp3/beat-B12.mp3",
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B12.mp4",
+        "filled_by": "manim",
+        "at": "2026-07-22T21:40:07"
+      }
     },
     {
       "beat_id": "B13",
@@ -405,17 +512,16 @@
         "source": "own",
         "motion": "type-on",
         "remotion": {
-          "pattern": "NikBearBrownTerminalAsk",
+          "pattern": "ClaudeWindow",
           "props": {
-            "command": "$ ./art keys",
-            "topic": "SET UP ONCE",
+            "filename": "terminal",
             "segment": "KEY CHECK",
-            "runningText": "validating keys…",
-            "output": [
-              "ElevenLabs  ELEVENLABS_API_KEY   valid   tier=creator",
-              "higgsfield  (CLI login)          valid   logged in",
-              "YouTube     OAuth                valid   channel: NikBearBrown",
-              "all set keys validated."
+            "topic": "BRUTALIST · INSTALLS",
+            "artifactLines": [
+              "$ ./art keys",
+              "  ElevenLabs  ELEVENLABS_API_KEY   valid",
+              "  YouTube     OAuth                valid",
+              "  all keys validated — ready to build"
             ]
           },
           "rendered": {
@@ -426,34 +532,112 @@
       },
       "t_start": 181.0,
       "actual_duration_s": 11.47,
-      "audio_file": "mp3/beat-B13.mp3"
+      "audio_file": "mp3/beat-B13.mp3",
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B13.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T21:40:07"
+      }
     },
     {
-      "beat_id": "B99",
-      "act": "OUTRO",
-      "narration_text": "That's setup. Do the voice clone — it's the highest-leverage thirty minutes you'll spend. Subscribe to follow the series, and find the whole toolkit at www dot brutalist dot art. You bring the taste; the machine brings the hands.",
-      "estimated_duration_s": 11,
+      "beat_id": "BVDT",
+      "act": "VERDICT",
+      "narration_text": "dot env holds your keys. venvs isolate your runtimes. ElevenLabs voice clone is the one paid step worth doing on day one. Everything else is free.",
       "shot": {
-        "type": "REMOTION",
-        "source": "own",
-        "motion": "type-on",
+        "type": "CARD",
+        "source": "remotion",
         "remotion": {
-          "pattern": "BrutalistCommentCTA",
+          "pattern": "ClaudeVerdictArtifact",
           "props": {
-            "filename": "brutalist.art",
-            "variant": "A",
-            "topic": "SET UP ONCE",
-            "code": "// that's setup — now clone your voice\n// subscribe to follow the series\n// @NikBearBrown · brutalist.art"
+            "heading": "Installs",
+            "artifactLines": [
+              "dot env → your keys, never committed",
+              "venvs → isolated runtimes per project",
+              "ElevenLabs → voice clone, paid once",
+              "Kokoro → free narration, zero meter"
+            ],
+            "folderLabel": "@NikBearBrown"
           },
           "rendered": {
-            "out": "media/B99.mp4",
+            "out": "media/BVDT.mp4",
             "at": ""
           }
         }
       },
-      "t_start": 194.0,
-      "actual_duration_s": 14.39,
-      "audio_file": "mp3/beat-B99.mp3"
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BVDT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T21:40:07"
+      },
+      "actual_duration_s": 9.15,
+      "audio_file": "mp3/beat-BVDT.mp3"
+    },
+    {
+      "beat_id": "BHTF",
+      "act": "HANDOFF",
+      "narration_text": "Your turn. Open a terminal, clone the repo, copy dot env dot example to dot env, and fill in your ElevenLabs key. Then run setup dash dash install and watch which lines go green. Anything red is one pip install away. Take that into your session.",
+      "shot": {
+        "type": "CARD",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Your turn.",
+            "topic": "BRUTALIST · INSTALLS",
+            "ask": "Copy .env.example → .env, fill your ElevenLabs key, run ./setup --install, fix every red line.",
+            "outputLines": [
+              "clone repo",
+              "cp .env.example .env",
+              "./setup --install",
+              "fix reds"
+            ],
+            "folderLabel": "@NikBearBrown"
+          },
+          "rendered": {
+            "out": "media/BHTF.mp4",
+            "at": ""
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BHTF.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T21:40:07"
+      },
+      "actual_duration_s": 14.59,
+      "audio_file": "mp3/beat-BHTF.mp3"
+    },
+    {
+      "beat_id": "BOUT",
+      "act": "OUTRO",
+      "narration_text": "Claude, Installed. Liam, in for Bear.",
+      "shot": {
+        "type": "CARD",
+        "source": "remotion",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "Claude, Installed.",
+            "handle": "@NikBearBrown",
+            "subline": "the brutalist toolkit, set up from scratch"
+          },
+          "rendered": {
+            "out": "media/BOUT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BOUT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T21:40:07"
+      },
+      "actual_duration_s": 2.9,
+      "audio_file": "mp3/beat-BOUT.mp3"
     }
   ]
 }

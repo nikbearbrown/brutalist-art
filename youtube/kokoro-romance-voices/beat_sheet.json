@@ -1,371 +1,541 @@
 {
- "metadata": {
-  "slug": "kokoro-romance-voices",
-  "title": "Kokoro: The 9 Romance-Language Voices (Spanish · Portuguese · Italian · French)",
-  "topic": "KOKORO — ROMANCE 9",
-  "purpose": "Language-roster reference cut in the Kokoro family: Bear's ElevenLabs clone introduces in English (B00, the only paid audio, honest about not speaking the language and about the pack's grades), then every voice speaks IN ITS OWN LANGUAGE — an in-language name line plus the localized house tagline, the constant sentence that makes the voices comparable. The group's best-graded voice closes. KokoroRosterCard renders every roster beat; per-voice YouTube chapter markers in the description. Localized lines are machine-authored — FACTCHECK verifies them at build and the description says so. Grades from hexgrad/Kokoro-82M VOICES.md 2026-07-13; ungraded voices stay ungraded. Rides outside the chapter order; cross-links the whole Kokoro roster family.",
-  "voice_env": "ELEVENLABS_VOICE_NIKBEARBROWN",
-  "voice_id": "",
-  "voice_kokoro": "ff_siwis",
-  "clock": "narration — the master clock; every beat conforms to its measured audio (any engine)",
-  "style_preset": "teardown",
-  "palette": "teardown",
-  "playlist": "Brutalist — Claude for Video Production",
-  "url": "https://www.brutalist.art/",
-  "basis_doc": "docs/kokoro-free-voices.md",
-  "tags": [
-   "Kokoro",
-   "TTS",
-   "free TTS",
-   "voice samples",
-   "AI voice",
-   "open source",
-   "Brutalist",
-   "Nik Bear Brown",
-   "Romance 9"
-  ],
-  "total_estimated_duration_seconds": 110
- },
- "beats": [
-  {
-   "beat_id": "B00",
-   "shot": {
-    "type": "REMOTION",
-    "source": "own",
-    "motion": "type-on",
-    "remotion": {
-     "pattern": "BrutalistTerminalOpen",
-     "props": {
-      "command": "$ python3 runtime/scripts/generate_audio_kokoro.py --list-voices",
-      "checklist": [
-       "the Romance 9 roster, in a row",
-       "the pack's own grades, spoken straight",
-       "same house line from every voice",
-       "cast by ear"
-      ],
-      "topic": "KOKORO — ROMANCE 9"
-     },
-     "rendered": {
-      "out": "media/B00.mp4",
-      "at": ""
-     }
+  "metadata": {
+    "slug": "kokoro-romance-voices",
+    "title": "Kokoro, Romance.",
+    "topic": "KOKORO — ROMANCE 9",
+    "purpose": "Language-roster reference cut in the Kokoro family: Liam, in for Bear, introduces in English (B00, am_onyx, free), then every voice speaks IN ITS OWN LANGUAGE — an in-language name line plus the localized house tagline, the constant sentence that makes the voices comparable. The group's best-graded voice closes. KokoroRosterCard renders every roster beat; per-voice YouTube chapter markers in the description. Localized lines are machine-authored — FACTCHECK verifies them at build and the description says so. Grades from hexgrad/Kokoro-82M VOICES.md 2026-07-13; ungraded voices stay ungraded. Rides outside the chapter order; cross-links the whole Kokoro roster family.",
+    "brand": "claude-liam",
+    "palette": "claude",
+    "style_preset": "claude",
+    "ground": "#FAF9F5",
+    "engine": "kokoro",
+    "voice_kokoro": "am_onyx",
+    "register": "Teardown",
+    "persona": "Liam (in for Bear)",
+    "folderLabel": "@NikBearBrown",
+    "in_for_bear": true,
+    "clock": "narration — the master clock; every beat conforms to its measured audio (any engine)",
+    "playlist": "Brutalist — Claude for Video Production",
+    "url": "https://www.brutalist.art/",
+    "basis_doc": "docs/kokoro-free-voices.md",
+    "description_blurb": "Four Romance languages, nine Kokoro voices — Spanish, Brazilian Portuguese, Italian, and French. Each introduces itself in its own language. Cast by ear.",
+    "hashtags": [
+      "#Kokoro",
+      "#TTS",
+      "#AIVoice",
+      "#BrutalistVideo",
+      "#NikBearBrown"
+    ],
+    "tags": [
+      "Kokoro",
+      "TTS",
+      "free TTS",
+      "voice samples",
+      "AI voice",
+      "open source",
+      "Brutalist",
+      "Nik Bear Brown",
+      "Romance 9"
+    ],
+    "total_estimated_duration_seconds": 73.36,
+    "build": {
+      "at": "2026-07-22T18:51:50",
+      "cut": "master",
+      "filled": 13,
+      "of": 13,
+      "slates": [],
+      "skin_warnings": []
     }
-   },
-   "narration_text": "My clone, in English — the Romance languages belong to the cast. One video, four languages: three Spanish voices, three Brazilian Portuguese, two Italian, and one French — which happens to be the best-graded non-English voice in the whole pack, a B minus. The Spanish and Portuguese voices ship ungraded — the pack doesn't score them, so your ear is the only grade. Each voice says its name and the house line in its own language: the machine brings the hands — you bring the taste. Cast by ear.",
-   "estimated_duration_s": 20,
-   "act": "INTRO",
-   "t_start": 0.0,
-   "actual_duration_s": 0,
-   "audio_file": "",
-   "engine": "elevenlabs"
   },
-  {
-   "beat_id": "B01",
-   "shot": {
-    "type": "REMOTION",
-    "source": "own",
-    "motion": "hold",
-    "remotion": {
-     "pattern": "KokoroRosterCard",
-     "props": {
-      "name": "Dora",
-      "code": "ef_dora",
-      "group": "Spanish · female",
-      "grade": "—",
-      "index": "1/9",
-      "topic": "KOKORO — ROMANCE 9"
-     },
-     "rendered": {
-      "out": "media/B01.mp4",
-      "at": ""
-     }
+  "beats": [
+    {
+      "beat_id": "B00",
+      "act": "cold open",
+      "narration_text": "Hey — this is Liam, in for Bear. One video, four Romance languages: Spanish, Brazilian Portuguese, Italian, and French. Each voice introduces itself in its own language — same house line, different tongue. The French voice, Siwis, is the best-graded non-English voice in the whole Kokoro pack at B minus. The Spanish and Portuguese voices ship ungraded — your ear is the only grade. Cast by ear.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 22,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Hey, Liam",
+            "topic": "KOKORO — ROMANCE 9",
+            "segment": "Kokoro, Romance.",
+            "command": "python3 runtime/scripts/generate_audio_kokoro.py youtube/kokoro-romance-voices --no-gate",
+            "runningText": "nine voices · four languages · same house line · cast by ear…",
+            "output": [
+              "Spanish (3): ef_dora · em_alex · em_santa — ungraded",
+              "Portuguese BR (3): pf_dora · pm_alex · pm_santa — ungraded",
+              "Italian (2): if_sara C · im_nicola C",
+              "French (1): ff_siwis B- — best-graded non-English in the pack"
+            ],
+            "folderLabel": "@NikBearBrown",
+            "modelLabel": "Fable 5",
+            "effortLabel": "Low"
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": 21.01,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B00.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T18:51:50"
+      }
+    },
+    {
+      "beat_id": "B01",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "motion": "hold",
+        "remotion": {
+          "pattern": "KokoroRosterCard",
+          "props": {
+            "name": "Dora",
+            "code": "ef_dora",
+            "group": "Spanish · Female",
+            "grade": "—",
+            "index": "1/9",
+            "topic": "KOKORO — ROMANCE 9",
+            "subtitle": "Soy Dora, voz española. La máquina pone las manos; el gusto lo pones tú.",
+            "subtitleEn": "I'm Dora, Spanish voice. The machine puts the hands in — the taste is yours."
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": ""
+          }
+        }
+      },
+      "narration_text": "Soy Dora, voz española. La máquina pone las manos; el gusto lo pones tú.",
+      "estimated_duration_s": 9,
+      "act": "ROSTER",
+      "actual_duration_s": 4.29,
+      "audio_file": "mp3/beat-B01.mp3",
+      "engine": "kokoro",
+      "voice": "ef_dora",
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B01.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T18:51:50"
+      }
+    },
+    {
+      "beat_id": "B02",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "motion": "hold",
+        "remotion": {
+          "pattern": "KokoroRosterCard",
+          "props": {
+            "name": "Alex",
+            "code": "em_alex",
+            "group": "Spanish · Male",
+            "grade": "—",
+            "index": "2/9",
+            "topic": "KOKORO — ROMANCE 9",
+            "subtitle": "Soy Alex, narrador español. La máquina pone las manos; el gusto lo pones tú.",
+            "subtitleEn": "I'm Alex, Spanish narrator. The machine puts the hands in — the taste is yours."
+          },
+          "rendered": {
+            "out": "media/B02.mp4",
+            "at": ""
+          }
+        }
+      },
+      "narration_text": "Soy Alex, narrador español. La máquina pone las manos; el gusto lo pones tú.",
+      "estimated_duration_s": 9,
+      "act": "ROSTER",
+      "actual_duration_s": 4.29,
+      "audio_file": "mp3/beat-B02.mp3",
+      "engine": "kokoro",
+      "voice": "em_alex",
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B02.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T18:51:50"
+      }
+    },
+    {
+      "beat_id": "B03",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "motion": "hold",
+        "remotion": {
+          "pattern": "KokoroRosterCard",
+          "props": {
+            "name": "Santa",
+            "code": "em_santa",
+            "group": "Spanish · Male",
+            "grade": "—",
+            "index": "3/9",
+            "topic": "KOKORO — ROMANCE 9",
+            "subtitle": "Soy Santa, narrador español. La máquina pone las manos; el gusto lo pones tú.",
+            "subtitleEn": "I'm Santa, Spanish narrator. The machine puts the hands in — the taste is yours."
+          },
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": ""
+          }
+        }
+      },
+      "narration_text": "Soy Santa, narrador español. La máquina pone las manos; el gusto lo pones tú.",
+      "estimated_duration_s": 9,
+      "act": "ROSTER",
+      "actual_duration_s": 4.31,
+      "audio_file": "mp3/beat-B03.mp3",
+      "engine": "kokoro",
+      "voice": "em_santa",
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B03.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T18:51:50"
+      }
+    },
+    {
+      "beat_id": "B04",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "motion": "hold",
+        "remotion": {
+          "pattern": "KokoroRosterCard",
+          "props": {
+            "name": "Dora",
+            "code": "pf_dora",
+            "group": "Portuguese (BR) · Female",
+            "grade": "—",
+            "index": "4/9",
+            "topic": "KOKORO — ROMANCE 9",
+            "subtitle": "Eu sou Dora, voz brasileira. A máquina traz as mãos — o gosto é seu.",
+            "subtitleEn": "I'm Dora, Brazilian voice. The machine brings the hands — the taste is yours."
+          },
+          "rendered": {
+            "out": "media/B04.mp4",
+            "at": ""
+          }
+        }
+      },
+      "narration_text": "Eu sou Dora, voz brasileira. A máquina traz as mãos — o gosto é seu.",
+      "estimated_duration_s": 9,
+      "act": "ROSTER",
+      "actual_duration_s": 4.07,
+      "audio_file": "mp3/beat-B04.mp3",
+      "engine": "kokoro",
+      "voice": "pf_dora",
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B04.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T18:51:50"
+      }
+    },
+    {
+      "beat_id": "B05",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "motion": "hold",
+        "remotion": {
+          "pattern": "KokoroRosterCard",
+          "props": {
+            "name": "Alex",
+            "code": "pm_alex",
+            "group": "Portuguese (BR) · Male",
+            "grade": "—",
+            "index": "5/9",
+            "topic": "KOKORO — ROMANCE 9",
+            "subtitle": "Eu sou Alex, locutor brasileiro. A máquina traz as mãos — o gosto é seu.",
+            "subtitleEn": "I'm Alex, Brazilian narrator. The machine brings the hands — the taste is yours."
+          },
+          "rendered": {
+            "out": "media/B05.mp4",
+            "at": ""
+          }
+        }
+      },
+      "narration_text": "Eu sou Alex, locutor brasileiro. A máquina traz as mãos — o gosto é seu.",
+      "estimated_duration_s": 9,
+      "act": "ROSTER",
+      "actual_duration_s": 4.35,
+      "audio_file": "mp3/beat-B05.mp3",
+      "engine": "kokoro",
+      "voice": "pm_alex",
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B05.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T18:51:50"
+      }
+    },
+    {
+      "beat_id": "B06",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "motion": "hold",
+        "remotion": {
+          "pattern": "KokoroRosterCard",
+          "props": {
+            "name": "Santa",
+            "code": "pm_santa",
+            "group": "Portuguese (BR) · Male",
+            "grade": "—",
+            "index": "6/9",
+            "topic": "KOKORO — ROMANCE 9",
+            "subtitle": "Eu sou Santa, locutor brasileiro. A máquina traz as mãos — o gosto é seu.",
+            "subtitleEn": "I'm Santa, Brazilian narrator. The machine brings the hands — the taste is yours."
+          },
+          "rendered": {
+            "out": "media/B06.mp4",
+            "at": ""
+          }
+        }
+      },
+      "narration_text": "Eu sou Santa, locutor brasileiro. A máquina traz as mãos — o gosto é seu.",
+      "estimated_duration_s": 9,
+      "act": "ROSTER",
+      "actual_duration_s": 4.37,
+      "audio_file": "mp3/beat-B06.mp3",
+      "engine": "kokoro",
+      "voice": "pm_santa",
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B06.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T18:51:50"
+      }
+    },
+    {
+      "beat_id": "B07",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "motion": "hold",
+        "remotion": {
+          "pattern": "KokoroRosterCard",
+          "props": {
+            "name": "Sara",
+            "code": "if_sara",
+            "group": "Italian · Female",
+            "grade": "C",
+            "index": "7/9",
+            "topic": "KOKORO — ROMANCE 9",
+            "subtitle": "Sono Sara, voce italiana. La macchina porta le mani — il gusto lo porti tu.",
+            "subtitleEn": "I'm Sara, Italian voice. The machine brings the hands — the taste is yours."
+          },
+          "rendered": {
+            "out": "media/B07.mp4",
+            "at": ""
+          }
+        }
+      },
+      "narration_text": "Sono Sara, voce italiana. La macchina porta le mani — il gusto lo porti tu.",
+      "estimated_duration_s": 9,
+      "act": "ROSTER",
+      "actual_duration_s": 4.33,
+      "audio_file": "mp3/beat-B07.mp3",
+      "engine": "kokoro",
+      "voice": "if_sara",
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B07.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T18:51:50"
+      }
+    },
+    {
+      "beat_id": "B08",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "motion": "hold",
+        "remotion": {
+          "pattern": "KokoroRosterCard",
+          "props": {
+            "name": "Nicola",
+            "code": "im_nicola",
+            "group": "Italian · Male",
+            "grade": "C",
+            "index": "8/9",
+            "topic": "KOKORO — ROMANCE 9",
+            "subtitle": "Sono Nicola, narratore italiano. La macchina porta le mani — il gusto lo porti tu.",
+            "subtitleEn": "I'm Nicola, Italian narrator. The machine brings the hands — the taste is yours."
+          },
+          "rendered": {
+            "out": "media/B08.mp4",
+            "at": ""
+          }
+        }
+      },
+      "narration_text": "Sono Nicola, narratore italiano. La macchina porta le mani — il gusto lo porti tu.",
+      "estimated_duration_s": 9,
+      "act": "ROSTER",
+      "actual_duration_s": 5.23,
+      "audio_file": "mp3/beat-B08.mp3",
+      "engine": "kokoro",
+      "voice": "im_nicola",
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B08.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T18:51:50"
+      }
+    },
+    {
+      "beat_id": "B09",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "motion": "hold",
+        "remotion": {
+          "pattern": "KokoroRosterCard",
+          "props": {
+            "name": "Siwis",
+            "code": "ff_siwis",
+            "group": "French · Female",
+            "grade": "B-",
+            "index": "9/9",
+            "topic": "KOKORO — ROMANCE 9",
+            "subtitle": "Je suis Siwis, voix française. La machine apporte les mains — le goût, c'est vous.",
+            "subtitleEn": "I'm Siwis, French voice. The machine brings the hands — the taste, it's you."
+          },
+          "rendered": {
+            "out": "media/B09.mp4",
+            "at": ""
+          }
+        }
+      },
+      "narration_text": "Je suis Siwis, voix française. La machine apporte les mains — le goût, c'est vous.",
+      "estimated_duration_s": 9,
+      "act": "ROSTER",
+      "actual_duration_s": 3.99,
+      "audio_file": "mp3/beat-B09.mp3",
+      "engine": "kokoro",
+      "voice": "ff_siwis",
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B09.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T18:51:50"
+      }
+    },
+    {
+      "beat_id": "BVDT",
+      "act": "verdict",
+      "lead_silence_s": 0.5,
+      "narration_text": "Verdict for Kokoro Romance. Nine voices across four languages. Spanish: Dora, Alex, and Santa — all ungraded by the pack. Brazilian Portuguese: Dora, Alex, and Santa — all ungraded. Italian: Sara and Nicola, both graded C. And French: Siwis at B minus, the best-graded non-English voice in all of Kokoro. Ungraded means your ear decides. The graded voices give you a floor.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 24,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "artifactTitle": "Kokoro — Romance 9",
+            "artifactHeading": "Four languages · nine voices",
+            "artifactLines": [
+              "Spanish: ef_dora · em_alex · em_santa — all ungraded by the pack.",
+              "Portuguese (BR): pf_dora · pm_alex · pm_santa — all ungraded.",
+              "Italian: if_sara (C) · im_nicola (C).",
+              "French: ff_siwis (B-) — the best-graded non-English voice in Kokoro.",
+              "Ungraded = your ear is the only grade. Cast by sound."
+            ]
+          },
+          "rendered": {
+            "out": "media/BVDT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BVDT.mp3",
+      "actual_duration_s": 21.23,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BVDT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T18:51:50"
+      }
+    },
+    {
+      "beat_id": "BHTF",
+      "act": "your turn handoff",
+      "narration_text": "Your turn. Set voice to ff_siwis in one beat and ef_dora in another — same narration text in both. Run generate_audio_kokoro.py. Compare French and Spanish side by side. That's the cast-by-ear test for multilingual content.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 18,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Your turn.",
+            "topic": "KOKORO — ROMANCE 9",
+            "segment": "Kokoro, Romance.",
+            "command": "Set voice: ef_dora and voice: ff_siwis on two beats with identical narration text. Run generate_audio_kokoro.py. Listen to both. French B- vs Spanish ungraded — which fits your project?",
+            "runningText": "ungraded doesn't mean bad — it means the pack didn't grade it…",
+            "folderLabel": "@NikBearBrown",
+            "modelLabel": "Fable 5",
+            "effortLabel": "Low"
+          },
+          "rendered": {
+            "out": "media/BHTF.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BHTF.mp3",
+      "actual_duration_s": 13.61,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BHTF.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T18:51:50"
+      }
+    },
+    {
+      "beat_id": "BOUT",
+      "act": "outro",
+      "narration_text": "Kokoro, Romance. Liam, in for Bear.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 4,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "Kokoro, Romance.",
+            "handle": "@NikBearBrown",
+            "subline": "Liam, in for Bear."
+          },
+          "rendered": {
+            "out": "media/BOUT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BOUT.mp3",
+      "actual_duration_s": 2.92,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BOUT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-22T18:51:50"
+      }
     }
-   },
-   "narration_text": "Soy Dora, voz española. La máquina pone las manos; el gusto lo pones tú.",
-   "estimated_duration_s": 9,
-   "act": "ROSTER",
-   "t_start": 20.0,
-   "actual_duration_s": 0,
-   "audio_file": "",
-   "engine": "kokoro",
-   "voice": "ef_dora"
-  },
-  {
-   "beat_id": "B02",
-   "shot": {
-    "type": "REMOTION",
-    "source": "own",
-    "motion": "hold",
-    "remotion": {
-     "pattern": "KokoroRosterCard",
-     "props": {
-      "name": "Alex",
-      "code": "em_alex",
-      "group": "Spanish · male",
-      "grade": "—",
-      "index": "2/9",
-      "topic": "KOKORO — ROMANCE 9"
-     },
-     "rendered": {
-      "out": "media/B02.mp4",
-      "at": ""
-     }
-    }
-   },
-   "narration_text": "Soy Alex, voz española. La máquina pone las manos; el gusto lo pones tú.",
-   "estimated_duration_s": 9,
-   "act": "ROSTER",
-   "t_start": 29.0,
-   "actual_duration_s": 0,
-   "audio_file": "",
-   "engine": "kokoro",
-   "voice": "em_alex"
-  },
-  {
-   "beat_id": "B03",
-   "shot": {
-    "type": "REMOTION",
-    "source": "own",
-    "motion": "hold",
-    "remotion": {
-     "pattern": "KokoroRosterCard",
-     "props": {
-      "name": "Santa",
-      "code": "em_santa",
-      "group": "Spanish · male",
-      "grade": "—",
-      "index": "3/9",
-      "topic": "KOKORO — ROMANCE 9"
-     },
-     "rendered": {
-      "out": "media/B03.mp4",
-      "at": ""
-     }
-    }
-   },
-   "narration_text": "Soy Santa, voz española. La máquina pone las manos; el gusto lo pones tú.",
-   "estimated_duration_s": 9,
-   "act": "ROSTER",
-   "t_start": 38.0,
-   "actual_duration_s": 0,
-   "audio_file": "",
-   "engine": "kokoro",
-   "voice": "em_santa"
-  },
-  {
-   "beat_id": "B04",
-   "shot": {
-    "type": "REMOTION",
-    "source": "own",
-    "motion": "hold",
-    "remotion": {
-     "pattern": "KokoroRosterCard",
-     "props": {
-      "name": "Dora",
-      "code": "pf_dora",
-      "group": "Portuguese (BR) · female",
-      "grade": "—",
-      "index": "4/9",
-      "topic": "KOKORO — ROMANCE 9"
-     },
-     "rendered": {
-      "out": "media/B04.mp4",
-      "at": ""
-     }
-    }
-   },
-   "narration_text": "Eu sou Dora, voz brasileira. A máquina traz as mãos — o gosto é seu.",
-   "estimated_duration_s": 9,
-   "act": "ROSTER",
-   "t_start": 47.0,
-   "actual_duration_s": 0,
-   "audio_file": "",
-   "engine": "kokoro",
-   "voice": "pf_dora"
-  },
-  {
-   "beat_id": "B05",
-   "shot": {
-    "type": "REMOTION",
-    "source": "own",
-    "motion": "hold",
-    "remotion": {
-     "pattern": "KokoroRosterCard",
-     "props": {
-      "name": "Alex",
-      "code": "pm_alex",
-      "group": "Portuguese (BR) · male",
-      "grade": "—",
-      "index": "5/9",
-      "topic": "KOKORO — ROMANCE 9"
-     },
-     "rendered": {
-      "out": "media/B05.mp4",
-      "at": ""
-     }
-    }
-   },
-   "narration_text": "Eu sou Alex, voz brasileira. A máquina traz as mãos — o gosto é seu.",
-   "estimated_duration_s": 9,
-   "act": "ROSTER",
-   "t_start": 56.0,
-   "actual_duration_s": 0,
-   "audio_file": "",
-   "engine": "kokoro",
-   "voice": "pm_alex"
-  },
-  {
-   "beat_id": "B06",
-   "shot": {
-    "type": "REMOTION",
-    "source": "own",
-    "motion": "hold",
-    "remotion": {
-     "pattern": "KokoroRosterCard",
-     "props": {
-      "name": "Santa",
-      "code": "pm_santa",
-      "group": "Portuguese (BR) · male",
-      "grade": "—",
-      "index": "6/9",
-      "topic": "KOKORO — ROMANCE 9"
-     },
-     "rendered": {
-      "out": "media/B06.mp4",
-      "at": ""
-     }
-    }
-   },
-   "narration_text": "Eu sou Santa, voz brasileira. A máquina traz as mãos — o gosto é seu.",
-   "estimated_duration_s": 9,
-   "act": "ROSTER",
-   "t_start": 65.0,
-   "actual_duration_s": 0,
-   "audio_file": "",
-   "engine": "kokoro",
-   "voice": "pm_santa"
-  },
-  {
-   "beat_id": "B07",
-   "shot": {
-    "type": "REMOTION",
-    "source": "own",
-    "motion": "hold",
-    "remotion": {
-     "pattern": "KokoroRosterCard",
-     "props": {
-      "name": "Sara",
-      "code": "if_sara",
-      "group": "Italian · female",
-      "grade": "C",
-      "index": "7/9",
-      "topic": "KOKORO — ROMANCE 9"
-     },
-     "rendered": {
-      "out": "media/B07.mp4",
-      "at": ""
-     }
-    }
-   },
-   "narration_text": "Sono Sara, voce italiana. La macchina porta le mani — il gusto lo porti tu.",
-   "estimated_duration_s": 9,
-   "act": "ROSTER",
-   "t_start": 74.0,
-   "actual_duration_s": 0,
-   "audio_file": "",
-   "engine": "kokoro",
-   "voice": "if_sara"
-  },
-  {
-   "beat_id": "B08",
-   "shot": {
-    "type": "REMOTION",
-    "source": "own",
-    "motion": "hold",
-    "remotion": {
-     "pattern": "KokoroRosterCard",
-     "props": {
-      "name": "Nicola",
-      "code": "im_nicola",
-      "group": "Italian · male",
-      "grade": "C",
-      "index": "8/9",
-      "topic": "KOKORO — ROMANCE 9"
-     },
-     "rendered": {
-      "out": "media/B08.mp4",
-      "at": ""
-     }
-    }
-   },
-   "narration_text": "Sono Nicola, voce italiana. La macchina porta le mani — il gusto lo porti tu.",
-   "estimated_duration_s": 9,
-   "act": "ROSTER",
-   "t_start": 83.0,
-   "actual_duration_s": 0,
-   "audio_file": "",
-   "engine": "kokoro",
-   "voice": "im_nicola"
-  },
-  {
-   "beat_id": "B09",
-   "shot": {
-    "type": "REMOTION",
-    "source": "own",
-    "motion": "hold",
-    "remotion": {
-     "pattern": "KokoroRosterCard",
-     "props": {
-      "name": "Siwis",
-      "code": "ff_siwis",
-      "group": "French · female",
-      "grade": "B-",
-      "index": "9/9",
-      "topic": "KOKORO — ROMANCE 9"
-     },
-     "rendered": {
-      "out": "media/B09.mp4",
-      "at": ""
-     }
-    }
-   },
-   "narration_text": "Je suis Siwis, voix française. La machine apporte les mains — le goût, c'est vous.",
-   "estimated_duration_s": 9,
-   "act": "ROSTER",
-   "t_start": 92.0,
-   "actual_duration_s": 0,
-   "audio_file": "",
-   "engine": "kokoro",
-   "voice": "ff_siwis"
-  },
-  {
-   "beat_id": "B99",
-   "shot": {
-    "type": "REMOTION",
-    "source": "own",
-    "motion": "type-on",
-    "remotion": {
-     "pattern": "BrutalistCommentCTA",
-     "props": {
-      "filename": "brutalist.art",
-      "variant": "A",
-      "topic": "KOKORO — ROMANCE 9",
-      "code": "// the Kokoro roster family · graded · free · cast by ear\n// the story: Kokoro — Free Voices (With Names)\n// @NikBearBrown · brutalist.art"
-     },
-     "rendered": {
-      "out": "media/B99.mp4",
-      "at": ""
-     }
-    }
-   },
-   "narration_text": "Je suis Siwis, voix française. La machine apporte les mains — le goût, c'est vous.",
-   "estimated_duration_s": 9,
-   "act": "OUTRO",
-   "t_start": 101.0,
-   "actual_duration_s": 0,
-   "audio_file": "",
-   "engine": "kokoro",
-   "voice": "ff_siwis"
-  }
- ]
+  ]
 }

@@ -75,4 +75,14 @@ VERIFICATION:
 
 Review cut: kokoro-japanese-voices-review.mp4 (176.1s)
 
-→ GATE: awaiting human sign-off (visual + audio review).
+→ GATE: human listened — B00 (English intro) is clean.
+
+## AUDIO QUALITY NOTE — 2026-07-13
+
+Human verdict on B01-B05 (Kokoro jf_*/jm_* voices): "not pure Japanese — sounds like
+it's mixing Chinese phonology." Consistent with pack grades C+/C/C-. The Kokoro-82M
+non-English voices at this grade tier appear to share phonetic artifacts across East Asian
+languages. Not a build error — the engine's own report card. Documented here so the
+description can be honest: "C+ to C- — your ear is the final grade."
+
+DECISION: move on. Publish pending human studio flip when ready.
