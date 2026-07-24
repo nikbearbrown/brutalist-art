@@ -1,0 +1,440 @@
+{
+  "metadata": {
+    "slug": "claude-liam-slate-filler",
+    "title": "Claude, Slated.",
+    "skill": "slate-filler",
+    "brand": "claude-liam",
+    "engine": "kokoro",
+    "voice": "am_onyx",
+    "greeting": "Namaste",
+    "chapter_number": 38,
+    "build": {
+      "at": "2026-07-18T21:59:49",
+      "cut": "master",
+      "filled": 11,
+      "of": 11,
+      "slates": [],
+      "skin_warnings": []
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "role": "OPEN",
+      "narration_text": "Namaste, Liam. Today: slate-filler. A beat has no media file — no Manim, no photo, no clip. What fills it? Not a grey slate. A Remotion motion graphic, chosen from a bench of proven patterns. Template-first. Liam, in for Bear.",
+      "duration_s": 12,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "SLATE-FILLER · SKILL TEARDOWN",
+            "segment": "Liam, in for Bear.",
+            "greeting": "Namaste, Liam.",
+            "command": "python3 runtime/scripts/remotion_scenes.py youtube/claude-liam-slate-filler",
+            "runningText": "* scan → select pattern → render → stamp provenance",
+            "output": [
+              "slate beats found: 3 | patterns matched: 3",
+              "B01: SkillTeardownAnatomy → media/B01.mp4 (ok)",
+              "B05: SkillTeardownMechanism → media/B05.mp4 (ok)",
+              "B07: SkillTeardownMechanism → media/B07.mp4 (ok)",
+              "→ 3/3 filled | 0 slates remain"
+            ],
+            "folderLabel": "claude-liam-slate-filler/"
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": ""
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B00.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T21:59:49"
+      },
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": 15.68
+    },
+    {
+      "beat_id": "B01",
+      "role": "ANATOMY",
+      "narration_text": "Slate-filler has three parts. A scanner that finds beats with no media file. A matcher that picks a Remotion pattern from the bench — template-first, never generic filler. And a renderer that writes media-slash-BID-dot-mp4 so the compiler picks it up and reflows duration automatically.",
+      "duration_s": 18,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownAnatomy",
+          "props": {
+            "skillName": "slate-filler",
+            "title": "A skill is a folder.",
+            "files": [
+              {
+                "indent": 0,
+                "icon": "📁",
+                "name": "skills/make/slate-filler/",
+                "accent": false
+              },
+              {
+                "indent": 1,
+                "icon": "📄",
+                "name": "SKILL.md",
+                "tag": "the full contract",
+                "accent": true
+              },
+              {
+                "indent": 1,
+                "icon": "📁",
+                "name": "remotion/",
+                "accent": false
+              },
+              {
+                "indent": 2,
+                "icon": "📄",
+                "name": "_bench/index.json",
+                "tag": "pattern catalog",
+                "accent": false
+              },
+              {
+                "indent": 2,
+                "icon": "📄",
+                "name": "_bench/consumers.json",
+                "tag": "reverse index",
+                "accent": false
+              }
+            ],
+            "calloutText": "Template-first: look up before building.",
+            "sparkLine": "The bench is the memory. The gate is the filter."
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": ""
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B01.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T21:59:49"
+      },
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": 18.5
+    },
+    {
+      "beat_id": "B02",
+      "role": "PIPELINE",
+      "narration_text": "The pipeline: scan the reel for slate beats. For each, derive the pedagogical move — what is this beat teaching? Look it up in the bench index. If a candidate fits cleanly, adapt its props and render. If nothing fits, author a reel-local scene, specific, no generalization yet. Write the mp4. Stamp provenance on the beat. Two gates follow: machine and human.",
+      "duration_s": 22,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownPipeline",
+          "props": {
+            "title": "How slate-filler works.",
+            "inputLabel": "SLATE BEAT",
+            "outputLabel": "media/<BID>.mp4",
+            "phases": [
+              {
+                "label": "Scan",
+                "desc": "Find beats with no media/<BID>.mp4",
+                "accent": false
+              },
+              {
+                "label": "Derive scene_type",
+                "desc": "narration → pedagogical move",
+                "accent": false
+              },
+              {
+                "label": "Bench lookup",
+                "desc": "index.json → ranked candidates",
+                "accent": true
+              },
+              {
+                "label": "Fit decision",
+                "desc": "Fits → adapt; doesn't → reel-local",
+                "accent": false
+              },
+              {
+                "label": "Render + stamp",
+                "desc": "mp4 written, provenance stamped",
+                "accent": false
+              },
+              {
+                "label": "Two gates",
+                "desc": "Machine: ships. Human: promotes.",
+                "accent": false
+              }
+            ],
+            "sparkLine": "Template-first. Ship the reel. Promote the pattern."
+          },
+          "rendered": {
+            "out": "media/B02.mp4",
+            "at": ""
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B02.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T21:59:49"
+      },
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": 21.99
+    },
+    {
+      "beat_id": "B03",
+      "role": "PREDICT",
+      "narration_text": "A slate beat is filled. It renders. It passes Gate A. What two things still have to happen before it earns a permanent slot in the shared bench?",
+      "duration_s": 8,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "SLATE-FILLER · PREDICT",
+            "segment": "The Question.",
+            "greeting": "Before promoting:",
+            "command": "A slate beat filled and passed Gate A. What two things happen before it earns a bench slot?",
+            "runningText": "",
+            "output": []
+          },
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": ""
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B03.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T21:59:49"
+      },
+      "audio_file": "mp3/beat-B03.mp3",
+      "actual_duration_s": 8.47
+    },
+    {
+      "beat_id": "B04",
+      "role": "SELF-DEMO",
+      "narration_text": "Free demo: the blast-radius check. Before changing any pattern, query consumers dot json. SkillTeardownMechanism has 111 consumers. That means changing it re-renders 111 beats across 111 videos. The bench tracks 473 patterns, six thousand consumer references, 1073 unique videos. The triage question is always: is this a pattern issue or an instance issue? Consumers dot json answers it, free, before a single render fires.",
+      "duration_s": 26,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeCodeBeat",
+          "props": {
+            "title": "consumers.json blast-radius check",
+            "code": "import json\ndata = json.load(open(\n  'runtime/remotion/_bench/consumers.json'\n))\npattern = 'SkillTeardownMechanism'\nusers = data.get(pattern, [])\nprint(f'pattern: {pattern}')\nprint(f'consumers: {len(users)}')\nprint(f'bench: {len(data)} patterns')\nprint(f'blast: {len(users)} beats re-render')\n# consumers: 111  bench: 473 patterns\n# pattern issue → 111 beats re-render\n# instance issue → edit props, 1 beat",
+            "sparkLine": "Pattern issue → 111 re-renders. Instance issue → edit props, 1 beat."
+          },
+          "rendered": {
+            "out": "media/B04.mp4",
+            "at": ""
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B04.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T21:59:49"
+      },
+      "audio_file": "mp3/beat-B04.mp3",
+      "actual_duration_s": 31.38
+    },
+    {
+      "beat_id": "B05",
+      "role": "MECHANISM_1",
+      "narration_text": "Law one: template-first. Derive the scene type from the beat's narration and visual element. Look it up in the bench index. A candidate fits only if its form matches and content drops in cleanly. The moment you would fight it — hack internals, override its motion, force content it wasn't built to hold — it doesn't fit. And: keep the media economy honest — do not turn every plate into generic kinetic filler.",
+      "duration_s": 22,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Template-first.",
+            "body": "Look up before building. A candidate fits only if form matches and content drops in cleanly — the moment you'd fight it, it doesn't fit.",
+            "quote": "Keep the media economy honest — do not turn every plate into generic kinetic filler.",
+            "cite": "skills/make/slate-filler/SKILL.md",
+            "sparkLine": "Bench lookup is the first question, not the last resort."
+          },
+          "rendered": {
+            "out": "media/B05.mp4",
+            "at": ""
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B05.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T21:59:49"
+      },
+      "audio_file": "mp3/beat-B05.mp3",
+      "actual_duration_s": 24.49
+    },
+    {
+      "beat_id": "B06",
+      "role": "MECHANISM_2",
+      "narration_text": "Law two: two gates. The machine gate asks: does it render, does it pass Gate A and B layout QC, does it fill the beat? That decides whether it ships in this video. The human gate asks: is this pattern general and on-brand enough to earn a permanent bench slot? A scene can pass the machine gate and fail the human gate — too specific, stays reel-local, never promoted. Most bespoke concept-carriers die reel-local. Only the recurring ones are worth the promotion cost.",
+      "duration_s": 24,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Two gates.",
+            "body": "Machine gate: renders + Gate A/B pass → ships the reel. Human gate: general + on-brand → enters the bench. Bear only.",
+            "quote": "A scene can pass the machine gate (ships) and fail the human gate (too specific → stays reel-local, never promoted).",
+            "cite": "skills/make/slate-filler/SKILL.md",
+            "sparkLine": "Shipping ≠ promoting. The library earns its members."
+          },
+          "rendered": {
+            "out": "media/B06.mp4",
+            "at": ""
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B06.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T21:59:49"
+      },
+      "audio_file": "mp3/beat-B06.mp3",
+      "actual_duration_s": 26.82
+    },
+    {
+      "beat_id": "B07",
+      "role": "MECHANISM_3",
+      "narration_text": "Law three: promotion discipline. A scene built for one beat is specific. Before it enters the bench it must be generalized — pull the specifics into props, lock to palette tokens, tag with a scene type, prove it works at two or three different prop values. Only then does Bear vet the card. One look, ten seconds, yes or no. And the rule that makes it all work: generalize at promotion time, not build time.",
+      "duration_s": 22,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SkillTeardownMechanism",
+          "props": {
+            "heading": "Promotion discipline.",
+            "body": "Pull specifics into props. Lock to palette tokens. Tag with scene_type. Prove at 2-3 prop values. Then Bear vets the card.",
+            "quote": "Generalize at promotion time, not build time.",
+            "cite": "skills/make/slate-filler/SKILL.md",
+            "sparkLine": "Reel-local → general only when it earns the general form."
+          },
+          "rendered": {
+            "out": "media/B07.mp4",
+            "at": ""
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B07.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T21:59:49"
+      },
+      "audio_file": "mp3/beat-B07.mp3",
+      "actual_duration_s": 24.11
+    },
+    {
+      "beat_id": "BVDT",
+      "role": "VERDICT",
+      "narration_text": "Verdict: slate-filler fills gaps without lying about them. Template-first keeps the bench honest. Two gates keep the library clean. And the promotion discipline — generalize at the gate, not before — means reel-local scenes stay specific until they've earned the general form. The bench only ever changes through Bear.",
+      "duration_s": 18,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "artifactTitle": "Verdict",
+            "artifactHeading": "The controls.",
+            "artifactLines": [
+              "Template-first: fit before build — no generic filler",
+              "Two gates: machine ships the reel; human promotes the pattern",
+              "Promotion discipline: generalize at promotion time, not build time"
+            ]
+          },
+          "rendered": {
+            "out": "media/BVDT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BVDT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T21:59:49"
+      },
+      "audio_file": "mp3/beat-BVDT.mp3",
+      "actual_duration_s": 19.54
+    },
+    {
+      "beat_id": "BHTF",
+      "role": "YOUR_TURN",
+      "narration_text": "Your turn. Find a vox reel you've built that still has one grey slate. Run remotion-scenes dot py dash dash list on it. What scene type would the beat be, and does any candidate in your bench fit cleanly — or would you have to fight it?",
+      "duration_s": 14,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "topic": "YOUR TURN",
+            "segment": "Your move.",
+            "greeting": "Your turn.",
+            "command": "python3 runtime/scripts/remotion_scenes.py <your-reel> --list",
+            "runningText": "* scan slate beats → derive scene_type → check bench candidates",
+            "output": [
+              "B03: SLATE | narration → 'adds a title card'",
+              "→ scene_type: text-reveal",
+              "→ TitleReveal: fit yes — adapt props, render"
+            ]
+          },
+          "rendered": {
+            "out": "media/BHTF.mp4",
+            "at": ""
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BHTF.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T21:59:49"
+      },
+      "audio_file": "mp3/beat-BHTF.mp3",
+      "actual_duration_s": 14.31
+    },
+    {
+      "beat_id": "BOUT",
+      "role": "OUTRO",
+      "narration_text": "Claude, Slated.",
+      "duration_s": 4,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "Claude, Slated.",
+            "handle": "@NikBearBrown",
+            "subline": "slate-filler skill teardown"
+          },
+          "rendered": {
+            "out": "media/BOUT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BOUT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-18T21:59:49"
+      },
+      "audio_file": "mp3/beat-BOUT.mp3",
+      "actual_duration_s": 1.09
+    }
+  ]
+}
