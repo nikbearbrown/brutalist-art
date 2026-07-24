@@ -259,3 +259,39 @@ HUMAN ACTIONS (Studio):
   3. Verify caption timing on the video page.
 ch6-short https://youtu.be/Nm74XCgLYuM — Kokoro: Free Voices (9:16 Short, 147.2s, Shorts playlist) (unlisted)
 ch6b https://youtu.be/Oxv763As98Q — Kokoro: All 28 English Voices (30/30, 196.5s, KokoroRosterCard, 19 grade corrections) (unlisted)
+ch6c https://youtu.be/OjsNHrZcvhg — Kokoro: The 8 Mandarin Voices (10/10, 72.3s, bilingual CJK+EN subtitle) (unlisted)
+ch6c-short https://youtu.be/443par7cVSY — Kokoro: The 8 Mandarin Voices (9:16 Short, Shorts playlist) (unlisted)
+ch6e https://youtu.be/BZ557c_XSow — Kokoro: The 4 Hindi Voices (6/6, 46.3s, Devanagari+EN subtitle, CC uploaded) (unlisted)
+ch6e-short https://youtu.be/R25_ZNotE98 — Kokoro: The 4 Hindi Voices (9:16 Short, Shorts playlist) (unlisted)
+ch6f https://youtu.be/p2ZZlYHUPXA — Kokoro: The 9 Romance-Language Voices (11/11, 74.1s, bilingual subtitles, gender-corrected male lines, CC uploaded) (unlisted)
+ch6f-short https://youtu.be/EwCLrA3QLCc — Kokoro: The 9 Romance-Language Voices (9:16 Short, Shorts playlist) (unlisted)
+
+---
+
+## claude-liam-ai-explainer — 2026-07-22
+
+### REAL UPLOAD
+
+Command:
+  python3 skills/upload/youtube-publisher/scripts/publish_playlist.py \
+    youtube/claude-liam-ai-explainer \
+    --playlist "Brutalist" \
+    --channel nikbearbrown
+
+Output:
+  [yt] authenticated as: Nik Bear Brown (UCg0cw2ouRhQ8dr114yGp0mA)
+  [yt] found playlist 'Brutalist' → PLG9H-C6rp5RU
+  [yt] uploaded → https://youtu.be/QzTejCPGKlc
+  [yt] added claude-liam-ai-explainer to playlist at position 0
+  [yt] caption track added (claude-liam-ai-explainer.srt)
+  [yt] done.
+
+  ch5  https://youtu.be/QzTejCPGKlc   Claude, Self-Taught.  (unlisted)
+
+Playlist: https://www.youtube.com/playlist?list=PLG9H-C6rp5RU "Brutalist" (public)
+Ledger updated: youtube/credentials/nikbearbrown/youtube_publish_ledger.json
+
+HUMAN ACTIONS (Studio):
+  1. Flip to public when ready.
+  2. Drag ch5 into position in Brutalist playlist (after ch4 — Posting to YouTube).
+  3. Verify caption timing on the video page.

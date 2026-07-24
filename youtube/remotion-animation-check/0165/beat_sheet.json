@@ -1,0 +1,391 @@
+{
+  "slug": "audit-0165",
+  "title": "Remotion Animation Audit — 0165",
+  "series": "Media Audit",
+  "source": "audit/165",
+  "metadata": {
+    "chapter": 165,
+    "total_chapters": 999,
+    "playlist": "Media Audit",
+    "palette": "medhavy",
+    "engine": "kokoro",
+    "voice_kokoro": "am_onyx"
+  },
+  "segments": [
+    {
+      "id": "S01",
+      "num": 1,
+      "total": 15,
+      "section": "NEEDS-VISUAL",
+      "label": "01 / 15 · NEEDS-VISUAL",
+      "dark": false,
+      "title": [
+        [
+          "metastatic-cascade-bottleneck — ",
+          false
+        ],
+        [
+          "B03",
+          true
+        ]
+      ],
+      "body_html": "<div class=\"stack\"><div class=\"wire\"><b>NEEDS-VISUAL → attritionChain</b><span>Should show: a population or quantity shrinking through sequential stages</span></div><p class=\"lead\">Python script calculating survival rates at each metastatic cascade step.</p></div>",
+      "beats": [
+        {
+          "type": "analytic",
+          "text": "Beat B03 in reel metastatic-cascade-bottleneck is missing its Remotion animation. The concept — Python script calculating survival rates at each metastatic cascade step.. Rhetorical shape points to attritionChain: this slot should show a population or quantity shrinking through sequential stages."
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "num": 2,
+      "total": 15,
+      "section": "NEEDS-VISUAL",
+      "label": "02 / 15 · NEEDS-VISUAL",
+      "dark": false,
+      "title": [
+        [
+          "metastatic-cascade-bottleneck — ",
+          false
+        ],
+        [
+          "B05",
+          true
+        ]
+      ],
+      "body_html": "<div class=\"stack\"><div class=\"wire\"><b>NEEDS-VISUAL → attritionChain</b><span>Should show: a population or quantity shrinking through sequential stages</span></div><p class=\"lead\">For each bottleneck step, what is the most advanced clinical-stage drug or intervention targeting it, its phase, and the primary endpoint being measured?</p></div>",
+      "beats": [
+        {
+          "type": "analytic",
+          "text": "Beat B05 in reel metastatic-cascade-bottleneck is missing its Remotion animation. The concept — For each bottleneck step, what is the most advanced clinical-stage drug or intervention targeting it, its phase, and the primary endpoint being measured?. Rhetorical shape points to attritionChain: this slot should show a population or quantity shrinking through sequential stages."
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "num": 3,
+      "total": 15,
+      "section": "NEEDS-VISUAL",
+      "label": "03 / 15 · NEEDS-VISUAL",
+      "dark": false,
+      "title": [
+        [
+          "metastatic-cascade-bottleneck — ",
+          false
+        ],
+        [
+          "B09",
+          true
+        ]
+      ],
+      "body_html": "<div class=\"stack\"><div class=\"wire\"><b>NEEDS-VISUAL → static - no pattern fits</b><span>Should show: a static title card or plain text slide</span></div><p class=\"lead\">Liam, in for Bear. Build it, then take it apart.</p></div>",
+      "beats": [
+        {
+          "type": "analytic",
+          "text": "Beat B09 in reel metastatic-cascade-bottleneck is missing its Remotion animation. The concept — Liam, in for Bear. Build it, then take it apart.. Rhetorical shape points to static - no pattern fits: this slot should show a static title card or plain text slide."
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "num": 4,
+      "total": 15,
+      "section": "NEEDS-VISUAL",
+      "label": "04 / 15 · NEEDS-VISUAL",
+      "dark": false,
+      "title": [
+        [
+          "neoantigen-vaccine-pipeline — ",
+          false
+        ],
+        [
+          "B00",
+          true
+        ]
+      ],
+      "body_html": "<div class=\"stack\"><div class=\"wire\"><b>NEEDS-VISUAL → static - no pattern fits</b><span>Should show: a static title card or plain text slide</span></div><p class=\"lead\">Vanakkam, Liam. This is Liam, in for Bear. Neoantigen vaccines — engineering immunity to your own cancer's mutations.</p></div>",
+      "beats": [
+        {
+          "type": "analytic",
+          "text": "Beat B00 in reel neoantigen-vaccine-pipeline is missing its Remotion animation. The concept — Vanakkam, Liam. This is Liam, in for Bear. Neoantigen vaccines — engineering immunity to your own cancer's mutations.. Rhetorical shape points to static - no pattern fits: this slot should show a static title card or plain text slide."
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "num": 5,
+      "total": 15,
+      "section": "NEEDS-VISUAL",
+      "label": "05 / 15 · NEEDS-VISUAL",
+      "dark": false,
+      "title": [
+        [
+          "neoantigen-vaccine-pipeline — ",
+          false
+        ],
+        [
+          "B02",
+          true
+        ]
+      ],
+      "body_html": "<div class=\"stack\"><div class=\"wire\"><b>NEEDS-VISUAL → attritionChain</b><span>Should show: a population or quantity shrinking through sequential stages</span></div><p class=\"lead\">Research personalized neoantigen cancer vaccines: mRNA-4157 trial results in melanoma, pipeline steps, manufacturing timeline and cost, extension to other tumor types, and main bar...</p></div>",
+      "beats": [
+        {
+          "type": "analytic",
+          "text": "Beat B02 in reel neoantigen-vaccine-pipeline is missing its Remotion animation. The concept — Research personalized neoantigen cancer vaccines: mRNA-4157 trial results in melanoma, pipeline steps, manufacturing timeline and cost, extension to other tumor types, and main bar. Rhetorical shape points to attritionChain: this slot should show a population or quantity shrinking through sequential stages."
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "num": 6,
+      "total": 15,
+      "section": "NEEDS-VISUAL",
+      "label": "06 / 15 · NEEDS-VISUAL",
+      "dark": false,
+      "title": [
+        [
+          "neoantigen-vaccine-pipeline — ",
+          false
+        ],
+        [
+          "B03",
+          true
+        ]
+      ],
+      "body_html": "<div class=\"stack\"><div class=\"wire\"><b>NEEDS-VISUAL → attritionChain</b><span>Should show: a population or quantity shrinking through sequential stages</span></div><p class=\"lead\">Python script tracing pipeline stages with timeline and cost estimates per stage.</p></div>",
+      "beats": [
+        {
+          "type": "analytic",
+          "text": "Beat B03 in reel neoantigen-vaccine-pipeline is missing its Remotion animation. The concept — Python script tracing pipeline stages with timeline and cost estimates per stage.. Rhetorical shape points to attritionChain: this slot should show a population or quantity shrinking through sequential stages."
+        }
+      ]
+    },
+    {
+      "id": "S07",
+      "num": 7,
+      "total": 15,
+      "section": "NEEDS-VISUAL",
+      "label": "07 / 15 · NEEDS-VISUAL",
+      "dark": false,
+      "title": [
+        [
+          "neoantigen-vaccine-pipeline — ",
+          false
+        ],
+        [
+          "B05",
+          true
+        ]
+      ],
+      "body_html": "<div class=\"stack\"><div class=\"wire\"><b>NEEDS-VISUAL → attritionChain</b><span>Should show: a population or quantity shrinking through sequential stages</span></div><p class=\"lead\">Add the main failure point at each pipeline stage — what percentage of patients fail to reach dosing due to biopsy quality, sequencing turnaround, prediction accuracy, or manufactu...</p></div>",
+      "beats": [
+        {
+          "type": "analytic",
+          "text": "Beat B05 in reel neoantigen-vaccine-pipeline is missing its Remotion animation. The concept — Add the main failure point at each pipeline stage — what percentage of patients fail to reach dosing due to biopsy quality, sequencing turnaround, prediction accuracy, or manufactu. Rhetorical shape points to attritionChain: this slot should show a population or quantity shrinking through sequential stages."
+        }
+      ]
+    },
+    {
+      "id": "S08",
+      "num": 8,
+      "total": 15,
+      "section": "NEEDS-VISUAL",
+      "label": "08 / 15 · NEEDS-VISUAL",
+      "dark": false,
+      "title": [
+        [
+          "neoantigen-vaccine-pipeline — ",
+          false
+        ],
+        [
+          "B09",
+          true
+        ]
+      ],
+      "body_html": "<div class=\"stack\"><div class=\"wire\"><b>NEEDS-VISUAL → static - no pattern fits</b><span>Should show: a static title card or plain text slide</span></div><p class=\"lead\">Liam, in for Bear. Build it, then take it apart.</p></div>",
+      "beats": [
+        {
+          "type": "analytic",
+          "text": "Beat B09 in reel neoantigen-vaccine-pipeline is missing its Remotion animation. The concept — Liam, in for Bear. Build it, then take it apart.. Rhetorical shape points to static - no pattern fits: this slot should show a static title card or plain text slide."
+        }
+      ]
+    },
+    {
+      "id": "S09",
+      "num": 9,
+      "total": 15,
+      "section": "NEEDS-VISUAL",
+      "label": "09 / 15 · NEEDS-VISUAL",
+      "dark": false,
+      "title": [
+        [
+          "oncolytic-virotherapy — ",
+          false
+        ],
+        [
+          "B00",
+          true
+        ]
+      ],
+      "body_html": "<div class=\"stack\"><div class=\"wire\"><b>NEEDS-VISUAL → static - no pattern fits</b><span>Should show: a static title card or plain text slide</span></div><p class=\"lead\">Bonjour, Liam. This is Liam, in for Bear. T-VEC — the FDA-approved herpes virus that fights cancer.</p></div>",
+      "beats": [
+        {
+          "type": "analytic",
+          "text": "Beat B00 in reel oncolytic-virotherapy is missing its Remotion animation. The concept — Bonjour, Liam. This is Liam, in for Bear. T-VEC — the FDA-approved herpes virus that fights cancer.. Rhetorical shape points to static - no pattern fits: this slot should show a static title card or plain text slide."
+        }
+      ]
+    },
+    {
+      "id": "S10",
+      "num": 10,
+      "total": 15,
+      "section": "NEEDS-VISUAL",
+      "label": "10 / 15 · NEEDS-VISUAL",
+      "dark": false,
+      "title": [
+        [
+          "oncolytic-virotherapy — ",
+          false
+        ],
+        [
+          "B02",
+          true
+        ]
+      ],
+      "body_html": "<div class=\"stack\"><div class=\"wire\"><b>NEEDS-VISUAL → attritionChain</b><span>Should show: a population or quantity shrinking through sequential stages</span></div><p class=\"lead\">Research oncolytic virotherapy: T-VEC mechanism, OPTiM trial results, why systemic delivery fails, engineering modifications being tested, and the current clinical pipeline beyond...</p></div>",
+      "beats": [
+        {
+          "type": "analytic",
+          "text": "Beat B02 in reel oncolytic-virotherapy is missing its Remotion animation. The concept — Research oncolytic virotherapy: T-VEC mechanism, OPTiM trial results, why systemic delivery fails, engineering modifications being tested, and the current clinical pipeline beyond. Rhetorical shape points to attritionChain: this slot should show a population or quantity shrinking through sequential stages."
+        }
+      ]
+    },
+    {
+      "id": "S11",
+      "num": 11,
+      "total": 15,
+      "section": "NEEDS-VISUAL",
+      "label": "11 / 15 · NEEDS-VISUAL",
+      "dark": false,
+      "title": [
+        [
+          "oncolytic-virotherapy — ",
+          false
+        ],
+        [
+          "B03",
+          true
+        ]
+      ],
+      "body_html": "<div class=\"stack\"><div class=\"wire\"><b>NEEDS-VISUAL → static - no pattern fits</b><span>Should show: a static title card or plain text slide</span></div><p class=\"lead\">Python script comparing intratumoral versus systemic delivery outcomes.</p></div>",
+      "beats": [
+        {
+          "type": "analytic",
+          "text": "Beat B03 in reel oncolytic-virotherapy is missing its Remotion animation. The concept — Python script comparing intratumoral versus systemic delivery outcomes.. Rhetorical shape points to static - no pattern fits: this slot should show a static title card or plain text slide."
+        }
+      ]
+    },
+    {
+      "id": "S12",
+      "num": 12,
+      "total": 15,
+      "section": "NEEDS-VISUAL",
+      "label": "12 / 15 · NEEDS-VISUAL",
+      "dark": false,
+      "title": [
+        [
+          "oncolytic-virotherapy — ",
+          false
+        ],
+        [
+          "B05",
+          true
+        ]
+      ],
+      "body_html": "<div class=\"stack\"><div class=\"wire\"><b>NEEDS-VISUAL → attritionChain</b><span>Should show: a population or quantity shrinking through sequential stages</span></div><p class=\"lead\">List the five most advanced systemic oncolytic virotherapy programs in clinical trials as of 2024 — virus type, modification strategy, cancer target, and current phase.</p></div>",
+      "beats": [
+        {
+          "type": "analytic",
+          "text": "Beat B05 in reel oncolytic-virotherapy is missing its Remotion animation. The concept — List the five most advanced systemic oncolytic virotherapy programs in clinical trials as of 2024 — virus type, modification strategy, cancer target, and current phase.. Rhetorical shape points to attritionChain: this slot should show a population or quantity shrinking through sequential stages."
+        }
+      ]
+    },
+    {
+      "id": "S13",
+      "num": 13,
+      "total": 15,
+      "section": "NEEDS-VISUAL",
+      "label": "13 / 15 · NEEDS-VISUAL",
+      "dark": false,
+      "title": [
+        [
+          "oncolytic-virotherapy — ",
+          false
+        ],
+        [
+          "B09",
+          true
+        ]
+      ],
+      "body_html": "<div class=\"stack\"><div class=\"wire\"><b>NEEDS-VISUAL → static - no pattern fits</b><span>Should show: a static title card or plain text slide</span></div><p class=\"lead\">Liam, in for Bear. Build it, then take it apart.</p></div>",
+      "beats": [
+        {
+          "type": "analytic",
+          "text": "Beat B09 in reel oncolytic-virotherapy is missing its Remotion animation. The concept — Liam, in for Bear. Build it, then take it apart.. Rhetorical shape points to static - no pattern fits: this slot should show a static title card or plain text slide."
+        }
+      ]
+    },
+    {
+      "id": "S14",
+      "num": 14,
+      "total": 15,
+      "section": "NEEDS-VISUAL",
+      "label": "14 / 15 · NEEDS-VISUAL",
+      "dark": false,
+      "title": [
+        [
+          "pfs-surrogate-endpoint — ",
+          false
+        ],
+        [
+          "B00",
+          true
+        ]
+      ],
+      "body_html": "<div class=\"stack\"><div class=\"wire\"><b>NEEDS-VISUAL → static - no pattern fits</b><span>Should show: a static title card or plain text slide</span></div><p class=\"lead\">Merhaba, Liam. This is Liam, in for Bear. PFS as a surrogate — the endpoint that sometimes lies.</p></div>",
+      "beats": [
+        {
+          "type": "analytic",
+          "text": "Beat B00 in reel pfs-surrogate-endpoint is missing its Remotion animation. The concept — Merhaba, Liam. This is Liam, in for Bear. PFS as a surrogate — the endpoint that sometimes lies.. Rhetorical shape points to static - no pattern fits: this slot should show a static title card or plain text slide."
+        }
+      ]
+    },
+    {
+      "id": "S15",
+      "num": 15,
+      "total": 15,
+      "section": "NEEDS-VISUAL",
+      "label": "15 / 15 · NEEDS-VISUAL",
+      "dark": false,
+      "title": [
+        [
+          "pfs-surrogate-endpoint — ",
+          false
+        ],
+        [
+          "B02",
+          true
+        ]
+      ],
+      "body_html": "<div class=\"stack\"><div class=\"wire\"><b>NEEDS-VISUAL → attritionChain</b><span>Should show: a population or quantity shrinking through sequential stages</span></div><p class=\"lead\">Research the PFS-to-overall-survival surrogate endpoint problem: correlation between PFS benefit and OS benefit across cancer types, high-profile cases where PFS did not translate...</p></div>",
+      "beats": [
+        {
+          "type": "analytic",
+          "text": "Beat B02 in reel pfs-surrogate-endpoint is missing its Remotion animation. The concept — Research the PFS-to-overall-survival surrogate endpoint problem: correlation between PFS benefit and OS benefit across cancer types, high-profile cases where PFS did not translate. Rhetorical shape points to attritionChain: this slot should show a population or quantity shrinking through sequential stages."
+        }
+      ]
+    }
+  ]
+}

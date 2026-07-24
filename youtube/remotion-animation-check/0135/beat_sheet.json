@@ -1,0 +1,391 @@
+{
+  "slug": "audit-0135",
+  "title": "Remotion Animation Audit — 0135",
+  "series": "Media Audit",
+  "source": "audit/135",
+  "metadata": {
+    "chapter": 135,
+    "total_chapters": 999,
+    "playlist": "Media Audit",
+    "palette": "medhavy",
+    "engine": "kokoro",
+    "voice_kokoro": "am_onyx"
+  },
+  "segments": [
+    {
+      "id": "S01",
+      "num": 1,
+      "total": 15,
+      "section": "LEGIT-SKIP",
+      "label": "01 / 15 · LEGIT-SKIP",
+      "dark": false,
+      "title": [
+        [
+          "session-karaoke-audiogram — ",
+          false
+        ],
+        [
+          "B11",
+          true
+        ]
+      ],
+      "body_html": "<div class=\"stack\"><div class=\"wire\"><b>LEGIT-SKIP → own</b><span>Waiting on: own media slot — Three tools, one sentence: session directs the voice, karaoke clocks the words,...</span></div><p class=\"lead\">Three tools, one sentence: session directs the voice, karaoke clocks the words, audiogram makes sound visible. The full chain — from direction to delivery to display — is now yours...</p></div>",
+      "beats": [
+        {
+          "type": "analytic",
+          "text": "Beat B11 in reel session-karaoke-audiogram is a legitimate skip. The pipeline cannot generate this — it needs own media slot — Three tools, one sentence: session directs the voice, karaoke clocks the words,.... The narration concept is: Three tools, one sentence: session directs the voice, karaoke clocks the words, audiogram makes sound visible. The full."
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "num": 2,
+      "total": 15,
+      "section": "LEGIT-SKIP",
+      "label": "02 / 15 · LEGIT-SKIP",
+      "dark": false,
+      "title": [
+        [
+          "session-karaoke-audiogram — ",
+          false
+        ],
+        [
+          "B99",
+          true
+        ]
+      ],
+      "body_html": "<div class=\"stack\"><div class=\"wire\"><b>LEGIT-SKIP → own</b><span>Waiting on: own media slot — That's the voice chain. Subscribe to follow the series, and find the whole toolk...</span></div><p class=\"lead\">That's the voice chain. Subscribe to follow the series, and find the whole toolkit at www dot brutalist dot art.</p></div>",
+      "beats": [
+        {
+          "type": "analytic",
+          "text": "Beat B99 in reel session-karaoke-audiogram is a legitimate skip. The pipeline cannot generate this — it needs own media slot — That's the voice chain. Subscribe to follow the series, and find the whole toolk.... The narration concept is: That's the voice chain. Subscribe to follow the series, and find the whole toolkit at www dot brutalist dot art.."
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "num": 3,
+      "total": 15,
+      "section": "LEGIT-SKIP",
+      "label": "03 / 15 · LEGIT-SKIP",
+      "dark": false,
+      "title": [
+        [
+          "adaptive-therapy-revolution — ",
+          false
+        ],
+        [
+          "B03",
+          true
+        ]
+      ],
+      "body_html": "<div class=\"stack\"><div class=\"wire\"><b>LEGIT-SKIP → own</b><span>Waiting on: Bear fills: screenshot of the Zhang et al. 2017 (Nature Communications 8:1816) Kaplan-Meier PFS curve, adaptive vs conti</span></div><p class=\"lead\">And here's the receipt. Moffitt's Phase 2 abiraterone trial: adaptive dosing reached twenty-seven months of progression-free survival against about seventeen for continuous dosing....</p></div>",
+      "beats": [
+        {
+          "type": "analytic",
+          "text": "Beat B03 in reel adaptive-therapy-revolution is a legitimate skip. The pipeline cannot generate this — it needs Bear fills: screenshot of the Zhang et al. 2017 (Nature Communications 8:1816) Kaplan-Meier PFS curve, adaptive vs conti. The narration concept is: And here's the receipt. Moffitt's Phase 2 abiraterone trial: adaptive dosing reached twenty-seven months of progression-."
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "num": 4,
+      "total": 15,
+      "section": "NEEDS-VISUAL",
+      "label": "04 / 15 · NEEDS-VISUAL",
+      "dark": false,
+      "title": [
+        [
+          "cancer-disparities-zip-code — ",
+          false
+        ],
+        [
+          "B00",
+          true
+        ]
+      ],
+      "body_html": "<div class=\"stack\"><div class=\"wire\"><b>NEEDS-VISUAL → attritionChain</b><span>Should show: a population or quantity shrinking through sequential stages</span></div><p class=\"lead\">Salaam, Liam. This is Liam, in for Bear. Cancer disparities — why ZIP code predicts survival more than tumor biology.</p></div>",
+      "beats": [
+        {
+          "type": "analytic",
+          "text": "Beat B00 in reel cancer-disparities-zip-code is missing its Remotion animation. The concept — Salaam, Liam. This is Liam, in for Bear. Cancer disparities — why ZIP code predicts survival more than tumor biology.. Rhetorical shape points to attritionChain: this slot should show a population or quantity shrinking through sequential stages."
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "num": 5,
+      "total": 15,
+      "section": "NEEDS-VISUAL",
+      "label": "05 / 15 · NEEDS-VISUAL",
+      "dark": false,
+      "title": [
+        [
+          "cancer-disparities-zip-code — ",
+          false
+        ],
+        [
+          "B02",
+          true
+        ]
+      ],
+      "body_html": "<div class=\"stack\"><div class=\"wire\"><b>NEEDS-VISUAL → attritionChain</b><span>Should show: a population or quantity shrinking through sequential stages</span></div><p class=\"lead\">Research racial disparities in breast cancer outcomes: the Black-white mortality gap, what fraction is attributable to biology versus structural factors, which specific interventio...</p></div>",
+      "beats": [
+        {
+          "type": "analytic",
+          "text": "Beat B02 in reel cancer-disparities-zip-code is missing its Remotion animation. The concept — Research racial disparities in breast cancer outcomes: the Black-white mortality gap, what fraction is attributable to biology versus structural factors, which specific interventio. Rhetorical shape points to attritionChain: this slot should show a population or quantity shrinking through sequential stages."
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "num": 6,
+      "total": 15,
+      "section": "NEEDS-VISUAL",
+      "label": "06 / 15 · NEEDS-VISUAL",
+      "dark": false,
+      "title": [
+        [
+          "cancer-disparities-zip-code — ",
+          false
+        ],
+        [
+          "B03",
+          true
+        ]
+      ],
+      "body_html": "<div class=\"stack\"><div class=\"wire\"><b>NEEDS-VISUAL → attritionChain</b><span>Should show: a population or quantity shrinking through sequential stages</span></div><p class=\"lead\">Python script building causal chain analysis with attributable mortality fraction and intervention evidence per factor.</p></div>",
+      "beats": [
+        {
+          "type": "analytic",
+          "text": "Beat B03 in reel cancer-disparities-zip-code is missing its Remotion animation. The concept — Python script building causal chain analysis with attributable mortality fraction and intervention evidence per factor.. Rhetorical shape points to attritionChain: this slot should show a population or quantity shrinking through sequential stages."
+        }
+      ]
+    },
+    {
+      "id": "S07",
+      "num": 7,
+      "total": 15,
+      "section": "NEEDS-VISUAL",
+      "label": "07 / 15 · NEEDS-VISUAL",
+      "dark": false,
+      "title": [
+        [
+          "cancer-disparities-zip-code — ",
+          false
+        ],
+        [
+          "B05",
+          true
+        ]
+      ],
+      "body_html": "<div class=\"stack\"><div class=\"wire\"><b>NEEDS-VISUAL → scaleComparison</b><span>Should show: objects or quantities compared on a shared scale axis</span></div><p class=\"lead\">For each structural factor, what is the single highest-evidence intervention that reduces it — and in which health systems has it been implemented at scale with documented outcome...</p></div>",
+      "beats": [
+        {
+          "type": "analytic",
+          "text": "Beat B05 in reel cancer-disparities-zip-code is missing its Remotion animation. The concept — For each structural factor, what is the single highest-evidence intervention that reduces it — and in which health systems has it been implemented at scale with documented outcome. Rhetorical shape points to scaleComparison: this slot should show objects or quantities compared on a shared scale axis."
+        }
+      ]
+    },
+    {
+      "id": "S08",
+      "num": 8,
+      "total": 15,
+      "section": "NEEDS-VISUAL",
+      "label": "08 / 15 · NEEDS-VISUAL",
+      "dark": false,
+      "title": [
+        [
+          "cancer-disparities-zip-code — ",
+          false
+        ],
+        [
+          "B09",
+          true
+        ]
+      ],
+      "body_html": "<div class=\"stack\"><div class=\"wire\"><b>NEEDS-VISUAL → static - no pattern fits</b><span>Should show: a static title card or plain text slide</span></div><p class=\"lead\">Liam, in for Bear. Build it, then take it apart.</p></div>",
+      "beats": [
+        {
+          "type": "analytic",
+          "text": "Beat B09 in reel cancer-disparities-zip-code is missing its Remotion animation. The concept — Liam, in for Bear. Build it, then take it apart.. Rhetorical shape points to static - no pattern fits: this slot should show a static title card or plain text slide."
+        }
+      ]
+    },
+    {
+      "id": "S09",
+      "num": 9,
+      "total": 15,
+      "section": "NEEDS-VISUAL",
+      "label": "09 / 15 · NEEDS-VISUAL",
+      "dark": false,
+      "title": [
+        [
+          "cancer-dormancy-recurrence — ",
+          false
+        ],
+        [
+          "B00",
+          true
+        ]
+      ],
+      "body_html": "<div class=\"stack\"><div class=\"wire\"><b>NEEDS-VISUAL → static - no pattern fits</b><span>Should show: a static title card or plain text slide</span></div><p class=\"lead\">Hola, Liam. This is Liam, in for Bear. Cancer dormancy — 15-year recurrence and the cell that was waiting.</p></div>",
+      "beats": [
+        {
+          "type": "analytic",
+          "text": "Beat B00 in reel cancer-dormancy-recurrence is missing its Remotion animation. The concept — Hola, Liam. This is Liam, in for Bear. Cancer dormancy — 15-year recurrence and the cell that was waiting.. Rhetorical shape points to static - no pattern fits: this slot should show a static title card or plain text slide."
+        }
+      ]
+    },
+    {
+      "id": "S10",
+      "num": 10,
+      "total": 15,
+      "section": "NEEDS-VISUAL",
+      "label": "10 / 15 · NEEDS-VISUAL",
+      "dark": false,
+      "title": [
+        [
+          "cancer-dormancy-recurrence — ",
+          false
+        ],
+        [
+          "B02",
+          true
+        ]
+      ],
+      "body_html": "<div class=\"stack\"><div class=\"wire\"><b>NEEDS-VISUAL → threshold</b><span>Should show: a value approaching and crossing a critical numeric limit</span></div><p class=\"lead\">Research cancer dormancy: molecular mechanisms holding disseminated tumor cells dormant, known triggers of reactivation, clinical evidence for dormancy duration in breast, prostate...</p></div>",
+      "beats": [
+        {
+          "type": "analytic",
+          "text": "Beat B02 in reel cancer-dormancy-recurrence is missing its Remotion animation. The concept — Research cancer dormancy: molecular mechanisms holding disseminated tumor cells dormant, known triggers of reactivation, clinical evidence for dormancy duration in breast, prostate. Rhetorical shape points to threshold: this slot should show a value approaching and crossing a critical numeric limit."
+        }
+      ]
+    },
+    {
+      "id": "S11",
+      "num": 11,
+      "total": 15,
+      "section": "NEEDS-VISUAL",
+      "label": "11 / 15 · NEEDS-VISUAL",
+      "dark": false,
+      "title": [
+        [
+          "cancer-dormancy-recurrence — ",
+          false
+        ],
+        [
+          "B03",
+          true
+        ]
+      ],
+      "body_html": "<div class=\"stack\"><div class=\"wire\"><b>NEEDS-VISUAL → static - no pattern fits</b><span>Should show: a static title card or plain text slide</span></div><p class=\"lead\">Python script building three-panel comparison — dormancy mechanism, evidence strength, and clinical strategy.</p></div>",
+      "beats": [
+        {
+          "type": "analytic",
+          "text": "Beat B03 in reel cancer-dormancy-recurrence is missing its Remotion animation. The concept — Python script building three-panel comparison — dormancy mechanism, evidence strength, and clinical strategy.. Rhetorical shape points to static - no pattern fits: this slot should show a static title card or plain text slide."
+        }
+      ]
+    },
+    {
+      "id": "S12",
+      "num": 12,
+      "total": 15,
+      "section": "NEEDS-VISUAL",
+      "label": "12 / 15 · NEEDS-VISUAL",
+      "dark": false,
+      "title": [
+        [
+          "cancer-dormancy-recurrence — ",
+          false
+        ],
+        [
+          "B05",
+          true
+        ]
+      ],
+      "body_html": "<div class=\"stack\"><div class=\"wire\"><b>NEEDS-VISUAL → threshold</b><span>Should show: a value approaching and crossing a critical numeric limit</span></div><p class=\"lead\">For each reactivation trigger, what is the evidence that it is clinically actionable — is there a trial blocking that trigger in humans, and what happened?</p></div>",
+      "beats": [
+        {
+          "type": "analytic",
+          "text": "Beat B05 in reel cancer-dormancy-recurrence is missing its Remotion animation. The concept — For each reactivation trigger, what is the evidence that it is clinically actionable — is there a trial blocking that trigger in humans, and what happened?. Rhetorical shape points to threshold: this slot should show a value approaching and crossing a critical numeric limit."
+        }
+      ]
+    },
+    {
+      "id": "S13",
+      "num": 13,
+      "total": 15,
+      "section": "NEEDS-VISUAL",
+      "label": "13 / 15 · NEEDS-VISUAL",
+      "dark": false,
+      "title": [
+        [
+          "cancer-dormancy-recurrence — ",
+          false
+        ],
+        [
+          "B09",
+          true
+        ]
+      ],
+      "body_html": "<div class=\"stack\"><div class=\"wire\"><b>NEEDS-VISUAL → static - no pattern fits</b><span>Should show: a static title card or plain text slide</span></div><p class=\"lead\">Liam, in for Bear. Build it, then take it apart.</p></div>",
+      "beats": [
+        {
+          "type": "analytic",
+          "text": "Beat B09 in reel cancer-dormancy-recurrence is missing its Remotion animation. The concept — Liam, in for Bear. Build it, then take it apart.. Rhetorical shape points to static - no pattern fits: this slot should show a static title card or plain text slide."
+        }
+      ]
+    },
+    {
+      "id": "S14",
+      "num": 14,
+      "total": 15,
+      "section": "NEEDS-VISUAL",
+      "label": "14 / 15 · NEEDS-VISUAL",
+      "dark": false,
+      "title": [
+        [
+          "car-t-solid-tumor-barrier — ",
+          false
+        ],
+        [
+          "B00",
+          true
+        ]
+      ],
+      "body_html": "<div class=\"stack\"><div class=\"wire\"><b>NEEDS-VISUAL → static - no pattern fits</b><span>Should show: a static title card or plain text slide</span></div><p class=\"lead\">Ciao, Liam. This is Liam, in for Bear. CAR-T — why it cures leukemia but stalls at solid tumors.</p></div>",
+      "beats": [
+        {
+          "type": "analytic",
+          "text": "Beat B00 in reel car-t-solid-tumor-barrier is missing its Remotion animation. The concept — Ciao, Liam. This is Liam, in for Bear. CAR-T — why it cures leukemia but stalls at solid tumors.. Rhetorical shape points to static - no pattern fits: this slot should show a static title card or plain text slide."
+        }
+      ]
+    },
+    {
+      "id": "S15",
+      "num": 15,
+      "total": 15,
+      "section": "NEEDS-VISUAL",
+      "label": "15 / 15 · NEEDS-VISUAL",
+      "dark": false,
+      "title": [
+        [
+          "car-t-solid-tumor-barrier — ",
+          false
+        ],
+        [
+          "B02",
+          true
+        ]
+      ],
+      "body_html": "<div class=\"stack\"><div class=\"wire\"><b>NEEDS-VISUAL → static - no pattern fits</b><span>Should show: a static title card or plain text slide</span></div><p class=\"lead\">Research CAR-T therapy in solid tumors versus hematologic cancers: FDA-approved indications with objective response rates, five main barriers to solid tumor activity, and evidence...</p></div>",
+      "beats": [
+        {
+          "type": "analytic",
+          "text": "Beat B02 in reel car-t-solid-tumor-barrier is missing its Remotion animation. The concept — Research CAR-T therapy in solid tumors versus hematologic cancers: FDA-approved indications with objective response rates, five main barriers to solid tumor activity, and evidence. Rhetorical shape points to static - no pattern fits: this slot should show a static title card or plain text slide."
+        }
+      ]
+    }
+  ]
+}
