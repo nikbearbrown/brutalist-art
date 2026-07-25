@@ -1,0 +1,337 @@
+{
+  "metadata": {
+    "slug": "your-folder",
+    "title": "Your Work in One Folder",
+    "channel": "claude-liam",
+    "persona": "Liam",
+    "in_for": "Liam, for Bear",
+    "folderLabel": "@NikBearBrown",
+    "register": "Teardown",
+    "engine": "kokoro",
+    "voice": "am_onyx",
+    "palette": "claude",
+    "genre": "ai-explainer",
+    "topic": "BRUTALIST — OPEN SOURCE",
+    "one_idea": "Put everything — notes, code, figures, data, the draft — in one folder; that folder is the raw material Claude reads to find the stories worth animating.",
+    "source": "https://github.com/nikbearbrown/brutalist.art",
+    "repo": "https://github.com/nikbearbrown/brutalist.art",
+    "publish_url": "https://youtube.com/@NikBearBrown",
+    "chapter_number": 4,
+    "playlist_title": "What Is Brutalist? — Make Videos with the Open-Source Toolkit",
+    "duration_estimate_s": 120,
+    "build": {
+      "at": "2026-07-25T01:26:13",
+      "cut": "review",
+      "filled": 9,
+      "of": 9,
+      "slates": [],
+      "skin_warnings": []
+    },
+    "voice_kokoro": "am_onyx",
+    "greeting": "Hej, Liam",
+    "style_preset": "claude",
+    "ground": "#FAF9F5"
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "act": "cold open",
+      "narration_text": "Hej — this is Liam, in for Bear. Your Work in One Folder. Everything that went into making your project — notes, code, figures, data, drafts — belongs in one folder. That folder is the raw material Claude reads to find the stories worth animating.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 18,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Hej, Liam",
+            "topic": "BRUTALIST — OPEN SOURCE",
+            "segment": "Your Work in One Folder",
+            "command": "How should I organize my project folder before building a video?",
+            "runningText": "scanning folder… finding stories… mapping to beats…",
+            "output": [
+              "One folder = one conversation — notes, code, data, drafts together",
+              "Claude reads the folder to find the idea worth animating",
+              "Reproducible: the video rebuilds from the folder any time"
+            ],
+            "folderLabel": "@NikBearBrown",
+            "modelLabel": "Fable 5",
+            "effortLabel": "Medium"
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": 13.78,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B00.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T01:26:13"
+      }
+    },
+    {
+      "beat_id": "A1",
+      "act": "ACT 1",
+      "narration_text": "One folder, one conversation. Put everything in it — your notes, your code, your figures, your data, your draft report, your slide deck. That folder is what you hand Claude. The richer the folder, the better the video Claude can find inside it.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 17,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "One folder, one conversation.",
+            "eyebrow": "ACT 1",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A1.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-A1.mp3",
+      "actual_duration_s": 12.93,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/A1.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T01:26:13"
+      }
+    },
+    {
+      "beat_id": "A2",
+      "act": "ACT 2",
+      "narration_text": "What goes in the folder: notes and bullet points, code files and scripts, figures and charts you already have, any data files the work depends on, and the draft write-up. If it shaped your thinking, it belongs in the folder.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 16,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "What goes in the folder: notes and bullet points, code…",
+            "eyebrow": "ACT 2",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A2.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-A2.mp3",
+      "actual_duration_s": 12.46,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/A2.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T01:26:13"
+      }
+    },
+    {
+      "beat_id": "A3",
+      "act": "ACT 3",
+      "narration_text": "Claude reads the folder to find the stories. The scout skill scans your chapters and surfaces candidates — each card scores the idea and explains the one thing a viewer should leave with. You pick the card. Claude builds the beat sheet. The human picks; the machine builds.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 19,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "Claude reads the folder to find the stories.",
+            "eyebrow": "ACT 3",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A3.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-A3.mp3",
+      "actual_duration_s": 14.17,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/A3.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T01:26:13"
+      }
+    },
+    {
+      "beat_id": "A4",
+      "act": "ACT 4",
+      "narration_text": "Nothing that matters should live only on your desktop. If a figure is in your Downloads folder and not in the project folder, Claude cannot find it, and the video cannot use it. The folder is the contract between you and the pipeline.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 17,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "Nothing that matters should live only on your desktop.",
+            "eyebrow": "ACT 4",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A4.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-A4.mp3",
+      "actual_duration_s": 12.86,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/A4.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T01:26:13"
+      }
+    },
+    {
+      "beat_id": "A5",
+      "act": "ACT 5",
+      "narration_text": "Because the video is built from the folder, it is reproducible. Six months from now, you can regenerate the video from the same folder. Update the notes, recompile — you get an updated video. The folder is version-controlled. The video follows.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 16,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "Because the video is built from the folder, it is reproducible.",
+            "eyebrow": "ACT 5",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A5.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-A5.mp3",
+      "actual_duration_s": 13.55,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/A5.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T01:26:13"
+      }
+    },
+    {
+      "beat_id": "VERDICT",
+      "act": "verdict",
+      "narration_text": "The verdict. One folder, one conversation — the richer the material you put in, the better the story Claude finds. The folder is the contract. Keep it complete, keep it version-controlled, and the video is reproducible forever.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 14,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "artifactTitle": "Your Work in One Folder",
+            "artifactHeading": "The verdict",
+            "artifactLines": [
+              "One folder = one conversation — everything that shaped your thinking.",
+              "Claude scouts the folder and surfaces candidates — you pick.",
+              "Nothing that matters lives only on your desktop.",
+              "The folder is version-controlled. The video follows."
+            ]
+          },
+          "rendered": {
+            "out": "media/VERDICT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-VERDICT.mp3",
+      "actual_duration_s": 12.29,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/VERDICT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T01:26:13"
+      }
+    },
+    {
+      "beat_id": "HANDOFF",
+      "act": "handoff",
+      "narration_text": "Your turn. Ask Claude this: Here is my project folder. Read everything in it. Tell me: what is the single most important idea in this material that a first-time viewer should understand? What three pieces of evidence — from the files I gave you — best support that idea? Run that prompt on your own folder — it surfaces the one idea and the three strongest beats for your video.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 28,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Your turn.",
+            "topic": "BRUTALIST — OPEN SOURCE",
+            "segment": "Your Work in One Folder",
+            "command": "Here is my project folder. Read everything in it. What is the single most important idea a first-time viewer should understand? What three pieces of evidence from my files best support that idea?",
+            "runningText": "paste this into Claude…",
+            "output": [],
+            "folderLabel": "@NikBearBrown",
+            "modelLabel": "Fable 5",
+            "effortLabel": "Medium"
+          },
+          "rendered": {
+            "out": "media/HANDOFF.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-HANDOFF.mp3",
+      "actual_duration_s": 18.65,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/HANDOFF.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T01:26:13"
+      }
+    },
+    {
+      "beat_id": "OUTRO",
+      "act": "outro",
+      "narration_text": "Your Work in One Folder — Brutalist. @NikBearBrown. Liam, in for Bear.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 5,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "Your Work in One Folder",
+            "handle": "@NikBearBrown",
+            "subline": "Liam, in for Bear"
+          },
+          "rendered": {
+            "out": "media/OUTRO.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-OUTRO.mp3",
+      "actual_duration_s": 4.82,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/OUTRO.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T01:26:13"
+      }
+    }
+  ]
+}

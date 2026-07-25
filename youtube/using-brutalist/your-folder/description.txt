@@ -1,0 +1,9 @@
+Your Work in One Folder
+
+Put everything — notes, code, figures, data, the draft — in one folder; that folder is the raw material Claude reads to find the stories worth animating.
+
+Brutalist is open source. Download it, use it, make your own videos:
+https://github.com/nikbearbrown/brutalist.art
+Self-serve — no support, no email. If you find it useful, a star is appreciated.
+
+Channel: https://youtube.com/@NikBearBrown
