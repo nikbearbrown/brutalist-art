@@ -17,6 +17,6 @@ Notes:
 Frames sampled: 18  ·  BLOCKER: 0  ·  MAJOR: 10
 
 ### A1_50.png
-- **MAJOR** `underfill` — content fills only 46% of the safe area (min 55%) — too much negative space
+- **MAJOR** `underfill` — content fills only 14% of the safe area (min 55%) — too much negative space
 
 ### A

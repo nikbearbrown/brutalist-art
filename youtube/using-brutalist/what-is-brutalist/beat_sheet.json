@@ -20,17 +20,11 @@
     "playlist_title": "What Is Brutalist? — Make Videos with the Open-Source Toolkit",
     "duration_estimate_s": 120,
     "build": {
-      "at": "2026-07-25T00:59:23",
+      "at": "2026-07-25T01:08:21",
       "cut": "review",
-      "filled": 4,
+      "filled": 9,
       "of": 9,
-      "slates": [
-        "A1",
-        "A2",
-        "A3",
-        "A4",
-        "A5"
-      ],
+      "slates": [],
       "skin_warnings": []
     },
     "voice_kokoro": "am_onyx",
@@ -77,7 +71,7 @@
         "status": "VIDEO",
         "src": "media/B00.mp4",
         "filled_by": "media",
-        "at": "2026-07-25T00:59:23"
+        "at": "2026-07-25T01:08:21"
       }
     },
     {
@@ -87,15 +81,28 @@
       "voice": "am_onyx",
       "engine": "kokoro",
       "estimated_duration_s": 16,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "You start with a folder.",
+            "eyebrow": "ACT 1",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A1.mp4",
+            "at": ""
+          }
+        }
+      },
       "audio_file": "mp3/beat-A1.mp3",
       "actual_duration_s": 13.57,
       "build": {
-        "status": "SLATE",
-        "src": null,
-        "filled_by": null,
-        "at": "2026-07-25T00:59:23",
-        "needs": "YOU → 5–10s gen-AI clip → pantry (as A1.mp4)",
-        "suggested": "suggested prompt: You start with a folder. Notes, code, data, screenshots, a rough draft — whatever you made. That folder is the raw material. Brutalist reads it and finds the st"
+        "status": "VIDEO",
+        "src": "media/A1.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T01:08:21"
       }
     },
     {
@@ -105,15 +112,28 @@
       "voice": "am_onyx",
       "engine": "kokoro",
       "estimated_duration_s": 18,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "Audio goes first.",
+            "eyebrow": "ACT 2",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A2.mp4",
+            "at": ""
+          }
+        }
+      },
       "audio_file": "mp3/beat-A2.mp3",
       "actual_duration_s": 15.59,
       "build": {
-        "status": "SLATE",
-        "src": null,
-        "filled_by": null,
-        "at": "2026-07-25T00:59:23",
-        "needs": "YOU → 5–10s gen-AI clip → pantry (as A2.mp4)",
-        "suggested": "suggested prompt: Audio goes first. You pick a voice — Kokoro, free, local, runs on your laptop. Narrate each beat, render the MP3s. Those durations become the master clock. Ever"
+        "status": "VIDEO",
+        "src": "media/A2.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T01:08:21"
       }
     },
     {
@@ -123,15 +143,28 @@
       "voice": "am_onyx",
       "engine": "kokoro",
       "estimated_duration_s": 17,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "The beat sheet is a JSON file —",
+            "eyebrow": "ACT 3",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A3.mp4",
+            "at": ""
+          }
+        }
+      },
       "audio_file": "mp3/beat-A3.mp3",
       "actual_duration_s": 14.46,
       "build": {
-        "status": "SLATE",
-        "src": null,
-        "filled_by": null,
-        "at": "2026-07-25T00:59:23",
-        "needs": "YOU → 5–10s gen-AI clip → pantry (as A3.mp4)",
-        "suggested": "suggested prompt: The beat sheet is a JSON file — narration, visual lane, timing, render instructions. It is the film as code. Change a line, recompile, the video updates. Versio"
+        "status": "VIDEO",
+        "src": "media/A3.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T01:08:21"
       }
     },
     {
@@ -141,15 +174,28 @@
       "voice": "am_onyx",
       "engine": "kokoro",
       "estimated_duration_s": 15,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "Kokoro TTS runs locally —",
+            "eyebrow": "ACT 4",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A4.mp4",
+            "at": ""
+          }
+        }
+      },
       "audio_file": "mp3/beat-A4.mp3",
       "actual_duration_s": 15.15,
       "build": {
-        "status": "SLATE",
-        "src": null,
-        "filled_by": null,
-        "at": "2026-07-25T00:59:23",
-        "needs": "YOU → 5–10s gen-AI clip → pantry (as A4.mp4)",
-        "suggested": "suggested prompt: Kokoro TTS runs locally — no cloud call, no monthly meter. Manim draws the math and charts. Remotion builds the motion graphics and bookends. Everything assembl"
+        "status": "VIDEO",
+        "src": "media/A4.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T01:08:21"
       }
     },
     {
@@ -159,15 +205,28 @@
       "voice": "am_onyx",
       "engine": "kokoro",
       "estimated_duration_s": 16,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "The whole thing is open source.",
+            "eyebrow": "ACT 5",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A5.mp4",
+            "at": ""
+          }
+        }
+      },
       "audio_file": "mp3/beat-A5.mp3",
       "actual_duration_s": 12.25,
       "build": {
-        "status": "SLATE",
-        "src": null,
-        "filled_by": null,
-        "at": "2026-07-25T00:59:23",
-        "needs": "YOU → 5–10s gen-AI clip → pantry (as A5.mp4)",
-        "suggested": "suggested prompt: The whole thing is open source. Clone the repo, run setup, start building. No support email. No onboarding call. No gated course. Star the repo if it is useful."
+        "status": "VIDEO",
+        "src": "media/A5.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T01:08:21"
       }
     },
     {
@@ -203,7 +262,7 @@
         "status": "VIDEO",
         "src": "media/VERDICT.mp4",
         "filled_by": "media",
-        "at": "2026-07-25T00:59:23"
+        "at": "2026-07-25T01:08:21"
       }
     },
     {
@@ -240,7 +299,7 @@
         "status": "VIDEO",
         "src": "media/HANDOFF.mp4",
         "filled_by": "media",
-        "at": "2026-07-25T00:59:23"
+        "at": "2026-07-25T01:08:21"
       }
     },
     {
@@ -271,7 +330,7 @@
         "status": "VIDEO",
         "src": "media/OUTRO.mp4",
         "filled_by": "media",
-        "at": "2026-07-25T00:59:23"
+        "at": "2026-07-25T01:08:21"
       }
     }
   ]
