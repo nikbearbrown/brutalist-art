@@ -1,0 +1,9 @@
+Make It Move
+
+Brutalist renders every beat it can — Manim fragments, Remotion scenes, cards — and leaves the rest as labeled slates for you to fill.
+
+Brutalist is open source. Download it, use it, make your own videos:
+https://github.com/nikbearbrown/brutalist.art
+Self-serve — no support, no email. If you find it useful, a star is appreciated.
+
+Channel: https://youtube.com/@NikBearBrown
