@@ -1,0 +1,337 @@
+{
+  "metadata": {
+    "slug": "make-it-yours",
+    "title": "Make It Yours",
+    "channel": "claude-liam",
+    "persona": "Liam",
+    "in_for": "Liam, for Bear",
+    "folderLabel": "@NikBearBrown",
+    "register": "Teardown",
+    "engine": "kokoro",
+    "voice": "am_onyx",
+    "palette": "claude",
+    "genre": "ai-explainer",
+    "topic": "BRUTALIST — OPEN SOURCE",
+    "one_idea": "Fork it, change the skins and scenes, and send it back — it is open source; a star is appreciated.",
+    "source": "https://github.com/nikbearbrown/brutalist.art",
+    "repo": "https://github.com/nikbearbrown/brutalist.art",
+    "publish_url": "https://youtube.com/@NikBearBrown",
+    "chapter_number": 13,
+    "playlist_title": "What Is Brutalist? — Make Videos with the Open-Source Toolkit",
+    "duration_estimate_s": 120,
+    "build": {
+      "at": "2026-07-25T02:29:14",
+      "cut": "review",
+      "filled": 9,
+      "of": 9,
+      "slates": [],
+      "skin_warnings": []
+    },
+    "voice_kokoro": "am_onyx",
+    "greeting": "Konnichiwa, Liam",
+    "style_preset": "claude",
+    "ground": "#FAF9F5"
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "act": "cold open",
+      "narration_text": "Konnichiwa — this is Liam, in for Bear. Make It Yours. Fork it, change the skins and scenes, send it back. Brutalist is open source. A star is appreciated. The rest is yours to keep.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 14,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Konnichiwa, Liam",
+            "topic": "BRUTALIST — OPEN SOURCE",
+            "segment": "Make It Yours",
+            "command": "How do I customize Brutalist for my own brand and contribute back?",
+            "runningText": "forking repo… editing tokens… updating SKILL.md… opening PR…",
+            "output": [
+              "Fork on GitHub, change runtime/remotion/src/tokens/ for your palette",
+              "Write your own SKILL.md for your video genre",
+              "Open a PR — the community is the roadmap"
+            ],
+            "folderLabel": "@NikBearBrown",
+            "modelLabel": "Fable 5",
+            "effortLabel": "Medium"
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": 10.41,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B00.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T02:29:14"
+      }
+    },
+    {
+      "beat_id": "A1",
+      "act": "ACT 1",
+      "narration_text": "Fork the repo on GitHub. Your fork is your version. You can pull upstream changes from the original, but your customizations live in your fork and you can run your own builds without touching the upstream.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 14,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "Fork the repo on GitHub.",
+            "eyebrow": "ACT 1",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A1.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-A1.mp3",
+      "actual_duration_s": 11.22,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/A1.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T02:29:14"
+      }
+    },
+    {
+      "beat_id": "A2",
+      "act": "ACT 2",
+      "narration_text": "To change the skin, edit the token files in runtime/remotion/src/tokens/. claude.ts holds the Claude palette. Copy it, rename it, change the hex codes and font names. Then create a new brand file in brands/ pointing at your tokens. Every Remotion component uses the tokens — one file change re-skins the whole toolkit.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 20,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "To change the skin, edit the token files in runtime/remotion/src/tokens/.",
+            "eyebrow": "ACT 2",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A2.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-A2.mp3",
+      "actual_duration_s": 20.16,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/A2.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T02:29:14"
+      }
+    },
+    {
+      "beat_id": "A3",
+      "act": "ACT 3",
+      "narration_text": "To add a new video type, write a SKILL.md in skills/make/your-skill/. The SKILL.md is the operating manual — phases, inputs, outputs, gates. Claude reads it before doing anything. The skill is just text and Python. You do not need to modify the runtime.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 17,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "To add a new video type, write a SKILL.md in skills/make/your-skill/.",
+            "eyebrow": "ACT 3",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A3.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-A3.mp3",
+      "actual_duration_s": 15.3,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/A3.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T02:29:14"
+      }
+    },
+    {
+      "beat_id": "A4",
+      "act": "ACT 4",
+      "narration_text": "A star is appreciated. Stars are how other people find the repo. If Brutalist saved you hours, a star is the right thank-you. You are not obligated to a review, a testimonial, or a tweet. Star if it earns it.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 16,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "A star is appreciated.",
+            "eyebrow": "ACT 4",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A4.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-A4.mp3",
+      "actual_duration_s": 12.05,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/A4.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T02:29:14"
+      }
+    },
+    {
+      "beat_id": "A5",
+      "act": "ACT 5",
+      "narration_text": "Go make yours. You have the skills, the runtime, the voices, and the pipeline. The only thing left is your project. Put it in a folder. Run the prompt. Watch what comes out. Iterate until it is right. That is the whole workflow.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 17,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "Go make yours.",
+            "eyebrow": "ACT 5",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A5.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-A5.mp3",
+      "actual_duration_s": 11.88,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/A5.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T02:29:14"
+      }
+    },
+    {
+      "beat_id": "VERDICT",
+      "act": "verdict",
+      "narration_text": "The verdict. Fork, customize, build, contribute. The palette is one file, the skill is text, the runtime is shared. Star the repo. Send a PR if you add something worth sharing. The community is the roadmap.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 14,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "artifactTitle": "Make It Yours",
+            "artifactHeading": "The verdict",
+            "artifactLines": [
+              "Fork the repo — your customizations live in your fork.",
+              "runtime/remotion/src/tokens/claude.ts — one file re-skins everything.",
+              "Write a SKILL.md in skills/make/your-skill/ — no runtime changes needed.",
+              "Star if it helps. Open a PR if you add something worth sharing."
+            ]
+          },
+          "rendered": {
+            "out": "media/VERDICT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-VERDICT.mp3",
+      "actual_duration_s": 11.56,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/VERDICT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T02:29:14"
+      }
+    },
+    {
+      "beat_id": "HANDOFF",
+      "act": "handoff",
+      "narration_text": "Your turn. Ask Claude this: I want to build a Brutalist video about [your project or your brand]. What palette, voice, and SKILL.md would I need? Write a one-paragraph SKILL.md stub that describes the video genre I want, the inputs, and the three key phase gates. That prompt starts the skill design — paste it and you have the first draft of your own skill in one pass.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 27,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Your turn.",
+            "topic": "BRUTALIST — OPEN SOURCE",
+            "segment": "Make It Yours",
+            "command": "I want to build a Brutalist video about [your project or brand]. What palette, voice, and SKILL.md would I need? Write a one-paragraph SKILL.md stub describing the video genre, inputs, and three key phase gates.",
+            "runningText": "paste this into Claude…",
+            "output": [],
+            "folderLabel": "@NikBearBrown",
+            "modelLabel": "Fable 5",
+            "effortLabel": "Medium"
+          },
+          "rendered": {
+            "out": "media/HANDOFF.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-HANDOFF.mp3",
+      "actual_duration_s": 18.41,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/HANDOFF.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T02:29:14"
+      }
+    },
+    {
+      "beat_id": "OUTRO",
+      "act": "outro",
+      "narration_text": "Make It Yours — Brutalist. @NikBearBrown. Liam, in for Bear.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 5,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "Make It Yours",
+            "handle": "@NikBearBrown",
+            "subline": "Liam, in for Bear"
+          },
+          "rendered": {
+            "out": "media/OUTRO.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-OUTRO.mp3",
+      "actual_duration_s": 4.42,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/OUTRO.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T02:29:14"
+      }
+    }
+  ]
+}
