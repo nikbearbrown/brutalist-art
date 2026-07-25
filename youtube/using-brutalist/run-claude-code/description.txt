@@ -1,0 +1,9 @@
+Run Claude Code
+
+Open Claude Code in the folder that holds your work and the Brutalist skills with caffeinate claude --dangerously-skip-permissions.
+
+Brutalist is open source. Download it, use it, make your own videos:
+https://github.com/nikbearbrown/brutalist.art
+Self-serve — no support, no email. If you find it useful, a star is appreciated.
+
+Channel: https://youtube.com/@NikBearBrown

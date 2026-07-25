@@ -1,0 +1,337 @@
+{
+  "metadata": {
+    "slug": "run-claude-code",
+    "title": "Run Claude Code",
+    "channel": "claude-liam",
+    "persona": "Liam",
+    "in_for": "Liam, for Bear",
+    "folderLabel": "@NikBearBrown",
+    "register": "Teardown",
+    "engine": "kokoro",
+    "voice": "am_onyx",
+    "palette": "claude",
+    "genre": "ai-explainer",
+    "topic": "BRUTALIST — OPEN SOURCE",
+    "one_idea": "Open Claude Code in the folder that holds your work and the Brutalist skills with caffeinate claude --dangerously-skip-permissions.",
+    "source": "https://github.com/nikbearbrown/brutalist.art",
+    "repo": "https://github.com/nikbearbrown/brutalist.art",
+    "publish_url": "https://youtube.com/@NikBearBrown",
+    "chapter_number": 3,
+    "playlist_title": "What Is Brutalist? — Make Videos with the Open-Source Toolkit",
+    "duration_estimate_s": 120,
+    "build": {
+      "at": "2026-07-25T01:19:14",
+      "cut": "review",
+      "filled": 9,
+      "of": 9,
+      "slates": [],
+      "skin_warnings": []
+    },
+    "voice_kokoro": "am_onyx",
+    "greeting": "Bonjour, Liam",
+    "style_preset": "claude",
+    "ground": "#FAF9F5"
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "act": "cold open",
+      "narration_text": "Bonjour — this is Liam, in for Bear. Run Claude Code. Open Claude Code in the folder that holds your work and the Brutalist skills. One flag keeps it running unattended. Let me show you the command.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 14,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Bonjour, Liam",
+            "topic": "BRUTALIST — OPEN SOURCE",
+            "segment": "Run Claude Code",
+            "command": "How do I run Claude Code with Brutalist, unattended?",
+            "runningText": "caffeinate claude --dangerously-skip-permissions…",
+            "output": [
+              "Open Claude Code in the folder with your work AND brutalist-art/",
+              "caffeinate keeps your Mac awake during long builds",
+              "--dangerously-skip-permissions runs the pipeline without prompts"
+            ],
+            "folderLabel": "@NikBearBrown",
+            "modelLabel": "Fable 5",
+            "effortLabel": "Medium"
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": 11.18,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B00.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T01:19:14"
+      }
+    },
+    {
+      "beat_id": "A1",
+      "act": "ACT 1",
+      "narration_text": "Open Claude Code in the folder that holds your work. That folder needs to be the parent of both your project files and the brutalist-art toolkit. Claude needs to see both to run the skills — the work and the machinery.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 16,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "Open Claude Code in the folder that holds your work.",
+            "eyebrow": "ACT 1",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A1.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-A1.mp3",
+      "actual_duration_s": 11.78,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/A1.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T01:19:14"
+      }
+    },
+    {
+      "beat_id": "A2",
+      "act": "ACT 2",
+      "narration_text": "Prefix the command with caffeinate. caffeinate is a macOS built-in that prevents the display and CPU from sleeping. A build that takes forty minutes does not survive a screen lock without it. One word, big difference.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 14,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "Prefix the command with caffeinate.",
+            "eyebrow": "ACT 2",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A2.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-A2.mp3",
+      "actual_duration_s": 12.67,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/A2.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T01:19:14"
+      }
+    },
+    {
+      "beat_id": "A3",
+      "act": "ACT 3",
+      "narration_text": "The flag is --dangerously-skip-permissions. It tells Claude Code not to pause and ask permission for each file write, ffmpeg call, or npm command. The pipeline meets the seatbelt rules — git-tracked, regenerable outputs — so the flag is appropriate here.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 16,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "The flag is --dangerously-skip-permissions.",
+            "eyebrow": "ACT 3",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A3.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-A3.mp3",
+      "actual_duration_s": 15.15,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/A3.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T01:19:14"
+      }
+    },
+    {
+      "beat_id": "A4",
+      "act": "ACT 4",
+      "narration_text": "The full command: caffeinate claude --dangerously-skip-permissions. Run it from the parent folder. Paste your build prompt. Walk away. The whole pipeline — audio, Remotion, compile, QC — runs while you do something else.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 13,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "The full command: caffeinate claude --dangerously-skip-permissions.",
+            "eyebrow": "ACT 4",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A4.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-A4.mp3",
+      "actual_duration_s": 12.39,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/A4.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T01:19:14"
+      }
+    },
+    {
+      "beat_id": "A5",
+      "act": "ACT 5",
+      "narration_text": "The entry point is ./art. Every skill, every build stage, every QC gate runs through the art script in brutalist-art/. You do not call Python or npx directly — art resolves its own home and auto-loads the environment file.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 15,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "The entry point is ./art.",
+            "eyebrow": "ACT 5",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A5.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-A5.mp3",
+      "actual_duration_s": 14.34,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/A5.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T01:19:14"
+      }
+    },
+    {
+      "beat_id": "VERDICT",
+      "act": "verdict",
+      "narration_text": "The verdict. caffeinate claude --dangerously-skip-permissions — three words that let the pipeline run overnight. One entry point, ./art, drives all the stages. You set it up once and it runs while you sleep.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 13,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "artifactTitle": "Run Claude Code",
+            "artifactHeading": "The verdict",
+            "artifactLines": [
+              "caffeinate claude --dangerously-skip-permissions — three words.",
+              "Open in the parent folder that holds your work + brutalist-art/.",
+              "./art is the single entry point — it resolves its own paths.",
+              "The pipeline runs unattended while you do something else."
+            ]
+          },
+          "rendered": {
+            "out": "media/VERDICT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-VERDICT.mp3",
+      "actual_duration_s": 11.37,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/VERDICT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T01:19:14"
+      }
+    },
+    {
+      "beat_id": "HANDOFF",
+      "act": "handoff",
+      "narration_text": "Your turn. Ask Claude this: I am going to run you with caffeinate and --dangerously-skip-permissions. Read my BUILD-PROMPT.md and execute the pipeline for my reel. Run the stages in order: audio first, then Remotion, then compile. Log everything to BUILD-LOG.md. That is the overnight build prompt — paste it in after you have a beat sheet ready and walk away.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 24,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Your turn.",
+            "topic": "BRUTALIST — OPEN SOURCE",
+            "segment": "Run Claude Code",
+            "command": "I am going to run you with caffeinate and --dangerously-skip-permissions. Read my BUILD-PROMPT.md and run the pipeline in order: audio first, then Remotion, then compile. Log everything to BUILD-LOG.md.",
+            "runningText": "paste this into Claude…",
+            "output": [],
+            "folderLabel": "@NikBearBrown",
+            "modelLabel": "Fable 5",
+            "effortLabel": "Medium"
+          },
+          "rendered": {
+            "out": "media/HANDOFF.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-HANDOFF.mp3",
+      "actual_duration_s": 19.09,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/HANDOFF.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T01:19:14"
+      }
+    },
+    {
+      "beat_id": "OUTRO",
+      "act": "outro",
+      "narration_text": "Run Claude Code — Brutalist. @NikBearBrown. Liam, in for Bear.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 5,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "Run Claude Code",
+            "handle": "@NikBearBrown",
+            "subline": "Liam, in for Bear"
+          },
+          "rendered": {
+            "out": "media/OUTRO.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-OUTRO.mp3",
+      "actual_duration_s": 4.63,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/OUTRO.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T01:19:14"
+      }
+    }
+  ]
+}
