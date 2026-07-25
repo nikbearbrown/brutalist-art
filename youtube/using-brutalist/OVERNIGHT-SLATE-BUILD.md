@@ -1,6 +1,6 @@
 # OVERNIGHT SLATE BUILD — What Is Brutalist? playlist
 
-Run completed: 2026-07-25T05:00:14.399609+00:00
+Run completed: 2026-07-25T05:09:18.699371+00:00
 
 | # | Slug | Status | 16:9 dur | 9:16 dur | 9:16 ok | Gate V | Committed | Notes |
 |---|------|--------|----------|----------|---------|--------|-----------|-------|

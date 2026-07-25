@@ -1,0 +1,9 @@
+Get the Repo
+
+Clone the repo and run ./setup --install — no account, no email, no support tickets; a star is appreciated.
+
+Brutalist is open source. Download it, use it, make your own videos:
+https://github.com/nikbearbrown/brutalist.art
+Self-serve — no support, no email. If you find it useful, a star is appreciated.
+
+Channel: https://youtube.com/@NikBearBrown
