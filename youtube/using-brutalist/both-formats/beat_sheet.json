@@ -1,0 +1,337 @@
+{
+  "metadata": {
+    "slug": "both-formats",
+    "title": "16:9 and 9:16",
+    "channel": "claude-liam",
+    "persona": "Liam",
+    "in_for": "Liam, for Bear",
+    "folderLabel": "@NikBearBrown",
+    "register": "Teardown",
+    "engine": "kokoro",
+    "voice": "am_onyx",
+    "palette": "claude",
+    "genre": "ai-explainer",
+    "topic": "BRUTALIST — OPEN SOURCE",
+    "one_idea": "Every video ships in both landscape and vertical — build 16:9, then reformat to 9:16 with the 916 command and check the framing.",
+    "source": "https://github.com/nikbearbrown/brutalist.art",
+    "repo": "https://github.com/nikbearbrown/brutalist.art",
+    "publish_url": "https://youtube.com/@NikBearBrown",
+    "chapter_number": 10,
+    "playlist_title": "What Is Brutalist? — Make Videos with the Open-Source Toolkit",
+    "duration_estimate_s": 120,
+    "build": {
+      "at": "2026-07-25T02:06:34",
+      "cut": "review",
+      "filled": 9,
+      "of": 9,
+      "slates": [],
+      "skin_warnings": []
+    },
+    "voice_kokoro": "am_onyx",
+    "greeting": "Olá, Liam",
+    "style_preset": "claude",
+    "ground": "#FAF9F5"
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "act": "cold open",
+      "narration_text": "Olá — this is Liam, in for Bear. 16:9 and 9:16. Every Brutalist video ships in both landscape and vertical. Build 16:9 first, reformat to 9:16 with one command, then check the framing. One film, two shapes.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 14,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Olá, Liam",
+            "topic": "BRUTALIST — OPEN SOURCE",
+            "segment": "16:9 and 9:16",
+            "command": "How do I make both the landscape and vertical versions of my video?",
+            "runningText": "reformatting 16:9 → 9:16… checking subject framing… verifying safe areas…",
+            "output": [
+              "python3 runtime/scripts/shorts.py <reel>  — derives the 9:16 cut",
+              "Remotion beats re-render in portrait (ClaudeComposerAsk916 etc.)",
+              "Human checks framing — center-cut may need a pantry override"
+            ],
+            "folderLabel": "@NikBearBrown",
+            "modelLabel": "Fable 5",
+            "effortLabel": "Medium"
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": 14.04,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B00.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T02:06:34"
+      }
+    },
+    {
+      "beat_id": "A1",
+      "act": "ACT 1",
+      "narration_text": "Landscape and vertical are two different viewing contexts. YouTube feeds mix them — a 16:9 long-form and its 9:16 Short can point at each other in the description. Shorts funnel viewers to the long. The long earns the watch time. Both serve the same content.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 18,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "Landscape and vertical are two different viewing contexts.",
+            "eyebrow": "ACT 1",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A1.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-A1.mp3",
+      "actual_duration_s": 15.0,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/A1.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T02:06:34"
+      }
+    },
+    {
+      "beat_id": "A2",
+      "act": "ACT 2",
+      "narration_text": "Build 16:9 first. The 16:9 version is the canonical cut — the one you iterate on, QC, and master. The 9:16 is derived from it. Never author the 9:16 first; you will spend time on a derivative that changes every time the source changes.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 17,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "Build 16:9 first.",
+            "eyebrow": "ACT 2",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A2.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-A2.mp3",
+      "actual_duration_s": 15.23,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/A2.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T02:06:34"
+      }
+    },
+    {
+      "beat_id": "A3",
+      "act": "ACT 3",
+      "narration_text": "Reformat with shorts.py. python3 runtime/scripts/shorts.py reel-path. It checks the duration — under three minutes, the whole reel reformats. Over three minutes, it plans a cut. Remotion beats re-render in portrait — ClaudeComposerAsk916, ClaudeTitleOutro916. Captured media gets center-cut.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 14,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "Reformat with shorts.py.",
+            "eyebrow": "ACT 3",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A3.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-A3.mp3",
+      "actual_duration_s": 18.75,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/A3.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T02:06:34"
+      }
+    },
+    {
+      "beat_id": "A4",
+      "act": "ACT 4",
+      "narration_text": "Check subject, captions, safe areas after reformatting. A center cut that chops a face or a chart in half needs a pantry override — drop a properly-framed 9:16 version into pantry/BEAT-ID-916.mp4. The Shorts law names that file: it wins over the auto-cut every time.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 17,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "Check subject, captions, safe areas after reformatting.",
+            "eyebrow": "ACT 4",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A4.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-A4.mp3",
+      "actual_duration_s": 17.39,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/A4.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T02:06:34"
+      }
+    },
+    {
+      "beat_id": "A5",
+      "act": "ACT 5",
+      "narration_text": "One film, two shapes. Same audio, same narration, same beat structure. The shapes are packaging for different viewing contexts — not different videos. Edit the source once; both formats follow.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 12,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "One film, two shapes.",
+            "eyebrow": "ACT 5",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A5.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-A5.mp3",
+      "actual_duration_s": 11.26,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/A5.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T02:06:34"
+      }
+    },
+    {
+      "beat_id": "VERDICT",
+      "act": "verdict",
+      "narration_text": "The verdict. Build 16:9 first, derive 9:16 with shorts.py, check the framing, fix bad center-cuts with pantry overrides. One source, two packages. The short funnels people to the long.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 11,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "artifactTitle": "16:9 and 9:16",
+            "artifactHeading": "The verdict",
+            "artifactLines": [
+              "Build 16:9 first — it is the canonical cut, the one you iterate.",
+              "shorts.py derives 9:16 — Remotion re-renders portrait, media center-cuts.",
+              "Check subject and safe areas after reformat.",
+              "pantry/BEAT-ID-916.mp4 overrides a bad center cut."
+            ]
+          },
+          "rendered": {
+            "out": "media/VERDICT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-VERDICT.mp3",
+      "actual_duration_s": 11.56,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/VERDICT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T02:06:34"
+      }
+    },
+    {
+      "beat_id": "HANDOFF",
+      "act": "handoff",
+      "narration_text": "Your turn. After you finish the 16:9 cut, ask Claude this: Run shorts.py on my reel. Show me a frame from each beat of the 9:16 output. For each beat where the center-cut looks wrong — chopped face, clipped chart, broken text — tell me what a correctly-framed pantry file should look like. That prompt audits the reformat beat by beat so you only fix the frames that actually need fixing.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 28,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Your turn.",
+            "topic": "BRUTALIST — OPEN SOURCE",
+            "segment": "16:9 and 9:16",
+            "command": "Run shorts.py on my reel. Show me a frame from each beat of the 9:16 output. For each beat where the center-cut looks wrong, tell me what a correctly-framed pantry file should look like.",
+            "runningText": "paste this into Claude…",
+            "output": [],
+            "folderLabel": "@NikBearBrown",
+            "modelLabel": "Fable 5",
+            "effortLabel": "Medium"
+          },
+          "rendered": {
+            "out": "media/HANDOFF.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-HANDOFF.mp3",
+      "actual_duration_s": 20.07,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/HANDOFF.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T02:06:34"
+      }
+    },
+    {
+      "beat_id": "OUTRO",
+      "act": "outro",
+      "narration_text": "16:9 and 9:16 — Brutalist. @NikBearBrown. Liam, in for Bear.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 5,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "16:9 and 9:16",
+            "handle": "@NikBearBrown",
+            "subline": "Liam, in for Bear"
+          },
+          "rendered": {
+            "out": "media/OUTRO.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-OUTRO.mp3",
+      "actual_duration_s": 5.4,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/OUTRO.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T02:06:34"
+      }
+    }
+  ]
+}

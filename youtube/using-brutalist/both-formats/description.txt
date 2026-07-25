@@ -1,0 +1,9 @@
+16:9 and 9:16
+
+Every video ships in both landscape and vertical — build 16:9, then reformat to 9:16 with the 916 command and check the framing.
+
+Brutalist is open source. Download it, use it, make your own videos:
+https://github.com/nikbearbrown/brutalist.art
+Self-serve — no support, no email. If you find it useful, a star is appreciated.
+
+Channel: https://youtube.com/@NikBearBrown
