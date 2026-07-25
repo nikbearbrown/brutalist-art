@@ -1,0 +1,9 @@
+What Is Brutalist?
+
+Brutalist is a free, local, audio-first toolkit that turns a folder of your work into a finished explainer video — the beat sheet is the program that renders the film.
+
+Brutalist is open source. Download it, use it, make your own videos:
+https://github.com/nikbearbrown/brutalist.art
+Self-serve — no support, no email. If you find it useful, a star is appreciated.
+
+Channel: https://youtube.com/@NikBearBrown

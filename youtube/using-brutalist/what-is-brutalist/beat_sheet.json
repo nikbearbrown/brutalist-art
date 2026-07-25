@@ -1,0 +1,278 @@
+{
+  "metadata": {
+    "slug": "what-is-brutalist",
+    "title": "What Is Brutalist?",
+    "channel": "claude-liam",
+    "persona": "Liam",
+    "in_for": "Liam, for Bear",
+    "folderLabel": "@NikBearBrown",
+    "register": "Teardown",
+    "engine": "kokoro",
+    "voice": "am_onyx",
+    "palette": "claude",
+    "genre": "ai-explainer",
+    "topic": "BRUTALIST — OPEN SOURCE",
+    "one_idea": "Brutalist is a free, local, audio-first toolkit that turns a folder of your work into a finished explainer video — the beat sheet is the program that renders the film.",
+    "source": "https://github.com/nikbearbrown/brutalist.art",
+    "repo": "https://github.com/nikbearbrown/brutalist.art",
+    "publish_url": "https://youtube.com/@NikBearBrown",
+    "chapter_number": 1,
+    "playlist_title": "What Is Brutalist? — Make Videos with the Open-Source Toolkit",
+    "duration_estimate_s": 120,
+    "build": {
+      "at": "2026-07-25T00:59:23",
+      "cut": "review",
+      "filled": 4,
+      "of": 9,
+      "slates": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "skin_warnings": []
+    },
+    "voice_kokoro": "am_onyx",
+    "greeting": "Hola, Liam",
+    "style_preset": "claude",
+    "ground": "#FAF9F5"
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "act": "cold open",
+      "narration_text": "Hola — this is Liam, in for Bear. What Is Brutalist? You put your work in a folder, you run one command, you get a video. That is the whole pitch. The question is what is actually in the box.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 16,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Hola, Liam",
+            "topic": "BRUTALIST — OPEN SOURCE",
+            "segment": "What Is Brutalist?",
+            "command": "What is Brutalist and how does it make a video?",
+            "runningText": "reading SKILL.md… building beat sheet… generating audio…",
+            "output": [
+              "A local, free, audio-first video toolkit",
+              "Beat sheet drives the build — JSON file as film-as-code",
+              "Kokoro voices, Manim math, Remotion motion graphics"
+            ],
+            "folderLabel": "@NikBearBrown",
+            "modelLabel": "Fable 5",
+            "effortLabel": "Medium"
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": 10.28,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B00.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T00:59:23"
+      }
+    },
+    {
+      "beat_id": "A1",
+      "act": "ACT 1",
+      "narration_text": "You start with a folder. Notes, code, data, screenshots, a rough draft — whatever you made. That folder is the raw material. Brutalist reads it and finds the stories inside worth animating. Nothing lives on a server. Nothing requires an account.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 16,
+      "audio_file": "mp3/beat-A1.mp3",
+      "actual_duration_s": 13.57,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-25T00:59:23",
+        "needs": "YOU → 5–10s gen-AI clip → pantry (as A1.mp4)",
+        "suggested": "suggested prompt: You start with a folder. Notes, code, data, screenshots, a rough draft — whatever you made. That folder is the raw material. Brutalist reads it and finds the st"
+      }
+    },
+    {
+      "beat_id": "A2",
+      "act": "ACT 2",
+      "narration_text": "Audio goes first. You pick a voice — Kokoro, free, local, runs on your laptop. Narrate each beat, render the MP3s. Those durations become the master clock. Every visual, every edit, every timing conforms to the audio. The narration drives the film, not the other way around.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 18,
+      "audio_file": "mp3/beat-A2.mp3",
+      "actual_duration_s": 15.59,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-25T00:59:23",
+        "needs": "YOU → 5–10s gen-AI clip → pantry (as A2.mp4)",
+        "suggested": "suggested prompt: Audio goes first. You pick a voice — Kokoro, free, local, runs on your laptop. Narrate each beat, render the MP3s. Those durations become the master clock. Ever"
+      }
+    },
+    {
+      "beat_id": "A3",
+      "act": "ACT 3",
+      "narration_text": "The beat sheet is a JSON file — narration, visual lane, timing, render instructions. It is the film as code. Change a line, recompile, the video updates. Version-control it. Fork it. Send it to someone else. The film is reproducible from the file.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 17,
+      "audio_file": "mp3/beat-A3.mp3",
+      "actual_duration_s": 14.46,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-25T00:59:23",
+        "needs": "YOU → 5–10s gen-AI clip → pantry (as A3.mp4)",
+        "suggested": "suggested prompt: The beat sheet is a JSON file — narration, visual lane, timing, render instructions. It is the film as code. Change a line, recompile, the video updates. Versio"
+      }
+    },
+    {
+      "beat_id": "A4",
+      "act": "ACT 4",
+      "narration_text": "Kokoro TTS runs locally — no cloud call, no monthly meter. Manim draws the math and charts. Remotion builds the motion graphics and bookends. Everything assembles with ffmpeg. The whole pipeline runs on your machine, with free tools, indefinitely.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 15,
+      "audio_file": "mp3/beat-A4.mp3",
+      "actual_duration_s": 15.15,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-25T00:59:23",
+        "needs": "YOU → 5–10s gen-AI clip → pantry (as A4.mp4)",
+        "suggested": "suggested prompt: Kokoro TTS runs locally — no cloud call, no monthly meter. Manim draws the math and charts. Remotion builds the motion graphics and bookends. Everything assembl"
+      }
+    },
+    {
+      "beat_id": "A5",
+      "act": "ACT 5",
+      "narration_text": "The whole thing is open source. Clone the repo, run setup, start building. No support email. No onboarding call. No gated course. Star the repo if it is useful. Fork it if you want to make it yours. That is the deal.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 16,
+      "audio_file": "mp3/beat-A5.mp3",
+      "actual_duration_s": 12.25,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-25T00:59:23",
+        "needs": "YOU → 5–10s gen-AI clip → pantry (as A5.mp4)",
+        "suggested": "suggested prompt: The whole thing is open source. Clone the repo, run setup, start building. No support email. No onboarding call. No gated course. Star the repo if it is useful."
+      }
+    },
+    {
+      "beat_id": "VERDICT",
+      "act": "verdict",
+      "narration_text": "The verdict. Brutalist is a local pipeline: beat sheet drives the structure, audio drives the clock, and open source drives the distribution. No service, no subscription. Just a folder, a JSON file, and a script.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 14,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact",
+          "props": {
+            "artifactTitle": "What Is Brutalist?",
+            "artifactHeading": "The verdict",
+            "artifactLines": [
+              "Beat sheet = the film as code — change it, recompile, done.",
+              "Audio-first: narration is the master clock, not a timer.",
+              "Free and local: Kokoro, Manim, Remotion, ffmpeg — no accounts.",
+              "Open source: star it, fork it, send it back."
+            ]
+          },
+          "rendered": {
+            "out": "media/VERDICT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-VERDICT.mp3",
+      "actual_duration_s": 12.91,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/VERDICT.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T00:59:23"
+      }
+    },
+    {
+      "beat_id": "HANDOFF",
+      "act": "handoff",
+      "narration_text": "Your turn. Ask Claude this: I have a project — work, research, a course, a skill — and I want to make one explainer video from it. What is the single clearest idea in my material? What folder structure do I need to build the video with Brutalist? Run that in Claude. Bring the answer to the next episode. The prompt is your first build decision — start there.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 27,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Your turn.",
+            "topic": "BRUTALIST — OPEN SOURCE",
+            "segment": "What Is Brutalist?",
+            "command": "I have [your project]. What is the single clearest idea in it that could become one explainer video? What folder structure do I need to build it with Brutalist?",
+            "runningText": "paste this into Claude…",
+            "output": [],
+            "folderLabel": "@NikBearBrown",
+            "modelLabel": "Fable 5",
+            "effortLabel": "Medium"
+          },
+          "rendered": {
+            "out": "media/HANDOFF.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-HANDOFF.mp3",
+      "actual_duration_s": 17.71,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/HANDOFF.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T00:59:23"
+      }
+    },
+    {
+      "beat_id": "OUTRO",
+      "act": "outro",
+      "narration_text": "What Is Brutalist? — Brutalist. @NikBearBrown. Liam, in for Bear.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 5,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "What Is Brutalist?",
+            "handle": "@NikBearBrown",
+            "subline": "Liam, in for Bear"
+          },
+          "rendered": {
+            "out": "media/OUTRO.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-OUTRO.mp3",
+      "actual_duration_s": 4.52,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/OUTRO.mp4",
+        "filled_by": "media",
+        "at": "2026-07-25T00:59:23"
+      }
+    }
+  ]
+}
