@@ -1,0 +1,9 @@
+QC Gates: Catch the Overlaps
+
+Turn the layout gates on with ART_QC=1 — the toolkit checks text-on-figure overlaps, safe areas, and contrast, and blocks until they are clean.
+
+Brutalist is open source. Download it, use it, make your own videos:
+https://github.com/nikbearbrown/brutalist.art
+Self-serve — no support, no email. If you find it useful, a star is appreciated.
+
+Channel: https://youtube.com/@NikBearBrown
