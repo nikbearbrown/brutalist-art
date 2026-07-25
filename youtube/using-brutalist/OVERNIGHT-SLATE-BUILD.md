@@ -1,6 +1,6 @@
 # OVERNIGHT SLATE BUILD — What Is Brutalist? playlist
 
-Run completed: 2026-07-25T06:08:11.506506+00:00
+Run completed: 2026-07-25T06:17:01.324120+00:00
 
 | # | Slug | Status | 16:9 dur | 9:16 dur | 9:16 ok | Gate V | Committed | Notes |
 |---|------|--------|----------|----------|---------|--------|-----------|-------|
@@ -34,7 +34,10 @@ Frames sampled: 18  ·  B |
 | 10 | both-formats | built | 129s | 133s | ✓ | FAIL rc=2 | ✓ |  GateV:# Gate V — visual QC report
 
 Frames sampled: 18  ·  B |
+| 11 | qc-gates | built | 134s | 139s | ✓ | FAIL rc=2 | ✓ |  GateV:# Gate V — visual QC report
+
+Frames sampled: 18  ·  B |
 
 ## Summary
 
-Built: 10/10 | Failed: 0
+Built: 11/11 | Failed: 0
