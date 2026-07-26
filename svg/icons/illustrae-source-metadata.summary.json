@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-07-25T16:07:54.843483+00:00",
+  "source_directory": "/Users/bear/Documents/CoWork/bear-textbooks/books/illustrae-pipeline/illustrae-export/images",
+  "metadata_index": "/Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/svg/icons/illustrae-source-metadata.jsonl",
+  "paired_records": 570,
+  "missing_images": [],
+  "invalid_sidecars": [],
+  "rule": "Copy the matching record into an icon manifest and populate derivative fields when an icon is created."
+}

@@ -1,0 +1,133 @@
+{
+  "schema": "brutalist-art/icon-pairs/v1",
+  "source_pdf": "/Users/bear/Downloads/865913863-Deep-Learning.pdf",
+  "source_image_directory": "/Users/bear/Downloads/865913863-deep-learning-images",
+  "created": "2026-07-25",
+  "pairing_rule": {
+    "original_suffix": "-original.png",
+    "text_free_suffix": "-text-free.png",
+    "transparent_suffix": "-transparent.png",
+    "background": "warm off-white",
+    "style": "rough hand-drawn educational ink and watercolor",
+    "text_free_definition": "Remove letters, numbers, equations, labels, titles, and unrelated annotations while preserving and reconstructing the instructional diagram."
+  },
+  "icons": [
+    {
+      "id": "standard-neural-network",
+      "subject": "standard feed-forward neural network",
+      "source_page": 1,
+      "source_file": "page-001-image-001.jpg",
+      "crop": {"x": 45, "y": 475, "width": 250, "height": 185},
+      "original": "standard-neural-network-original.png",
+      "text_free": "standard-neural-network-text-free.png",
+      "transparent": "standard-neural-network-transparent.png",
+      "removed": ["input labels", "output label", "title", "variable symbols"],
+      "status": "text-free-generated",
+      "review": "Diagram preserved as three input nodes connected to one output node."
+    },
+    {
+      "id": "convolutional-network",
+      "subject": "convolutional neural network pipeline",
+      "source_page": 1,
+      "source_file": "page-001-image-001.jpg",
+      "crop": {"x": 45, "y": 660, "width": 260, "height": 125},
+      "original": "convolutional-network-original.png",
+      "text_free": "convolutional-network-text-free.png",
+      "transparent": "convolutional-network-transparent.png",
+      "removed": ["title", "output label", "surrounding annotations"],
+      "status": "needs-review",
+      "review": "A residual multiplication-like x remains inside the first input frame; remove it if the frame must be completely symbol-free."
+    },
+    {
+      "id": "recurrent-network",
+      "subject": "unrolled recurrent neural network",
+      "source_page": 1,
+      "source_file": "page-001-image-001.jpg",
+      "crop": {"x": 315, "y": 610, "width": 260, "height": 175},
+      "original": "recurrent-network-original.png",
+      "text_free": "recurrent-network-text-free.png",
+      "transparent": "recurrent-network-transparent.png",
+      "removed": ["cell letters", "input labels", "output labels", "title"],
+      "status": "text-free-generated",
+      "review": "Three recurrent cells and directional flow are preserved."
+    },
+    {
+      "id": "binary-classification-cat",
+      "subject": "cat image used for binary classification",
+      "source_page": 2,
+      "source_file": "page-002-image-001.jpg",
+      "crop": {"x": 55, "y": 65, "width": 305, "height": 185},
+      "original": "binary-classification-cat-original.png",
+      "text_free": "binary-classification-cat-text-free.png",
+      "transparent": "binary-classification-cat-transparent.png",
+      "removed": ["heading", "class labels", "numbers", "arrow", "x variable"],
+      "status": "text-free-generated",
+      "review": "Only the framed cat drawing and pale blue shading remain."
+    },
+    {
+      "id": "mini-neural-network",
+      "subject": "single circular mini neural network cell",
+      "source_page": 2,
+      "source_file": "page-002-image-001.jpg",
+      "crop": {"x": 610, "y": 410, "width": 355, "height": 185},
+      "original": "mini-neural-network-original.png",
+      "text_free": "mini-neural-network-text-free.png",
+      "transparent": "mini-neural-network-transparent.png",
+      "removed": ["input and output variables", "internal equations", "arrows", "title and annotations"],
+      "status": "text-free-generated",
+      "review": "Circle, vertical divider, and pale blue curved shading are preserved."
+    },
+    {
+      "id": "deep-neural-network",
+      "subject": "deep fully connected neural network",
+      "source_page": 4,
+      "source_file": "page-004-image-001.jpg",
+      "crop": {"x": 65, "y": 205, "width": 615, "height": 270},
+      "original": "deep-neural-network-original.png",
+      "text_free": "deep-neural-network-text-free.png",
+      "transparent": "deep-neural-network-transparent.png",
+      "removed": ["input x", "output y-hat", "headings", "unrelated lower illustrations"],
+      "status": "text-free-generated",
+      "review": "Input portrait, three connected node layers, and final output node are preserved."
+    },
+    {
+      "id": "reference-mini-neural-network",
+      "subject": "reference crop supplied by the user",
+      "source_page": 2,
+      "source_file": "Screenshot 2026-07-25 at 9.37.53 AM.png",
+      "crop": {"x": 180, "y": 25, "width": 215, "height": 215},
+      "original": "reference-mini-neural-network-original.png",
+      "text_free": "reference-mini-neural-network-text-free.png",
+      "transparent": "reference-mini-neural-network-transparent.png",
+      "removed": ["input and output variables", "internal equations", "arrows", "decorative marks"],
+      "status": "text-free-generated",
+      "review": "Reference pair copied into this collection; transparent variant uses soft edge matting."
+    },
+    {
+      "id": "colored-mini-neural-network",
+      "subject": "colored mini neural network with computation flow and sigmoid graph",
+      "source_page": null,
+      "source_file": "/Users/bear/Downloads/Untitled-canvas.png",
+      "crop": null,
+      "original": "colored-mini-neural-network-original.png",
+      "text_free": "colored-mini-neural-network-text-free.png",
+      "transparent": "colored-mini-neural-network-transparent.png",
+      "rough_svg": "mini-neural-network-rough.svg",
+      "rough_transparent": "mini-neural-network-rough-transparent.png",
+      "medium_rough_svg": "mini-neural-network-medium-rough.svg",
+      "medium_rough_transparent": "mini-neural-network-medium-rough-transparent.png",
+      "removed": [
+        "input and output variables",
+        "internal function labels",
+        "operation symbols",
+        "mini neural net label",
+        "curved annotation arrow",
+        "equations beneath the icon"
+      ],
+      "status": "text-free-generated",
+      "style": "hand-drawn rough monochrome ink sketch",
+      "constraints": "Geometry only; no text, labels, numbers, equations, color fills, gradients, shadows, or 3D effects.",
+      "review": "Split cell, unlabeled computation flow, sigmoid graph, guide lines, and horizontal arrows are preserved on a transparent background. Rough.js variant adds controlled hand jitter, bowing, and uneven double strokes."
+    }
+  ]
+}

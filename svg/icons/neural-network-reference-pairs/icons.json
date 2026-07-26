@@ -1,0 +1,29 @@
+{
+  "collection": "neural-network-reference-pairs",
+  "style": "medium-rough monochrome vector line icon",
+  "constraints": "Geometry only; transparent background; no text, labels, numbers, equations, color, gradients, or embedded raster images.",
+  "generator": "Rough.js",
+  "roughness": 1.15,
+  "references_directory": "references",
+  "icons": [
+    {"id": "perceptron-two-input-one-output", "source": "1_JLlHNhYjyY9h9y1D1sy8Zw.webp"},
+    {"id": "feed-forward-two-two-one", "source": "1_W9awL0IGeXBcrPAxQPtbew.webp"},
+    {"id": "radial-basis-network", "source": "1_ywIq8moPGBrQDf_dq71dhQ.webp"},
+    {"id": "convolutional-network-blocks", "source": "1kQtbGWZgi3n35Qojkg8cFw.webp"},
+    {"id": "dense-network-five-three-one", "source": "9jzpy.jpg"},
+    {"id": "deep-network-two-four-four-one", "source": "neural-network-diagram-example.webp"},
+    {"id": "biological-neuron", "source": "perceptron-with-neuron_1.png"},
+    {"id": "perceptron-computation", "source": "perceptron-with-neuron_1.png"},
+    {"id": "standard-neural-network-three-three-one", "source": "Screenshot 2026-07-25 at 11.37.17 AM.png"},
+    {"id": "waveform-monitor", "source": "Screenshot 2026-07-25 at 11.37.27 AM.png"},
+    {"id": "idea-code-experiment-loop", "source": "Screenshot 2026-07-25 at 11.37.37 AM.png"},
+    {"id": "recurrent-neural-network-chain", "source": "Screenshot 2026-07-25 at 11.37.43 AM.png"},
+    {"id": "dropout-before-after", "source": "Screenshot 2026-07-25 at 11.39.02 AM.png"},
+    {"id": "image-classifier-pipeline", "source": "Screenshot 2026-07-25 at 11.38.24 AM.png"},
+    {"id": "two-layer-network-three-three-one", "source": "Screenshot 2026-07-25 at 11.38.12 AM.png"}
+  ],
+  "file_convention": {
+    "vector": "<id>-rough.svg",
+    "preview": "<id>-rough-transparent.png"
+  }
+}

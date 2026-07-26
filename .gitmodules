@@ -1,0 +1,9 @@
+[submodule "svg/d3-v5"]
+	path = svg/d3-v5
+	url = https://github.com/d3/d3.git
+[submodule "svg/roughjs"]
+	path = svg/roughjs
+	url = https://github.com/rough-stuff/rough.git
+[submodule "svg/roughviz"]
+	path = svg/roughviz
+	url = https://github.com/jwilber/roughViz.git
