@@ -201,24 +201,28 @@ export const ProfileAditiFig4Community: React.FC<ProfileAditiFig4CommunityProps>
         "invisible until it's absent"
       </div>
 
-      {/* Right side — chips */}
+      {/* Right side — chips (staggered per narration order) */}
       <div style={{
         position: 'absolute',
         left: netRight + 32, top: netTop + netH * 0.10,
         width: width - netRight - 48,
         display: 'flex', flexDirection: 'column', gap: 14,
-        opacity: clamp(chipsIn, 0, 1),
       }}>
-        {CHIPS.map((c, i) => (
-          <div key={i} style={{
-            background: CLAUDE.CARD,
-            border: `1.5px solid ${CLAUDE.BORDER}`,
-            borderLeft: `4px solid ${CLAUDE.SPARK}`,
-            borderRadius: 10, padding: '10px 16px',
-            fontFamily: SANS, fontSize: height * 0.014,
-            color: CLAUDE.INK,
-          }}>{c}</div>
-        ))}
+        {CHIPS.map((c, i) => {
+          const chipIn = spring({ frame: frame - Math.round((120 + i * 20) * S), fps, config: { damping: 28, stiffness: 80 } });
+          return (
+            <div key={i} style={{
+              background: CLAUDE.CARD,
+              border: `1.5px solid ${CLAUDE.BORDER}`,
+              borderLeft: `4px solid ${CLAUDE.SPARK}`,
+              borderRadius: 10, padding: '10px 16px',
+              fontFamily: SANS, fontSize: height * 0.014,
+              color: CLAUDE.INK,
+              opacity: clamp(chipIn, 0, 1),
+              transform: `translateX(${(1 - clamp(chipIn, 0, 1)) * 16}px)`,
+            }}>{c}</div>
+          );
+        })}
       </div>
 
       {/* Spark line */}

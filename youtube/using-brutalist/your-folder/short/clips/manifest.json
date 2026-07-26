@@ -1,0 +1,12 @@
+{
+ "B00": "L3|1080x1920@24|crop|13.780||||slate",
+ "A1": "L3|1080x1920@24|crop|12.930||||slate",
+ "A2": "L3|1080x1920@24|crop|12.460||||slate",
+ "A3": "L3|1080x1920@24|crop|14.170||||slate",
+ "A4": "L3|1080x1920@24|crop|12.860||||slate",
+ "A5": "L3|1080x1920@24|crop|13.550||||slate",
+ "VERDICT": "L3|1080x1920@24|crop|12.290||||slate",
+ "HANDOFF": "L3|1080x1920@24|crop|18.650||||slate",
+ "OUTRO": "L3|1080x1920@24|crop|4.820||||slate",
+ "END": "L3|1080x1920@24|crop|4.500|hold||none|7065a24adc633e33eb6d9373e7b4fbc7a9fd856f"
+}

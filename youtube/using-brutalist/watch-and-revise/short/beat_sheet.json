@@ -1,0 +1,390 @@
+{
+  "metadata": {
+    "slug": "watch-and-revise-short",
+    "title": "Watch and Revise",
+    "channel": "claude-liam",
+    "persona": "Liam",
+    "in_for": "Liam, for Bear",
+    "folderLabel": "@NikBearBrown",
+    "register": "Teardown",
+    "engine": "kokoro",
+    "voice": "am_onyx",
+    "palette": "claude",
+    "genre": "ai-explainer",
+    "topic": "BRUTALIST — OPEN SOURCE",
+    "one_idea": "Watch the cut, then ask for changes in plain language — a wrong number, a slow pace, a better chart; plain language in, better video out.",
+    "source": "https://github.com/nikbearbrown/brutalist.art",
+    "repo": "https://github.com/nikbearbrown/brutalist.art",
+    "publish_url": "https://youtube.com/@NikBearBrown",
+    "chapter_number": 9,
+    "playlist_title": "What Is Brutalist? — Make Videos with the Open-Source Toolkit",
+    "duration_estimate_s": 120,
+    "build": {
+      "at": "2026-07-25T02:00:31",
+      "cut": "review",
+      "filled": 1,
+      "of": 10,
+      "slates": [
+        "B00",
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "VERDICT",
+        "HANDOFF",
+        "OUTRO"
+      ],
+      "skin_warnings": [
+        "B00: palette=claude but the cold open is 'ClaudeComposerAsk916' — COLD OPEN LAW wants ClaudeComposerAsk",
+        "END: palette=claude but the outro is 'un-annotated' — OUTRO LAW wants ClaudeTitleOutro"
+      ]
+    },
+    "voice_kokoro": "am_onyx",
+    "greeting": "Salaam, Liam",
+    "style_preset": "claude",
+    "ground": "#FAF9F5",
+    "aspect_ratio": "9:16",
+    "fit": "crop",
+    "kind": "short",
+    "reformat": "center-cut, focus-aware; pantry/<bid>-916.* is the human replacement slot; -916 overrides honored",
+    "derived_from": "watch-and-revise",
+    "dropped_beats": [],
+    "playlist_short": "Shorts",
+    "total_estimated_duration_seconds": 118.85
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "act": "cold open",
+      "narration_text": "Salaam — this is Liam, in for Bear. Watch and Revise. Watch the cut, say what is off in plain language. A wrong number, a slow pace, a chart that does not show what you meant. Plain language in, better video out.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 16,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk916",
+          "props": {
+            "greeting": "Salaam, Liam",
+            "topic": "BRUTALIST — OPEN SOURCE",
+            "segment": "Watch and Revise",
+            "command": "I watched the review cut. Here is what needs to change.",
+            "runningText": "reading feedback… updating beat sheet… re-rendering beats…",
+            "output": [
+              "A wrong number → fix the narration_text, regenerate audio for that beat",
+              "A slow beat → shorten the narration, the visual follows the new duration",
+              "A bad chart → update scenes.py or drop a new file in media/"
+            ],
+            "folderLabel": "@NikBearBrown",
+            "modelLabel": "Fable 5",
+            "effortLabel": "Medium"
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": 11.73,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-25T02:00:31",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for B00"
+      }
+    },
+    {
+      "beat_id": "A1",
+      "act": "ACT 1",
+      "narration_text": "Watch the review cut. The review cut has beat labels and timecodes burned in. You can see exactly which beat produced each moment. Take notes with beat IDs — 'A3 is too slow', 'B04 chart is wrong'. That is your edit list.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 16,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "Watch the review cut.",
+            "eyebrow": "ACT 1",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A1.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-A1.mp3",
+      "actual_duration_s": 12.84,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-25T02:00:31",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for A1"
+      }
+    },
+    {
+      "beat_id": "A2",
+      "act": "ACT 2",
+      "narration_text": "Say what is off in plain language. Not 'the video feels slow' — 'beat A3 runs 28 seconds, the idea is simple, it should be 15'. Not 'the chart is confusing' — 'the bar chart on B04 shows counts but I need percentages, here is the data'. Plain language in. Claude updates the beat sheet.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 22,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "Say what is off in plain language.",
+            "eyebrow": "ACT 2",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A2.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-A2.mp3",
+      "actual_duration_s": 16.23,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-25T02:00:31",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for A2"
+      }
+    },
+    {
+      "beat_id": "A3",
+      "act": "ACT 3",
+      "narration_text": "A wrong number in the narration: fix narration_text for that beat, regenerate the audio for that beat only, recompile. One command: generate_audio_kokoro.py --only A3. The rest of the audio is unchanged. The clip re-renders from the new duration.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 15,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "A wrong number in the narration: fix narration_text for that…",
+            "eyebrow": "ACT 3",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A3.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-A3.mp3",
+      "actual_duration_s": 14.46,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-25T02:00:31",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for A3"
+      }
+    },
+    {
+      "beat_id": "A4",
+      "act": "ACT 4",
+      "narration_text": "Iterate until it is right. There is no penalty for recompiling. The compile is fast — a few seconds per beat plus the final concat. The cost of not watching and not iterating is a video that does not land. Watch it. Say what is off. Recompile.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 18,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "Iterate until it is right.",
+            "eyebrow": "ACT 4",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A4.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-A4.mp3",
+      "actual_duration_s": 13.63,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-25T02:00:31",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for A4"
+      }
+    },
+    {
+      "beat_id": "A5",
+      "act": "ACT 5",
+      "narration_text": "The human conducts. Claude builds; you judge. The beat sheet encodes your judgment — what stays, what changes, what lands. The machine has no taste. You are the one who watches and says 'not yet'.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 14,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "The human conducts.",
+            "eyebrow": "ACT 5",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A5.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-A5.mp3",
+      "actual_duration_s": 10.43,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-25T02:00:31",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for A5"
+      }
+    },
+    {
+      "beat_id": "VERDICT",
+      "act": "verdict",
+      "narration_text": "The verdict. Watch the review cut. Note beat IDs. Say what is off. The iteration cycle is: fix the beat sheet, regenerate only what changed, recompile. Repeat until the human says 'yes'.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 12,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact916",
+          "props": {
+            "artifactTitle": "Watch and Revise",
+            "artifactHeading": "The verdict",
+            "artifactLines": [
+              "Review cut has beat labels — note the ID of every problem beat.",
+              "Plain language: 'A3 runs too long' beats 'the pacing feels off'.",
+              "--only <beat_id> regenerates one beat without touching others.",
+              "The human conducts. The machine does not know what is wrong."
+            ]
+          },
+          "rendered": {
+            "out": "media/VERDICT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-VERDICT.mp3",
+      "actual_duration_s": 10.84,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-25T02:00:31",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for VERDICT"
+      }
+    },
+    {
+      "beat_id": "HANDOFF",
+      "act": "handoff",
+      "narration_text": "Your turn. After you watch the review cut, paste this to Claude: I watched the review cut. Here are the beats that need changes: [list beat IDs and what is wrong with each]. For each one, update the beat sheet, regenerate audio if the narration changed, and tell me which beats you re-rendered. That is the revision prompt — paste it with your actual notes and Claude handles the mechanics while you stay in the directing seat.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 30,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk916",
+          "props": {
+            "greeting": "Your turn.",
+            "topic": "BRUTALIST — OPEN SOURCE",
+            "segment": "Watch and Revise",
+            "command": "I watched the review cut. Here are the beats that need changes: [list beat IDs and what is wrong]. For each one, update the beat sheet, regenerate audio if narration changed, and tell me which beats you re-rendered.",
+            "runningText": "paste this into Claude…",
+            "output": [],
+            "folderLabel": "@NikBearBrown",
+            "modelLabel": "Fable 5",
+            "effortLabel": "Medium"
+          },
+          "rendered": {
+            "out": "media/HANDOFF.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-HANDOFF.mp3",
+      "actual_duration_s": 19.5,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-25T02:00:31",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for HANDOFF"
+      }
+    },
+    {
+      "beat_id": "OUTRO",
+      "act": "outro",
+      "narration_text": "Watch and Revise — Brutalist. @NikBearBrown. Liam, in for Bear.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 5,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro916",
+          "props": {
+            "title": "Watch and Revise",
+            "handle": "@NikBearBrown",
+            "subline": "Liam, in for Bear"
+          },
+          "rendered": {
+            "out": "media/OUTRO.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-OUTRO.mp3",
+      "actual_duration_s": 4.69,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-25T02:00:31",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for OUTRO"
+      }
+    },
+    {
+      "beat_id": "END",
+      "narration_text": "",
+      "actual_duration_s": 4.5,
+      "audio_file": "mp3/beat-END.mp3",
+      "shot": {
+        "type": "CARD",
+        "source": "own",
+        "motion": "hold",
+        "treatment": "none"
+      },
+      "card": {
+        "handle": "@nikbearbrown",
+        "next": "",
+        "silent": true
+      },
+      "build": {
+        "status": "STILL",
+        "src": "media/END.png",
+        "filled_by": "still",
+        "at": "2026-07-25T02:00:31"
+      }
+    }
+  ]
+}

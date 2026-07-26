@@ -54,8 +54,8 @@ export const ClaudeVerdictArtifact: React.FC<ClaudeVerdictArtifactProps> = ({
   // §8.1 floor: 3.2% of 1080px logical = 34.6px physical at 4K.
   // SANS (SF Pro Text) x-height ratio ≈ 0.53: 37px CSS → 39.2px physical ✓
   // SERIF (EB Garamond) x-height ratio ≈ 0.43: needs 43px CSS → 37.0px physical ✓
-  const BODY_FS  = Math.round(height * 0.034);  // 37px — SANS body lines
-  const SERIF_FS = Math.round(height * 0.040);  // 43px — SERIF title bar
+  const BODY_FS  = Math.round(height * 0.038);  // 41px — SANS body lines
+  const SERIF_FS = Math.round(height * 0.050);  // 54px — SERIF title bar (cap-height ≈39px ≥ floor)
 
   const cardIn = spring({ frame, fps, config: { damping: 28, stiffness: 140, mass: 0.8 } });
   const headIn = spring({ frame: frame - 8, fps, config: { damping: 28, stiffness: 140, mass: 0.8 } });
@@ -92,7 +92,7 @@ export const ClaudeVerdictArtifact: React.FC<ClaudeVerdictArtifactProps> = ({
         <div style={{ padding: '48px 60px 54px' }}>
           {/* Heading */}
           <div style={{
-            fontFamily: SERIF, fontSize: 46, fontWeight: 700, color: CLAUDE.INK,
+            fontFamily: SERIF, fontSize: Math.round(height * 0.050), fontWeight: 700, color: CLAUDE.INK,
             marginBottom: 36,
             opacity: clamp(headIn, 0, 1),
           }}>

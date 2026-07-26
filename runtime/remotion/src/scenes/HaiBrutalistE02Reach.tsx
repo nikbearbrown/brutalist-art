@@ -57,7 +57,7 @@ export const HaiBrutalistE02Reach: React.FC<HaiBrutalistE02ReachProps> = ({ spar
       {/* Eyebrow */}
       <div style={{
         position: 'absolute', left: PAD_X, top: height * 0.09,
-        fontFamily: SANS, fontSize: height * 0.014, fontWeight: 700,
+        fontFamily: SANS, fontSize: height * 0.033, fontWeight: 700,
         letterSpacing: 3, textTransform: 'uppercase' as const,
         color: CLAUDE.INK_SOFT, opacity: clamp(titleIn, 0, 1),
       }}>
@@ -97,14 +97,14 @@ export const HaiBrutalistE02Reach: React.FC<HaiBrutalistE02ReachProps> = ({ spar
           <line x1={14} y1={40} x2={36} y2={40} stroke={CLAUDE.GHOST} strokeWidth={2.5} strokeLinecap="round" />
           <line x1={14} y1={48} x2={34} y2={48} stroke={CLAUDE.GHOST} strokeWidth={2.5} strokeLinecap="round" />
         </svg>
-        <div style={{ fontFamily: SANS, fontSize: 14, fontWeight: 700, color: CLAUDE.INK_SOFT, textAlign: 'center', lineHeight: 1.4 }}>
+        <div style={{ fontFamily: SANS, fontSize: Math.round(height * 0.033), fontWeight: 700, color: CLAUDE.INK_SOFT, textAlign: 'center', lineHeight: 1.4 }}>
           Your Research Week
         </div>
         <div style={{
           background: CLAUDE.BORDER,
           borderRadius: 8,
           padding: '6px 14px',
-          fontFamily: SANS, fontSize: 13, fontWeight: 700,
+          fontFamily: SANS, fontSize: Math.round(height * 0.033), fontWeight: 700,
           color: CLAUDE.INK_SOFT,
         }}>
           ~3 readers avg
@@ -122,17 +122,17 @@ export const HaiBrutalistE02Reach: React.FC<HaiBrutalistE02ReachProps> = ({ spar
         opacity: clamp(arrowIn, 0, 1),
       }}>
         <div style={{
-          background: CLAUDE.SPARK,
+          background: CLAUDE.INK,
           borderRadius: 14,
           padding: '5px 14px',
-          fontFamily: SANS, fontSize: 11, fontWeight: 700,
+          fontFamily: SANS, fontSize: Math.round(height * 0.033), fontWeight: 700,
           color: '#FFFFFF', letterSpacing: 1.5, textTransform: 'uppercase' as const,
         }}>
           BRUTALIST
         </div>
         <svg width={ARROW_W * 0.6} height={36} viewBox={`0 0 ${ARROW_W * 0.6} 36`}>
           <path d={`M4 18 L${ARROW_W * 0.6 - 20} 18 M${ARROW_W * 0.6 - 28} 8 L${ARROW_W * 0.6 - 8} 18 L${ARROW_W * 0.6 - 28} 28`}
-            stroke={CLAUDE.SPARK} strokeWidth={3} fill="none"
+            stroke={CLAUDE.INK_SOFT} strokeWidth={3} fill="none"
             strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </div>
@@ -166,7 +166,7 @@ export const HaiBrutalistE02Reach: React.FC<HaiBrutalistE02ReachProps> = ({ spar
             <polygon points="7,4 21,12 7,20" fill="#FFFFFF" />
           </svg>
         </div>
-        <div style={{ fontFamily: SANS, fontSize: 14, fontWeight: 700, color: CLAUDE.INK, textAlign: 'center', lineHeight: 1.4 }}>
+        <div style={{ fontFamily: SANS, fontSize: Math.round(height * 0.033), fontWeight: 700, color: CLAUDE.INK, textAlign: 'center', lineHeight: 1.4 }}>
           Your Explainer
         </div>
         <div style={{
@@ -174,8 +174,8 @@ export const HaiBrutalistE02Reach: React.FC<HaiBrutalistE02ReachProps> = ({ spar
           border: `1.5px solid ${CLAUDE.SPARK}`,
           borderRadius: 8,
           padding: '6px 14px',
-          fontFamily: SANS, fontSize: 13, fontWeight: 700,
-          color: CLAUDE.SPARK,
+          fontFamily: SANS, fontSize: Math.round(height * 0.033), fontWeight: 700,
+          color: CLAUDE.INK,
         }}>
           Your actual audience
         </div>
@@ -187,8 +187,8 @@ export const HaiBrutalistE02Reach: React.FC<HaiBrutalistE02ReachProps> = ({ spar
         display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10,
         opacity: clamp(sparkIn, 0, 1),
       }}>
-        <Spark size={height * 0.022} />
-        <span style={{ fontFamily: SERIF, fontSize: height * 0.022, fontStyle: 'italic', color: CLAUDE.INK }}>
+        <Spark size={height * 0.040} />
+        <span style={{ fontFamily: SERIF, fontSize: height * 0.040, fontStyle: 'italic', color: CLAUDE.INK }}>
           {sparkLine}
         </span>
       </div>

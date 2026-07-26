@@ -1,0 +1,390 @@
+{
+  "metadata": {
+    "slug": "the-beat-sheet-short",
+    "title": "The Beat Sheet Is the Program",
+    "channel": "claude-liam",
+    "persona": "Liam",
+    "in_for": "Liam, for Bear",
+    "folderLabel": "@NikBearBrown",
+    "register": "Teardown",
+    "engine": "kokoro",
+    "voice": "am_onyx",
+    "palette": "claude",
+    "genre": "ai-explainer",
+    "topic": "BRUTALIST — OPEN SOURCE",
+    "one_idea": "beat_sheet.json is the film as code — narration, timing, voice, visual lane, and render instructions; regenerate the video from it any time.",
+    "source": "https://github.com/nikbearbrown/brutalist.art",
+    "repo": "https://github.com/nikbearbrown/brutalist.art",
+    "publish_url": "https://youtube.com/@NikBearBrown",
+    "chapter_number": 6,
+    "playlist_title": "What Is Brutalist? — Make Videos with the Open-Source Toolkit",
+    "duration_estimate_s": 120,
+    "build": {
+      "at": "2026-07-25T01:40:53",
+      "cut": "review",
+      "filled": 1,
+      "of": 10,
+      "slates": [
+        "B00",
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "VERDICT",
+        "HANDOFF",
+        "OUTRO"
+      ],
+      "skin_warnings": [
+        "B00: palette=claude but the cold open is 'ClaudeComposerAsk916' — COLD OPEN LAW wants ClaudeComposerAsk",
+        "END: palette=claude but the outro is 'un-annotated' — OUTRO LAW wants ClaudeTitleOutro"
+      ]
+    },
+    "voice_kokoro": "am_onyx",
+    "greeting": "Merhaba, Liam",
+    "style_preset": "claude",
+    "ground": "#FAF9F5",
+    "aspect_ratio": "9:16",
+    "fit": "crop",
+    "kind": "short",
+    "reformat": "center-cut, focus-aware; pantry/<bid>-916.* is the human replacement slot; -916 overrides honored",
+    "derived_from": "the-beat-sheet",
+    "dropped_beats": [],
+    "playlist_short": "Shorts",
+    "total_estimated_duration_seconds": 126.5
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "act": "cold open",
+      "narration_text": "Merhaba — this is Liam, in for Bear. The Beat Sheet Is the Program. beat_sheet.json is the film as code — narration, timing, voice, visual lane, render instructions. Change it, recompile, the video updates. Let me show you how it works.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 16,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk916",
+          "props": {
+            "greeting": "Merhaba, Liam",
+            "topic": "BRUTALIST — OPEN SOURCE",
+            "segment": "The Beat Sheet Is the Program",
+            "command": "How does beat_sheet.json control what the video looks like?",
+            "runningText": "reading beat_sheet.json… mapping beats to timeline…",
+            "output": [
+              "Each beat: narration_text, lane (REMOTION/MANIM/SLATE), shot props",
+              "Audio generates from narration_text — durations become the clock",
+              "Change a beat, recompile — the video updates without re-rendering others"
+            ],
+            "folderLabel": "@NikBearBrown",
+            "modelLabel": "Fable 5",
+            "effortLabel": "Medium"
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": 13.38,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-25T01:40:53",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for B00"
+      }
+    },
+    {
+      "beat_id": "A1",
+      "act": "ACT 1",
+      "narration_text": "The beat sheet is a JSON file. It lives in the reel folder alongside the audio MP3s and the compiled video. Every other file in the folder — the clips, the audio, the final cut — is derived from the beat sheet. The beat sheet is the source of truth.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 20,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "The beat sheet is a JSON file.",
+            "eyebrow": "ACT 1",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A1.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-A1.mp3",
+      "actual_duration_s": 14.49,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-25T01:40:53",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for A1"
+      }
+    },
+    {
+      "beat_id": "A2",
+      "act": "ACT 2",
+      "narration_text": "Each beat carries: narration_text — what Liam says. lane — how to render it: REMOTION for motion graphics, MANIM for math, SLATE for a placeholder. shot — the specific scene or pattern to use. voice and engine — which TTS renders the narration.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 17,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "Each beat carries: narration_text —",
+            "eyebrow": "ACT 2",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A2.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-A2.mp3",
+      "actual_duration_s": 14.04,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-25T01:40:53",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for A2"
+      }
+    },
+    {
+      "beat_id": "A3",
+      "act": "ACT 3",
+      "narration_text": "After audio generates, each beat gets an actual_duration_s — the measured length of its narration MP3. That number becomes the clock for the visual. A Remotion scene that renders at twelve seconds will be freeze-extended to match the beat's real audio duration.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 16,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "After audio generates, each beat gets an actual_duration_s —",
+            "eyebrow": "ACT 3",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A3.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-A3.mp3",
+      "actual_duration_s": 15.1,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-25T01:40:53",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for A3"
+      }
+    },
+    {
+      "beat_id": "A4",
+      "act": "ACT 4",
+      "narration_text": "Slates mark what is not filled yet. Any beat whose media/ slot is empty gets a labeled slate — the beat ID, the narration, and a pipeline pointer. Slates are not failures. They are requests. Drop a file into media/ with the right beat ID and recompile.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 18,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "Slates mark what is not filled yet.",
+            "eyebrow": "ACT 4",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A4.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-A4.mp3",
+      "actual_duration_s": 15.06,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-25T01:40:53",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for A4"
+      }
+    },
+    {
+      "beat_id": "A5",
+      "act": "ACT 5",
+      "narration_text": "Because the film is code, it is regenerable. Next month, you update a narration line, re-run generate_audio_kokoro.py for that beat, recompile. The rest of the film is unchanged. No non-linear editor. No timeline scrubbing. Just edit the JSON and recompile.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 16,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "Because the film is code, it is regenerable.",
+            "eyebrow": "ACT 5",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A5.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-A5.mp3",
+      "actual_duration_s": 15.23,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-25T01:40:53",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for A5"
+      }
+    },
+    {
+      "beat_id": "VERDICT",
+      "act": "verdict",
+      "narration_text": "The verdict. The beat sheet is the film as code. Source of truth, version-controlled, regenerable. Change one beat, recompile. That is the whole iteration cycle.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 10,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact916",
+          "props": {
+            "artifactTitle": "The Beat Sheet Is the Program",
+            "artifactHeading": "The verdict",
+            "artifactLines": [
+              "beat_sheet.json is the source of truth — every derived file follows it.",
+              "Each beat: narration, lane, shot, voice — the full render instruction.",
+              "actual_duration_s from measured audio becomes the visual clock.",
+              "Change a beat, recompile. No timeline editor needed."
+            ]
+          },
+          "rendered": {
+            "out": "media/VERDICT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-VERDICT.mp3",
+      "actual_duration_s": 9.3,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-25T01:40:53",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for VERDICT"
+      }
+    },
+    {
+      "beat_id": "HANDOFF",
+      "act": "handoff",
+      "narration_text": "Your turn. Ask Claude this: Here is my existing beat_sheet.json. Beat A3 is too slow — the narration runs 28 seconds but the idea is simple. Rewrite the narration_text for A3 to under 15 seconds. Then tell me: which other beats have narration that could be shorter without losing the point? That prompt teaches Claude to read your own beat sheet critically — paste it after your first compile to start editing the film.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 29,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk916",
+          "props": {
+            "greeting": "Your turn.",
+            "topic": "BRUTALIST — OPEN SOURCE",
+            "segment": "The Beat Sheet Is the Program",
+            "command": "Here is my beat_sheet.json. Beat A3 runs 28 seconds but the idea is simple. Rewrite narration_text for A3 to under 15 seconds. Then tell me which other beats could be shorter without losing the point.",
+            "runningText": "paste this into Claude…",
+            "output": [],
+            "folderLabel": "@NikBearBrown",
+            "modelLabel": "Fable 5",
+            "effortLabel": "Medium"
+          },
+          "rendered": {
+            "out": "media/HANDOFF.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-HANDOFF.mp3",
+      "actual_duration_s": 20.39,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-25T01:40:53",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for HANDOFF"
+      }
+    },
+    {
+      "beat_id": "OUTRO",
+      "act": "outro",
+      "narration_text": "The Beat Sheet Is the Program — Brutalist. @NikBearBrown. Liam, in for Bear.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 5,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro916",
+          "props": {
+            "title": "The Beat Sheet Is the Program",
+            "handle": "@NikBearBrown",
+            "subline": "Liam, in for Bear"
+          },
+          "rendered": {
+            "out": "media/OUTRO.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-OUTRO.mp3",
+      "actual_duration_s": 5.01,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-25T01:40:53",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for OUTRO"
+      }
+    },
+    {
+      "beat_id": "END",
+      "narration_text": "",
+      "actual_duration_s": 4.5,
+      "audio_file": "mp3/beat-END.mp3",
+      "shot": {
+        "type": "CARD",
+        "source": "own",
+        "motion": "hold",
+        "treatment": "none"
+      },
+      "card": {
+        "handle": "@nikbearbrown",
+        "next": "",
+        "silent": true
+      },
+      "build": {
+        "status": "STILL",
+        "src": "media/END.png",
+        "filled_by": "still",
+        "at": "2026-07-25T01:40:53"
+      }
+    }
+  ]
+}

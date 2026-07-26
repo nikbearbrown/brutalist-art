@@ -42,15 +42,15 @@ const Spark: React.FC<{ size?: number }> = ({ size = 18 }) => (
 );
 
 export const ClaudeWindow: React.FC<ClaudeWindowProps> = ({
-  view, artifactTitle, artifactHeading, artifactLines, sparkLine,
+  view, artifactTitle, artifactHeading, artifactLines, sparkLine, width: cardWidth,
 }) => {
   const frame = useCurrentFrame();
   const { fps, height } = useVideoConfig();
   // §8.1 floor: 3.2% of 1080px logical = 34.6px physical at 4K.
   // SANS (SF Pro Text) x-height ratio ≈ 0.53: 37px CSS → 39.2px physical ✓
   // SERIF (EB Garamond) x-height ratio ≈ 0.43: needs 43px CSS → 37.0px physical ✓
-  const BODY_FS  = Math.round(height * 0.034);  // 37px — SANS body lines
-  const SERIF_FS = Math.round(height * 0.040);  // 43px — SERIF title bar + sparkLine
+  const BODY_FS  = Math.round(height * 0.050);  // 54px — SANS body lines (floor-safe including → ~ chars)
+  const SERIF_FS = Math.round(height * 0.050);  // 54px — SERIF title bar + sparkLine
 
   const cardIn = spring({ frame,        fps, config: { damping: 28, stiffness: 140, mass: 0.8 } });
   const headIn = spring({ frame: frame - 8, fps, config: { damping: 28, stiffness: 140, mass: 0.8 } });
@@ -73,7 +73,7 @@ export const ClaudeWindow: React.FC<ClaudeWindowProps> = ({
     }}>
       {/* Artifact card */}
       <div style={{
-        width: 1360,
+        width: cardWidth ?? 1360,
         background: CLAUDE.CARD,
         borderRadius: 20,
         boxShadow: '0 12px 48px rgba(61,57,41,0.14)',
@@ -91,7 +91,7 @@ export const ClaudeWindow: React.FC<ClaudeWindowProps> = ({
           alignItems: 'center',
           gap: 10,
         }}>
-          <Spark />
+          <Spark size={Math.round(height * 0.050)} />
           <span style={{ fontFamily: SERIF, fontSize: SERIF_FS, color: CLAUDE.INK, fontWeight: 600 }}>
             {artifactTitle}
           </span>
@@ -102,7 +102,7 @@ export const ClaudeWindow: React.FC<ClaudeWindowProps> = ({
           {/* Heading */}
           <div style={{
             fontFamily: SERIF,
-            fontSize: 42,
+            fontSize: Math.round(height * 0.050),
             fontWeight: 700,
             color: CLAUDE.INK,
             marginBottom: 24,

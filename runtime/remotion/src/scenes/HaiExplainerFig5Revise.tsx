@@ -60,7 +60,7 @@ export const HaiExplainerFig5Revise: React.FC<HaiExplainerFig5ReviseProps> = ({ 
       {/* Eyebrow */}
       <div style={{
         position: 'absolute', left: PAD_X, top: height * 0.09,
-        fontFamily: SANS, fontSize: height * 0.014, fontWeight: 700,
+        fontFamily: SANS, fontSize: height * 0.033, fontWeight: 700,
         letterSpacing: 3, textTransform: 'uppercase' as const,
         color: CLAUDE.INK_SOFT, opacity: clamp(titleIn, 0, 1),
       }}>
@@ -201,8 +201,8 @@ export const HaiExplainerFig5Revise: React.FC<HaiExplainerFig5ReviseProps> = ({ 
         display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10,
         opacity: clamp(sparkIn, 0, 1),
       }}>
-        <Spark size={height * 0.022} />
-        <span style={{ fontFamily: SERIF, fontSize: height * 0.022, fontStyle: 'italic', color: CLAUDE.INK }}>
+        <Spark size={height * 0.040} />
+        <span style={{ fontFamily: SERIF, fontSize: height * 0.040, fontStyle: 'italic', color: CLAUDE.INK }}>
           {sparkLine}
         </span>
       </div>

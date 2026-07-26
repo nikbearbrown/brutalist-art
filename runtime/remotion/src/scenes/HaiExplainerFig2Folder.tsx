@@ -31,12 +31,12 @@ const Spark: React.FC<{ size?: number }> = ({ size = 18 }) => (
 );
 
 const FILE_CARDS = [
-  { name: 'notes.md', icon: '📄', desc: 'observations, thoughts', accent: false },
-  { name: 'code.py', icon: '🐍', desc: 'scripts & analysis', accent: false },
-  { name: 'figure.png', icon: '📊', desc: 'charts & visualizations', accent: true },
-  { name: 'data.csv', icon: '📋', desc: 'raw data', accent: false },
-  { name: 'draft.md', icon: '✏️', desc: 'paper draft', accent: false },
-  { name: 'screenshots/', icon: '🖼', desc: 'app & UI captures', accent: false },
+  { name: 'notes.md', icon: '◆', desc: 'observations, thoughts', accent: false },
+  { name: 'code.py', icon: '◆', desc: 'scripts & analysis', accent: false },
+  { name: 'figure.png', icon: '◆', desc: 'charts & visualizations', accent: true },
+  { name: 'data.csv', icon: '◆', desc: 'raw data', accent: false },
+  { name: 'draft.md', icon: '◆', desc: 'paper draft', accent: false },
+  { name: 'screenshots/', icon: '◆', desc: 'app & UI captures', accent: false },
 ];
 
 export const HaiExplainerFig2Folder: React.FC<HaiExplainerFig2FolderProps> = ({ sparkLine }) => {
@@ -68,7 +68,7 @@ export const HaiExplainerFig2Folder: React.FC<HaiExplainerFig2FolderProps> = ({ 
       {/* Eyebrow */}
       <div style={{
         position: 'absolute', left: PAD_X, top: height * 0.09,
-        fontFamily: SANS, fontSize: height * 0.014, fontWeight: 700,
+        fontFamily: SANS, fontSize: height * 0.033, fontWeight: 700,
         letterSpacing: 3, textTransform: 'uppercase' as const,
         color: CLAUDE.INK_SOFT, opacity: clamp(titleIn, 0, 1),
       }}>
@@ -95,16 +95,10 @@ export const HaiExplainerFig2Folder: React.FC<HaiExplainerFig2FolderProps> = ({ 
       }}>
         <svg width={FOLDER_W} height={FOLDER_H} viewBox="0 0 220 180">
           {/* Folder tab */}
-          <rect x={0} y={15} width={80} height={25} rx={8} fill={CLAUDE.SPARK} opacity={0.9} />
+          <rect x={0} y={15} width={80} height={25} rx={8} fill="#FFF0EB" stroke={CLAUDE.BORDER} strokeWidth={3} />
           {/* Folder body */}
-          <rect x={0} y={38} width={220} height={130} rx={12} fill={CLAUDE.SPARK} opacity={0.15} stroke={CLAUDE.SPARK} strokeWidth={2} />
-          {/* Folder body fill */}
-          <rect x={0} y={38} width={220} height={130} rx={12} fill="#FFF8F5" stroke={CLAUDE.SPARK} strokeWidth={2} />
-          {/* Folder tab text */}
-          <text x={40} y={32} fontFamily="system-ui" fontSize={11} fontWeight={700}
-            fill={CLAUDE.CARD} textAnchor="middle" letterSpacing={1}>
-            research/
-          </text>
+          <rect x={0} y={38} width={220} height={130} rx={12} fill="#FFF8F5" stroke={CLAUDE.BORDER} strokeWidth={2} />
+          {/* Folder tab text — intentionally omitted; tab label is decorative at this scale */}
         </svg>
       </div>
 
@@ -141,16 +135,16 @@ export const HaiExplainerFig2Folder: React.FC<HaiExplainerFig2FolderProps> = ({ 
             opacity: clamp(cardIn, 0, 1),
             transform: `translateX(${(1 - clamp(cardIn, 0, 1)) * 30}px)`,
           }}>
-            <span style={{ fontSize: 22, lineHeight: 1 }}>{file.icon}</span>
+            <span style={{ fontSize: Math.round(height * 0.033), lineHeight: 1 }}>{file.icon}</span>
             <div>
               <div style={{
-                fontFamily: MONO, fontSize: 15, fontWeight: 600,
-                color: isAccent ? CLAUDE.SPARK : CLAUDE.INK,
+                fontFamily: MONO, fontSize: Math.round(height * 0.033), fontWeight: 600,
+                color: CLAUDE.INK,
               }}>
                 {file.name}
               </div>
               <div style={{
-                fontFamily: SANS, fontSize: 12,
+                fontFamily: SANS, fontSize: Math.round(height * 0.033),
                 color: CLAUDE.INK_SOFT, marginTop: 2,
               }}>
                 {file.desc}
@@ -166,7 +160,7 @@ export const HaiExplainerFig2Folder: React.FC<HaiExplainerFig2FolderProps> = ({ 
         left: FOLDER_X - FOLDER_W / 2,
         top: FOLDER_Y + FOLDER_H + 20,
         width: FOLDER_W + 40,
-        fontFamily: SERIF, fontSize: 22, fontStyle: 'italic',
+        fontFamily: SERIF, fontSize: Math.round(height * 0.040), fontStyle: 'italic',
         color: CLAUDE.INK_SOFT, textAlign: 'center',
         opacity: clamp(captionIn, 0, 1),
       }}>
@@ -179,8 +173,8 @@ export const HaiExplainerFig2Folder: React.FC<HaiExplainerFig2FolderProps> = ({ 
         display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10,
         opacity: clamp(sparkIn, 0, 1),
       }}>
-        <Spark size={height * 0.022} />
-        <span style={{ fontFamily: SERIF, fontSize: height * 0.022, fontStyle: 'italic', color: CLAUDE.INK }}>
+        <Spark size={height * 0.040} />
+        <span style={{ fontFamily: SERIF, fontSize: height * 0.040, fontStyle: 'italic', color: CLAUDE.INK }}>
           {sparkLine}
         </span>
       </div>

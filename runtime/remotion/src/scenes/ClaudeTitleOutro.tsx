@@ -23,7 +23,7 @@ const clamp = (v: number, a: number, b: number) => Math.min(b, Math.max(a, v));
 
 export const ClaudeTitleOutro: React.FC<ClaudeTitleOutroProps> = ({ title, handle, subline }) => {
   const frame = useCurrentFrame();
-  const { durationInFrames } = useVideoConfig();
+  const { durationInFrames, height } = useVideoConfig();
   const o = clamp(interpolate(frame, [0, 14], [0, 1]), 0, 1);
 
   // Render the title's terminal punctuation (. ? !) in terracotta. A question
@@ -65,7 +65,7 @@ export const ClaudeTitleOutro: React.FC<ClaudeTitleOutroProps> = ({ title, handl
       {/* Handle */}
       <div style={{
         fontFamily: SERIF,
-        fontSize: 38,
+        fontSize: 44,
         color: CLAUDE.INK,
         marginTop: 28,
         opacity: 0.9,
@@ -76,7 +76,7 @@ export const ClaudeTitleOutro: React.FC<ClaudeTitleOutroProps> = ({ title, handl
       {/* Subline */}
       <div style={{
         fontFamily: SANS,
-        fontSize: 22,
+        fontSize: Math.round(height * 0.035),
         color: CLAUDE.INK_SOFT,
         marginTop: 14,
         textAlign: 'center',

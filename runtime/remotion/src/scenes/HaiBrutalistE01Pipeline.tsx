@@ -4,11 +4,11 @@ import { z } from 'zod';
 import { CLAUDE, CLAUDE_FONT } from '../tokens/claude';
 
 /**
- * HaiBrutalistE01Pipeline — 7-stage pipeline rail for "What Is Brutalist?"
- * Stages: IDEAS → SCRIPT/BEATS → AUDIO → VISUALS → ASSEMBLE → VARIANTS → PUBLISH
- * Each stage is a rounded card; ./art badge appears below as terracotta chip.
- * Cards animate in sequentially; connector arrows between each; PUBLISH is focal.
- * Beat B01 of hai-brutalist-what-is.
+ * HaiBrutalistE01Pipeline — the 7-stage pipeline as an ENDLESS RING for
+ * "What Is Brutalist?". Seven stages sit on a circle; `./art` is the single
+ * entry point in the center; a pulse travels the ring forever, lighting each
+ * stage as it passes; PUBLISH is the one node that outputs OUT (terracotta,
+ * with an arrow leaving the loop). Beat B01 of hai-brutalist-what-is.
  */
 
 export const haiBrutalistE01PipelineSchema = z.object({
@@ -19,6 +19,8 @@ export type HaiBrutalistE01PipelineProps = z.infer<typeof haiBrutalistE01Pipelin
 const SERIF = CLAUDE_FONT.serif;
 const SANS = CLAUDE_FONT.ui;
 const clamp = (v: number, a: number, b: number) => Math.min(b, Math.max(a, v));
+const NODE_BG = '#FFF8F5';
+const NODE_BORDER = '#F5C4B0';
 
 const Spark: React.FC<{ size?: number }> = ({ size = 18 }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" style={{ flexShrink: 0 }}>
@@ -40,37 +42,66 @@ const STAGES = [
   { label: 'VARIANTS', sub: 'audience-preset' },
   { label: 'PUBLISH', sub: 'youtube-publisher' },
 ];
+const N = STAGES.length;
+const FOCAL = N - 1; // PUBLISH is the one that goes out
+const START_DEG = -90; // IDEAS at top, flowing clockwise
 
 export const HaiBrutalistE01Pipeline: React.FC<HaiBrutalistE01PipelineProps> = ({ sparkLine }) => {
   const frame = useCurrentFrame();
   const { fps, width, height } = useVideoConfig();
 
-  const PAD_X = width * 0.04;
-  const CENTER_Y = height * 0.50;
-  const NODE_W = 175;
-  const NODE_H = 120;
-  const TOTAL_W = width - PAD_X * 2;
-  const STEP = TOTAL_W / (STAGES.length - 1);
+  const cx = width / 2;
+  const cy = height * 0.55;
+  const R = height * 0.285;
+  const NODE_W = 150;
+  const NODE_H = 84;
+  const degOf = (i: number) => START_DEG + (i * 360) / N;
+  const radOf = (i: number) => (degOf(i) * Math.PI) / 180;
 
   const titleIn = spring({ frame, fps, config: { damping: 30, stiffness: 100, mass: 0.8 } });
-  const sparkIn = spring({ frame: frame - 115, fps, config: { damping: 28, stiffness: 100 } });
-  const badgeIn = spring({ frame: frame - 130, fps, config: { damping: 25, stiffness: 90 } });
+  const ringIn = spring({ frame: frame - 8, fps, config: { damping: 26, stiffness: 80 } });
+  const artIn = spring({ frame: frame - 95, fps, config: { damping: 22, stiffness: 90 } });
+  const sparkIn = spring({ frame: frame - 120, fps, config: { damping: 28, stiffness: 100 } });
+
+  // endless pulse around the ring
+  const loopFrames = fps * 6;
+  const pulseDeg = START_DEG + (frame / loopFrames) * 360;
+  const pr = (pulseDeg * Math.PI) / 180;
+  const dotX = cx + R * Math.cos(pr);
+  const dotY = cy + R * Math.sin(pr);
+  // comet trail dots
+  const trail = [10, 20, 32, 46].map((lagDeg, k) => {
+    const a = ((pulseDeg - lagDeg) * Math.PI) / 180;
+    return { x: cx + R * Math.cos(a), y: cy + R * Math.sin(a), o: 0.28 - k * 0.06, r: 7 - k * 1.2 };
+  });
+  // angular activation of each node by the passing pulse
+  const activation = (i: number) => {
+    let d = Math.abs(((pulseDeg % 360) + 360) % 360 - (((degOf(i) % 360) + 360) % 360));
+    d = Math.min(d, 360 - d);
+    return clamp(1 - d / 26, 0, 1);
+  };
+
+  // PUBLISH out-arrow geometry (radially outward)
+  const fr = radOf(FOCAL);
+  const ux = Math.cos(fr), uy = Math.sin(fr);
+  const fxN = cx + R * ux, fyN = cy + R * uy;
+  const aStart = { x: fxN + ux * (NODE_W * 0.42), y: fyN + uy * (NODE_H * 0.42) };
+  const aEnd = { x: fxN + ux * (NODE_W * 0.42 + 66), y: fyN + uy * (NODE_H * 0.42 + 66) };
 
   return (
     <AbsoluteFill style={{ background: CLAUDE.PAGE, overflow: 'hidden' }}>
 
-      {/* Eyebrow */}
+      {/* Eyebrow + title */}
       <div style={{
-        position: 'absolute', left: PAD_X, top: height * 0.09,
-        fontFamily: SANS, fontSize: height * 0.014, fontWeight: 700,
+        position: 'absolute', left: width * 0.05, top: height * 0.09,
+        fontFamily: SANS, fontSize: height * 0.033, fontWeight: 700,
         letterSpacing: 3, textTransform: 'uppercase' as const,
         color: CLAUDE.INK_SOFT, opacity: clamp(titleIn, 0, 1),
       }}>
         HUMANITARIANS AI · BRUTALIST SERIES
       </div>
-
       <div style={{
-        position: 'absolute', left: PAD_X, top: height * 0.14,
+        position: 'absolute', left: width * 0.05, top: height * 0.14,
         fontFamily: SERIF, fontSize: height * 0.038, fontWeight: 600,
         color: CLAUDE.INK, letterSpacing: '-0.01em',
         opacity: clamp(titleIn, 0, 1), transform: `translateY(${(1 - titleIn) * 10}px)`,
@@ -78,103 +109,120 @@ export const HaiBrutalistE01Pipeline: React.FC<HaiBrutalistE01PipelineProps> = (
         The 7-Stage Pipeline
       </div>
 
-      {/* Stage nodes */}
+      {/* Ring, flow chevrons, out-arrow, traveling pulse */}
+      <svg width={width} height={height} style={{ position: 'absolute', inset: 0 }}>
+        <circle cx={cx} cy={cy} r={R} fill="none" stroke={CLAUDE.BORDER}
+          strokeWidth={2} strokeDasharray="2 9" opacity={clamp(ringIn, 0, 1) * 0.9} />
+
+        {/* clockwise flow chevrons at the midpoint between adjacent stages */}
+        {STAGES.map((_, i) => {
+          const a = ((degOf(i) + 180 / N) * Math.PI) / 180;
+          const mx = cx + R * Math.cos(a), my = cy + R * Math.sin(a);
+          const tx = -Math.sin(a), ty = Math.cos(a); // clockwise tangent
+          const nx = Math.cos(a), ny = Math.sin(a);  // radial (outward)
+          const s = 8 * clamp(ringIn, 0, 1);
+          const tip = { x: mx + tx * s, y: my + ty * s };
+          const b1 = { x: mx - tx * s + nx * s * 0.85, y: my - ty * s + ny * s * 0.85 };
+          const b2 = { x: mx - tx * s - nx * s * 0.85, y: my - ty * s - ny * s * 0.85 };
+          return (
+            <path key={i}
+              d={`M ${b1.x} ${b1.y} L ${tip.x} ${tip.y} L ${b2.x} ${b2.y}`}
+              stroke={CLAUDE.BORDER} strokeWidth={2.2} fill="none"
+              strokeLinecap="round" strokeLinejoin="round" opacity={0.85} />
+          );
+        })}
+
+        {/* comet trail + pulse dot */}
+        {trail.map((t, k) => (
+          <circle key={k} cx={t.x} cy={t.y} r={t.r} fill={CLAUDE.SPARK} opacity={t.o} />
+        ))}
+        <circle cx={dotX} cy={dotY} r={24} fill={CLAUDE.SPARK} opacity={0.16} />
+        <circle cx={dotX} cy={dotY} r={9} fill={CLAUDE.SPARK} />
+
+        {/* the one output: PUBLISH → out */}
+        <line x1={aStart.x} y1={aStart.y} x2={aEnd.x} y2={aEnd.y}
+          stroke={CLAUDE.SPARK} strokeWidth={3} strokeLinecap="round" opacity={clamp(artIn, 0, 1)} />
+        <path
+          d={`M ${aEnd.x - ux * 12 - uy * 7} ${aEnd.y - uy * 12 + ux * 7} L ${aEnd.x} ${aEnd.y} L ${aEnd.x - ux * 12 + uy * 7} ${aEnd.y - uy * 12 - ux * 7}`}
+          stroke={CLAUDE.SPARK} strokeWidth={3} fill="none"
+          strokeLinecap="round" strokeLinejoin="round" opacity={clamp(artIn, 0, 1)} />
+      </svg>
+
+      {/* Stage nodes on the ring */}
       {STAGES.map((stage, i) => {
-        const x = PAD_X + i * STEP;
-        const delay = 10 + i * 14;
-        const nodeIn = spring({ frame: frame - delay, fps, config: { damping: 25, stiffness: 90, mass: 0.9 } });
-        const isFocal = i === STAGES.length - 1;
-        const isActive = true;
-
+        const x = cx + R * Math.cos(radOf(i));
+        const y = cy + R * Math.sin(radOf(i));
+        const nodeIn = spring({ frame: frame - (12 + i * 11), fps, config: { damping: 24, stiffness: 90, mass: 0.9 } });
+        const isFocal = i === FOCAL;
+        const act = activation(i);
+        const glow = isFocal ? 1 : act;
+        const scale = clamp(nodeIn, 0, 1) * (1 + 0.05 * glow);
         return (
-          <React.Fragment key={i}>
-            {/* Connector arrow */}
-            {i < STAGES.length - 1 && (
-              <div style={{
-                position: 'absolute',
-                left: x + NODE_W / 2,
-                top: CENTER_Y - 1,
-                width: STEP - NODE_W / 2,
-                height: 2,
-                background: isFocal ? CLAUDE.SPARK : CLAUDE.BORDER,
-                opacity: clamp(nodeIn, 0, 1),
-              }}>
-                <svg style={{ position: 'absolute', right: -8, top: -7 }} width={16} height={16} viewBox="0 0 16 16">
-                  <path d="M4 2 L12 8 L4 14" stroke={CLAUDE.SPARK} strokeWidth={2.5} fill="none"
-                    strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </div>
-            )}
-
-            {/* Node card */}
+          <div key={i} style={{
+            position: 'absolute',
+            left: x - NODE_W / 2, top: y - NODE_H / 2,
+            width: NODE_W, height: NODE_H,
+            background: isFocal ? CLAUDE.INK : NODE_BG,
+            border: `2px solid ${isFocal ? CLAUDE.INK : NODE_BORDER}`,
+            borderRadius: 14,
+            boxShadow: isFocal
+              ? `0 10px 34px ${CLAUDE.INK}55`
+              : `0 4px 16px rgba(217,119,87,${0.10 + 0.22 * act})`,
+            display: 'flex', flexDirection: 'column',
+            alignItems: 'center', justifyContent: 'center', gap: 4,
+            opacity: clamp(nodeIn, 0, 1),
+            transform: `scale(${scale})`,
+          }}>
             <div style={{
-              position: 'absolute',
-              left: x - NODE_W / 2,
-              top: CENTER_Y - NODE_H / 2,
-              width: NODE_W,
-              height: NODE_H,
-              background: isFocal ? CLAUDE.SPARK : '#FFF8F5',
-              border: `2px solid ${isFocal ? CLAUDE.SPARK : '#F5C4B0'}`,
-              borderRadius: 14,
-              boxShadow: isFocal
-                ? `0 8px 32px ${CLAUDE.SPARK}40`
-                : '0 4px 16px rgba(217,119,87,0.12)',
-              display: 'flex', flexDirection: 'column',
-              alignItems: 'center', justifyContent: 'center',
-              gap: 5,
-              opacity: clamp(nodeIn, 0, 1),
-              transform: `translateY(${(1 - clamp(nodeIn, 0, 1)) * 20}px)`,
+              fontFamily: SANS, fontSize: Math.round(height * 0.033), fontWeight: 700,
+              letterSpacing: 1.4, textTransform: 'uppercase' as const,
+              color: isFocal ? '#FFFFFF' : CLAUDE.INK,
+              textAlign: 'center', whiteSpace: 'pre-line', lineHeight: 1.25,
             }}>
-              <div style={{
-                fontFamily: SANS, fontSize: 11, fontWeight: 700,
-                letterSpacing: 1.5, textTransform: 'uppercase' as const,
-                color: isFocal ? '#FFFFFF' : CLAUDE.SPARK,
-                textAlign: 'center', whiteSpace: 'pre-line', lineHeight: 1.3,
-              }}>
-                {stage.label}
-              </div>
-              <div style={{
-                fontFamily: SANS, fontSize: 10,
-                color: isFocal ? 'rgba(255,255,255,0.8)' : CLAUDE.INK_SOFT,
-                textAlign: 'center',
-              }}>
-                {stage.sub}
-              </div>
+              {stage.label}
             </div>
-          </React.Fragment>
+            <div style={{
+              fontFamily: SANS, fontSize: Math.round(height * 0.033),
+              color: isFocal ? 'rgba(255,255,255,0.85)' : CLAUDE.INK_SOFT,
+              textAlign: 'center',
+            }}>
+              {stage.sub}
+            </div>
+          </div>
         );
       })}
 
-      {/* ./art badge */}
+      {/* ./art — the single entry point, in the center of the loop */}
       <div style={{
-        position: 'absolute',
-        left: 0, right: 0, bottom: height * 0.17,
-        display: 'flex', justifyContent: 'center',
-        opacity: clamp(badgeIn, 0, 1),
-        transform: `translateY(${(1 - clamp(badgeIn, 0, 1)) * 10}px)`,
+        position: 'absolute', left: cx, top: cy,
+        transform: `translate(-50%,-50%) scale(${clamp(artIn, 0, 1)})`,
+        display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6,
+        opacity: clamp(artIn, 0, 1),
       }}>
         <div style={{
-          background: CLAUDE.SPARK,
-          borderRadius: 20,
-          padding: '6px 22px',
-          fontFamily: SANS,
-          fontWeight: 700,
-          fontSize: height * 0.018,
-          color: '#FFFFFF',
-          letterSpacing: 2,
+          background: CLAUDE.INK, borderRadius: 22, padding: '8px 26px',
+          fontFamily: SANS, fontWeight: 700, fontSize: height * 0.02,
+          color: '#FFFFFF', letterSpacing: 2,
+          boxShadow: `0 8px 28px ${CLAUDE.INK}44`,
         }}>
           ./art
+        </div>
+        <div style={{
+          fontFamily: SANS, fontSize: Math.round(height * 0.033), fontWeight: 600,
+          letterSpacing: 2, textTransform: 'uppercase' as const, color: CLAUDE.INK_SOFT,
+        }}>
+          one entry point
         </div>
       </div>
 
       {/* Spark line */}
       <div style={{
-        position: 'absolute', left: 0, right: 0, bottom: height * 0.07,
+        position: 'absolute', left: 0, right: 0, bottom: height * 0.06,
         display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10,
         opacity: clamp(sparkIn, 0, 1),
       }}>
-        <Spark size={height * 0.022} />
-        <span style={{ fontFamily: SERIF, fontSize: height * 0.022, fontStyle: 'italic', color: CLAUDE.INK }}>
+        <Spark size={height * 0.040} />
+        <span style={{ fontFamily: SERIF, fontSize: height * 0.040, fontStyle: 'italic', color: CLAUDE.INK }}>
           {sparkLine}
         </span>
       </div>

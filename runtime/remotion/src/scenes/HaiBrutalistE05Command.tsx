@@ -43,7 +43,7 @@ export const HaiBrutalistE05Command: React.FC<HaiBrutalistE05CommandProps> = ({ 
   const callout2In = spring({ frame: frame - 75, fps, config: { damping: 25, stiffness: 100 } });
   const sparkIn = spring({ frame: frame - 115, fps, config: { damping: 28, stiffness: 100 } });
 
-  const CMD_FONT_SIZE = height * 0.032;
+  const CMD_FONT_SIZE = height * 0.036;
   const CMD_Y = height * 0.46;
 
   return (
@@ -52,7 +52,7 @@ export const HaiBrutalistE05Command: React.FC<HaiBrutalistE05CommandProps> = ({ 
       {/* Eyebrow */}
       <div style={{
         position: 'absolute', left: PAD_X, top: height * 0.09,
-        fontFamily: SANS, fontSize: height * 0.014, fontWeight: 700,
+        fontFamily: SANS, fontSize: height * 0.033, fontWeight: 700,
         letterSpacing: 3, textTransform: 'uppercase' as const,
         color: CLAUDE.INK_SOFT, opacity: clamp(titleIn, 0, 1),
       }}>
@@ -112,10 +112,10 @@ export const HaiBrutalistE05Command: React.FC<HaiBrutalistE05CommandProps> = ({ 
         opacity: clamp(callout1In, 0, 1),
         transform: `translateY(${(1 - clamp(callout1In, 0, 1)) * -10}px)`,
       }}>
-        <div style={{ fontFamily: SANS, fontSize: 11, fontWeight: 700, color: CLAUDE.SPARK, letterSpacing: 1, marginBottom: 4 }}>
+        <div style={{ fontFamily: SANS, fontSize: Math.round(height * 0.033), fontWeight: 700, color: CLAUDE.INK, letterSpacing: 1, marginBottom: 4 }}>
           CAFFEINATE
         </div>
-        <div style={{ fontFamily: SANS, fontSize: 14, color: CLAUDE.INK, lineHeight: 1.4 }}>
+        <div style={{ fontFamily: SANS, fontSize: Math.round(height * 0.033), color: CLAUDE.INK, lineHeight: 1.4 }}>
           keeps Mac awake through render
         </div>
         {/* Arrow down */}
@@ -149,10 +149,10 @@ export const HaiBrutalistE05Command: React.FC<HaiBrutalistE05CommandProps> = ({ 
           borderRight: '8px solid transparent',
           borderBottom: `10px solid #5B8ED8`,
         }} />
-        <div style={{ fontFamily: SANS, fontSize: 11, fontWeight: 700, color: '#5B8ED8', letterSpacing: 1, marginBottom: 4 }}>
+        <div style={{ fontFamily: SANS, fontSize: Math.round(height * 0.033), fontWeight: 700, color: '#5B8ED8', letterSpacing: 1, marginBottom: 4 }}>
           --DANGEROUSLY-SKIP-PERMISSIONS
         </div>
-        <div style={{ fontFamily: SANS, fontSize: 14, color: CLAUDE.INK, lineHeight: 1.4 }}>
+        <div style={{ fontFamily: SANS, fontSize: Math.round(height * 0.033), color: CLAUDE.INK, lineHeight: 1.4 }}>
           runs end-to-end without permission prompts
         </div>
       </div>
@@ -163,8 +163,8 @@ export const HaiBrutalistE05Command: React.FC<HaiBrutalistE05CommandProps> = ({ 
         display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10,
         opacity: clamp(sparkIn, 0, 1),
       }}>
-        <Spark size={height * 0.022} />
-        <span style={{ fontFamily: SERIF, fontSize: height * 0.022, fontStyle: 'italic', color: CLAUDE.INK }}>
+        <Spark size={height * 0.040} />
+        <span style={{ fontFamily: SERIF, fontSize: height * 0.040, fontStyle: 'italic', color: CLAUDE.INK }}>
           {sparkLine}
         </span>
       </div>

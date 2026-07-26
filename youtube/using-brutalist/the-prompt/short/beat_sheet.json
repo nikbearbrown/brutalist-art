@@ -1,0 +1,390 @@
+{
+  "metadata": {
+    "slug": "the-prompt-short",
+    "title": "The Prompt: Generic to Specific",
+    "channel": "claude-liam",
+    "persona": "Liam",
+    "in_for": "Liam, for Bear",
+    "folderLabel": "@NikBearBrown",
+    "register": "Teardown",
+    "engine": "kokoro",
+    "voice": "am_onyx",
+    "palette": "claude",
+    "genre": "ai-explainer",
+    "topic": "BRUTALIST — OPEN SOURCE",
+    "one_idea": "Start from the generic seed, then steer with your specifics — name the project, the result, the figure, and the one idea a viewer should leave with.",
+    "source": "https://github.com/nikbearbrown/brutalist.art",
+    "repo": "https://github.com/nikbearbrown/brutalist.art",
+    "publish_url": "https://youtube.com/@NikBearBrown",
+    "chapter_number": 5,
+    "playlist_title": "What Is Brutalist? — Make Videos with the Open-Source Toolkit",
+    "duration_estimate_s": 120,
+    "build": {
+      "at": "2026-07-25T01:33:47",
+      "cut": "review",
+      "filled": 1,
+      "of": 10,
+      "slates": [
+        "B00",
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "VERDICT",
+        "HANDOFF",
+        "OUTRO"
+      ],
+      "skin_warnings": [
+        "B00: palette=claude but the cold open is 'ClaudeComposerAsk916' — COLD OPEN LAW wants ClaudeComposerAsk",
+        "END: palette=claude but the outro is 'un-annotated' — OUTRO LAW wants ClaudeTitleOutro"
+      ]
+    },
+    "voice_kokoro": "am_onyx",
+    "greeting": "Namaste, Liam",
+    "style_preset": "claude",
+    "ground": "#FAF9F5",
+    "aspect_ratio": "9:16",
+    "fit": "crop",
+    "kind": "short",
+    "reformat": "center-cut, focus-aware; pantry/<bid>-916.* is the human replacement slot; -916 overrides honored",
+    "derived_from": "the-prompt",
+    "dropped_beats": [],
+    "playlist_short": "Shorts",
+    "total_estimated_duration_seconds": 124.03
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "act": "cold open",
+      "narration_text": "Namaste — this is Liam, in for Bear. The Prompt: Generic to Specific. A generic prompt gets a generic video. The skill is naming your project, your result, your figure, and your one idea. Let me show you how the specifics change the output.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 17,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk916",
+          "props": {
+            "greeting": "Namaste, Liam",
+            "topic": "BRUTALIST — OPEN SOURCE",
+            "segment": "The Prompt: Generic to Specific",
+            "command": "How do I write a Brutalist build prompt that gets a specific video?",
+            "runningText": "comparing generic vs specific prompts…",
+            "output": [
+              "Name the project, the result, the figure worth showing",
+              "Name the one idea the viewer should leave with",
+              "The specifics in → the specifics out"
+            ],
+            "folderLabel": "@NikBearBrown",
+            "modelLabel": "Fable 5",
+            "effortLabel": "Medium"
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": 13.33,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-25T01:33:47",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for B00"
+      }
+    },
+    {
+      "beat_id": "A1",
+      "act": "ACT 1",
+      "narration_text": "There is a generic seed prompt in every SKILL.md. It works. It produces a video. But it produces the average video about your topic — the one Claude would make for anyone. Your job is to steer it away from average.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 16,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "There is a generic seed prompt in every SKILL.md.",
+            "eyebrow": "ACT 1",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A1.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-A1.mp3",
+      "actual_duration_s": 12.14,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-25T01:33:47",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for A1"
+      }
+    },
+    {
+      "beat_id": "A2",
+      "act": "ACT 2",
+      "narration_text": "Name your project and your result. Not 'a machine learning model' — 'a gradient boosted tree that predicts hospital readmission at 24 hours'. Not 'my research' — 'my paper showing that X causes Y in condition Z'. The specific noun is the first filter.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 17,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "Name your project and your result.",
+            "eyebrow": "ACT 2",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A2.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-A2.mp3",
+      "actual_duration_s": 14.31,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-25T01:33:47",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for A2"
+      }
+    },
+    {
+      "beat_id": "A3",
+      "act": "ACT 3",
+      "narration_text": "Name the figure worth showing. Every good video has one chart, one diagram, one demo that earns its place because nothing else could make the idea visible. Name it in the prompt. If you cannot name it, you do not know yet what the video is actually about.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 19,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "Name the figure worth showing.",
+            "eyebrow": "ACT 3",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A3.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-A3.mp3",
+      "actual_duration_s": 13.76,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-25T01:33:47",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for A3"
+      }
+    },
+    {
+      "beat_id": "A4",
+      "act": "ACT 4",
+      "narration_text": "Name the one idea the viewer should leave with. One sentence. Not 'machine learning is important' — 'a model that predicts 70 percent of readmissions costs less than one admission'. That sentence is the verdict. Build the whole video to land it.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 16,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "Name the one idea the viewer should leave with.",
+            "eyebrow": "ACT 4",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A4.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-A4.mp3",
+      "actual_duration_s": 13.1,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-25T01:33:47",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for A4"
+      }
+    },
+    {
+      "beat_id": "A5",
+      "act": "ACT 5",
+      "narration_text": "In the BUILD-PROMPT.md for any Brutalist video — you will see the line 'persona: Liam' for this channel. If you are building a video for your own channel, change that to your name. Claude says 'Bear' because that is what the prompt says. The field is yours.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 18,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "SlateCard",
+          "props": {
+            "headline": "In the BUILD-PROMPT.md for any Brutalist video —",
+            "eyebrow": "ACT 5",
+            "topic": "BRUTALIST — OPEN SOURCE"
+          },
+          "rendered": {
+            "out": "media/A5.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-A5.mp3",
+      "actual_duration_s": 13.44,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-25T01:33:47",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for A5"
+      }
+    },
+    {
+      "beat_id": "VERDICT",
+      "act": "verdict",
+      "narration_text": "The verdict. Generic in, generic out. Name the project, the result, the one figure, and the one idea — those four fields move the prompt from a template to a brief. The video improves exactly as much as the prompt does.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 16,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeVerdictArtifact916",
+          "props": {
+            "artifactTitle": "The Prompt: Generic to Specific",
+            "artifactHeading": "The verdict",
+            "artifactLines": [
+              "Name the project and the result — specific noun, not category.",
+              "Name the figure worth showing — if you can't, you don't know yet.",
+              "Name the one idea to leave with — one sentence, the whole verdict.",
+              "The video improves exactly as much as the prompt does."
+            ]
+          },
+          "rendered": {
+            "out": "media/VERDICT.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-VERDICT.mp3",
+      "actual_duration_s": 12.25,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-25T01:33:47",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for VERDICT"
+      }
+    },
+    {
+      "beat_id": "HANDOFF",
+      "act": "handoff",
+      "narration_text": "Your turn. Fill in this prompt and paste it to Claude: Build a Brutalist ai-explainer video from my folder. The project is [specific name]. The result is [specific finding]. The figure worth showing is [chart or diagram]. The one idea the viewer should leave with is [one sentence]. Persona: Liam, in for Bear. Channel: @NikBearBrown. That is the build brief — fill in the brackets from your own work and Claude will build a video that is actually about your project.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 32,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk916",
+          "props": {
+            "greeting": "Your turn.",
+            "topic": "BRUTALIST — OPEN SOURCE",
+            "segment": "The Prompt: Generic to Specific",
+            "command": "Build a Brutalist ai-explainer video from my folder. The project is [specific name]. The result is [specific finding]. The figure worth showing is [chart or diagram]. The one idea the viewer should leave with is [one sentence]. Persona: Liam, in for Bear. Channel: @NikBearBrown.",
+            "runningText": "paste this into Claude…",
+            "output": [],
+            "folderLabel": "@NikBearBrown",
+            "modelLabel": "Fable 5",
+            "effortLabel": "Medium"
+          },
+          "rendered": {
+            "out": "media/HANDOFF.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-HANDOFF.mp3",
+      "actual_duration_s": 21.76,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-25T01:33:47",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for HANDOFF"
+      }
+    },
+    {
+      "beat_id": "OUTRO",
+      "act": "outro",
+      "narration_text": "The Prompt: Generic to Specific — Brutalist. @NikBearBrown. Liam, in for Bear.",
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "estimated_duration_s": 5,
+      "shot": {
+        "type": "REMOTION",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro916",
+          "props": {
+            "title": "The Prompt: Generic to Specific",
+            "handle": "@NikBearBrown",
+            "subline": "Liam, in for Bear"
+          },
+          "rendered": {
+            "out": "media/OUTRO.mp4",
+            "at": ""
+          }
+        }
+      },
+      "audio_file": "mp3/beat-OUTRO.mp3",
+      "actual_duration_s": 5.44,
+      "build": {
+        "status": "SLATE",
+        "src": null,
+        "filled_by": null,
+        "at": "2026-07-25T01:33:47",
+        "needs": "PIPELINE → fill_slates/remotion_scenes for OUTRO"
+      }
+    },
+    {
+      "beat_id": "END",
+      "narration_text": "",
+      "actual_duration_s": 4.5,
+      "audio_file": "mp3/beat-END.mp3",
+      "shot": {
+        "type": "CARD",
+        "source": "own",
+        "motion": "hold",
+        "treatment": "none"
+      },
+      "card": {
+        "handle": "@nikbearbrown",
+        "next": "",
+        "silent": true
+      },
+      "build": {
+        "status": "STILL",
+        "src": "media/END.png",
+        "filled_by": "still",
+        "at": "2026-07-25T01:33:47"
+      }
+    }
+  ]
+}

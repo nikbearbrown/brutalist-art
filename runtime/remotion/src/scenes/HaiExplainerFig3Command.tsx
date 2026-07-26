@@ -53,7 +53,7 @@ export const HaiExplainerFig3Command: React.FC<HaiExplainerFig3CommandProps> = (
       {/* Eyebrow */}
       <div style={{
         position: 'absolute', left: PAD_X, top: height * 0.09,
-        fontFamily: SANS, fontSize: height * 0.014, fontWeight: 700,
+        fontFamily: SANS, fontSize: height * 0.033, fontWeight: 700,
         letterSpacing: 3, textTransform: 'uppercase' as const,
         color: CLAUDE.INK_SOFT, opacity: clamp(titleIn, 0, 1),
       }}>
@@ -92,12 +92,12 @@ export const HaiExplainerFig3Command: React.FC<HaiExplainerFig3CommandProps> = (
             <rect x={3} y={5} width={18} height={14} rx={2} stroke={CLAUDE.INK_SOFT} strokeWidth={2} />
             <path d="M3 9l9 5 9-5" stroke={CLAUDE.INK_SOFT} strokeWidth={2} />
           </svg>
-          <span style={{ fontFamily: MONO, fontSize: 16, color: CLAUDE.SPARK, fontWeight: 600 }}>
+          <span style={{ fontFamily: MONO, fontSize: Math.round(height * 0.033), color: CLAUDE.INK, fontWeight: 600 }}>
             hr@humanitarians.ai
           </span>
         </div>
-        <span style={{ fontFamily: SANS, fontSize: 15, color: CLAUDE.INK_SOFT }}>
-          → Brutalist system + setup help
+        <span style={{ fontFamily: SANS, fontSize: Math.round(height * 0.033), color: CLAUDE.INK_SOFT }}>
+          Brutalist system + setup help
         </span>
       </div>
 
@@ -116,14 +116,14 @@ export const HaiExplainerFig3Command: React.FC<HaiExplainerFig3CommandProps> = (
       }}>
         {/* Shell prompt */}
         <div style={{
-          fontFamily: MONO, fontSize: 14, color: '#5A9B5A', marginBottom: 12,
+          fontFamily: MONO, fontSize: Math.round(height * 0.033), color: '#5A9B5A', marginBottom: 12,
         }}>
           $ <span style={{ color: '#888' }}>in your research folder:</span>
         </div>
 
         {/* The command line */}
         <div style={{
-          fontFamily: MONO, fontSize: 26, fontWeight: 500,
+          fontFamily: MONO, fontSize: Math.round(height * 0.036), fontWeight: 500,
           lineHeight: 1.4, color: '#F0EDE4',
           letterSpacing: '-0.01em',
         }}>
@@ -137,7 +137,7 @@ export const HaiExplainerFig3Command: React.FC<HaiExplainerFig3CommandProps> = (
 
         {/* Status line */}
         <div style={{
-          fontFamily: MONO, fontSize: 13, color: '#666', marginTop: 12,
+          fontFamily: MONO, fontSize: Math.round(height * 0.033), color: '#666', marginTop: 12,
         }}>
           ✳ Claude Code initializing pipeline…
         </div>
@@ -159,8 +159,8 @@ export const HaiExplainerFig3Command: React.FC<HaiExplainerFig3CommandProps> = (
           maxWidth: 300,
           boxShadow: '0 4px 16px rgba(61,57,41,0.12)',
         }}>
-          <div style={{ fontFamily: MONO, fontSize: 13, color: '#88CCAA', fontWeight: 700 }}>caffeinate</div>
-          <div style={{ fontFamily: SANS, fontSize: 13, color: CLAUDE.INK, marginTop: 4 }}>
+          <div style={{ fontFamily: MONO, fontSize: Math.round(height * 0.033), color: '#88CCAA', fontWeight: 700 }}>caffeinate</div>
+          <div style={{ fontFamily: SANS, fontSize: Math.round(height * 0.033), color: CLAUDE.INK, marginTop: 4 }}>
             keeps the Mac awake for the full render — no sleep interruptions
           </div>
         </div>
@@ -186,8 +186,8 @@ export const HaiExplainerFig3Command: React.FC<HaiExplainerFig3CommandProps> = (
           maxWidth: 380,
           boxShadow: '0 4px 16px rgba(61,57,41,0.12)',
         }}>
-          <div style={{ fontFamily: MONO, fontSize: 12, color: '#AAC4E8', fontWeight: 700 }}>--dangerously-skip-permissions</div>
-          <div style={{ fontFamily: SANS, fontSize: 13, color: CLAUDE.INK, marginTop: 4 }}>
+          <div style={{ fontFamily: MONO, fontSize: Math.round(height * 0.033), color: '#AAC4E8', fontWeight: 700 }}>--dangerously-skip-permissions</div>
+          <div style={{ fontFamily: SANS, fontSize: Math.round(height * 0.033), color: CLAUDE.INK, marginTop: 4 }}>
             runs the whole pipeline unattended — no mid-build permission prompts
           </div>
         </div>
@@ -202,8 +202,8 @@ export const HaiExplainerFig3Command: React.FC<HaiExplainerFig3CommandProps> = (
         display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10,
         opacity: clamp(sparkIn, 0, 1),
       }}>
-        <Spark size={height * 0.022} />
-        <span style={{ fontFamily: SERIF, fontSize: height * 0.022, fontStyle: 'italic', color: CLAUDE.INK }}>
+        <Spark size={height * 0.040} />
+        <span style={{ fontFamily: SERIF, fontSize: height * 0.040, fontStyle: 'italic', color: CLAUDE.INK }}>
           {sparkLine}
         </span>
       </div>

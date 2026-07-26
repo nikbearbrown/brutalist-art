@@ -77,7 +77,7 @@ export const HaiBrutalistE03Install: React.FC<HaiBrutalistE03InstallProps> = ({ 
       {/* Eyebrow */}
       <div style={{
         position: 'absolute', left: PAD_X, top: height * 0.09,
-        fontFamily: SANS, fontSize: height * 0.014, fontWeight: 700,
+        fontFamily: SANS, fontSize: height * 0.033, fontWeight: 700,
         letterSpacing: 3, textTransform: 'uppercase' as const,
         color: CLAUDE.INK_SOFT, opacity: clamp(titleIn, 0, 1),
       }}>
@@ -121,7 +121,7 @@ export const HaiBrutalistE03Install: React.FC<HaiBrutalistE03InstallProps> = ({ 
               boxShadow: isLast ? `0 0 18px #4A9E6A60` : 'none',
             }}>
               <span style={{
-                fontFamily: SANS, fontSize: 15, fontWeight: 700,
+                fontFamily: SANS, fontSize: Math.round(height * 0.033), fontWeight: 700,
                 color: '#FFFFFF',
               }}>
                 {i + 1}
@@ -136,16 +136,16 @@ export const HaiBrutalistE03Install: React.FC<HaiBrutalistE03InstallProps> = ({ 
                 borderRadius: 20,
                 padding: '7px 20px',
                 fontFamily: SANS,
-                fontSize: height * 0.022,
+                fontSize: Math.round(height * 0.035),
                 fontWeight: 700,
-                color: CLAUDE.SPARK,
+                color: CLAUDE.INK,
               }}>
                 {step.label}
               </div>
             ) : (
               <div style={{
                 fontFamily: MONO,
-                fontSize: height * 0.024,
+                fontSize: height * 0.033,
                 color: CLAUDE.INK,
               }}>
                 {step.label}
@@ -156,7 +156,7 @@ export const HaiBrutalistE03Install: React.FC<HaiBrutalistE03InstallProps> = ({ 
             {step.suffix && (
               <div style={{
                 fontFamily: SANS,
-                fontSize: height * 0.022,
+                fontSize: height * 0.035,
                 fontWeight: 700,
                 color: '#4A9E6A',
                 boxShadow: glow,
@@ -174,8 +174,8 @@ export const HaiBrutalistE03Install: React.FC<HaiBrutalistE03InstallProps> = ({ 
         display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10,
         opacity: clamp(sparkIn, 0, 1),
       }}>
-        <Spark size={height * 0.022} />
-        <span style={{ fontFamily: SERIF, fontSize: height * 0.022, fontStyle: 'italic', color: CLAUDE.INK }}>
+        <Spark size={height * 0.040} />
+        <span style={{ fontFamily: SERIF, fontSize: height * 0.040, fontStyle: 'italic', color: CLAUDE.INK }}>
           {sparkLine}
         </span>
       </div>

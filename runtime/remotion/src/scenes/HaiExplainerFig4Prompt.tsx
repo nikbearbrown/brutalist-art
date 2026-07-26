@@ -60,7 +60,7 @@ in this folder`;
       {/* Eyebrow */}
       <div style={{
         position: 'absolute', left: PAD_X, top: height * 0.09,
-        fontFamily: SANS, fontSize: height * 0.014, fontWeight: 700,
+        fontFamily: SANS, fontSize: height * 0.033, fontWeight: 700,
         letterSpacing: 3, textTransform: 'uppercase' as const,
         color: CLAUDE.INK_SOFT, opacity: clamp(titleIn, 0, 1),
       }}>
@@ -73,7 +73,7 @@ in this folder`;
         color: CLAUDE.INK, letterSpacing: '-0.01em',
         opacity: clamp(titleIn, 0, 1), transform: `translateY(${(1 - titleIn) * 10}px)`,
       }}>
-        Generic Seed → Your Specifics
+        Generic Seed to Your Specifics
       </div>
 
       {/* LEFT panel — generic (greyed) */}
@@ -91,13 +91,13 @@ in this folder`;
         transform: `translateX(${(1 - clamp(leftIn, 0, 1)) * -20}px)`,
       }}>
         <div style={{
-          fontFamily: SANS, fontSize: 11, fontWeight: 700, letterSpacing: 2,
+          fontFamily: SANS, fontSize: Math.round(height * 0.033), fontWeight: 700, letterSpacing: 2,
           textTransform: 'uppercase' as const, color: CLAUDE.GHOST, marginBottom: 14,
         }}>
           Generic Seed
         </div>
         <div style={{
-          fontFamily: MONO, fontSize: 17, lineHeight: 1.7,
+          fontFamily: MONO, fontSize: Math.round(height * 0.033), lineHeight: 1.7,
           color: CLAUDE.GHOST, whiteSpace: 'pre-line',
         }}>
           {GENERIC}
@@ -115,12 +115,12 @@ in this folder`;
       }}>
         <svg width={44} height={40} viewBox="0 0 44 40">
           <path d="M4 20 L36 20 M28 10 L38 20 L28 30"
-            stroke={CLAUDE.SPARK} strokeWidth={2.5} fill="none"
+            stroke={CLAUDE.INK_SOFT} strokeWidth={2.5} fill="none"
             strokeLinecap="round" strokeLinejoin="round" />
         </svg>
         <div style={{
-          fontFamily: SANS, fontSize: 10, fontWeight: 700,
-          color: CLAUDE.SPARK, letterSpacing: 1, textAlign: 'center',
+          fontFamily: SANS, fontSize: Math.round(height * 0.033), fontWeight: 700,
+          color: CLAUDE.INK, letterSpacing: 1, textAlign: 'center',
           textTransform: 'uppercase' as const,
         }}>
           ADD<br />YOURS
@@ -143,20 +143,20 @@ in this folder`;
         transform: `translateX(${(1 - clamp(rightIn, 0, 1)) * 20}px)`,
       }}>
         <div style={{
-          fontFamily: SANS, fontSize: 11, fontWeight: 700, letterSpacing: 2,
-          textTransform: 'uppercase' as const, color: CLAUDE.SPARK, marginBottom: 14,
+          fontFamily: SANS, fontSize: Math.round(height * 0.033), fontWeight: 700, letterSpacing: 2,
+          textTransform: 'uppercase' as const, color: CLAUDE.INK, marginBottom: 14,
         }}>
           Your Version
         </div>
         {/* Prompt lines with terracotta insertions */}
-        <div style={{ fontFamily: MONO, fontSize: 16, lineHeight: 1.9, color: CLAUDE.INK }}>
+        <div style={{ fontFamily: MONO, fontSize: Math.round(height * 0.033), lineHeight: 1.9, color: CLAUDE.INK }}>
           <span>create a claude-explainer</span><br />
           <span>in the Liam voice for every</span><br />
           <span>video idea in this folder —</span><br />
-          <span style={{ color: CLAUDE.SPARK }}>my project is [your topic].</span><br />
-          <span style={{ color: CLAUDE.SPARK }}>Key result: [your result].</span><br />
-          <span style={{ color: CLAUDE.SPARK }}>Show [your key figure].</span><br />
-          <span style={{ color: CLAUDE.SPARK }}>One takeaway: [your idea].</span>
+          <span style={{ fontWeight: 700 }}>my project is [your topic].</span><br />
+          <span style={{ fontWeight: 700 }}>Key result: [your result].</span><br />
+          <span style={{ fontWeight: 700 }}>Show [your key figure].</span><br />
+          <span style={{ fontWeight: 700 }}>One takeaway: [your idea].</span>
         </div>
 
         {/* Sign-in line callout */}
@@ -168,13 +168,13 @@ in this folder`;
           padding: '10px 16px',
           opacity: clamp(calloutIn, 0, 1),
         }}>
-          <div style={{ fontFamily: SANS, fontSize: 11, fontWeight: 700, color: CLAUDE.SPARK, marginBottom: 4, letterSpacing: 1 }}>
+          <div style={{ fontFamily: SANS, fontSize: Math.round(height * 0.033), fontWeight: 700, color: CLAUDE.INK, marginBottom: 4, letterSpacing: 1 }}>
             SIGN-IN LINE
           </div>
-          <div style={{ fontFamily: MONO, fontSize: 14, color: CLAUDE.INK, lineHeight: 1.5 }}>
+          <div style={{ fontFamily: MONO, fontSize: Math.round(height * 0.033), color: CLAUDE.INK, lineHeight: 1.5 }}>
             "…and have Liam say<br />
-            <span style={{ color: CLAUDE.SPARK }}>'Liam, for [your name]</span><br />
-            <span style={{ color: CLAUDE.SPARK }}>&nbsp;and Humanitarians AI.'"</span>
+            <span style={{ fontWeight: 700 }}>'Liam, for [your name]</span><br />
+            <span style={{ fontWeight: 700 }}>&nbsp;and Humanitarians AI.'"</span>
           </div>
         </div>
       </div>
@@ -185,8 +185,8 @@ in this folder`;
         display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10,
         opacity: clamp(sparkIn, 0, 1),
       }}>
-        <Spark size={height * 0.022} />
-        <span style={{ fontFamily: SERIF, fontSize: height * 0.022, fontStyle: 'italic', color: CLAUDE.INK }}>
+        <Spark size={height * 0.040} />
+        <span style={{ fontFamily: SERIF, fontSize: height * 0.040, fontStyle: 'italic', color: CLAUDE.INK }}>
           {sparkLine}
         </span>
       </div>

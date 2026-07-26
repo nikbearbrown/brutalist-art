@@ -99,12 +99,17 @@ export const ProfileKaustubhaFig1Gap: React.FC<ProfileKaustubhaFig1GapProps> = (
         }}>
           Works In Development
         </div>
-        {DEV_ITEMS.map((item, i) => (
-          <div key={i} style={{
-            fontFamily: SANS, fontSize: height * 0.022, fontWeight: 600,
-            color: '#4A9E6A',
-          }}>{item}</div>
-        ))}
+        {DEV_ITEMS.map((item, i) => {
+          const itemIn = spring({ frame: frame - Math.round((10 + i * 12) * S), fps, config: { damping: 26, stiffness: 90 } });
+          return (
+            <div key={i} style={{
+              fontFamily: SANS, fontSize: height * 0.022, fontWeight: 600,
+              color: '#4A9E6A',
+              opacity: clamp(itemIn, 0, 1),
+              transform: `translateX(${(1 - clamp(itemIn, 0, 1)) * -12}px)`,
+            }}>{item}</div>
+          );
+        })}
       </div>
 
       {/* RIGHT PLATFORM — Production */}
@@ -126,12 +131,17 @@ export const ProfileKaustubhaFig1Gap: React.FC<ProfileKaustubhaFig1GapProps> = (
         }}>
           Works When Someone<br />Depends On It
         </div>
-        {PROD_ITEMS.map((item, i) => (
-          <div key={i} style={{
-            fontFamily: SANS, fontSize: height * 0.022,
-            color: CLAUDE.INK_SOFT,
-          }}>{item}</div>
-        ))}
+        {PROD_ITEMS.map((item, i) => {
+          const itemIn = spring({ frame: frame - Math.round((25 + i * 14) * S), fps, config: { damping: 26, stiffness: 80 } });
+          return (
+            <div key={i} style={{
+              fontFamily: SANS, fontSize: height * 0.022,
+              color: CLAUDE.INK_SOFT,
+              opacity: clamp(itemIn, 0, 1),
+              transform: `translateX(${(1 - clamp(itemIn, 0, 1)) * 12}px)`,
+            }}>{item}</div>
+          );
+        })}
       </div>
 
       {/* THE GAP — shaded void */}

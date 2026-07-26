@@ -38,7 +38,9 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import datetime
 import os, json
+import subprocess
 import sys
 import time
 from pathlib import Path
@@ -49,6 +51,144 @@ SCOPES = [
     "https://www.googleapis.com/auth/youtube.force-ssl",  # captions.insert
 ]
 EDU_CATEGORY = "27"
+
+# ── TOPOST — the ONLY legal upload source ────────────────────────────────────
+# Override ART_TOPOST in .env if the repo lives elsewhere, but the path must
+# still resolve to the real TOPOST staging directory.
+TOPOST = Path(os.environ.get(
+    "ART_TOPOST",
+    "/Users/bear/Documents/CoWork/bear-textbooks/books/youtube/TOPOST",
+))
+STAGED_JSON = TOPOST / "staged.json"
+
+
+def _staged_find(staged: dict, name: str, stem: str) -> dict | None:
+    """Find an entry in staged.json regardless of whether it uses the old
+    dict-keyed format {"slug.mp4": {...}} or the new array format {"videos": [...]}.
+    Returns the entry dict or None."""
+    # New format: {"videos": [{slug, files.master_4k, ...}, ...]}
+    if "videos" in staged and isinstance(staged["videos"], list):
+        for v in staged["videos"]:
+            master = v.get("files", {}).get("master_4k", "")
+            if (v.get("slug") == stem
+                    or v.get("slug") == name
+                    or master == name
+                    or Path(master).stem == stem):
+                return v
+    # Old format: {"slug.mp4": {...}, "slug": {...}}
+    return staged.get(name) or staged.get(stem)
+
+
+def _staged_set_uploaded(staged: dict, name: str, stem: str, video_id: str) -> None:
+    """Mutate the matching entry in staged (either format) to status='uploaded'."""
+    if "videos" in staged and isinstance(staged["videos"], list):
+        for v in staged["videos"]:
+            master = v.get("files", {}).get("master_4k", "")
+            if (v.get("slug") == stem or v.get("slug") == name
+                    or master == name or Path(master).stem == stem):
+                v["status"] = "uploaded"
+                v["video_id"] = video_id
+                v["uploaded_at"] = datetime.datetime.utcnow().isoformat() + "Z"
+                return
+    # Old format
+    key = name if name in staged else stem if stem in staged else None
+    if key:
+        staged[key]["status"] = "uploaded"
+        staged[key]["video_id"] = video_id
+        staged[key]["uploaded_at"] = datetime.datetime.utcnow().isoformat() + "Z"
+
+
+def topost_preflight(video_path: Path) -> dict:
+    """HARD preflight — three checks, no bypass flag.
+
+    Call this immediately before any YouTube Data API upload call.
+    Prints which check failed and the offending path, then sys.exit(1).
+    Returns the staged.json entry dict on success.
+    """
+    real = Path(os.path.realpath(video_path))
+    real_topost = Path(os.path.realpath(TOPOST))
+
+    # ── Check 1: realpath inside TOPOST (symlinks cannot dodge this) ──────────
+    try:
+        real.relative_to(real_topost)
+    except ValueError:
+        print("[TOPOST GATE] FAIL — check 1: video is not inside TOPOST/")
+        print(f"  offending path : {real}")
+        print(f"  required inside: {real_topost}")
+        print("  Run the 'post' skill to stage a hi-res master before publishing.")
+        sys.exit(1)
+
+    # ── Check 2: staged.json entry exists and status != 'uploaded' ────────────
+    if not STAGED_JSON.exists():
+        print("[TOPOST GATE] FAIL — check 2: staged.json not found")
+        print(f"  expected: {STAGED_JSON}")
+        print("  No video has been staged yet (run the 'post' skill first).")
+        sys.exit(1)
+
+    staged = json.loads(STAGED_JSON.read_text())
+    name = real.name
+    stem = real.stem
+    entry = _staged_find(staged, name, stem)
+    if not entry:
+        print("[TOPOST GATE] FAIL — check 2: no staged.json entry for this file")
+        print(f"  offending path: {real}")
+        print(f"  staged.json   : {STAGED_JSON}")
+        print("  Run the 'post' skill to register this file before publishing.")
+        sys.exit(1)
+
+    if entry.get("status") == "uploaded":
+        print("[TOPOST GATE] FAIL — check 2: already marked 'uploaded' in staged.json")
+        print(f"  offending path: {real}")
+        print(f"  uploaded_at   : {entry.get('uploaded_at', 'n/a')}")
+        print(f"  video_id      : {entry.get('video_id', 'n/a')}")
+        sys.exit(1)
+
+    # ── Check 3: ffprobe height >= 2160 (hi-res master only) ─────────────────
+    try:
+        probe = subprocess.run(
+            ["ffprobe", "-v", "quiet", "-print_format", "json",
+             "-show_streams", str(real)],
+            capture_output=True, text=True, check=True,
+        )
+        streams = json.loads(probe.stdout).get("streams", [])
+        height = next(
+            (s["height"] for s in streams if s.get("codec_type") == "video"), 0
+        )
+    except Exception as exc:
+        print("[TOPOST GATE] FAIL — check 3: ffprobe error")
+        print(f"  offending path: {real}")
+        print(f"  error         : {exc}")
+        sys.exit(1)
+
+    if height < 2160:
+        print("[TOPOST GATE] FAIL — check 3: video is not hi-res (need height >= 2160)")
+        print(f"  offending path: {real}")
+        print(f"  measured height: {height}px")
+        print("  Use the Topaz-upscaled 4K master from TOPOST, not a preview cut.")
+        sys.exit(1)
+
+    print(f"[TOPOST GATE] PASS — {name}  ({height}p · staged · not yet uploaded)")
+    return entry
+
+
+def update_staged_status(video_path: Path, video_id: str) -> None:
+    """Flip the staged.json entry to status='uploaded' after a successful upload.
+
+    Additive write: only touches the matching entry; all other entries are
+    preserved exactly as-is.
+    """
+    real = Path(os.path.realpath(video_path))
+    if not STAGED_JSON.exists():
+        print(f"[TOPOST] WARNING: staged.json not found — upload status not recorded")
+        return
+    staged = json.loads(STAGED_JSON.read_text())
+    name, stem = real.name, real.stem
+    if not _staged_find(staged, name, stem):
+        print(f"[TOPOST] WARNING: no staged.json entry for '{name}' — status not updated")
+        return
+    _staged_set_uploaded(staged, name, stem, video_id)
+    STAGED_JSON.write_text(json.dumps(staged, indent=2))
+    print(f"[TOPOST] staged.json: {name}  →  status=uploaded  video_id={video_id}")
 
 # captions.insert intermittently 403s on freshly-uploaded videos until YouTube
 # finishes processing them — this backoff covers ~14.5 min. Already-live videos
@@ -216,16 +356,38 @@ def insert_caption(youtube, video_id: str, srt: Path, language="en", name="Engli
 
 
 def upload_video(youtube, folder: Path, privacy: str, kind: str = "long", add_anchor: bool = True,
-                 ledger: dict | None = None):
+                 ledger: dict | None = None, staged_entry: dict | None = None,
+                 topost_mp4: Path | None = None):
     from googleapiclient.http import MediaFileUpload
     sheet = json.loads((folder / "beat_sheet.json").read_text())
     md = sheet["metadata"]
     slug = md["slug"]
-    mp4 = folder / "mp4" / f"{slug}.mp4"
+
+    # ── source file: TOPOST master when staged, reel mp4/ otherwise ──────────
+    mp4 = topost_mp4 if topost_mp4 is not None else folder / "mp4" / f"{slug}.mp4"
     if not mp4.exists():
-        raise SystemExit(f"[yt] no master mp4: {mp4} (run sandwich.py first)")
-    desc = (folder / "description.txt")
-    description = desc.read_text() if desc.exists() else md.get("title", "")
+        raise SystemExit(f"[yt] no master mp4: {mp4}"
+                         + (" — run the 'post' skill to stage a hi-res master" if topost_mp4 else
+                            " — run sandwich.py first"))
+
+    # ── metadata: staged.json entry + TOPOST/<slug>.md, or reel fallbacks ────
+    if staged_entry is not None:
+        title_str = staged_entry.get("title") or md.get("title", "")
+        tags_list = staged_entry.get("tags") or md.get("tags") or []
+        desc_md   = TOPOST / f"{slug}.md"
+        description = (desc_md.read_text() if desc_md.exists() else
+                       ((folder / "description.txt").read_text()
+                        if (folder / "description.txt").exists() else title_str))
+    else:
+        title_str   = md.get("title", "")
+        tags_list   = md.get("tags") or []
+        desc        = folder / "description.txt"
+        description = desc.read_text() if desc.exists() else title_str
+
+    if not tags_list:
+        tags_list = ["Quantum Mechanics", "Physics", "NotebookLM", "Medhavy",
+                     md.get("chapter_title", "")]
+
     if add_anchor:
         # a derived short funnels to its parent long (looked up in the ledger)
         parent_url, parent_title = "", ""
@@ -241,11 +403,10 @@ def upload_video(youtube, folder: Path, privacy: str, kind: str = "long", add_an
 
     body = {
         "snippet": {
-            "title": md["title"][:100],
+            "title": title_str[:100],
             "description": description,
             "categoryId": EDU_CATEGORY,
-            "tags": (md.get("tags") or ["Quantum Mechanics", "Physics", "NotebookLM", "Medhavy",
-                     md.get("chapter_title", "")])[:15],
+            "tags": tags_list[:15],
         },
         "status": {"privacyStatus": "public" if privacy == "public" else "unlisted",
                    "selfDeclaredMadeForKids": False},
@@ -343,8 +504,25 @@ def main() -> int:
             continue
         else:
             kind = folder_kind(folder, args.kind)
+            # ── TOPOST preflight — locate the staged master, then gate-check ───
+            if not STAGED_JSON.exists():
+                sys.exit(f"[yt] ABORT — staged.json not found at {STAGED_JSON}\n"
+                         f"    Run the 'post' skill to stage a hi-res master before publishing.")
+            staged_all = json.loads(STAGED_JSON.read_text())
+            # Resolve the mp4 filename from either format
+            _entry_pre = _staged_find(staged_all, f"{slug}.mp4", slug)
+            if _entry_pre is None:
+                sys.exit(f"[yt] ABORT — '{slug}' has no entry in staged.json\n"
+                         f"    staged.json: {STAGED_JSON}\n"
+                         f"    Run the 'post' skill to stage this video before publishing.")
+            # Derive the filename: new format has files.master_4k; old format keyed by filename
+            _master_4k = (_entry_pre.get("files") or {}).get("master_4k") or f"{slug}.mp4"
+            topost_mp4 = TOPOST / _master_4k
+            staged_entry = topost_preflight(topost_mp4)
             vid = upload_video(youtube, folder, args.privacy, kind=kind,
-                               add_anchor=not args.no_anchor, ledger=ledger)
+                               add_anchor=not args.no_anchor, ledger=ledger,
+                               staged_entry=staged_entry, topost_mp4=topost_mp4)
+            update_staged_status(topost_mp4, vid)
             ledger[slug] = vid
             ledger_path.write_text(json.dumps(ledger, indent=1))
             fresh = True

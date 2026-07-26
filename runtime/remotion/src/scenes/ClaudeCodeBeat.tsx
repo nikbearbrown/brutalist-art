@@ -86,7 +86,7 @@ export const ClaudeCodeBeat: React.FC<ClaudeCodeBeatProps> = ({ title, code, spa
           <span style={{
             marginLeft: 10,
             fontFamily: MONO,
-            fontSize: height * 0.055,
+            fontSize: height * 0.060,
             color: CLAUDE.INK_SOFT,
             letterSpacing: '0.02em',
           }}>
@@ -95,7 +95,7 @@ export const ClaudeCodeBeat: React.FC<ClaudeCodeBeatProps> = ({ title, code, spa
           <span style={{
             marginLeft: 'auto',
             fontFamily: SANS,
-            fontSize: height * 0.055,
+            fontSize: height * 0.060,
             fontWeight: 600,
             color: CLAUDE.INK_SOFT,
             letterSpacing: 2,
@@ -110,7 +110,7 @@ export const ClaudeCodeBeat: React.FC<ClaudeCodeBeatProps> = ({ title, code, spa
           margin: 0,
           padding: '20px 26px',
           fontFamily: MONO,
-          fontSize: height * 0.055,
+          fontSize: height * 0.060,
           lineHeight: 1.5,
           textAlign: 'left',
           overflow: 'hidden',
@@ -148,10 +148,10 @@ export const ClaudeCodeBeat: React.FC<ClaudeCodeBeatProps> = ({ title, code, spa
         opacity: clamp(sparkIn, 0, 1),
         transform: `translateY(${(1 - clamp(sparkIn, 0, 1)) * 8}px)`,
       }}>
-        <Spark size={height * 0.055} />
+        <Spark size={height * 0.060} />
         <span style={{
           fontFamily: SERIF,
-          fontSize: height * 0.055,
+          fontSize: height * 0.060,
           fontStyle: 'italic',
           color: CLAUDE.INK,
         }}>

@@ -1,0 +1,297 @@
+[04:55:44] === OVERNIGHT SLATE BUILD — What Is Brutalist? ===
+[04:55:44] Working folder: /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/using-brutalist
+[04:55:44] Runtime: /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/runtime
+[04:55:44] ▶  what-is-brutalist — starting
+[04:55:44]   what-is-brutalist: writing expanded beat_sheet.json
+[04:55:44]   what-is-brutalist: generating Kokoro audio
+[04:56:12]   what-is-brutalist: audio done
+[04:56:12]   what-is-brutalist: rendering Remotion scenes
+[04:59:17]   what-is-brutalist: Remotion scenes done
+[04:59:17]   what-is-brutalist: compiling slate cut (16:9, 1080p)
+[04:59:29]   what-is-brutalist: 16:9 slate done — 116.4s
+[04:59:29]   what-is-brutalist: Gate V — final_frame_check
+[04:59:32]   what-is-brutalist: Gate V FAIL — see _qc/REPORT.md
+[04:59:32]   what-is-brutalist: Gate T — type_check
+[04:59:55]   what-is-brutalist: Gate T PASS
+[04:59:56]   what-is-brutalist: sampled 16:9 frame → frame_169.png
+[04:59:56]   what-is-brutalist: generating 9:16 short
+[04:59:56]   what-is-brutalist: compiling 9:16 short
+[05:00:10]   what-is-brutalist: 9:16 slate done — 120.9s
+[05:00:10]   what-is-brutalist: git add
+[05:00:11]   what-is-brutalist: committed
+[05:00:14]   what-is-brutalist: pushed
+[05:00:14] ✓  what-is-brutalist: built
+[05:00:14] ▶  get-the-repo — starting
+[05:00:14]   get-the-repo: writing expanded beat_sheet.json
+[05:00:14]   get-the-repo: generating Kokoro audio
+[05:00:40]   get-the-repo: audio done
+[05:00:40]   get-the-repo: rendering Remotion scenes
+[05:02:08] === OVERNIGHT SLATE BUILD — What Is Brutalist? ===
+[05:02:08] Working folder: /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/using-brutalist
+[05:02:08] Runtime: /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/runtime
+[05:02:08] ▶  what-is-brutalist — starting
+[05:02:08]   what-is-brutalist: writing expanded beat_sheet.json
+[05:02:08]   what-is-brutalist: generating Kokoro audio
+[05:02:39]   what-is-brutalist: audio done
+[05:02:39]   what-is-brutalist: rendering Remotion scenes
+[05:08:11]   what-is-brutalist: Remotion scenes done
+[05:08:11]   what-is-brutalist: compiling slate cut (16:9, 1080p)
+[05:08:28]   what-is-brutalist: 16:9 slate done — 116.4s
+[05:08:28]   what-is-brutalist: Gate V — final_frame_check
+[05:08:30]   what-is-brutalist: Gate V FAIL — see _qc/REPORT.md
+[05:08:30]   what-is-brutalist: Gate T — type_check
+[05:09:04]   what-is-brutalist: Gate T PASS
+[05:09:04]   what-is-brutalist: sampled 16:9 frame → frame_169.png
+[05:09:04]   what-is-brutalist: generating 9:16 short
+[05:09:04]   what-is-brutalist: compiling 9:16 short
+[05:09:16]   what-is-brutalist: 9:16 slate done — 120.9s
+[05:09:16]   what-is-brutalist: git add
+[05:09:17]   what-is-brutalist: committed
+[05:09:18]   what-is-brutalist: pushed
+[05:09:18] ✓  what-is-brutalist: built
+[05:09:18] ▶  get-the-repo — starting
+[05:09:18]   get-the-repo: writing expanded beat_sheet.json
+[05:09:18]   get-the-repo: generating Kokoro audio
+[05:09:47]   get-the-repo: audio done
+[05:09:47]   get-the-repo: rendering Remotion scenes
+[05:12:39]   get-the-repo: Remotion scenes done
+[05:12:39]   get-the-repo: compiling slate cut (16:9, 1080p)
+[05:12:50]   get-the-repo: 16:9 slate done — 108.7s
+[05:12:50]   get-the-repo: Gate V — final_frame_check
+[05:12:53]   get-the-repo: Gate V FAIL — see _qc/REPORT.md
+[05:12:53]   get-the-repo: Gate T — type_check
+[05:13:26]   get-the-repo: Gate T PASS
+[05:13:26]   get-the-repo: sampled 16:9 frame → frame_169.png
+[05:13:26]   get-the-repo: generating 9:16 short
+[05:13:27]   get-the-repo: compiling 9:16 short
+[05:13:39]   get-the-repo: 9:16 slate done — 113.2s
+[05:13:39]   get-the-repo: git add
+[05:13:40]   get-the-repo: committed
+[05:13:42]   get-the-repo: pushed
+[05:13:42] ✓  get-the-repo: built
+[05:13:42] ▶  run-claude-code — starting
+[05:13:42]   run-claude-code: writing expanded beat_sheet.json
+[05:13:42]   run-claude-code: generating Kokoro audio
+[05:14:08]   run-claude-code: audio done
+[05:14:08]   run-claude-code: rendering Remotion scenes
+[05:19:06]   run-claude-code: Remotion scenes done
+[05:19:06]   run-claude-code: compiling slate cut (16:9, 1080p)
+[05:19:21]   run-claude-code: 16:9 slate done — 112.6s
+[05:19:21]   run-claude-code: Gate V — final_frame_check
+[05:19:23]   run-claude-code: Gate V FAIL — see _qc/REPORT.md
+[05:19:23]   run-claude-code: Gate T — type_check
+[05:20:02]   run-claude-code: Gate T PASS
+[05:20:02]   run-claude-code: sampled 16:9 frame → frame_169.png
+[05:20:02]   run-claude-code: generating 9:16 short
+[05:20:02]   run-claude-code: compiling 9:16 short
+[05:20:16]   run-claude-code: 9:16 slate done — 117.1s
+[05:20:16]   run-claude-code: git add
+[05:20:17]   run-claude-code: committed
+[05:20:19]   run-claude-code: pushed
+[05:20:19] ✓  run-claude-code: built
+[05:20:19] ▶  your-folder — starting
+[05:20:19]   your-folder: writing expanded beat_sheet.json
+[05:20:19]   your-folder: generating Kokoro audio
+[05:20:52]   your-folder: audio done
+[05:20:52]   your-folder: rendering Remotion scenes
+[05:26:06]   your-folder: Remotion scenes done
+[05:26:06]   your-folder: compiling slate cut (16:9, 1080p)
+[05:26:20]   your-folder: 16:9 slate done — 115.5s
+[05:26:20]   your-folder: Gate V — final_frame_check
+[05:26:22]   your-folder: Gate V FAIL — see _qc/REPORT.md
+[05:26:22]   your-folder: Gate T — type_check
+[05:27:02]   your-folder: Gate T PASS
+[05:27:02]   your-folder: sampled 16:9 frame → frame_169.png
+[05:27:02]   your-folder: generating 9:16 short
+[05:27:02]   your-folder: compiling 9:16 short
+[05:27:13]   your-folder: 9:16 slate done — 120.0s
+[05:27:13]   your-folder: git add
+[05:27:13]   your-folder: committed
+[05:27:15]   your-folder: pushed
+[05:27:15] ✓  your-folder: built
+[05:27:15] ▶  the-prompt — starting
+[05:27:15]   the-prompt: writing expanded beat_sheet.json
+[05:27:15]   the-prompt: generating Kokoro audio
+[05:27:39]   the-prompt: audio done
+[05:27:39]   the-prompt: rendering Remotion scenes
+[05:32:32]   the-prompt: Remotion scenes done
+[05:32:32]   the-prompt: compiling slate cut (16:9, 1080p)
+[05:32:49]   the-prompt: 16:9 slate done — 119.5s
+[05:32:49]   the-prompt: Gate V — final_frame_check
+[05:32:53]   the-prompt: Gate V FAIL — see _qc/REPORT.md
+[05:32:53]   the-prompt: Gate T — type_check
+[05:33:36]   the-prompt: Gate T PASS
+[05:33:36]   the-prompt: sampled 16:9 frame → frame_169.png
+[05:33:36]   the-prompt: generating 9:16 short
+[05:33:36]   the-prompt: compiling 9:16 short
+[05:33:57]   the-prompt: 9:16 slate done — 124.0s
+[05:33:57]   the-prompt: git add
+[05:33:57]   the-prompt: committed
+[05:33:59]   the-prompt: pushed
+[05:33:59] ✓  the-prompt: built
+[05:33:59] ▶  the-beat-sheet — starting
+[05:33:59]   the-beat-sheet: writing expanded beat_sheet.json
+[05:33:59]   the-beat-sheet: generating Kokoro audio
+[05:34:33]   the-beat-sheet: audio done
+[05:34:33]   the-beat-sheet: rendering Remotion scenes
+[05:39:39]   the-beat-sheet: Remotion scenes done
+[05:39:39]   the-beat-sheet: compiling slate cut (16:9, 1080p)
+[05:40:02]   the-beat-sheet: 16:9 slate done — 122.0s
+[05:40:02]   the-beat-sheet: Gate V — final_frame_check
+[05:40:06]   the-beat-sheet: Gate V FAIL — see _qc/REPORT.md
+[05:40:06]   the-beat-sheet: Gate T — type_check
+[05:40:45]   the-beat-sheet: Gate T PASS
+[05:40:45]   the-beat-sheet: sampled 16:9 frame → frame_169.png
+[05:40:45]   the-beat-sheet: generating 9:16 short
+[05:40:45]   the-beat-sheet: compiling 9:16 short
+[05:41:00]   the-beat-sheet: 9:16 slate done — 126.5s
+[05:41:00]   the-beat-sheet: git add
+[05:41:01]   the-beat-sheet: committed
+[05:41:02]   the-beat-sheet: pushed
+[05:41:02] ✓  the-beat-sheet: built
+[05:41:02] ▶  make-it-move — starting
+[05:41:02]   make-it-move: writing expanded beat_sheet.json
+[05:41:02]   make-it-move: generating Kokoro audio
+[05:41:29]   make-it-move: audio done
+[05:41:29]   make-it-move: rendering Remotion scenes
+[05:46:18]   make-it-move: Remotion scenes done
+[05:46:18]   make-it-move: compiling slate cut (16:9, 1080p)
+[05:46:32]   make-it-move: 16:9 slate done — 121.5s
+[05:46:32]   make-it-move: Gate V — final_frame_check
+[05:46:34]   make-it-move: Gate V FAIL — see _qc/REPORT.md
+[05:46:34]   make-it-move: Gate T — type_check
+[05:47:12]   make-it-move: Gate T issues — see TYPECHECK.md
+[05:47:12]   make-it-move: sampled 16:9 frame → frame_169.png
+[05:47:12]   make-it-move: generating 9:16 short
+[05:47:12]   make-it-move: compiling 9:16 short
+[05:47:28]   make-it-move: 9:16 slate done — 126.0s
+[05:47:28]   make-it-move: git add
+[05:47:28]   make-it-move: committed
+[05:47:30]   make-it-move: pushed
+[05:47:30] ✓  make-it-move: built
+[05:47:30] ▶  voices — starting
+[05:47:30]   voices: writing expanded beat_sheet.json
+[05:47:30]   voices: generating Kokoro audio
+[05:48:07]   voices: audio done
+[05:48:07]   voices: rendering Remotion scenes
+[05:53:08]   voices: Remotion scenes done
+[05:53:08]   voices: compiling slate cut (16:9, 1080p)
+[05:53:21]   voices: 16:9 slate done — 122.6s
+[05:53:21]   voices: Gate V — final_frame_check
+[05:53:23]   voices: Gate V FAIL — see _qc/REPORT.md
+[05:53:23]   voices: Gate T — type_check
+[05:54:00]   voices: Gate T PASS
+[05:54:00]   voices: sampled 16:9 frame → frame_169.png
+[05:54:00]   voices: generating 9:16 short
+[05:54:01]   voices: compiling 9:16 short
+[05:54:13]   voices: 9:16 slate done — 127.1s
+[05:54:13]   voices: git add
+[05:54:13]   voices: committed
+[05:54:14]   voices: pushed
+[05:54:14] ✓  voices: built
+[05:54:14] ▶  watch-and-revise — starting
+[05:54:14]   watch-and-revise: writing expanded beat_sheet.json
+[05:54:14]   watch-and-revise: generating Kokoro audio
+[05:54:39]   watch-and-revise: audio done
+[05:54:39]   watch-and-revise: rendering Remotion scenes
+[05:59:32]   watch-and-revise: Remotion scenes done
+[05:59:32]   watch-and-revise: compiling slate cut (16:9, 1080p)
+[05:59:44]   watch-and-revise: 16:9 slate done — 114.3s
+[05:59:44]   watch-and-revise: Gate V — final_frame_check
+[05:59:48]   watch-and-revise: Gate V FAIL — see _qc/REPORT.md
+[05:59:48]   watch-and-revise: Gate T — type_check
+[06:00:25]   watch-and-revise: Gate T PASS
+[06:00:25]   watch-and-revise: sampled 16:9 frame → frame_169.png
+[06:00:25]   watch-and-revise: generating 9:16 short
+[06:00:25]   watch-and-revise: compiling 9:16 short
+[06:00:36]   watch-and-revise: 9:16 slate done — 118.8s
+[06:00:36]   watch-and-revise: git add
+[06:00:37]   watch-and-revise: committed
+[06:00:39]   watch-and-revise: pushed
+[06:00:39] ✓  watch-and-revise: built
+[06:00:39] ▶  both-formats — starting
+[06:00:39]   both-formats: writing expanded beat_sheet.json
+[06:00:39]   both-formats: generating Kokoro audio
+[06:01:05]   both-formats: audio done
+[06:01:05]   both-formats: rendering Remotion scenes
+[06:06:23]   both-formats: Remotion scenes done
+[06:06:23]   both-formats: compiling slate cut (16:9, 1080p)
+[06:06:42]   both-formats: 16:9 slate done — 128.7s
+[06:06:42]   both-formats: Gate V — final_frame_check
+[06:06:45]   both-formats: Gate V FAIL — see _qc/REPORT.md
+[06:06:45]   both-formats: Gate T — type_check
+[06:07:34]   both-formats: Gate T PASS
+[06:07:34]   both-formats: sampled 16:9 frame → frame_169.png
+[06:07:34]   both-formats: generating 9:16 short
+[06:07:34]   both-formats: compiling 9:16 short
+[06:08:08]   both-formats: 9:16 slate done — 133.2s
+[06:08:08]   both-formats: git add
+[06:08:09]   both-formats: committed
+[06:08:11]   both-formats: pushed
+[06:08:11] ✓  both-formats: built
+[06:08:11] ▶  qc-gates — starting
+[06:08:11]   qc-gates: writing expanded beat_sheet.json
+[06:08:11]   qc-gates: generating Kokoro audio
+[06:09:17]   qc-gates: audio done
+[06:09:17]   qc-gates: rendering Remotion scenes
+[06:15:19]   qc-gates: Remotion scenes done
+[06:15:19]   qc-gates: compiling slate cut (16:9, 1080p)
+[06:15:45]   qc-gates: 16:9 slate done — 134.3s
+[06:15:45]   qc-gates: Gate V — final_frame_check
+[06:15:48]   qc-gates: Gate V FAIL — see _qc/REPORT.md
+[06:15:48]   qc-gates: Gate T — type_check
+[06:16:28]   qc-gates: Gate T PASS
+[06:16:28]   qc-gates: sampled 16:9 frame → frame_169.png
+[06:16:28]   qc-gates: generating 9:16 short
+[06:16:28]   qc-gates: compiling 9:16 short
+[06:16:58]   qc-gates: 9:16 slate done — 138.8s
+[06:16:58]   qc-gates: git add
+[06:16:59]   qc-gates: committed
+[06:17:01]   qc-gates: pushed
+[06:17:01] ✓  qc-gates: built
+[06:17:01] ▶  publish-it-yourself — starting
+[06:17:01]   publish-it-yourself: writing expanded beat_sheet.json
+[06:17:01]   publish-it-yourself: generating Kokoro audio
+[06:17:37]   publish-it-yourself: audio done
+[06:17:37]   publish-it-yourself: rendering Remotion scenes
+[06:22:34]   publish-it-yourself: Remotion scenes done
+[06:22:34]   publish-it-yourself: compiling slate cut (16:9, 1080p)
+[06:22:52]   publish-it-yourself: 16:9 slate done — 107.2s
+[06:22:52]   publish-it-yourself: Gate V — final_frame_check
+[06:22:55]   publish-it-yourself: Gate V FAIL — see _qc/REPORT.md
+[06:22:55]   publish-it-yourself: Gate T — type_check
+[06:23:32]   publish-it-yourself: Gate T PASS
+[06:23:32]   publish-it-yourself: sampled 16:9 frame → frame_169.png
+[06:23:32]   publish-it-yourself: generating 9:16 short
+[06:23:33]   publish-it-yourself: compiling 9:16 short
+[06:23:45]   publish-it-yourself: 9:16 slate done — 111.7s
+[06:23:45]   publish-it-yourself: git add
+[06:23:46]   publish-it-yourself: committed
+[06:23:47]   publish-it-yourself: pushed
+[06:23:47] ✓  publish-it-yourself: built
+[06:23:47] ▶  make-it-yours — starting
+[06:23:47]   make-it-yours: writing expanded beat_sheet.json
+[06:23:47]   make-it-yours: generating Kokoro audio
+[06:24:12]   make-it-yours: audio done
+[06:24:12]   make-it-yours: rendering Remotion scenes
+[06:29:06]   make-it-yours: Remotion scenes done
+[06:29:06]   make-it-yours: compiling slate cut (16:9, 1080p)
+[06:29:21]   make-it-yours: 16:9 slate done — 115.4s
+[06:29:21]   make-it-yours: Gate V — final_frame_check
+[06:29:24]   make-it-yours: Gate V FAIL — see _qc/REPORT.md
+[06:29:24]   make-it-yours: Gate T — type_check
+[06:30:05]   make-it-yours: Gate T PASS
+[06:30:05]   make-it-yours: sampled 16:9 frame → frame_169.png
+[06:30:05]   make-it-yours: generating 9:16 short
+[06:30:06]   make-it-yours: compiling 9:16 short
+[06:30:17]   make-it-yours: 9:16 slate done — 119.9s
+[06:30:17]   make-it-yours: git add
+[06:30:18]   make-it-yours: committed
+[06:30:19]   make-it-yours: pushed
+[06:30:19] ✓  make-it-yours: built
+[06:30:20] Final git push succeeded
+
+============================================================
+DONE: 13/13 built, 0 failed
+Master log: /Users/bear/Documents/CoWork/bear-textbooks/books/brutalist-art/youtube/using-brutalist/OVERNIGHT-SLATE-BUILD.md
+============================================================

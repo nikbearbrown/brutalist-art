@@ -555,6 +555,9 @@ def _make_manim_module():
     m.PI = math.pi; m.TAU = 2 * math.pi; m.DEGREES = math.pi / 180
     m.SMALL_BUFF = 0.1; m.MED_SMALL_BUFF = 0.25; m.MED_LARGE_BUFF = 0.5; m.LARGE_BUFF = 1.0
     m.DEFAULT_STROKE_WIDTH = 4.0
+    # font weight / style constants
+    m.BOLD = "BOLD"; m.ITALIC = "ITALIC"; m.NORMAL = "NORMAL"
+    m.SEMIBOLD = "SEMIBOLD"; m.LIGHT = "LIGHT"; m.THIN = "THIN"
 
     # colors — any reasonable name resolves to a hex-ish string
     palette = {

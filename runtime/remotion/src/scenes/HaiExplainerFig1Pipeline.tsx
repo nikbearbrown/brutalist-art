@@ -60,7 +60,7 @@ export const HaiExplainerFig1Pipeline: React.FC<HaiExplainerFig1PipelineProps> =
       {/* Title eyebrow */}
       <div style={{
         position: 'absolute', left: PAD_X, top: height * 0.09,
-        fontFamily: SANS, fontSize: height * 0.014, fontWeight: 700,
+        fontFamily: SANS, fontSize: height * 0.033, fontWeight: 700,
         letterSpacing: 3, textTransform: 'uppercase' as const,
         color: CLAUDE.INK_SOFT, opacity: clamp(titleIn, 0, 1),
       }}>
@@ -114,7 +114,7 @@ export const HaiExplainerFig1Pipeline: React.FC<HaiExplainerFig1PipelineProps> =
               top: CENTER_Y - NODE_H / 2,
               width: NODE_W,
               height: NODE_H,
-              background: isFocal ? CLAUDE.SPARK : isActive ? '#FFF8F5' : CLAUDE.CARD,
+              background: isFocal ? '#FFF0EB' : isActive ? '#FFF8F5' : CLAUDE.CARD,
               border: `2px solid ${isFocal ? CLAUDE.SPARK : isActive ? '#F5C4B0' : CLAUDE.BORDER}`,
               borderRadius: 16,
               boxShadow: isFocal
@@ -129,7 +129,7 @@ export const HaiExplainerFig1Pipeline: React.FC<HaiExplainerFig1PipelineProps> =
               <div style={{
                 fontFamily: SANS, fontSize: 13, fontWeight: 700,
                 letterSpacing: 1.5, textTransform: 'uppercase' as const,
-                color: isFocal ? '#FFFFFF' : isActive ? CLAUDE.SPARK : CLAUDE.INK,
+                color: CLAUDE.INK,
                 textAlign: 'center',
                 whiteSpace: 'pre-line',
                 lineHeight: 1.3,
@@ -138,7 +138,7 @@ export const HaiExplainerFig1Pipeline: React.FC<HaiExplainerFig1PipelineProps> =
               </div>
               <div style={{
                 fontFamily: SANS, fontSize: 11,
-                color: isFocal ? 'rgba(255,255,255,0.8)' : CLAUDE.INK_SOFT,
+                color: CLAUDE.INK_SOFT,
                 textAlign: 'center',
               }}>
                 {node.sub}
@@ -151,7 +151,7 @@ export const HaiExplainerFig1Pipeline: React.FC<HaiExplainerFig1PipelineProps> =
               left: x - 12,
               top: CENTER_Y + NODE_H / 2 + 14,
               fontFamily: SANS, fontSize: 14, fontWeight: 700,
-              color: isActive ? CLAUDE.SPARK : CLAUDE.GHOST,
+              color: isActive ? CLAUDE.INK : CLAUDE.GHOST,
               opacity: clamp(nodeIn, 0, 1),
             }}>
               {i === NODES.length - 1 ? '—' : `${i + 1}`}
@@ -166,8 +166,8 @@ export const HaiExplainerFig1Pipeline: React.FC<HaiExplainerFig1PipelineProps> =
         display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10,
         opacity: clamp(sparkIn, 0, 1),
       }}>
-        <Spark size={height * 0.022} />
-        <span style={{ fontFamily: SERIF, fontSize: height * 0.022, fontStyle: 'italic', color: CLAUDE.INK }}>
+        <Spark size={height * 0.040} />
+        <span style={{ fontFamily: SERIF, fontSize: height * 0.040, fontStyle: 'italic', color: CLAUDE.INK }}>
           {sparkLine}
         </span>
       </div>

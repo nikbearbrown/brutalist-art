@@ -98,6 +98,28 @@ def resolve_slot_path(folder, bid):
             return p
     return None
 
+def _probe_wh_any(path):
+    """Probe width×height for video or image source files."""
+    if path.suffix.lower() in (".mp4", ".mov", ".webm", ".avi", ".mkv"):
+        return probe_wh(path)
+    # Image: try PIL first, fall back to ffprobe
+    try:
+        from PIL import Image
+        img = Image.open(path)
+        return img.size[0], img.size[1]
+    except Exception:
+        pass
+    r = subprocess.run(
+        [FFPROBE, "-v", "error", "-select_streams", "v:0",
+         "-show_entries", "stream=width,height", "-of", "csv=p=0", str(path)],
+        capture_output=True, text=True,
+    )
+    try:
+        vals = r.stdout.strip().splitlines()[0].split(",")
+        return int(vals[0]), int(vals[1])
+    except (ValueError, IndexError):
+        return None, None
+
 
 # ── Step 1: preconditions ────────────────────────────────────────────────────
 
@@ -154,36 +176,49 @@ def step_check(reel_dir, bs):
 # ── Step 2: 4K audit + re-render ─────────────────────────────────────────────
 
 def step_4k_audit(reel_dir, bs):
-    print("[post] ── STEP 2: 4K audit ──")
-    clips_dir    = reel_dir / "clips"
-    manifest_p   = clips_dir / "manifest.json"
-    manifest     = json.loads(manifest_p.read_text()) if manifest_p.exists() else {}
-    beat_by_id   = {b["beat_id"]: b for b in bs.get("beats", [])}
-    sub4k        = []
+    """Probe SOURCE resolution for each beat (not the compiled clips).
 
-    for mp4 in sorted(clips_dir.glob("*.mp4")):
-        bid = mp4.stem
-        if bid.startswith("_"):
+    compile.py always upscales to the target height, so clips/*.mp4 are always
+    2160p regardless of source quality. We must check the source slots directly.
+    Returns (recompile_needed: bool, native_res: dict[bid -> (w,h) | None]).
+    """
+    print("[post] ── STEP 2: 4K audit (source resolution) ──")
+    clips_dir  = reel_dir / "clips"
+    manifest_p = clips_dir / "manifest.json"
+    manifest   = json.loads(manifest_p.read_text()) if manifest_p.exists() else {}
+    beats      = bs.get("beats", [])
+    beat_by_id = {b["beat_id"]: b for b in beats}
+    sub4k      = []        # (bid, clip_path, src_w, src_h)
+    native_res = {}        # bid → (w, h) | None
+
+    for b in beats:
+        bid = b["beat_id"]
+        src = resolve_slot_path(reel_dir, bid)
+        if src is None:
+            print(f"[post]   {bid}: no source slot — skip")
+            native_res[bid] = None
             continue
-        w, h = probe_wh(mp4)
+        w, h = _probe_wh_any(src)
         if w is None:
-            print(f"[post]   {bid}: cannot probe — skip")
+            print(f"[post]   {bid}: cannot probe {src.name} — skip")
+            native_res[bid] = None
             continue
+        native_res[bid] = (w, h)
         ok = h >= 2160
-        print(f"[post]   {bid}: {w}×{h}  {'✓' if ok else '✗ SUB-4K'}")
+        print(f"[post]   {bid}: {src.name}  {w}×{h}  {'✓' if ok else '✗ SUB-4K'}")
         if not ok:
-            sub4k.append((bid, mp4, w, h))
+            sub4k.append((bid, clips_dir / f"{bid}.mp4", w, h))
 
     if not sub4k:
-        print("[post]   all clips are 4K ✓\n")
-        return False
+        print("[post]   all source slots are native 4K ✓\n")
+        return False, native_res
 
-    print(f"\n[post]   {len(sub4k)} sub-4K clip(s): {[b for b,*_ in sub4k]}")
+    print(f"\n[post]   {len(sub4k)} sub-4K source(s): {[b for b,*_ in sub4k]}")
 
     for bid, clip_path, cw, ch in sub4k:
         beat  = beat_by_id.get(bid, {})
         lane  = beat.get("lane", "?")
-        print(f"\n[post]   fixing {bid} ({lane}) — current source {cw}×{ch}")
+        print(f"\n[post]   fixing {bid} ({lane}) — source {cw}×{ch}")
 
         placed_4k = False
 
@@ -203,21 +238,16 @@ def step_4k_audit(reel_dir, bs):
                         shutil.copy2(str(out), str(dest))
                         print(f"[post]   placed 4K Manim render → media/{bid}.mp4")
                         placed_4k = True
+                        native_res[bid] = (mw, mh)
                     else:
                         print(f"[post]   Manim output sub-4K ({mh}p) — falling back to existing source")
                 else:
                     print("[post]   Manim render failed — falling back to existing source")
 
         if not placed_4k:
-            src = resolve_slot_path(reel_dir, bid)
-            if src:
-                sw, sh_ = probe_wh(src)
-                marker = "✓" if (sh_ and sh_ >= 2160) else "⚠ also sub-4K"
-                print(f"[post]   source slot: {src.relative_to(reel_dir)}  {sw}×{sh_}  {marker}")
-            else:
-                print(f"[post]   WARNING: no source for {bid} — will become a slate")
+            print(f"[post]   {bid}: source is sub-4K ({cw}×{ch}) — will be upscaled by compile.py")
 
-        # Invalidate the stale cached clip so compile.py rebuilds from source
+        # Invalidate the cached clip so compile.py rebuilds from the (possibly updated) source
         if clip_path.exists():
             clip_path.unlink()
             print(f"[post]   deleted stale clips/{bid}.mp4")
@@ -227,7 +257,7 @@ def step_4k_audit(reel_dir, bs):
             print(f"[post]   cleared manifest[{bid}]")
 
     print()
-    return True  # signals that a recompile will happen
+    return True, native_res  # signals that a recompile will happen
 
 
 def _manim_render_4k(reel_dir, scenes_py, scene_name):
@@ -541,7 +571,8 @@ def step_topaz(topost_dir, slug, model, topaz_height):
 
 # ── Step 8: upsert staged.json ───────────────────────────────────────────────
 
-def step_log(topost_dir, slug, bs, master_path, topaz_result, all_beats_4k, markers_clean):
+def step_log(topost_dir, slug, bs, master_path, topaz_result, all_beats_4k, markers_clean,
+             reel_dir=None, native_res=None):
     print("[post] ── STEP 8: upsert staged.json ──")
     meta   = bs.get("metadata", {})
     beats  = bs.get("beats", [])
@@ -565,8 +596,17 @@ def step_log(topost_dir, slug, bs, master_path, topaz_result, all_beats_4k, mark
     books_root = topost_dir.parents[1]  # TOPOST/../.. = books/
     try:
         source_rel = str(reel_dir.relative_to(books_root)) + "/"
-    except ValueError:
-        source_rel = meta.get("source") or f"books/computational-skepticism-for-ai/youtube/{slug}/"
+    except (ValueError, AttributeError):
+        source_rel = meta.get("source") or f"books/humanitarians-youtube/brutalist/{slug}/"
+
+    # Per-beat native source resolution for honest QC reporting
+    beats_native_res = None
+    if native_res:
+        beats_native_res = {
+            bid: ({"w": wh[0], "h": wh[1], "native_4k": wh[1] >= 2160}
+                  if wh else {"w": None, "h": None, "native_4k": None})
+            for bid, wh in native_res.items()
+        }
 
     entry = {
         "slug":        slug,
@@ -582,6 +622,7 @@ def step_log(topost_dir, slug, bs, master_path, topaz_result, all_beats_4k, mark
         "duration_s":   round(dur, 1) if dur else None,
         "beat_count":   len(beats),
         "all_beats_4k": all_beats_4k,
+        **({"beats_native_res": beats_native_res} if beats_native_res else {}),
         "markers_clean": markers_clean,
         "gate_t":       "pass",
         "topaz":        topaz_result,
@@ -648,8 +689,12 @@ def main():
     # 1. preconditions
     step_check(reel_dir, bs)
 
-    # 2. 4K audit (fixes stale clips, returns True if recompile needed)
-    recompile_flagged = step_4k_audit(reel_dir, bs)
+    # 2. 4K audit — probes SOURCE resolution, fixes stale clips, returns native_res
+    recompile_flagged, native_res = step_4k_audit(reel_dir, bs)
+
+    # Derive all_beats_4k from actual source resolutions (not compile output)
+    probed = [wh[1] for wh in native_res.values() if wh is not None]
+    all_beats_4k = bool(probed) and all(h >= 2160 for h in probed)
 
     # 3. compile clean 4K master (always — guarantees clean final even if no sub-4K found)
     step_final(art_home, reel_dir)
@@ -667,11 +712,13 @@ def main():
     # 7. Topaz upscale (or log skip)
     topaz_result = step_topaz(topost_dir, slug, args.topaz_model, args.topaz_height)
 
-    # 8. upsert staged.json
+    # 8. upsert staged.json (all_beats_4k and beats_native_res reflect sources, not clips)
     step_log(
         topost_dir, slug, bs, master_path, topaz_result,
-        all_beats_4k=True,   # post.py guarantees this via step 2+3
+        all_beats_4k=all_beats_4k,
         markers_clean=True,  # post.py guarantees this via step 4
+        reel_dir=reel_dir,
+        native_res=native_res,
     )
 
     # Final banner
