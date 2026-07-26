@@ -1,0 +1,2210 @@
+{
+  "collection": "illustrae-icons-batch-007",
+  "style": "medium-rough monochrome vector",
+  "generated_at": "2026-07-25T19:56:44.861Z",
+  "generator": "archetype-based Rough.js converter",
+  "icons": [
+    {
+      "derivative": {
+        "geometry_description": "apoptosis archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "two-panel-educational-diagram-for-undergraduate-cancer-biology-showing-i-616818",
+        "reference_filename": "references/two-panel-educational-diagram-for-undergraduate-cancer-biology-showing-i-616818-reference.png",
+        "review_status": "approved",
+        "source_element_id": 616818,
+        "source_sha256": "78c3a98b87e0d8d600cc29f10a94be6932bb9648b0d133b83b6b1ab87bbaf9e9",
+        "svg_filename": "two-panel-educational-diagram-for-undergraduate-cancer-biology-showing-i-616818-rough.svg",
+        "transparent_png_filename": "two-panel-educational-diagram-for-undergraduate-cancer-biology-showing-i-616818-rough-transparent.png",
+        "conversion_archetype": "apoptosis",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 908785,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-06-04T01:53:29.589Z",
+        "downloadedAt": "2026-07-25T15:37:44.843Z",
+        "filename": "0304-two-panel-educational-diagram-for-undergraduate-cancer-biology-showing-iap-inhib.png",
+        "id": 616818,
+        "index": 304,
+        "name": "Two-panel educational diagram for undergraduate cancer biology showing IAP inhibition mechanisms. Left panel: a Reddish Purple (#CC79A7) oval representing XIAP binding to a light gray rounded rectangle representing procaspase, with a Vermillion (#D55E00) flat-head inhibitory arrow blocking a dashed activation arrow. Right panel: the same Reddish Purple XIAP oval binding to a Bluish Green (#009E73) active caspase shape, with a Vermillion flat-head arrow blocking the caspase activity arrow. An Orange (#E69F00) indicator at the top spanning both panels shows cancer overexpression state. Flat vector, white background, Okabe-Ito palette, unannotated, no text labels.\nNegative prompt: SMAC protein shape, BIR domain ribbon structure, full caspase cascade, Bcl-2 oval, mitochondrion, p53, death receptor, apoptosome, drug molecule, text labels, words, gibberish letters, titles, captions, decorative borders, realistic 3D textures, plastic wrap effects, drop shadows, gradient backgrounds, photographic elements, non-standard arrows, dual-headed arrows, skeletal chemical structures, hand-drawn styles, sketch lines, human figures, colorful cell backgrounds, non-cellular debris, visual clutter, overlapping unaligned paths, fuzzy borders, watermarks, red-green color combinations, rainbow color scales, 3D perspective distortion",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/616818"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 908785,
+        "sha256": "78c3a98b87e0d8d600cc29f10a94be6932bb9648b0d133b83b6b1ab87bbaf9e9",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0304-two-panel-educational-diagram-for-undergraduate-cancer-biology-showing-iap-inhib.json",
+        "source_image_rel": "images/0304-two-panel-educational-diagram-for-undergraduate-cancer-biology-showing-iap-inhib.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "pathway archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "single-cell-educational-diagram-of-the-de-novo-lipid-synthesis-dnls-citr-487528",
+        "reference_filename": "references/single-cell-educational-diagram-of-the-de-novo-lipid-synthesis-dnls-citr-487528-reference.png",
+        "review_status": "approved",
+        "source_element_id": 487528,
+        "source_sha256": "e77550a5c6d28953fb002ff15b513e162b039889e5f27ba7ffa967e065c53008",
+        "svg_filename": "single-cell-educational-diagram-of-the-de-novo-lipid-synthesis-dnls-citr-487528-rough.svg",
+        "transparent_png_filename": "single-cell-educational-diagram-of-the-de-novo-lipid-synthesis-dnls-citr-487528-rough-transparent.png",
+        "conversion_archetype": "pathway",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 847344,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-04-13T20:19:14.061Z",
+        "downloadedAt": "2026-07-25T15:37:45.840Z",
+        "filename": "0305-single-cell-educational-diagram-of-the-de-novo-lipid-synthesis-dnls-citrate-shut.png",
+        "id": 487528,
+        "index": 305,
+        "name": "Single-cell educational diagram of the de novo lipid synthesis (DNLS) citrate shuttle in a cancer cell. Use standard cell biology style with realistic organelle rendering.\nShow a cancer cell with a mitochondrion on the left and cytosol on the right. Inside the mitochondrion: Glucose enters \u2192 Acetyl-CoA \u2192 combines with Oxaloacetate \u2192 forms Citrate. Label this step \"Citrate formed in mitochondria.\"\nKey emphasis \u2014 the membrane barrier: The inner mitochondrial membrane must be visually prominent. Embed a transmembrane transporter protein in the inner membrane labeled \"CTP (Citrate Transporter Protein).\" Show Citrate passing through this channel into the cytosol with a bold directional arrow. Add a callout on the membrane: \"Acetyl-CoA cannot cross this membrane \u2014 Citrate is the carrier.\"\nIn the cytosol: Citrate is cleaved by enzyme labeled \"ACLY (ATP Citrate Lyase)\" into Acetyl-CoA + Oxaloacetate. From cytosolic Acetyl-CoA, show four downstream outputs: Phospholipids (cell membranes), Lipid signaling molecules, Protein lipidation, Triglycerides (energy storage).\nUse the same color for Acetyl-CoA inside and outside the mitochondrion to show it is the same molecule. Use a distinct color for Citrate to show it is the transport vehicle.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/487528"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 2048,
+        "local_bytes": 847344,
+        "sha256": "e77550a5c6d28953fb002ff15b513e162b039889e5f27ba7ffa967e065c53008",
+        "width": 2048
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0305-single-cell-educational-diagram-of-the-de-novo-lipid-synthesis-dnls-citrate-shut.json",
+        "source_image_rel": "images/0305-single-cell-educational-diagram-of-the-de-novo-lipid-synthesis-dnls-citrate-shut.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "pathway archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "three-panel-educational-diagram-teaching-the-reverse-warburg-effect-conc-489603",
+        "reference_filename": "references/three-panel-educational-diagram-teaching-the-reverse-warburg-effect-conc-489603-reference.png",
+        "review_status": "approved",
+        "source_element_id": 489603,
+        "source_sha256": "241137905a36eb582721ad86205dbe81b94bd5e52cb7c41df6a16a7e116ec88e",
+        "svg_filename": "three-panel-educational-diagram-teaching-the-reverse-warburg-effect-conc-489603-rough.svg",
+        "transparent_png_filename": "three-panel-educational-diagram-teaching-the-reverse-warburg-effect-conc-489603-rough-transparent.png",
+        "conversion_archetype": "pathway",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1589615,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-04-14T13:24:25.732Z",
+        "downloadedAt": "2026-07-25T15:37:54.384Z",
+        "filename": "0313-three-panel-educational-diagram-teaching-the-reverse-warburg-effect-concept-step.png",
+        "id": 489603,
+        "index": 313,
+        "name": "Three-panel educational diagram teaching the Reverse Warburg Effect concept step by step. Panel 1 labeled 'Step 1 \u2014 What is the Reverse Warburg Effect?': show a simple text-supported concept box with two cell icons side by side \u2014 a fibroblast (CAF) on the left labeled 'Cancer-Associated Fibroblast (CAF) \u2014 stromal support cell' and a cancer cell on the right. A bold arrow between them labeled 'CAF produces fuel \u2192 Cancer cell consumes it.' Subtitle below: 'Unlike classic Warburg Effect where cancer cells ferment glucose, here the CAF does the fermenting and feeds the cancer cell.' Panel 2 labeled 'Step 2 \u2014 Inside the CAF': show a flat CAF cell outline. Inside show a sequential flow: HIF-1 icon \u2192 label 'HIF-1 activates aerobic glycolysis.' Arrow to LDHA and PKM2 enzyme icons \u2014 label 'LDHA and PKM2 convert glucose to lactate.' Arrow to MCT4 transporter on the cell membrane \u2014 label 'MCT4 exports lactate out of CAF.' Lactate molecule exits the cell with a red arrow. Panel 3 labeled 'Step 3 \u2014 Inside the Cancer Cell': show a flat cancer cell outline. Lactate enters via import arrow. Inside show: GLUT1 and GLUT3 transporters on the membrane \u2014 label 'GLUT1/GLUT3 \u2014 glucose uptake.' Lactate arrow points to mitochondrion \u2014 label 'Lactate \u2192 mitochondrial oxidation \u2192 ATP production.' Outcome box: 'Cancer cell gains energy and metabolic flexibility.' Connect all three panels with left-to-right arrows. Label: 'HIF-1,' 'LDHA,' 'PKM2,' 'MCT4,' 'Lactate,' 'GLUT1,' 'GLUT3,' 'CAF,' 'Cancer Cell,' 'Mitochondria.' Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/489603"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 1589615,
+        "sha256": "241137905a36eb582721ad86205dbe81b94bd5e52cb7c41df6a16a7e116ec88e",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0313-three-panel-educational-diagram-teaching-the-reverse-warburg-effect-concept-step.json",
+        "source_image_rel": "images/0313-three-panel-educational-diagram-teaching-the-reverse-warburg-effect-concept-step.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "two-worlds archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "two-column-split-left-column-labeled-the-artifact-model-score-validation-535881",
+        "reference_filename": "references/two-column-split-left-column-labeled-the-artifact-model-score-validation-535881-reference.png",
+        "review_status": "approved",
+        "source_element_id": 535881,
+        "source_sha256": "37297a962792b3225871cfe8fe1e32cb3167a48856d67bc9f5923835fa39a9a7",
+        "svg_filename": "two-column-split-left-column-labeled-the-artifact-model-score-validation-535881-rough.svg",
+        "transparent_png_filename": "two-column-split-left-column-labeled-the-artifact-model-score-validation-535881-rough-transparent.png",
+        "conversion_archetype": "two-worlds",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 504283,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-01T01:36:44.337Z",
+        "downloadedAt": "2026-07-25T15:37:56.319Z",
+        "filename": "0315-two-column-split-left-column-labeled-the-artifact-model-score-validation-metrics.png",
+        "id": 535881,
+        "index": 315,
+        "name": "    \"Two-column split \u2014 left column labeled \\\"The Artifact\\\" (model, score, validation metrics, deployment review), right column labeled \\\"The World\\\" (patient, clot, waiting room, outcome). A dotted line connects them labeled \\\"statistical relationship.\\\" A bold caption beneath: \\\"The engineers reviewed the left column. The patient was in the right column.\\\"\",\n",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/535881"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 504283,
+        "sha256": "37297a962792b3225871cfe8fe1e32cb3167a48856d67bc9f5923835fa39a9a7",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0315-two-column-split-left-column-labeled-the-artifact-model-score-validation-metrics.json",
+        "source_image_rel": "images/0315-two-column-split-left-column-labeled-the-artifact-model-score-validation-metrics.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "funnel archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "cost-asymmetry-diagram-horizontal-axis-ai-task-type-triage-scoring-loan--535886",
+        "reference_filename": "references/cost-asymmetry-diagram-horizontal-axis-ai-task-type-triage-scoring-loan--535886-reference.png",
+        "review_status": "approved",
+        "source_element_id": 535886,
+        "source_sha256": "e9f313f833a738a7338fe4da05433ccf725bc0b73fe2d04cc4e79fb5373ed837",
+        "svg_filename": "cost-asymmetry-diagram-horizontal-axis-ai-task-type-triage-scoring-loan--535886-rough.svg",
+        "transparent_png_filename": "cost-asymmetry-diagram-horizontal-axis-ai-task-type-triage-scoring-loan--535886-rough-transparent.png",
+        "conversion_archetype": "funnel",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 218152,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-01T01:41:37.989Z",
+        "downloadedAt": "2026-07-25T15:37:57.198Z",
+        "filename": "0316-cost-asymmetry-diagram-horizontal-axis-ai-task-type-triage-scoring-loan-decision.png",
+        "id": 535886,
+        "index": 316,
+        "name": "   \"Cost asymmetry diagram \u2014 horizontal axis: \\\"AI task type\\\" (triage scoring, loan decisioning, email management, medical imaging), vertical axis: \\\"relative cost.\\\" Two bars per task: production cost (near-zero) vs. verification cost (variable, always higher). Student should see that the gap is not uniform \u2014 verification cost varies by domain, but production cost does not.\",\n",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/535886"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 218152,
+        "sha256": "e9f313f833a738a7338fe4da05433ccf725bc0b73fe2d04cc4e79fb5373ed837",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0316-cost-asymmetry-diagram-horizontal-axis-ai-task-type-triage-scoring-loan-decision.json",
+        "source_image_rel": "images/0316-cost-asymmetry-diagram-horizontal-axis-ai-task-type-triage-scoring-loan-decision.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "checklist archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "the-five-supervisory-capacities-columns-capacity-name-what-it-is-what-fa-535891",
+        "reference_filename": "references/the-five-supervisory-capacities-columns-capacity-name-what-it-is-what-fa-535891-reference.png",
+        "review_status": "approved",
+        "source_element_id": 535891,
+        "source_sha256": "d8bd25e89e252384c6539730317acb01cca5057dfe258829d88cece5415fc12f",
+        "svg_filename": "the-five-supervisory-capacities-columns-capacity-name-what-it-is-what-fa-535891-rough.svg",
+        "transparent_png_filename": "the-five-supervisory-capacities-columns-capacity-name-what-it-is-what-fa-535891-rough-transparent.png",
+        "conversion_archetype": "checklist",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 324920,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-01T01:46:21.649Z",
+        "downloadedAt": "2026-07-25T15:37:58.110Z",
+        "filename": "0317-the-five-supervisory-capacities-columns-capacity-name-what-it-is-what-failure-lo.png",
+        "id": 535891,
+        "index": 317,
+        "name": "    \"The five supervisory capacities \u2014 columns: capacity name, what it is, what failure looks like, which chapter develops it. Rows: plausibility auditing, problem formulation, tool orchestration, interpretive judgment, executive integration. Use this as the navigational spine of the book \u2014 students should return to it at the start of each chapter.\",\n",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/535891"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 324920,
+        "sha256": "d8bd25e89e252384c6539730317acb01cca5057dfe258829d88cece5415fc12f",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0317-the-five-supervisory-capacities-columns-capacity-name-what-it-is-what-failure-lo.json",
+        "source_image_rel": "images/0317-the-five-supervisory-capacities-columns-capacity-name-what-it-is-what-failure-lo.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "two-stage-flow archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "the-fluency-trap-as-a-two-stage-mechanism-stage-1-fluent-output-elevated-535896",
+        "reference_filename": "references/the-fluency-trap-as-a-two-stage-mechanism-stage-1-fluent-output-elevated-535896-reference.png",
+        "review_status": "approved",
+        "source_element_id": 535896,
+        "source_sha256": "50a1f444c5d68c83b563ed64dde5cf2642b93cee90f29ea56d7ae5a874e2d9b7",
+        "svg_filename": "the-fluency-trap-as-a-two-stage-mechanism-stage-1-fluent-output-elevated-535896-rough.svg",
+        "transparent_png_filename": "the-fluency-trap-as-a-two-stage-mechanism-stage-1-fluent-output-elevated-535896-rough-transparent.png",
+        "conversion_archetype": "two-stage-flow",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 248901,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-01T01:59:21.659Z",
+        "downloadedAt": "2026-07-25T15:37:59.001Z",
+        "filename": "0318-the-fluency-trap-as-a-two-stage-mechanism-stage-1-fluent-output-elevated-confide.png",
+        "id": 535896,
+        "index": 318,
+        "name": "    \"The fluency trap as a two-stage mechanism \u2014 Stage 1: fluent output \u2192 elevated confidence in output. Stage 2: elevated confidence in output \u2192 elevated confidence in own evaluation. Caption: \\\"Fluency boosts wrong evaluations as readily as right ones. The shape of a sentence is not evidence about its truth.\\\"\",\n",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/535896"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 248901,
+        "sha256": "50a1f444c5d68c83b563ed64dde5cf2642b93cee90f29ea56d7ae5a874e2d9b7",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0318-the-fluency-trap-as-a-two-stage-mechanism-stage-1-fluent-output-elevated-confide.json",
+        "source_image_rel": "images/0318-the-fluency-trap-as-a-two-stage-mechanism-stage-1-fluent-output-elevated-confide.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "population-grid archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "a-population-of-10-000-people-shown-as-a-grid-of-dots-one-red-true-posit-535900",
+        "reference_filename": "references/a-population-of-10-000-people-shown-as-a-grid-of-dots-one-red-true-posit-535900-reference.png",
+        "review_status": "approved",
+        "source_element_id": 535900,
+        "source_sha256": "eb32070b97b1f1a3af28219e024b186c035ecd035ed5ffd001900a940f5cea75",
+        "svg_filename": "a-population-of-10-000-people-shown-as-a-grid-of-dots-one-red-true-posit-535900-rough.svg",
+        "transparent_png_filename": "a-population-of-10-000-people-shown-as-a-grid-of-dots-one-red-true-posit-535900-rough-transparent.png",
+        "conversion_archetype": "population-grid",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 285485,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-01T02:10:20.771Z",
+        "downloadedAt": "2026-07-25T15:37:59.875Z",
+        "filename": "0319-a-population-of-10-000-people-shown-as-a-grid-of-dots-one-red-true-positive-100-.png",
+        "id": 535900,
+        "index": 319,
+        "name": "    \"A population of 10,000 people shown as a grid of dots \u2014 one red (true positive), ~100 orange (false positives), ~9,899 gray (true negatives). Arrow shows: \\\"you pull one positive result from the red + orange pool \u2014 1 in 101 is red.\\\" Puts the arithmetic viscerally before the student.\",\n",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/535900"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 285485,
+        "sha256": "eb32070b97b1f1a3af28219e024b186c035ecd035ed5ffd001900a940f5cea75",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0319-a-population-of-10-000-people-shown-as-a-grid-of-dots-one-red-true-positive-100-.json",
+        "source_image_rel": "images/0319-a-population-of-10-000-people-shown-as-a-grid-of-dots-one-red-true-positive-100-.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "two-worlds archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "two-column-split-left-column-labeled-the-artifact-model-score-validation-535925",
+        "reference_filename": "references/two-column-split-left-column-labeled-the-artifact-model-score-validation-535925-reference.png",
+        "review_status": "approved",
+        "source_element_id": 535925,
+        "source_sha256": "c94ac6905ee5fca1561a991f26f3a8fe8a6a09dbbd0229bf8883f573f2796ac2",
+        "svg_filename": "two-column-split-left-column-labeled-the-artifact-model-score-validation-535925-rough.svg",
+        "transparent_png_filename": "two-column-split-left-column-labeled-the-artifact-model-score-validation-535925-rough-transparent.png",
+        "conversion_archetype": "two-worlds",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 349923,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-01T03:12:19.159Z",
+        "downloadedAt": "2026-07-25T15:38:00.818Z",
+        "filename": "0320-two-column-split-left-column-labeled-the-artifact-model-score-validation-metrics.png",
+        "id": 535925,
+        "index": 320,
+        "name": "Two-column split \u2014 left column labeled \\\"The Artifact\\\" (model, score, validation metrics, deployment review), right column labeled \\\"The World\\\" (patient, clot, waiting room, outcome). A dotted line connects them labeled \\\"statistical relationship.\\\" A bold caption beneath: \\\"The engineers reviewed the left column. The patient was in the right column.\\\", architectural section sketch, Loose hand-drawn architectural concept section, annotated process sketching, gestural ink linework, light wash, hatching, and selective color accents.\n",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/535925"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 349923,
+        "sha256": "c94ac6905ee5fca1561a991f26f3a8fe8a6a09dbbd0229bf8883f573f2796ac2",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0320-two-column-split-left-column-labeled-the-artifact-model-score-validation-metrics.json",
+        "source_image_rel": "images/0320-two-column-split-left-column-labeled-the-artifact-model-score-validation-metrics.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "epigenetics archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "i-want-an-educational-diagram-to-explain-swi-snf-chromatin-remodeling-co-551520",
+        "reference_filename": "references/i-want-an-educational-diagram-to-explain-swi-snf-chromatin-remodeling-co-551520-reference.png",
+        "review_status": "approved",
+        "source_element_id": 551520,
+        "source_sha256": "af698b0ab32859295ccd60605b4f8712c5ccaabacc10101484e626dc0301c907",
+        "svg_filename": "i-want-an-educational-diagram-to-explain-swi-snf-chromatin-remodeling-co-551520-rough.svg",
+        "transparent_png_filename": "i-want-an-educational-diagram-to-explain-swi-snf-chromatin-remodeling-co-551520-rough-transparent.png",
+        "conversion_archetype": "epigenetics",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1023324,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-07T15:09:36.149Z",
+        "downloadedAt": "2026-07-25T15:38:02.677Z",
+        "filename": "0322-i-want-an-educational-diagram-to-explain-swi-snf-chromatin-remodeling-complexes-.png",
+        "id": 551520,
+        "index": 322,
+        "name": "I want an educational diagram to explain SWI/SNF chromatin remodeling complexes clearly in my cancer biology textbook in the epigenetic mechanisms chapter. Here is the subsection text: 'The SWI2/SNF2 family of chromatin remodeling enzymes represents a major class of factors involved in both gene activation and repression. These ATP-dependent complexes use energy from ATP hydrolysis to disrupt histone-DNA contacts, slide nucleosomes along DNA, or evict nucleosomes entirely, thereby altering chromatin structure. Histone-modifying and chromatin-remodeling genes themselves can function as tumor suppressor genes, and their inactivation through genetic mutations or epigenetic alterations during cancer pathogenesis causes perturbation of broad or genome-wide gene expression profiles.' I need a two-panel flat vector diagram matching the style of the reference image provided. Left panel labeled 'Normal SWI/SNF Activity': show nucleosomes on a DNA strand being repositioned \u2014 curved arrows showing nucleosomes sliding away from the promoter. Show a gear icon labeled 'SWI/SNF Complex' with an arrow pointing to the nucleosomes. Show a transcription factor icon at the open promoter with a green arrow indicating active transcription. Label 'Nucleosome,' 'Promoter,' 'SWI/SNF Complex.' Right panel labeled 'SWI/SNF Loss in Cancer': show gear icon with red X \u2014 label 'SWI/SNF inactivated.' Show densely packed nucleosomes blocking the promoter \u2014 no transcription factor present. Downstream box labeled 'Tumor Suppressor Gene Silenced.' Arrow to second box labeled 'DNMT recruitment \u2192 DNA methylation' showing DNMT enzyme on DNA strand adding methyl groups. Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/551520"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 1023324,
+        "sha256": "af698b0ab32859295ccd60605b4f8712c5ccaabacc10101484e626dc0301c907",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0322-i-want-an-educational-diagram-to-explain-swi-snf-chromatin-remodeling-complexes-.json",
+        "source_image_rel": "images/0322-i-want-an-educational-diagram-to-explain-swi-snf-chromatin-remodeling-complexes-.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "p53-response archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "i-want-an-educational-diagram-to-explain-tp53-tumor-suppressor-function--551534",
+        "reference_filename": "references/i-want-an-educational-diagram-to-explain-tp53-tumor-suppressor-function--551534-reference.png",
+        "review_status": "approved",
+        "source_element_id": 551534,
+        "source_sha256": "fd82e2b1bde19a36dee3945050c3abfbcdc3ec2aa7fff3f0fc7e50ac80649bd3",
+        "svg_filename": "i-want-an-educational-diagram-to-explain-tp53-tumor-suppressor-function--551534-rough.svg",
+        "transparent_png_filename": "i-want-an-educational-diagram-to-explain-tp53-tumor-suppressor-function--551534-rough-transparent.png",
+        "conversion_archetype": "p53-response",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1117115,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-07T15:17:07.634Z",
+        "downloadedAt": "2026-07-25T15:38:03.733Z",
+        "filename": "0323-i-want-an-educational-diagram-to-explain-tp53-tumor-suppressor-function-clearly-.png",
+        "id": 551534,
+        "index": 323,
+        "name": "I want an educational diagram to explain TP53 tumor suppressor function clearly in my cancer biology textbook in the tumor suppressor genes chapter. Here is the subsection text: 'The p53 gene is a tumor suppressor gene whose activity stops the formation of tumors. In the cell, p53 protein binds DNA, which stimulates production of p21 that interacts with cdk2. When p21 is complexed with cdk2 the cell cannot pass through to the next stage of cell division. Mutant p53 can no longer bind DNA effectively, and as a consequence p21 is not made available to act as the stop signal for cell division. DNA damage activates p53 by posttranslational modification to guard the genome by engaging cell-cycle checkpoints, enhancing DNA repair, and as a fail-safe mechanism causing replicative senescence or apoptotic death. Most cancers demonstrate biallelic loss-of-function mutation in TP53. Li-Fraumeni syndrome patients inherit one defective copy of TP53 and develop breast cancer, soft-tissue sarcomas, bone sarcomas, and brain tumors.' I need a three-panel flat vector diagram. Panel 1 labeled 'DNA Damage Detected': show a flat cell outline with a nucleus containing a damaged DNA helix \u2014 label 'DNA damage.' Arrow to activated p53 protein with phosphorylation symbol \u2014 label 'p53 activated (posttranslational modification).' Panel 2 labeled 'Normal p53 Response': show p53 binding DNA at a promoter \u2014 label 'p53 binds DNA.' Arrow to p21 production \u2014 label 'p21 produced.' p21 binding and inhibiting cdk2 \u2014 label 'p21 inhibits cdk2.' Three outcome arrows: 'Cell cycle arrest,' 'DNA repair,' 'Apoptosis / senescence.' Panel 3 labeled 'Mutant p53 / Loss of Function': show mutant p53 unable to bind DNA \u2014 red X. p21 absent. cdk2 active \u2014 label 'cdk2 active \u2014 cell cycle continues.' Outcome: 'Uncontrolled division.' Small callout: 'Li-Fraumeni syndrome \u2014 inherited TP53 mutation \u2014 breast cancer, sarcomas, brain tumors.' Connect panels with left-to-right arrows. Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/551534"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 1117115,
+        "sha256": "fd82e2b1bde19a36dee3945050c3abfbcdc3ec2aa7fff3f0fc7e50ac80649bd3",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0323-i-want-an-educational-diagram-to-explain-tp53-tumor-suppressor-function-clearly-.json",
+        "source_image_rel": "images/0323-i-want-an-educational-diagram-to-explain-tp53-tumor-suppressor-function-clearly-.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "gene-regulation archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "i-want-an-educational-diagram-to-explain-rb1-tumor-suppressor-function-c-551570",
+        "reference_filename": "references/i-want-an-educational-diagram-to-explain-rb1-tumor-suppressor-function-c-551570-reference.png",
+        "review_status": "approved",
+        "source_element_id": 551570,
+        "source_sha256": "d27b9e5e9c285a0f57de7bb17af1e2dd51ab7d8dc16b9ff6d3da88afce359066",
+        "svg_filename": "i-want-an-educational-diagram-to-explain-rb1-tumor-suppressor-function-c-551570-rough.svg",
+        "transparent_png_filename": "i-want-an-educational-diagram-to-explain-rb1-tumor-suppressor-function-c-551570-rough-transparent.png",
+        "conversion_archetype": "gene-regulation",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1088021,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-07T15:31:03.505Z",
+        "downloadedAt": "2026-07-25T15:38:04.742Z",
+        "filename": "0324-i-want-an-educational-diagram-to-explain-rb1-tumor-suppressor-function-clearly-i.png",
+        "id": 551570,
+        "index": 324,
+        "name": "I want an educational diagram to explain RB1 tumor suppressor function clearly in my cancer biology textbook in the tumor suppressor genes chapter. Here is the subsection text: 'The retinoblastoma gene RB1 was the first tumor suppressor gene to be identified and serves as the prototypical example of Knudson's two-hit hypothesis. Rb is lost or inactivated in many bladder, breast, and lung carcinomas. The Rb protein is a key target for the oncogene proteins of several DNA tumor viruses, including SV40, adenoviruses, and human papillomaviruses, which bind to Rb and inhibit its activity. Transformation by these viruses results, at least in part, from inactivation of Rb at the protein level rather than from mutational inactivation of the Rb gene.' I need a three-panel flat vector diagram. Panel 1 labeled 'Knudson Two-Hit Hypothesis': show two horizontal chromosome bars representing two RB1 alleles. Hereditary case: Allele 1 with germline mutation (red X) \u2014 label 'Hit 1 \u2014 inherited.' Allele 2 acquiring somatic mutation (red X) \u2014 label 'Hit 2 \u2014 somatic.' Sporadic case below: both alleles acquiring independent somatic mutations. Outcome: 'Both alleles lost \u2014 Rb protein absent.' Panel 2 labeled 'Normal Rb Function': show Rb protein binding E2F transcription factor \u2014 label 'Rb sequesters E2F.' Cell cycle diagram with G1 checkpoint highlighted and stop symbol \u2014 label 'G1 checkpoint \u2014 cell cycle arrested.' Panel 3 labeled 'Viral Inactivation of Rb': show three viral oncoprotein icons \u2014 label 'SV40,' 'Adenovirus,' 'HPV.' Each virus binding Rb protein directly \u2014 label 'Viral oncoprotein binds Rb \u2014 inhibits activity.' E2F released and active \u2014 label 'E2F active \u2192 cell cycle progression.' Outcome box: 'Transformation \u2014 uncontrolled proliferation.' Connect panels with left-to-right arrows. Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/551570"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 1088021,
+        "sha256": "d27b9e5e9c285a0f57de7bb17af1e2dd51ab7d8dc16b9ff6d3da88afce359066",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0324-i-want-an-educational-diagram-to-explain-rb1-tumor-suppressor-function-clearly-i.json",
+        "source_image_rel": "images/0324-i-want-an-educational-diagram-to-explain-rb1-tumor-suppressor-function-clearly-i.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "pap archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "educational-medical-illustration-pap-test-procedure-two-panel-compositio-552393",
+        "reference_filename": "references/educational-medical-illustration-pap-test-procedure-two-panel-compositio-552393-reference.png",
+        "review_status": "approved",
+        "source_element_id": 552393,
+        "source_sha256": "18ac25256eaec689119a0f903c9b82a95d6df8dc9732167267c4b13f68effd2e",
+        "svg_filename": "educational-medical-illustration-pap-test-procedure-two-panel-compositio-552393-rough.svg",
+        "transparent_png_filename": "educational-medical-illustration-pap-test-procedure-two-panel-compositio-552393-rough-transparent.png",
+        "conversion_archetype": "pap",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1365963,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-07T20:49:52.108Z",
+        "downloadedAt": "2026-07-25T15:38:08.792Z",
+        "filename": "0328-educational-medical-illustration-pap-test-procedure-two-panel-composition-on-a-c.png",
+        "id": 552393,
+        "index": 328,
+        "name": "Educational medical illustration: Pap Test Procedure, two-panel composition on a clean white background.\n\nLEFT PANEL \u2014 \"Pap Test Procedure\" (sagittal cross-section of female pelvis):\nShow a side-view anatomical cross-section of the female pelvis with the following structures clearly visible and labeled with thin black leader lines:\n- Uterus (labeled)\n- Cervix (labeled)\n- Vagina (label points specifically to the vaginal canal \u2014 the muscular tube between the cervix and the external opening \u2014 NOT to the speculum)\n- Rectum (labeled)\n- Speculum: a full-length metal speculum inserted through the vaginal canal, extending from the external introitus to just below the cervix. The speculum must be drawn at proper anatomical length, with both bills (blades) clearly visible holding the vaginal walls open. Labeled \"Speculum \u2014 widens vaginal opening for access\"\n- Brush: a cervical sampling brush (cytobrush) inserted through the speculum, with bristles in contact with the cervical surface\n\nRIGHT PANEL \u2014 \"What Happens to the Sample\" (three numbered steps stacked vertically):\n1. \"Cells collected from cervix\" \u2014 show a close-up of the cervical brush with a few cells on its bristles\n2. \"Sample prepared for laboratory\" \u2014 show the brush transferring cells onto a glass slide next to a small specimen vial with pink preservative liquid\n3. Two side-by-side circular microscopy views (NO microscope illustration \u2014 only the circular field-of-view panels):\n   - Left circle: uniform round pink/purple normal squamous cells, labeled below as \"Normal cervical cells\"\n   - Right circle: irregular, darker, misshapen cells, labeled below as \"Abnormal cells \u2014 possible dysplasia or cancer \u2014 requires follow up\"\n   - A vertical dividing line separates the two circles\n\nLABELS:\n- All labels use clean sans-serif font, black text\n- Leader lines are thin, black, straight\n- No figure title above the image\n- No summary boxes below or beside the figure\n- No floating outcome boxes outside panel boundaries\n\nSTYLE:\nFlat vector style. White background. Clean sans-serif font. Scientific oncology textbook.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/552393"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 1365963,
+        "sha256": "18ac25256eaec689119a0f903c9b82a95d6df8dc9732167267c4b13f68effd2e",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": "prompt-similarity:e97e3a3b428b",
+        "exact_duplicate_element_ids": [],
+        "heuristic_similarity_threshold": 0.92,
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": 407545,
+        "root_id": 399255
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0328-educational-medical-illustration-pap-test-procedure-two-panel-composition-on-a-c.json",
+        "source_image_rel": "images/0328-educational-medical-illustration-pap-test-procedure-two-panel-composition-on-a-c.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "ldct archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "educational-medical-illustration-low-dose-ct-ldct-lung-cancer-screening--552445",
+        "reference_filename": "references/educational-medical-illustration-low-dose-ct-ldct-lung-cancer-screening--552445-reference.png",
+        "review_status": "approved",
+        "source_element_id": 552445,
+        "source_sha256": "ce8e8dfeac63f4651f227fae1ca60cfcf79cdc6c13c55f7f6677199449778905",
+        "svg_filename": "educational-medical-illustration-low-dose-ct-ldct-lung-cancer-screening--552445-rough.svg",
+        "transparent_png_filename": "educational-medical-illustration-low-dose-ct-ldct-lung-cancer-screening--552445-rough-transparent.png",
+        "conversion_archetype": "ldct",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1150835,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-07T21:17:33.937Z",
+        "downloadedAt": "2026-07-25T15:38:09.714Z",
+        "filename": "0329-educational-medical-illustration-low-dose-ct-ldct-lung-cancer-screening-single-p.png",
+        "id": 552445,
+        "index": 329,
+        "name": "Educational medical illustration: Low-dose CT (LDCT) lung cancer screening, single-page composition on a clean white background. No overall figure title. No section headers. No summary boxes. No framed label boxes.\n\nUPPER SECTION \u2014 LDCT scanner scene:\n- Large CT scanner (gantry/donut shape) shown in side perspective, soft blue-gray tones, with a patient lying supine on the sliding table partially inside the bore. Patient is in a hospital gown, arms at sides.\n- Concentric arrows inside the gantry indicate X-ray beam rotation around the patient\n- To the right of the scanner: a computer monitor displaying a representative axial chest CT slice (lungs visible in cross-section)\n- Labels with thin black leader lines:\n  * \"Low-Dose CT Scanner \u2014 LDCT\" \u2192 points to the scanner gantry\n  * \"X-ray beams \u2014 series of detailed cross-sectional images\" \u2192 points to the rotating arrows inside the gantry\n  * \"Sliding table\" \u2192 points to the patient table\n  * \"Radiologist reviews lung images\" \u2192 points to the monitor\n- NO header above this section\n\nMIDDLE SECTION \u2014 Eligibility criteria (three icons in a horizontal row):\n- Three simple flat-vector icons evenly spaced, each with a small checkbox to its left and short text to its right:\n  1. Person silhouette + clock icon \u2192 \"Age 50\u201380 years\"\n  2. Lit cigarette with rising smoke \u2192 \"Significant smoking history \u2014 current smoker OR quit within past 15 years\"\n  3. Torso with lungs visible + small red X \u2192 \"No symptoms suggestive of lung cancer\"\n- NO header text above this row (no \"Who Should Be Screened\" title, no \"Target Population\" label, no banner)\n- Icons sit directly on the white background, no enclosing frame or band\n\nLOWER SECTION \u2014 CT comparison:\n- Two axial chest CT slices side by side, separated by a thin vertical divider, in grayscale\n  * Left slice: clean lung parenchyma, no nodule\n  * Right slice: small white rounded nodule visible in the lung field\n- Plain text labels positioned outside the CT images with thin black leader lines pointing into the relevant area:\n  * \"Normal lung tissue\" \u2192 points to the left slice\n  * \"Early lung nodule \u2014 detected before symptoms\" \u2192 points to the nodule on the right slice\n- NO framed boxes around the labels\n- NO summary text, outcome statement, or boxed conclusion below this section\n\nLABELS:\n- All labels use clean sans-serif font, black text\n- Leader lines are thin, black, straight\n- No figure titles anywhere in the composition\n- No summary boxes, outcome boxes, or framed text blocks\n- No floating boxes outside panel boundaries\n\nSTYLE:\nFlat vector style. White background. Clean sans-serif font. Scientific oncology textbook.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/552445"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 1150835,
+        "sha256": "ce8e8dfeac63f4651f227fae1ca60cfcf79cdc6c13c55f7f6677199449778905",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": "prompt-similarity:5b5462e68041",
+        "exact_duplicate_element_ids": [],
+        "heuristic_similarity_threshold": 0.92,
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": 488179,
+        "root_id": 405792
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0329-educational-medical-illustration-low-dose-ct-ldct-lung-cancer-screening-single-p.json",
+        "source_image_rel": "images/0329-educational-medical-illustration-low-dose-ct-ldct-lung-cancer-screening-single-p.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "ldct archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "educational-medical-illustration-computed-tomography-ct-scan-of-the-lung-552453",
+        "reference_filename": "references/educational-medical-illustration-computed-tomography-ct-scan-of-the-lung-552453-reference.png",
+        "review_status": "approved",
+        "source_element_id": 552453,
+        "source_sha256": "888485f9a3d873dcbbacbc36a3cf8f6c912dea42d91701154dac6afd2d720615",
+        "svg_filename": "educational-medical-illustration-computed-tomography-ct-scan-of-the-lung-552453-rough.svg",
+        "transparent_png_filename": "educational-medical-illustration-computed-tomography-ct-scan-of-the-lung-552453-rough-transparent.png",
+        "conversion_archetype": "ldct",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1127718,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-07T21:24:41.995Z",
+        "downloadedAt": "2026-07-25T15:38:10.614Z",
+        "filename": "0330-educational-medical-illustration-computed-tomography-ct-scan-of-the-lung-single-.png",
+        "id": 552453,
+        "index": 330,
+        "name": "Educational medical illustration: Computed tomography (CT) scan of the lung. Single procedural illustration on a clean white background. No figure title. No section headers. No summary boxes. No framed label boxes. No additional panels.\n\nCOMPOSITION:\nA patient lies supine on a sliding table that extends through the bore of a CT scanner. The scanner is shown in three-quarter side perspective with the gantry (donut-shaped imaging ring) clearly visible. The patient is partially inside the bore, head-first, in a hospital gown, arms at sides. The sliding table extends out of the scanner toward the viewer's side.\n\nSCANNER DETAILS:\n- Large CT scanner gantry with the characteristic ring/donut shape\n- Soft blue-gray tones for the scanner housing\n- Concentric arrows visible inside the bore indicating X-ray beam rotation around the patient\n- Sliding table clearly shown extending from the bore, with a smooth flat surface supporting the patient\n- Scanner base/pedestal visible at the bottom\n\nPATIENT DETAILS:\n- Adult patient lying flat on the sliding table, supine position\n- Head-first into the scanner bore (head inside, feet outside)\n- Wearing a light-colored hospital gown\n- Arms relaxed at the sides\n- Calm, neutral pose\n\nLABELS (thin black leader lines, sans-serif text):\n- \"CT Scanner\" \u2192 points to the scanner gantry\n- \"Sliding table\" \u2192 terminates clearly on the table surface itself\n- \"X-ray beams\" \u2192 points to the rotating arrows inside the bore\n\nDO NOT INCLUDE:\n- Any radiologist, monitor, or computer workstation\n- Any axial CT slice images, diagnostic findings, or nodules\n- Any eligibility criteria, screening checklist, age icons, smoking icons, or symptom icons\n- Any comparison panels, side-by-side imagery, or \"normal vs abnormal\" content\n- Any summary box, outcome statement, or boxed conclusion\n- Any figure title above the composition\n- Any text describing screening guidelines or target populations\n\nLABELS:\n- All labels use clean sans-serif font, black text\n- Leader lines are thin, black, straight, and terminate clearly on the structure they identify\n- No floating boxes outside panel boundaries\n\nSTYLE:\nFlat vector style. White background. Clean sans-serif font. Scientific oncology textbook.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/552453"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 1127718,
+        "sha256": "888485f9a3d873dcbbacbc36a3cf8f6c912dea42d91701154dac6afd2d720615",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0330-educational-medical-illustration-computed-tomography-ct-scan-of-the-lung-single-.json",
+        "source_image_rel": "images/0330-educational-medical-illustration-computed-tomography-ct-scan-of-the-lung-single-.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "lymphatic-procedure archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "educational-medical-illustration-sentinel-lymph-node-biopsy-procedure-th-552469",
+        "reference_filename": "references/educational-medical-illustration-sentinel-lymph-node-biopsy-procedure-th-552469-reference.png",
+        "review_status": "approved",
+        "source_element_id": 552469,
+        "source_sha256": "0af26fb9138ed760c650eb43f6793c2f5d52c55490e0fb577327c21d743cc2b9",
+        "svg_filename": "educational-medical-illustration-sentinel-lymph-node-biopsy-procedure-th-552469-rough.svg",
+        "transparent_png_filename": "educational-medical-illustration-sentinel-lymph-node-biopsy-procedure-th-552469-rough-transparent.png",
+        "conversion_archetype": "lymphatic-procedure",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 937308,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-07T21:36:53.871Z",
+        "downloadedAt": "2026-07-25T15:38:11.530Z",
+        "filename": "0331-educational-medical-illustration-sentinel-lymph-node-biopsy-procedure-three-step.png",
+        "id": 552469,
+        "index": 331,
+        "name": "Educational medical illustration: Sentinel lymph node biopsy procedure, three-step sequential composition on a clean white background. No panel titles. No section headers. No summary boxes. No framed label boxes.\n\nOVERALL LAYOUT:\nThree breast/axilla illustrations in sequence (left to right or in two rows), connected by simple gray arrow shapes containing the numbers \"1\" and \"2\" between consecutive panels to indicate flow. No text titles above any panel.\n\nANATOMICAL CONSISTENCY ACROSS PANELS \u2014 CRITICAL:\n- All three panels show the same lateral view of the breast with identical anatomical layout\n- The lymphatic chain (green vessels and green oval lymph nodes) is in the SAME positions across all three panels\n- The sentinel lymph node is in the SAME anatomical position in BOTH Step 2 and Step 3 \u2014 this is the most important consistency requirement\n- Secondary lymph nodes are in the SAME positions in Steps 2 and 3\n\nPANEL 1 \u2014 Injection:\n- Lateral view of the breast showing internal lymphatic drainage (green vessels and green oval nodes embedded in the breast tissue)\n- A small irregular tan/pink primary tumor mass in the upper-outer breast quadrant\n- A syringe injecting near the tumor\n- Small blue arrows and blue dots radiating outward from the injection site, showing the tracer beginning to spread through local tissue (NOT yet reaching any specific lymph node)\n- Labels with thin black leader lines:\n  * \"Primary tumor\" \u2192 points to the tumor mass\n  * \"Radioactive substance and/or blue dye injected near tumor\" \u2192 points to the syringe\n- NO panel title above this image\n\nPANEL 2 \u2014 Detection:\n- Same lateral breast view, same anatomical layout as Panel 1\n- The primary tumor is still visible in the same position\n- A handheld blue radioactivity detection probe is positioned over the breast surface, with a light-blue cone of detection emanating from its tip\n- A blue dotted tracer pathway runs from the tumor area along ONE lymphatic vessel and TERMINATES at a single highlighted blue lymph node \u2014 the sentinel node\n- The sentinel node is rendered in solid blue (indicating tracer uptake) and is clearly distinguishable from the green secondary nodes\n- IMPORTANT: The blue tracer pathway STOPS at the sentinel node. It does NOT continue past the sentinel node. It does NOT extend to any secondary nodes. It does NOT extend up into the upper chest or shoulder area.\n- Secondary lymph nodes are shown nearby as plain green ovals with NO blue tracer dots on or near them\n- Labels with thin black leader lines:\n  * \"Radioactivity detection probe\" \u2192 points to the probe\n  * \"Radioactive tracer / blue dye\" \u2192 points to a midpoint along the blue dotted pathway\n  * \"Sentinel lymph node \u2014 first node cancer cells likely to reach\" \u2192 points directly to the blue sentinel node\n  * \"Secondary lymph nodes\" \u2192 points to the cluster of green nodes (no tracer)\n- NO panel title above this image\n\nPANEL 3 \u2014 Removal and Pathology:\n- Same lateral breast view, same anatomical layout\n- The primary tumor is now absent from its previous location, with a dashed circle indicating \"tumor removed\"\n- A SECOND dashed circle is placed at the EXACT anatomical position where the sentinel node appeared (blue) in Panel 2 \u2014 indicating the sentinel node has been removed\n- CRITICAL POSITIONING: The dashed \"sentinel node removed\" circle must be in the same location as the blue sentinel node in Panel 2. Cross-reference Panel 2 sentinel node position when placing this dashed circle.\n- Secondary green lymph nodes remain in place, in the same positions as Panels 1 and 2\n- To the right of the breast illustration: a magnifying glass icon hovering over a green lymph node shape (representing the excised sentinel node being examined)\n- Below the magnifying glass, two branching colored arrows showing the pathology decision tree:\n  * Blue arrow \u2192 \"Cancer cells present \u2192 further lymph node dissection\"\n  * Green arrow \u2192 \"No cancer cells \u2192 no further node removal\"\n- Labels with thin black leader lines:\n  * \"Tumor removed\" \u2192 points to the upper dashed circle\n  * \"Sentinel node removed\" \u2192 points to the lower dashed circle (which is in the same position as the sentinel node in Panel 2)\n  * \"Node examined for cancer cells\" \u2192 points to the magnifying glass / node icon\n- NO panel title above this image\n\nDO NOT INCLUDE:\n- Any panel titles above the breast illustrations (\"Step 1 \u2014 Injection\", \"Step 2 \u2014 Detection\", \"Step 3 \u2014 Removal and Pathology\" should NOT appear)\n- Any blue tracer dots on or extending to secondary lymph nodes\n- Any blue tracer line extending past the sentinel node\n- Any mismatch between sentinel node position in Step 2 and removed node position in Step 3\n- Any summary box, outcome statement, or boxed conclusion\n- Any figure title above the overall composition\n\nLABELS:\n- All labels use clean sans-serif font, black text\n- Leader lines are thin, black, straight, and terminate clearly on the structure they identify\n- No floating boxes outside panel boundaries\n\nSTYLE:\nFlat vector style. White background. Clean sans-serif font. Scientific oncology textbook.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/552469"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 937308,
+        "sha256": "0af26fb9138ed760c650eb43f6793c2f5d52c55490e0fb577327c21d743cc2b9",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0331-educational-medical-illustration-sentinel-lymph-node-biopsy-procedure-three-step.json",
+        "source_image_rel": "images/0331-educational-medical-illustration-sentinel-lymph-node-biopsy-procedure-three-step.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "lymphatic-procedure archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "educational-medical-illustration-sentinel-lymph-node-biopsy-of-the-breas-552477",
+        "reference_filename": "references/educational-medical-illustration-sentinel-lymph-node-biopsy-of-the-breas-552477-reference.png",
+        "review_status": "approved",
+        "source_element_id": 552477,
+        "source_sha256": "d72e411728ba4b9133deeeed2340260fac527cb038695f0b0648e3fffe716e43",
+        "svg_filename": "educational-medical-illustration-sentinel-lymph-node-biopsy-of-the-breas-552477-rough.svg",
+        "transparent_png_filename": "educational-medical-illustration-sentinel-lymph-node-biopsy-of-the-breas-552477-rough-transparent.png",
+        "conversion_archetype": "lymphatic-procedure",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1282707,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-07T21:42:57.474Z",
+        "downloadedAt": "2026-07-25T15:38:12.582Z",
+        "filename": "0332-educational-medical-illustration-sentinel-lymph-node-biopsy-of-the-breast-three-.png",
+        "id": 552477,
+        "index": 332,
+        "name": "Educational medical illustration: Sentinel lymph node biopsy of the breast, three-panel sequential composition on a clean white background. No panel titles. No section headers. No summary boxes. No framed label boxes. No pathology decision tree. No magnifying glass.\n\nOVERALL LAYOUT:\nThree breast illustrations arranged horizontally in sequence. Each panel shows the same lateral view of the same breast with consistent anatomical position across all three panels. Simple, minimal, diagrammatic style \u2014 not heavily textured anatomy.\n\nANATOMICAL CONSISTENCY ACROSS PANELS \u2014 CRITICAL:\n- All three panels show the same lateral breast view with identical contour and proportions\n- Lymph nodes are in the SAME positions across all three panels\n- The sentinel node identified in Panel 2 is in the SAME position as the dashed-circle \"removed\" marker in Panel 3\n- Panel 3 anatomy mirrors Panel 2 exactly \u2014 only the tumor and sentinel nodes are shown as removed\n\nPANEL 1 \u2014 Injection:\n- Lateral view of the breast, simple flat-vector style\n- Small chain of lymph nodes visible along the upper/inner breast edge (small green or beige ovals)\n- A small irregular tumor mass in the upper breast quadrant\n- A syringe injecting near the tumor, with a small spray of blue dots indicating dye/tracer entering the tissue around the tumor\n- Labels with thin black leader lines:\n  * \"Lymph nodes\" \u2192 points to the chain of lymph nodes\n  * \"Radioactive substance or dye\" \u2192 points to the syringe\n  * \"Tumor\" \u2192 points to the tumor mass\n- NO panel title above this image\n\nPANEL 2 \u2014 Detection:\n- Same lateral breast view, same anatomical layout as Panel 1\n- The tumor is still visible in the same position\n- A handheld probe is positioned over the breast surface near the lymph node chain\n- Two specific lymph nodes in the chain are highlighted (rendered slightly differently \u2014 slightly larger, slightly different shade \u2014 to indicate these are the sentinel nodes that have taken up tracer)\n- Labels with thin black leader lines:\n  * \"Probe\" \u2192 points to the handheld probe\n  * \"Sentinel nodes\" \u2192 points to the highlighted nodes in the chain\n- NO panel title above this image\n\nPANEL 3 \u2014 Removal:\n- Same lateral breast view, same anatomical layout\n- Both the tumor AND the sentinel nodes are now shown as removed:\n  * Dashed circle where the tumor was previously located in Panels 1 and 2\n  * Dashed circles where the sentinel nodes were highlighted in Panel 2 (in the SAME positions as they appeared in Panel 2 \u2014 this is critical for cross-panel consistency)\n- Remaining (non-sentinel) lymph nodes still present in the chain in their original positions\n- Single label with thin black leader line:\n  * \"Tumor and sentinel nodes removed\" \u2192 points to the dashed circles area\n- NO panel title above this image\n- NO magnifying glass, NO pathology decision tree, NO branching arrows, NO \"cancer cells present\" / \"no cancer cells\" content\n\nDO NOT INCLUDE:\n- Any detailed lymphatic vessel network or green branching vessels throughout the breast\n- Any secondary lymph node cluster labeled separately from the sentinel nodes\n- Any magnifying glass icon or node-examination scene\n- Any branching pathology decision arrows (\"cancer cells present\" / \"no cancer cells\")\n- Any radioactive tracer pathway dotted line between tumor and sentinel nodes\n- Any detection cone or light beam emanating from the probe\n- Any panel titles above the breast illustrations\n- Any summary box, outcome statement, or boxed conclusion below the panels\n- Any figure title above the overall composition\n\nLABELS:\n- All labels use clean sans-serif font, black text\n- Leader lines are thin, black, straight, and terminate clearly on the structure they identify\n- Six total labels across the three panels (3 in Panel 1, 2 in Panel 2, 1 in Panel 3)\n- No floating boxes outside panel boundaries\n\nSTYLE:\nFlat vector style. White background. Clean sans-serif font. Scientific oncology textbook.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/552477"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 1282707,
+        "sha256": "d72e411728ba4b9133deeeed2340260fac527cb038695f0b0648e3fffe716e43",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0332-educational-medical-illustration-sentinel-lymph-node-biopsy-of-the-breast-three-.json",
+        "source_image_rel": "images/0332-educational-medical-illustration-sentinel-lymph-node-biopsy-of-the-breast-three-.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "membrane-receptor archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "two-cell-educational-diagram-illustrating-the-reverse-warburg-effect-bet-521266",
+        "reference_filename": "references/two-cell-educational-diagram-illustrating-the-reverse-warburg-effect-bet-521266-reference.png",
+        "review_status": "approved",
+        "source_element_id": 521266,
+        "source_sha256": "3a3b824b1fec05844bb86e49bc70880fcf0c34998727c6183d8c94eca789ebc9",
+        "svg_filename": "two-cell-educational-diagram-illustrating-the-reverse-warburg-effect-bet-521266-rough.svg",
+        "transparent_png_filename": "two-cell-educational-diagram-illustrating-the-reverse-warburg-effect-bet-521266-rough-transparent.png",
+        "conversion_archetype": "membrane-receptor",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 392917,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-04-24T21:44:16.734Z",
+        "downloadedAt": "2026-07-25T15:38:20.808Z",
+        "filename": "0340-two-cell-educational-diagram-illustrating-the-reverse-warburg-effect-between-a-c.png",
+        "id": 521266,
+        "index": 340,
+        "name": "Two-cell educational diagram illustrating the reverse Warburg effect between a cancer-associated fibroblast (CAF) and a tumor cell. Left cell labeled 'CAFs': show glucose entering the CAF via a GLUT1 transporter on the cell membrane \u2014 label 'GLUT1' and 'Glucose.' Inside the CAF show two pathways: (1) A glycolysis/glucosis box showing Glucose \u2192 Pyruvate \u2192 Lactate \u2014 label 'Glucosis.' Lactate exits via MCT4 transporter on the membrane \u2014 label 'MCT4.' Show HIF-1\u03b1 and SIRT3 icons as regulators \u2014 label each. Show O\u2082 input to HIF-1\u03b1. (2) A TCA cycle ellipse showing: Acetyl-CoA \u2192 Citrate \u2192 \u03b1-ketoglutarate \u2192 Succinate \u2192 Fumarate \u2192 Malate \u2192 Oxaloacetate \u2014 label 'TCA Cycle.' Show autophagy icon at the bottom of the CAF \u2014 label 'Autophagy.' Show regulatory proteins alongside: NDUFA4L2, IDH3\u03b1, IDH1, TGF-\u03b2, Cav-1 \u2014 label each with small arrows. Right cell labeled 'Tumor Cell': show MCT1 transporter on the membrane importing lactate \u2014 label 'MCT1' and 'Lactate.' Inside the tumor cell show: Lactate \u2192 \u03b1-ketoglutarate cycle with Pyruvate \u2014 label 'OXPHOS' with O\u2082 input. Show IL-6 signaling molecules between the two cells \u2014 label 'IL-6.' Show miRNA/lncRNA signal arrow between cells \u2014 label 'miRNA / lncRNA.' Show ROS output arrow \u2014 label 'ROS.' Add a simple legend: orange circle = Glucose, green circle = Lactate. Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/521266"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 2048,
+        "local_bytes": 392917,
+        "sha256": "3a3b824b1fec05844bb86e49bc70880fcf0c34998727c6183d8c94eca789ebc9",
+        "width": 2048
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0340-two-cell-educational-diagram-illustrating-the-reverse-warburg-effect-between-a-c.json",
+        "source_image_rel": "images/0340-two-cell-educational-diagram-illustrating-the-reverse-warburg-effect-between-a-c.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "chromosome-panels archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "three-panel-educational-diagram-illustrating-major-structural-chromosoma-525818",
+        "reference_filename": "references/three-panel-educational-diagram-illustrating-major-structural-chromosoma-525818-reference.png",
+        "review_status": "approved",
+        "source_element_id": 525818,
+        "source_sha256": "f0e7f2fb22c12dd18ebd72accab8927b60e0e1bc1b32b5b51f1148dc9071b95a",
+        "svg_filename": "three-panel-educational-diagram-illustrating-major-structural-chromosoma-525818-rough.svg",
+        "transparent_png_filename": "three-panel-educational-diagram-illustrating-major-structural-chromosoma-525818-rough-transparent.png",
+        "conversion_archetype": "chromosome-panels",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 770540,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-04-27T10:22:31.770Z",
+        "downloadedAt": "2026-07-25T15:38:22.714Z",
+        "filename": "0342-three-panel-educational-diagram-illustrating-major-structural-chromosomal-abnorm.png",
+        "id": 525818,
+        "index": 342,
+        "name": "Three-panel educational diagram illustrating major structural chromosomal abnormalities in cancer. Each panel shows only one concept with minimal text. Panel 1 labeled 'Deletion': show two flat chromosome icons side by side \u2014 left labeled 'Normal' with a green band labeled 'Gene A (tumor suppressor)'; right labeled 'Deletion' with the green band missing and a red X \u2014 label 'Gene A lost.' One line below: 'Tumor suppressor inactivated.' Panel 2 labeled 'Amplification': show two flat chromosome icons side by side \u2014 left labeled 'Normal' with one blue band labeled 'Gene B (oncogene)'; right labeled 'Amplification' with five stacked blue bands \u2014 label '4\u20136+ copies.' One line below: 'Oncogene overexpressed.' Panel 3 labeled 'Translocation (Philadelphia Chromosome)': show three steps stacked vertically. Step 1: chromosome 9 with blue ABL1 band and chromosome 22 with green BCR band \u2014 label each. Step 2: arrow showing ABL1 piece moving to chromosome 22 \u2014 label 't(9;22) translocation.' Step 3: shortened chromosome 22 with fused red BCR-ABL1 band \u2014 label 'Philadelphia chromosome \u2014 BCR-ABL1 fusion gene.' Connect panels with simple dividing lines only. No frequency bars. No summary boxes. No footer text blocks. Clean sans-serif font. Flat vector. White background. Scientific oncology textbook style.\"",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/525818"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 770540,
+        "sha256": "f0e7f2fb22c12dd18ebd72accab8927b60e0e1bc1b32b5b51f1148dc9071b95a",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0342-three-panel-educational-diagram-illustrating-major-structural-chromosomal-abnorm.json",
+        "source_image_rel": "images/0342-three-panel-educational-diagram-illustrating-major-structural-chromosomal-abnorm.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "epigenetics archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "single-multi-level-educational-diagram-illustrating-the-hierarchical-str-525806",
+        "reference_filename": "references/single-multi-level-educational-diagram-illustrating-the-hierarchical-str-525806-reference.png",
+        "review_status": "approved",
+        "source_element_id": 525806,
+        "source_sha256": "13f9e5e762c578d7c6faa72e3f65f6c54d34e07ff2c0eb5049bdea86cefbc20b",
+        "svg_filename": "single-multi-level-educational-diagram-illustrating-the-hierarchical-str-525806-rough.svg",
+        "transparent_png_filename": "single-multi-level-educational-diagram-illustrating-the-hierarchical-str-525806-rough-transparent.png",
+        "conversion_archetype": "epigenetics",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1049182,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-04-27T10:15:44.266Z",
+        "downloadedAt": "2026-07-25T15:38:24.638Z",
+        "filename": "0344-single-multi-level-educational-diagram-illustrating-the-hierarchical-structure-o.png",
+        "id": 525806,
+        "index": 344,
+        "name": "Single multi-level educational diagram illustrating the hierarchical structure of DNA, from cell to nucleotide. Show the following levels connected top to bottom by zoom-in arrows. Level 1 labeled 'Cell': show a flat vector cell outline with a visible nucleus inside \u2014 label 'Cell' and 'Nucleus.' Level 2 labeled 'Chromosome': show a flat X-shaped chromosome icon inside the nucleus \u2014 label 'Chromosome \u2014 DNA found inside nucleus.' Level 3 labeled 'Nucleosome': show a short segment of DNA strand wrapped around a cylindrical histone protein octamer \u2014 label 'Nucleosome' and 'Histone protein \u2014 DNA binds to histone.' Level 4 labeled 'Gene': show a straight segment of the DNA double helix with a highlighted region \u2014 label 'Gene \u2014 short piece of DNA carrying specific genetic information.' Level 5 labeled 'DNA Double Helix': show a flat vector double helix with two strands twisted into a spiral ladder shape \u2014 label 'DNA double helix.' Show the two strands connected by horizontal rungs representing base pairs. Label the four nucleotide bases with color-coded flat icons at the base pair rungs: Adenine (A, green) paired with Thymine (T, red) \u2014 label 'A\u2013T base pair'; Guanine (G, blue) paired with Cytosine (C, orange) \u2014 label 'G\u2013C base pair.' Add a base pair legend: 'A = Adenine, T = Thymine, G = Guanine, C = Cytosine.' Add note: 'A pairs with T \u2014 G pairs with C \u2014 chemical bonds called base pairs.' Connect all levels with downward zoom-in arrows. Label: 'Cell,' 'Nucleus,' 'Chromosome,' 'Histone,' 'Nucleosome,' 'Gene,' 'DNA double helix,' 'Base pairs,' 'Adenine,' 'Thymine,' 'Guanine,' 'Cytosine.' Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/525806"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 1049182,
+        "sha256": "13f9e5e762c578d7c6faa72e3f65f6c54d34e07ff2c0eb5049bdea86cefbc20b",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0344-single-multi-level-educational-diagram-illustrating-the-hierarchical-structure-o.json",
+        "source_image_rel": "images/0344-single-multi-level-educational-diagram-illustrating-the-hierarchical-structure-o.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "epigenetics archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "single-educational-diagram-illustrating-nucleosome-structure-show-a-dna--525827",
+        "reference_filename": "references/single-educational-diagram-illustrating-nucleosome-structure-show-a-dna--525827-reference.png",
+        "review_status": "approved",
+        "source_element_id": 525827,
+        "source_sha256": "d1157c805e3f0d24edf6c9bf256cd5443ad635d74deb0894e86e40050c1a6061",
+        "svg_filename": "single-educational-diagram-illustrating-nucleosome-structure-show-a-dna--525827-rough.svg",
+        "transparent_png_filename": "single-educational-diagram-illustrating-nucleosome-structure-show-a-dna--525827-rough-transparent.png",
+        "conversion_archetype": "epigenetics",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1091379,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-04-27T10:30:29.141Z",
+        "downloadedAt": "2026-07-25T15:38:25.572Z",
+        "filename": "0345-single-educational-diagram-illustrating-nucleosome-structure-show-a-dna-double-h.png",
+        "id": 525827,
+        "index": 345,
+        "name": "Single educational diagram illustrating nucleosome structure. Show a DNA double helix strand entering from the left side, wrapping around a central histone octamer, and continuing to a second partially visible nucleosome on the right connected by linker DNA. Label the DNA strand 'Negatively charged DNA.' Label the histone octamer with four color-coded segments: 'H2A,' 'H2B,' 'H3,' 'H4' \u2014 label the group 'Positively charged histones.' Show a small H1 histone icon at the linker DNA region \u2014 label 'H1 \u2014 stabilizes complex.' Label the linker DNA strand between the two nucleosomes 'Linker DNA.' Add a bracket beneath the nucleosome \u2014 label 'Nucleosome \u2014 basic unit of chromatin.' No histone tail modifications. No methylation, acetylation, or phosphorylation icons. No chromatin state outcome boxes. Clean sans-serif font. Flat vector style. White background. Scientific oncology textbook",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/525827"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 1091379,
+        "sha256": "d1157c805e3f0d24edf6c9bf256cd5443ad635d74deb0894e86e40050c1a6061",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0345-single-educational-diagram-illustrating-nucleosome-structure-show-a-dna-double-h.json",
+        "source_image_rel": "images/0345-single-educational-diagram-illustrating-nucleosome-structure-show-a-dna-double-h.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "cycle archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "infographic-the-loop-as-a-cycle-diagram-five-labeled-nodes-specify-deleg-530085",
+        "reference_filename": "references/infographic-the-loop-as-a-cycle-diagram-five-labeled-nodes-specify-deleg-530085-reference.png",
+        "review_status": "approved",
+        "source_element_id": 530085,
+        "source_sha256": "990e420624c347bb2c589df46531e58f48c96248d225acbfa16b2c4630224dbd",
+        "svg_filename": "infographic-the-loop-as-a-cycle-diagram-five-labeled-nodes-specify-deleg-530085-rough.svg",
+        "transparent_png_filename": "infographic-the-loop-as-a-cycle-diagram-five-labeled-nodes-specify-deleg-530085-rough-transparent.png",
+        "conversion_archetype": "cycle",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 122524,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-04-28T18:05:11.011Z",
+        "downloadedAt": "2026-07-25T15:38:35.530Z",
+        "filename": "0355-infographic-the-loop-as-a-cycle-diagram-five-labeled-nodes-specify-delegate-conv.png",
+        "id": 530085,
+        "index": 355,
+        "name": "[INFOGRAPHIC: The Loop as a cycle diagram \u2014 five labeled nodes (Specify, Delegate, Converse, Discern, Be Diligent) arranged in a circle with bidirectional arrows between adjacent nodes and a prominent return arrow from Diligence back to Specify; student should see this is a cycle, not a checklist] -->",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/530085"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 122524,
+        "sha256": "990e420624c347bb2c589df46531e58f48c96248d225acbfa16b2c4630224dbd",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0355-infographic-the-loop-as-a-cycle-diagram-five-labeled-nodes-specify-delegate-conv.json",
+        "source_image_rel": "images/0355-infographic-the-loop-as-a-cycle-diagram-five-labeled-nodes-specify-delegate-conv.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "hub archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "three-panel-educational-diagram-illustrating-chromatin-remodeling-mechan-574608",
+        "reference_filename": "references/three-panel-educational-diagram-illustrating-chromatin-remodeling-mechan-574608-reference.png",
+        "review_status": "approved",
+        "source_element_id": 574608,
+        "source_sha256": "7c6953315ccddbd249407c23c2d15a2bba1df5ac3faedd97934fe841bc715d42",
+        "svg_filename": "three-panel-educational-diagram-illustrating-chromatin-remodeling-mechan-574608-rough.svg",
+        "transparent_png_filename": "three-panel-educational-diagram-illustrating-chromatin-remodeling-mechan-574608-rough-transparent.png",
+        "conversion_archetype": "hub",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1175588,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-17T13:59:13.817Z",
+        "downloadedAt": "2026-07-25T15:38:44.196Z",
+        "filename": "0364-three-panel-educational-diagram-illustrating-chromatin-remodeling-mechanisms-in-.png",
+        "id": 574608,
+        "index": 364,
+        "name": "Three-panel educational diagram illustrating chromatin remodeling mechanisms in cancer for undergraduate students. All panels flat vector style, white background, clean sans-serif font, scientific oncology textbook.\nPanel 1 \u2014 'SWI/SNF Chromatin Remodeling': Left side labeled 'Normal': show a gear icon labeled 'SWI/SNF Complex (ATP-dependent)' repositioning nucleosomes away from a promoter region \u2014 label 'Nucleosome sliding \u2192 open chromatin \u2192 Active Transcription' with a green arrow. Right side labeled 'Cancer': gear with red X labeled 'SWI/SNF inactivated \u2014 mutation or epigenetic loss.' Show nucleosomes packed tightly over promoter \u2014 label 'Promoter blocked \u2192 Tumor Suppressor Gene Silenced.'\nPanel 2 \u2014 'HELLS \u2014 Lymphoid-Specific Helicase': Left side labeled 'Normal': show HELLS enzyme icon (helix with arrow) labeled 'HELLS \u2014 DNA helicase, regulates chromatin accessibility.' Show nucleosomes in open configuration with active gene expression arrow. Right side labeled 'Cancer': HELLS icon with red X or overexpression starburst \u2014 label 'HELLS dysregulated.' Show downstream effect: 'Aberrant DNA methylation patterns \u2192 TSG silencing.' Add label 'Interacts with DNMT3B.'\nPanel 3 \u2014 'Interconnection of Chromatin Remodeling with Epigenetic Mechanisms': Show a central hub diagram with three nodes connected by arrows: Node 1 'Chromatin Remodeling (SWI/SNF, HELLS)' \u2192 Node 2 'DNA Methylation (DNMT recruitment)' \u2192 Node 3 'Histone Modification (EZH2, HDAC).' Add a downstream outcome box at the bottom: 'Convergent silencing of tumor suppressor genes \u2192 cancer.' Label each arrow with the mechanism of interaction. No decorative elements. No summary box below figure. No figure title above figure. Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/574608"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 1175588,
+        "sha256": "7c6953315ccddbd249407c23c2d15a2bba1df5ac3faedd97934fe841bc715d42",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0364-three-panel-educational-diagram-illustrating-chromatin-remodeling-mechanisms-in-.json",
+        "source_image_rel": "images/0364-three-panel-educational-diagram-illustrating-chromatin-remodeling-mechanisms-in-.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "kidney-stage archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "anatomically-correct-medical-illustration-of-renal-cell-carcinoma-stage--575911",
+        "reference_filename": "references/anatomically-correct-medical-illustration-of-renal-cell-carcinoma-stage--575911-reference.png",
+        "review_status": "approved",
+        "source_element_id": 575911,
+        "source_sha256": "6e8f8fe41e834c9619c924792c95f04bac53466c4a122ccfa2bbc262774eadef",
+        "svg_filename": "anatomically-correct-medical-illustration-of-renal-cell-carcinoma-stage--575911-rough.svg",
+        "transparent_png_filename": "anatomically-correct-medical-illustration-of-renal-cell-carcinoma-stage--575911-rough-transparent.png",
+        "conversion_archetype": "kidney-stage",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1126073,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-18T00:49:43.539Z",
+        "downloadedAt": "2026-07-25T15:38:49.862Z",
+        "filename": "0370-anatomically-correct-medical-illustration-of-renal-cell-carcinoma-stage-i-for-an.png",
+        "id": 575911,
+        "index": 370,
+        "name": "Anatomically correct medical illustration of renal cell carcinoma Stage I for an oncology textbook. Show both kidneys in anterior view with aorta and vena cava. Left kidney contains a primary tumor 7 cm or smaller \u2014 shown as an irregular dark brown/orange mass confined within the kidney capsule. Perirenal fatty tissue layer visible as a pale halo around the left kidney \u2014 not invaded. Right kidney unaffected \u2014 normal appearance. Include a ruler scale indicator showing \u22647 cm. Include a small size-reference inset showing a peach beside a ruler labeled '7 cm \u2014 approximately the size of a peach.' Labels: 'Primary Tumor \u2014 7 cm or smaller,' 'Perirenal fatty tissue \u2014 not invaded,' 'Right kidney \u2014 unaffected.' White background. Clean sans-serif font. Scientific oncology textbook.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/575911"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 1126073,
+        "sha256": "6e8f8fe41e834c9619c924792c95f04bac53466c4a122ccfa2bbc262774eadef",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0370-anatomically-correct-medical-illustration-of-renal-cell-carcinoma-stage-i-for-an.json",
+        "source_image_rel": "images/0370-anatomically-correct-medical-illustration-of-renal-cell-carcinoma-stage-i-for-an.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "kidney-stage archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "anatomically-correct-medical-illustration-of-renal-cell-carcinoma-stage--575915",
+        "reference_filename": "references/anatomically-correct-medical-illustration-of-renal-cell-carcinoma-stage--575915-reference.png",
+        "review_status": "approved",
+        "source_element_id": 575915,
+        "source_sha256": "1847d7522d72a1858d784b963c3124cba8ff8d0718f94b4375f8ca83767ba628",
+        "svg_filename": "anatomically-correct-medical-illustration-of-renal-cell-carcinoma-stage--575915-rough.svg",
+        "transparent_png_filename": "anatomically-correct-medical-illustration-of-renal-cell-carcinoma-stage--575915-rough-transparent.png",
+        "conversion_archetype": "kidney-stage",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1305868,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-18T00:52:24.951Z",
+        "downloadedAt": "2026-07-25T15:38:51.106Z",
+        "filename": "0371-anatomically-correct-medical-illustration-of-renal-cell-carcinoma-stage-iii-for-.png",
+        "id": 575915,
+        "index": 371,
+        "name": "Anatomically correct medical illustration of renal cell carcinoma Stage III for an oncology textbook. Anterior view showing both kidneys, vena cava, aorta, and adrenal gland. Left kidney affected \u2014 primary tumor any size, shown in cross-section revealing internal spread. Show four labeled invasion sites with dashed red arrows: a) Nearby lymph nodes \u2014 enlarged red nodes beside the kidney; b) Renal vein and vena cava \u2014 tumor thrombus extending into vessel shown in red; c) Urine-collecting structures \u2014 renal pelvis involvement; d) Perirenal fatty tissue \u2014 perinephric fat invaded, shown as red halo extending beyond kidney capsule. Right kidney unaffected \u2014 gray, normal. Label: 'Vena cava,' 'Adrenal gland,' 'Right kidney,' 'Primary Tumor (any size).' White background. Clean sans-serif font. Scientific oncology textbook",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/575915"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 1305868,
+        "sha256": "1847d7522d72a1858d784b963c3124cba8ff8d0718f94b4375f8ca83767ba628",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0371-anatomically-correct-medical-illustration-of-renal-cell-carcinoma-stage-iii-for-.json",
+        "source_image_rel": "images/0371-anatomically-correct-medical-illustration-of-renal-cell-carcinoma-stage-iii-for-.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "kidney-stage archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "anatomically-correct-medical-illustration-of-renal-cell-carcinoma-stage--575913",
+        "reference_filename": "references/anatomically-correct-medical-illustration-of-renal-cell-carcinoma-stage--575913-reference.png",
+        "review_status": "approved",
+        "source_element_id": 575913,
+        "source_sha256": "04a65e3373d2f10e9bf91d09cd55469aa9b330417a955b397da2fdd70eef2dec",
+        "svg_filename": "anatomically-correct-medical-illustration-of-renal-cell-carcinoma-stage--575913-rough.svg",
+        "transparent_png_filename": "anatomically-correct-medical-illustration-of-renal-cell-carcinoma-stage--575913-rough-transparent.png",
+        "conversion_archetype": "kidney-stage",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1170656,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-18T00:51:03.678Z",
+        "downloadedAt": "2026-07-25T15:38:52.008Z",
+        "filename": "0372-anatomically-correct-medical-illustration-of-renal-cell-carcinoma-stage-ii-for-a.png",
+        "id": 575913,
+        "index": 372,
+        "name": "Anatomically correct medical illustration of renal cell carcinoma Stage II for an oncology textbook. Same anterior kidney view as Stage I. Left kidney contains a primary tumor larger than 7 cm \u2014 same irregular mass shape but visibly larger, still confined within the kidney capsule. Perirenal fatty tissue not invaded. Right kidney unaffected. Include ruler scale showing >7 cm. Include size-reference inset with a peach beside a ruler labeled '7 cm \u2014 approximately the size of a peach.' Labels: 'Primary Tumor \u2014 larger than 7 cm,' 'Perirenal fatty tissue \u2014 not invaded,' 'Right kidney \u2014 unaffected.' White background. Clean sans-serif font. Scientific oncology textbook.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/575913"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 1170656,
+        "sha256": "04a65e3373d2f10e9bf91d09cd55469aa9b330417a955b397da2fdd70eef2dec",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0372-anatomically-correct-medical-illustration-of-renal-cell-carcinoma-stage-ii-for-a.json",
+        "source_image_rel": "images/0372-anatomically-correct-medical-illustration-of-renal-cell-carcinoma-stage-ii-for-a.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "kidney-stage archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "anatomically-correct-medical-illustration-of-renal-cell-carcinoma-stage--575917",
+        "reference_filename": "references/anatomically-correct-medical-illustration-of-renal-cell-carcinoma-stage--575917-reference.png",
+        "review_status": "approved",
+        "source_element_id": 575917,
+        "source_sha256": "a28d810bb3b207c69e17bc74be1feef28938bff45c6318bb02fce890fead886c",
+        "svg_filename": "anatomically-correct-medical-illustration-of-renal-cell-carcinoma-stage--575917-rough.svg",
+        "transparent_png_filename": "anatomically-correct-medical-illustration-of-renal-cell-carcinoma-stage--575917-rough-transparent.png",
+        "conversion_archetype": "kidney-stage",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1294775,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-18T00:54:02.733Z",
+        "downloadedAt": "2026-07-25T15:38:52.955Z",
+        "filename": "0373-anatomically-correct-medical-illustration-of-renal-cell-carcinoma-stage-iv-for-a.png",
+        "id": 575917,
+        "index": 373,
+        "name": "Anatomically correct medical illustration of renal cell carcinoma Stage IV for an oncology textbook. Two-part layout. Part A \u2014 Local Spread Beyond Fatty Tissue: show left kidney cross-section with primary tumor invading beyond perirenal fat, adrenal gland invaded above kidney, nearby lymph nodes affected shown as enlarged red nodes. Part B \u2014 Distant Metastasis: show a front-view human body silhouette with red dot metastasis markers at: brain, lungs (bilateral), liver, adrenal glands, distant lymph nodes, and bone. Dashed red lines connecting kidney origin to each metastatic site. Labels for all sites. White background. Clean sans-serif font. Scientific oncology textbook",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/575917"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 1294775,
+        "sha256": "a28d810bb3b207c69e17bc74be1feef28938bff45c6318bb02fce890fead886c",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0373-anatomically-correct-medical-illustration-of-renal-cell-carcinoma-stage-iv-for-a.json",
+        "source_image_rel": "images/0373-anatomically-correct-medical-illustration-of-renal-cell-carcinoma-stage-iv-for-a.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "colectomy archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "i-want-an-educational-diagram-to-explain-transverse-colectomy-with-anast-542861",
+        "reference_filename": "references/i-want-an-educational-diagram-to-explain-transverse-colectomy-with-anast-542861-reference.png",
+        "review_status": "approved",
+        "source_element_id": 542861,
+        "source_sha256": "d0540c59afffbf8df2671f97365ae370eb32f41d52e3d1ec4262b60bdd3249b4",
+        "svg_filename": "i-want-an-educational-diagram-to-explain-transverse-colectomy-with-anast-542861-rough.svg",
+        "transparent_png_filename": "i-want-an-educational-diagram-to-explain-transverse-colectomy-with-anast-542861-rough-transparent.png",
+        "conversion_archetype": "colectomy",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1142697,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-04T16:40:26.529Z",
+        "downloadedAt": "2026-07-25T15:38:54.777Z",
+        "filename": "0375-i-want-an-educational-diagram-to-explain-transverse-colectomy-with-anastomosis-c.png",
+        "id": 542861,
+        "index": 375,
+        "name": "I want an educational diagram to explain transverse colectomy with anastomosis clearly in my cancer surgery chapter. Here is the description: 'Three-panel drawing showing colon cancer surgery with anastomosis. First panel shows the area of the colon with cancer. Middle panel shows the cancer and nearby tissue removed. Last panel shows the cut ends of the colon joined. Part of the colon containing the cancer and nearby healthy tissue is removed, and then the cut ends of the colon are joined.' I need a three-panel medical illustration in realistic anatomical style \u2014 color, detailed, close to NCI medical illustration quality. Panel 1: show the full large intestine (ascending, transverse, descending colon and rectum) from the front in warm anatomical pink-red tones. Show a tumor mass in the transverse colon \u2014 label 'Cancer.' Panel 2: show the same colon with the cancerous segment and nearby tissue removed \u2014 show the two open cut ends of the transverse colon \u2014 label 'Cancer and nearby tissue removed.' Panel 3: show the colon with the two cut ends surgically joined \u2014 label 'Cut ends of colon joined.' Connect all three panels with left-to-right arrows. Realistic anatomical color illustration. White background. Clean sans-serif labels. Scientific oncology textbook style",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/542861"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 1142697,
+        "sha256": "d0540c59afffbf8df2671f97365ae370eb32f41d52e3d1ec4262b60bdd3249b4",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0375-i-want-an-educational-diagram-to-explain-transverse-colectomy-with-anastomosis-c.json",
+        "source_image_rel": "images/0375-i-want-an-educational-diagram-to-explain-transverse-colectomy-with-anastomosis-c.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "gene-regulation archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "i-want-an-educational-diagram-to-explain-ras-mutations-clearly-in-my-can-549050",
+        "reference_filename": "references/i-want-an-educational-diagram-to-explain-ras-mutations-clearly-in-my-can-549050-reference.png",
+        "review_status": "approved",
+        "source_element_id": 549050,
+        "source_sha256": "b962af2bfcca74d78d9fbbd35c767ed70595be5676effdf0f17a6499efe920de",
+        "svg_filename": "i-want-an-educational-diagram-to-explain-ras-mutations-clearly-in-my-can-549050-rough.svg",
+        "transparent_png_filename": "i-want-an-educational-diagram-to-explain-ras-mutations-clearly-in-my-can-549050-rough-transparent.png",
+        "conversion_archetype": "gene-regulation",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1017571,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-06T17:44:23.904Z",
+        "downloadedAt": "2026-07-25T15:39:05.378Z",
+        "filename": "0386-i-want-an-educational-diagram-to-explain-ras-mutations-clearly-in-my-cancer-biol.png",
+        "id": 549050,
+        "index": 386,
+        "name": "I want an educational diagram to explain RAS mutations clearly in my cancer biology textbook in the oncogenes chapter. Here is the subsection text: 'The major hot spots for activating RAS mutations are all located in the regions of the protein that are near the bound guanine nucleotide, particularly in proximity to the nucleotide phosphate groups.' I need a two-panel flat vector diagram. Panel 1 labeled 'Normal RAS \u2014 GTPase Activity': show a RAS protein icon (rounded oval) with a bound GTP molecule \u2014 label 'GTP bound.' Show the phosphate groups (\u03b3, \u03b2, \u03b1) on the GTP labeled 'Phosphate groups.' Show a GTPase activity arrow converting GTP to GDP + Pi \u2014 label 'GTPase cleaves terminal phosphate.' Show downstream signaling arrow blocked \u2014 label 'Signal OFF.' Panel 2 labeled 'Mutant RAS \u2014 Constitutively Active': show the same RAS protein with GTP still bound. Highlight the mutation hotspot region near the phosphate groups with a red starburst or marker \u2014 label 'Mutation hotspot \u2014 near phosphate groups of guanine nucleotide' with specific residue labels: 'Codon 12,' 'Codon 13,' 'Codon 61.' Show GTPase activity blocked \u2014 red X over the cleavage arrow \u2014 label 'GTPase activity lost \u2014 GTP not hydrolyzed.' Show downstream signaling arrow active \u2014 label 'Signal permanently ON \u2014 uncontrolled proliferation.' Connect both panels with a center dividing line. Label: 'RAS protein,' 'GTP,' 'GDP,' 'Phosphate groups,' 'Mutation hotspot,' 'GTPase.' Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/549050"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 1017571,
+        "sha256": "b962af2bfcca74d78d9fbbd35c767ed70595be5676effdf0f17a6499efe920de",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0386-i-want-an-educational-diagram-to-explain-ras-mutations-clearly-in-my-cancer-biol.json",
+        "source_image_rel": "images/0386-i-want-an-educational-diagram-to-explain-ras-mutations-clearly-in-my-cancer-biol.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "gene-amplification archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "i-want-an-educational-diagram-to-explain-oncogene-amplification-clearly--549063",
+        "reference_filename": "references/i-want-an-educational-diagram-to-explain-oncogene-amplification-clearly--549063-reference.png",
+        "review_status": "approved",
+        "source_element_id": 549063,
+        "source_sha256": "ebcf6bdb59d9bc7db336403789a994134be847cd9383a4454df040bb4cfec70c",
+        "svg_filename": "i-want-an-educational-diagram-to-explain-oncogene-amplification-clearly--549063-rough.svg",
+        "transparent_png_filename": "i-want-an-educational-diagram-to-explain-oncogene-amplification-clearly--549063-rough-transparent.png",
+        "conversion_archetype": "gene-amplification",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1058493,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-06T17:48:45.252Z",
+        "downloadedAt": "2026-07-25T15:39:06.382Z",
+        "filename": "0387-i-want-an-educational-diagram-to-explain-oncogene-amplification-clearly-in-my-ca.png",
+        "id": 549063,
+        "index": 387,
+        "name": "I want an educational diagram to explain oncogene amplification clearly in my cancer biology textbook in the oncogenes chapter. Here is the subsection text: 'Oncogene amplification is the expansion in copy number of a gene within the genome of a cell.' I need a two-panel flat vector diagram. Panel 1 labeled 'Normal Gene Copy Number': show a flat chromosome icon with a single colored band representing an oncogene \u2014 label 'Oncogene \u2014 2 copies (normal).' Show a simple cell outline with the chromosome inside \u2014 label 'Normal gene dosage.' Show a single downward arrow to a protein output icon \u2014 label 'Normal protein level \u2192 controlled signaling.' Panel 2 labeled 'Gene Amplification': show the same chromosome with multiple repeated colored bands stacked \u2014 label '10\u2013100+ copies.' Add a bracket beside the amplified bands \u2014 label 'Amplified region \u2014 expansion of gene copy number within genome.' Show multiple downward arrows to many protein output icons \u2014 label 'Overexpressed protein \u2192 uncontrolled signaling \u2192 cancer.' Add a small inset showing two forms of amplification: a double minute chromosome icon labeled 'Double minutes (extrachromosomal)' and a homogeneously staining region on a chromosome \u2014 label 'Homogeneously staining region (HSR).' Connect both panels with a center arrow labeled 'Amplification.' Label: 'Oncogene,' 'Gene copies,' 'Amplified region,' 'Double minutes,' 'HSR,' 'Protein overexpression.' Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/549063"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 1058493,
+        "sha256": "ebcf6bdb59d9bc7db336403789a994134be847cd9383a4454df040bb4cfec70c",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0387-i-want-an-educational-diagram-to-explain-oncogene-amplification-clearly-in-my-ca.json",
+        "source_image_rel": "images/0387-i-want-an-educational-diagram-to-explain-oncogene-amplification-clearly-in-my-ca.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "membrane-receptor archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "i-want-an-educational-diagram-to-explain-normal-ras-function-clearly-in--549077",
+        "reference_filename": "references/i-want-an-educational-diagram-to-explain-normal-ras-function-clearly-in--549077-reference.png",
+        "review_status": "approved",
+        "source_element_id": 549077,
+        "source_sha256": "9f12e5d82df07640fdf5aa750fda3ec414e542877e2c5071a5c6fa9aefc666b3",
+        "svg_filename": "i-want-an-educational-diagram-to-explain-normal-ras-function-clearly-in--549077-rough.svg",
+        "transparent_png_filename": "i-want-an-educational-diagram-to-explain-normal-ras-function-clearly-in--549077-rough-transparent.png",
+        "conversion_archetype": "membrane-receptor",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1201942,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-06T17:53:58.837Z",
+        "downloadedAt": "2026-07-25T15:39:07.288Z",
+        "filename": "0388-i-want-an-educational-diagram-to-explain-normal-ras-function-clearly-in-my-cance.png",
+        "id": 549077,
+        "index": 388,
+        "name": "I want an educational diagram to explain normal RAS function clearly in my cancer biology textbook in the oncogenes chapter. Here is the subsection text: 'Ras is one such oncogene product that helps to relay signals by acting as a switch. When receptors on the cell surface are stimulated by a hormone, Ras is switched on and transduces signals that tell the cell to grow. If the cell-surface receptor is not stimulated, Ras is not activated and so the pathway that results in cell growth is not initiated. Ras helps to broadcast signals from the cell surface to other parts of the cell. It is often required when receptor tyrosine kinases signal to the nucleus to stimulate cell proliferation or differentiation by altering gene expression. The Ras proteins play a key role in mitogenic signaling by coupling growth factor receptors to activation of the Raf protein-serine/threonine kinase, which initiates a protein kinase cascade.' I need a two-panel flat vector diagram. Panel 1 labeled 'RAS OFF \u2014 No Growth Factor': show a cell membrane with an unstimulated receptor tyrosine kinase on the surface \u2014 label 'RTK \u2014 unstimulated.' Show RAS protein below the membrane in inactive GDP-bound state \u2014 label 'RAS-GDP \u2014 inactive.' No downstream signaling \u2014 show a blocked arrow to nucleus \u2014 label 'No proliferation signal.' Panel 2 labeled 'RAS ON \u2014 Growth Factor Present': show the same cell membrane with a growth factor/hormone binding the RTK \u2014 label 'Growth factor binds RTK.' Show RAS switching to active GTP-bound state \u2014 label 'RAS-GTP \u2014 active.' Show a downstream signaling cascade: RAS \u2192 RAF (protein-serine/threonine kinase) \u2014 label 'RAF activated.' Arrow from RAF continuing down through a kinase cascade \u2014 label 'Protein kinase cascade.' Final arrow to nucleus \u2014 label 'Gene expression altered \u2192 cell proliferation / differentiation.' Connect both panels with a center dividing line. Label: 'RTK,' 'Growth factor,' 'RAS-GDP,' 'RAS-GTP,' 'RAF,' 'Nucleus,' 'Kinase cascade.' Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/549077"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 1201942,
+        "sha256": "9f12e5d82df07640fdf5aa750fda3ec414e542877e2c5071a5c6fa9aefc666b3",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0388-i-want-an-educational-diagram-to-explain-normal-ras-function-clearly-in-my-cance.json",
+        "source_image_rel": "images/0388-i-want-an-educational-diagram-to-explain-normal-ras-function-clearly-in-my-cance.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "membrane-receptor archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "i-want-an-educational-diagram-to-explain-the-function-of-tyrosine-kinase-549091",
+        "reference_filename": "references/i-want-an-educational-diagram-to-explain-the-function-of-tyrosine-kinase-549091-reference.png",
+        "review_status": "approved",
+        "source_element_id": 549091,
+        "source_sha256": "55e9f881c9515c2a3f4bed741a9cc07718d5ebe6382376cc0dd8d26469b8d0ad",
+        "svg_filename": "i-want-an-educational-diagram-to-explain-the-function-of-tyrosine-kinase-549091-rough.svg",
+        "transparent_png_filename": "i-want-an-educational-diagram-to-explain-the-function-of-tyrosine-kinase-549091-rough-transparent.png",
+        "conversion_archetype": "membrane-receptor",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1118274,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-06T17:59:01.897Z",
+        "downloadedAt": "2026-07-25T15:39:08.230Z",
+        "filename": "0389-i-want-an-educational-diagram-to-explain-the-function-of-tyrosine-kinase-inhibit.png",
+        "id": 549091,
+        "index": 389,
+        "name": "I want an educational diagram to explain the function of tyrosine kinase inhibitors clearly in my cancer biology textbook in the targeted therapy chapter. Here is the subsection text: 'Tyrosine kinase inhibitors (TKI) are a group of pharmacologic agents that disrupt the signal transduction pathways of protein kinases by several modes of inhibition.' I need a two-panel flat vector diagram. Panel 1 labeled 'Normal RTK Signaling \u2014 No TKI': show a cell membrane with a receptor tyrosine kinase (RTK) spanning it \u2014 label 'RTK.' Show a growth factor binding the extracellular domain \u2014 label 'Growth factor.' Show the intracellular kinase domain active with phosphorylation symbols (P) \u2014 label 'Kinase domain \u2014 active.' Show a downstream signaling cascade with arrows \u2014 label 'RAS \u2192 RAF \u2192 MEK \u2192 ERK.' Final arrow to nucleus \u2014 label 'Gene expression \u2192 cell proliferation.' Panel 2 labeled 'RTK Signaling Blocked \u2014 TKI Present': show the same RTK with growth factor bound at the top. Show a TKI molecule (small colored hexagon) occupying the ATP binding site of the kinase domain \u2014 label 'TKI blocks ATP binding site.' Kinase domain shown inactive \u2014 label 'Kinase domain \u2014 blocked.' Show downstream cascade interrupted with red X \u2014 label 'Signal transduction disrupted.' No arrow reaches nucleus \u2014 label 'Proliferation halted.' Add a small inset box showing three modes of inhibition as simple icons: 'Competitive ATP binding,' 'Allosteric inhibition,' 'Covalent binding.' Connect panels with a center dividing line. Label: 'RTK,' 'Growth factor,' 'TKI,' 'ATP binding site,' 'Kinase domain,' 'Downstream cascade,' 'Nucleus.' Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/549091"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 1118274,
+        "sha256": "55e9f881c9515c2a3f4bed741a9cc07718d5ebe6382376cc0dd8d26469b8d0ad",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0389-i-want-an-educational-diagram-to-explain-the-function-of-tyrosine-kinase-inhibit.json",
+        "source_image_rel": "images/0389-i-want-an-educational-diagram-to-explain-the-function-of-tyrosine-kinase-inhibit.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "epigenetics archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "scientific-educational-diagram-illustrating-histone-modifications-and-ep-549826",
+        "reference_filename": "references/scientific-educational-diagram-illustrating-histone-modifications-and-ep-549826-reference.png",
+        "review_status": "approved",
+        "source_element_id": 549826,
+        "source_sha256": "905e338031267811f7ede79d85ab76c0998f046b61daf461b9d15e6d4be58776",
+        "svg_filename": "scientific-educational-diagram-illustrating-histone-modifications-and-ep-549826-rough.svg",
+        "transparent_png_filename": "scientific-educational-diagram-illustrating-histone-modifications-and-ep-549826-rough-transparent.png",
+        "conversion_archetype": "epigenetics",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 191914,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-07T00:24:31.293Z",
+        "downloadedAt": "2026-07-25T15:39:09.190Z",
+        "filename": "0390-scientific-educational-diagram-illustrating-histone-modifications-and-epigenetic.png",
+        "id": 549826,
+        "index": 390,
+        "name": "Scientific educational diagram illustrating histone modifications and epigenetic silencing of tumor suppressor genes in cancer. Clean, textbook-style biological illustration on a white background. Show a central nucleosome with DNA double helix wrapped around histone octamer proteins. Label four numbered molecular mechanisms arranged around the nucleosome: (1) Ablation of transcription factor binding \u2014 show a transcription factor blocked or absent from a promoter region; (2) Overexpression of DNA methyltransferases \u2014 show DNMT enzymes adding methyl groups (CH3) to cytosine bases on the DNA strand; (3) Disruption of CTCF binding \u2014 show CTCF protein unable to bind its insulator sequence; (4) Elevation of EZH2 histone methyltransferase \u2014 show EZH2 adding H3K27me3 repressive methyl marks to histone tails. Use color-coded arrows and labels. Include a legend. ",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/549826"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 191914,
+        "sha256": "905e338031267811f7ede79d85ab76c0998f046b61daf461b9d15e6d4be58776",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0390-scientific-educational-diagram-illustrating-histone-modifications-and-epigenetic.json",
+        "source_image_rel": "images/0390-scientific-educational-diagram-illustrating-histone-modifications-and-epigenetic.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "epigenetics archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "show-a-dna-double-helix-wrapping-around-a-histone-octamer-protein-comple-549837",
+        "reference_filename": "references/show-a-dna-double-helix-wrapping-around-a-histone-octamer-protein-comple-549837-reference.png",
+        "review_status": "approved",
+        "source_element_id": 549837,
+        "source_sha256": "0ad74348b72fb4730f9a10e3ba519774fa9e46e7813db952fd9f88facc213ebf",
+        "svg_filename": "show-a-dna-double-helix-wrapping-around-a-histone-octamer-protein-comple-549837-rough.svg",
+        "transparent_png_filename": "show-a-dna-double-helix-wrapping-around-a-histone-octamer-protein-comple-549837-rough-transparent.png",
+        "conversion_archetype": "epigenetics",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 152972,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-07T00:30:09.212Z",
+        "downloadedAt": "2026-07-25T15:39:10.042Z",
+        "filename": "0391-show-a-dna-double-helix-wrapping-around-a-histone-octamer-protein-complex-label-.png",
+        "id": 549837,
+        "index": 391,
+        "name": "Show a DNA double helix wrapping around a histone octamer protein complex. Label the histone tails extending outward from the core. Include visible histone tail modifications shown as small colored circles or flags on the protruding tails ",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/549837"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 152972,
+        "sha256": "0ad74348b72fb4730f9a10e3ba519774fa9e46e7813db952fd9f88facc213ebf",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0391-show-a-dna-double-helix-wrapping-around-a-histone-octamer-protein-complex-label-.json",
+        "source_image_rel": "images/0391-show-a-dna-double-helix-wrapping-around-a-histone-octamer-protein-complex-label-.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "epigenetics archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "scientific-educational-diagram-showing-four-numbered-callout-panels-arra-549846",
+        "reference_filename": "references/scientific-educational-diagram-showing-four-numbered-callout-panels-arra-549846-reference.png",
+        "review_status": "approved",
+        "source_element_id": 549846,
+        "source_sha256": "14d8df6eaeb22bce3b00947ac26691bea9a903eab5a0a9580abf87597b519e77",
+        "svg_filename": "scientific-educational-diagram-showing-four-numbered-callout-panels-arra-549846-rough.svg",
+        "transparent_png_filename": "scientific-educational-diagram-showing-four-numbered-callout-panels-arra-549846-rough-transparent.png",
+        "conversion_archetype": "epigenetics",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1066585,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-07T00:35:37.406Z",
+        "downloadedAt": "2026-07-25T15:39:11.940Z",
+        "filename": "0393-scientific-educational-diagram-showing-four-numbered-callout-panels-arranged-in-.png",
+        "id": 549846,
+        "index": 393,
+        "name": "Scientific educational diagram showing four numbered callout panels arranged in a 2x2 grid on a white background, textbook style. Each panel illustrates one epigenetic silencing mechanism: Panel 1 \u2014 a transcription factor protein blocked or missing from a gene promoter region, labeled 'Ablation of Transcription Factor Binding'; Panel 2 \u2014 DNMT enzyme adding CH3 methyl groups to a DNA strand, labeled 'Overexpression of DNA Methyltransferases'; Panel 3 \u2014 a CTCF protein unable to bind its insulator DNA sequence, labeled 'Disruption of CTCF Binding'; Panel 4 \u2014 EZH2 enzyme depositing H3K27me3 repressive marks onto a histone tail, labeled 'Elevation of EZH2 Histone Methyltransferase'. include a legend",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/549846"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 1066585,
+        "sha256": "14d8df6eaeb22bce3b00947ac26691bea9a903eab5a0a9580abf87597b519e77",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0393-scientific-educational-diagram-showing-four-numbered-callout-panels-arranged-in-.json",
+        "source_image_rel": "images/0393-scientific-educational-diagram-showing-four-numbered-callout-panels-arranged-in-.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "apoptosis archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "single-panel-educational-diagram-for-undergraduate-cancer-biology-showin-616816",
+        "reference_filename": "references/single-panel-educational-diagram-for-undergraduate-cancer-biology-showin-616816-reference.png",
+        "review_status": "approved",
+        "source_element_id": 616816,
+        "source_sha256": "333b71fc6396260a4c1448423488f497d317c1a7fcfbf852bfff98cebbbc3596",
+        "svg_filename": "single-panel-educational-diagram-for-undergraduate-cancer-biology-showin-616816-rough.svg",
+        "transparent_png_filename": "single-panel-educational-diagram-for-undergraduate-cancer-biology-showin-616816-rough-transparent.png",
+        "conversion_archetype": "apoptosis",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 70044,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-06-04T01:44:08.142Z",
+        "downloadedAt": "2026-07-25T15:39:17.634Z",
+        "filename": "0399-single-panel-educational-diagram-for-undergraduate-cancer-biology-showing-p53-me.png",
+        "id": 616816,
+        "index": 399,
+        "name": "Single-panel educational diagram for undergraduate cancer biology showing p53-mediated apoptosis. At top, a broken DNA double helix in Sky Blue (#56B4E9). Arrow pointing down to a central p53 protein oval in Blue (#0072B2). From p53, draw four activation arrows in Bluish Green (#009E73): three pointing to pro-apoptotic target ovals BAX, NOXA, PUMA in Vermillion (#D55E00), and one pointing to a p21 oval in Orange (#E69F00). Show MDM2 as a separate oval connected by a curved Vermillion inhibitory arrow looping back to p53 (negative feedback). In a separate inset box in the lower corner, show the cancer state: p53 as a gray crossed-out oval with all downstream targets dimmed. Flat vector, white background, Okabe-Ito palette, unannotated, no text labels.\nNegative prompt: cytochrome c, apoptosome, caspase shapes, Bcl-2 oval, Bcl-XL, IAP structures, TRAIL, FADD, DISC complex, chromosomal diagram, drug molecule, nucleus detail, endoplasmic reticulum, text labels, words, gibberish letters, titles, captions, decorative borders, realistic 3D textures, plastic wrap effects, drop shadows, gradient backgrounds, photographic elements, non-standard arrows, dual-headed arrows, skeletal chemical structures, hand-drawn styles, sketch lines, human figures, colorful cell backgrounds, non-cellular debris, visual clutter, overlapping unaligned paths, fuzzy borders, watermarks, red-green color combinations, rainbow color scales, 3D perspective distortion.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/616816"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 70044,
+        "sha256": "333b71fc6396260a4c1448423488f497d317c1a7fcfbf852bfff98cebbbc3596",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0399-single-panel-educational-diagram-for-undergraduate-cancer-biology-showing-p53-me.json",
+        "source_image_rel": "images/0399-single-panel-educational-diagram-for-undergraduate-cancer-biology-showing-p53-me.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "membrane-receptor archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "image-01-a-cross-section-of-a-cell-membrane-shown-as-a-horizontal-band-a-633405",
+        "reference_filename": "references/image-01-a-cross-section-of-a-cell-membrane-shown-as-a-horizontal-band-a-633405-reference.png",
+        "review_status": "approved",
+        "source_element_id": 633405,
+        "source_sha256": "addb575a4f32fc10a10832b442f08e087a1a4ee64258f497b8b3314a4813880c",
+        "svg_filename": "image-01-a-cross-section-of-a-cell-membrane-shown-as-a-horizontal-band-a-633405-rough.svg",
+        "transparent_png_filename": "image-01-a-cross-section-of-a-cell-membrane-shown-as-a-horizontal-band-a-633405-rough-transparent.png",
+        "conversion_archetype": "membrane-receptor",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1937150,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-06-11T17:56:39.127Z",
+        "downloadedAt": "2026-07-25T15:39:30.178Z",
+        "filename": "0412-image-01-a-cross-section-of-a-cell-membrane-shown-as-a-horizontal-band-across-th.png",
+        "id": 633405,
+        "index": 412,
+        "name": "image 01 - A cross-section of a cell membrane shown as a horizontal band across the middle of the frame \u2014 the lipid bilayer rendered as two parallel lines with the membrane interior between them. A single receptor protein spans the membrane \u2014 a tall vertical structure. Above the membrane: the extracellular portion of the receptor, labeled \"ligand-binding domain.\" Below the membrane: the intracellular portion, labeled \"kinase domain \u2014 inactive.\" The receptor stands alone, no growth factor present, no second receptor nearby. A small label on the extracellular side: \"no growth factor \u2014 RTK inactive.\" Clean white background.\nimage 02 - Same cell membrane cross-section as Illustration 01. Now two receptor proteins are shown side by side in the membrane, identical in structure to Illustration 01. A growth factor molecule \u2014 a small rounded shape \u2014 is shown bound to the extracellular ligand-binding domain of each receptor, one per receptor, sitting in the binding pocket above the membrane. The two receptors are drawn close together, their extracellular domains touching or near-touching, labeled \"dimerization.\" Their intracellular kinase domains are shown below the membrane, now adjacent to each other. Clean white background.\nimage 03 - Same cell membrane cross-section. Same two receptors, dimerized, growth factors bound above the membrane as in Illustration 02. Below the membrane: the two intracellular kinase domains are now shown with phosphate group symbols \u2014 circled P \u2014 added to each, labeled \"phosphorylated \u2014 active.\" A small curved arrow between the two kinase domains indicates each is phosphorylating the other, labeled \"transphosphorylation.\" Clean white background.\nimage 04 - Same cell membrane cross-section. Same two receptors, dimerized, active, phosphorylated kinase domains below the membrane. From the intracellular kinase domains: a downward arrow leads into the cell interior, labeled \"cell growth pathway activated.\" Below that arrow: a simple representation of downstream signaling \u2014 a chain of two or three small shapes with arrows between them, leading to a final label \"cell proliferation.\" On the extracellular side: a second small panel or inset shows a single receptor alone with no growth factor, labeled \"growth factor leaves \u2014 RTK returns to inactive.\" Clean white background.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/633405"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1200,
+        "local_bytes": 1937150,
+        "sha256": "addb575a4f32fc10a10832b442f08e087a1a4ee64258f497b8b3314a4813880c",
+        "width": 1696
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0412-image-01-a-cross-section-of-a-cell-membrane-shown-as-a-horizontal-band-across-th.json",
+        "source_image_rel": "images/0412-image-01-a-cross-section-of-a-cell-membrane-shown-as-a-horizontal-band-across-th.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "membrane-receptor archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "landscape-1920-1080-clean-white-background-flat-professional-scientific--634154",
+        "reference_filename": "references/landscape-1920-1080-clean-white-background-flat-professional-scientific--634154-reference.png",
+        "review_status": "approved",
+        "source_element_id": 634154,
+        "source_sha256": "98bc8b80d11f80f96222b7a5fc601e453617bf9f837e02a2f81105dc4d864c78",
+        "svg_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--634154-rough.svg",
+        "transparent_png_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--634154-rough-transparent.png",
+        "conversion_archetype": "membrane-receptor",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1911445,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-06-12T00:35:01.101Z",
+        "downloadedAt": "2026-07-25T15:39:31.237Z",
+        "filename": "0413-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png",
+        "id": 634154,
+        "index": 413,
+        "name": "Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. A horizontal lipid-bilayer cell membrane band runs left-to-right across the middle; extracellular space above, cytoplasm below. TWO identical receptor tyrosine kinases sit side by side, paired (dimerized), each drawn with the same fixed three-part anatomy: a teal extracellular ligand-binding domain (a cup/pocket shape) above the membrane, labeled \"ligand-binding domain\"; a grey transmembrane segment crossing the membrane, labeled \"transmembrane\"; an orange intracellular kinase domain (a lobe) below the membrane, labeled \"kinase domain.\" A small purple growth-factor shape is docked into the extracellular cup of each receptor, bridging/pulling the two receptors together \u2014 labeled \"growth factor binds \u2192 dimerization.\" The two orange kinase lobes are brought together at the bottom and are firing: yellow burst/spark marks radiate from them and a downward arrow into the cytoplasm is labeled \"normal growth signal.\" A short curved arrow or bracket shows the two receptors pairing, labeled \"dimerize.\" No molecular structures. Fill the wide frame with the membrane spanning full width and the dimerized receptor pair centered.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/634154"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1200,
+        "local_bytes": 1911445,
+        "sha256": "98bc8b80d11f80f96222b7a5fc601e453617bf9f837e02a2f81105dc4d864c78",
+        "width": 1696
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0413-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.json",
+        "source_image_rel": "images/0413-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "membrane-receptor archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "landscape-1920-1080-clean-white-background-flat-professional-scientific--633911",
+        "reference_filename": "references/landscape-1920-1080-clean-white-background-flat-professional-scientific--633911-reference.png",
+        "review_status": "approved",
+        "source_element_id": 633911,
+        "source_sha256": "39517dfc75eae6aa666a037022a6a04f9e3ca63913590d1e6bcfe30d505c211f",
+        "svg_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--633911-rough.svg",
+        "transparent_png_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--633911-rough-transparent.png",
+        "conversion_archetype": "membrane-receptor",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1761592,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-06-11T21:05:08.687Z",
+        "downloadedAt": "2026-07-25T15:39:32.260Z",
+        "filename": "0414-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png",
+        "id": 633911,
+        "index": 414,
+        "name": "Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. Same horizontal lipid-bilayer membrane band, extracellular above, cytoplasm below. TWO identical receptor tyrosine kinases sit side by side, each with the same fixed anatomy (teal extracellular ligand-binding cup, grey transmembrane segment, orange intracellular kinase lobe). At the bottom, in the cytoplasm, a distinct red fusion-partner segment joins the two kinase domains together, clamping them into a pair, labeled \"fusion protein \u2014 forces dimerization.\" IMPORTANT: there is NO purple growth factor anywhere \u2014 the extracellular cups are empty. Despite no ligand, both orange kinase lobes are firing: yellow burst/spark marks radiate from both and a downward arrow into the cytoplasm is labeled \"constitutive signal \u2014 no growth factor.\" Small optional label near the fusion: \"(e.g. Tel/PDGFR)\". No molecular structures. Fill the wide frame.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/633911"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1200,
+        "local_bytes": 1761592,
+        "sha256": "39517dfc75eae6aa666a037022a6a04f9e3ca63913590d1e6bcfe30d505c211f",
+        "width": 1696
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0414-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.json",
+        "source_image_rel": "images/0414-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "gene-amplification archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "landscape-1920-1080-clean-white-background-flat-professional-scientific--634115",
+        "reference_filename": "references/landscape-1920-1080-clean-white-background-flat-professional-scientific--634115-reference.png",
+        "review_status": "approved",
+        "source_element_id": 634115,
+        "source_sha256": "201a9393d90fc4c6c0798c85fb2d57b06db6f0275d2e1fdc8eb3ca84b6f05309",
+        "svg_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--634115-rough.svg",
+        "transparent_png_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--634115-rough-transparent.png",
+        "conversion_archetype": "gene-amplification",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 2165538,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-06-11T23:39:54.943Z",
+        "downloadedAt": "2026-07-25T15:39:34.256Z",
+        "filename": "0416-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png",
+        "id": 634115,
+        "index": 416,
+        "name": "Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. Same horizontal lipid-bilayer membrane band, extracellular above, cytoplasm below. MANY identical receptor tyrosine kinases \u2014 six to eight of them \u2014 crowded densely along the membrane, all with the same fixed anatomy (teal extracellular cup, grey transmembrane segment, orange kinase lobe). Below the membrane, a small DNA/gene icon with multiple copies and an upward arrow, labeled \"gene amplification \u2192 overexpression.\" IMPORTANT: NO purple growth factor anywhere \u2014 all extracellular cups empty. Because the receptors are so crowded, their orange kinase lobes are firing: yellow burst/spark marks radiate from the cluster and a downward arrow into the cytoplasm is labeled \"constitutive signal \u2014 no growth factor.\" Small optional label: \"(e.g. erbB-2)\". No molecular structures. Fill the wide frame with a dense row of receptors.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/634115"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1200,
+        "local_bytes": 2165538,
+        "sha256": "201a9393d90fc4c6c0798c85fb2d57b06db6f0275d2e1fdc8eb3ca84b6f05309",
+        "width": 1696
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0416-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.json",
+        "source_image_rel": "images/0416-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png"
+      }
+    }
+  ]
+}

@@ -1,0 +1,439 @@
+{
+  "collection": "illustrae-icons-batch-002",
+  "style": "medium-rough monochrome vector",
+  "generated_at": "2026-07-25T18:34:58.664Z",
+  "icons": [
+    {
+      "derivative": {
+        "geometry_description": "Probe strand hybridized to nuclear transcripts, contrasted with low- and high-signal cells.",
+        "icon_id": "in-situ-hybridization",
+        "reference_filename": "references/in-situ-hybridization-reference.png",
+        "review_status": "approved",
+        "source_element_id": 383306,
+        "source_sha256": "155026d13cb048a96fb8789d910dbe72236ba4b0819db5918b7ad205998ceb55",
+        "svg_filename": "in-situ-hybridization-rough.svg",
+        "transparent_png_filename": "in-situ-hybridization-rough-transparent.png",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 768182,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-03-11T18:04:45.628Z",
+        "downloadedAt": "2026-07-25T15:33:08.619Z",
+        "filename": "0029-educational-diagram-illustrating-the-concept-of-in-situ-hybridization-ish-for-on.png",
+        "id": 383306,
+        "index": 29,
+        "name": "Educational diagram illustrating the concept of in situ hybridization (ISH) for oncogene detection. Show a two-panel diagram. Panel 1 labeled 'Normal Gene Expression \u2014 In Situ Hybridization Technique': show a schematic cell with a large nucleus. Inside the nucleus show a labeled DNA probe segment (shown as a colored strand) hybridizing to multiple RNA transcript copies shown as small black dots clustered inside the nucleus. Label 'Labeled DNA probe,' 'RNA transcripts,' 'Nucleus,' 'Cytoplasm.' Panel 2 labeled 'What ISH Reveals': show two cells side by side \u2014 left cell labeled 'Normal Cell' with moderate black dot count inside nucleus labeled 'Proto-oncogene active \u2014 normal expression level.' Right cell labeled 'Cancer Cell' with significantly higher black dot density inside nucleus labeled 'Oncogene activated \u2014 overexpression detected.' Add a small caption box: 'In situ hybridization identifies whether a gene is actively expressed in cells and helps detect activated oncogenes in cancer cells.' Flat vector diagram. White background. Scientific molecular biology textbook style. Clean educational labels. No decorative elements.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/383306"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 2048,
+        "local_bytes": 768182,
+        "sha256": "155026d13cb048a96fb8789d910dbe72236ba4b0819db5918b7ad205998ceb55",
+        "width": 2048
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0029-educational-diagram-illustrating-the-concept-of-in-situ-hybridization-ish-for-on.json",
+        "source_image_rel": "images/0029-educational-diagram-illustrating-the-concept-of-in-situ-hybridization-ish-for-on.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "DNA double helix progressing through nucleosomes and chromatin into a condensed chromosome.",
+        "icon_id": "dna-packaging",
+        "reference_filename": "references/dna-packaging-reference.png",
+        "review_status": "approved",
+        "source_element_id": 347860,
+        "source_sha256": "f9d70e324153ff2058fdcb49fb42677b8723ff7c78c96248bc584ca1fb05e378",
+        "svg_filename": "dna-packaging-rough.svg",
+        "transparent_png_filename": "dna-packaging-rough-transparent.png",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 720759,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-02-27T19:26:35.245Z",
+        "downloadedAt": "2026-07-25T15:33:12.917Z",
+        "filename": "0033-three-part-educational-scientific-diagram-showing-dna-structure-and-chromosomal-.png",
+        "id": 347860,
+        "index": 33,
+        "name": "Three-part educational scientific diagram showing DNA structure and chromosomal packaging. Flat vector. White background. Scientific molecular biology textbook style. Arial or Verdana minimum 11pt.  PART 1 \u2014 DNA DOUBLE HELIX: Part header: 'Part 1 \u2014 DNA Double Helix' Show a DNA double helix with RIGHT-HANDED helical twist \u2014 clockwise rotation when viewed from top. This is B-form DNA. Do not render a left-handed or mirror-image helix. Two polynucleotide backbone strands rendered as alternating sugar-phosphate units running antiparallel \u2014 one strand runs top-to-bottom (5' to 3'), the other runs bottom-to-top (3' to 5'). Label strand directionality: '5' \u2192 3'' on left strand, '3' \u2192 5'' on right strand. Backbone labels with leader lines:  'Deoxyribose Sugar' pointing to a pentagon sugar unit on the backbone 'Phosphate Group' pointing to a circular phosphate unit on the backbone  Show four base pairs in the interior of the helix \u2014 two A-T pairs and two G-C pairs: A-T base pair: Adenine (larger purine \u2014 show as two-ring structure, color: deep blue) paired with Thymine (smaller pyrimidine \u2014 show as one-ring structure, color: pale orange). Connect with EXACTLY TWO dashed lines between the bases. Label: 'A \u2014 T (2 hydrogen bonds).' G-C base pair: Guanine (larger purine \u2014 two-ring structure, color: deep green) paired with Cytosine (smaller pyrimidine \u2014 one-ring structure, color: pale yellow). Connect with EXACTLY THREE dashed lines between the bases. Label: 'G \u2014 C (3 hydrogen bonds).' Color coding legend box for bases:  A = deep blue T = pale orange G = deep green C = pale yellow  Scale indicator below Part 1: '2 nm diameter'  PART 2 \u2014 NUCLEOSOME: Part header: 'Part 2 \u2014 Nucleosome' Show a single nucleosome core particle:  Central histone octamer: show as a cylindrical disc (viewed slightly from above at an angle \u2014 flat vector representation). The octamer consists of exactly 8 histone proteins arranged symmetrically. Label: 'Histone Octamer (8 proteins: 2\u00d7 H2A, 2\u00d7 H2B, 2\u00d7 H3, 2\u00d7 H4).' DNA strand: show wrapping around the histone octamer approximately 1.65 times (show the DNA strand entering from the left, wrapping around the disc, and exiting to the right). Label the wrapping DNA strand: 'DNA strand \u2014 146\u2013147 base pairs.' Show a short length of unwrapped DNA extending from each side of the nucleosome labeled 'Linker DNA.' Label the entire structure: 'Nucleosome Core Particle'  Scale indicator below Part 2: '11 nm diameter'  PART 3 \u2014 CHROMATIN TO CHROMOSOME (COMPACTION PATHWAY): Part header: 'Part 3 \u2014 Chromatin to Chromosome' Show four stages of progressive compaction arranged left to right with rightward arrows between each stage: Stage 1 \u2014 Nucleosome beads on a string: Show 4\u20135 nucleosome discs connected by linker DNA strands \u2014 appearing as 'beads on a string.' Label: 'Nucleosomes \u2014 11 nm fiber.' This must visually match the nucleosome shown in Part 2. Stage 2 \u2014 Chromatin fiber (30 nm): Show the beads-on-a-string coiled into a thicker, more compact solenoid or zigzag fiber. The individual nucleosomes should still be faintly visible but compressed into a thicker structure. Label: 'Chromatin Fiber \u2014 30 nm.' Stage 3 \u2014 Condensed chromatin loops: Show the 30 nm fiber organized into large loops extending from a central protein scaffold axis. The loops create a much wider, denser structure. Label: 'Condensed Chromatin Loops \u2014 300 nm.' Stage 4 \u2014 Condensed chromosome: Show a classic X-shaped mitotic chromosome with two sister chromatids joined at the centromere. Clearly visible chromatid arms. Label: 'Condensed Chromosome \u2014 1400 nm.' Label 'Centromere' at the junction point. Label 'Sister Chromatids' on the two arms. Full-width horizontal scale bar beneath all four compaction stages: Left end label: '2 nm (DNA double helix)' Right end label: '1400 nm (Condensed chromosome)' Arrow direction: left to right Arrow label above: 'Progressive Compaction \u2014 DNA to Chromosome'  CONNECTING ELEMENT: A vertical left-to-right flow connecting all three parts: Small arrow from Part 1 (DNA helix) to Part 2 (Nucleosome) labeled 'Wraps around histones' Small arrow from Part 2 (Nucleosome) to Part 3 (Compaction) labeled 'Coils and condenses'  STYLE: Flat vector. White background. No 3D render. No gloss. No drop shadows. No decorative elements. Base color coding: A = deep blue, T = pale orange, G = deep green, C = pale yellow. Histone octamer: warm gray. DNA backbone strands: dark navy alternating sugar-phosphate units. Font: Arial or Verdana minimum 11pt. Footer: 'Educational illustration only. Not for diagnostic use.' --no left-handed DNA helix, no A-G or T-C base pairing, no uniform hydrogen bond counts A-T and G-C, no histone count other than 8, no fabricated scale values, no collapsed compaction stages, no mirror-image double helix, no 3D render, no gloss\"",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/347860"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 2048,
+        "local_bytes": 720759,
+        "sha256": "f9d70e324153ff2058fdcb49fb42677b8723ff7c78c96248bc584ca1fb05e378",
+        "width": 2048
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0033-three-part-educational-scientific-diagram-showing-dna-structure-and-chromosomal-.json",
+        "source_image_rel": "images/0033-three-part-educational-scientific-diagram-showing-dna-structure-and-chromosomal-.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "Y-shaped replication fork with continuous leading strand and discontinuous lagging fragments.",
+        "icon_id": "dna-replication-fork",
+        "reference_filename": "references/dna-replication-fork-reference.png",
+        "review_status": "approved",
+        "source_element_id": 347964,
+        "source_sha256": "737472b8e69db3fc9f5fc7fa4a92ee386b5d5081497402a0f6b030c36adb471c",
+        "svg_filename": "dna-replication-fork-rough.svg",
+        "transparent_png_filename": "dna-replication-fork-rough-transparent.png",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 2337166,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-02-27T19:55:05.940Z",
+        "downloadedAt": "2026-07-25T15:33:15.140Z",
+        "filename": "0035-educational-molecular-biology-diagram-showing-the-dna-replication-fork-flat-vect.png",
+        "id": 347964,
+        "index": 35,
+        "name": "Educational molecular biology diagram showing the DNA replication fork. Flat vector. White background. Scientific textbook style. Arial or Verdana minimum 11pt.  OVERALL STRUCTURE \u2014 Y-SHAPED REPLICATION FORK: The diagram is oriented horizontally. On the far left: the parental double helix shown as two intertwined strands (right-handed B-form, clockwise twist \u2014 do NOT render left-handed helix). The double helix opens rightward into a Y-shape at the replication fork junction. The two unwound template strands extend to the upper right (leading strand template) and lower right (lagging strand template). Far left label at the double helix: 'Origin of Replication' with a leftward bracket or marker.  HELICASE: Place helicase at the exact fork junction \u2014 the point where the double helix separates into two single-stranded template arms. Show helicase as a ring-shaped or oval protein complex surrounding the DNA at the fork point. Label: 'Helicase \u2014 breaks hydrogen bonds at replication fork.' Do not place helicase anywhere else on the diagram.  SINGLE-STRANDED BINDING PROTEINS (SSBs): On both the upper and lower single-stranded template regions between helicase and DNA polymerase, show multiple small oval or rectangular protein shapes bound to the single-stranded DNA. Label: 'Single-Stranded Binding Proteins (SSBs) \u2014 stabilize unwound template.' SSBs must appear on BOTH template strands.  LEADING STRAND (upper arm of Y-fork): Template strand runs 3'\u21925' (right to left away from fork \u2014 this is the template being read). New leading strand synthesized 5'\u21923' toward the fork \u2014 continuously, no gaps. Show the new strand as a solid colored line being synthesized in one continuous piece. Show DNA Polymerase III (in prokaryotes) as a large oval protein complex at the growing end of the leading strand. Label: 'DNA Polymerase \u2014 Leading Strand synthesis (continuous).' Show a short RNA primer at the 5' initiation end of the leading strand. Label: 'RNA Primer.' Directionality arrow on leading strand pointing toward fork: '5' \u2192 3'.'  LAGGING STRAND (lower arm of Y-fork): Template strand runs 5'\u21923' (away from fork \u2014 antiparallel to leading strand template). New lagging strand synthesized in Okazaki fragments \u2014 each fragment synthesized 5'\u21923' but in the direction AWAY from the replication fork. Show 3 to 4 Okazaki fragments as separate discontinuous segments on the lagging strand, each pointing away from the fork. Gaps visible between fragments. Each Okazaki fragment has a short RNA primer at its 5' end. Label one primer: 'RNA Primer.' Show one DNA Polymerase complex on the lagging strand actively synthesizing an Okazaki fragment. Label: 'DNA Polymerase \u2014 Lagging Strand synthesis (discontinuous).' Label the fragments: 'Okazaki Fragments \u2014 Prokaryotes: 1000\u20132000 nucleotides / Eukaryotes: 100\u2013200 nucleotides.' Directionality arrows on lagging strand fragments pointing away from fork: '5' \u2192 3'.' Label overall lagging strand direction: 'Lagging Strand \u2014 discontinuous synthesis.'  STRAND POLARITY SUMMARY: Add a small two-line annotation near the fork: 'Leading strand: synthesized continuously toward fork (5'\u21923')' 'Lagging strand: synthesized discontinuously away from fork (5'\u21923')'  PROOFREADING INSET (bottom right corner, inside clean bordered box): Inset header: 'DNA Polymerase Proofreading \u2014 3' Exonuclease Activity' Show four sequential steps left to right: Step 1: Short double-stranded DNA segment. One mismatched base pair shown \u2014 incorrect base labeled 'Mismatched Base (X)' with a red X marker. Label: 'Step 1 \u2014 Mismatch incorporated.' Step 2: Same segment. DNA polymerase shown pausing/reversing direction. Label: 'Step 2 \u2014 Polymerase detects mismatch.' Step 3: The mismatched base being excised \u2014 show it being removed with a curved arrow pointing away from the strand. Label: 'Step 3 \u2014 3'\u21925' exonuclease removes incorrect base.' Direction arrow: 3'\u21925' (this is the removal direction \u2014 opposite to synthesis). Step 4: Correct base inserted in place of the removed base. Synthesis arrow pointing 5'\u21923' resuming. Label: 'Step 4 \u2014 Correct base inserted. Synthesis resumes 5'\u21923'.'  REQUIRED LABELS (all):  'Origin of Replication' (far left) 'Helicase \u2014 breaks hydrogen bonds' (fork junction) 'Single-Stranded Binding Proteins (SSBs)' (both template arms) 'DNA Polymerase \u2014 Leading Strand (continuous)' (upper arm) 'DNA Polymerase \u2014 Lagging Strand (discontinuous)' (lower arm) 'RNA Primer' (leading strand + one Okazaki fragment) 'Okazaki Fragments \u2014 1000\u20132000 nt (prokaryotes) / 100\u2013200 nt (eukaryotes)' (lower arm) '5'\u21923'' directional arrows on both strands 'Leading Strand' and 'Lagging Strand' strand labels Inset: all four proofreading step labels  STYLE: Flat vector. White background. No 3D. No gloss. No drop shadows. Parental helix: dark navy. New leading strand: deep blue. New lagging strand / Okazaki fragments: deep teal. RNA primers: orange segments. SSB proteins: warm gray ovals. DNA Polymerase: purple oval complex. Helicase: green ring at fork. Font: Arial or Verdana minimum 11pt. Footer: 'Educational illustration only. Not for diagnostic use.' --no left-handed DNA helix, no lagging strand synthesized toward fork, no uniform Okazaki fragment direction matching leading strand, no helicase placed away from fork junction, no SSBs absent from both strands, no proofreading exonuclease labeled 5' to 3', no fabricated Okazaki fragment sizes, no 3D render, no gloss\"**",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/347964"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 2337166,
+        "sha256": "737472b8e69db3fc9f5fc7fa4a92ee386b5d5081497402a0f6b030c36adb471c",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0035-educational-molecular-biology-diagram-showing-the-dna-replication-fork-flat-vect.json",
+        "source_image_rel": "images/0035-educational-molecular-biology-diagram-showing-the-dna-replication-fork-flat-vect.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "Controlled replication fork contrasted with stalled and broken forks under oncogenic stress.",
+        "icon_id": "replication-stress",
+        "reference_filename": "references/replication-stress-reference.png",
+        "review_status": "approved",
+        "source_element_id": 347992,
+        "source_sha256": "0c6bf9b5108a4b038ee8857f03bd19137207218327b21c930aaf1bc3c75e608d",
+        "svg_filename": "replication-stress-rough.svg",
+        "transparent_png_filename": "replication-stress-rough-transparent.png",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 2699249,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-02-27T20:07:24.308Z",
+        "downloadedAt": "2026-07-25T15:33:16.162Z",
+        "filename": "0036-two-panel-educational-molecular-oncology-diagram-showing-oncogene-induced-replic.png",
+        "id": 347992,
+        "index": 36,
+        "name": "Two-panel educational molecular oncology diagram showing oncogene-induced replication stress and genomic instability. Flat vector. White background. Scientific oncology textbook style. Arial or Verdana minimum 11pt.  PANEL 1 \u2014 NORMAL CELL REPLICATION: Panel header: 'Panel 1 \u2014 Normal Cell Replication' Panel background: very pale blue-green (#F0FAF5) Show the following elements inside Panel 1: CELL OUTLINE: Simple oval cell outline containing all elements below. CYCLIN-CDK ACTIVITY (top left of cell): Show cyclin-CDK complex as two interlocking circles labeled 'Cyclin-CDK' with a green checkmark. Label: 'Normal Cyclin-CDK activity \u2014 controlled.' Rb-E2F IN NORMAL STATE (center left of cell): Show Rb protein as a rectangular block labeled 'Rb (Active)' with an inhibition bar (flat-headed arrow) pointing to E2F labeled 'E2F (Inhibited).' Label the relationship: 'Rb blocks E2F \u2192 No forced proliferation.' NUCLEOTIDE POOL (center of cell): Show 8\u201310 filled green hexagonal or circular molecules clustered together. Label: 'Sufficient Nucleotide Pool' with a green checkmark. REPLICATION FORK (right side of cell): Show a smooth Y-shaped replication fork with both strands intact and continuous new strand synthesis progressing normally. No gaps, no breaks. Label: 'Normal Replication Fork \u2014 progressing smoothly.' CHROMOSOMES (bottom of cell): Show 2\u20133 intact, regular, undamaged chromosomes. Label: 'Stable Genome \u2014 intact chromosomes.' PANEL ANNOTATIONS (three green-labeled status boxes):  '\u2713 High-fidelity replication' '\u2713 Sufficient nucleotide pool' '\u2713 Stable genome'   CONNECTING ARROW (between panels): A bold downward arrow centered between Panel 1 and Panel 2. Label on arrow: 'Oncogene activation triggers this cascade' Arrow color: deep red/crimson Arrow style: thick, unambiguous, with arrowhead pointing from Panel 1 to Panel 2  PANEL 2 \u2014 ONCOGENE-INDUCED REPLICATION STRESS: Panel header: 'Panel 2 \u2014 Oncogene-Induced Replication Stress' Panel background: very pale crimson (#FFF0F0) Show the following elements inside Panel 2: ONCOGENE ACTIVATION (top left of cell): Show an activated oncogene signal as a starburst or highlighted gene element. Label: 'Oncogene Activation: Cyclin E overexpression / HPV-16 E6/E7' Exact label required \u2014 do not substitute other oncogene names. Arrow from oncogene pointing to Rb-E2F pathway below. Rb-E2F PATHWAY \u2014 DISRUPTED (center left of cell): Show three sequential steps connected by arrows: Step 1: Rb protein shown as a CROSSED-OUT or broken block. Label: 'Rb Inactivated (by Cyclin E / HPV-16 E7)' Step 2: E2F released \u2014 shown as E2F with an activation arrow. Label: 'E2F Released \u2192 Drives S-phase entry' Step 3: Arrow from E2F to a proliferation signal. Label: 'Forced cell proliferation \u2014 premature S-phase' Overall pathway label: 'Rb-E2F Pathway \u2014 Disrupted' NUCLEOTIDE POOL \u2014 DEPLETED (center of cell): Show 2\u20133 molecules only \u2014 mostly empty outlines or red X-marked molecules (sparse compared to Panel 1). Label: 'Depleted Nucleotide Pool' with a red warning symbol. Sub-label: 'Insufficient nucleotides for replication demand' STALLED REPLICATION FORK WITH DSB (right side of cell): Show a collapsed/stalled Y-shaped fork \u2014 the fork shape is partially collapsed, both strands are broken at the same position creating a visible gap. The break point must show BOTH strands severed simultaneously \u2014 not a single strand nick. Label the break with a red callout box: 'Double Strand Break (DSB)' Arrow pointing to DSB: 'Stalled fork collapses \u2192 DSB' Label overall: 'Stalled Replication Fork' GENOMIC INSTABILITY (bottom of cell): Show 2\u20133 chromosomes with visible abnormalities:  One chromosome with a translocation (two chromosome arms joined abnormally) One chromosome fragment (broken, shorter than normal) One extra chromosome suggesting aneuploidy Label: 'Genomic Instability' Sub-labels: 'Chromosome Rearrangements,' 'Aneuploidy'  PANEL ANNOTATIONS (three red-labeled status boxes):  '\u2717 Replication stress' '\u2717 Low nucleotide pool' '\u2717 Genomic instability \u2192 Leads to cancer'   REQUIRED LABELS (all): Panel 1: Cyclin-CDK, Rb (Active), E2F (Inhibited), Sufficient Nucleotide Pool, Normal Replication Fork, Stable Genome, three green status annotations Panel 2: Oncogene Activation: Cyclin E overexpression / HPV-16 E6/E7, Rb Inactivated, E2F Released, Forced cell proliferation, Depleted Nucleotide Pool, Stalled Replication Fork, Double Strand Break (DSB), Chromosome Rearrangements, Aneuploidy, three red status annotations Connecting arrow: 'Oncogene activation triggers this cascade' STYLE: Flat vector. White background. No 3D. No gloss. No drop shadows. Panel 1 elements: green checkmarks, blue-green tones, intact structures. Panel 2 elements: red X marks, crimson tones, broken/disrupted structures. DNA strands: dark navy. New synthesis strands: deep blue (Panel 1) / absent or broken red (Panel 2). Nucleotides: filled green hexagons (Panel 1) / empty red outlines (Panel 2). Font: Arial or Verdana minimum 11pt. Footer: 'Educational illustration only. Not for diagnostic use.' --no KRAS or BRAF or MYC substituted for Cyclin E or HPV-16 E6/E7, no HPV-18 substituted for HPV-16, no Rb shown as activating E2F, no single strand nick labeled as DSB, no identical nucleotide density both panels, no identical fork morphology both panels, no missing chromosome rearrangements Panel 2, no 3D render, no gloss\"**",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/347992"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 2699249,
+        "sha256": "0c6bf9b5108a4b038ee8857f03bd19137207218327b21c930aaf1bc3c75e608d",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0036-two-panel-educational-molecular-oncology-diagram-showing-oncogene-induced-replic.json",
+        "source_image_rel": "images/0036-two-panel-educational-molecular-oncology-diagram-showing-oncogene-induced-replic.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "Central genome-instability source branching toward beneficial variation and harmful damage.",
+        "icon_id": "genome-instability-double-edge",
+        "reference_filename": "references/genome-instability-double-edge-reference.png",
+        "review_status": "approved",
+        "source_element_id": 348053,
+        "source_sha256": "a588599ca089cafe3da1402f3994bcb490d661cdc4b634a60d8ac0adef5ed6f7",
+        "svg_filename": "genome-instability-double-edge-rough.svg",
+        "transparent_png_filename": "genome-instability-double-edge-rough-transparent.png",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 2729776,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-02-27T20:33:19.592Z",
+        "downloadedAt": "2026-07-25T15:33:18.268Z",
+        "filename": "0038-split-panel-educational-molecular-biology-diagram-showing-the-dual-nature-of-gen.png",
+        "id": 348053,
+        "index": 38,
+        "name": "Split-panel educational molecular biology diagram showing the dual nature of genome instability. Flat vector. White background. Scientific oncology textbook style. Arial or Verdana minimum 11pt.  TOP CONNECTING BAR (spanning full width of both panels): A solid horizontal bar at the very top of the diagram spanning the full width of both left and right panels combined. Bar background: deep navy blue. Bar text centered in white: 'Genome Instability \u2014 A Double-Edged Sword' Font: bold, minimum 14pt. Below the bar, two downward arrows \u2014 one pointing into the left panel labeled 'Beneficial,' one pointing into the right panel labeled 'Harmful.'  LEFT PANEL \u2014 BENEFICIAL MUTATION \u2014 EVOLUTION: Panel header: 'Beneficial Mutation \u2014 Evolution' Panel background: very pale green (#F0FAF0) Panel border: solid green Show the following sequence top to bottom inside the left panel: STEP 1 \u2014 ORIGINAL CELL: Show one simple oval cell with a DNA strand inside. On the DNA strand, show a single GREEN STAR marker. Label: 'Small DNA change \u2014 beneficial mutation' The green star must look positive \u2014 not alarming. STEP 2 \u2014 CELL DIVISION (downward arrow from Step 1): Show the original cell dividing into two daughter cells. Both daughter cells contain the green star mutation. The two daughter cells should appear slightly different from each other \u2014 one slightly larger, one slightly different shade of green \u2014 representing variation. Label: 'Daughter cells \u2014 slight variation' STEP 3 \u2014 POPULATION DIVERSITY (downward arrow from Step 2): Show 4\u20136 cells of varied sizes and slightly varied appearances \u2014 representing a diverse population. Green stars visible in all cells but cells show visible diversity. Label: 'Genetic diversity \u2014 variation in population' STEP 4 \u2014 NATURAL SELECTION OUTCOME: Show one cell highlighted with a gold/yellow border \u2014 the 'fittest' cell \u2014 larger than surrounding cells. Label: 'Natural selection \u2014 advantageous variant survives' PANEL BOTTOM ANNOTATION (green bordered box): '\u2713 Genetic diversity and natural selection' '\u2713 Driver of evolution' '\u2713 Beneficial outcome' NO RED ELEMENTS anywhere in left panel. NO warning symbols, NO broken DNA in left panel.  RIGHT PANEL \u2014 HARMFUL MUTATION \u2014 CANCER: Panel header: 'Harmful Mutation \u2014 Cancer' Panel background: very pale crimson (#FFF0F0) Panel border: solid crimson Show the following GENERATIONAL SEQUENCE top to bottom inside the right panel \u2014 error accumulation must increase with each generation: GENERATION 1 \u2014 INITIAL ERROR: Show one cell with a DNA strand. ONE red X mark on the DNA strand. Label: 'Generation 1 \u2014 DNA replication error' GENERATION 2 \u2014 ERROR PROPAGATION (downward arrow): Show two daughter cells dividing from Generation 1. Each daughter cell shows TWO red X marks. Label: 'Generation 2 \u2014 errors propagate and accumulate' GENERATION 3 \u2014 ACCUMULATION (downward arrow): Show one cell with THREE to FOUR red X marks on the DNA. Cell outline beginning to look irregular. Label: 'Generation 3 \u2014 multiple mutations accumulate' FINAL CELL \u2014 CANCER (downward arrow): Show one highly abnormal cell with FIVE or more red X marks. Cell outline irregular and enlarged. Multiple division arrows pointing outward in all directions \u2014 minimum 4 arrows. Label: 'Uncontrolled division \u2014 genomic instability leads to cancer' PANEL BOTTOM ANNOTATION (red bordered box): '\u2717 Replication errors accumulate' '\u2717 Genomic instability' '\u2717 Leads to cancer'  BOTTOM DIAGRAM \u2014 NORMAL DNA REPLICATION REFERENCE: Separate bordered box spanning the full width below both panels. Box header: 'Normal DNA Replication \u2014 For Reference' Box background: pale gray-white Box border: dashed gray Show three elements left to right: LEFT: One parent cell \u2014 oval, with DNA strand inside showing clean intact double helix. Label: 'Parent Cell \u2014 intact genome' CENTER: Cell division arrow pointing right. Label: 'Normal replication' RIGHT: Two identical daughter cells \u2014 both showing clean intact DNA, identical to parent cell. Label: 'Daughter cells \u2014 identical genetic blueprint preserved' Below this diagram, one annotation: 'Normal replication \u2014 genetic information faithfully preserved'  REQUIRED LABELS (all): Top bar: 'Genome Instability \u2014 A Double-Edged Sword' Left panel: all four step labels + three green annotations Right panel: all four generation labels + three red annotations Bottom box: parent cell, normal replication arrow, daughter cells, faithful preservation annotation Connecting elements: 'Beneficial' and 'Harmful' downward arrows from top bar STYLE: Flat vector. White background. No 3D. No gloss. No drop shadows. Left panel: green tones throughout. Star = positive symbol. Right panel: crimson/red tones throughout. X = negative symbol. DNA strands: dark navy. Font: Arial or Verdana minimum 11pt. Footer: 'Educational illustration only. Not for diagnostic use.' --no arrows labeled Mitosis, no red elements in left panel, no equal error counts across right panel generations, no missing top connecting bar, no missing bottom normal replication box, no green star rendered as warning symbol, no 3D render, no gloss, no red-green as sole colorblind distinction\"**",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/348053"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 2729776,
+        "sha256": "a588599ca089cafe3da1402f3994bcb490d661cdc4b634a60d8ac0adef5ed6f7",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0038-split-panel-educational-molecular-biology-diagram-showing-the-dual-nature-of-gen.json",
+        "source_image_rel": "images/0038-split-panel-educational-molecular-biology-diagram-showing-the-dual-nature-of-gen.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "Four circular tissue fields progressing from organized differentiated cells to chaotic undifferentiated cells.",
+        "icon_id": "tumor-grade-four-stage",
+        "reference_filename": "references/tumor-grade-four-stage-reference.png",
+        "review_status": "approved",
+        "source_element_id": 380243,
+        "source_sha256": "f8f03b8d1376fe2f280aac68544796cad06c30faccd25f475f99baca83dd8e50",
+        "svg_filename": "tumor-grade-four-stage-rough.svg",
+        "transparent_png_filename": "tumor-grade-four-stage-rough-transparent.png",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1843449,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-03-10T20:05:16.881Z",
+        "downloadedAt": "2026-07-25T15:33:23.189Z",
+        "filename": "0043-create-a-scientific-medical-illustration-titled-tumor-grade-showing-four-circula.png",
+        "id": 380243,
+        "index": 43,
+        "name": "Create a scientific medical illustration titled \"Tumor Grade\" showing four circular microscopy panels side by side, labeled Grade 1 through Grade 4, with a horizontal gradient arrow beneath them labeled from left to right: \"Well differentiated \u2192 Moderately differentiated \u2192 Poorly differentiated \u2192 Undifferentiated.\"\nAll panels should use a hematoxylin and eosin (H&E) staining color palette: pale pink cytoplasm and purple/violet nuclei on a light pink background.\n\nGrade 1 (Well Differentiated): Cells are elongated and organized in parallel rows, resembling normal tissue architecture. Nuclei are small, uniform, oval-shaped, and evenly spaced. Cell borders are clearly defined. Minimal nuclear-to-cytoplasmic ratio.\nGrade 2 (Moderately Differentiated): Cells are rounder and less organized than Grade 1, losing the parallel arrangement. Nuclei are slightly larger and more variable in size and shape. Some loss of tissue architecture. Moderate nuclear-to-cytoplasmic ratio.\nGrade 3 (Poorly Differentiated): Cells are predominantly round, densely packed, with significant loss of normal tissue structure. Nuclei are enlarged, irregular, and hyperchromatic (darker purple staining). High nuclear-to-cytoplasmic ratio. Prominent nucleoli may be visible.\nGrade 4 (Undifferentiated): Cells are highly pleomorphic \u2014 highly variable in size and shape. Nuclei are very large, irregular, and intensely hyperchromatic, nearly filling the cell. Extreme nuclear-to-cytoplasmic ratio. Complete loss of normal tissue architecture. Some cells may appear multinucleated.\n\nStyle: Clean, professional biomedical textbook illustration. Flat vector or digital painting style. White background. Bold sans-serif labels. Circular panels with thin dark borders. Include a right-pointing arrow beneath all four panels spanning the full width.\"",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/380243"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 1843449,
+        "sha256": "f8f03b8d1376fe2f280aac68544796cad06c30faccd25f475f99baca83dd8e50",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0043-create-a-scientific-medical-illustration-titled-tumor-grade-showing-four-circula.json",
+        "source_image_rel": "images/0043-create-a-scientific-medical-illustration-titled-tumor-grade-showing-four-circula.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "Five input channels converging through a funnel into one composite output with a feedback loop.",
+        "icon_id": "multi-channel-scoring-funnel",
+        "reference_filename": "references/multi-channel-scoring-funnel-reference.png",
+        "review_status": "approved",
+        "source_element_id": 325735,
+        "source_sha256": "4c03dc9bd20870f3b897ae815a434df8029d7ffe48b677fd57b2d91299959075",
+        "svg_filename": "multi-channel-scoring-funnel-rough.svg",
+        "transparent_png_filename": "multi-channel-scoring-funnel-rough-transparent.png",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 574246,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-02-20T04:59:24.304Z",
+        "downloadedAt": "2026-07-25T15:33:25.163Z",
+        "filename": "0045-multi-channel-ai-scoring-funnel-diagram-five-labeled-input-streams-converging-to.png",
+        "id": 325735,
+        "index": 45,
+        "name": "Multi-channel AI scoring funnel diagram, five labeled input streams converging to composite output node, historical training data loop shown as curved feedback arrow, flat vector scientific illustration, slate blue for input channels and deep charcoal for central engine node with coral accent for bias feedback loop, diffuse overcast lighting, symmetrical centered composition, all labels in sans-serif, technical diagram peer-review quality --v 6.1 --style raw --stylize 50 --no cinematic, vibrant, saturated, glow, neon, bokeh, plastic, 3D render artifacts",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/325735"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 2048,
+        "local_bytes": 574246,
+        "sha256": "4c03dc9bd20870f3b897ae815a434df8029d7ffe48b677fd57b2d91299959075",
+        "width": 2048
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0045-multi-channel-ai-scoring-funnel-diagram-five-labeled-input-streams-converging-to.json",
+        "source_image_rel": "images/0045-multi-channel-ai-scoring-funnel-diagram-five-labeled-input-streams-converging-to.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "Small round cells arranged radially around a filled neuropil core without a lumen.",
+        "icon_id": "homer-wright-pseudorosette",
+        "reference_filename": "references/homer-wright-pseudorosette-reference.png",
+        "review_status": "approved",
+        "source_element_id": 331767,
+        "source_sha256": "457760909fdf108ba25eee5e7d1308716bd99ad6b32b985f229e6c40b242aeda",
+        "svg_filename": "homer-wright-pseudorosette-rough.svg",
+        "transparent_png_filename": "homer-wright-pseudorosette-rough-transparent.png",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 2787921,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-02-22T19:14:30.505Z",
+        "downloadedAt": "2026-07-25T15:33:30.210Z",
+        "filename": "0050-histopathology-illustration-of-neuroblastoma-showing-homer-wright-pseudorosettes.png",
+        "id": 331767,
+        "index": 50,
+        "name": "Histopathology illustration of neuroblastoma showing Homer-Wright pseudorosettes. Small round blue cells arranged in a circular pattern around a central core of neuropil fibrils. No central lumen visible \u2014 this distinguishes it from true rosettes. High nuclear-to-cytoplasmic ratio. Hyperchromatic nuclei. Include one inset panel showing MYCN amplification as double-minute chromosomes in a schematic karyotype diagram. Label: 'Homer-Wright Pseudorosette,' 'Neuropil Core,' 'Small Round Blue Cells.' Scientific medical diagram style. High-contrast histopathology illustration. Clean flat vector aesthetic suitable for a digital oncology textbook. White background. Educational clarity over artistic rendering",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/331767"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 2787921,
+        "sha256": "457760909fdf108ba25eee5e7d1308716bd99ad6b32b985f229e6c40b242aeda",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0050-histopathology-illustration-of-neuroblastoma-showing-homer-wright-pseudorosettes.json",
+        "source_image_rel": "images/0050-histopathology-illustration-of-neuroblastoma-showing-homer-wright-pseudorosettes.png"
+      }
+    }
+  ]
+}

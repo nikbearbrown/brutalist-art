@@ -1,0 +1,1056 @@
+{
+  "collection": "illustrae-icons-batch-009",
+  "style": "medium-rough monochrome vector",
+  "generated_at": "2026-07-25T19:56:44.936Z",
+  "generator": "archetype-based Rough.js converter",
+  "icons": [
+    {
+      "derivative": {
+        "geometry_description": "p53-response archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "landscape-1920-1080-clean-white-background-flat-professional-scientific--674550",
+        "reference_filename": "references/landscape-1920-1080-clean-white-background-flat-professional-scientific--674550-reference.png",
+        "review_status": "approved",
+        "source_element_id": 674550,
+        "source_sha256": "e030abe061cc55bf61e36ef8be384727a07a0fc4177cb851d0e3229433ab829a",
+        "svg_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--674550-rough.svg",
+        "transparent_png_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--674550-rough-transparent.png",
+        "conversion_archetype": "p53-response",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1698009,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-07-01T20:13:54.848Z",
+        "downloadedAt": "2026-07-25T15:41:14.509Z",
+        "filename": "0520-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png",
+        "id": 674550,
+        "index": 520,
+        "name": "Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. ISOLATED single beat \u2014 almost empty frame, NOT the full pathway. Show ONLY: p53 (green, center-left) with a red MDM2 clamp on it, labeled \"p53\" and \"MDM2 \u2014 suppresses p53\"; a simple capsule drug icon binding/blocking the red MDM2 clamp, labeled \"MDM2 inhibitor\"; the MDM2 clamp now greyed/disabled, FREEING p53; a single bold green arrow firing from the freed p53 to a fragmenting cell icon on the right, labeled \"APOPTOSIS \u2014 cell death\" (green). A short label on the arrow: \"p53 restored \u2192 activated \u2192 apoptosis.\" NO death receptor, NO Bcl-2, NO IAPs, NO mitochondrion in the main illustration. Along the bottom of the frame ONLY, a compact summary strip of all four points: \"1 Bcl-2 \u2014 anti-apoptotic, inhibited \u00b7 2 IAPs \u2014 anti-apoptotic, inhibited \u00b7 3 death receptors \u2014 pro-apoptotic, activated \u00b7 4 p53/MDM2 \u2014 pro-apoptotic, restored.\" NO molecular/chemical structures. No caspases. Clean white space around the isolated p53 beat.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/674550"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1200,
+        "local_bytes": 1698009,
+        "sha256": "e030abe061cc55bf61e36ef8be384727a07a0fc4177cb851d0e3229433ab829a",
+        "width": 1696
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0520-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.json",
+        "source_image_rel": "images/0520-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "timeline archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "i-want-an-educational-diagram-to-explain-the-timeline-of-cancer-research-675187",
+        "reference_filename": "references/i-want-an-educational-diagram-to-explain-the-timeline-of-cancer-research-675187-reference.png",
+        "review_status": "approved",
+        "source_element_id": 675187,
+        "source_sha256": "169a31b35469033461c2835177e83e282eee23d72d7837f14d3069e5feafa38e",
+        "svg_filename": "i-want-an-educational-diagram-to-explain-the-timeline-of-cancer-research-675187-rough.svg",
+        "transparent_png_filename": "i-want-an-educational-diagram-to-explain-the-timeline-of-cancer-research-675187-rough-transparent.png",
+        "conversion_archetype": "timeline",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1102946,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-07-02T02:01:14.927Z",
+        "downloadedAt": "2026-07-25T15:41:15.556Z",
+        "filename": "0521-i-want-an-educational-diagram-to-explain-the-timeline-of-cancer-research-milesto.png",
+        "id": 675187,
+        "index": 521,
+        "name": "I want an educational diagram to explain the Timeline of Cancer Research Milestones clearly in my cancer book in Chapter 2. The section covers the historical progression of cancer understanding from ancient times to the modern genomic era. The diagram should be a horizontal chronological timeline showing six major milestones in order: Edwin Smith Papyrus (circa 1600 BCE, earliest known written record of cancer), Hippocrates and humoral theory (circa 400 BCE, first theoretical framework for disease), Rudolf Virchow and cell theory (1850s, cancer understood as a disease of cells), National Cancer Act (1971, formal declaration of the war on cancer), Human Genome Project (1990\u20132003, mapping the human genetic blueprint), and The Cancer Genome Atlas (2006 onward, systematic mapping of cancer-specific mutations). Each milestone should have a date label and a one-line descriptor. The target audience is higher undergraduate and early graduate students",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/675187"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 1102946,
+        "sha256": "169a31b35469033461c2835177e83e282eee23d72d7837f14d3069e5feafa38e",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0521-i-want-an-educational-diagram-to-explain-the-timeline-of-cancer-research-milesto.json",
+        "source_image_rel": "images/0521-i-want-an-educational-diagram-to-explain-the-timeline-of-cancer-research-milesto.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "timeline archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "i-want-an-educational-diagram-to-explain-the-four-stages-of-carcinogenes-675171",
+        "reference_filename": "references/i-want-an-educational-diagram-to-explain-the-four-stages-of-carcinogenes-675171-reference.png",
+        "review_status": "approved",
+        "source_element_id": 675171,
+        "source_sha256": "b5203c7306473e5d94feac326cf6de7a86836d3347a990f49ac6c8a8e7c77224",
+        "svg_filename": "i-want-an-educational-diagram-to-explain-the-four-stages-of-carcinogenes-675171-rough.svg",
+        "transparent_png_filename": "i-want-an-educational-diagram-to-explain-the-four-stages-of-carcinogenes-675171-rough-transparent.png",
+        "conversion_archetype": "timeline",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 211693,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-07-02T01:50:54.252Z",
+        "downloadedAt": "2026-07-25T15:41:16.437Z",
+        "filename": "0522-i-want-an-educational-diagram-to-explain-the-four-stages-of-carcinogenesis-clear.png",
+        "id": 675171,
+        "index": 522,
+        "name": "I want an educational diagram to explain The Four Stages of Carcinogenesis clearly in my cancer book in Chapter 2. The section covers how normal cells transform into malignant tumor cells through a stepwise succession of genetic changes over time, divided into four sequential stages: Initiation (irreversible DNA damage that creates a mutated but not yet cancerous cell), Promotion (expansion of initiated cells through enhanced proliferation or reduced apoptosis), Malignant Conversion (acquisition of the fully malignant phenotype), and Progression (increasingly aggressive characteristics and tumor growth). The diagram should show these four stages as a left-to-right linear sequence with clear labels and a brief descriptor under each stage, and include a timeline arrow beneath indicating that this process unfolds over years to decades. The target audience is higher undergraduate and early graduate students",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/675171"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 211693,
+        "sha256": "b5203c7306473e5d94feac326cf6de7a86836d3347a990f49ac6c8a8e7c77224",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0522-i-want-an-educational-diagram-to-explain-the-four-stages-of-carcinogenesis-clear.json",
+        "source_image_rel": "images/0522-i-want-an-educational-diagram-to-explain-the-four-stages-of-carcinogenesis-clear.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "pie archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "i-want-an-educational-diagram-to-explain-attributable-fractions-of-major-675220",
+        "reference_filename": "references/i-want-an-educational-diagram-to-explain-attributable-fractions-of-major-675220-reference.png",
+        "review_status": "approved",
+        "source_element_id": 675220,
+        "source_sha256": "b751f4705eb810376e8bbf5b580cba61479d5291627005a77319512d57d21fb4",
+        "svg_filename": "i-want-an-educational-diagram-to-explain-attributable-fractions-of-major-675220-rough.svg",
+        "transparent_png_filename": "i-want-an-educational-diagram-to-explain-attributable-fractions-of-major-675220-rough-transparent.png",
+        "conversion_archetype": "pie",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1218752,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-07-02T02:22:21.065Z",
+        "downloadedAt": "2026-07-25T15:41:19.339Z",
+        "filename": "0525-i-want-an-educational-diagram-to-explain-attributable-fractions-of-major-modifia.png",
+        "id": 675220,
+        "index": 525,
+        "name": "I want an educational diagram to explain Attributable Fractions of Major Modifiable Cancer Risk Factors clearly in my cancer book in Chapter 2. The diagram should be a pie chart with a prominent header statistic reading \"More than 90% of cancers are attributable to environmental and lifestyle factors.\" The pie should show six segments representing estimated attributable fractions of all cancers: Tobacco (~19%), Excess Body Fat and Physical Inactivity (~14%), Alcohol (~6%), Infectious Agents \u2014 HPV, HBV, H. pylori (~5%), Other Environmental and Occupational Exposures (~3%), and Non-Modifiable and Unknown Factors (~53%). Each slice should be labeled with the category name and percentage. The target audience is higher undergraduate and early graduate students",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/675220"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 1218752,
+        "sha256": "b751f4705eb810376e8bbf5b580cba61479d5291627005a77319512d57d21fb4",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": "prompt-similarity:a03da0911b9e",
+        "exact_duplicate_element_ids": [],
+        "heuristic_similarity_threshold": 0.92,
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": 675215,
+        "root_id": 675203
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0525-i-want-an-educational-diagram-to-explain-attributable-fractions-of-major-modifia.json",
+        "source_image_rel": "images/0525-i-want-an-educational-diagram-to-explain-attributable-fractions-of-major-modifia.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "p53-response archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "landscape-1920-1080-clean-white-background-flat-professional-scientific--676828",
+        "reference_filename": "references/landscape-1920-1080-clean-white-background-flat-professional-scientific--676828-reference.png",
+        "review_status": "approved",
+        "source_element_id": 676828,
+        "source_sha256": "1b79aec3cb8b254033343ca26cf3c92ce9eacd7354caa57a423ef4ca33399050",
+        "svg_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--676828-rough.svg",
+        "transparent_png_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--676828-rough-transparent.png",
+        "conversion_archetype": "p53-response",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 2114517,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-07-02T16:46:31.364Z",
+        "downloadedAt": "2026-07-25T15:41:21.337Z",
+        "filename": "0527-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png",
+        "id": 676828,
+        "index": 527,
+        "name": "Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. The fixed apoptosis backbone map, no drugs yet. Draw TWO soft tinted background zones to group the arms: a light zone on the LEFT labeled \"EXTRINSIC arm\" containing the death receptor, and a light zone in the CENTER-RIGHT labeled \"INTRINSIC arm\" containing the mitochondrion, p53/MDM2, and IAPs. In the extrinsic zone (top-left): a death receptor spanning a membrane band, labeled \"death receptor \u2014 DR4/DR5\" (green, pro-apoptotic), arrow pointing down/right. In the intrinsic zone: a mitochondrion shape with a red Bcl-2 block sitting on it, labeled \"Bcl-2 \u2014 anti-apoptotic\"; above it, p53 (green) with a red MDM2 clamp on it, labeled \"p53\" and \"MDM2 \u2014 suppresses p53\"; downstream of the mitochondrion, a red IAPs block restraining the path, labeled \"IAPs \u2014 anti-apoptotic.\" Both arms converge via arrows on a right-side endpoint: a fragmenting cell icon labeled \"APOPTOSIS \u2014 cell death\" (green). Mark the FOUR intervention points with small numbered flags 1\u20134 in the video's beat order (intrinsic first, extrinsic last): (1) Bcl-2, (2) IAPs, (3) p53/MDM2, (4) death receptor \u2014 but NO drugs acting yet. Add a small two-item color key in a corner: \"red = anti-apoptotic (drug inhibits) \u00b7 green = pro-apoptotic (drug activates).\" Red = anti-apoptotic proteins, green = pro-apoptotic proteins. The two arm zones make it obvious which arm is which. No molecular structures, no caspases. Fill the wide frame with the full map.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/676828"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1200,
+        "local_bytes": 2114517,
+        "sha256": "1b79aec3cb8b254033343ca26cf3c92ce9eacd7354caa57a423ef4ca33399050",
+        "width": 1696
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0527-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.json",
+        "source_image_rel": "images/0527-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "p53-response archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "landscape-1920-1080-clean-white-background-flat-professional-scientific--676836",
+        "reference_filename": "references/landscape-1920-1080-clean-white-background-flat-professional-scientific--676836-reference.png",
+        "review_status": "approved",
+        "source_element_id": 676836,
+        "source_sha256": "a2a06a490299781b9cc32a3fdc9735b64daa13c3695cc7460fcc5834771088de",
+        "svg_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--676836-rough.svg",
+        "transparent_png_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--676836-rough-transparent.png",
+        "conversion_archetype": "p53-response",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1766190,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-07-02T16:48:57.476Z",
+        "downloadedAt": "2026-07-25T15:41:22.382Z",
+        "filename": "0528-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png",
+        "id": 676836,
+        "index": 528,
+        "name": "Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. ISOLATED single beat \u2014 almost empty frame, NOT the full pathway. Show ONLY: a mitochondrion (center-left) with a red Bcl-2 block sitting on it, labeled \"Bcl-2 \u2014 anti-apoptotic\"; a simple capsule drug icon binding/blocking the Bcl-2 block, labeled \"BH3 mimetic\"; the Bcl-2 block now greyed/disabled; a single bold green arrow flowing from the mitochondrion PAST the disabled block to a fragmenting cell icon on the right, labeled \"APOPTOSIS \u2014 cell death\" (green). A short label on the green arrow: \"Bcl-2 inhibited \u2192 apoptosis proceeds.\" NO death receptor, NO p53/MDM2, NO IAPs in this panel \u2014 they are not part of this beat. NO molecular/chemical structures. No caspases. Lots of clean white space.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/676836"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1200,
+        "local_bytes": 1766190,
+        "sha256": "a2a06a490299781b9cc32a3fdc9735b64daa13c3695cc7460fcc5834771088de",
+        "width": 1696
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": "prompt-similarity:dfa530388435",
+        "exact_duplicate_element_ids": [],
+        "heuristic_similarity_threshold": 0.92,
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": 674538,
+        "root_id": 651312
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0528-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.json",
+        "source_image_rel": "images/0528-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "p53-response archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "landscape-1920-1080-clean-white-background-flat-professional-scientific--676860",
+        "reference_filename": "references/landscape-1920-1080-clean-white-background-flat-professional-scientific--676860-reference.png",
+        "review_status": "approved",
+        "source_element_id": 676860,
+        "source_sha256": "41e826341694a9be0dd833c4162effc5129e1b68f7fa37c91eb736f3bffdb58a",
+        "svg_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--676860-rough.svg",
+        "transparent_png_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--676860-rough-transparent.png",
+        "conversion_archetype": "p53-response",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1755746,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-07-02T17:00:31.829Z",
+        "downloadedAt": "2026-07-25T15:41:23.301Z",
+        "filename": "0529-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png",
+        "id": 676860,
+        "index": 529,
+        "name": "\nLandscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. ISOLATED single beat \u2014 almost empty frame, NOT the full pathway. Show ONLY: p53 (green, center-left) with a red MDM2 clamp on it, labeled \"p53\" and \"MDM2 \u2014 suppresses p53\"; a simple capsule drug icon binding/blocking the red MDM2 clamp, labeled \"MDM2 inhibitor\"; the MDM2 clamp now greyed/disabled, FREEING p53; a single bold green arrow firing from the freed p53 to the shared apoptosis endpoint on the right \u2014 a fragmenting cell icon labeled \"APOPTOSIS \u2014 cell death\" (green). A short label on the arrow: \"p53 restored \u2192 activated \u2192 apoptosis.\" NO death receptor, NO Bcl-2, NO IAPs, NO mitochondrion. NO molecular/chemical structures. No caspases. Lots of clean white space. IMPORTANT: draw the apoptosis endpoint (fragmenting green cell) at the SAME size, SAME position (right side), and SAME bright-green style as in every other panel \u2014 it is the shared destination.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/676860"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1200,
+        "local_bytes": 1755746,
+        "sha256": "41e826341694a9be0dd833c4162effc5129e1b68f7fa37c91eb736f3bffdb58a",
+        "width": 1696
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0529-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.json",
+        "source_image_rel": "images/0529-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "p53-response archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "landscape-1920-1080-clean-white-background-flat-professional-scientific--676875",
+        "reference_filename": "references/landscape-1920-1080-clean-white-background-flat-professional-scientific--676875-reference.png",
+        "review_status": "approved",
+        "source_element_id": 676875,
+        "source_sha256": "fff47bf2e198b4f7c9af8f698cf24cb1af6fcbeb55e8109b98396755ca05005c",
+        "svg_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--676875-rough.svg",
+        "transparent_png_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--676875-rough-transparent.png",
+        "conversion_archetype": "p53-response",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1720726,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-07-02T17:11:59.319Z",
+        "downloadedAt": "2026-07-25T15:41:24.248Z",
+        "filename": "0530-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png",
+        "id": 676875,
+        "index": 530,
+        "name": "\nLandscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. ISOLATED single beat \u2014 almost empty frame, NOT the full pathway. Show ONLY: a death receptor (green) spanning a short cell-membrane band at the upper-left, labeled \"death receptor \u2014 DR4/DR5\"; a simple ligand drug icon binding the receptor from outside the cell, labeled \"TRAIL agonist\"; the receptor now activated/glowing green; a single bold green arrow firing downward and right from the receptor to the shared apoptosis endpoint \u2014 a fragmenting cell icon labeled \"APOPTOSIS \u2014 cell death\" (green). A short label on the arrow: \"death receptor activated \u2192 apoptosis triggered.\" This is ACTIVATION, not inhibition. NO Bcl-2, NO IAPs, NO mitochondrion, NO p53/MDM2 in this panel. Along the bottom of the frame ONLY, a compact summary strip of all four points in the order shown: \"1 Bcl-2 \u2014 anti-apoptotic, inhibited \u00b7 2 IAPs \u2014 anti-apoptotic, inhibited \u00b7 3 p53/MDM2 \u2014 pro-apoptotic, restored \u00b7 4 death receptors \u2014 pro-apoptotic, activated.\" NO molecular/chemical structures. No caspases. Lots of clean white space. IMPORTANT: draw the apoptosis endpoint (fragmenting green cell) at the SAME size, SAME position (right side), and SAME bright-green style as in every other panel \u2014 it is the shared destination.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/676875"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1200,
+        "local_bytes": 1720726,
+        "sha256": "fff47bf2e198b4f7c9af8f698cf24cb1af6fcbeb55e8109b98396755ca05005c",
+        "width": 1696
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0530-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.json",
+        "source_image_rel": "images/0530-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "csc-treatment archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "landscape-1920-1080-clean-white-background-flat-professional-scientific--654469",
+        "reference_filename": "references/landscape-1920-1080-clean-white-background-flat-professional-scientific--654469-reference.png",
+        "review_status": "approved",
+        "source_element_id": 654469,
+        "source_sha256": "ee484c9a734f261f6283e22936076ca54550c64c0f5f7439d35428809c7c5974",
+        "svg_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--654469-rough.svg",
+        "transparent_png_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--654469-rough-transparent.png",
+        "conversion_archetype": "csc-treatment",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1590918,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-06-21T19:04:57.916Z",
+        "downloadedAt": "2026-07-25T15:41:28.747Z",
+        "filename": "0535-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png",
+        "id": 654469,
+        "index": 535,
+        "name": "Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. The surviving magenta/purple CSCs now drawn QUIESCENT \u2014 muted/desaturated color, each with a small \"pause\" or sleep indicator (e.g. a small \u2016 pause mark or closed/dormant outline), not dividing. Few or no bulk cells around them. A calm, sparse composition. Label \"dormancy \u2014 CSCs quiescent\" and a note \"refractory to treatment.\" Convey stillness. No molecular detail. Clean composition.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/654469"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1200,
+        "local_bytes": 1590918,
+        "sha256": "ee484c9a734f261f6283e22936076ca54550c64c0f5f7439d35428809c7c5974",
+        "width": 1696
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0535-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.json",
+        "source_image_rel": "images/0535-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "csc-treatment archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "sequence-image-1-landscape-1920-1080-clean-white-background-flat-profess-654434",
+        "reference_filename": "references/sequence-image-1-landscape-1920-1080-clean-white-background-flat-profess-654434-reference.png",
+        "review_status": "approved",
+        "source_element_id": 654434,
+        "source_sha256": "59be069bd2d60d7650e6ad34ee74709ef08d5ca35453313af6fb43f29894b972",
+        "svg_filename": "sequence-image-1-landscape-1920-1080-clean-white-background-flat-profess-654434-rough.svg",
+        "transparent_png_filename": "sequence-image-1-landscape-1920-1080-clean-white-background-flat-profess-654434-rough-transparent.png",
+        "conversion_archetype": "csc-treatment",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 497907,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-06-21T18:13:57.728Z",
+        "downloadedAt": "2026-07-25T15:41:29.704Z",
+        "filename": "0536-sequence-image-1-landscape-1920-1080-clean-white-background-flat-professional-sc.png",
+        "id": 654434,
+        "index": 536,
+        "name": "SEQUENCE :\n\nIMAGE 1 -\u00a0Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. A roughly circular tumor mass made mostly of small grey/blue bulk tumor cells packed together \u2014 the large majority. Scattered among them, only a FEW distinct larger magenta/purple cancer stem cells (CSCs), clearly the minority (e.g. 3\u20134 CSCs among ~40 bulk cells). Label the mass \"pre-treatment tumor\"; a small bracket or callout points to one magenta cell labeled \"cancer stem cell (CSC)\" and to the grey cells labeled \"bulk tumor cells.\" The CSC:bulk ratio is visibly LOW. No molecular detail. Clean composition.\n\nIMAGE 2 -\u00a0Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. The same tumor mass, now with a treatment band/arrow sweeping across it from above labeled \"chemotherapy.\" Many of the small grey/blue bulk cells are shown dying \u2014 faded, fragmenting, marked with small X's or dissolving outlines. The magenta/purple CSCs are shown UNHARMED, intact and brightly colored amid the dying bulk cells. A label: \"bulk cells killed \u2014 CSCs survive.\" No drug structure, just the treatment arrow/band. Clean composition.\n\nIMAGE 3 -\u00a0Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. A much SMALLER tumor mass than frame 1 \u2014 most grey/blue bulk cells are gone. The same few magenta/purple CSCs remain, but now they make up a much LARGER PROPORTION of what's left (e.g. 3\u20134 CSCs among only ~6\u20138 surviving bulk cells). The tumor is smaller overall but visibly CSC-rich. Label \"post-treatment tumor\" and a callout: \"tumor shrinks, but CSC fraction rises.\" The KEY READ is the proportion shift versus frame 1. No molecular detail. Clean composition.\n\nIMAGE 4 -\u00a0Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. The surviving magenta/purple CSCs now drawn QUIESCENT \u2014 muted/desaturated color, each with a small \"pause\" or sleep indicator (e.g. a small \u2016 pause mark or closed/dormant outline), not dividing. Few or no bulk cells around them. A calm, sparse composition. Label \"dormancy \u2014 CSCs quiescent\" and a note \"refractory to treatment.\" Convey stillness. No molecular detail. Clean composition.\n\nIMAGE 5 -\u00a0Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. The same CSCs now REACTIVATING \u2014 color returning to bright magenta/purple, the pause indicators gone, and each CSC shown beginning to divide (small outward budding arrows, one cell splitting into two). New small grey/blue bulk cells just starting to appear around them as the CSCs regenerate the population. Label \"reactivation \u2014 CSCs resume dividing.\" Convey motion/restart. No molecular detail. Clean composition.\n\nIMAGE 6 -\u00a0Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. A regenerated tumor mass roughly the SIZE of the original pre-treatment tumor (frame 1) \u2014 bulk grey/blue cells have regrown \u2014 BUT the magenta/purple CSC fraction is now VISIBLY LARGER than in frame 1 (e.g. 7\u20138 CSCs among ~40 bulk cells, versus 3\u20134 before). A curved RETURN ARROW loops from this tumor back toward the pre-treatment position, labeled \"next cycle starts with more CSCs.\" A small comparison cue: a faint side-by-side of the old small CSC fraction vs the new larger one, or a tick-up indicator. Label \"relapse \u2014 regenerated, more resistant.\" The KEY READ: the cycle closes, but the tumor is worse. No molecular detail. Clean composition.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/654434"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1696,
+        "local_bytes": 497907,
+        "sha256": "59be069bd2d60d7650e6ad34ee74709ef08d5ca35453313af6fb43f29894b972",
+        "width": 1200
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0536-sequence-image-1-landscape-1920-1080-clean-white-background-flat-professional-sc.json",
+        "source_image_rel": "images/0536-sequence-image-1-landscape-1920-1080-clean-white-background-flat-professional-sc.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "csc-treatment archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "landscape-1920-1080-clean-white-background-flat-professional-scientific--654471",
+        "reference_filename": "references/landscape-1920-1080-clean-white-background-flat-professional-scientific--654471-reference.png",
+        "review_status": "approved",
+        "source_element_id": 654471,
+        "source_sha256": "25b6b1bed0ca7e3457ebae5f21d698f6d257335fc5f52e6e4021b2a23877822f",
+        "svg_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--654471-rough.svg",
+        "transparent_png_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--654471-rough-transparent.png",
+        "conversion_archetype": "csc-treatment",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1948247,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-06-21T19:07:45.858Z",
+        "downloadedAt": "2026-07-25T15:41:30.756Z",
+        "filename": "0537-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png",
+        "id": 654471,
+        "index": 537,
+        "name": "Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. The same CSCs now REACTIVATING \u2014 color returning to bright magenta/purple, the pause indicators gone, and each CSC shown beginning to divide (small outward budding arrows, one cell splitting into two). New small grey/blue bulk cells just starting to appear around them as the CSCs regenerate the population. Label \"reactivation \u2014 CSCs resume dividing.\" Convey motion/restart. No molecular detail. Clean composition.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/654471"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1200,
+        "local_bytes": 1948247,
+        "sha256": "25b6b1bed0ca7e3457ebae5f21d698f6d257335fc5f52e6e4021b2a23877822f",
+        "width": 1696
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0537-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.json",
+        "source_image_rel": "images/0537-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "apoptosis archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "sequence-of-events-1-landscape-1920-1080-clean-white-background-flat-pro-693715",
+        "reference_filename": "references/sequence-of-events-1-landscape-1920-1080-clean-white-background-flat-pro-693715-reference.png",
+        "review_status": "approved",
+        "source_element_id": 693715,
+        "source_sha256": "e1db18adfabed648c0f6bd14f8c391cca274e3005d6190ac35d47c628b12c990",
+        "svg_filename": "sequence-of-events-1-landscape-1920-1080-clean-white-background-flat-pro-693715-rough.svg",
+        "transparent_png_filename": "sequence-of-events-1-landscape-1920-1080-clean-white-background-flat-pro-693715-rough-transparent.png",
+        "conversion_archetype": "apoptosis",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 2525006,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-07-10T23:12:11.110Z",
+        "downloadedAt": "2026-07-25T15:41:37.955Z",
+        "filename": "0544-sequence-of-events-1-landscape-1920-1080-clean-white-background-flat-professiona.png",
+        "id": 693715,
+        "index": 544,
+        "name": "Sequence of events:\n\n1 - Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. A horizontally-oriented mitochondrion in the center of the frame. On its outer membrane sit RED anti-apoptotic Bcl-2 family blocks, labeled \"Bcl-2 / Bcl-XL \u2014 anti-apoptotic (guarding).\" From the upper-left, several small stress icons feed in with arrows, labeled \"internal stress: DNA damage \u00b7 hypoxia \u00b7 chemotherapy \u00b7 misfolded proteins.\" These activate GREEN pro-apoptotic Bcl-2 family shapes that push against the red blocks \u2014 a visible tug/opposition at the membrane, labeled \"pro-apoptotic Bcl-2 members activated.\" A small label frames the moment: \"the Bcl-2 family decision.\" No cytochrome c released yet. No chemical structures. Fill the wide frame: stress inputs on the left, mitochondrion center, red-vs-green tug on its membrane.\n\n2 - Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. The same center mitochondrion, same style. The GREEN pro-apoptotic Bcl-2 members have now won: they form pores/openings in the mitochondrial OUTER MEMBRANE, shown as clear gaps or channel shapes, labeled \"mitochondrial outer membrane permeabilization (MOMP).\" The RED anti-apoptotic blocks are shown overwhelmed/displaced. Inside the mitochondrion, small ORANGE cytochrome c dots are visible, poised near the new openings but not yet released, labeled \"cytochrome c (inside).\" No apoptosome yet. No chemical structures. Fill the wide frame with the mitochondrion and the newly opened membrane.\n\n3 - Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. The same center mitochondrion. ORANGE cytochrome c dots are now streaming OUT through the permeabilized outer membrane into the surrounding cytosol, shown with clear directional arrows, labeled \"cytochrome c released into cytosol.\" A prominent, unmissable marker flags this beat: a bold badge or banner labeled \"POINT OF NO RETURN \u2014 cell is now committed to die,\" positioned so it dominates the frame. A short clarifying note: \"commitment happens HERE \u2014 not at caspase activation.\" No apoptosome yet \u2014 this panel is only the release and its significance. No chemical structures. Fill the wide frame: mitochondrion releasing orange cytochrome c, bold commitment marker.\n\n4 - Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. Move to the cytosol beside the mitochondrion (mitochondrion still visible at the edge for continuity). ORANGE cytochrome c dots bind BLUE Apaf-1 adaptor shapes, labeled \"cytochrome c + Apaf-1.\" They assemble into a distinct wheel-like/ring complex, labeled \"apoptosome.\" At the hub of the apoptosome, an inactive enzyme shape labeled \"procaspase-9\" is shown converting into an active form labeled \"caspase-9 (active)\" with a small activation spark. No executioner cascade yet. No chemical structures. Fill the wide frame: cytochrome c meeting Apaf-1, the wheel-shaped apoptosome assembling, caspase-9 activating at its center.\n\n5 - Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. On the left, \"caspase-9 (active)\" with an arrow to a group of executioner enzyme shapes labeled \"caspase-3 \u00b7 caspase-6 \u00b7 caspase-7 (executioners)\" \u2014 shown as an amplifying cascade (one arrow branching to several). On the right, a cell showing the three morphological hallmarks, each labeled: \"chromatin condensation\" (condensed dark nucleus), \"DNA fragmentation\" (broken DNA pieces), and \"membrane blebbing\" (bulging cell edge). No chemical structures. Fill the wide frame: caspase-9 \u2192 executioner cascade on the left, the dying cell with its three labeled hallmarks on the right.\n\n6 - Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. The center mitochondrion again, but now guarded by an EXCESS of RED anti-apoptotic Bcl-2 blocks \u2014 many more than in panel 1, crowding the membrane, labeled \"anti-apoptotic Bcl-2 overexpressed.\" The GREEN pro-apoptotic members are shown outnumbered and unable to open the membrane. Cytochrome c stays INSIDE the mitochondrion (orange dots contained), with a blocked/crossed arrow where release would occur, labeled \"no cytochrome c release \u2192 apoptosis blocked.\" A second small icon shows a mutated pathway component with an X, labeled \"or mutation disables the pathway.\" A summary label: \"cancer evades apoptosis.\" No chemical structures. Fill the wide frame: over-guarded mitochondrion, contained cytochrome c, blocked death signal.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/693715"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1200,
+        "local_bytes": 2525006,
+        "sha256": "e1db18adfabed648c0f6bd14f8c391cca274e3005d6190ac35d47c628b12c990",
+        "width": 1696
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0544-sequence-of-events-1-landscape-1920-1080-clean-white-background-flat-professiona.json",
+        "source_image_rel": "images/0544-sequence-of-events-1-landscape-1920-1080-clean-white-background-flat-professiona.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "mitochondrion archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "landscape-1920-1080-clean-white-background-flat-professional-scientific--693733",
+        "reference_filename": "references/landscape-1920-1080-clean-white-background-flat-professional-scientific--693733-reference.png",
+        "review_status": "approved",
+        "source_element_id": 693733,
+        "source_sha256": "c303f07cb3404a570653ec9be76a1fb4abbb122c4977b4a71d6c4f9aba384416",
+        "svg_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--693733-rough.svg",
+        "transparent_png_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--693733-rough-transparent.png",
+        "conversion_archetype": "mitochondrion",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1819311,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-07-10T23:35:01.549Z",
+        "downloadedAt": "2026-07-25T15:41:38.887Z",
+        "filename": "0545-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png",
+        "id": 693733,
+        "index": 545,
+        "name": "Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. A single mitochondrion, centered, oriented HORIZONTALLY (long axis left-to-right). Outer membrane smooth and INTACT (no pores, no breaks). Inner membrane folded into clearly drawn cristae. Purple/blue color scheme: outer membrane light purple, matrix blue, cristae darker blue folds. NO Bcl-2 proteins, NO cytochrome c, NO labels, NO other elements \u2014 just the clean, intact organelle on white. This is the master reference; everything else is added by editing this image.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/693733"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1200,
+        "local_bytes": 1819311,
+        "sha256": "c303f07cb3404a570653ec9be76a1fb4abbb122c4977b4a71d6c4f9aba384416",
+        "width": 1696
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0545-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.json",
+        "source_image_rel": "images/0545-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "cycle archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "draw-a-four-node-cycle-diagram-as-a-flat-vector-schematic-on-a-white-bac-717241",
+        "reference_filename": "references/draw-a-four-node-cycle-diagram-as-a-flat-vector-schematic-on-a-white-bac-717241-reference.png",
+        "review_status": "approved",
+        "source_element_id": 717241,
+        "source_sha256": "d5065cdb7aff1246033ce259f342cfa10ce4b461821387daacde6f7f75b49a2c",
+        "svg_filename": "draw-a-four-node-cycle-diagram-as-a-flat-vector-schematic-on-a-white-bac-717241-rough.svg",
+        "transparent_png_filename": "draw-a-four-node-cycle-diagram-as-a-flat-vector-schematic-on-a-white-bac-717241-rough-transparent.png",
+        "conversion_archetype": "cycle",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 884958,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-07-24T00:13:13.895Z",
+        "downloadedAt": "2026-07-25T15:41:52.370Z",
+        "filename": "0559-draw-a-four-node-cycle-diagram-as-a-flat-vector-schematic-on-a-white-background-.png",
+        "id": 717241,
+        "index": 559,
+        "name": "Draw a four-node cycle diagram as a flat vector schematic on a white background. Four rounded rectangular nodes evenly spaced on a circle, connected by single-headed curved arrows running clockwise into a closed loop, plus one return arrow from the last node back to the first. Label the nodes clearly: top node (a PET scanner glyph) 'Ga-68-PSMA PET \u2014 patient selection'; right node (a syringe/vial glyph) 'Lu-177-PSMA therapy'; bottom node (a scanner glyph) 'Post-therapy PET \u2014 response'; left node (a decision diamond) 'Responded? \u2192 repeat'. Okabe-Ito palette (imaging nodes sky blue #56B4E9, therapy node vermillion #D55E00, decision diamond reddish purple #CC79A7, arrows neutral gray). Uniform 1pt strokes, generous white space, clean legible labels, no shading.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/717241"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 884958,
+        "sha256": "d5065cdb7aff1246033ce259f342cfa10ce4b461821387daacde6f7f75b49a2c",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": "prompt-similarity:44ff5857c00c",
+        "exact_duplicate_element_ids": [],
+        "heuristic_similarity_threshold": 0.92,
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": 717225,
+        "root_id": 717130
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0559-draw-a-four-node-cycle-diagram-as-a-flat-vector-schematic-on-a-white-background-.json",
+        "source_image_rel": "images/0559-draw-a-four-node-cycle-diagram-as-a-flat-vector-schematic-on-a-white-background-.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "endocytosis archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "cell-cross-section-in-clean-textbook-cell-biology-style-plasma-membrane--710366",
+        "reference_filename": "references/cell-cross-section-in-clean-textbook-cell-biology-style-plasma-membrane--710366-reference.png",
+        "review_status": "approved",
+        "source_element_id": 710366,
+        "source_sha256": "5c46af0ba627eaafe6dcf5ccdcf234b37dcd78902e5359f9b6cc6e2af1b2fb70",
+        "svg_filename": "cell-cross-section-in-clean-textbook-cell-biology-style-plasma-membrane--710366-rough.svg",
+        "transparent_png_filename": "cell-cross-section-in-clean-textbook-cell-biology-style-plasma-membrane--710366-rough-transparent.png",
+        "conversion_archetype": "endocytosis",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 250684,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-07-20T19:16:49.516Z",
+        "downloadedAt": "2026-07-25T15:41:53.297Z",
+        "filename": "0560-cell-cross-section-in-clean-textbook-cell-biology-style-plasma-membrane-at-left-.png",
+        "id": 710366,
+        "index": 560,
+        "name": "Cell cross-section in clean textbook cell-biology style. Plasma membrane at left with a lipid nanoparticle entering by endocytosis; one endosome vesicle containing several small cargo dots; a lysosome nearby; open cytosol. Include only these structures \u2014 no mitochondria, no Golgi, no endoplasmic reticulum. Soft grey line-art on white, pale palette, no color highlights, no labels, no text.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/710366"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 250684,
+        "sha256": "5c46af0ba627eaafe6dcf5ccdcf234b37dcd78902e5359f9b6cc6e2af1b2fb70",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0560-cell-cross-section-in-clean-textbook-cell-biology-style-plasma-membrane-at-left-.json",
+        "source_image_rel": "images/0560-cell-cross-section-in-clean-textbook-cell-biology-style-plasma-membrane-at-left-.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "network archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "simple-doodle-stye-a-single-neural-network-unit-drawn-as-a-circle-split--719837",
+        "reference_filename": "references/simple-doodle-stye-a-single-neural-network-unit-drawn-as-a-circle-split--719837-reference.png",
+        "review_status": "approved",
+        "source_element_id": 719837,
+        "source_sha256": "08512c9c84702ad4fed0be13c7fe8dd24b478d171de61da1ed84e3879fc98345",
+        "svg_filename": "simple-doodle-stye-a-single-neural-network-unit-drawn-as-a-circle-split--719837-rough.svg",
+        "transparent_png_filename": "simple-doodle-stye-a-single-neural-network-unit-drawn-as-a-circle-split--719837-rough-transparent.png",
+        "conversion_archetype": "network",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 116467,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-07-25T14:45:55.182Z",
+        "downloadedAt": "2026-07-25T15:41:54.146Z",
+        "filename": "0561-simple-doodle-stye-a-single-neural-network-unit-drawn-as-a-circle-split-by-one-v.png",
+        "id": 719837,
+        "index": 561,
+        "name": "simple doodle stye, A single neural-network unit drawn as a circle split by one vertical line into two halves; the left half represents the linear step z(x) and the right half the activation a(z); an input arrow enters from the left labeled x, an output arrow exits to the right labeled y-hat; below the circle, two equations: z(x) = wx + b, and y-hat = a(z) = sigmoid(z); a curved arrow points to the unit labeling it \"mini neural net\". Clean educational diagram, plenty of whitespace.\n",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/719837"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 116467,
+        "sha256": "08512c9c84702ad4fed0be13c7fe8dd24b478d171de61da1ed84e3879fc98345",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0561-simple-doodle-stye-a-single-neural-network-unit-drawn-as-a-circle-split-by-one-v.json",
+        "source_image_rel": "images/0561-simple-doodle-stye-a-single-neural-network-unit-drawn-as-a-circle-split-by-one-v.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "histology archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "clear-cell-renal-cell-carcinoma-h-e-nests-of-cells-with-water-clear-cyto-710345",
+        "reference_filename": "references/clear-cell-renal-cell-carcinoma-h-e-nests-of-cells-with-water-clear-cyto-710345-reference.png",
+        "review_status": "approved",
+        "source_element_id": 710345,
+        "source_sha256": "1b2321481b2ff99226aed59f19c5d449c7ca6f9fd5246d4df51a2af002c1827e",
+        "svg_filename": "clear-cell-renal-cell-carcinoma-h-e-nests-of-cells-with-water-clear-cyto-710345-rough.svg",
+        "transparent_png_filename": "clear-cell-renal-cell-carcinoma-h-e-nests-of-cells-with-water-clear-cyto-710345-rough-transparent.png",
+        "conversion_archetype": "histology",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 474081,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-07-20T19:00:02.776Z",
+        "downloadedAt": "2026-07-25T15:41:55.009Z",
+        "filename": "0562-clear-cell-renal-cell-carcinoma-h-e-nests-of-cells-with-water-clear-cytoplasm-se.png",
+        "id": 710345,
+        "index": 562,
+        "name": "clear cell renal cell carcinoma, H&E, nests of cells with water-clear cytoplasm separated by delicate chicken-wire capillaries, distinct cell borders, no text",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/710345"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 474081,
+        "sha256": "1b2321481b2ff99226aed59f19c5d449c7ca6f9fd5246d4df51a2af002c1827e",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0562-clear-cell-renal-cell-carcinoma-h-e-nests-of-cells-with-water-clear-cytoplasm-se.json",
+        "source_image_rel": "images/0562-clear-cell-renal-cell-carcinoma-h-e-nests-of-cells-with-water-clear-cytoplasm-se.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "histology archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "clear-cell-renal-cell-carcinoma-h-e-histology-small-nests-of-tumor-cells-710351",
+        "reference_filename": "references/clear-cell-renal-cell-carcinoma-h-e-histology-small-nests-of-tumor-cells-710351-reference.png",
+        "review_status": "approved",
+        "source_element_id": 710351,
+        "source_sha256": "e93e97078e90359d5a1c4376da5683f9b2c7e4305e58f6188fe0ba84edd290e8",
+        "svg_filename": "clear-cell-renal-cell-carcinoma-h-e-histology-small-nests-of-tumor-cells-710351-rough.svg",
+        "transparent_png_filename": "clear-cell-renal-cell-carcinoma-h-e-histology-small-nests-of-tumor-cells-710351-rough-transparent.png",
+        "conversion_archetype": "histology",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 437081,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-07-20T19:04:40.513Z",
+        "downloadedAt": "2026-07-25T15:41:55.917Z",
+        "filename": "0563-clear-cell-renal-cell-carcinoma-h-e-histology-small-nests-of-tumor-cells-with-ab.png",
+        "id": 710351,
+        "index": 563,
+        "name": "Clear cell renal cell carcinoma, H&E histology. Small nests of tumor cells with abundant water-clear cytoplasm and crisp cell membranes; small round uniform nuclei. Nests wrapped by a delicate, fine network of thin-walled capillaries (chicken-wire vasculature). Even, low-grade. Rectangular field, desaturated H&E palette, no labels, no text",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/710351"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 437081,
+        "sha256": "e93e97078e90359d5a1c4376da5683f9b2c7e4305e58f6188fe0ba84edd290e8",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0563-clear-cell-renal-cell-carcinoma-h-e-histology-small-nests-of-tumor-cells-with-ab.json",
+        "source_image_rel": "images/0563-clear-cell-renal-cell-carcinoma-h-e-histology-small-nests-of-tumor-cells-with-ab.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "histology archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "lear-cell-renal-cell-carcinoma-h-e-nests-of-cells-with-water-clear-cytop-710388",
+        "reference_filename": "references/lear-cell-renal-cell-carcinoma-h-e-nests-of-cells-with-water-clear-cytop-710388-reference.png",
+        "review_status": "approved",
+        "source_element_id": 710388,
+        "source_sha256": "7068f477027a1fdaba20856b8488888d33c08db06879e0a27f80fd8167189c9e",
+        "svg_filename": "lear-cell-renal-cell-carcinoma-h-e-nests-of-cells-with-water-clear-cytop-710388-rough.svg",
+        "transparent_png_filename": "lear-cell-renal-cell-carcinoma-h-e-nests-of-cells-with-water-clear-cytop-710388-rough-transparent.png",
+        "conversion_archetype": "histology",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 3211917,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-07-20T19:37:37.294Z",
+        "downloadedAt": "2026-07-25T15:41:57.042Z",
+        "filename": "0564-lear-cell-renal-cell-carcinoma-h-e-nests-of-cells-with-water-clear-cytoplasm-sep.png",
+        "id": 710388,
+        "index": 564,
+        "name": "lear cell renal cell carcinoma, H&E, nests of cells with water-clear cytoplasm separated by delicate chicken-wire capillaries, distinct cell borders, no text",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/710388"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1200,
+        "local_bytes": 3211917,
+        "sha256": "7068f477027a1fdaba20856b8488888d33c08db06879e0a27f80fd8167189c9e",
+        "width": 1200
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0564-lear-cell-renal-cell-carcinoma-h-e-nests-of-cells-with-water-clear-cytoplasm-sep.json",
+        "source_image_rel": "images/0564-lear-cell-renal-cell-carcinoma-h-e-nests-of-cells-with-water-clear-cytoplasm-sep.png"
+      }
+    }
+  ]
+}

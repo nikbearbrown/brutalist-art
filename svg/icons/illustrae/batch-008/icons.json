@@ -1,0 +1,2216 @@
+{
+  "collection": "illustrae-icons-batch-008",
+  "style": "medium-rough monochrome vector",
+  "generated_at": "2026-07-25T19:56:44.899Z",
+  "generator": "archetype-based Rough.js converter",
+  "icons": [
+    {
+      "derivative": {
+        "geometry_description": "membrane-receptor archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "landscape-1920-1080-clean-white-background-flat-professional-scientific--634120",
+        "reference_filename": "references/landscape-1920-1080-clean-white-background-flat-professional-scientific--634120-reference.png",
+        "review_status": "approved",
+        "source_element_id": 634120,
+        "source_sha256": "27e2b46f79e96e6ac31be1ff4dc22eb6746781dc79152ba814883fbca15ef413",
+        "svg_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--634120-rough.svg",
+        "transparent_png_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--634120-rough-transparent.png",
+        "conversion_archetype": "membrane-receptor",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1686792,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-06-11T23:45:06.266Z",
+        "downloadedAt": "2026-07-25T15:39:35.281Z",
+        "filename": "0417-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png",
+        "id": 634120,
+        "index": 417,
+        "name": "Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. Same horizontal lipid-bilayer membrane band, extracellular above, cytoplasm below. A single receptor tyrosine kinase crosses the membrane \u2014 BUT its teal extracellular ligand-binding domain is MISSING: the top of the receptor is cut off, shown as a dashed empty outline where the teal cup used to be, labeled \"ligand-binding domain deleted.\" The grey transmembrane segment and the orange intracellular kinase lobe remain. IMPORTANT: NO purple growth factor \u2014 and nowhere for one to bind. Despite this, the orange kinase lobe is firing: yellow burst/spark marks radiate from it and a downward arrow into the cytoplasm is labeled \"constitutive signal \u2014 no growth factor.\" Small optional label: \"(e.g. v-onc)\". A short note near the missing domain: \"no ligand needed.\" No molecular structures. Fill the wide frame.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/634120"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1200,
+        "local_bytes": 1686792,
+        "sha256": "27e2b46f79e96e6ac31be1ff4dc22eb6746781dc79152ba814883fbca15ef413",
+        "width": 1696
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0417-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.json",
+        "source_image_rel": "images/0417-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "pathway archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "landscape-1920-1080-clean-white-background-flat-professional-scientific--634123",
+        "reference_filename": "references/landscape-1920-1080-clean-white-background-flat-professional-scientific--634123-reference.png",
+        "review_status": "approved",
+        "source_element_id": 634123,
+        "source_sha256": "b195563e6f2af31542c29a755f446e8e90493ece51fcc83f944bd0b13c67f2b8",
+        "svg_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--634123-rough.svg",
+        "transparent_png_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--634123-rough-transparent.png",
+        "conversion_archetype": "pathway",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 2044393,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-06-11T23:46:24.133Z",
+        "downloadedAt": "2026-07-25T15:39:36.324Z",
+        "filename": "0418-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png",
+        "id": 634123,
+        "index": 418,
+        "name": "Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. Three small labeled icons across the top, left to right, each a compact version of the three routes: (1) two receptors clamped by a red fusion segment, labeled \"fusion / dimerization\"; (2) a dense crowd of receptors, labeled \"amplification / overexpression\"; (3) a receptor with its top domain missing (dashed outline), labeled \"domain deletion.\" Three arrows lead DOWN and INWARD from the three icons, converging on a single central node labeled \"constitutive signaling \u2014 no growth factor needed,\" shown with strong yellow burst/spark marks. From that node, one bold downward arrow leads to a cluster of dividing cells \u2014 one cell splitting into many \u2014 labeled \"uncontrolled cell proliferation.\" No purple growth factor anywhere. No molecular structures. Fill the wide frame: three sources across the top, convergence in the middle, proliferation outcome at the bottom.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/634123"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1200,
+        "local_bytes": 2044393,
+        "sha256": "b195563e6f2af31542c29a755f446e8e90493ece51fcc83f944bd0b13c67f2b8",
+        "width": 1696
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0418-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.json",
+        "source_image_rel": "images/0418-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "gene-therapy archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "single-panel-numbered-cross-section-diagram-showing-suicide-gene-therapy-645850",
+        "reference_filename": "references/single-panel-numbered-cross-section-diagram-showing-suicide-gene-therapy-645850-reference.png",
+        "review_status": "approved",
+        "source_element_id": 645850,
+        "source_sha256": "9417b279ecf24257ebbc7b1ee46e9d63c5ee1c24fc1d68b47275f0c29003b5c6",
+        "svg_filename": "single-panel-numbered-cross-section-diagram-showing-suicide-gene-therapy-645850-rough.svg",
+        "transparent_png_filename": "single-panel-numbered-cross-section-diagram-showing-suicide-gene-therapy-645850-rough-transparent.png",
+        "conversion_archetype": "gene-therapy",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 338909,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-06-17T11:16:43.962Z",
+        "downloadedAt": "2026-07-25T15:39:45.894Z",
+        "filename": "0428-single-panel-numbered-cross-section-diagram-showing-suicide-gene-therapy-mechani.png",
+        "id": 645850,
+        "index": 428,
+        "name": "Single-panel numbered cross-section diagram showing suicide gene therapy mechanism for an oncology textbook. Draw a large cancer cell in cross-section with a visible nucleus in the center. Six numbered sequential steps with circled step numbers and connecting arrows flowing clockwise: Step 1 \u2014 vector arrow entering from outside the cell delivering the HSV-tk gene into the nucleus \u2014 label 'HSV-tk gene delivered to nucleus.' Step 2 \u2014 HSV-tk enzyme produced in the cytoplasm \u2014 label 'HSV-tk enzyme expressed.' Step 3 \u2014 ganciclovir molecule entering the cell from outside \u2014 label 'Ganciclovir (prodrug \u2014 non-toxic) enters cell.' Step 4 \u2014 enzyme converting ganciclovir to a toxic metabolite in the cytoplasm \u2014 label 'HSV-tk phosphorylates ganciclovir \u2192 toxic metabolite.' Step 5 \u2014 toxic metabolite entering the nucleus with a block symbol on a DNA replication fork \u2014 label 'DNA synthesis blocked.' Step 6 \u2014 cell death outcome at the bottom of the cell \u2014 show membrane rupture or X symbol \u2014 label 'Tumor cell death.' No figure title above the image. No summary box below. White background. Clean sans-serif font. Scientific oncology textbook.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/645850"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 338909,
+        "sha256": "9417b279ecf24257ebbc7b1ee46e9d63c5ee1c24fc1d68b47275f0c29003b5c6",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0428-single-panel-numbered-cross-section-diagram-showing-suicide-gene-therapy-mechani.json",
+        "source_image_rel": "images/0428-single-panel-numbered-cross-section-diagram-showing-suicide-gene-therapy-mechani.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "table archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "three-column-comparison-table-diagram-for-an-oncology-textbook-comparing-645884",
+        "reference_filename": "references/three-column-comparison-table-diagram-for-an-oncology-textbook-comparing-645884-reference.png",
+        "review_status": "approved",
+        "source_element_id": 645884,
+        "source_sha256": "04f2940150c6aaa703d7122d0c31ed879b83e80761c0f5740886a367c33c0fd9",
+        "svg_filename": "three-column-comparison-table-diagram-for-an-oncology-textbook-comparing-645884-rough.svg",
+        "transparent_png_filename": "three-column-comparison-table-diagram-for-an-oncology-textbook-comparing-645884-rough-transparent.png",
+        "conversion_archetype": "table",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1047798,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-06-17T11:28:52.811Z",
+        "downloadedAt": "2026-07-25T15:39:46.956Z",
+        "filename": "0429-three-column-comparison-table-diagram-for-an-oncology-textbook-comparing-three-v.png",
+        "id": 645884,
+        "index": 429,
+        "name": "Three-column comparison table diagram for an oncology textbook comparing three viral vectors used in gene therapy. Each column represents one vector type. Column headers: 'Retrovirus,' 'Adenovirus,' 'AAV.' Four comparison rows below each header. Row 1 \u2014 Cell tropism: retrovirus shows dividing cells only (mitotic cell icon with division arrow); adenovirus and AAV show both dividing and non-dividing cells. Row 2 \u2014 Genome integration: retrovirus shows an arrow integrating into a chromosome (labeled 'Integrates \u2014 risk of insertional mutagenesis'); adenovirus shows a floating circular episomal icon (labeled 'Episomal \u2014 non-integrating'); AAV shows partial integration arrow (labeled 'Mostly episomal'). Row 3 \u2014 Immunogenicity: show a three-level bar indicator \u2014 adenovirus bar full and red (High), retrovirus bar half (Medium), AAV bar minimal and green (Low). Row 4 \u2014 Insert capacity: small DNA strand for AAV (labeled '~4 kb'), larger strand for retrovirus (labeled '~8 kb'), largest for adenovirus (labeled '~36 kb'). No figure title above the image. White background. Clean sans-serif font. Scientific oncology textbook.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/645884"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 1047798,
+        "sha256": "04f2940150c6aaa703d7122d0c31ed879b83e80761c0f5740886a367c33c0fd9",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0429-three-column-comparison-table-diagram-for-an-oncology-textbook-comparing-three-v.json",
+        "source_image_rel": "images/0429-three-column-comparison-table-diagram-for-an-oncology-textbook-comparing-three-v.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "proportional-bar archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "proportional-horizontal-bar-diagram-for-an-undergraduate-oncology-textbo-645912",
+        "reference_filename": "references/proportional-horizontal-bar-diagram-for-an-undergraduate-oncology-textbo-645912-reference.png",
+        "review_status": "approved",
+        "source_element_id": 645912,
+        "source_sha256": "d16f1b98c4ffb93aa36c0c76747be06940966910479a0fba5724a93dbf7578e2",
+        "svg_filename": "proportional-horizontal-bar-diagram-for-an-undergraduate-oncology-textbo-645912-rough.svg",
+        "transparent_png_filename": "proportional-horizontal-bar-diagram-for-an-undergraduate-oncology-textbo-645912-rough-transparent.png",
+        "conversion_archetype": "proportional-bar",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 124123,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-06-17T11:40:28.477Z",
+        "downloadedAt": "2026-07-25T15:39:47.817Z",
+        "filename": "0430-proportional-horizontal-bar-diagram-for-an-undergraduate-oncology-textbook-showi.png",
+        "id": 645912,
+        "index": 430,
+        "name": "Proportional horizontal bar diagram for an undergraduate oncology textbook showing driver mutation frequency in non-small cell lung cancer. A single large rectangle divided into eight color-coded segments from left to right by approximate prevalence: PD-L1 high/no driver (~30%) in Bluish Green (#009E73); EGFR (~15%) in Blue (#0072B2); KRAS G12C (~13%) in Orange (#E69F00); ALK rearrangement (~5%) in Sky Blue (#56B4E9); MET exon 14 skipping (~3-4%) in light gray; BRAF V600E (~2%) in Reddish Purple (#CC79A7); RET fusion (~2%) in Yellow (#F0E442); other/unknown remainder in light gray. Below each segment a short vertical line connects to a small generic pill or target icon representing the matched therapy. Segment borders 1pt black. Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/645912"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 124123,
+        "sha256": "d16f1b98c4ffb93aa36c0c76747be06940966910479a0fba5724a93dbf7578e2",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0430-proportional-horizontal-bar-diagram-for-an-undergraduate-oncology-textbook-showi.json",
+        "source_image_rel": "images/0430-proportional-horizontal-bar-diagram-for-an-undergraduate-oncology-textbook-showi.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "decision archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "three-branch-decision-diagram-for-an-undergraduate-oncology-textbook-sho-649202",
+        "reference_filename": "references/three-branch-decision-diagram-for-an-undergraduate-oncology-textbook-sho-649202-reference.png",
+        "review_status": "approved",
+        "source_element_id": 649202,
+        "source_sha256": "6c7ef9b3da7b4de5a5463243e7881764cc1d8768c3ee435cfa67f338e3f8086f",
+        "svg_filename": "three-branch-decision-diagram-for-an-undergraduate-oncology-textbook-sho-649202-rough.svg",
+        "transparent_png_filename": "three-branch-decision-diagram-for-an-undergraduate-oncology-textbook-sho-649202-rough-transparent.png",
+        "conversion_archetype": "decision",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 76828,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-06-18T19:24:50.429Z",
+        "downloadedAt": "2026-07-25T15:39:51.657Z",
+        "filename": "0434-three-branch-decision-diagram-for-an-undergraduate-oncology-textbook-showing-par.png",
+        "id": 649202,
+        "index": 434,
+        "name": "Three-branch decision diagram for an undergraduate oncology textbook showing PARP inhibitor maintenance therapy selection in advanced ovarian cancer following platinum-based chemotherapy response. At the top, a light gray oval entry node representing platinum response. An arrow leads to a black diamond HRD testing decision node. Three branches diverge below: left branch with Blue (#0072B2) line for BRCA-mutant patients, ending in a Blue pill icon and a large Bluish Green (#009E73) horizontal relative benefit bar; center branch with Orange (#E69F00) line for HRD-positive non-BRCA patients, ending in an Orange pill icon and a medium Bluish Green benefit bar; right branch with light gray line for HRD-negative patients, ending in a gray indicator and a short gray bar showing limited benefit. Black 1pt branch lines and node borders. Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/649202"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 76828,
+        "sha256": "6c7ef9b3da7b4de5a5463243e7881764cc1d8768c3ee435cfa67f338e3f8086f",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0434-three-branch-decision-diagram-for-an-undergraduate-oncology-textbook-showing-par.json",
+        "source_image_rel": "images/0434-three-branch-decision-diagram-for-an-undergraduate-oncology-textbook-showing-par.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "apoptosis archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "sequence-of-events-image-1-landscape-1920-1080-clean-white-background-fl-651296",
+        "reference_filename": "references/sequence-of-events-image-1-landscape-1920-1080-clean-white-background-fl-651296-reference.png",
+        "review_status": "approved",
+        "source_element_id": 651296,
+        "source_sha256": "f413e218dbe9f00cf14d67afd816105255a337d4dd6e2a2fb164f877acdcfb6d",
+        "svg_filename": "sequence-of-events-image-1-landscape-1920-1080-clean-white-background-fl-651296-rough.svg",
+        "transparent_png_filename": "sequence-of-events-image-1-landscape-1920-1080-clean-white-background-fl-651296-rough-transparent.png",
+        "conversion_archetype": "apoptosis",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1778327,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-06-19T20:11:22.489Z",
+        "downloadedAt": "2026-07-25T15:39:54.558Z",
+        "filename": "0437-sequence-of-events-image-1-landscape-1920-1080-clean-white-background-flat-profe.png",
+        "id": 651296,
+        "index": 437,
+        "name": "sequence of events :\nimage 1 -\u00a0Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. The fixed apoptosis backbone map, no drugs yet. Top-left: a death receptor spanning a membrane band, labeled \"death receptor \u2014 DR4/DR5\" (green, pro-apoptotic), arrow pointing down/right. Center-right: a mitochondrion shape with a red Bcl-2 block sitting on it, labeled \"Bcl-2 \u2014 anti-apoptotic.\" Top-right: p53 (green) with a red MDM2 clamp on it, labeled \"p53\" and \"MDM2 \u2014 suppresses p53.\" Downstream of the mitochondrion: a red IAPs block restraining the path, labeled \"IAPs \u2014 anti-apoptotic.\" Both arms converge via arrows on a right-side endpoint: a fragmenting cell icon labeled \"APOPTOSIS \u2014 cell death\" (green). Mark the FOUR intervention points with small numbered flags 1\u20134: (1) Bcl-2, (2) IAPs, (3) death receptor, (4) p53/MDM2 \u2014 but NO drugs acting yet. Red = anti-apoptotic proteins, green = pro-apoptotic proteins. No molecular structures, no caspases. Fill the wide frame with the full map.\n\nimage 2 -\u00a0Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. ISOLATED single beat \u2014 almost empty frame, NOT the full pathway. Show ONLY: a mitochondrion (center-left) with a red Bcl-2 block sitting on it, labeled \"Bcl-2 \u2014 anti-apoptotic\"; a simple capsule drug icon binding/blocking the Bcl-2 block, labeled \"BH3 mimetic \u2014 venetoclax\"; the Bcl-2 block now greyed/disabled; a single bold green arrow flowing from the mitochondrion PAST the disabled block to a fragmenting cell icon on the right, labeled \"APOPTOSIS \u2014 cell death\" (green). A short label on the green arrow: \"Bcl-2 inhibited \u2192 apoptosis proceeds.\" NO death receptor, NO p53/MDM2, NO IAPs in this panel \u2014 they are not part of this beat. NO molecular/chemical structures. No caspases. Lots of clean white space.\n\nimage 3 -\u00a0Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. ISOLATED single beat \u2014 almost empty frame, NOT the full pathway. Show ONLY: a red IAPs block (center-left), labeled \"IAPs \u2014 anti-apoptotic\"; a simple capsule drug icon binding/blocking it, labeled \"SMAC mimetic / IAP antagonist\"; the IAPs block now greyed/disabled; a single bold green arrow flowing PAST the disabled block to a fragmenting cell icon on the right, labeled \"APOPTOSIS \u2014 cell death\" (green). A short label on the green arrow: \"IAPs inhibited \u2192 apoptosis proceeds.\" NO death receptor, NO p53/MDM2, NO mitochondrion or Bcl-2 in this panel. NO molecular/chemical structures. No caspases. Lots of clean white space.\n\nimage 4 -\u00a0Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. ISOLATED single beat \u2014 almost empty frame, NOT the full pathway. Show ONLY: a death receptor (green) spanning a short cell-membrane band at the upper-left, labeled \"death receptor \u2014 DR4/DR5\"; a simple ligand drug icon binding the receptor from outside the cell, labeled \"TRAIL agonist\"; the receptor now activated/glowing green; a single bold green arrow firing downward and right from the receptor to a fragmenting cell icon, labeled \"APOPTOSIS \u2014 cell death\" (green). A short label on the arrow: \"death receptor activated \u2192 apoptosis triggered.\" This is ACTIVATION, not inhibition. NO Bcl-2, NO IAPs, NO mitochondrion, NO p53/MDM2 in this panel. NO molecular/chemical structures. No caspases. Lots of clean white space.\n\nimage 5 -\u00a0Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. ISOLATED single beat \u2014 almost empty frame, NOT the full pathway. Show ONLY: p53 (green, center-left) with a red MDM2 clamp on it, labeled \"p53\" and \"MDM2 \u2014 suppresses p53\"; a simple capsule drug icon binding/blocking the red MDM2 clamp, labeled \"MDM2 inhibitor\"; the MDM2 clamp now greyed/disabled, FREEING p53; a single bold green arrow firing from the freed p53 to a fragmenting cell icon on the right, labeled \"APOPTOSIS \u2014 cell death\" (green). A short label on the arrow: \"p53 restored \u2192 activated \u2192 apoptosis.\" NO death receptor, NO Bcl-2, NO IAPs, NO mitochondrion in the main illustration. Along the bottom of the frame ONLY, a compact summary strip of all four points: \"1 Bcl-2 \u2014 anti-apoptotic, inhibited \u00b7 2 IAPs \u2014 anti-apoptotic, inhibited \u00b7 3 death receptors \u2014 pro-apoptotic, activated \u00b7 4 p53/MDM2 \u2014 pro-apoptotic, restored.\" NO molecular/chemical structures. No caspases. Clean white space around the isolated p53 beat.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/651296"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1696,
+        "local_bytes": 1778327,
+        "sha256": "f413e218dbe9f00cf14d67afd816105255a337d4dd6e2a2fb164f877acdcfb6d",
+        "width": 1200
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0437-sequence-of-events-image-1-landscape-1920-1080-clean-white-background-flat-profe.json",
+        "source_image_rel": "images/0437-sequence-of-events-image-1-landscape-1920-1080-clean-white-background-flat-profe.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "network archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "a-single-neural-network-unit-a-circle-split-by-one-vertical-line-into-tw-719857",
+        "reference_filename": "references/a-single-neural-network-unit-a-circle-split-by-one-vertical-line-into-tw-719857-reference.png",
+        "review_status": "approved",
+        "source_element_id": 719857,
+        "source_sha256": "fca3003e0f5bb0c2e461f36eebd66ad266c428518db69c0da46dc7492e5e18af",
+        "svg_filename": "a-single-neural-network-unit-a-circle-split-by-one-vertical-line-into-tw-719857-rough.svg",
+        "transparent_png_filename": "a-single-neural-network-unit-a-circle-split-by-one-vertical-line-into-tw-719857-rough-transparent.png",
+        "conversion_archetype": "network",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 169570,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-07-25T14:56:30.842Z",
+        "downloadedAt": "2026-07-25T15:39:57.211Z",
+        "filename": "0440-a-single-neural-network-unit-a-circle-split-by-one-vertical-line-into-two-equal-.png",
+        "id": 719857,
+        "index": 440,
+        "name": "A single neural-network unit: a circle split by one vertical line into two equal halves, a short arrow entering from the left and a short arrow exiting to the right. No text, no labels, no numbers \u2014 icon only, transparent background. Style: loose hand-drawn ink outline with a soft pale-blue watercolor wash inside, sketchbook feel.\n",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/719857"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 169570,
+        "sha256": "fca3003e0f5bb0c2e461f36eebd66ad266c428518db69c0da46dc7492e5e18af",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0440-a-single-neural-network-unit-a-circle-split-by-one-vertical-line-into-two-equal-.json",
+        "source_image_rel": "images/0440-a-single-neural-network-unit-a-circle-split-by-one-vertical-line-into-two-equal-.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "dna archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "landscape-1920-1080-clean-white-background-flat-professional-scientific--715168",
+        "reference_filename": "references/landscape-1920-1080-clean-white-background-flat-professional-scientific--715168-reference.png",
+        "review_status": "approved",
+        "source_element_id": 715168,
+        "source_sha256": "d961abd2ad5678dfb70cfc2c14c377fad79b9374cdc32d423149102d43cec67c",
+        "svg_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--715168-rough.svg",
+        "transparent_png_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--715168-rough-transparent.png",
+        "conversion_archetype": "dna",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1310727,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-07-23T05:50:09.862Z",
+        "downloadedAt": "2026-07-25T15:39:58.165Z",
+        "filename": "0441-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png",
+        "id": 715168,
+        "index": 441,
+        "name": "Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. A horizontal DNA double helix running left-to-right across the center of the frame, drawn as two clean parallel strands with rungs (base pairs) \u2014 flat, simple, professional. Near the center, mark a short stretch as the TARGET SITE with a light highlight band, and immediately to its right mark a short 3-base segment as the PAM with a small distinct tint, labeled \"PAM.\" No Cas9, no gRNA, no cut, no other elements yet \u2014 just the intact DNA with the target site and PAM marked. This is the master reference; the CRISPR machinery is added by editing this image.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/715168"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1200,
+        "local_bytes": 1310727,
+        "sha256": "d961abd2ad5678dfb70cfc2c14c377fad79b9374cdc32d423149102d43cec67c",
+        "width": 1696
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0441-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.json",
+        "source_image_rel": "images/0441-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "apoptosis archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "landscape-1920-1080-clean-white-background-flat-professional-scientific--651560",
+        "reference_filename": "references/landscape-1920-1080-clean-white-background-flat-professional-scientific--651560-reference.png",
+        "review_status": "approved",
+        "source_element_id": 651560,
+        "source_sha256": "7432bfb10b6c63fe7068d39aeb6f4f46b4ab6c470ed67dc460045474291f9357",
+        "svg_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--651560-rough.svg",
+        "transparent_png_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--651560-rough-transparent.png",
+        "conversion_archetype": "apoptosis",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1654986,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-06-19T23:47:45.135Z",
+        "downloadedAt": "2026-07-25T15:40:01.151Z",
+        "filename": "0444-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png",
+        "id": 651560,
+        "index": 444,
+        "name": "Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. ISOLATED single beat \u2014 almost empty frame. Center-left: an executioner caspase shown as a labeled enzyme shape, labeled \"caspase \u2014 executes cell death\" (green, pro-apoptotic), with an arrow pointing right toward a fragmenting cell icon labeled \"APOPTOSIS \u2014 cell death\" (green). A red IAPs block clamps directly onto the caspase, holding it inactive, labeled \"IAPs \u2014 anti-apoptotic (block caspase).\" A simple capsule drug icon binds the IAPs block, labeled \"SMAC mimetic / IAP antagonist\"; the IAPs block is now greyed/disabled and releasing the caspase. The freed caspase now fires its green arrow to the apoptosis icon, labeled \"caspase released \u2192 apoptosis proceeds.\" NO death receptor, NO p53/MDM2, NO Bcl-2, NO mitochondrion. NO molecular/chemical structures \u2014 the caspase is a simple labeled shape, not a chemical structure. Lots of clean white space.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/651560"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1200,
+        "local_bytes": 1654986,
+        "sha256": "7432bfb10b6c63fe7068d39aeb6f4f46b4ab6c470ed67dc460045474291f9357",
+        "width": 1696
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0444-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.json",
+        "source_image_rel": "images/0444-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "metastasis archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "realistic-medical-illustration-of-distant-metastasis-in-breast-cancer-fo-583251",
+        "reference_filename": "references/realistic-medical-illustration-of-distant-metastasis-in-breast-cancer-fo-583251-reference.png",
+        "review_status": "approved",
+        "source_element_id": 583251,
+        "source_sha256": "be4789af9bd708c3e1c47ff13f2c6672f0ab71536485b47e757f970056fe7511",
+        "svg_filename": "realistic-medical-illustration-of-distant-metastasis-in-breast-cancer-fo-583251-rough.svg",
+        "transparent_png_filename": "realistic-medical-illustration-of-distant-metastasis-in-breast-cancer-fo-583251-rough-transparent.png",
+        "conversion_archetype": "metastasis",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1375119,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-20T12:39:09.902Z",
+        "downloadedAt": "2026-07-25T15:40:08.050Z",
+        "filename": "0451-realistic-medical-illustration-of-distant-metastasis-in-breast-cancer-for-an-onc.png",
+        "id": 583251,
+        "index": 451,
+        "name": "Realistic medical illustration of distant metastasis in breast cancer for an oncology textbook. Two-part layout.\n\n\nLeft \u2014 Body silhouette with metastasis sites: Show a realistic female body outline with anatomically positioned organs. Primary breast cancer shown as an irregular tumor mass in the left breast. Dashed red travel lines extending from the primary tumor to each metastatic site. Labeled metastasis locations: Brain metastasis (with visible tumor nodules in brain), Lung metastasis (bilateral tumor nodules within lungs), Liver metastasis (tumor nodules on liver surface), Bone metastasis (spine and femur involvement shown), and any additional relevant sites. Each site shows a realistic tumor nodule in red/dark pink.\n\n\nRight \u2014 How cancer spreads inset panel: Four sequential steps with downward arrows: Step 1 \u2014 Cancer cells break away from primary tumor (show cells detaching from tumor mass). Step 2 \u2014 Travel through bloodstream (show cross-section of blood vessel with cancer cells and red blood cells). Step 3 \u2014 Travel through lymphatic system (show lymphatic vessel with cancer cells). Step 4 \u2014 Metastatic tumor forms \u2014 same cell type as primary breast cancer (show new tumor mass at distant site). Caption below inset: 'Metastatic cancer cells retain the identity of the original breast cancer.'\n\n\nNo figure title above the image. No summary boxes below the figure. White background. Clean sans-serif font. Scientific oncology textbook.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/583251"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 1375119,
+        "sha256": "be4789af9bd708c3e1c47ff13f2c6672f0ab71536485b47e757f970056fe7511",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0451-realistic-medical-illustration-of-distant-metastasis-in-breast-cancer-for-an-onc.json",
+        "source_image_rel": "images/0451-realistic-medical-illustration-of-distant-metastasis-in-breast-cancer-for-an-onc.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "checkpoint archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "create-a-two-panel-educational-diagram-illustrating-the-ctla-4-immune-ch-583840",
+        "reference_filename": "references/create-a-two-panel-educational-diagram-illustrating-the-ctla-4-immune-ch-583840-reference.png",
+        "review_status": "approved",
+        "source_element_id": 583840,
+        "source_sha256": "0e279c12d70c5be7edc04f698d4fb2ae1c42c965ca317060fbce4396a29ac842",
+        "svg_filename": "create-a-two-panel-educational-diagram-illustrating-the-ctla-4-immune-ch-583840-rough.svg",
+        "transparent_png_filename": "create-a-two-panel-educational-diagram-illustrating-the-ctla-4-immune-ch-583840-rough-transparent.png",
+        "conversion_archetype": "checkpoint",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 258519,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-20T16:26:55.121Z",
+        "downloadedAt": "2026-07-25T15:40:09.042Z",
+        "filename": "0452-create-a-two-panel-educational-diagram-illustrating-the-ctla-4-immune-checkpoint.png",
+        "id": 583840,
+        "index": 452,
+        "name": "Create a two-panel educational diagram illustrating the CTLA-4 immune checkpoint pathway for an undergraduate/early graduate cancer biology textbook.\n\nPanel 1 \u2014 CTLA-4 Checkpoint Engagement (titled \"CTLA-4 Inhibition\")\nShow a T cell (Inactive T cell) on the left facing a dendritic cell (APC) on the right, interacting at an immunological synapse. \n\nCTLA-4 binding B7-2, with CD28 binding B7-1 in a lock-and-key manner\nShow a small living timor cell in the corner\n\nPanel 2 \u2014 CTLA-4 Blockade (titled \"Checkpoint Blockade\")\nSame T cell and APC pairing. Now add:\n\nAn antibody bound to CTLA-4 on the T cell (labeled Active T cell) surface, physically blocking CTLA-4 from reaching B7-2\n\nLabel the antibody clearly as \"anti-CTLA-4 antibody\" \nshow a small dead tumor cell in the corner \n\n",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/583840"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 258519,
+        "sha256": "0e279c12d70c5be7edc04f698d4fb2ae1c42c965ca317060fbce4396a29ac842",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": "prompt-similarity:d0b55311e4ca",
+        "exact_duplicate_element_ids": [],
+        "heuristic_similarity_threshold": 0.92,
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": 574697,
+        "root_id": 399189
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0452-create-a-two-panel-educational-diagram-illustrating-the-ctla-4-immune-checkpoint.json",
+        "source_image_rel": "images/0452-create-a-two-panel-educational-diagram-illustrating-the-ctla-4-immune-checkpoint.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "checkpoint archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "create-a-two-panel-educational-diagram-illustrating-the-pd-1-pd-l1-immun-583910",
+        "reference_filename": "references/create-a-two-panel-educational-diagram-illustrating-the-pd-1-pd-l1-immun-583910-reference.png",
+        "review_status": "approved",
+        "source_element_id": 583910,
+        "source_sha256": "2ff0c8f69ed161de90812fb18ddb1d8f5dc4d1acc44375d4010fbabaa1d2f79b",
+        "svg_filename": "create-a-two-panel-educational-diagram-illustrating-the-pd-1-pd-l1-immun-583910-rough.svg",
+        "transparent_png_filename": "create-a-two-panel-educational-diagram-illustrating-the-pd-1-pd-l1-immun-583910-rough-transparent.png",
+        "conversion_archetype": "checkpoint",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 220665,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-20T16:52:33.218Z",
+        "downloadedAt": "2026-07-25T15:40:09.903Z",
+        "filename": "0453-create-a-two-panel-educational-diagram-illustrating-the-pd-1-pd-l1-immune-checkp.png",
+        "id": 583910,
+        "index": 453,
+        "name": "Create a two-panel educational diagram illustrating the PD-1/PD-L1 immune checkpoint pathway for an undergraduate/early graduate cancer biology textbook. Clean, flat, scientific illustration style matching a professional medical textbook. \nPanel 1 \u2014 PD-1/PD-L1 Checkpoint Engagement (titled \"Tumor Immune Evasion\")\nShow T cell on the left facing a tumor cell on the right. Now show:\nA vibrant Tumor cell with  PD-L1 on its surface \nPD-1 on T cell binding PD-L1 on tumor cell surface in a lock-and-key manner\nT cell shown in a dimmed or faded state \nPanel 2 \u2014 PD-1/PD-L1 Blockade by Anti-PD-1 or Anti-PD-L1 Antibody (titled \"Checkpoint Blockade\")\nSame T cell and tumor cell pairing. \nan antibody bound to PD-1 on the T cell (in lock-and-key manner) \u2014 labeled as anti-PD-1\nanother antibody bound to PD-L1 on the tumor cell (in lock and key manner) \u2014 labeled as anti-PD-L1\nT cell is looking vibrant\nTumor cell looks faded and broken - tumor cell death\nUndergraduate/early graduate cancer biology. Every receptor, ligand, and interaction must be explicitly labeled. Prioritize spatial clarity \u2014 tumor cell and T cell should be clearly separated with the checkpoint interaction shown at the interface between them. \n\n",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/583910"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 220665,
+        "sha256": "2ff0c8f69ed161de90812fb18ddb1d8f5dc4d1acc44375d4010fbabaa1d2f79b",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": "prompt-similarity:4b8b0de8e9be",
+        "exact_duplicate_element_ids": [],
+        "heuristic_similarity_threshold": 0.92,
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": 574674,
+        "root_id": 398756
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0453-create-a-two-panel-educational-diagram-illustrating-the-pd-1-pd-l1-immune-checkp.json",
+        "source_image_rel": "images/0453-create-a-two-panel-educational-diagram-illustrating-the-pd-1-pd-l1-immune-checkp.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "decision archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "three-branch-decision-diagram-showing-parp-inhibitor-maintenance-therapy-649211",
+        "reference_filename": "references/three-branch-decision-diagram-showing-parp-inhibitor-maintenance-therapy-649211-reference.png",
+        "review_status": "approved",
+        "source_element_id": 649211,
+        "source_sha256": "a651c4553568f7d2754c86835e31c52e93fde10a9cb734801e6492b08d16d5b1",
+        "svg_filename": "three-branch-decision-diagram-showing-parp-inhibitor-maintenance-therapy-649211-rough.svg",
+        "transparent_png_filename": "three-branch-decision-diagram-showing-parp-inhibitor-maintenance-therapy-649211-rough-transparent.png",
+        "conversion_archetype": "decision",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 97725,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-06-18T19:27:48.299Z",
+        "downloadedAt": "2026-07-25T15:40:11.707Z",
+        "filename": "0455-three-branch-decision-diagram-showing-parp-inhibitor-maintenance-therapy-selecti.png",
+        "id": 649211,
+        "index": 455,
+        "name": "Three-branch decision diagram showing PARP inhibitor maintenance therapy selection in advanced ovarian cancer. At the top, a light gray oval entry node labeled \"Platinum-Based Chemotherapy \u2014 Response Achieved.\" A downward arrow leads to a black diamond decision node labeled \"HRD Testing.\" Three branches diverge below the diamond. Left branch with a Blue (#0072B2) line labeled \"BRCA-Mutant\": ends in a Blue bordered treatment box containing a pill icon and a large Bluish Green (#009E73) horizontal relative benefit bar below labeled \"Greatest Benefit.\" Center branch with an Orange (#E69F00) line labeled \"HRD-Positive / Non-BRCA\": ends in an Orange bordered treatment box containing a pill icon and a medium Bluish Green relative benefit bar below labeled \"Moderate Benefit.\" Right branch with a light gray line labeled \"HRD-Negative\": ends in a gray bordered box with a gray indicator and a short gray bar below labeled \"Limited Benefit.\" All benefit bars are relative in length only \u2014 not quantitative. No floating boxes outside panel boundaries. No summary box at the bottom. Black 1pt branch lines and node borders. Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/649211"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 97725,
+        "sha256": "a651c4553568f7d2754c86835e31c52e93fde10a9cb734801e6492b08d16d5b1",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0455-three-branch-decision-diagram-showing-parp-inhibitor-maintenance-therapy-selecti.json",
+        "source_image_rel": "images/0455-three-branch-decision-diagram-showing-parp-inhibitor-maintenance-therapy-selecti.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "proportional-bar archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "proportional-horizontal-bar-diagram-showing-driver-mutation-frequency-in-649237",
+        "reference_filename": "references/proportional-horizontal-bar-diagram-showing-driver-mutation-frequency-in-649237-reference.png",
+        "review_status": "approved",
+        "source_element_id": 649237,
+        "source_sha256": "001ae1ab2a7f8a47399186ec701737cf985f33ddfa89e5e8c36b4efb20c94ef4",
+        "svg_filename": "proportional-horizontal-bar-diagram-showing-driver-mutation-frequency-in-649237-rough.svg",
+        "transparent_png_filename": "proportional-horizontal-bar-diagram-showing-driver-mutation-frequency-in-649237-rough-transparent.png",
+        "conversion_archetype": "proportional-bar",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 798395,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-06-18T19:43:05.813Z",
+        "downloadedAt": "2026-07-25T15:40:13.684Z",
+        "filename": "0457-proportional-horizontal-bar-diagram-showing-driver-mutation-frequency-in-non-sma.png",
+        "id": 649237,
+        "index": 457,
+        "name": "Proportional horizontal bar diagram showing driver mutation frequency in non-small cell lung cancer. A single large rectangle divided into eight solid flat color segments from left to right by approximate prevalence: PD-L1 high/no driver (~30%) in Bluish Green (#009E73); EGFR (~15%) in Blue (#0072B2); KRAS G12C (~13%) in Orange (#E69F00); ALK rearrangement (~5%) in Sky Blue (#56B4E9); MET exon 14 skipping (~3-4%) in light gray; BRAF V600E (~2%) in Reddish Purple (#CC79A7); RET fusion (~2%) in Yellow (#F0E442); other/unknown remainder in light gray. Each segment is a plain solid color fill with no internal imagery, no molecular structures, no protein renders, and no icons inside the bar. Segment widths are proportional to prevalence. Segment borders 1pt black. Below each segment a short vertical black line connects downward to one small flat color-matched pill capsule icon. All pill icons are flat, same size, and aligned on a single horizontal baseline. Each segment labeled above with mutation name and approximate percentage. Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/649237"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 798395,
+        "sha256": "001ae1ab2a7f8a47399186ec701737cf985f33ddfa89e5e8c36b4efb20c94ef4",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0457-proportional-horizontal-bar-diagram-showing-driver-mutation-frequency-in-non-sma.json",
+        "source_image_rel": "images/0457-proportional-horizontal-bar-diagram-showing-driver-mutation-frequency-in-non-sma.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "decision archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "three-branch-decision-diagram-showing-parp-inhibitor-maintenance-therapy-649216",
+        "reference_filename": "references/three-branch-decision-diagram-showing-parp-inhibitor-maintenance-therapy-649216-reference.png",
+        "review_status": "approved",
+        "source_element_id": 649216,
+        "source_sha256": "7198d9cc10374e71cf42621ada8b24e34925f4944b85dfedb356fd7fd66b803a",
+        "svg_filename": "three-branch-decision-diagram-showing-parp-inhibitor-maintenance-therapy-649216-rough.svg",
+        "transparent_png_filename": "three-branch-decision-diagram-showing-parp-inhibitor-maintenance-therapy-649216-rough-transparent.png",
+        "conversion_archetype": "decision",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1061866,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-06-18T19:30:05.955Z",
+        "downloadedAt": "2026-07-25T15:40:14.739Z",
+        "filename": "0458-three-branch-decision-diagram-showing-parp-inhibitor-maintenance-therapy-selecti.png",
+        "id": 649216,
+        "index": 458,
+        "name": "Three-branch decision diagram showing PARP inhibitor maintenance therapy selection in advanced ovarian cancer. At the top, a plain light gray oval entry node with no internal imagery \u2014 no IV bag, no tumor cell illustration, no photorealistic elements inside the node. A downward arrow leads to a black diamond decision node labeled \"HRD Testing.\" Three branches diverge below the diamond. Left branch with a Blue (#0072B2) line labeled \"BRCA-Mutant\": ends in a Blue bordered treatment box containing only a flat Blue pill capsule icon, no text inside the box. Below the box, a dashed line connects to a large solid Bluish Green (#009E73) horizontal benefit bar labeled \"Greatest Benefit.\" Center branch with an Orange (#E69F00) line labeled \"HRD-Positive / Non-BRCA\": ends in an Orange bordered treatment box containing only a flat Orange pill capsule icon, no text inside the box. Below the box, a dashed line connects to a medium solid Bluish Green (#009E73) horizontal benefit bar labeled \"Moderate Benefit.\" Right branch with a light gray line labeled \"HRD-Negative\": ends in a gray bordered treatment box containing only a flat gray pill capsule icon, no text inside the box. Below the box, a dashed line connects to a short solid light gray horizontal benefit bar labeled \"Limited Benefit.\" All benefit bars are relative in length only \u2014 not quantitative. No floating boxes outside panel boundaries. No summary box at the bottom. No photorealistic renders anywhere in the figure. Black 1pt branch lines and node borders. Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/649216"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1200,
+        "local_bytes": 1061866,
+        "sha256": "7198d9cc10374e71cf42621ada8b24e34925f4944b85dfedb356fd7fd66b803a",
+        "width": 1200
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0458-three-branch-decision-diagram-showing-parp-inhibitor-maintenance-therapy-selecti.json",
+        "source_image_rel": "images/0458-three-branch-decision-diagram-showing-parp-inhibitor-maintenance-therapy-selecti.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "chart archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "vertical-bar-chart-showing-colorectal-cancer-5-year-survival-rates-by-tn-649224",
+        "reference_filename": "references/vertical-bar-chart-showing-colorectal-cancer-5-year-survival-rates-by-tn-649224-reference.png",
+        "review_status": "approved",
+        "source_element_id": 649224,
+        "source_sha256": "b1c815ea87a0c8c053a93ca343a3efc90c6279a182007cc3c5fab7587d045956",
+        "svg_filename": "vertical-bar-chart-showing-colorectal-cancer-5-year-survival-rates-by-tn-649224-rough.svg",
+        "transparent_png_filename": "vertical-bar-chart-showing-colorectal-cancer-5-year-survival-rates-by-tn-649224-rough-transparent.png",
+        "conversion_archetype": "chart",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 779542,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-06-18T19:37:41.672Z",
+        "downloadedAt": "2026-07-25T15:40:15.672Z",
+        "filename": "0459-vertical-bar-chart-showing-colorectal-cancer-5-year-survival-rates-by-tnm-stage-.png",
+        "id": 649224,
+        "index": 459,
+        "name": "Vertical bar chart showing colorectal cancer 5-year survival rates by TNM stage. Y-axis runs from 0 to 100% with light gray horizontal gridlines at 20%, 40%, 60%, 80%, and 100%. Y-axis line in black. Eight evenly spaced vertical bars from left to right representing stages I, IIA, IIB, IIC, IIIA, IIIB, IIIC, and IV with heights proportional to 74, 66, 58, 37, 73, 46, 28, and 5 percent respectively. Bar colors: Stage I and IIA in Bluish Green (#009E73); Stage IIB, IIC, IIIA, and IIIB in Orange (#E69F00); Stage IIIC and IV in Vermillion (#D55E00). Black bar outlines 0.5pt. Each bar labeled at the base with its stage name. Y-axis labeled \"5-Year Survival (%)\". No gradient fills. No 3D effects. Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/649224"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 779542,
+        "sha256": "b1c815ea87a0c8c053a93ca343a3efc90c6279a182007cc3c5fab7587d045956",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0459-vertical-bar-chart-showing-colorectal-cancer-5-year-survival-rates-by-tnm-stage-.json",
+        "source_image_rel": "images/0459-vertical-bar-chart-showing-colorectal-cancer-5-year-survival-rates-by-tnm-stage-.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "decision archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "decision-tree-diagram-showing-treatment-selection-for-metastatic-melanom-649254",
+        "reference_filename": "references/decision-tree-diagram-showing-treatment-selection-for-metastatic-melanom-649254-reference.png",
+        "review_status": "approved",
+        "source_element_id": 649254,
+        "source_sha256": "14dac0aab0b19e1d5da3ab4ad95fe3b7857ac82b5cd0516453a0d503f498bf4e",
+        "svg_filename": "decision-tree-diagram-showing-treatment-selection-for-metastatic-melanom-649254-rough.svg",
+        "transparent_png_filename": "decision-tree-diagram-showing-treatment-selection-for-metastatic-melanom-649254-rough-transparent.png",
+        "conversion_archetype": "decision",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 918602,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-06-18T19:52:05.327Z",
+        "downloadedAt": "2026-07-25T15:40:18.496Z",
+        "filename": "0462-decision-tree-diagram-showing-treatment-selection-for-metastatic-melanoma-at-the.png",
+        "id": 649254,
+        "index": 462,
+        "name": "Decision tree diagram showing treatment selection for metastatic melanoma. At the top, a light gray oval entry node labeled \"Metastatic Melanoma.\" A downward arrow leads to a black diamond decision node labeled \"BRAF V600 Mutation?\" Two branches diverge from the diamond. Left branch with an Orange (#E69F00) line labeled \"Present (~50%)\": leads to two side-by-side treatment boxes \u2014 left box with Vermillion (#D55E00) border containing a lightning bolt icon labeled \"Rapid Response\" and a short clock icon labeled \"Limited Duration\" representing BRAF+MEK inhibitor therapy; right box with Bluish Green (#009E73) border containing a slow-curve icon labeled \"Slower Onset\" and a long clock icon labeled \"Durable Response\" representing immunotherapy. Right branch with a Bluish Green (#009E73) line labeled \"Absent (~50%)\": leads to a single Bluish Green bordered box with a slow-curve icon and a long clock icon representing immunotherapy only. Black 1pt connecting lines throughout. No floating boxes outside panel boundaries. No summary box at the bottom. Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/649254"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 918602,
+        "sha256": "14dac0aab0b19e1d5da3ab4ad95fe3b7857ac82b5cd0516453a0d503f498bf4e",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": "prompt-similarity:157a0dccc602",
+        "exact_duplicate_element_ids": [],
+        "heuristic_similarity_threshold": 0.92,
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": 649218,
+        "root_id": 649218
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0462-decision-tree-diagram-showing-treatment-selection-for-metastatic-melanoma-at-the.json",
+        "source_image_rel": "images/0462-decision-tree-diagram-showing-treatment-selection-for-metastatic-melanoma-at-the.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "apoptosis archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "two-panel-educational-diagram-for-undergraduate-cancer-biology-showing-i-649263",
+        "reference_filename": "references/two-panel-educational-diagram-for-undergraduate-cancer-biology-showing-i-649263-reference.png",
+        "review_status": "approved",
+        "source_element_id": 649263,
+        "source_sha256": "d9303613b5eb6c4e1c69e5fd6424e8bbdfa0059510467af953e45c782720b96b",
+        "svg_filename": "two-panel-educational-diagram-for-undergraduate-cancer-biology-showing-i-649263-rough.svg",
+        "transparent_png_filename": "two-panel-educational-diagram-for-undergraduate-cancer-biology-showing-i-649263-rough-transparent.png",
+        "conversion_archetype": "apoptosis",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 96152,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-06-18T19:57:53.833Z",
+        "downloadedAt": "2026-07-25T15:40:19.442Z",
+        "filename": "0463-two-panel-educational-diagram-for-undergraduate-cancer-biology-showing-iap-inhib.png",
+        "id": 649263,
+        "index": 463,
+        "name": "Two-panel educational diagram for undergraduate cancer biology showing IAP inhibition mechanisms. Left panel shows a Reddish Purple (#CC79A7) oval representing XIAP binding to a light gray rounded rectangle representing procaspase, with a Vermillion (#D55E00) flat-head inhibitory arrow blocking a dashed activation arrow \u2014 showing XIAP preventing procaspase activation. Right panel shows the same Reddish Purple XIAP oval binding to a Bluish Green (#009E73) active caspase shape, with a Vermillion flat-head inhibitory arrow blocking the caspase activity arrow \u2014 showing XIAP suppressing active caspase. An Orange (#E69F00) horizontal indicator bar spans across the top of both panels indicating cancer overexpression state. Both panels are equal width, side by side, separated by a thin light gray vertical divider. No photorealistic elements, no 3D renders, no molecular structures. Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/649263"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 96152,
+        "sha256": "d9303613b5eb6c4e1c69e5fd6424e8bbdfa0059510467af953e45c782720b96b",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0463-two-panel-educational-diagram-for-undergraduate-cancer-biology-showing-iap-inhib.json",
+        "source_image_rel": "images/0463-two-panel-educational-diagram-for-undergraduate-cancer-biology-showing-iap-inhib.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "apoptosis archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "two-panel-educational-diagram-for-undergraduate-cancer-biology-showing-i-649266",
+        "reference_filename": "references/two-panel-educational-diagram-for-undergraduate-cancer-biology-showing-i-649266-reference.png",
+        "review_status": "approved",
+        "source_element_id": 649266,
+        "source_sha256": "8f21db09c8f48c7566dd52f737eed3edcc817eb73cc695492588546e060d38c5",
+        "svg_filename": "two-panel-educational-diagram-for-undergraduate-cancer-biology-showing-i-649266-rough.svg",
+        "transparent_png_filename": "two-panel-educational-diagram-for-undergraduate-cancer-biology-showing-i-649266-rough-transparent.png",
+        "conversion_archetype": "apoptosis",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 89723,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-06-18T19:59:48.487Z",
+        "downloadedAt": "2026-07-25T15:40:20.312Z",
+        "filename": "0464-two-panel-educational-diagram-for-undergraduate-cancer-biology-showing-iap-inhib.png",
+        "id": 649266,
+        "index": 464,
+        "name": "Two-panel educational diagram for undergraduate cancer biology showing IAP inhibition mechanisms. At the top, a plain flat Orange (#E69F00) solid rectangle spanning the full width of both panels \u2014 no text inside it, solid flat color only. Left panel: a flat solid Reddish Purple (#CC79A7) oval sitting directly on top of a flat solid light gray rounded rectangle \u2014 direct shape contact showing binding, no connector hooks or curved arms between them. A Vermillion (#D55E00) flat-head inhibitory line crosses a dashed downward arrow below the gray rectangle. Right panel: a flat solid Reddish Purple (#CC79A7) oval sitting directly on top of a flat solid Bluish Green (#009E73) crescent or pac-man shape representing active caspase \u2014 direct shape contact, no connector hooks. A Vermillion flat-head inhibitory line crosses a solid downward arrow below the caspase shape. Thin light gray vertical divider between the two panels. No gradient fills, no drop shadows, no 3D shading, no plastic textures, no connector hooks, no text anywhere in the image. Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/649266"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 89723,
+        "sha256": "8f21db09c8f48c7566dd52f737eed3edcc817eb73cc695492588546e060d38c5",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0464-two-panel-educational-diagram-for-undergraduate-cancer-biology-showing-iap-inhib.json",
+        "source_image_rel": "images/0464-two-panel-educational-diagram-for-undergraduate-cancer-biology-showing-iap-inhib.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "apoptosis archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "two-panel-educational-diagram-for-undergraduate-cancer-biology-showing-i-649273",
+        "reference_filename": "references/two-panel-educational-diagram-for-undergraduate-cancer-biology-showing-i-649273-reference.png",
+        "review_status": "approved",
+        "source_element_id": 649273,
+        "source_sha256": "394666c2b1de93c5e4fd340a3f772a2818c610830c42fbb09c99ee6b53f8f75d",
+        "svg_filename": "two-panel-educational-diagram-for-undergraduate-cancer-biology-showing-i-649273-rough.svg",
+        "transparent_png_filename": "two-panel-educational-diagram-for-undergraduate-cancer-biology-showing-i-649273-rough-transparent.png",
+        "conversion_archetype": "apoptosis",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 149593,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-06-18T20:02:38.574Z",
+        "downloadedAt": "2026-07-25T15:40:21.164Z",
+        "filename": "0465-two-panel-educational-diagram-for-undergraduate-cancer-biology-showing-iap-inhib.png",
+        "id": 649273,
+        "index": 465,
+        "name": "Two-panel educational diagram for undergraduate cancer biology showing IAP inhibition mechanisms. At the top, a plain flat Orange (#E69F00) solid rectangle spanning the full width of both panels labeled \"Cancer Overexpression of IAPs\" in clean white sans-serif text. Left panel: a flat solid Reddish Purple (#CC79A7) oval labeled \"XIAP\" in white text sitting directly on top of a flat solid light gray rounded rectangle labeled \"Procaspase\" \u2014 direct shape contact, no curved connector hooks or 3D arms between them. A Vermillion (#D55E00) flat-head inhibitory line crosses a dashed downward arrow below the gray rectangle indicating blocked activation. Right panel: a flat solid Reddish Purple (#CC79A7) oval labeled \"XIAP\" in white text sitting directly on top of a flat solid Bluish Green (#009E73) crescent shape labeled \"Active Caspase\" \u2014 direct shape contact, no curved connector hooks. A Vermillion flat-head inhibitory line crosses a solid downward arrow below the caspase shape indicating blocked caspase activity. Thin light gray vertical divider between the two panels. No gradient fills, no drop shadows, no 3D shading, no plastic textures, no connector hooks between shapes. Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/649273"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 149593,
+        "sha256": "394666c2b1de93c5e4fd340a3f772a2818c610830c42fbb09c99ee6b53f8f75d",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0465-two-panel-educational-diagram-for-undergraduate-cancer-biology-showing-iap-inhib.json",
+        "source_image_rel": "images/0465-two-panel-educational-diagram-for-undergraduate-cancer-biology-showing-iap-inhib.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "normal-cancer archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "landscape-1920-1080-clean-white-background-flat-professional-scientific--715222",
+        "reference_filename": "references/landscape-1920-1080-clean-white-background-flat-professional-scientific--715222-reference.png",
+        "review_status": "approved",
+        "source_element_id": 715222,
+        "source_sha256": "32ab9a2734a8206d87b21d3046ec1763b4e8e810c4aab23c06a5c6389bcf4dbd",
+        "svg_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--715222-rough.svg",
+        "transparent_png_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--715222-rough-transparent.png",
+        "conversion_archetype": "normal-cancer",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 2051759,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-07-23T06:51:19.827Z",
+        "downloadedAt": "2026-07-25T15:40:22.107Z",
+        "filename": "0466-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png",
+        "id": 715222,
+        "index": 466,
+        "name": "Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. Two cells side by side, equal size, centered in the frame with space between them. Left cell: a clean rounded cell outline with a visible nucleus inside, labeled \"normal cell.\" Inside the nucleus: two small labeled icons \u2014 one labeled \"p53 \u2014 intact,\" one labeled \"PKR \u2014 intact.\" Right cell: same rounded cell outline with a visible nucleus, labeled \"cancer cell.\" Inside the nucleus: two small labeled icons \u2014 one labeled \"p53 \u2014 mutated,\" one labeled \"Ras \u2014 activated.\" No virus, no machinery yet \u2014 just the two cells with their internal defense status labeled. This is the master reference; all viral elements are added by editing this image.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/715222"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1200,
+        "local_bytes": 2051759,
+        "sha256": "32ab9a2734a8206d87b21d3046ec1763b4e8e810c4aab23c06a5c6389bcf4dbd",
+        "width": 1696
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0466-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.json",
+        "source_image_rel": "images/0466-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "normal-cancer archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "show-it-intact-and-undisturbed-viral-particle-gone-labeled-normal-cell-u-715229",
+        "reference_filename": "references/show-it-intact-and-undisturbed-viral-particle-gone-labeled-normal-cell-u-715229-reference.png",
+        "review_status": "approved",
+        "source_element_id": 715229,
+        "source_sha256": "2f874be91ab61866ba581918dcd2754df43efa9fe5700c0ffbd9112398579396",
+        "svg_filename": "show-it-intact-and-undisturbed-viral-particle-gone-labeled-normal-cell-u-715229-rough.svg",
+        "transparent_png_filename": "show-it-intact-and-undisturbed-viral-particle-gone-labeled-normal-cell-u-715229-rough-transparent.png",
+        "conversion_archetype": "normal-cancer",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 2156711,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-07-23T06:57:21.196Z",
+        "downloadedAt": "2026-07-25T15:40:25.231Z",
+        "filename": "0469-show-it-intact-and-undisturbed-viral-particle-gone-labeled-normal-cell-unaffecte.png",
+        "id": 715229,
+        "index": 469,
+        "name": "show it intact and undisturbed, viral particle gone \u2014 labeled \"normal cell \u2014 unaffected.\" Right cell (cancer cell): show the cell outline fragmenting or bursting \u2014 a broken, disrupted cell membrane indicating lysis, labeled \"cancer cell \u2014 lysed.\" Inside or spilling from the lysed cell: multiple small viral particle copies, all the same shape and color as the original ONYX-015 particle, labeled \"viral progeny released.\" The p53 mutated / Ras activated icons inside the cancer cell nucleus are still visible amid the lysis. A label: \"p53 mutated \u2014 replication unchecked \u2192 lysis.\" Clean white background.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/715229"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1200,
+        "local_bytes": 2156711,
+        "sha256": "2f874be91ab61866ba581918dcd2754df43efa9fe5700c0ffbd9112398579396",
+        "width": 1696
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0469-show-it-intact-and-undisturbed-viral-particle-gone-labeled-normal-cell-unaffecte.json",
+        "source_image_rel": "images/0469-show-it-intact-and-undisturbed-viral-particle-gone-labeled-normal-cell-unaffecte.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "virus-lysis archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "left-side-of-frame-the-normal-cell-intact-and-clearly-unaffected-labeled-715234",
+        "reference_filename": "references/left-side-of-frame-the-normal-cell-intact-and-clearly-unaffected-labeled-715234-reference.png",
+        "review_status": "approved",
+        "source_element_id": 715234,
+        "source_sha256": "bb17a21aa1bf26141ab78c44fd6449b77ea7077a88c2c3833628596e2ad7579f",
+        "svg_filename": "left-side-of-frame-the-normal-cell-intact-and-clearly-unaffected-labeled-715234-rough.svg",
+        "transparent_png_filename": "left-side-of-frame-the-normal-cell-intact-and-clearly-unaffected-labeled-715234-rough-transparent.png",
+        "conversion_archetype": "virus-lysis",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 2014465,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-07-23T07:00:20.269Z",
+        "downloadedAt": "2026-07-25T15:40:27.378Z",
+        "filename": "0471-left-side-of-frame-the-normal-cell-intact-and-clearly-unaffected-labeled-normal-.png",
+        "id": 715234,
+        "index": 471,
+        "name": "Left side of frame: the normal cell intact and clearly unaffected \u2014 labeled \"normal cell \u2014 spared.\" Right side of frame: a circular cycle diagram showing the oncolytic loop \u2014 four stages arranged in a clockwise ring with arrows between them: \"virus enters cancer cell\" \u2192 \"replication \u2014 p53 mutated, defenses absent\" \u2192 \"cell lyses \u2014 progeny released\" \u2192 \"progeny infect adjacent cancer cells\" \u2192 back to start. At the center of the cycle ring: a small label \"ONYX-015 \u2014 self-amplifying.\" The cycle diagram uses the same viral particle shape and cancer cell color as prior panels. Clean white background.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/715234"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1200,
+        "local_bytes": 2014465,
+        "sha256": "bb17a21aa1bf26141ab78c44fd6449b77ea7077a88c2c3833628596e2ad7579f",
+        "width": 1696
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0471-left-side-of-frame-the-normal-cell-intact-and-clearly-unaffected-labeled-normal-.json",
+        "source_image_rel": "images/0471-left-side-of-frame-the-normal-cell-intact-and-clearly-unaffected-labeled-normal-.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "csc-treatment archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "landscape-1920-1080-clean-white-background-flat-professional-scientific--654465",
+        "reference_filename": "references/landscape-1920-1080-clean-white-background-flat-professional-scientific--654465-reference.png",
+        "review_status": "approved",
+        "source_element_id": 654465,
+        "source_sha256": "e012fe755c6fe3b206c99209f524d56bafa7dee97ee6a76d60a8cd2efe9e6b83",
+        "svg_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--654465-rough.svg",
+        "transparent_png_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--654465-rough-transparent.png",
+        "conversion_archetype": "csc-treatment",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 2300261,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-06-21T18:57:05.441Z",
+        "downloadedAt": "2026-07-25T15:40:33.343Z",
+        "filename": "0476-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png",
+        "id": 654465,
+        "index": 476,
+        "name": "Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. A roughly circular tumor mass made mostly of small grey/blue bulk tumor cells packed together \u2014 the large majority. Scattered among them, only a FEW distinct larger magenta/purple cancer stem cells (CSCs), clearly the minority (e.g. 3\u20134 CSCs among ~40 bulk cells). Label the mass \"pre-treatment tumor\"; a small bracket or callout points to one magenta cell labeled \"cancer stem cell (CSC)\" and to the grey cells labeled \"bulk tumor cells.\" The CSC:bulk ratio is visibly LOW. No molecular detail. Clean composition.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/654465"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1200,
+        "local_bytes": 2300261,
+        "sha256": "e012fe755c6fe3b206c99209f524d56bafa7dee97ee6a76d60a8cd2efe9e6b83",
+        "width": 1696
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": "prompt-similarity:cc5277b296bf",
+        "exact_duplicate_element_ids": [],
+        "heuristic_similarity_threshold": 0.92,
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": 654463,
+        "root_id": 654463
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0476-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.json",
+        "source_image_rel": "images/0476-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "csc-treatment archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "landscape-1920-1080-clean-white-background-flat-professional-scientific--654466",
+        "reference_filename": "references/landscape-1920-1080-clean-white-background-flat-professional-scientific--654466-reference.png",
+        "review_status": "approved",
+        "source_element_id": 654466,
+        "source_sha256": "e08883ca421da68f9da2848413a7d8e7fe2963205553e22167385db15865e61c",
+        "svg_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--654466-rough.svg",
+        "transparent_png_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--654466-rough-transparent.png",
+        "conversion_archetype": "csc-treatment",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 2509414,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-06-21T18:59:37.790Z",
+        "downloadedAt": "2026-07-25T15:40:34.349Z",
+        "filename": "0477-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png",
+        "id": 654466,
+        "index": 477,
+        "name": "Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. The same tumor mass, now with a treatment band/arrow sweeping across it from above labeled \"chemotherapy.\" Many of the small grey/blue bulk cells are shown dying \u2014 faded, fragmenting, marked with small X's or dissolving outlines. The magenta/purple CSCs are shown UNHARMED, intact and brightly colored amid the dying bulk cells. A label: \"bulk cells killed \u2014 CSCs survive.\" No drug structure, just the treatment arrow/band. Clean composition.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/654466"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1200,
+        "local_bytes": 2509414,
+        "sha256": "e08883ca421da68f9da2848413a7d8e7fe2963205553e22167385db15865e61c",
+        "width": 1696
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0477-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.json",
+        "source_image_rel": "images/0477-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "csc-treatment archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "landscape-1920-1080-clean-white-background-flat-professional-scientific--654468",
+        "reference_filename": "references/landscape-1920-1080-clean-white-background-flat-professional-scientific--654468-reference.png",
+        "review_status": "approved",
+        "source_element_id": 654468,
+        "source_sha256": "47c6e06fb35fdef1482e93d44f07e71909c4588742f71753e0c60be8f47a6a48",
+        "svg_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--654468-rough.svg",
+        "transparent_png_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--654468-rough-transparent.png",
+        "conversion_archetype": "csc-treatment",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1572737,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-06-21T19:03:48.657Z",
+        "downloadedAt": "2026-07-25T15:40:35.253Z",
+        "filename": "0478-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png",
+        "id": 654468,
+        "index": 478,
+        "name": "Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. A much SMALLER tumor mass than frame 1 \u2014 most grey/blue bulk cells are gone. The same few magenta/purple CSCs remain, but now they make up a much LARGER PROPORTION of what's left (e.g. 3\u20134 CSCs among only ~6\u20138 surviving bulk cells). The tumor is smaller overall but visibly CSC-rich. Label \"post-treatment tumor\" and a callout: \"tumor shrinks, but CSC fraction rises.\" The KEY READ is the proportion shift versus frame 1. No molecular detail. Clean composition.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/654468"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1200,
+        "local_bytes": 1572737,
+        "sha256": "47c6e06fb35fdef1482e93d44f07e71909c4588742f71753e0c60be8f47a6a48",
+        "width": 1696
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0478-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.json",
+        "source_image_rel": "images/0478-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "decision archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "three-branch-decision-diagram-showing-parp-inhibitor-maintenance-therapy-661934",
+        "reference_filename": "references/three-branch-decision-diagram-showing-parp-inhibitor-maintenance-therapy-661934-reference.png",
+        "review_status": "approved",
+        "source_element_id": 661934,
+        "source_sha256": "81c11ab36b1682b5ebb959b50a9edd0ec9cb0c78cacf98487818f6fc5eab3fe9",
+        "svg_filename": "three-branch-decision-diagram-showing-parp-inhibitor-maintenance-therapy-661934-rough.svg",
+        "transparent_png_filename": "three-branch-decision-diagram-showing-parp-inhibitor-maintenance-therapy-661934-rough-transparent.png",
+        "conversion_archetype": "decision",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 89953,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-06-25T13:12:40.614Z",
+        "downloadedAt": "2026-07-25T15:40:36.101Z",
+        "filename": "0479-three-branch-decision-diagram-showing-parp-inhibitor-maintenance-therapy-selecti.png",
+        "id": 661934,
+        "index": 479,
+        "name": "Three-branch decision diagram showing PARP inhibitor maintenance therapy selection in advanced ovarian cancer after platinum response. At the top, a light gray oval entry node labeled \"Platinum Response.\" A solid downward arrow leads to a flat solid black diamond node labeled \"HRD Testing.\" Three branches spread left, center, and right below the diamond. Left branch with a Blue (#0072B2) line labeled \"BRCA-Mutant\": leads to a Blue (#0072B2) bordered rounded rectangle box labeled \"Olaparib\" with a flat Blue pill icon inside. Below the box a large solid Bluish Green (#009E73) horizontal bar labeled \"Greatest Benefit.\" Center branch with an Orange (#E69F00) line labeled \"HRD-Positive / Non-BRCA\": leads to an Orange (#E69F00) bordered rounded rectangle box labeled \"Niraparib\" with a flat Orange pill icon inside. Below the box a medium solid Bluish Green (#009E73) horizontal bar labeled \"Moderate Benefit.\" Right branch with a light gray line labeled \"HRD-Negative\": leads to a light gray bordered rounded rectangle box labeled \"Limited Benefit\" with a flat gray pill icon inside. Below the box a short solid light gray horizontal bar labeled \"Limited Benefit.\" All three benefit bars sit on the same baseline, sized relatively \u2014 large, medium, short. All boxes same width. No photorealistic elements, no gradients, no drop shadows, no floating elements. Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/661934"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 89953,
+        "sha256": "81c11ab36b1682b5ebb959b50a9edd0ec9cb0c78cacf98487818f6fc5eab3fe9",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0479-three-branch-decision-diagram-showing-parp-inhibitor-maintenance-therapy-selecti.json",
+        "source_image_rel": "images/0479-three-branch-decision-diagram-showing-parp-inhibitor-maintenance-therapy-selecti.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "decision archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "three-branch-decision-diagram-showing-parp-inhibitor-maintenance-therapy-661977",
+        "reference_filename": "references/three-branch-decision-diagram-showing-parp-inhibitor-maintenance-therapy-661977-reference.png",
+        "review_status": "approved",
+        "source_element_id": 661977,
+        "source_sha256": "981517df1d85b79959d0e6b5016fc6ab1084ea660c12cd22b5f6dfe4a7d2c347",
+        "svg_filename": "three-branch-decision-diagram-showing-parp-inhibitor-maintenance-therapy-661977-rough.svg",
+        "transparent_png_filename": "three-branch-decision-diagram-showing-parp-inhibitor-maintenance-therapy-661977-rough-transparent.png",
+        "conversion_archetype": "decision",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1094682,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-06-25T13:29:47.195Z",
+        "downloadedAt": "2026-07-25T15:40:37.867Z",
+        "filename": "0481-three-branch-decision-diagram-showing-parp-inhibitor-maintenance-therapy-selecti.png",
+        "id": 661977,
+        "index": 481,
+        "name": "Three-branch decision diagram showing PARP inhibitor maintenance therapy selection in advanced ovarian cancer after platinum response. At the top, a light gray oval entry node labeled \"Platinum Response.\" A solid downward arrow leads to a white diamond node with a 2pt black border labeled \"HRD Testing\" in black text \u2014 white fill only, no dark fill, no gradient, no shadow. Three branches spread left, center, and right below the diamond. Left branch with a Blue (#0072B2) line labeled \"BRCA-Mutant\" in plain upright text: leads to a Blue (#0072B2) bordered rounded rectangle box labeled \"Olaparib\" with a flat Blue pill icon inside. Below the box a solid downward Blue arrow connects to a wide solid Bluish Green (#009E73) horizontal rectangle labeled \"Greatest Benefit\" in white text. Center branch with an Orange (#E69F00) line labeled \"HRD-Positive / Non-BRCA\": leads to an Orange (#E69F00) bordered rounded rectangle box labeled \"Niraparib\" with a flat Orange pill icon inside. Below the box a solid downward Orange arrow connects to a medium-width solid Bluish Green (#009E73) horizontal rectangle labeled \"Moderate Benefit\" in white text \u2014 noticeably narrower than the Greatest Benefit bar. Right branch with a light gray line labeled \"HRD-Negative\": leads to a gray bordered rounded rectangle box labeled \"Limited Benefit\" with a flat gray pill icon inside. Below the box a solid downward gray arrow connects to a short solid light gray horizontal rectangle labeled \"Limited Benefit\" \u2014 noticeably narrower than the Moderate Benefit bar. All three benefit bars sit on the same baseline. No dark fills anywhere in the figure. No gradients, no drop shadows, no photorealistic elements. Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/661977"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1200,
+        "local_bytes": 1094682,
+        "sha256": "981517df1d85b79959d0e6b5016fc6ab1084ea660c12cd22b5f6dfe4a7d2c347",
+        "width": 1200
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": "prompt-similarity:2bee35db2d1d",
+        "exact_duplicate_element_ids": [],
+        "heuristic_similarity_threshold": 0.92,
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": 661968,
+        "root_id": 661968
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0481-three-branch-decision-diagram-showing-parp-inhibitor-maintenance-therapy-selecti.json",
+        "source_image_rel": "images/0481-three-branch-decision-diagram-showing-parp-inhibitor-maintenance-therapy-selecti.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "apoptosis archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "two-panel-diagram-for-undergraduate-cancer-biology-showing-p53-mediated--662095",
+        "reference_filename": "references/two-panel-diagram-for-undergraduate-cancer-biology-showing-p53-mediated--662095-reference.png",
+        "review_status": "approved",
+        "source_element_id": 662095,
+        "source_sha256": "b5ddde3c573183ba9fef8f79ded81e4762775d396f258890651732492e0375b6",
+        "svg_filename": "two-panel-diagram-for-undergraduate-cancer-biology-showing-p53-mediated--662095-rough.svg",
+        "transparent_png_filename": "two-panel-diagram-for-undergraduate-cancer-biology-showing-p53-mediated--662095-rough-transparent.png",
+        "conversion_archetype": "apoptosis",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 99376,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-06-25T14:34:09.378Z",
+        "downloadedAt": "2026-07-25T15:40:40.789Z",
+        "filename": "0484-two-panel-diagram-for-undergraduate-cancer-biology-showing-p53-mediated-apoptosi.png",
+        "id": 662095,
+        "index": 484,
+        "name": "Two-panel diagram for undergraduate cancer biology showing p53-mediated apoptosis and its loss in cancer. Left panel labeled \"Wild-Type p53\" shows a central flat solid Blue (#0072B2) oval representing p53 protein. At the top of the left panel, a broken DNA helix icon in Sky Blue (#56B4E9) with a downward activation arrow pointing to the p53 oval representing DNA damage signal. From the p53 oval, four Bluish Green (#009E73) activation arrows radiate downward to four separate flat solid Vermillion (#D55E00) oval targets arranged in a row: BAX, NOXA, PUMA, and p21/WAF1. A curved Vermillion (#D55E00) inhibitory flat-head arrow loops from a small flat Orange (#E69F00) MDM2 oval back to the p53 oval representing negative feedback. Right panel labeled \"Mutant p53 \u2014 Cancer State\" shows the same layout but the central p53 oval is flat solid light gray with a red X symbol overlaid indicating loss of function. All four downstream target ovals are flat light gray and dimmed. All activation arrows are light gray and dimmed. The MDM2 feedback arrow is absent. Both panels are equal width separated by a thin light gray vertical divider. All shapes have flat solid opaque fills \u2014 no gradients, no 3D shading, no gloss, no drop shadows, no plastic textures. Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/662095"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 99376,
+        "sha256": "b5ddde3c573183ba9fef8f79ded81e4762775d396f258890651732492e0375b6",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0484-two-panel-diagram-for-undergraduate-cancer-biology-showing-p53-mediated-apoptosi.json",
+        "source_image_rel": "images/0484-two-panel-diagram-for-undergraduate-cancer-biology-showing-p53-mediated-apoptosi.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "apoptosis archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "two-panel-diagram-for-undergraduate-cancer-biology-showing-p53-mediated--662103",
+        "reference_filename": "references/two-panel-diagram-for-undergraduate-cancer-biology-showing-p53-mediated--662103-reference.png",
+        "review_status": "approved",
+        "source_element_id": 662103,
+        "source_sha256": "35abfd5829d9a2fcdaffbd5207f802f3b3190868b8d0c71b87401c16da27cd45",
+        "svg_filename": "two-panel-diagram-for-undergraduate-cancer-biology-showing-p53-mediated--662103-rough.svg",
+        "transparent_png_filename": "two-panel-diagram-for-undergraduate-cancer-biology-showing-p53-mediated--662103-rough-transparent.png",
+        "conversion_archetype": "apoptosis",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 93405,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-06-25T14:36:18.645Z",
+        "downloadedAt": "2026-07-25T15:40:41.654Z",
+        "filename": "0485-two-panel-diagram-for-undergraduate-cancer-biology-showing-p53-mediated-apoptosi.png",
+        "id": 662103,
+        "index": 485,
+        "name": "Two-panel diagram for undergraduate cancer biology showing p53-mediated apoptosis and its loss in cancer. Thin light gray vertical line divides the two panels. Left panel labeled \"Wild-Type p53\": at the top a broken Sky Blue (#56B4E9) flat DNA helix icon with a solid Blue (#0072B2) downward arrow pointing to a flat solid Blue (#0072B2) oval labeled \"p53\" in white text \u2014 flat fill, no gradient, no gloss, no 3D shading. A small flat solid Orange (#E69F00) oval labeled \"MDM2\" sits beside the p53 oval with a curved Orange inhibitory flat-head arrow pointing back to p53. Four Bluish Green (#009E73) activation arrows radiate from the p53 oval downward to four flat solid Vermillion (#D55E00) ovals in a row labeled \"BAX,\" \"NOXA,\" \"PUMA,\" and \"p21/WAF1\" in white text \u2014 all flat solid fills, no gradients, no gloss. Right panel labeled \"Mutant p53 \u2014 Cancer State\": same layout but the central p53 oval is flat solid light gray with a red X overlaid. All four downstream ovals are flat solid light gray labeled \"BAX,\" \"NOXA,\" \"PUMA,\" \"p21/WAF1\" in gray text. All arrows are light gray and dimmed. No MDM2 oval or feedback arrow in the right panel. All shapes throughout both panels have flat solid opaque fills \u2014 no gradients, no 3D shading, no gloss, no drop shadows, no plastic textures. Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/662103"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 93405,
+        "sha256": "35abfd5829d9a2fcdaffbd5207f802f3b3190868b8d0c71b87401c16da27cd45",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0485-two-panel-diagram-for-undergraduate-cancer-biology-showing-p53-mediated-apoptosi.json",
+        "source_image_rel": "images/0485-two-panel-diagram-for-undergraduate-cancer-biology-showing-p53-mediated-apoptosi.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "apoptosis archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "two-panel-diagram-for-undergraduate-cancer-biology-showing-p53-mediated--662106",
+        "reference_filename": "references/two-panel-diagram-for-undergraduate-cancer-biology-showing-p53-mediated--662106-reference.png",
+        "review_status": "approved",
+        "source_element_id": 662106,
+        "source_sha256": "5e0a1a9f0193fc671c025a5a746dd1426f6aed3e2ca24e3bdd145a13d7a64f8e",
+        "svg_filename": "two-panel-diagram-for-undergraduate-cancer-biology-showing-p53-mediated--662106-rough.svg",
+        "transparent_png_filename": "two-panel-diagram-for-undergraduate-cancer-biology-showing-p53-mediated--662106-rough-transparent.png",
+        "conversion_archetype": "apoptosis",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 80542,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-06-25T14:38:15.448Z",
+        "downloadedAt": "2026-07-25T15:40:42.537Z",
+        "filename": "0486-two-panel-diagram-for-undergraduate-cancer-biology-showing-p53-mediated-apoptosi.png",
+        "id": 662106,
+        "index": 486,
+        "name": "Two-panel diagram for undergraduate cancer biology showing p53-mediated apoptosis and its loss in cancer. The entire image canvas is a solid white rectangle fill behind all elements \u2014 no transparency anywhere in the image. Thin light gray vertical line divides the two panels. Left panel labeled \"Wild-Type p53\": at the top a broken Sky Blue (#56B4E9) flat DNA helix icon with a solid Blue (#0072B2) downward arrow pointing to a flat solid Blue (#0072B2) oval labeled \"p53\" in white text \u2014 flat fill, no gradient, no gloss, no 3D shading. A small flat solid Orange (#E69F00) oval labeled \"MDM2\" sits beside the p53 oval with a curved Orange inhibitory flat-head arrow pointing back to p53. Four Bluish Green (#009E73) activation arrows radiate from the p53 oval downward to four flat solid Vermillion (#D55E00) ovals in a row labeled \"BAX,\" \"NOXA,\" \"PUMA,\" and \"p21/WAF1\" in white text \u2014 all flat solid fills, no gradients, no gloss. Right panel labeled \"Mutant p53 \u2014 Cancer State\": same layout but the central p53 oval is flat solid light gray with a red X overlaid. All four downstream ovals are flat solid light gray labeled \"BAX,\" \"NOXA,\" \"PUMA,\" \"p21/WAF1\" in gray text. All arrows are light gray and dimmed. No MDM2 oval or feedback arrow in the right panel. Solid white filled background rectangle placed behind all elements at the base layer of the image \u2014 white canvas, not transparent. All shapes have flat solid opaque fills, no gradients, no 3D shading, no gloss, no drop shadows, no plastic textures. Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/662106"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 80542,
+        "sha256": "5e0a1a9f0193fc671c025a5a746dd1426f6aed3e2ca24e3bdd145a13d7a64f8e",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0486-two-panel-diagram-for-undergraduate-cancer-biology-showing-p53-mediated-apoptosi.json",
+        "source_image_rel": "images/0486-two-panel-diagram-for-undergraduate-cancer-biology-showing-p53-mediated-apoptosi.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "gene-regulation archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "a-scientific-diagram-with-three-horizontal-panels-stacked-vertically-eac-668075",
+        "reference_filename": "references/a-scientific-diagram-with-three-horizontal-panels-stacked-vertically-eac-668075-reference.png",
+        "review_status": "approved",
+        "source_element_id": 668075,
+        "source_sha256": "c719de565eb8b3e14eb35ae12f66151d1a22908bd62c710d08a9ec20a5059f21",
+        "svg_filename": "a-scientific-diagram-with-three-horizontal-panels-stacked-vertically-eac-668075-rough.svg",
+        "transparent_png_filename": "a-scientific-diagram-with-three-horizontal-panels-stacked-vertically-eac-668075-rough-transparent.png",
+        "conversion_archetype": "gene-regulation",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 205085,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-06-29T02:06:09.193Z",
+        "downloadedAt": "2026-07-25T15:40:44.283Z",
+        "filename": "0488-a-scientific-diagram-with-three-horizontal-panels-stacked-vertically-each-repres.png",
+        "id": 668075,
+        "index": 488,
+        "name": "\"A scientific diagram with three horizontal panels stacked vertically, each representing one signaling axis. All three panels share the same left-to-right flow direction.\nPanel 1 \u2014 Wnt axis: Wnt ligand \u2192 Frizzled receptor \u2192 \u03b2-catenin stabilization and nuclear translocation \u2192 nuclear activation of MYC and SOX2.\nPanel 2 \u2014 JAK/STAT axis: Cytokine ligand \u2192 JAK kinase \u2192 STAT3 phosphorylation and nuclear translocation \u2192 nuclear activation of SOX2, NANOG, and MYC. STAT3 is annotated as both signaling intermediate and transcriptional regulator.\nPanel 3 \u2014 Hedgehog axis: Hedgehog ligand \u2192 Patched/Smoothened \u2192 GLI transcription factor activation \u2192 nuclear activation of NANOG and SOX2.\nEach panel flows left to right: extracellular signal on the far left, intracellular cascade in the middle, nuclear transcription factors on the right.\nOn the far right, all three panels converge into a single shared outcome box listing: self-renewal, tumor initiation, apoptosis resistance, and differentiation block. This box is labeled CSC drug resistance phenotype.\nSOX2 and MYC appear across multiple panels, visually indicating they are shared convergence points across pathways.\"",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/668075"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 205085,
+        "sha256": "c719de565eb8b3e14eb35ae12f66151d1a22908bd62c710d08a9ec20a5059f21",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0488-a-scientific-diagram-with-three-horizontal-panels-stacked-vertically-each-repres.json",
+        "source_image_rel": "images/0488-a-scientific-diagram-with-three-horizontal-panels-stacked-vertically-each-repres.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "nanoparticle archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "simple-vector-style-draw-a-labeled-concentric-ring-nanoparticle-cross-se-717118",
+        "reference_filename": "references/simple-vector-style-draw-a-labeled-concentric-ring-nanoparticle-cross-se-717118-reference.png",
+        "review_status": "approved",
+        "source_element_id": 717118,
+        "source_sha256": "1c66499a70648fd2e83a95428ed553ca6372bff25de05ba9245452081b45b14e",
+        "svg_filename": "simple-vector-style-draw-a-labeled-concentric-ring-nanoparticle-cross-se-717118-rough.svg",
+        "transparent_png_filename": "simple-vector-style-draw-a-labeled-concentric-ring-nanoparticle-cross-se-717118-rough-transparent.png",
+        "conversion_archetype": "nanoparticle",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 196691,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-07-23T22:56:19.653Z",
+        "downloadedAt": "2026-07-25T15:41:01.794Z",
+        "filename": "0507-simple-vector-style-draw-a-labeled-concentric-ring-nanoparticle-cross-section-as.png",
+        "id": 717118,
+        "index": 507,
+        "name": "simple vector style. Draw a labeled concentric-ring nanoparticle cross-section as a flat vector schematic on a white background. A central filled circle labeled 'core'; a ring of short outward-pointing hook shapes around it labeled 'targeting ligands'; a sparse dotted ring of small ovals labeled 'soft corona (albumin, reversible)'; and an outer dense continuous band of tightly packed protein blobs labeled 'hard corona (tenacious)' that fully encircles and visually buries the hook layer. Three distinct concentric zones, evenly spaced, thin leader lines from each label to its zone. Okabe-Ito palette (core blue #0072B2, ligands bluish green #009E73, soft corona light gray dots, hard corona vermillion #D55E00 band). Uniform 1pt strokes, flat fills, clean legible labels, no shading.\",\n",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/717118"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 196691,
+        "sha256": "1c66499a70648fd2e83a95428ed553ca6372bff25de05ba9245452081b45b14e",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0507-simple-vector-style-draw-a-labeled-concentric-ring-nanoparticle-cross-section-as.json",
+        "source_image_rel": "images/0507-simple-vector-style-draw-a-labeled-concentric-ring-nanoparticle-cross-section-as.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "targeted-cell archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "simple-vector-style-draw-two-side-by-side-labeled-comparison-panels-as-a-717122",
+        "reference_filename": "references/simple-vector-style-draw-two-side-by-side-labeled-comparison-panels-as-a-717122-reference.png",
+        "review_status": "approved",
+        "source_element_id": 717122,
+        "source_sha256": "5c5e1798bbd239761ecfb3e97404a304637b107e8c2ae98a8456b7b8f0d7b41c",
+        "svg_filename": "simple-vector-style-draw-two-side-by-side-labeled-comparison-panels-as-a-717122-rough.svg",
+        "transparent_png_filename": "simple-vector-style-draw-two-side-by-side-labeled-comparison-panels-as-a-717122-rough-transparent.png",
+        "conversion_archetype": "targeted-cell",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 338409,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-07-23T22:57:12.500Z",
+        "downloadedAt": "2026-07-25T15:41:02.634Z",
+        "filename": "0508-simple-vector-style-draw-two-side-by-side-labeled-comparison-panels-as-a-flat-ve.png",
+        "id": 717122,
+        "index": 508,
+        "name": "simple vector style. Draw two side-by-side labeled comparison panels as a flat vector schematic on a white background, divided by a thin vertical rule, with identical cell geometry in both. Each panel: a central target cell with a Y-shaped antibody docked at its membrane and an internal vesicle holding payload dots, plus two neighboring cells. Title the left panel 'Non-cleavable ADC \u2014 payload trapped' and show the payload dots confined inside the central cell. Title the right panel 'Cleavable ADC \u2014 bystander effect' and show payload dots spilling out into the two neighbor cells. Label the antibody, the target cell, the payload, and the neighbor cells. Okabe-Ito palette (antibody blue #0072B2, target cell sky blue #56B4E9, payload dots vermillion #D55E00, neighbor cells neutral gray). Uniform 1pt strokes, flat fills, clean legible labels, no shading.\",\n ",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/717122"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 338409,
+        "sha256": "5c5e1798bbd239761ecfb3e97404a304637b107e8c2ae98a8456b7b8f0d7b41c",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0508-simple-vector-style-draw-two-side-by-side-labeled-comparison-panels-as-a-flat-ve.json",
+        "source_image_rel": "images/0508-simple-vector-style-draw-two-side-by-side-labeled-comparison-panels-as-a-flat-ve.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "apoptosis archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "landscape-1920-1080-clean-white-background-flat-professional-scientific--676852",
+        "reference_filename": "references/landscape-1920-1080-clean-white-background-flat-professional-scientific--676852-reference.png",
+        "review_status": "approved",
+        "source_element_id": 676852,
+        "source_sha256": "0e721f181ea27e2c14058d1351f2fb2789da25471e8a37e3fe64e1b1975f5cba",
+        "svg_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--676852-rough.svg",
+        "transparent_png_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--676852-rough-transparent.png",
+        "conversion_archetype": "apoptosis",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1721465,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-07-02T16:56:32.977Z",
+        "downloadedAt": "2026-07-25T15:41:07.727Z",
+        "filename": "0513-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png",
+        "id": 676852,
+        "index": 513,
+        "name": "Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. ISOLATED single beat \u2014 almost empty frame, NOT the full pathway. Show a short stretch of the intrinsic pathway: an arrow emerging from the lower edge of a small partial mitochondrion fragment (upper-left, just enough to show the path originates there) heading right toward a fragmenting cell icon labeled \"APOPTOSIS \u2014 cell death\" (green) on the right. Sitting ASTRIDE that arrow, blocking it like a closed gate, a red IAPs block labeled \"IAPs \u2014 anti-apoptotic,\" with the arrow stopped/dammed at the block. A simple capsule drug icon binds the IAPs block from the left, labeled \"SMAC mimetic / IAP antagonist\"; the IAPs block now greyed/disabled and lifting off the path like an opening gate. The green arrow now flows THROUGH the cleared gate to the apoptosis icon, labeled \"IAPs inhibited \u2192 apoptosis proceeds.\" NO caspases, NO death receptor, NO p53/MDM2, NO Bcl-2. NO molecular/chemical structures. Lots of clean white space.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/676852"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1200,
+        "local_bytes": 1721465,
+        "sha256": "0e721f181ea27e2c14058d1351f2fb2789da25471e8a37e3fe64e1b1975f5cba",
+        "width": 1696
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": "prompt-similarity:5da9180978bd",
+        "exact_duplicate_element_ids": [],
+        "heuristic_similarity_threshold": 0.92,
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": 674542,
+        "root_id": 651556
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0513-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.json",
+        "source_image_rel": "images/0513-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "prok-euk archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "create-a-labeled-side-by-side-comparison-diagram-of-a-prokaryotic-cell-a-674779",
+        "reference_filename": "references/create-a-labeled-side-by-side-comparison-diagram-of-a-prokaryotic-cell-a-674779-reference.png",
+        "review_status": "approved",
+        "source_element_id": 674779,
+        "source_sha256": "c0b1c08e49e6c5c7b1b375628dda5536121f589bd29ce2b710ac497d4d4ff52c",
+        "svg_filename": "create-a-labeled-side-by-side-comparison-diagram-of-a-prokaryotic-cell-a-674779-rough.svg",
+        "transparent_png_filename": "create-a-labeled-side-by-side-comparison-diagram-of-a-prokaryotic-cell-a-674779-rough-transparent.png",
+        "conversion_archetype": "prok-euk",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 274086,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-07-01T21:57:21.258Z",
+        "downloadedAt": "2026-07-25T15:41:08.728Z",
+        "filename": "0514-create-a-labeled-side-by-side-comparison-diagram-of-a-prokaryotic-cell-and-a-euk.png",
+        "id": 674779,
+        "index": 514,
+        "name": "Create a labeled, side-by-side comparison diagram of a prokaryotic cell and a eukaryotic (animal) cell for an undergraduate biology textbook. Show the eukaryotic cell noticeably larger. \u00a0Make clear the eukaryote has membrane-bound organelles and the prokaryote does not. \u00a0Precise, textbook-accurate labeling suitable for early graduate students.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/674779"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 274086,
+        "sha256": "c0b1c08e49e6c5c7b1b375628dda5536121f589bd29ce2b710ac497d4d4ff52c",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": "prompt-similarity:46dfc0861c26",
+        "exact_duplicate_element_ids": [],
+        "heuristic_similarity_threshold": 0.92,
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": 662066,
+        "root_id": 662060
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0514-create-a-labeled-side-by-side-comparison-diagram-of-a-prokaryotic-cell-and-a-euk.json",
+        "source_image_rel": "images/0514-create-a-labeled-side-by-side-comparison-diagram-of-a-prokaryotic-cell-and-a-euk.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "apoptosis archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "sequence-of-events-images-image-01-clean-white-background-flat-professio-674527",
+        "reference_filename": "references/sequence-of-events-images-image-01-clean-white-background-flat-professio-674527-reference.png",
+        "review_status": "approved",
+        "source_element_id": 674527,
+        "source_sha256": "50d28afe7fad2192cf98905965cba86d77e1ea1f85294097669e0e98d999067b",
+        "svg_filename": "sequence-of-events-images-image-01-clean-white-background-flat-professio-674527-rough.svg",
+        "transparent_png_filename": "sequence-of-events-images-image-01-clean-white-background-flat-professio-674527-rough-transparent.png",
+        "conversion_archetype": "apoptosis",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1812373,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-07-01T20:05:27.962Z",
+        "downloadedAt": "2026-07-25T15:41:09.670Z",
+        "filename": "0515-sequence-of-events-images-image-01-clean-white-background-flat-professional-scie.png",
+        "id": 674527,
+        "index": 515,
+        "name": "sequence of events / images - \n\nimage 01 - clean white background, flat professional scientific-illustration style. The fixed apoptosis backbone map, no drugs yet. Draw TWO soft tinted background zones to group the arms: a light zone on the LEFT labeled \"EXTRINSIC arm\" containing the death receptor, and a light zone in the CENTER-RIGHT labeled \"INTRINSIC arm\" containing the mitochondrion, p53/MDM2, and IAPs. In the extrinsic zone (top-left): a death receptor spanning a membrane band, labeled \"death receptor \u2014 DR4/DR5\" (green, pro-apoptotic), arrow pointing down/right. In the intrinsic zone: a mitochondrion shape with a red Bcl-2 block sitting on it, labeled \"Bcl-2 \u2014 anti-apoptotic\"; above it, p53 (green) with a red MDM2 clamp on it, labeled \"p53\" and \"MDM2 \u2014 suppresses p53\"; downstream of the mitochondrion, a red IAPs block restraining the path, labeled \"IAPs \u2014 anti-apoptotic.\" Both arms converge via arrows on a right-side endpoint: a fragmenting cell icon labeled \"APOPTOSIS \u2014 cell death\" (green). Mark the FOUR intervention points with small numbered flags 1\u20134: (1) Bcl-2, (2) IAPs, (3) death receptor, (4) p53/MDM2 \u2014 but NO drugs acting yet. Red = anti-apoptotic proteins, green = pro-apoptotic proteins. The two arm zones make it obvious which arm is which. No molecular structures, no caspases. Fill the wide frame with the full map.\n\nimage 02 - Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. ISOLATED single beat \u2014 almost empty frame, NOT the full pathway. Show ONLY: a mitochondrion (center-left) with a red Bcl-2 block sitting on it, labeled \"Bcl-2 \u2014 anti-apoptotic\"; a simple capsule drug icon binding/blocking the Bcl-2 block, labeled \"BH3 mimetic\"; the Bcl-2 block now greyed/disabled; a single bold green arrow flowing from the mitochondrion PAST the disabled block to a fragmenting cell icon on the right, labeled \"APOPTOSIS \u2014 cell death\" (green). A short label on the green arrow: \"Bcl-2 inhibited \u2192 apoptosis proceeds.\" NO death receptor, NO p53/MDM2, NO IAPs in this panel \u2014 they are not part of this beat. NO molecular/chemical structures. No caspases. Lots of clean white space.\n\nimage 03 - Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. ISOLATED single beat \u2014 almost empty frame, NOT the full pathway. Show a short stretch of the intrinsic pathway: an arrow emerging from the lower edge of a small partial mitochondrion fragment (upper-left, just enough to show the path originates there) heading right toward a fragmenting cell icon labeled \"APOPTOSIS \u2014 cell death\" (green) on the right. Sitting ASTRIDE that arrow, blocking it like a closed gate, a red IAPs block labeled \"IAPs \u2014 anti-apoptotic,\" with the arrow stopped/dammed at the block. A simple capsule drug icon binds the IAPs block from the left, labeled \"SMAC mimetic / IAP antagonist\"; the IAPs block now greyed/disabled and lifting off the path like an opening gate. The green arrow now flows THROUGH the cleared gate to the apoptosis icon, labeled \"IAPs inhibited \u2192 apoptosis proceeds.\" NO caspases, NO death receptor, NO p53/MDM2, NO Bcl-2. NO molecular/chemical structures. Lots of clean white space.\n\nimage 04 - Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. ISOLATED single beat \u2014 almost empty frame, NOT the full pathway. Show ONLY: a death receptor (green) spanning a short cell-membrane band at the upper-left, labeled \"death receptor \u2014 DR4/DR5\"; a simple ligand drug icon binding the receptor from outside the cell, labeled \"TRAIL agonist\"; the receptor now activated/glowing green; a single bold green arrow firing downward and right from the receptor to a fragmenting cell icon, labeled \"APOPTOSIS \u2014 cell death\" (green). A short label on the arrow: \"death receptor activated \u2192 apoptosis triggered.\" This is ACTIVATION, not inhibition. NO Bcl-2, NO IAPs, NO mitochondrion, NO p53/MDM2 in this panel. NO molecular/chemical structures. No caspases. Lots of clean white space.\n\nimage 05 - Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. ISOLATED single beat \u2014 almost empty frame, NOT the full pathway. Show ONLY: p53 (green, center-left) with a red MDM2 clamp on it, labeled \"p53\" and \"MDM2 \u2014 suppresses p53\"; a simple capsule drug icon binding/blocking the red MDM2 clamp, labeled \"MDM2 inhibitor\"; the MDM2 clamp now greyed/disabled, FREEING p53; a single bold green arrow firing from the freed p53 to a fragmenting cell icon on the right, labeled \"APOPTOSIS \u2014 cell death\" (green). A short label on the arrow: \"p53 restored \u2192 activated \u2192 apoptosis.\" NO death receptor, NO Bcl-2, NO IAPs, NO mitochondrion in the main illustration. Along the bottom of the frame ONLY, a compact summary strip of all four points: \"1 Bcl-2 \u2014 anti-apoptotic, inhibited \u00b7 2 IAPs \u2014 anti-apoptotic, inhibited \u00b7 3 death receptors \u2014 pro-apoptotic, activated \u00b7 4 p53/MDM2 \u2014 pro-apoptotic, restored.\" NO molecular/chemical structures. No caspases. Clean white space around the isolated p53 beat.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/674527"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1200,
+        "local_bytes": 1812373,
+        "sha256": "50d28afe7fad2192cf98905965cba86d77e1ea1f85294097669e0e98d999067b",
+        "width": 1696
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0515-sequence-of-events-images-image-01-clean-white-background-flat-professional-scie.json",
+        "source_image_rel": "images/0515-sequence-of-events-images-image-01-clean-white-background-flat-professional-scie.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "p53-response archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "clean-white-background-flat-professional-scientific-illustration-style-t-674536",
+        "reference_filename": "references/clean-white-background-flat-professional-scientific-illustration-style-t-674536-reference.png",
+        "review_status": "approved",
+        "source_element_id": 674536,
+        "source_sha256": "0d3ab04e5c766f9205c17a40200c401511c4cb27e9af33153b675c319ef583ae",
+        "svg_filename": "clean-white-background-flat-professional-scientific-illustration-style-t-674536-rough.svg",
+        "transparent_png_filename": "clean-white-background-flat-professional-scientific-illustration-style-t-674536-rough-transparent.png",
+        "conversion_archetype": "p53-response",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1946729,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-07-01T20:07:55.767Z",
+        "downloadedAt": "2026-07-25T15:41:10.648Z",
+        "filename": "0516-clean-white-background-flat-professional-scientific-illustration-style-the-fixed.png",
+        "id": 674536,
+        "index": 516,
+        "name": "clean white background, flat professional scientific-illustration style. The fixed apoptosis backbone map, no drugs yet. Draw TWO soft tinted background zones to group the arms: a light zone on the LEFT labeled \"EXTRINSIC arm\" containing the death receptor, and a light zone in the CENTER-RIGHT labeled \"INTRINSIC arm\" containing the mitochondrion, p53/MDM2, and IAPs. In the extrinsic zone (top-left): a death receptor spanning a membrane band, labeled \"death receptor \u2014 DR4/DR5\" (green, pro-apoptotic), arrow pointing down/right. In the intrinsic zone: a mitochondrion shape with a red Bcl-2 block sitting on it, labeled \"Bcl-2 \u2014 anti-apoptotic\"; above it, p53 (green) with a red MDM2 clamp on it, labeled \"p53\" and \"MDM2 \u2014 suppresses p53\"; downstream of the mitochondrion, a red IAPs block restraining the path, labeled \"IAPs \u2014 anti-apoptotic.\" Both arms converge via arrows on a right-side endpoint: a fragmenting cell icon labeled \"APOPTOSIS \u2014 cell death\" (green). Mark the FOUR intervention points with small numbered flags 1\u20134: (1) Bcl-2, (2) IAPs, (3) death receptor, (4) p53/MDM2 \u2014 but NO drugs acting yet. Red = anti-apoptotic proteins, green = pro-apoptotic proteins. The two arm zones make it obvious which arm is which. No molecular structures, no caspases. Fill the wide frame with the full map.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/674536"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1200,
+        "local_bytes": 1946729,
+        "sha256": "0d3ab04e5c766f9205c17a40200c401511c4cb27e9af33153b675c319ef583ae",
+        "width": 1696
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0516-clean-white-background-flat-professional-scientific-illustration-style-the-fixed.json",
+        "source_image_rel": "images/0516-clean-white-background-flat-professional-scientific-illustration-style-the-fixed.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "p53-response archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "landscape-1920-1080-clean-white-background-flat-professional-scientific--674546",
+        "reference_filename": "references/landscape-1920-1080-clean-white-background-flat-professional-scientific--674546-reference.png",
+        "review_status": "approved",
+        "source_element_id": 674546,
+        "source_sha256": "104cd476e5c4bd7a012ccf708d2faa8f22bbb985cfc21faafe20b4e6c1b471e6",
+        "svg_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--674546-rough.svg",
+        "transparent_png_filename": "landscape-1920-1080-clean-white-background-flat-professional-scientific--674546-rough-transparent.png",
+        "conversion_archetype": "p53-response",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1685916,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-07-01T20:12:29.213Z",
+        "downloadedAt": "2026-07-25T15:41:13.493Z",
+        "filename": "0519-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png",
+        "id": 674546,
+        "index": 519,
+        "name": "Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. ISOLATED single beat \u2014 almost empty frame, NOT the full pathway. Show ONLY: a death receptor (green) spanning a short cell-membrane band at the upper-left, labeled \"death receptor \u2014 DR4/DR5\"; a simple ligand drug icon binding the receptor from outside the cell, labeled \"TRAIL agonist\"; the receptor now activated/glowing green; a single bold green arrow firing downward and right from the receptor to a fragmenting cell icon, labeled \"APOPTOSIS \u2014 cell death\" (green). A short label on the arrow: \"death receptor activated \u2192 apoptosis triggered.\" This is ACTIVATION, not inhibition. NO Bcl-2, NO IAPs, NO mitochondrion, NO p53/MDM2 in this panel. NO molecular/chemical structures. No caspases. Lots of clean white space.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/674546"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1200,
+        "local_bytes": 1685916,
+        "sha256": "104cd476e5c4bd7a012ccf708d2faa8f22bbb985cfc21faafe20b4e6c1b471e6",
+        "width": 1696
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": "prompt-similarity:7650ab1bcfb4",
+        "exact_duplicate_element_ids": [],
+        "heuristic_similarity_threshold": 0.92,
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": 651350,
+        "root_id": 651350
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0519-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.json",
+        "source_image_rel": "images/0519-landscape-1920-1080-clean-white-background-flat-professional-scientific-illustra.png"
+      }
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "collection": "illustrae-icons-batch-001",
+  "style": "medium-rough monochrome vector",
+  "generated_at": "2026-07-25T17:14:44.979Z",
+  "icons": [
+    {
+      "derivative": {
+        "geometry_description": "Four-phase circular cell-cycle ring with clockwise progression arrows and checkpoint gates.",
+        "icon_id": "cell-cycle-checkpoints",
+        "reference_filename": "references/cell-cycle-checkpoints-reference.png",
+        "review_status": "approved",
+        "source_element_id": 356278,
+        "source_sha256": "71488660d4ff7d5f8f84fb0906aac6fff5dc4aa31c8768bf5c92c4c23e127f03",
+        "svg_filename": "cell-cycle-checkpoints-rough.svg",
+        "transparent_png_filename": "cell-cycle-checkpoints-rough-transparent.png",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 2302262,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-03-03T00:00:19.909Z",
+        "downloadedAt": "2026-07-25T15:32:38.175Z",
+        "filename": "0001-circular-cell-cycle-diagram-showing-genomic-stability-control-mechanisms-at-each.png",
+        "id": 356278,
+        "index": 1,
+        "name": "Circular cell cycle diagram showing genomic stability control mechanisms at each checkpoint. Flat vector. White background. Scientific oncology textbook style. Arial or Verdana minimum 11pt.  OVERALL STRUCTURE \u2014 CLOCK-LIKE CIRCLE: Large circle divided into four arc segments arranged clockwise. The circle reads like a clock face. Add a bold clockwise curved arrow running along the outer edge of the circle indicating direction of cell cycle progression. Label this arrow: 'Cell Cycle Progression \u2192' Four phase segments clockwise from left:  G1 phase: 9 o'clock position (left arc) \u2014 pale blue fill S phase: 12 o'clock position (top arc) \u2014 medium blue fill G2 phase: 3 o'clock position (right arc) \u2014 deep blue fill M phase: 6 o'clock position (bottom arc) \u2014 navy fill  Each segment labeled inside the arc with phase name and description:  'G1 \u2014 Gap 1: Cell growth, preparation for DNA synthesis' 'S \u2014 Synthesis: DNA replication' 'G2 \u2014 Gap 2: Growth, preparation for mitosis' 'M \u2014 Mitosis: Chromosome segregation and cell division'   CENTER CIRCLE: Clean white circle at the center of the diagram. Text inside center circle (centered, bold, minimum 12pt): Line 1: 'Genomic Stability' Line 2: 'Maintained' No illustrations, no nucleus drawing, no decorative elements inside center circle. Center circle border: solid deep blue, 2pt line weight.  FOUR CHECKPOINT GATES (at phase transitions): Each checkpoint appears as a GATE SYMBOL at the transition boundary between two phases \u2014 positioned on the circle boundary line between the two adjacent segments. Gates appear as two parallel vertical bars (like a gate or barrier) spanning the transition line. CHECKPOINT 1 \u2014 G1/S TRANSITION (between G1 and S segments, approximately 10-11 o'clock position): Gate symbol: two solid blue parallel bars \u2014 INTACT gate. Gate label (outside circle, connected by short leader line): 'G1/S Checkpoint' 'CDK-dependent' 'Prevents premature replication' Gate color: solid blue (normal/intact). CHECKPOINT 2 \u2014 S PHASE CHECKPOINT (midpoint of S phase arc, 12 o'clock): Gate symbol: two solid blue parallel bars \u2014 INTACT gate. Gate label: 'S Phase Checkpoint' 'High-fidelity replication' 'Once and only once' Gate color: solid blue (normal/intact). CHECKPOINT 3 \u2014 G2/M TRANSITION (between G2 and M segments, approximately 4-5 o'clock position): Gate symbol: two solid blue parallel bars \u2014 INTACT gate. Gate label: 'G2/M Checkpoint' 'CDK-independent' 'Ensures complete replication before mitosis' Gate color: solid blue (normal/intact). CHECKPOINT 4 \u2014 M PHASE SPINDLE ASSEMBLY CHECKPOINT (midpoint of M phase arc, 6 o'clock): Gate symbol: two solid blue parallel bars \u2014 INTACT gate. Gate label: 'Spindle Assembly Checkpoint (SAC)' 'CDK-independent' 'Precise chromosome segregation' Gate color: solid blue (normal/intact). CRITICAL LABEL ACCURACY: G1/S = CDK-DEPENDENT G2/M = CDK-INDEPENDENT These two labels must not be swapped.  FOUR FAILURE OUTCOMES (outside circle \u2014 broken gates): Outside the main circle, positioned adjacent to each checkpoint, show a BROKEN GATE version of each checkpoint connected to a failure outcome box. Each broken gate: same gate symbol but rendered with jagged broken bars, red color, and a red X overlay. FAILURE 1 \u2014 adjacent to G1/S checkpoint (upper left, outside circle): Broken gate symbol in red. Arrow from broken gate to failure outcome box. Failure outcome box content:  Header: 'G1/S Failure' Show a DNA strand with a single point mutation \u2014 one base shown as a red X substitution Label: 'Nucleotide Changes \u2014 point mutations'  FAILURE 2 \u2014 adjacent to S phase checkpoint (top, outside circle): Broken gate symbol in red. Arrow from broken gate to failure outcome box. Failure outcome box content:  Header: 'S Phase Failure' Show two chromosomes with reciprocally swapped arm segments \u2014 arms shown in contrasting orange color Label: 'Chromosomal Translocations \u2014 segments exchanged'  FAILURE 3 \u2014 adjacent to G2/M checkpoint (right, outside circle): Broken gate symbol in red. Arrow from broken gate to failure outcome box. Failure outcome box content:  Header: 'G2/M Failure' Show a cell with three copies of one chromosome where two are expected \u2014 trisomy Label: 'Aneuploidy \u2014 abnormal chromosome number' Sub-label: '3 copies where 2 expected (trisomy)'  FAILURE 4 \u2014 adjacent to M phase checkpoint (bottom, outside circle): Broken gate symbol in red. Arrow from broken gate to failure outcome box. Failure outcome box content:  Header: 'M Phase / SAC Failure' Show one chromosome with an inverted segment \u2014 a segment of the chromosome arm shown flipped/reversed Label: 'Chromosome Rearrangements \u2014 inversions, deletions'   CONNECTING VISUAL LOGIC: Each failure box connected to its broken gate by a red arrow. Each broken gate positioned directly adjacent (outside) to its corresponding intact checkpoint gate (inside/on circle). Add a small red label between the intact and broken gate versions: 'Checkpoint fails \u2192'  REQUIRED LABELS (all): Four phase segment labels inside circle Center: 'Genomic Stability Maintained' Four intact checkpoint gate labels with mechanism descriptors Clockwise progression arrow: 'Cell Cycle Progression \u2192' Four broken gate failure outcome boxes with headers and sub-labels Four 'Checkpoint fails \u2192' connector labels STYLE: Flat vector. White background. No 3D. No gloss. No drop shadows. Normal elements: blue tones (pale to navy gradient across phases). Failure elements: red/crimson. Intact gates: solid blue parallel bars. Broken gates: jagged red bars with red X. Font: Arial or Verdana minimum 11pt. Footer: 'Educational illustration only. Not for diagnostic use.' --no CDK-dependent label on G2/M checkpoint, no CDK-independent label on G1/S checkpoint, no identical failure outcome chromosomes, no counterclockwise cycle direction, no decorative center circle illustration, no floating failure outcomes disconnected from checkpoints, no 3D render, no gloss, no Mitosis arrow labels\"**",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/356278"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 2302262,
+        "sha256": "71488660d4ff7d5f8f84fb0906aac6fff5dc4aa31c8768bf5c92c4c23e127f03",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0001-circular-cell-cycle-diagram-showing-genomic-stability-control-mechanisms-at-each.json",
+        "source_image_rel": "images/0001-circular-cell-cycle-diagram-showing-genomic-stability-control-mechanisms-at-each.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "Four-stage left-to-right sequence from DNA damage through proliferation, malignant conversion, and invasion.",
+        "icon_id": "cancer-progression-timeline",
+        "reference_filename": "references/cancer-progression-timeline-reference.png",
+        "review_status": "approved",
+        "source_element_id": 338894,
+        "source_sha256": "44f5e29d934db229830e6e32ca6697613e0dd32ebbe65b721b414667d826e996",
+        "svg_filename": "cancer-progression-timeline-rough.svg",
+        "transparent_png_filename": "cancer-progression-timeline-rough-transparent.png",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1781840,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-02-24T23:56:25.728Z",
+        "downloadedAt": "2026-07-25T15:32:41.321Z",
+        "filename": "0004-linear-left-to-right-timeline-diagram-four-steps-step-1-initiation-single-cell-w.png",
+        "id": 338894,
+        "index": 4,
+        "name": "Linear left-to-right timeline diagram. Four steps: Step 1 Initiation \u2014 single cell with red X on DNA strand, three trigger icons above (chemical flask, radiation symbol, virus) labeled Carcinogenic Triggers. Step 2 Promotion \u2014 dividing cell cluster with mitotic arrows, apoptosis suppression crossed arrow. Step 3 Malignant Conversion \u2014 irregular cells with varied sizes. Step 4 Progression \u2014 invasive tumor mass with outward spread arrows. Continuous timeline arrow beneath all steps labeled Years to Decades. Color progression: steel blue to deep crimson. Flat vector. White background.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/338894"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 1781840,
+        "sha256": "44f5e29d934db229830e6e32ca6697613e0dd32ebbe65b721b414667d826e996",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0004-linear-left-to-right-timeline-diagram-four-steps-step-1-initiation-single-cell-w.json",
+        "source_image_rel": "images/0004-linear-left-to-right-timeline-diagram-four-steps-step-1-initiation-single-cell-w.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "Three-part schematic for tumor size, lymph-node spread, and distant metastasis.",
+        "icon_id": "tnm-staging-system",
+        "reference_filename": "references/tnm-staging-system-reference.png",
+        "review_status": "approved",
+        "source_element_id": 340658,
+        "source_sha256": "8b13d3905516309fbe7e357b1de867d07add0c8c53e1dc29605441691defda3b",
+        "svg_filename": "tnm-staging-system-rough.svg",
+        "transparent_png_filename": "tnm-staging-system-rough-transparent.png",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 2730441,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-02-25T16:52:47.533Z",
+        "downloadedAt": "2026-07-25T15:33:05.534Z",
+        "filename": "0026-three-panel-educational-medical-diagram-showing-the-tnm-cancer-staging-classific.png",
+        "id": 340658,
+        "index": 26,
+        "name": "Three-panel educational medical diagram showing the TNM cancer staging classification system. Scientific oncology textbook style. Flat vector. White background.  PANEL 1 \u2014 T: TUMOR SIZE AND EXTENT: Panel header: 'T \u2014 Tumor Size and Local Extent' Show five sub-diagrams arranged left to right inside Panel 1, each showing a schematic cross-section of the same organ outline (use a simple oval representing a generic organ): T0 sub-diagram: empty organ outline, no tumor visible. Label: 'T0 \u2014 No tumor detected.' T1 sub-diagram: small tumor dot occupying approximately 10% of organ diameter, entirely confined within organ, colored solid deep blue. Label: 'T1 \u2014 Small, confined.' T2 sub-diagram: medium tumor occupying approximately 25% of organ diameter, entirely confined within organ, colored solid deep blue. Label: 'T2 \u2014 Medium, confined.' T3 sub-diagram: large tumor occupying approximately 50% of organ diameter, still within organ boundary but touching inner wall, colored solid deep blue. Label: 'T3 \u2014 Large, approaches boundary.' T4 sub-diagram: tumor occupying approximately 60% of organ, with jagged projections visibly breaking through the organ wall into adjacent gray tissue zone outside the organ. Label: 'T4 \u2014 Invades adjacent tissue.' Arrow pointing to invasion zone labeled 'Local invasion.' Beneath all five T sub-diagrams: a horizontal ruler arrow showing left-to-right size and severity progression labeled 'Increasing Tumor Size and Invasion.'  PANEL 2 \u2014 N: LYMPH NODE INVOLVEMENT: Panel header: 'N \u2014 Regional Lymph Node Involvement' Show three sub-diagrams arranged left to right: N0 sub-diagram: primary tumor (small blue oval) inside organ outline. Three nearby lymph nodes shown as small oval shapes \u2014 all gray/white, unfilled. No connection arrows between tumor and nodes. Label: 'N0 \u2014 No node involvement.' N1 sub-diagram: same primary tumor. Two lymph nodes shown \u2014 one node enlarged and filled deep red, one node normal gray. Dotted arrow from tumor to the red node labeled 'Spread.' Label: 'N1 \u2014 1\u20132 nodes affected.' Red node additionally labeled 'Affected Node.' N2 sub-diagram: same primary tumor. Four to five lymph nodes shown \u2014 three to four nodes enlarged and filled deep red, remaining one node gray. Multiple dotted arrows from tumor to red nodes. Label: 'N2 \u2014 Multiple nodes affected.' Colorblind accessibility: affected lymph nodes must be distinguished by BOTH color (deep red fill) AND size (affected nodes 1.5\u00d7 larger than unaffected nodes) so distinction is readable in grayscale.  PANEL 3 \u2014 M: DISTANT METASTASIS: Panel header: 'M \u2014 Distant Metastasis' Two sub-diagrams stacked vertically: M0 sub-diagram (top): primary tumor in organ at center. Four distant organ icons arranged around it \u2014 brain (upper left: walnut-shaped outline), lung (upper right: two-lobed outline), liver (lower left: wedge-shaped outline), bone (lower right: long bone with cortex outline). All four organ icons are clean gray with no tumor deposits. Single label: 'M0 \u2014 No distant metastasis.' Dashed border around entire M0 sub-diagram. M1 sub-diagram (bottom): identical layout \u2014 primary tumor at center, same four organ icons. Each organ icon now shows one to two small solid red circular tumor deposits inside it. Dotted travel arrows from primary tumor through a red thick-outlined blood vessel AND a blue thin-outlined lymphatic vessel leading to all four organ icons. Label each organ icon: 'Brain metastasis,' 'Lung metastasis,' 'Liver metastasis,' 'Bone metastasis.' Main label: 'M1 \u2014 Distant metastasis present.' Small vessel legend: red solid = Blood vessel, blue dashed = Lymphatic vessel.  STAGE GROUPING TABLE (bottom, spanning all three panels, inside clean bordered box): Horizontal table with five rows. Table header: 'Stage Grouping \u2014 TNM to Clinical Stage' Row 1: Stage 0 \u2014 Carcinoma in situ \u2014 T0/Tis, N0, M0 \u2014 background color: pale green Row 2: Stage I \u2014 Localized tumor \u2014 T1\u2013T2, N0, M0 \u2014 background color: pale blue \u2014 note: '5-year survival: ~77%' Row 3: Stage II \u2014 Locally advanced \u2014 T3\u2013T4, N0, M0 \u2014 background color: pale amber Row 4: Stage III \u2014 Regional spread \u2014 Any T, N1\u2013N2, M0 \u2014 background color: pale orange Row 5: Stage IV \u2014 Distant metastasis \u2014 Any T, Any N, M1 \u2014 background color: pale crimson \u2014 note: '5-year survival: ~15%' Color gradient across rows: pale green \u2192 pale blue \u2192 pale amber \u2192 pale orange \u2192 pale crimson. Right-side column header: 'Increasing Stage Severity \u2192' Footer note below table: 'Survival rates are approximate population averages. Individual outcomes vary.'  REQUIRED LABELS (all): Panel headers: T \u2014 Tumor Size and Local Extent / N \u2014 Regional Lymph Node Involvement / M \u2014 Distant Metastasis T panel: T0, T1, T2, T3, T4 sub-labels + ruler arrow label N panel: N0, N1, N2 sub-labels + 'Affected Node' + 'Spread' arrow M panel: M0, M1 sub-labels + four organ names + 'Brain/Lung/Liver/Bone metastasis' + vessel legend Table: all five stage rows with TNM notation + survival rate notes on Stage I and Stage IV STYLE: Flat vector. White background. Arial or Verdana minimum 11pt. No 3D. No gloss. No drop shadows. No decorative elements. Panel dividers: clean thin vertical lines. Footer: 'Educational illustration only. Survival statistics are approximate. Not for diagnostic use.' --no arrows labeled Mitosis, no identical tumor sizes T1 through T4, no red-only lymph node distinction, no missing Stage grouping table, no fabricated survival statistics other than Stage I 77% and Stage IV 15%, no 3D render, no gloss, no photorealistic organs\"**",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/340658"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 2730441,
+        "sha256": "8b13d3905516309fbe7e357b1de867d07add0c8c53e1dc29605441691defda3b",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0026-three-panel-educational-medical-diagram-showing-the-tnm-cancer-staging-classific.json",
+        "source_image_rel": "images/0026-three-panel-educational-medical-diagram-showing-the-tnm-cancer-staging-classific.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "Agent and environment containers with directed state, action, reward, and internal update flows.",
+        "icon_id": "agent-environment-loop",
+        "reference_filename": "references/agent-environment-loop-reference.png",
+        "review_status": "approved",
+        "source_element_id": 341170,
+        "source_sha256": "d146e99feae00cc099ca99640247a4e6aa422d3ba62dec2868545083647d4f51",
+        "svg_filename": "agent-environment-loop-rough.svg",
+        "transparent_png_filename": "agent-environment-loop-rough-transparent.png",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 609049,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-02-25T20:00:02.270Z",
+        "downloadedAt": "2026-07-25T15:33:06.573Z",
+        "filename": "0027-generate-a-system-architecture-diagram-showing-the-reinforcement-learning-agent-.png",
+        "id": 341170,
+        "index": 27,
+        "name": "Generate a system architecture diagram showing the reinforcement learning agent-environment interaction loop. Include two primary nodes: 'Agent' (top) and 'Environment' (bottom). Connect them with five directed arrows: (1) State S\u209c flowing from Environment to Agent, (2) Action A\u209c flowing from Agent to Environment, (3) New State S\u209c\u208a\u2081 flowing from Environment to Agent, (4) Reward R\u209c\u208a\u2081 flowing from Environment to Agent, (5) a belief-update arc within the Agent node. Inside the Agent node, show three sub-components: Value Function, Policy, and Belief Update. Use a vertical arrangement with Agent above Environment. Clearly distinguish the two nodes using rectangular containers with rounded corners and contrasting fills. Include directional arrowheads on all five pathways. Label all components. Style: clean academic line diagram, white background, no decorative elements.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/341170"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 2048,
+        "local_bytes": 609049,
+        "sha256": "d146e99feae00cc099ca99640247a4e6aa422d3ba62dec2868545083647d4f51",
+        "width": 2048
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0027-generate-a-system-architecture-diagram-showing-the-reinforcement-learning-agent-.json",
+        "source_image_rel": "images/0027-generate-a-system-architecture-diagram-showing-the-reinforcement-learning-agent-.png"
+      }
+    }
+  ]
+}

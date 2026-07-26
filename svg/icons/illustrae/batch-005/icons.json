@@ -1,0 +1,2216 @@
+{
+  "collection": "illustrae-icons-batch-005",
+  "style": "medium-rough monochrome vector",
+  "generated_at": "2026-07-25T19:56:44.788Z",
+  "generator": "archetype-based Rough.js converter",
+  "icons": [
+    {
+      "derivative": {
+        "geometry_description": "epigenetics archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "three-panel-educational-diagram-illustrating-epigenetic-mechanisms-of-tu-443935",
+        "reference_filename": "references/three-panel-educational-diagram-illustrating-epigenetic-mechanisms-of-tu-443935-reference.png",
+        "review_status": "approved",
+        "source_element_id": 443935,
+        "source_sha256": "4c5c1822817a55656abfaf8180b7be2b6f9baf8cb1824a1c3d8e86285a144253",
+        "svg_filename": "three-panel-educational-diagram-illustrating-epigenetic-mechanisms-of-tu-443935-rough.svg",
+        "transparent_png_filename": "three-panel-educational-diagram-illustrating-epigenetic-mechanisms-of-tu-443935-rough-transparent.png",
+        "conversion_archetype": "epigenetics",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 698561,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-03-30T16:12:35.406Z",
+        "downloadedAt": "2026-07-25T15:35:42.104Z",
+        "filename": "0177-three-panel-educational-diagram-illustrating-epigenetic-mechanisms-of-tumor-supp.png",
+        "id": 443935,
+        "index": 177,
+        "name": "Three-panel educational diagram illustrating epigenetic mechanisms of tumor suppressor gene silencing. Panel 1 labeled 'Normal Chromatin': show loosely wound DNA around histone octamers (nucleosomes) with acetyl groups (Ac) on histone tails, representing open chromatin and active transcription arrow. Panel 2 labeled 'Repressive Histone Modifications': show tightly compacted nucleosomes with methyl groups on histone tails (label 'EZH2 \u2192 H3K27me3'), deacetylated histones (label 'HDAC'), and a blocked transcription symbol. Panel 3 labeled 'Downstream Effect': show a tumor suppressor gene (label 'TSG') with a silenced/off indicator. Connect panels with left-to-right process arrows. Label: 'Acetylation (Active),' 'Methylation (Repressive),' 'EZH2,' 'HDAC,' 'Nucleosome.' Flat vector style. White background. Scientific oncology textbook.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/443935"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 2048,
+        "local_bytes": 698561,
+        "sha256": "4c5c1822817a55656abfaf8180b7be2b6f9baf8cb1824a1c3d8e86285a144253",
+        "width": 2048
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0177-three-panel-educational-diagram-illustrating-epigenetic-mechanisms-of-tumor-supp.json",
+        "source_image_rel": "images/0177-three-panel-educational-diagram-illustrating-epigenetic-mechanisms-of-tumor-supp.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "epigenetics archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "two-panel-educational-diagram-illustrating-swi-snf-chromatin-remodeling--443980",
+        "reference_filename": "references/two-panel-educational-diagram-illustrating-swi-snf-chromatin-remodeling--443980-reference.png",
+        "review_status": "approved",
+        "source_element_id": 443980,
+        "source_sha256": "dab4b220217da3eaf52c7bbd8352b24af89d4969b7e597750c16e611849be15d",
+        "svg_filename": "two-panel-educational-diagram-illustrating-swi-snf-chromatin-remodeling--443980-rough.svg",
+        "transparent_png_filename": "two-panel-educational-diagram-illustrating-swi-snf-chromatin-remodeling--443980-rough-transparent.png",
+        "conversion_archetype": "epigenetics",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 506975,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-03-30T16:20:39.079Z",
+        "downloadedAt": "2026-07-25T15:35:43.928Z",
+        "filename": "0179-two-panel-educational-diagram-illustrating-swi-snf-chromatin-remodeling-in-cance.png",
+        "id": 443980,
+        "index": 179,
+        "name": "Two-panel educational diagram illustrating SWI/SNF chromatin remodeling in cancer. Left panel labeled 'Normal SWI/SNF Activity': show a chromatin fiber with nucleosomes being repositioned by a labeled SWI/SNF complex icon (gear/enzyme symbol). Arrows indicate nucleosome sliding away from the gene promoter, opening chromatin access; a transcription factor binds the promoter with an active transcription arrow. Right panel labeled 'SWI/SNF Loss in Cancer': show the same promoter region with nucleosomes densely packed over the promoter. Label 'SWI/SNF inactivated' (red X over the complex). A transcription factor is absent. Label a downstream box: 'Tumor Suppressor Gene Silenced.' Add a small inset arrow connecting to a secondary box labeled 'DNMT recruitment \u2192 DNA methylation.' Label: 'Nucleosome,' 'SWI/SNF Complex,' 'Promoter,' 'DNMT.' Flat vector style. White background. Scientific oncology textbook",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/443980"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 2048,
+        "local_bytes": 506975,
+        "sha256": "dab4b220217da3eaf52c7bbd8352b24af89d4969b7e597750c16e611849be15d",
+        "width": 2048
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": "prompt-similarity:a9043fc75ab3",
+        "exact_duplicate_element_ids": [],
+        "heuristic_similarity_threshold": 0.92,
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": 443949,
+        "root_id": 443949
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0179-two-panel-educational-diagram-illustrating-swi-snf-chromatin-remodeling-in-cance.json",
+        "source_image_rel": "images/0179-two-panel-educational-diagram-illustrating-swi-snf-chromatin-remodeling-in-cance.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "p53-response archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "three-panel-educational-diagram-illustrating-the-p53-tumor-suppressor-pa-444046",
+        "reference_filename": "references/three-panel-educational-diagram-illustrating-the-p53-tumor-suppressor-pa-444046-reference.png",
+        "review_status": "approved",
+        "source_element_id": 444046,
+        "source_sha256": "634e3486b612e5476ce3e6c942954b0807f264a1738fc4afeb67effa2c99c7a0",
+        "svg_filename": "three-panel-educational-diagram-illustrating-the-p53-tumor-suppressor-pa-444046-rough.svg",
+        "transparent_png_filename": "three-panel-educational-diagram-illustrating-the-p53-tumor-suppressor-pa-444046-rough-transparent.png",
+        "conversion_archetype": "p53-response",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 838153,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-03-30T16:36:18.848Z",
+        "downloadedAt": "2026-07-25T15:35:44.821Z",
+        "filename": "0180-three-panel-educational-diagram-illustrating-the-p53-tumor-suppressor-pathway-pa.png",
+        "id": 444046,
+        "index": 180,
+        "name": "Three-panel educational diagram illustrating the p53 tumor suppressor pathway. Panel 1 labeled 'DNA Damage Detected': show a cell nucleus with a DNA double helix containing a damage site (break or lesion marked with a red X). An arrow points to an activated p53 protein (labeled 'p53') with 'posttranslational modification' indicated by a small phosphorylation symbol. Panel 2 labeled 'Normal p53 Response': show activated p53 binding to DNA at a promoter, stimulating production of p21 protein (label 'p21'). p21 binds and inhibits cdk2 (label 'cdk2 \u2014 blocked'). Show three downstream outcome arrows from p53: 'Cell Cycle Arrest,' 'DNA Repair,' and 'Apoptosis.' Panel 3 labeled 'Mutant p53 / Loss of Function': show a mutated p53 protein (label 'mutant p53') unable to bind DNA \u2014 indicated by a blocked/broken binding symbol. p21 is absent. cdk2 remains active (label 'cdk2 \u2014 active'). Show downstream consequence: 'Uncontrolled Cell Division.' Add a small callout box labeled 'Li-Fraumeni Syndrome: inherited mutation in one TP53 allele \u2192 elevated cancer risk.' Connect panels with left-to-right arrows. Label: 'p53,' 'p21,' 'cdk2,' 'DNA Damage,' 'Apoptosis,' 'Cell Cycle Arrest.' Flat vector style. White background. Scientific oncology textbook",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/444046"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 2048,
+        "local_bytes": 838153,
+        "sha256": "634e3486b612e5476ce3e6c942954b0807f264a1738fc4afeb67effa2c99c7a0",
+        "width": 2048
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0180-three-panel-educational-diagram-illustrating-the-p53-tumor-suppressor-pathway-pa.json",
+        "source_image_rel": "images/0180-three-panel-educational-diagram-illustrating-the-p53-tumor-suppressor-pathway-pa.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "gene-regulation archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "three-panel-educational-diagram-illustrating-rb1-tumor-suppressor-functi-445890",
+        "reference_filename": "references/three-panel-educational-diagram-illustrating-rb1-tumor-suppressor-functi-445890-reference.png",
+        "review_status": "approved",
+        "source_element_id": 445890,
+        "source_sha256": "2884002801e6afad63ff34c57ca04d178d8ce29e466479f4c2e108bcb54b3aa9",
+        "svg_filename": "three-panel-educational-diagram-illustrating-rb1-tumor-suppressor-functi-445890-rough.svg",
+        "transparent_png_filename": "three-panel-educational-diagram-illustrating-rb1-tumor-suppressor-functi-445890-rough-transparent.png",
+        "conversion_archetype": "gene-regulation",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 2265814,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-03-31T02:38:57.212Z",
+        "downloadedAt": "2026-07-25T15:35:46.837Z",
+        "filename": "0182-three-panel-educational-diagram-illustrating-rb1-tumor-suppressor-function-and-i.png",
+        "id": 445890,
+        "index": 182,
+        "name": "Three-panel educational diagram illustrating RB1 tumor suppressor function and inactivation. Panel 1 labeled 'Knudson's Two-Hit Hypothesis': show two alleles of the RB1 gene represented as two horizontal chromosome bars side by side. In the hereditary case, show Allele 1 already carrying a germline mutation (red X) and Allele 2 acquiring a somatic mutation (second red X) \u2014 label 'Hereditary: Hit 1 inherited, Hit 2 somatic.' In the sporadic case below it, show both alleles acquiring independent somatic mutations \u2014 label 'Sporadic: both hits somatic.' Indicate loss of Rb protein after both hits are lost. Panel 2 labeled 'Normal Rb Function': show active Rb protein bound to E2F transcription factor, blocking it \u2014 label 'Rb \u2014 E2F complex: cell cycle arrested.' Show a cell cycle diagram with the G1 checkpoint highlighted and a stop symbol. Panel 3 labeled 'Viral Inactivation of Rb': show viral oncoprotein icons for SV40, adenovirus, and HPV binding directly to Rb protein (label each virus). Rb is sequestered \u2014 E2F is released and active, shown binding DNA with a transcription arrow. Label downstream consequence: 'Cell Cycle Progression \u2014 Transformation.' Connect all panels with left-to-right arrows. Label: 'RB1,' 'E2F,' 'Viral Oncoprotein,' 'G1 Checkpoint,' 'Cell Cycle Arrest,' 'Transformation.' Flat vector style. White background. Scientific oncology textbook.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/445890"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 2265814,
+        "sha256": "2884002801e6afad63ff34c57ca04d178d8ce29e466479f4c2e108bcb54b3aa9",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0182-three-panel-educational-diagram-illustrating-rb1-tumor-suppressor-function-and-i.json",
+        "source_image_rel": "images/0182-three-panel-educational-diagram-illustrating-rb1-tumor-suppressor-function-and-i.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "gene-regulation archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "three-panel-educational-diagram-illustrating-apc-tumor-suppressor-functi-445914",
+        "reference_filename": "references/three-panel-educational-diagram-illustrating-apc-tumor-suppressor-functi-445914-reference.png",
+        "review_status": "approved",
+        "source_element_id": 445914,
+        "source_sha256": "5e3683250be8fa9f63c1879e03fe2d1d3b55bd5fe84e71ffe2331a67a20d60e6",
+        "svg_filename": "three-panel-educational-diagram-illustrating-apc-tumor-suppressor-functi-445914-rough.svg",
+        "transparent_png_filename": "three-panel-educational-diagram-illustrating-apc-tumor-suppressor-functi-445914-rough-transparent.png",
+        "conversion_archetype": "gene-regulation",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1655726,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-03-31T02:48:24.910Z",
+        "downloadedAt": "2026-07-25T15:35:47.894Z",
+        "filename": "0183-three-panel-educational-diagram-illustrating-apc-tumor-suppressor-function-in-th.png",
+        "id": 445914,
+        "index": 183,
+        "name": "Three-panel educational diagram illustrating APC tumor suppressor function in the Wnt signaling pathway. Panel 1 labeled 'Normal APC Function (Wnt OFF)': show APC protein binding \u03b2-catenin in the cytoplasm \u2014 label both proteins. \u03b2-catenin is tagged for degradation shown by a proteasome symbol with a downward arrow labeled '\u03b2-catenin degraded.' TCF4 in the nucleus is shown inactive (no \u03b2-catenin bound) \u2014 label 'TCF4 \u2014 inactive, no proliferation signal.' Panel 2 labeled 'APC Loss in Cancer (Wnt ON)': show APC protein absent or crossed out (red X). \u03b2-catenin accumulates in the cytoplasm and translocates to the nucleus \u2014 show directional arrow. In the nucleus, \u03b2-catenin binds TCF4 \u2014 label '\u03b2-catenin + TCF4 complex.' Arrow from complex points to outcome box: 'Colonic epithelium proliferation.' Panel 3 labeled 'FAP: Germline APC Mutation': show a colon silhouette with hundreds of polyps covering the inner wall. Label 'Familial Adenomatous Polyposis \u2014 germline APC mutation.' Add callout: 'Near 100% lifetime CRC risk by age 40.' Connect all panels with left-to-right process arrows. Label: 'APC,' '\u03b2-catenin,' 'TCF4,' 'Proteasome,' 'Nucleus,' 'Cytoplasm.' Flat vector style. White background. Scientific oncology textbook.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/445914"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 1655726,
+        "sha256": "5e3683250be8fa9f63c1879e03fe2d1d3b55bd5fe84e71ffe2331a67a20d60e6",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0183-three-panel-educational-diagram-illustrating-apc-tumor-suppressor-function-in-th.json",
+        "source_image_rel": "images/0183-three-panel-educational-diagram-illustrating-apc-tumor-suppressor-function-in-th.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "normal-cancer archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "two-panel-educational-diagram-illustrating-cpg-island-hypermethylation-l-445876",
+        "reference_filename": "references/two-panel-educational-diagram-illustrating-cpg-island-hypermethylation-l-445876-reference.png",
+        "review_status": "approved",
+        "source_element_id": 445876,
+        "source_sha256": "d2c52ddb6f5213a6d147afbb04e8877a9ffb7257029930b65c54242e3f14c9ac",
+        "svg_filename": "two-panel-educational-diagram-illustrating-cpg-island-hypermethylation-l-445876-rough.svg",
+        "transparent_png_filename": "two-panel-educational-diagram-illustrating-cpg-island-hypermethylation-l-445876-rough-transparent.png",
+        "conversion_archetype": "normal-cancer",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1847531,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-03-31T02:29:58.932Z",
+        "downloadedAt": "2026-07-25T15:35:48.940Z",
+        "filename": "0184-two-panel-educational-diagram-illustrating-cpg-island-hypermethylation-left-pane.png",
+        "id": 445876,
+        "index": 184,
+        "name": "Two-panel educational diagram illustrating CpG island hypermethylation. Left panel labeled 'Normal Cell': show a DNA double helix with a gene promoter region containing unmethylated CpG dinucleotides represented as open circles. An RNA polymerase icon sits at the promoter with an arrow indicating active transcription. Right panel labeled 'Cancer Cell': show the same promoter region with filled circles representing methyl groups (CH\u2083) added to CpG sites. RNA polymerase is absent; a blocked transcription symbol (red X) indicates gene silencing. Label: 'CpG Island,' 'Methyl Group (CH\u2083),' 'Active Transcription,' 'Gene Silenced.' Include a small inset labeled 'p16 \u2014 silenced by hypermethylation.' Flat vector style. White background. Scientific oncology textbook",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/445876"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 1847531,
+        "sha256": "d2c52ddb6f5213a6d147afbb04e8877a9ffb7257029930b65c54242e3f14c9ac",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0184-two-panel-educational-diagram-illustrating-cpg-island-hypermethylation-left-pane.json",
+        "source_image_rel": "images/0184-two-panel-educational-diagram-illustrating-cpg-island-hypermethylation-left-pane.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "membrane-receptor archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "three-panel-educational-diagram-illustrating-pten-tumor-suppressor-funct-445927",
+        "reference_filename": "references/three-panel-educational-diagram-illustrating-pten-tumor-suppressor-funct-445927-reference.png",
+        "review_status": "approved",
+        "source_element_id": 445927,
+        "source_sha256": "8f9d1330e3261638ab7b6c993487b1e53451b19ba4b86cad7f350afc97ef9326",
+        "svg_filename": "three-panel-educational-diagram-illustrating-pten-tumor-suppressor-funct-445927-rough.svg",
+        "transparent_png_filename": "three-panel-educational-diagram-illustrating-pten-tumor-suppressor-funct-445927-rough-transparent.png",
+        "conversion_archetype": "membrane-receptor",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 2349607,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-03-31T02:53:52.082Z",
+        "downloadedAt": "2026-07-25T15:35:51.121Z",
+        "filename": "0186-three-panel-educational-diagram-illustrating-pten-tumor-suppressor-function-in-t.png",
+        "id": 445927,
+        "index": 186,
+        "name": "Three-panel educational diagram illustrating PTEN tumor suppressor function in the PI3K/AKT pathway. Panel 1 labeled 'Normal PTEN Function': show a cell membrane with an insulin receptor at the top receiving a growth signal. PI3K converts PIP2 to PIP3 \u2014 label both molecules with a phosphorylation arrow between them. PTEN enzyme is shown dephosphorylating PIP3 back to PIP2 \u2014 label 'PTEN: PIP3 \u2192 PIP2.' AKT/PKB is shown inactive. Downstream label: 'Cell growth suppressed.' Panel 2 labeled 'PTEN Loss in Cancer': show the same pathway with PTEN absent or crossed out (red X). PIP3 accumulates \u2014 label 'PIP3 elevated.' AKT/PKB is shown active (label 'AKT \u2014 ON'). Downstream cascade shows active mTOR \u2014 label 'mTOR activated.' Outcome box: 'Enhanced cell growth, proliferation, survival.' Panel 3 labeled 'PTEN Hamartoma Tumor Syndrome (PHTS)': show a small organ silhouette panel listing affected tissues with icons \u2014 thyroid, breast, kidney, endometrium. Label 'Cowden Syndrome \u2014 germline PTEN mutation (autosomal dominant).' Add callout: 'Elevated risk: thyroid, breast, endometrial, kidney tumors.' Connect panels with left-to-right process arrows. Label: 'PTEN,' 'PI3K,' 'PIP2,' 'PIP3,' 'AKT/PKB,' 'mTOR,' 'Insulin Receptor.' Flat vector style. White background. Scientific oncology textbook.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/445927"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 2349607,
+        "sha256": "8f9d1330e3261638ab7b6c993487b1e53451b19ba4b86cad7f350afc97ef9326",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0186-three-panel-educational-diagram-illustrating-pten-tumor-suppressor-function-in-t.json",
+        "source_image_rel": "images/0186-three-panel-educational-diagram-illustrating-pten-tumor-suppressor-function-in-t.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "network archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "two-panel-educational-diagram-illustrating-emerging-technologies-in-tumo-445937",
+        "reference_filename": "references/two-panel-educational-diagram-illustrating-emerging-technologies-in-tumo-445937-reference.png",
+        "review_status": "approved",
+        "source_element_id": 445937,
+        "source_sha256": "aa4fe1763f5ab5d136aba9d3416f4a2d0f2cdaee893a71e4593707f71d70bdde",
+        "svg_filename": "two-panel-educational-diagram-illustrating-emerging-technologies-in-tumo-445937-rough.svg",
+        "transparent_png_filename": "two-panel-educational-diagram-illustrating-emerging-technologies-in-tumo-445937-rough-transparent.png",
+        "conversion_archetype": "network",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 2361938,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-03-31T02:57:39.950Z",
+        "downloadedAt": "2026-07-25T15:35:52.090Z",
+        "filename": "0187-two-panel-educational-diagram-illustrating-emerging-technologies-in-tumor-suppre.png",
+        "id": 445937,
+        "index": 187,
+        "name": "Two-panel educational diagram illustrating emerging technologies in tumor suppressor and biomarker analysis. Panel 1 labeled 'Functional HR Assays & PARPi': show a horizontal flow starting with a tumor cell icon. First step labeled 'HR Status Testing' \u2014 show icons representing BRCA1, BRCA2, and 'Other HR Genes' with a checkmark/X readout indicating defective vs. intact HR. Arrow to second step labeled 'Functional Defect Identified' \u2014 show a DNA double-strand break with absent repair machinery. Arrow to third step labeled 'PARPi Therapy' \u2014 show a PARP inhibitor molecule (simple hexagon icon) blocking a PARP enzyme on a DNA strand. Outcome box: 'Expanded patient eligibility for PARPi.' Panel 2 labeled 'Liquid Biopsy & Computational Biomarkers': show a blood draw tube icon at the left. Arrow to a layered data stack showing four labeled layers from bottom to top: 'Genetic Mutation,' 'mRNA,' 'Protein,' 'Computational Model.' Arrow from the stack to two output boxes side by side: 'Mechanism-Driven Biomarkers \u2014 actionable insights' and 'Data-Driven Computational Biomarkers \u2014 broad pattern detection.' Connect the two output boxes with a bracket labeled 'Complementary approaches.' Connect panels with a dividing line. Clean sans-serif labels. Flat vector style. White background. Scientific oncology textbook.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/445937"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 2361938,
+        "sha256": "aa4fe1763f5ab5d136aba9d3416f4a2d0f2cdaee893a71e4593707f71d70bdde",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0187-two-panel-educational-diagram-illustrating-emerging-technologies-in-tumor-suppre.json",
+        "source_image_rel": "images/0187-two-panel-educational-diagram-illustrating-emerging-technologies-in-tumor-suppre.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "dna-repair archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "educational-diagram-showing-the-base-excision-repair-mechanism-show-a-fo-445972",
+        "reference_filename": "references/educational-diagram-showing-the-base-excision-repair-mechanism-show-a-fo-445972-reference.png",
+        "review_status": "approved",
+        "source_element_id": 445972,
+        "source_sha256": "de214a6bfc19c681b1511722d9e03501451b507503bf7084dc323a69bd12019b",
+        "svg_filename": "educational-diagram-showing-the-base-excision-repair-mechanism-show-a-fo-445972-rough.svg",
+        "transparent_png_filename": "educational-diagram-showing-the-base-excision-repair-mechanism-show-a-fo-445972-rough-transparent.png",
+        "conversion_archetype": "dna-repair",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1520564,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-03-31T03:13:07.173Z",
+        "downloadedAt": "2026-07-25T15:35:53.109Z",
+        "filename": "0188-educational-diagram-showing-the-base-excision-repair-mechanism-show-a-four-step-.png",
+        "id": 445972,
+        "index": 188,
+        "name": "Educational diagram showing the Base Excision Repair mechanism. Show a four-step sequential process on a DNA double helix strand. Step 1 labeled 'Damaged Base Detected': show a DNA double helix with one damaged base highlighted in red \u2014 show a deaminated cytosine labeled 'Damaged base \u2014 deaminated C.' Step 2 labeled 'Base Flipping \u2014 Glycosylase Recognition': show the damaged nucleotide flipped outward from the helix labeled 'DNA glycosylase flips base out \u2014 probes all faces for damage.' Show uracil DNA glycosylase enzyme labeled arriving at the site. Step 3 labeled 'Base Excision': show the glycosylase cutting the bond between the damaged base and the deoxyribose sugar labeled 'Bond cut \u2014 base removed.' Show the resulting gap labeled 'Apurinic site (if purine removed) or Apyrimidinic site (if pyrimidine removed).' Step 4 labeled 'Gap Filled and Sealed': show DNA polymerase inserting the correct new base into the gap labeled 'Correct base inserted.' Show DNA ligase sealing the strand labeled 'Ligase seals \u2014 repair complete.' Connect all four steps with right-pointing arrows. No title above image. No summary box below. Flat vector diagram. White background. Clean leader lines. Scientific oncology textbook style",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/445972"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 1520564,
+        "sha256": "de214a6bfc19c681b1511722d9e03501451b507503bf7084dc323a69bd12019b",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0188-educational-diagram-showing-the-base-excision-repair-mechanism-show-a-four-step-.json",
+        "source_image_rel": "images/0188-educational-diagram-showing-the-base-excision-repair-mechanism-show-a-four-step-.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "dna-repair archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "educational-diagram-showing-the-nucleotide-excision-repair-mechanism-sho-445981",
+        "reference_filename": "references/educational-diagram-showing-the-nucleotide-excision-repair-mechanism-sho-445981-reference.png",
+        "review_status": "approved",
+        "source_element_id": 445981,
+        "source_sha256": "8429625ec8a002c8c2b6673db02394fd797ed930b2962cd211e85f35c59cb8da",
+        "svg_filename": "educational-diagram-showing-the-nucleotide-excision-repair-mechanism-sho-445981-rough.svg",
+        "transparent_png_filename": "educational-diagram-showing-the-nucleotide-excision-repair-mechanism-sho-445981-rough-transparent.png",
+        "conversion_archetype": "dna-repair",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1597110,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-03-31T03:15:54.802Z",
+        "downloadedAt": "2026-07-25T15:35:54.177Z",
+        "filename": "0189-educational-diagram-showing-the-nucleotide-excision-repair-mechanism-show-a-four.png",
+        "id": 445981,
+        "index": 189,
+        "name": "Educational diagram showing the Nucleotide Excision Repair mechanism. Show a four-step sequential process on a DNA double helix strand. Step 1 labeled 'Bulky Lesion Detected': show a DNA double helix with a large structural distortion \u2014 a pyrimidine dimer shown as two thymine bases covalently linked labeled 'Pyrimidine dimer \u2014 caused by UV radiation \u2014 bulky lesion.' Step 2 labeled 'Nuclease Cuts Around Lesion': show a nuclease enzyme arriving and cutting the DNA strand on both sides of the damaged region labeled 'Nuclease snips out section containing lesion.' Show a short single-strand fragment being removed labeled 'Damaged segment removed.' Step 3 labeled 'Gap Filled': show DNA polymerase filling the gap with new correct bases labeled 'Polymerase inserts new bases using opposite strand as template.' Step 4 labeled 'Strand Sealed': show DNA ligase sealing the repaired strand labeled 'Ligase seals \u2014 double helix restored.' Connect all four steps with right-pointing arrows. No title above image. No summary box below. Flat vector diagram. White background. Clean leader lines. Scientific oncology textbook style",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/445981"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 1597110,
+        "sha256": "8429625ec8a002c8c2b6673db02394fd797ed930b2962cd211e85f35c59cb8da",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0189-educational-diagram-showing-the-nucleotide-excision-repair-mechanism-show-a-four.json",
+        "source_image_rel": "images/0189-educational-diagram-showing-the-nucleotide-excision-repair-mechanism-show-a-four.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "csc-hierarchy archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "three-tier-pyramidal-hierarchy-diagram-showing-cancer-stem-cell-organiza-599293",
+        "reference_filename": "references/three-tier-pyramidal-hierarchy-diagram-showing-cancer-stem-cell-organiza-599293-reference.png",
+        "review_status": "approved",
+        "source_element_id": 599293,
+        "source_sha256": "6dfb0f69b7f21cc9c803e514e6f725ff5b20b28212e7e13594b1081bfa9172c4",
+        "svg_filename": "three-tier-pyramidal-hierarchy-diagram-showing-cancer-stem-cell-organiza-599293-rough.svg",
+        "transparent_png_filename": "three-tier-pyramidal-hierarchy-diagram-showing-cancer-stem-cell-organiza-599293-rough-transparent.png",
+        "conversion_archetype": "csc-hierarchy",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 190530,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-27T13:33:06.365Z",
+        "downloadedAt": "2026-07-25T15:35:56.018Z",
+        "filename": "0191-three-tier-pyramidal-hierarchy-diagram-showing-cancer-stem-cell-organization-for.png",
+        "id": 599293,
+        "index": 191,
+        "name": "Three-tier pyramidal hierarchy diagram showing cancer stem cell organization for an oncology textbook. At the apex: a single CSC labeled 'Cancer stem cell (CSC).' Two division arrows from the CSC: a symmetric division arrow looping back to two CSCs labeled 'Symmetric division \u2014 CSC pool expansion,' and an asymmetric division arrow producing one CSC and one progenitor labeled 'Asymmetric division.' Middle tier: progenitor cells labeled 'Transit-amplifying progenitor cells \u2014 limited self-renewal, high proliferation.' Base tier: large population of differentiated cells labeled 'Differentiated bulk tumor cells \u2014 no self-renewal.' A dashed upward arrow from base tier back to apex labeled 'Dedifferentiation \u2014 hierarchy not rigidly fixed.' No figure title above the image. No summary box below. White background. Clean sans-serif font. Scientific oncology textbook",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/599293"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 190530,
+        "sha256": "6dfb0f69b7f21cc9c803e514e6f725ff5b20b28212e7e13594b1081bfa9172c4",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0191-three-tier-pyramidal-hierarchy-diagram-showing-cancer-stem-cell-organization-for.json",
+        "source_image_rel": "images/0191-three-tier-pyramidal-hierarchy-diagram-showing-cancer-stem-cell-organization-for.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "membrane-receptor archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "single-panel-cell-biology-mechanism-diagram-showing-abc-transporter-drug-599334",
+        "reference_filename": "references/single-panel-cell-biology-mechanism-diagram-showing-abc-transporter-drug-599334-reference.png",
+        "review_status": "approved",
+        "source_element_id": 599334,
+        "source_sha256": "d652430d607a9a9906100071b2f5fc29cb8e3d6a28303c87a8d9a714229e0750",
+        "svg_filename": "single-panel-cell-biology-mechanism-diagram-showing-abc-transporter-drug-599334-rough.svg",
+        "transparent_png_filename": "single-panel-cell-biology-mechanism-diagram-showing-abc-transporter-drug-599334-rough-transparent.png",
+        "conversion_archetype": "membrane-receptor",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 154121,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-27T13:42:06.913Z",
+        "downloadedAt": "2026-07-25T15:35:57.827Z",
+        "filename": "0193-single-panel-cell-biology-mechanism-diagram-showing-abc-transporter-drug-efflux-.png",
+        "id": 599334,
+        "index": 193,
+        "name": "Single-panel cell biology mechanism diagram showing ABC transporter drug efflux in a cancer stem cell for an oncology textbook. Show a horizontal plasma membrane cross-section dividing intracellular (below) and extracellular (above) space. Embed an ABC transporter protein spanning the full membrane thickness \u2014 show transmembrane domains as a barrel structure. Inside the cell: a chemotherapeutic drug molecule (hexagon shape) approaching the transporter, and ATP molecule at the cytoplasmic domain with an arrow showing ATP \u2192 ADP + Pi hydrolysis powering the pump. Outside the cell: the drug molecule being expelled upward away from the membrane with a directional arrow labeled 'Drug expelled.' Label: 'Intracellular' below membrane, 'Extracellular' above membrane, 'ABC transporter,' 'ATP hydrolysis powers efflux,' 'Chemotherapeutic drug.' No transporter family member names in the diagram. No figure title above the image. White background. Clean sans-serif font. Scientific oncology textbook",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/599334"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 154121,
+        "sha256": "d652430d607a9a9906100071b2f5fc29cb8e3d6a28303c87a8d9a714229e0750",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0193-single-panel-cell-biology-mechanism-diagram-showing-abc-transporter-drug-efflux-.json",
+        "source_image_rel": "images/0193-single-panel-cell-biology-mechanism-diagram-showing-abc-transporter-drug-efflux-.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "epigenetics archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "a-clear-educational-multi-panel-diagram-explaining-dna-methylation-and-c-464725",
+        "reference_filename": "references/a-clear-educational-multi-panel-diagram-explaining-dna-methylation-and-c-464725-reference.png",
+        "review_status": "approved",
+        "source_element_id": 464725,
+        "source_sha256": "f0d29ab104a189ae12bdd2e3655c8f7c19c2a7a34a3bdbb846788dd4210e83cf",
+        "svg_filename": "a-clear-educational-multi-panel-diagram-explaining-dna-methylation-and-c-464725-rough.svg",
+        "transparent_png_filename": "a-clear-educational-multi-panel-diagram-explaining-dna-methylation-and-c-464725-rough-transparent.png",
+        "conversion_archetype": "epigenetics",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 376015,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-04-06T17:32:19.581Z",
+        "downloadedAt": "2026-07-25T15:35:59.922Z",
+        "filename": "0195-a-clear-educational-multi-panel-diagram-explaining-dna-methylation-and-cpg-islan.png",
+        "id": 464725,
+        "index": 195,
+        "name": "A clear, educational multi-panel diagram explaining DNA methylation and CpG island hypermethylation for an undergraduate cancer biology textbook. Organize the figure into two side-by-side panels:\nPanel A \u2014 Normal Cell (left):\nShow a stretch of DNA double helix with a clearly labeled CpG island in the promoter region of a tumor suppressor gene (labeled 'TSG' or 'p16'). The CpG sites should be shown as unmethylated (open white circles). Below the DNA, show an arrow pointing downward toward an mRNA strand and then a protein, indicating that the gene is actively expressed. Label this panel 'Normal: Gene Active.'\nPanel B \u2014 Cancer Cell (right):\nShow the same DNA stretch and CpG island, but now the CpG sites are shown as methylated (filled dark circles labeled 'CH\u2083' or 'Me'). Show methyl groups as small filled hexagons or circles attached to the cytosine residues. Block the arrow leading to mRNA with a red 'X' or barrier symbol, indicating that transcription is silenced. Label this panel 'Cancer: Gene Silenced.'\nBelow both panels, include a small legend distinguishing unmethylated CpG (open circle) from methylated CpG (filled circle). Add a label indicating that DNMT (DNA methyltransferase) is the enzyme responsible for adding methyl groups, shown as a small labeled enzyme shape above the methylated DNA in Panel B.\nStyle: clean vector-style scientific illustration, white background, soft colors (use blue for the DNA helix, red filled circles for methyl groups, green for active transcription arrow, red X for silenced transcription). Simple and uncluttered, suitable for an undergraduate textbook chapter on tumor suppressor genes. No photorealism.\"",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/464725"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 2048,
+        "local_bytes": 376015,
+        "sha256": "f0d29ab104a189ae12bdd2e3655c8f7c19c2a7a34a3bdbb846788dd4210e83cf",
+        "width": 2048
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0195-a-clear-educational-multi-panel-diagram-explaining-dna-methylation-and-cpg-islan.json",
+        "source_image_rel": "images/0195-a-clear-educational-multi-panel-diagram-explaining-dna-methylation-and-cpg-islan.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "heterogeneity archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "side-by-side-two-panel-comparison-diagram-showing-two-models-of-tumor-he-599364",
+        "reference_filename": "references/side-by-side-two-panel-comparison-diagram-showing-two-models-of-tumor-he-599364-reference.png",
+        "review_status": "approved",
+        "source_element_id": 599364,
+        "source_sha256": "91193727c7455f9cec32c085912cf9470a11fef7751daacc2adf10056128c263",
+        "svg_filename": "side-by-side-two-panel-comparison-diagram-showing-two-models-of-tumor-he-599364-rough.svg",
+        "transparent_png_filename": "side-by-side-two-panel-comparison-diagram-showing-two-models-of-tumor-he-599364-rough-transparent.png",
+        "conversion_archetype": "heterogeneity",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1041823,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-27T13:49:27.339Z",
+        "downloadedAt": "2026-07-25T15:36:01.795Z",
+        "filename": "0197-side-by-side-two-panel-comparison-diagram-showing-two-models-of-tumor-heterogene.png",
+        "id": 599364,
+        "index": 197,
+        "name": "Side-by-side two-panel comparison diagram showing two models of tumor heterogeneity for an oncology textbook. Panel A labeled 'Clonal evolution model': show a single ancestral cancer cell at top branching into a tree of genetically distinct subclones below, with selection arrows indicating survival of fittest subclones, resulting in a heterogeneous clonal population at the bottom. Panel B labeled 'Cancer stem cell model': show a CSC at apex producing phenotypically diverse differentiated progeny arranged in a downward hierarchy. Between the two panels, a bidirectional double-headed arrow labeled 'Non-mutually exclusive \u2014 both mechanisms operate simultaneously.' No figure title above the image. No summary box below. White background. Clean sans-serif font. Scientific oncology textbook.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/599364"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 1041823,
+        "sha256": "91193727c7455f9cec32c085912cf9470a11fef7751daacc2adf10056128c263",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0197-side-by-side-two-panel-comparison-diagram-showing-two-models-of-tumor-heterogene.json",
+        "source_image_rel": "images/0197-side-by-side-two-panel-comparison-diagram-showing-two-models-of-tumor-heterogene.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "epigenetics archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "a-clear-educational-multi-panel-diagram-explaining-ezh2-histone-methyltr-464827",
+        "reference_filename": "references/a-clear-educational-multi-panel-diagram-explaining-ezh2-histone-methyltr-464827-reference.png",
+        "review_status": "approved",
+        "source_element_id": 464827,
+        "source_sha256": "d79e86ab6fa4e7a8b412e2d43755aa37b0e802764e7409cd2f92978c48b7447a",
+        "svg_filename": "a-clear-educational-multi-panel-diagram-explaining-ezh2-histone-methyltr-464827-rough.svg",
+        "transparent_png_filename": "a-clear-educational-multi-panel-diagram-explaining-ezh2-histone-methyltr-464827-rough-transparent.png",
+        "conversion_archetype": "epigenetics",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1957469,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-04-06T18:17:52.370Z",
+        "downloadedAt": "2026-07-25T15:36:04.669Z",
+        "filename": "0200-a-clear-educational-multi-panel-diagram-explaining-ezh2-histone-methyltransferas.png",
+        "id": 464827,
+        "index": 200,
+        "name": "A clear, educational multi-panel diagram explaining EZH2 histone methyltransferase activity and its inhibition by Tazemetostat for an undergraduate cancer biology textbook. Organize the figure into two side-by-side panels:\nPanel A \u2014 EZH2 Activity (left):\nShow a nucleosome represented as a cylinder or disc labeled 'Histone H3', with a protruding histone tail on the left side. Above the nucleosome, show the EZH2 enzyme (labeled 'EZH2 HMT Writer') binding to the histone tail. Show a small molecule labeled SAM (S-adenosylmethionine) docking into EZH2 as a cofactor, depicted as a small colored shape entering a binding pocket on the enzyme. Show a methyl group (CH\u2083) being transferred from SAM onto the histone tail at the H3K27 site, producing H3K27me3. Below the nucleosome, show the associated DNA becoming compacted or coiled, with a red 'X' blocking a downward arrow toward mRNA, indicating gene silencing. Label this panel 'EZH2 Active: Gene Silenced.'\nPanel B \u2014 EZH2 Inhibition by Tazemetostat (right):\nShow the same nucleosome and EZH2 enzyme, but now depict Tazemetostat (labeled 'Tazemetostat / EPZ-6438') as a differently colored molecule occupying the SAM binding pocket on EZH2, blocking SAM from entering. Show SAM being excluded or floating away. Without methyl transfer, show the histone tail as unmethylated at H3K27, and show the DNA in a more open, relaxed conformation. Below, show a green downward arrow toward mRNA and a protein, indicating gene re-expression. Label this panel 'EZH2 Inhibited: Gene Reactivated.'\nBelow both panels, include a small legend identifying SAM, Tazemetostat, the methyl group, and H3K27me3. ",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/464827"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 1957469,
+        "sha256": "d79e86ab6fa4e7a8b412e2d43755aa37b0e802764e7409cd2f92978c48b7447a",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": "prompt-similarity:6cd7800d7eaa",
+        "exact_duplicate_element_ids": [],
+        "heuristic_similarity_threshold": 0.92,
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": 464813,
+        "root_id": 464798
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0200-a-clear-educational-multi-panel-diagram-explaining-ezh2-histone-methyltransferas.json",
+        "source_image_rel": "images/0200-a-clear-educational-multi-panel-diagram-explaining-ezh2-histone-methyltransferas.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "epigenetics archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "a-clear-educational-multi-panel-diagram-explaining-bet-protein-function--464953",
+        "reference_filename": "references/a-clear-educational-multi-panel-diagram-explaining-bet-protein-function--464953-reference.png",
+        "review_status": "approved",
+        "source_element_id": 464953,
+        "source_sha256": "58ed6295fb14dbce35cf89328c66d3054cb5509e713006f5b596fe3c5bac5d05",
+        "svg_filename": "a-clear-educational-multi-panel-diagram-explaining-bet-protein-function--464953-rough.svg",
+        "transparent_png_filename": "a-clear-educational-multi-panel-diagram-explaining-bet-protein-function--464953-rough-transparent.png",
+        "conversion_archetype": "epigenetics",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 578202,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-04-06T19:15:49.424Z",
+        "downloadedAt": "2026-07-25T15:36:06.806Z",
+        "filename": "0202-a-clear-educational-multi-panel-diagram-explaining-bet-protein-function-and-its-.png",
+        "id": 464953,
+        "index": 202,
+        "name": "A clear, educational multi-panel diagram explaining BET protein function and its inhibition by JQ1 for an undergraduate cancer biology textbook. Organize into two side-by-side panels:\nPanel A \u2014 Normal BET Activity (left):\nShow a nucleosome with a histone tail bearing acetylated lysine residues (depicted as small labeled tags marked 'Ac'). Above the histone tail, show the BRD4 protein (labeled 'BRD4 / BET Protein') with its bromodomain depicted as a binding pocket recognizing and docking onto the acetylated lysine. From BRD4, show a chain of interactions leading to the MYC oncogene being transcribed \u2014 depict this as an arrow pointing toward an mRNA strand and a MYC protein label. Label this panel 'BET Active: Oncogene Transcription.'\nPanel B \u2014 BET Inhibition by JQ1 (right):\nShow the same nucleosome and histone tail with acetylated lysines, but now depict JQ1 (labeled 'JQ1 / BET Inhibitor') as a small colored molecule occupying the bromodomain binding pocket of BRD4, preventing it from recognizing the acetylated lysine. Show BRD4 floating away or detached. Below, show MYC transcription blocked with a red 'X' on the arrow, indicating oncogene silencing. Add a small note indicating reduced cancer cell proliferation. Label this panel 'BET Inhibited: Oncogene Silenced.'\nBelow both panels include a small legend identifying acetyl marks, JQ1, BRD4, and MYC.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/464953"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 2048,
+        "local_bytes": 578202,
+        "sha256": "58ed6295fb14dbce35cf89328c66d3054cb5509e713006f5b596fe3c5bac5d05",
+        "width": 2048
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0202-a-clear-educational-multi-panel-diagram-explaining-bet-protein-function-and-its-.json",
+        "source_image_rel": "images/0202-a-clear-educational-multi-panel-diagram-explaining-bet-protein-function-and-its-.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "apoptosis archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "the-intrinsic-apoptotic-pathway-is-initiated-by-cellular-stress-which-ac-465013",
+        "reference_filename": "references/the-intrinsic-apoptotic-pathway-is-initiated-by-cellular-stress-which-ac-465013-reference.png",
+        "review_status": "approved",
+        "source_element_id": 465013,
+        "source_sha256": "2237dc0c9a47957abefb6c142969c11d3c303621554c083621825d041bb7ec79",
+        "svg_filename": "the-intrinsic-apoptotic-pathway-is-initiated-by-cellular-stress-which-ac-465013-rough.svg",
+        "transparent_png_filename": "the-intrinsic-apoptotic-pathway-is-initiated-by-cellular-stress-which-ac-465013-rough-transparent.png",
+        "conversion_archetype": "apoptosis",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 2007988,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-04-06T19:37:13.514Z",
+        "downloadedAt": "2026-07-25T15:36:07.910Z",
+        "filename": "0203-the-intrinsic-apoptotic-pathway-is-initiated-by-cellular-stress-which-activates-.png",
+        "id": 465013,
+        "index": 203,
+        "name": "The intrinsic apoptotic pathway is initiated by cellular stress, which activates BH3-only proteins (Bid, Bim, Noxa, PUMA) that trigger Bax/Bak translocation to the outer mitochondrial membrane. Bax/Bak oligomerization forms a pore, releasing cytochrome c into the cytoplasm, where it binds Apaf-1 and ATP to assemble the apoptosome. The apoptosome activates caspase-9, which cleaves and activates executioner caspases-3 and -7 to execute apoptosis",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/465013"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 2007988,
+        "sha256": "2237dc0c9a47957abefb6c142969c11d3c303621554c083621825d041bb7ec79",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": "prompt-similarity:171f6ffcd872",
+        "exact_duplicate_element_ids": [],
+        "heuristic_similarity_threshold": 0.92,
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": 464979,
+        "root_id": 464979
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0203-the-intrinsic-apoptotic-pathway-is-initiated-by-cellular-stress-which-activates-.json",
+        "source_image_rel": "images/0203-the-intrinsic-apoptotic-pathway-is-initiated-by-cellular-stress-which-activates-.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "membrane-receptor archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "a-clear-educational-diagram-explaining-how-bet-inhibition-reduces-pd-l1--464963",
+        "reference_filename": "references/a-clear-educational-diagram-explaining-how-bet-inhibition-reduces-pd-l1--464963-reference.png",
+        "review_status": "approved",
+        "source_element_id": 464963,
+        "source_sha256": "73f7037ee5f6f2e426a1932bf5e746038682d4bd86c429a141780b2a41988479",
+        "svg_filename": "a-clear-educational-diagram-explaining-how-bet-inhibition-reduces-pd-l1--464963-rough.svg",
+        "transparent_png_filename": "a-clear-educational-diagram-explaining-how-bet-inhibition-reduces-pd-l1--464963-rough-transparent.png",
+        "conversion_archetype": "membrane-receptor",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 923992,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-04-06T19:19:55.925Z",
+        "downloadedAt": "2026-07-25T15:36:08.919Z",
+        "filename": "0204-a-clear-educational-diagram-explaining-how-bet-inhibition-reduces-pd-l1-expressi.png",
+        "id": 464963,
+        "index": 204,
+        "name": "A clear, educational diagram explaining how BET inhibition reduces PD-L1 expression and enhances anti-tumor immune activity for an undergraduate cancer biology textbook. Organize into two side-by-side panels:\nPanel A \u2014 Without BET Inhibition (left):\nShow a tumor cell on the left with BRD4 actively driving transcription of CD274 (PD-L1), depicted as PD-L1 proteins displayed on the tumor cell surface (shown as receptor-like shapes on the cell membrane, labeled 'PD-L1'). On the right, show a cytotoxic T cell approaching the tumor cell, but show its attack being blocked by a PD-L1 to PD-1 interaction (depicted as a lock-and-key connection between PD-L1 on the tumor and PD-1 on the T cell). Show the T cell as inactive or inhibited with a downward arrow labeled 'T cell suppressed.' Label this panel 'BET Active: Immune Evasion.'\nPanel B \u2014 With BET Inhibition by JQ1 (right):\nShow the same tumor cell, but now with JQ1 blocking BRD4 activity, leading to reduced PD-L1 expression on the tumor cell surface (show fewer or no PD-L1 receptors). Show the cytotoxic T cell now actively engaging and attacking the tumor cell, depicted with an upward arrow labeled 'T cell activated' and small burst symbols indicating cytotoxic killing. Label this panel 'BET Inhibited: Immune Activation.'\nBelow both panels include a small legend identifying BRD4, PD-L1, PD-1, JQ1, and cytotoxic T cell.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/464963"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 2048,
+        "local_bytes": 923992,
+        "sha256": "73f7037ee5f6f2e426a1932bf5e746038682d4bd86c429a141780b2a41988479",
+        "width": 2048
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0204-a-clear-educational-diagram-explaining-how-bet-inhibition-reduces-pd-l1-expressi.json",
+        "source_image_rel": "images/0204-a-clear-educational-diagram-explaining-how-bet-inhibition-reduces-pd-l1-expressi.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "apoptosis archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "sequential-flow-diagram-illustrating-the-extrinsic-apoptotic-pathway-sho-465034",
+        "reference_filename": "references/sequential-flow-diagram-illustrating-the-extrinsic-apoptotic-pathway-sho-465034-reference.png",
+        "review_status": "approved",
+        "source_element_id": 465034,
+        "source_sha256": "f49527aed14f2766ec881ea2184a2537f5043b7f5b48719a008409f6c5645d2c",
+        "svg_filename": "sequential-flow-diagram-illustrating-the-extrinsic-apoptotic-pathway-sho-465034-rough.svg",
+        "transparent_png_filename": "sequential-flow-diagram-illustrating-the-extrinsic-apoptotic-pathway-sho-465034-rough-transparent.png",
+        "conversion_archetype": "apoptosis",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1888879,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-04-06T19:42:34.957Z",
+        "downloadedAt": "2026-07-25T15:36:10.964Z",
+        "filename": "0206-sequential-flow-diagram-illustrating-the-extrinsic-apoptotic-pathway-show-the-fo.png",
+        "id": 465034,
+        "index": 206,
+        "name": "Sequential flow diagram illustrating the extrinsic apoptotic pathway. Show the following steps connected by downward arrows from top to bottom. Step 1 labeled 'Fas Ligand Binding': show a cell membrane with clustered Fas receptor icons on the surface \u2014 label 'Fas receptors (clustered).' A Fas ligand icon binds from outside the cell \u2014 label 'FasL.' Step 2 labeled 'DISC Formation': show intracellular adaptor proteins recruited to the clustered Fas receptors \u2014 label 'Adaptor proteins recruited.' Multiple procaspase-8 molecules aggregate at the complex \u2014 label 'Procaspase-8 aggregation.' Label the full complex 'DISC (Death-Inducing Signaling Complex).' Step 3 labeled 'Caspase-8 Activation': show procaspase-8 molecules cleaving one another \u2014 label 'Autocatalytic cleavage \u2192 active Caspase-8.' Step 4 labeled 'Effector Caspase Activation': arrow from active Caspase-8 to downstream effector caspases \u2014 label 'Caspase-3 / Caspase-7 activated.' Final outcome box: 'Apoptosis.' Connect all steps with directional arrows. Label: 'FasL,' 'Fas receptor,' 'Adaptor proteins,' 'Procaspase-8,' 'Caspase-8,' 'DISC,' 'Caspase-3,' 'Caspase-7.' Flat vector style. White background. Scientific oncology textbook",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/465034"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 1888879,
+        "sha256": "f49527aed14f2766ec881ea2184a2537f5043b7f5b48719a008409f6c5645d2c",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": "prompt-similarity:7925a3c34992",
+        "exact_duplicate_element_ids": [],
+        "heuristic_similarity_threshold": 0.92,
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": 465028,
+        "root_id": 465028
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0206-sequential-flow-diagram-illustrating-the-extrinsic-apoptotic-pathway-show-the-fo.json",
+        "source_image_rel": "images/0206-sequential-flow-diagram-illustrating-the-extrinsic-apoptotic-pathway-show-the-fo.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "csc-treatment archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "horizontal-timeline-cycle-diagram-showing-treatment-induced-cancer-stem--599373",
+        "reference_filename": "references/horizontal-timeline-cycle-diagram-showing-treatment-induced-cancer-stem--599373-reference.png",
+        "review_status": "approved",
+        "source_element_id": 599373,
+        "source_sha256": "99724cc939d0babd9bb1418d472101a7f5b050085d075f04f5e64e245227cd57",
+        "svg_filename": "horizontal-timeline-cycle-diagram-showing-treatment-induced-cancer-stem--599373-rough.svg",
+        "transparent_png_filename": "horizontal-timeline-cycle-diagram-showing-treatment-induced-cancer-stem--599373-rough-transparent.png",
+        "conversion_archetype": "csc-treatment",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1416533,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-27T13:52:33.598Z",
+        "downloadedAt": "2026-07-25T15:36:12.009Z",
+        "filename": "0207-horizontal-timeline-cycle-diagram-showing-treatment-induced-cancer-stem-cell-enr.png",
+        "id": 599373,
+        "index": 207,
+        "name": "Horizontal timeline cycle diagram showing treatment-induced cancer stem cell enrichment for an oncology textbook. Four sequential panels connected by arrows forming a cycle. Panel 1 labeled 'Pre-treatment tumor': show a large tumor mass with a small CSC fraction highlighted (small colored subpopulation) within a large bulk tumor cell population. Panel 2 labeled 'Chemotherapy': show a treatment intervention arrow, bulk tumor cells depleted/eliminated, CSCs surviving. Panel 3 labeled 'Post-treatment \u2014 CSC enriched': show a smaller tumor mass now proportionally dominated by CSCs, with quiescent dormant CSCs indicated. Panel 4 labeled 'Reactivation \u2014 relapse': show CSCs re-expanding into a new heterogeneous tumor. A curved return arrow from Panel 4 back to Panel 1 labeled 'Cycle repeats \u2014 explains relapse.' No specific drug names in the diagram. No figure title above the image. No summary box below. White background. Clean sans-serif font. Scientific oncology textbook",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/599373"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 1416533,
+        "sha256": "99724cc939d0babd9bb1418d472101a7f5b050085d075f04f5e64e245227cd57",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0207-horizontal-timeline-cycle-diagram-showing-treatment-induced-cancer-stem-cell-enr.json",
+        "source_image_rel": "images/0207-horizontal-timeline-cycle-diagram-showing-treatment-induced-cancer-stem-cell-enr.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "table archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "reference-table-diagram-showing-cancer-stem-cell-markers-across-eight-ca-599386",
+        "reference_filename": "references/reference-table-diagram-showing-cancer-stem-cell-markers-across-eight-ca-599386-reference.png",
+        "review_status": "approved",
+        "source_element_id": 599386,
+        "source_sha256": "2390ce89f0957242c0afcf87b1356c94830c99f0dde90bb633f9bdabf4fda16d",
+        "svg_filename": "reference-table-diagram-showing-cancer-stem-cell-markers-across-eight-ca-599386-rough.svg",
+        "transparent_png_filename": "reference-table-diagram-showing-cancer-stem-cell-markers-across-eight-ca-599386-rough-transparent.png",
+        "conversion_archetype": "table",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1080722,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-27T13:56:44.443Z",
+        "downloadedAt": "2026-07-25T15:36:12.936Z",
+        "filename": "0208-reference-table-diagram-showing-cancer-stem-cell-markers-across-eight-cancer-typ.png",
+        "id": 599386,
+        "index": 208,
+        "name": "Reference table diagram showing cancer stem cell markers across eight cancer types for an oncology textbook. Two-column structured table. Left column header: 'Cancer type.' Right column header: 'CSC marker combination.' Rows: Acute myeloid leukemia \u2014 CD34+ / CD38\u2212; Breast cancer \u2014 CD44+ / CD24\u2212 (\u00b1 ALDH+); Pancreatic cancer \u2014 CD24+ / CD44+ / ESA+ triple-positive or CD133+; Hepatocellular carcinoma \u2014 EpCAM, CD133, CD90, CD44, CD24, CD13, OV6, USP22; Colorectal cancer \u2014 CD133+ / CD44+ (\u00b1 ALDH+); Glioblastoma \u2014 CD133+ mesenchymal CD44+; Lung cancer (NSCLC) \u2014 CD133+ / CD24+ (\u00b1 L1CAM+); Ovarian cancer \u2014 ALDH+ / CD133+ (\u00b1 L1CAM+). Clean alternating row shading for readability. No figure title above the table. White background. Clean sans-serif font. Scientific oncology textbook",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/599386"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 1080722,
+        "sha256": "2390ce89f0957242c0afcf87b1356c94830c99f0dde90bb633f9bdabf4fda16d",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0208-reference-table-diagram-showing-cancer-stem-cell-markers-across-eight-cancer-typ.json",
+        "source_image_rel": "images/0208-reference-table-diagram-showing-cancer-stem-cell-markers-across-eight-cancer-typ.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "metastasis archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "sequential-schematic-diagram-showing-cancer-stem-cell-mediated-metastati-599402",
+        "reference_filename": "references/sequential-schematic-diagram-showing-cancer-stem-cell-mediated-metastati-599402-reference.png",
+        "review_status": "approved",
+        "source_element_id": 599402,
+        "source_sha256": "a6800fd6b22d3243a058b72633e712f0231341e0b545048c77883cb718a30d05",
+        "svg_filename": "sequential-schematic-diagram-showing-cancer-stem-cell-mediated-metastati-599402-rough.svg",
+        "transparent_png_filename": "sequential-schematic-diagram-showing-cancer-stem-cell-mediated-metastati-599402-rough-transparent.png",
+        "conversion_archetype": "metastasis",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1553628,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-27T14:01:50.378Z",
+        "downloadedAt": "2026-07-25T15:36:13.920Z",
+        "filename": "0209-sequential-schematic-diagram-showing-cancer-stem-cell-mediated-metastatic-dissem.png",
+        "id": 599402,
+        "index": 209,
+        "name": "Sequential schematic diagram showing cancer stem cell-mediated metastatic dissemination for an oncology textbook. Left to right flow across the figure. Step 1: Primary tumor with CSCs at apex undergoing EMT transition \u2014 label 'Epithelial-mesenchymal transition \u2014 CSC acquires mesenchymal phenotype.' Step 2: CSC intravasating into a blood vessel \u2014 label 'Hematogenous dissemination' \u2014 and separately entering a lymphatic capillary \u2014 label 'Lymphatic dissemination.' Step 3: Circulating tumor cells traveling through the vasculature \u2014 label 'Circulating tumor cells (CTCs).' Step 4: Distant organ with CSC arriving and colonizing \u2014 label 'Distant organ colonization.' Step 5: Dormant CSC at metastatic site reactivating \u2014 label 'Dormancy \u2192 reactivation \u2192 metastatic outgrowth.' No signaling molecule names (no Snail, Slug, TGF-\u03b2, Wnt) in the diagram. No figure title above the image. No summary box below. White background. Clean sans-serif font. Scientific oncology textbook.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/599402"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 1553628,
+        "sha256": "a6800fd6b22d3243a058b72633e712f0231341e0b545048c77883cb718a30d05",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0209-sequential-schematic-diagram-showing-cancer-stem-cell-mediated-metastatic-dissem.json",
+        "source_image_rel": "images/0209-sequential-schematic-diagram-showing-cancer-stem-cell-mediated-metastatic-dissem.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "hub archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "horizontal-flowchart-diagram-showing-csc-maintenance-signaling-pathway-c-599423",
+        "reference_filename": "references/horizontal-flowchart-diagram-showing-csc-maintenance-signaling-pathway-c-599423-reference.png",
+        "review_status": "approved",
+        "source_element_id": 599423,
+        "source_sha256": "ad20d68e2be566ca18d774d6abf78898119fe9b5de758e298e6e948b7a7c5d7a",
+        "svg_filename": "horizontal-flowchart-diagram-showing-csc-maintenance-signaling-pathway-c-599423-rough.svg",
+        "transparent_png_filename": "horizontal-flowchart-diagram-showing-csc-maintenance-signaling-pathway-c-599423-rough-transparent.png",
+        "conversion_archetype": "hub",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1098707,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-27T14:09:53.643Z",
+        "downloadedAt": "2026-07-25T15:36:15.763Z",
+        "filename": "0211-horizontal-flowchart-diagram-showing-csc-maintenance-signaling-pathway-convergen.png",
+        "id": 599423,
+        "index": 211,
+        "name": "Horizontal flowchart diagram showing CSC-maintenance signaling pathway convergence for an oncology textbook. Three columns connected by arrows. Left column labeled 'Pathway inputs': five pathway boxes stacked vertically \u2014 Wnt/\u03b2-catenin, Hedgehog, Notch, PI3K/AKT/mTOR, JAK/STAT \u2014 each with an arrow pointing right. Center column labeled 'Stemness transcription factors': three transcription factor nodes \u2014 OCT4, SOX2, NANOG \u2014 shown as a convergence hub receiving all five input arrows. Right column labeled 'CSC properties': three output boxes \u2014 Self-renewal, Chemoresistance, Tumor-initiating capacity \u2014 each with an arrow from the central hub. No NF-\u03baB or TGF-\u03b2/SMAD in the diagram. No figure title above the image. No summary box below. White background. Clean sans-serif font. Scientific oncology textbook.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/599423"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 1098707,
+        "sha256": "ad20d68e2be566ca18d774d6abf78898119fe9b5de758e298e6e948b7a7c5d7a",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0211-horizontal-flowchart-diagram-showing-csc-maintenance-signaling-pathway-convergen.json",
+        "source_image_rel": "images/0211-horizontal-flowchart-diagram-showing-csc-maintenance-signaling-pathway-convergen.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "apoptosis archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "a-clean-educational-diagram-explaining-the-intrinsic-apoptotic-pathway-f-468442",
+        "reference_filename": "references/a-clean-educational-diagram-explaining-the-intrinsic-apoptotic-pathway-f-468442-reference.png",
+        "review_status": "approved",
+        "source_element_id": 468442,
+        "source_sha256": "b07b00f28cb68860c966b5c19fe6c9ebfdf6bc826a6c590c7e9faf6dd774bf53",
+        "svg_filename": "a-clean-educational-diagram-explaining-the-intrinsic-apoptotic-pathway-f-468442-rough.svg",
+        "transparent_png_filename": "a-clean-educational-diagram-explaining-the-intrinsic-apoptotic-pathway-f-468442-rough-transparent.png",
+        "conversion_archetype": "apoptosis",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 631123,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-04-07T21:31:51.004Z",
+        "downloadedAt": "2026-07-25T15:36:17.764Z",
+        "filename": "0213-a-clean-educational-diagram-explaining-the-intrinsic-apoptotic-pathway-for-an-un.png",
+        "id": 468442,
+        "index": 213,
+        "name": "\"A clean, educational diagram explaining the intrinsic apoptotic pathway for an undergraduate cancer biology textbook. Use a left-to-right horizontal flow with three clearly separated stages, each in its own labeled box connected by large bold arrows:\nStage 1 \u2014 Stress Signal (left box):\nDraw a simple cell outline. Inside, show a DNA damage symbol (double helix with a crack or lightning bolt). Below it, show three small labeled protein tags stacked vertically: 'Bid,' 'Bim,' and 'PUMA/Noxa.' Add a heading above: 'Step 1: Stress Activates BH3-Only Proteins.' Use a light red background for this box.\nStage 2 \u2014 Mitochondria Response (center box):\nDraw a large, clearly recognizable mitochondrion with its double membrane visible. On its outer surface, show two protein clusters labeled 'Bax' and 'Bak' forming a pore (shown as a gap or channel in the membrane). From this pore, show 4\u20135 small identical circles labeled 'Cytochrome c' being released outward into the surrounding space. Add a heading above: 'Step 2: Mitochondria Release Cytochrome c.' Use a light orange background for this box.\nStage 3 \u2014 Caspase Activation (right box):\nShow a large circular protein complex labeled 'Apoptosome' (drawn as a wheel or ring shape). Attached to it, show a protein labeled 'Caspase-9.' Below the apoptosome, show two downstream arrows pointing to two separate proteins labeled 'Caspase-3' and 'Caspase-7.' Below these, show a final outcome label in a bold red box: 'APOPTOSIS \u2014 Cell Death.' Add a heading above: 'Step 3: Apoptosome Activates Executioner Caspases.' Use a light purple background for this box.\nConnect the three boxes with thick bold rightward arrows. Below the entire diagram, add a thin horizontal label: 'Intrinsic Apoptotic Pathway.'",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/468442"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 2048,
+        "local_bytes": 631123,
+        "sha256": "b07b00f28cb68860c966b5c19fe6c9ebfdf6bc826a6c590c7e9faf6dd774bf53",
+        "width": 2048
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0213-a-clean-educational-diagram-explaining-the-intrinsic-apoptotic-pathway-for-an-un.json",
+        "source_image_rel": "images/0213-a-clean-educational-diagram-explaining-the-intrinsic-apoptotic-pathway-for-an-un.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "gene-therapy archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "four-panel-2x2-grid-educational-diagram-for-undergraduate-cancer-biology-619533",
+        "reference_filename": "references/four-panel-2x2-grid-educational-diagram-for-undergraduate-cancer-biology-619533-reference.png",
+        "review_status": "approved",
+        "source_element_id": 619533,
+        "source_sha256": "44e300849929051678102a2d94d0741c722bf2b339249c7a8b95b7bd250ca619",
+        "svg_filename": "four-panel-2x2-grid-educational-diagram-for-undergraduate-cancer-biology-619533-rough.svg",
+        "transparent_png_filename": "four-panel-2x2-grid-educational-diagram-for-undergraduate-cancer-biology-619533-rough-transparent.png",
+        "conversion_archetype": "gene-therapy",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 248811,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-06-05T14:05:39.439Z",
+        "downloadedAt": "2026-07-25T15:36:19.544Z",
+        "filename": "0215-four-panel-2x2-grid-educational-diagram-for-undergraduate-cancer-biology-showing.png",
+        "id": 619533,
+        "index": 215,
+        "name": "Four-panel 2x2 grid educational diagram for undergraduate cancer biology showing four gene therapy strategies. Each panel shows a cancer cell oval with a generic vector arrow entering. Panel 1 (top left): vector delivers a functional gene to a Blue (#0072B2) nucleus, with a Bluish Green (#009E73) activation arrow to a cell cycle arrest symbol. Panel 2 (top right): vector delivers an enzyme gene; an Orange (#E69F00) prodrug molecule enters the cell and is converted to a Vermillion (#D55E00) toxic metabolite with a cell death symbol. Panel 3 (bottom left): vector delivers a Sky Blue (#56B4E9) siRNA strand that binds a mRNA molecule with a Vermillion (#D55E00) inhibitory flat-head arrow blocking oncogene output. Panel 4 (bottom right): vector delivers a cytokine gene; a cytokine molecule exits the cell and activates a T-cell shape via Bluish Green (#009E73) arrow. Light gray panel borders separate the four strategies. Flat vector, white background, Okabe-Ito palette, unannotated, no text labels.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/619533"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 248811,
+        "sha256": "44e300849929051678102a2d94d0741c722bf2b339249c7a8b95b7bd250ca619",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0215-four-panel-2x2-grid-educational-diagram-for-undergraduate-cancer-biology-showing.json",
+        "source_image_rel": "images/0215-four-panel-2x2-grid-educational-diagram-for-undergraduate-cancer-biology-showing.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "epigenetics archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "three-panel-educational-diagram-illustrating-histone-modifications-and-t-470154",
+        "reference_filename": "references/three-panel-educational-diagram-illustrating-histone-modifications-and-t-470154-reference.png",
+        "review_status": "approved",
+        "source_element_id": 470154,
+        "source_sha256": "10cb89792dd8a1e2ee8a19bc95c5d59ed9f9be2f4d9503938339ef80ef2dc98f",
+        "svg_filename": "three-panel-educational-diagram-illustrating-histone-modifications-and-t-470154-rough.svg",
+        "transparent_png_filename": "three-panel-educational-diagram-illustrating-histone-modifications-and-t-470154-rough-transparent.png",
+        "conversion_archetype": "epigenetics",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 499496,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-04-08T12:25:01.371Z",
+        "downloadedAt": "2026-07-25T15:36:25.430Z",
+        "filename": "0221-three-panel-educational-diagram-illustrating-histone-modifications-and-tumor-sup.png",
+        "id": 470154,
+        "index": 221,
+        "name": "Three-panel educational diagram illustrating histone modifications and tumor suppressor gene silencing. Panel 1 labeled 'Normal Chromatin': show loosely spaced nucleosomes on a DNA strand with acetyl groups (Ac, green circles) on histone tails representing open chromatin. Show an RNA polymerase icon at the promoter with an active transcription arrow. Panel 2 labeled 'Repressive Histone Modifications': show compacted nucleosomes with four mechanisms labeled \u2014 (1) HDAC icon removing acetyl groups from histone tails labeled 'Ablation of transcription factor binding,' (2) DNMT icon labeled 'Overexpression of DNA methyltransferases,' (3) CTCF binding site blocked labeled 'Disruption of CTCF binding,' (4) EZH2 icon adding methyl groups (Me, red circles) to histone tails labeled 'EZH2 \u2192 H3K27me3.' Show a blocked transcription symbol (red X). Panel 3 labeled 'Downstream Effect': show a DNA segment with a gene labeled 'TSG' and a silenced/OFF indicator. Below add a small inset box labeled 'Chromatin Remodeling': show an ATP-dependent remodeling complex icon repositioning nucleosomes on a DNA strand \u2014 label 'ATP-dependent complex alters nucleosome positioning \u2192 restricts transcriptional machinery access.' Connect all three panels with left-to-right process arrows. Label: 'Acetylation,' 'EZH2,' 'HDAC,' 'DNMT,' 'CTCF,' 'Nucleosome,' 'TSG.' Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/470154"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 2048,
+        "local_bytes": 499496,
+        "sha256": "10cb89792dd8a1e2ee8a19bc95c5d59ed9f9be2f4d9503938339ef80ef2dc98f",
+        "width": 2048
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0221-three-panel-educational-diagram-illustrating-histone-modifications-and-tumor-sup.json",
+        "source_image_rel": "images/0221-three-panel-educational-diagram-illustrating-histone-modifications-and-tumor-sup.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "epigenetics archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "three-panel-educational-diagram-illustrating-histone-modifications-and-t-470179",
+        "reference_filename": "references/three-panel-educational-diagram-illustrating-histone-modifications-and-t-470179-reference.png",
+        "review_status": "approved",
+        "source_element_id": 470179,
+        "source_sha256": "ab658e0f7bef2005c25ddaa589da1648c4a45a39245f6bd6ee5376514c54d8df",
+        "svg_filename": "three-panel-educational-diagram-illustrating-histone-modifications-and-t-470179-rough.svg",
+        "transparent_png_filename": "three-panel-educational-diagram-illustrating-histone-modifications-and-t-470179-rough-transparent.png",
+        "conversion_archetype": "epigenetics",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 358130,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-04-08T12:37:03.197Z",
+        "downloadedAt": "2026-07-25T15:36:27.285Z",
+        "filename": "0223-three-panel-educational-diagram-illustrating-histone-modifications-and-tumor-sup.png",
+        "id": 470179,
+        "index": 223,
+        "name": "Three-panel educational diagram illustrating histone modifications and tumor suppressor gene silencing. Panel 1 labeled 'Normal Chromatin': show loosely spaced nucleosomes on a DNA strand with acetyl groups (Ac, green circles) on histone tails \u2014 label 'Acetylation (Active).' Show an RNA polymerase icon at the promoter with an active transcription arrow. Panel 2 labeled 'Repressive Histone Modifications': show compacted nucleosomes with HDAC enzyme icon removing acetyl groups and EZH2 enzyme icon adding methyl groups (Me, red circles) to histone tails \u2014 label 'EZH2 \u2192 H3K27me3' and 'HDAC.' Show a blocked transcription symbol (red X over transcription arrow). Panel 3 labeled 'Downstream Effect': show a DNA segment with a gene labeled 'TSG' and a silenced/OFF indicator (red X). Connect all three panels with left-to-right process arrows. Label: 'Acetylation (Active),' 'Methylation (Repressive),' 'EZH2,' 'HDAC,' 'Nucleosome,' 'TSG.' Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/470179"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 2048,
+        "local_bytes": 358130,
+        "sha256": "ab658e0f7bef2005c25ddaa589da1648c4a45a39245f6bd6ee5376514c54d8df",
+        "width": 2048
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": "prompt-similarity:4cd25e5f4133",
+        "exact_duplicate_element_ids": [],
+        "heuristic_similarity_threshold": 0.92,
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": 470161,
+        "root_id": 470141
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0223-three-panel-educational-diagram-illustrating-histone-modifications-and-tumor-sup.json",
+        "source_image_rel": "images/0223-three-panel-educational-diagram-illustrating-histone-modifications-and-tumor-sup.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "apoptosis archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "a-clean-educational-single-panel-diagram-showing-the-intrinsic-apoptotic-470271",
+        "reference_filename": "references/a-clean-educational-single-panel-diagram-showing-the-intrinsic-apoptotic-470271-reference.png",
+        "review_status": "approved",
+        "source_element_id": 470271,
+        "source_sha256": "7604b552d77532be7fa5394391af3bf66951d61a47d6fbc1f5c2bc06b65f10a3",
+        "svg_filename": "a-clean-educational-single-panel-diagram-showing-the-intrinsic-apoptotic-470271-rough.svg",
+        "transparent_png_filename": "a-clean-educational-single-panel-diagram-showing-the-intrinsic-apoptotic-470271-rough-transparent.png",
+        "conversion_archetype": "apoptosis",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 904819,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-04-08T13:10:53.962Z",
+        "downloadedAt": "2026-07-25T15:36:28.244Z",
+        "filename": "0224-a-clean-educational-single-panel-diagram-showing-the-intrinsic-apoptotic-pathway.png",
+        "id": 470271,
+        "index": 224,
+        "name": "A clean, educational single-panel diagram showing the intrinsic apoptotic pathway taking place inside a cross-section of a cell for an undergraduate cancer biology textbook.\nDraw a large oval representing the cell boundary. Inside, show the following spatial layout from top to bottom:\nTop area \u2014 Nucleus:\nDraw a nucleus with a cracked or damaged DNA strand inside, labeled 'DNA Damage / Cellular Stress.' Show a small arrow pointing outward from the nucleus to small protein labels: 'p53 \u2192 PUMA / Noxa' and 'Bim / Bid activated.' These are shown as small floating protein shapes near the nucleus.\nMiddle area \u2014 Mitochondrion:\nDraw a large mitochondrion in the center of the cell with clearly visible inner and outer membranes. Show BH3-only proteins (Bid, Bim, PUMA) arriving at the mitochondrial surface with a small arrow labeled 'BH3 proteins activate Bax/Bak.' On the outer membrane, show a pore formed by 'Bax/Bak' labeled clearly. From this pore, show multiple small yellow circles labeled 'Cytochrome c' spilling into the cytoplasm with a curved release arrow.\nBottom area \u2014 Cytoplasm:\nShow the released cytochrome c molecules clustering with a large ring-shaped complex labeled 'Apoptosome (Cytochrome c + Apaf-1 + ATP).' From the apoptosome, show an arrow to 'Caspase-9 activated,' and from caspase-9 show two arrows branching to 'Caspase-3' and 'Caspase-7.' End with a bold red starburst or box labeled 'APOPTOSIS.'\nNumber each event sequentially (1 through 5) with small circled numbers to guide the student's eye through the pathway. Add a simple legend at the bottom identifying cytochrome c, Bax/Bak pore, apoptosome, and caspases. ",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/470271"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 2048,
+        "local_bytes": 904819,
+        "sha256": "7604b552d77532be7fa5394391af3bf66951d61a47d6fbc1f5c2bc06b65f10a3",
+        "width": 2048
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": "prompt-similarity:f6513f641a8e",
+        "exact_duplicate_element_ids": [],
+        "heuristic_similarity_threshold": 0.92,
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": 468435,
+        "root_id": 468435
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0224-a-clean-educational-single-panel-diagram-showing-the-intrinsic-apoptotic-pathway.json",
+        "source_image_rel": "images/0224-a-clean-educational-single-panel-diagram-showing-the-intrinsic-apoptotic-pathway.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "apoptosis archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "a-clean-educational-single-panel-diagram-showing-the-extrinsic-apoptotic-470325",
+        "reference_filename": "references/a-clean-educational-single-panel-diagram-showing-the-extrinsic-apoptotic-470325-reference.png",
+        "review_status": "approved",
+        "source_element_id": 470325,
+        "source_sha256": "e75f019c02e75309a7ac4baad0008bf454d55e52fdd2b765b311354b66c7d65e",
+        "svg_filename": "a-clean-educational-single-panel-diagram-showing-the-extrinsic-apoptotic-470325-rough.svg",
+        "transparent_png_filename": "a-clean-educational-single-panel-diagram-showing-the-extrinsic-apoptotic-470325-rough-transparent.png",
+        "conversion_archetype": "apoptosis",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 2096456,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-04-08T13:28:18.312Z",
+        "downloadedAt": "2026-07-25T15:36:30.346Z",
+        "filename": "0226-a-clean-educational-single-panel-diagram-showing-the-extrinsic-apoptotic-pathway.png",
+        "id": 470325,
+        "index": 226,
+        "name": "A clean, educational single-panel diagram showing the extrinsic apoptotic pathway taking place inside and at the surface of a cross-section of a cell for an undergraduate cancer biology textbook.\nDraw a large oval representing the cell boundary. Organize the diagram from top to bottom:\nTop area \u2014 Cell Surface:\nDraw the cell membrane as a thick horizontal band at the top of the cell. On the outside of the membrane, show a small labeled ligand molecule 'FasL / TNF' binding to a receptor protein embedded in the membrane, labeled 'Death Receptor (FAS / TNFR).' Use a lock-and-key style docking to make the binding visually clear. Add a circled number '1' and label: 'Death ligand binds death receptor.'\nUpper middle area \u2014 DISC Formation:\nJust below the membrane on the cytoplasmic side, show the death receptor's intracellular tail recruiting adapter proteins labeled 'FADD.' Below FADD, show multiple 'Procaspase-8' molecules clustering around the complex. Draw a bracket around the entire assembly and label it 'DISC (Death-Inducing Signaling Complex).' Show a cleavage symbol (scissors icon or dotted line) on procaspase-8, producing 'Active Caspase-8.' Add a circled number '2.'\nMiddle area \u2014 Two Downstream Branches:\nFrom active caspase-8, draw two branching arrows:\n\nLeft branch (direct pathway): Arrow pointing straight down to 'Caspase-3 / Caspase-7 activated,' labeled 'Direct route.' Add a circled number '3.'\nRight branch (amplification loop): Arrow pointing to a small protein labeled 'Bid cleaved \u2192 tBid.' Show tBid migrating toward a small mitochondrion drawn on the right side of the cell. Show cytochrome c being released from the mitochondrion with a small label 'Connects to intrinsic pathway.' Draw this branch with a dotted line to indicate it is a secondary amplification route. Add a circled number '4.'\n\nBottom area \u2014 Outcome:\nBoth branches converge at the bottom into a bold red starburst or box labeled 'APOPTOSIS.' Add a circled number '5.'\nAdd a simple legend at the bottom identifying: death receptor, FADD, DISC, caspase-8, caspase-3/7, tBid, and the mitochondrial amplification loop. ",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/470325"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 2096456,
+        "sha256": "e75f019c02e75309a7ac4baad0008bf454d55e52fdd2b765b311354b66c7d65e",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": "prompt-similarity:2bcfc4dfc56c",
+        "exact_duplicate_element_ids": [],
+        "heuristic_similarity_threshold": 0.92,
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": 468472,
+        "root_id": 468472
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0226-a-clean-educational-single-panel-diagram-showing-the-extrinsic-apoptotic-pathway.json",
+        "source_image_rel": "images/0226-a-clean-educational-single-panel-diagram-showing-the-extrinsic-apoptotic-pathway.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "dna-repair archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "draw-this-sequence-image-01-landscape-1920-1080-clean-white-background-f-618794",
+        "reference_filename": "references/draw-this-sequence-image-01-landscape-1920-1080-clean-white-background-f-618794-reference.png",
+        "review_status": "approved",
+        "source_element_id": 618794,
+        "source_sha256": "630c1861c58cad5f1a3c166680ccabc488c8bfd93ab5f627edc34d175d3d4642",
+        "svg_filename": "draw-this-sequence-image-01-landscape-1920-1080-clean-white-background-f-618794-rough.svg",
+        "transparent_png_filename": "draw-this-sequence-image-01-landscape-1920-1080-clean-white-background-f-618794-rough-transparent.png",
+        "conversion_archetype": "dna-repair",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 949830,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-06-05T05:32:11.339Z",
+        "downloadedAt": "2026-07-25T15:36:33.493Z",
+        "filename": "0229-draw-this-sequence-image-01-landscape-1920-1080-clean-white-background-flat-prof.png",
+        "id": 618794,
+        "index": 229,
+        "name": "draw this sequence :\nimage 01 - Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. A DNA double-strand drawn as a vertical flat ladder positioned right-of-center in the frame, with two light-blue backbone rails and five horizontal base-pair rungs, The five rungs, top to bottom: rung 1 = G (orange) paired with C (blue); rung 2 = A (green) paired with T (red); rung 3 (center) = the damaged C (blue) paired with G (orange); rung 4 = T (red) paired with A (green); rung 5 = G (orange) paired with C (blue). Every base is a flat rectangular block with its letter; no molecular structures. The central rung-3 C carries a damage marker: a jagged black crack down the middle of the block and a bright-red warning outline/glow. A dashed circle surrounds damaged base, with a label \"deaminated C \u2014 damaged base\" at the damaged base. A single smooth purple enzyme is attached to the left strand of the double helix, one rung above the danaged base labeled \"DNA glycosylase.\" with a dashed vertical arrow runs down the left side of the ladder, labeled \"scanning.\" ensure landscape panel of 1920x1080 pixels. \n\nimage 02 - Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. Same vertical flat DNA ladder positioned right-of-center, two light-blue backbone rails, five base-pair rungs Rungs 1, 2, 4, 5 fully intact and paired exactly as before: rung 1 = G paired with C, rung 2 = A paired with T, rung 4 = T paired with A, rung 5 = G paired with C (A green, T red, G orange, C blue; flat lettered blocks). At rung 3, the LEFT slot is clearly and completely EMPTY \u2014 a visible vacant gap in the left rail. The damaged C block has been pulled fully OUT and AWAY to the LEFT, well clear of the left backbone, and ROTATED to sit tilted at roughly 45\u00b0 off horizontal so it reads as having swung out on a hinge rather than slid sideways; a short bent connector tethers it to the backbone. The flipped C is blue with its letter and carries its damage marker (jagged crack down the middle, bright-red outline), labeled \"flipped out.\" A curved arc arrow runs from the empty rung-3 slot out to the rotated C, tracing the swing-out motion. The partner G stays seated on the RIGHT strand at rung 3 facing the empty slot. The single smooth purple enzyme form cups the rotated flipped-out C from the left, with three short arrows pointing at its different exposed faces, labeled \"probe all faces.\" No molecular structures. Ensure landscape image of 1920x1080 pixels\n\nimage 03 - Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. Same vertical flat DNA ladder right-of-center, two light-blue backbone rails, five rungs fully intact and paired (rung 1 = G paired with C, rung 2 = A paired with T, rung 4 = T paired with A, rung 5 = G paired with C; flat lettered blocks, A green T red G orange C blue). At rung 3, the flipped-out damaged C (blue, lettered, still carrying its jagged crack and bright-red outline) sits out to the LEFT, detaching: a small cut marker sits at the short connector between the C block and the left backbone, labeled \"bond cut \u2014 base / sugar.\" The partner G stays seated on the right strand at rung 3 facing the empty left slot. The single smooth purple enzyme form is on the LEFT cuping the damaged base and the cut. No molecular structures.  Ensure landscape image of 1920x1080 pixels\n\nimage 04 - Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. Same vertical flat DNA ladder right-of-center, two light-blue backbone rails, Rungs 1, 2, 4, 5 fully intact and paired (rung 1 = G paired with C, rung 2 = A paired with T, rung 4 = T paired with A, rung 5 = G paired with C; flat lettered blocks, A green T red G orange C blue). At rung 3 the LEFT slot is empty \u2014 an outlined dashed empty box in the left rail where the C was, labeled \"apyrimidinic (AP) site.\" The partner G is STILL seated on the right strand at rung 3 facing the empty box (rung 3 is half-empty, not deleted). The single smooth purple enzyme form is drawn smaller, moving downwards and still attached to left strand of the double helix with a small motion arrow downwards, labeled \"glycosylase moves on.\" Off to the FAR RIGHT of the frame, the detached damaged C block sits alone (blue, lettered, still carrying its jagged crack and bright-red outline), labeled \"base removed.\" . no molecular structures.  Ensure landscape image of 1920x1080 pixels\n\nimage 05 - Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. Same vertical flat DNA ladder right-of-center, two light-blue backbone rails, five rungs now FULLY restored and all paired: rung 1 = G paired with C, rung 2 = A paired with T, rung 3 = C paired with G, rung 4 = T paired with A, rung 5 = G paired with C (flat lettered blocks, A green T red G orange C blue). At rung 3 the LEFT slot holds a clean blue C block with its letter correctly paired with its partner G, base-pair line redrawn, backbone sealed, labeled \"correct nucleotide inserted.\" A bracket or label on the right marks the intact strand \"helix repaired.\" A single small teal/green generic enzyme form (a DIFFERENT shape and color from the purple glycosylase, NOT individually named, no chemistry) sits at rung 3 attached to the strand on the left, labeled \"repair enzymes recruited.\" No molecular structures. Ensure landscape image of 1920x1080 pixels\n",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/618794"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 949830,
+        "sha256": "630c1861c58cad5f1a3c166680ccabc488c8bfd93ab5f627edc34d175d3d4642",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0229-draw-this-sequence-image-01-landscape-1920-1080-clean-white-background-flat-prof.json",
+        "source_image_rel": "images/0229-draw-this-sequence-image-01-landscape-1920-1080-clean-white-background-flat-prof.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "lymphatic-procedure archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "three-panel-educational-diagram-illustrating-sentinel-lymph-node-biopsy--505654",
+        "reference_filename": "references/three-panel-educational-diagram-illustrating-sentinel-lymph-node-biopsy--505654-reference.png",
+        "review_status": "approved",
+        "source_element_id": 505654,
+        "source_sha256": "cb183f40e50882cda4a8d29490fe83512bc836c5ac0adfa6a5e3a44cf40b5b6c",
+        "svg_filename": "three-panel-educational-diagram-illustrating-sentinel-lymph-node-biopsy--505654-rough.svg",
+        "transparent_png_filename": "three-panel-educational-diagram-illustrating-sentinel-lymph-node-biopsy--505654-rough-transparent.png",
+        "conversion_archetype": "lymphatic-procedure",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 648875,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-04-20T12:02:49.392Z",
+        "downloadedAt": "2026-07-25T15:36:37.823Z",
+        "filename": "0233-three-panel-educational-diagram-illustrating-sentinel-lymph-node-biopsy-of-the-b.png",
+        "id": 505654,
+        "index": 233,
+        "name": "Three-panel educational diagram illustrating sentinel lymph node biopsy of the breast. All panels show a flat schematic cross-section of breast tissue with a visible tumor mass labeled 'Primary Tumor.' Panel 1 labeled 'Step 1 \u2014 Injection': show a syringe injecting material near the tumor site. Label injection site 'Radioactive substance and/or blue dye injected near tumor.' Show the injected material beginning to spread from the injection site as small dots or colored diffusion arrows. Panel 2 labeled 'Step 2 \u2014 Detection': show the same breast cross-section with a handheld gamma probe icon held over the breast surface \u2014 label 'Radioactivity detection probe.' Show a dotted trail from the injection site leading to two or three small oval lymph node icons \u2014 label the first node reached 'Sentinel lymph node \u2014 first node cancer cells likely to reach.' Show remaining nodes labeled 'Secondary lymph nodes.' Highlight the sentinel node with a distinct color (blue or green fill) to indicate it has taken up the dye/tracer. Panel 3 labeled 'Step 3 \u2014 Removal and Pathology': show the breast cross-section with the tumor removed (dashed outline where tumor was \u2014 label 'Tumor removed') and the sentinel lymph node removed (dashed outline \u2014 label 'Sentinel node removed'). Show the removed node beside the breast as a flat icon with a magnifying glass symbol \u2014 label 'Node examined for cancer cells.' Add a two-outcome branch: 'Cancer cells present \u2192 further lymph node dissection' and 'No cancer cells \u2192 no further node removal.' Connect all three panels with left-to-right numbered arrows. Label: 'Primary Tumor,' 'Injection site,' 'Sentinel lymph node,' 'Gamma probe,' 'Radioactive tracer / blue dye.' Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/505654"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 2048,
+        "local_bytes": 648875,
+        "sha256": "cb183f40e50882cda4a8d29490fe83512bc836c5ac0adfa6a5e3a44cf40b5b6c",
+        "width": 2048
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": "prompt-similarity:bed00f039124",
+        "exact_duplicate_element_ids": [],
+        "heuristic_similarity_threshold": 0.92,
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": 505651,
+        "root_id": 505651
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0233-three-panel-educational-diagram-illustrating-sentinel-lymph-node-biopsy-of-the-b.json",
+        "source_image_rel": "images/0233-three-panel-educational-diagram-illustrating-sentinel-lymph-node-biopsy-of-the-b.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "kidney-stage archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "kidney-cancer-stage-iii-description-stage-iii-kidney-cancer-drawing-show-505737",
+        "reference_filename": "references/kidney-cancer-stage-iii-description-stage-iii-kidney-cancer-drawing-show-505737-reference.png",
+        "review_status": "approved",
+        "source_element_id": 505737,
+        "source_sha256": "2aa7e968bca5f0a6fd2a8b5ba5c6404a55cf8bcdff9eb1ad0008fc5474618091",
+        "svg_filename": "kidney-cancer-stage-iii-description-stage-iii-kidney-cancer-drawing-show-505737-rough.svg",
+        "transparent_png_filename": "kidney-cancer-stage-iii-description-stage-iii-kidney-cancer-drawing-show-505737-rough-transparent.png",
+        "conversion_archetype": "kidney-stage",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1314581,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-04-20T12:25:10.022Z",
+        "downloadedAt": "2026-07-25T15:36:39.792Z",
+        "filename": "0235-kidney-cancer-stage-iii-description-stage-iii-kidney-cancer-drawing-shows-cancer.png",
+        "id": 505737,
+        "index": 235,
+        "name": "Kidney Cancer Stage III\nDescription:\tStage III kidney cancer; drawing shows cancer in the left kidney and in a) nearby lymph nodes, b) the renal vein, c) the structures in the kidney that collect urine, and d) the layer of fatty tissue around the kidney. Also shown are the right kidney, vena cava, and right and left adrenal glands.\n\nStage III kidney cancer. The cancer in the kidney is any size and cancer has spread to a) nearby lymph nodes, b) the blood vessels in or near the kidney (renal vein or vena cava), c) the structures in the kidney that collect urine, or d) the layer of fatty tissue around the kidney.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/505737"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 1314581,
+        "sha256": "2aa7e968bca5f0a6fd2a8b5ba5c6404a55cf8bcdff9eb1ad0008fc5474618091",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0235-kidney-cancer-stage-iii-description-stage-iii-kidney-cancer-drawing-shows-cancer.json",
+        "source_image_rel": "images/0235-kidney-cancer-stage-iii-description-stage-iii-kidney-cancer-drawing-shows-cancer.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "kidney-stage archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "single-educational-diagram-illustrating-stage-iii-kidney-cancer-with-fou-505739",
+        "reference_filename": "references/single-educational-diagram-illustrating-stage-iii-kidney-cancer-with-fou-505739-reference.png",
+        "review_status": "approved",
+        "source_element_id": 505739,
+        "source_sha256": "1e593bcd8e01af614931230239446d1e7de9469c06bf949337a7b95f58c6189c",
+        "svg_filename": "single-educational-diagram-illustrating-stage-iii-kidney-cancer-with-fou-505739-rough.svg",
+        "transparent_png_filename": "single-educational-diagram-illustrating-stage-iii-kidney-cancer-with-fou-505739-rough-transparent.png",
+        "conversion_archetype": "kidney-stage",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1586005,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-04-20T12:26:19.044Z",
+        "downloadedAt": "2026-07-25T15:36:40.719Z",
+        "filename": "0236-single-educational-diagram-illustrating-stage-iii-kidney-cancer-with-four-labele.png",
+        "id": 505739,
+        "index": 236,
+        "name": "Single educational diagram illustrating Stage III kidney cancer with four labeled spread patterns. Show a flat vector anatomical layout of the abdomen centered on the left kidney containing a tumor mass \u2014 label 'Primary Tumor (any size).' Include the following surrounding structures as flat vector icons with clean outlines and flat fills: right kidney labeled 'Right kidney,' vena cava labeled 'Vena cava,' left and right adrenal glands labeled 'Adrenal gland.' From the primary tumor in the left kidney show four distinct labeled spread pathways using dotted red arrows, each pointing to its target structure: (a) Arrow to nearby oval lymph node icons \u2014 label 'a) Nearby lymph nodes.' (b) Arrow to the renal vein and vena cava \u2014 label 'b) Renal vein / vena cava \u2014 blood vessel invasion.' (c) Arrow to the collecting system structures inside the kidney (renal pelvis/calices) \u2014 label 'c) Urine-collecting structures (renal pelvis).' (d) Arrow to a shaded layer surrounding the kidney \u2014 label 'd) Perirenal fatty tissue (perinephric fat).' Add a header box: 'Stage III \u2014 Cancer remains regional but has spread beyond kidney.' Use red fill for tumor and affected structures, gray for uninvolved structures. Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/505739"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 1586005,
+        "sha256": "1e593bcd8e01af614931230239446d1e7de9469c06bf949337a7b95f58c6189c",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0236-single-educational-diagram-illustrating-stage-iii-kidney-cancer-with-four-labele.json",
+        "source_image_rel": "images/0236-single-educational-diagram-illustrating-stage-iii-kidney-cancer-with-four-labele.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "kidney-stage archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "kidney-cancer-stage-ii-description-stage-ii-kidney-cancer-drawing-shows--505750",
+        "reference_filename": "references/kidney-cancer-stage-ii-description-stage-ii-kidney-cancer-drawing-shows--505750-reference.png",
+        "review_status": "approved",
+        "source_element_id": 505750,
+        "source_sha256": "033bfb97c7c42af755fc868ad4f7bb45eeed1fe5a8a0a3d75ee150c4930a8fd7",
+        "svg_filename": "kidney-cancer-stage-ii-description-stage-ii-kidney-cancer-drawing-shows--505750-rough.svg",
+        "transparent_png_filename": "kidney-cancer-stage-ii-description-stage-ii-kidney-cancer-drawing-shows--505750-rough-transparent.png",
+        "conversion_archetype": "kidney-stage",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1381909,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-04-20T12:31:45.983Z",
+        "downloadedAt": "2026-07-25T15:36:41.662Z",
+        "filename": "0237-kidney-cancer-stage-ii-description-stage-ii-kidney-cancer-drawing-shows-cancer-i.png",
+        "id": 505750,
+        "index": 237,
+        "name": "Kidney Cancer Stage II\nDescription:\tStage II kidney cancer; drawing shows cancer in the left kidney and the tumor is larger than 7 centimeters. An inset shows 7 centimeters is about the size of a peach. Also shown are the fatty tissue and right kidney.\n\nStage II kidney cancer. The tumor is larger than 7 centimeters and is found in the kidney only.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/505750"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 1381909,
+        "sha256": "033bfb97c7c42af755fc868ad4f7bb45eeed1fe5a8a0a3d75ee150c4930a8fd7",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0237-kidney-cancer-stage-ii-description-stage-ii-kidney-cancer-drawing-shows-cancer-i.json",
+        "source_image_rel": "images/0237-kidney-cancer-stage-ii-description-stage-ii-kidney-cancer-drawing-shows-cancer-i.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "kidney-stage archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "single-educational-diagram-illustrating-stage-ii-kidney-cancer-show-a-fl-505751",
+        "reference_filename": "references/single-educational-diagram-illustrating-stage-ii-kidney-cancer-show-a-fl-505751-reference.png",
+        "review_status": "approved",
+        "source_element_id": 505751,
+        "source_sha256": "83f02c3526b382b80afb6bf57a7bf1365bcb8c8d7f6b2c1089702aaf06146e3c",
+        "svg_filename": "single-educational-diagram-illustrating-stage-ii-kidney-cancer-show-a-fl-505751-rough.svg",
+        "transparent_png_filename": "single-educational-diagram-illustrating-stage-ii-kidney-cancer-show-a-fl-505751-rough-transparent.png",
+        "conversion_archetype": "kidney-stage",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1185125,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-04-20T12:32:51.406Z",
+        "downloadedAt": "2026-07-25T15:36:42.610Z",
+        "filename": "0238-single-educational-diagram-illustrating-stage-ii-kidney-cancer-show-a-flat-vecto.png",
+        "id": 505751,
+        "index": 238,
+        "name": "Single educational diagram illustrating Stage II kidney cancer. Show a flat vector anatomical layout centered on the left kidney. Inside the left kidney show a large tumor mass occupying a significant portion of the kidney \u2014 label 'Primary Tumor \u2014 larger than 7 cm.' Show a flat vector ruler or measurement bracket beside the tumor labeled '>7 cm.' Show the surrounding perirenal fatty tissue layer as a flat outlined border around the kidney \u2014 label 'Perirenal fatty tissue \u2014 not invaded.' Show the right kidney to the right as a normal uninvolved organ \u2014 label 'Right kidney \u2014 unaffected.' Show no spread to lymph nodes, blood vessels, or surrounding tissue \u2014 all surrounding structures in gray flat fill to indicate uninvolved status. Add a small comparison inset box in the lower corner showing a flat peach fruit icon beside a 7 cm scale bar \u2014 label '7 cm \u2014 approximately the size of a peach.' Add a header box: 'Stage II \u2014 Tumor larger than 7 cm, confined to kidney only.' Use orange-brown flat fill for the tumor mass, flat peach fill for kidney tissue, gray for uninvolved surrounding structures. Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/505751"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 1185125,
+        "sha256": "83f02c3526b382b80afb6bf57a7bf1365bcb8c8d7f6b2c1089702aaf06146e3c",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0238-single-educational-diagram-illustrating-stage-ii-kidney-cancer-show-a-flat-vecto.json",
+        "source_image_rel": "images/0238-single-educational-diagram-illustrating-stage-ii-kidney-cancer-show-a-flat-vecto.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "kidney-stage archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "single-educational-diagram-illustrating-stage-i-kidney-cancer-show-a-fla-505935",
+        "reference_filename": "references/single-educational-diagram-illustrating-stage-i-kidney-cancer-show-a-fla-505935-reference.png",
+        "review_status": "approved",
+        "source_element_id": 505935,
+        "source_sha256": "89e3156c7d9646f11af1683da7b69ef237562a21a3951f120ab96570c10cb2e4",
+        "svg_filename": "single-educational-diagram-illustrating-stage-i-kidney-cancer-show-a-fla-505935-rough.svg",
+        "transparent_png_filename": "single-educational-diagram-illustrating-stage-i-kidney-cancer-show-a-fla-505935-rough-transparent.png",
+        "conversion_archetype": "kidney-stage",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1071045,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-04-20T13:38:02.011Z",
+        "downloadedAt": "2026-07-25T15:36:43.534Z",
+        "filename": "0239-single-educational-diagram-illustrating-stage-i-kidney-cancer-show-a-flat-vector.png",
+        "id": 505935,
+        "index": 239,
+        "name": "Single educational diagram illustrating Stage I kidney cancer. Show a flat vector anatomical layout centered on the left kidney. Inside the left kidney show a small tumor mass occupying a limited portion of the kidney \u2014 label 'Primary Tumor \u2014 7 cm or smaller.' Show a flat vector ruler or measurement bracket beside the tumor labeled '\u22647 cm.' Show the surrounding perirenal fatty tissue layer as a flat outlined border around the kidney \u2014 label 'Perirenal fatty tissue \u2014 not invaded.' Show the right kidney to the right as a normal uninvolved organ \u2014 label 'Right kidney \u2014 unaffected.' Show no spread to lymph nodes, blood vessels, or surrounding tissue \u2014 all surrounding structures in gray flat fill to indicate uninvolved status. Add a small comparison inset box in the lower corner showing a flat peach fruit icon beside a 7 cm scale bar \u2014 label '7 cm \u2014 approximately the size of a peach.' Add a header box: 'Stage I \u2014 Tumor 7 cm or smaller, confined to kidney only.' Use orange-brown flat fill for the small tumor mass, flat peach fill for kidney tissue, gray for uninvolved surrounding structures. Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/505935"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 1071045,
+        "sha256": "89e3156c7d9646f11af1683da7b69ef237562a21a3951f120ab96570c10cb2e4",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0239-single-educational-diagram-illustrating-stage-i-kidney-cancer-show-a-flat-vector.json",
+        "source_image_rel": "images/0239-single-educational-diagram-illustrating-stage-i-kidney-cancer-show-a-flat-vector.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "kidney-stage archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "two-part-educational-diagram-illustrating-stage-iv-kidney-cancer-main-di-505949",
+        "reference_filename": "references/two-part-educational-diagram-illustrating-stage-iv-kidney-cancer-main-di-505949-reference.png",
+        "review_status": "approved",
+        "source_element_id": 505949,
+        "source_sha256": "9a0c44a7714543a0078ca81ae9e117d56b9f7b15cbf7f8d55f1921797c677052",
+        "svg_filename": "two-part-educational-diagram-illustrating-stage-iv-kidney-cancer-main-di-505949-rough.svg",
+        "transparent_png_filename": "two-part-educational-diagram-illustrating-stage-iv-kidney-cancer-main-di-505949-rough-transparent.png",
+        "conversion_archetype": "kidney-stage",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1137940,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-04-20T13:43:36.023Z",
+        "downloadedAt": "2026-07-25T15:36:44.511Z",
+        "filename": "0240-two-part-educational-diagram-illustrating-stage-iv-kidney-cancer-main-diagram-la.png",
+        "id": 505949,
+        "index": 240,
+        "name": "Two-part educational diagram illustrating Stage IV kidney cancer. Main diagram labeled 'Part A \u2014 Local Spread Beyond Fatty Tissue': show a flat vector anatomical layout centered on the left kidney containing a large tumor mass \u2014 label 'Primary Tumor.' Show the perirenal fatty tissue layer breached \u2014 use a red dotted border break to indicate invasion beyond this layer \u2014 label 'Fatty tissue layer \u2014 invaded.' Show a red-filled adrenal gland directly above the left kidney \u2014 label 'a) Adrenal gland \u2014 invaded.' Show nearby lymph nodes in red \u2014 label 'Nearby lymph nodes \u2014 affected.' Show the right kidney and right adrenal gland in gray flat fill \u2014 label each as unaffected. All structures flat vector, no shading. Inset diagram labeled 'Part B \u2014 Distant Metastasis': show a simplified flat human body silhouette. Place six flat organ icons at their anatomical positions, each with small red circular tumor deposit markers inside: brain at top \u2014 label 'Brain metastasis'; lungs in chest \u2014 label 'Lung metastasis'; liver in upper right abdomen \u2014 label 'Liver metastasis'; adrenal gland above kidney \u2014 label 'Adrenal gland metastasis'; bone (long bone outline) \u2014 label 'Bone metastasis'; distant lymph nodes in lower abdomen \u2014 label 'Distant lymph nodes.' Draw dotted red travel lines from the kidney region to each organ. Add a header: 'Stage IV \u2014 Cancer spreads beyond perinephric fat and/or to distant organs.' Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/505949"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 1137940,
+        "sha256": "9a0c44a7714543a0078ca81ae9e117d56b9f7b15cbf7f8d55f1921797c677052",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0240-two-part-educational-diagram-illustrating-stage-iv-kidney-cancer-main-diagram-la.json",
+        "source_image_rel": "images/0240-two-part-educational-diagram-illustrating-stage-iv-kidney-cancer-main-diagram-la.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "lung-resection archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "two-part-educational-diagram-illustrating-wedge-resection-of-the-lung-pa-505969",
+        "reference_filename": "references/two-part-educational-diagram-illustrating-wedge-resection-of-the-lung-pa-505969-reference.png",
+        "review_status": "approved",
+        "source_element_id": 505969,
+        "source_sha256": "263c656ab9fb40d1f7098a9fa2e8ed7fbfff4fbc36f5aacc59df988812995a4f",
+        "svg_filename": "two-part-educational-diagram-illustrating-wedge-resection-of-the-lung-pa-505969-rough.svg",
+        "transparent_png_filename": "two-part-educational-diagram-illustrating-wedge-resection-of-the-lung-pa-505969-rough-transparent.png",
+        "conversion_archetype": "lung-resection",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1541722,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-04-20T13:49:58.870Z",
+        "downloadedAt": "2026-07-25T15:36:45.539Z",
+        "filename": "0241-two-part-educational-diagram-illustrating-wedge-resection-of-the-lung-part-1-lab.png",
+        "id": 505969,
+        "index": 241,
+        "name": "Two-part educational diagram illustrating wedge resection of the lung. Part 1 labeled 'Before Resection': show a flat vector anatomical layout of the chest with the trachea at the top center branching into the left and right lungs. Show the right lung divided into lobes with clean flat outlines. Inside one lobe show a small tumor mass \u2014 label 'Cancer (tumor).' Draw a dashed wedge-shaped outline around the tumor extending to include a small margin of surrounding healthy tissue \u2014 label 'Planned resection margin \u2014 includes small margin of healthy tissue.' Part 2 labeled 'After Resection': show the same lung with a wedge-shaped defect in the lobe where tissue was removed \u2014 show the defect as a clean notch in the lobe outline with a dashed border \u2014 label 'Resection site.' Beside the lung show the removed wedge-shaped tissue piece as a flat isolated icon \u2014 label 'Removed tissue: tumor + small margin of healthy lung.' Annotate the removed piece: 'Wedge \u2014 smallest volume lung resection.' Add a comparison note below both parts: 'Wedge resection preserves maximum remaining lung function.' Connect the two parts with a left-to-right arrow labeled 'Surgical removal.' Label: 'Trachea,' 'Lung lobe,' 'Cancer (tumor),' 'Healthy tissue margin,' 'Resection site,' 'Removed wedge.' Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/505969"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 1541722,
+        "sha256": "263c656ab9fb40d1f7098a9fa2e8ed7fbfff4fbc36f5aacc59df988812995a4f",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0241-two-part-educational-diagram-illustrating-wedge-resection-of-the-lung-part-1-lab.json",
+        "source_image_rel": "images/0241-two-part-educational-diagram-illustrating-wedge-resection-of-the-lung-part-1-lab.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "mastectomy archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "two-part-educational-diagram-illustrating-radical-mastectomy-part-1-labe-505984",
+        "reference_filename": "references/two-part-educational-diagram-illustrating-radical-mastectomy-part-1-labe-505984-reference.png",
+        "review_status": "approved",
+        "source_element_id": 505984,
+        "source_sha256": "858fbc2889fff22527117e32d6bfdfdf29ca2a17c4f4e7135712fe599fbc4c2c",
+        "svg_filename": "two-part-educational-diagram-illustrating-radical-mastectomy-part-1-labe-505984-rough.svg",
+        "transparent_png_filename": "two-part-educational-diagram-illustrating-radical-mastectomy-part-1-labe-505984-rough-transparent.png",
+        "conversion_archetype": "mastectomy",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1366023,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-04-20T13:55:23.789Z",
+        "downloadedAt": "2026-07-25T15:36:46.603Z",
+        "filename": "0242-two-part-educational-diagram-illustrating-radical-mastectomy-part-1-labeled-stru.png",
+        "id": 505984,
+        "index": 242,
+        "name": "Two-part educational diagram illustrating radical mastectomy. Part 1 labeled 'Structures Removed \u2014 Radical Mastectomy': show a flat vector frontal view of the female chest. On the left side show the intact breast outline in gray for reference. On the right side show the structures removed highlighted in red with dashed removal outlines: the entire breast \u2014 label 'Entire breast removed'; all axillary lymph nodes under the arm \u2014 label 'All axillary lymph nodes removed'; chest wall muscles beneath the breast \u2014 label 'Chest wall muscles (pectoralis major and minor) removed.' Draw a bracket or annotation grouping all three structures \u2014 label 'All three structures removed in radical mastectomy.' Part 2 labeled 'Cross-Section View \u2014 Breast Anatomy': show a flat vector sagittal cross-section of the breast. Label the following layers from surface to chest wall: skin layer \u2014 label 'Skin'; fatty tissue \u2014 label 'Fatty tissue'; glandular tissue with a tumor mass inside \u2014 label 'Tumor'; pectoral muscle layer \u2014 label 'Chest wall muscle (removed in radical mastectomy)'; rib outline beneath \u2014 label 'Ribs.' Use red fill for the tumor and dashed outlines for all removed structures. Add a small historical note box: 'Radical mastectomy \u2014 standard procedure for many decades, now rarely performed. Modified radical or simple mastectomy preferred.' Connect both parts with a dividing line. Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/505984"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 1366023,
+        "sha256": "858fbc2889fff22527117e32d6bfdfdf29ca2a17c4f4e7135712fe599fbc4c2c",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0242-two-part-educational-diagram-illustrating-radical-mastectomy-part-1-labeled-stru.json",
+        "source_image_rel": "images/0242-two-part-educational-diagram-illustrating-radical-mastectomy-part-1-labeled-stru.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "colectomy archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "three-panel-educational-diagram-illustrating-transverse-colectomy-with-a-506004",
+        "reference_filename": "references/three-panel-educational-diagram-illustrating-transverse-colectomy-with-a-506004-reference.png",
+        "review_status": "approved",
+        "source_element_id": 506004,
+        "source_sha256": "01048f08904312962265619452de42570961061d8127ecb508c425f86931f763",
+        "svg_filename": "three-panel-educational-diagram-illustrating-transverse-colectomy-with-a-506004-rough.svg",
+        "transparent_png_filename": "three-panel-educational-diagram-illustrating-transverse-colectomy-with-a-506004-rough-transparent.png",
+        "conversion_archetype": "colectomy",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 871006,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-04-20T14:02:27.695Z",
+        "downloadedAt": "2026-07-25T15:36:47.536Z",
+        "filename": "0243-three-panel-educational-diagram-illustrating-transverse-colectomy-with-anastomos.png",
+        "id": 506004,
+        "index": 243,
+        "name": "Three-panel educational diagram illustrating transverse colectomy with anastomosis for colon cancer. All panels show a flat vector anatomical layout of the large intestine (colon) in its full frame \u2014 ascending colon on the right, transverse colon across the top, descending colon on the left, with the rectum below. Panel 1 labeled 'Step 1 \u2014 Cancer Identified': show the full colon outline in flat gray. In the transverse colon show a tumor mass \u2014 label 'Colon cancer (tumor).' Draw a dashed resection boundary on either side of the tumor extending into nearby healthy tissue \u2014 label 'Planned resection margins \u2014 includes nearby healthy tissue.' Panel 2 labeled 'Step 2 \u2014 Resection': show the same colon with the tumor segment removed \u2014 show a gap in the transverse colon where tissue was removed. Show the removed segment beside the colon as an isolated flat icon \u2014 label 'Removed segment: cancer + nearby healthy tissue.' Show the two remaining cut ends of the colon facing each other \u2014 label 'Cut end (left)' and 'Cut end (right).' Panel 3 labeled 'Step 3 \u2014 Anastomosis': show the same colon with the two cut ends now joined together \u2014 label 'Anastomosis \u2014 cut ends of colon rejoined.' Show the restored colon continuity with a clean join line \u2014 label 'Restored colon continuity.' Add a small annotation: 'Normal bowel function preserved.' Connect all three panels with left-to-right numbered arrows. Label: 'Transverse colon,' 'Tumor,' 'Resection margin,' 'Cut ends,' 'Anastomosis.' Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/506004"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 871006,
+        "sha256": "01048f08904312962265619452de42570961061d8127ecb508c425f86931f763",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0243-three-panel-educational-diagram-illustrating-transverse-colectomy-with-anastomos.json",
+        "source_image_rel": "images/0243-three-panel-educational-diagram-illustrating-transverse-colectomy-with-anastomos.png"
+      }
+    }
+  ]
+}

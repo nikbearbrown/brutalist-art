@@ -1,0 +1,2212 @@
+{
+  "collection": "illustrae-icons-batch-006",
+  "style": "medium-rough monochrome vector",
+  "generated_at": "2026-07-25T19:56:44.829Z",
+  "generator": "archetype-based Rough.js converter",
+  "icons": [
+    {
+      "derivative": {
+        "geometry_description": "iv-chemotherapy archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "two-part-educational-diagram-illustrating-intravenous-chemotherapy-admin-506019",
+        "reference_filename": "references/two-part-educational-diagram-illustrating-intravenous-chemotherapy-admin-506019-reference.png",
+        "review_status": "approved",
+        "source_element_id": 506019,
+        "source_sha256": "29f44dfdbb898c4f3a3a525c4ca47efb3d17e3a776f4983e8eb2dcb455c3ce43",
+        "svg_filename": "two-part-educational-diagram-illustrating-intravenous-chemotherapy-admin-506019-rough.svg",
+        "transparent_png_filename": "two-part-educational-diagram-illustrating-intravenous-chemotherapy-admin-506019-rough-transparent.png",
+        "conversion_archetype": "iv-chemotherapy",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1411087,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-04-20T14:07:11.660Z",
+        "downloadedAt": "2026-07-25T15:36:48.530Z",
+        "filename": "0244-two-part-educational-diagram-illustrating-intravenous-chemotherapy-administratio.png",
+        "id": 506019,
+        "index": 244,
+        "name": "Two-part educational diagram illustrating intravenous chemotherapy administration. Part 1 labeled 'IV Administration': show a flat vector illustration of a patient seated in a chair with arm extended. Show an IV bag hanging on a pole above \u2014 label 'IV bag \u2014 anti-cancer drug solution.' Show a drip line running from the IV bag down to a needle inserted into a vein in the patient's forearm \u2014 label 'IV line' and 'Needle inserted into vein.' Label the administration site 'Intravenous (IV) \u2014 drug enters bloodstream directly.' Part 2 labeled 'Systemic Distribution \u2014 How It Works': show a simplified flat vector human body silhouette. Show the bloodstream as a network of blue lines running through the body from the IV entry point \u2014 label 'Drug travels through bloodstream.' Show cancer cell icons (irregular shaped red cells) at multiple sites in the body \u2014 label 'Cancer cells throughout body.' Show drug molecule icons (small colored hexagons) traveling along the blood vessel lines reaching the cancer cells \u2014 label 'Anti-cancer drug reaches and kills cancer cells.' Add a small note: 'IV chemotherapy is systemic \u2014 treats cancer cells throughout the entire body.' Connect both parts with a left-to-right arrow. Label: 'IV bag,' 'IV line,' 'Vein,' 'Bloodstream,' 'Anti-cancer drug,' 'Cancer cells.' Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/506019"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 1411087,
+        "sha256": "29f44dfdbb898c4f3a3a525c4ca47efb3d17e3a776f4983e8eb2dcb455c3ce43",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0244-two-part-educational-diagram-illustrating-intravenous-chemotherapy-administratio.json",
+        "source_image_rel": "images/0244-two-part-educational-diagram-illustrating-intravenous-chemotherapy-administratio.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "metastasis archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "two-part-educational-diagram-illustrating-metastatic-breast-cancer-main--506054",
+        "reference_filename": "references/two-part-educational-diagram-illustrating-metastatic-breast-cancer-main--506054-reference.png",
+        "review_status": "approved",
+        "source_element_id": 506054,
+        "source_sha256": "af35b4ed1266c240bf0da8f6b7f5a762afce5385d0ef4c7432ee2305a34e4ccf",
+        "svg_filename": "two-part-educational-diagram-illustrating-metastatic-breast-cancer-main--506054-rough.svg",
+        "transparent_png_filename": "two-part-educational-diagram-illustrating-metastatic-breast-cancer-main--506054-rough-transparent.png",
+        "conversion_archetype": "metastasis",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1296806,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-04-20T14:20:22.879Z",
+        "downloadedAt": "2026-07-25T15:36:49.488Z",
+        "filename": "0245-two-part-educational-diagram-illustrating-metastatic-breast-cancer-main-diagram-.png",
+        "id": 506054,
+        "index": 245,
+        "name": "Two-part educational diagram illustrating metastatic breast cancer. Main diagram labeled 'Distant Metastasis Sites': show a flat vector frontal view of a female body silhouette with internal organ icons in flat fill. Show a primary tumor in the left breast \u2014 label 'Primary breast cancer.' Draw dotted red travel lines from the breast tumor to four distant organ sites: brain at the top \u2014 label 'Brain metastasis'; both lungs in the chest \u2014 label 'Lung metastasis'; liver in the upper right abdomen \u2014 label 'Liver metastasis'; bones (spine and long bones) \u2014 label 'Bone metastasis.' Each organ shows small red circular tumor deposit icons inside. Inset diagram labeled 'How Cancer Spreads \u2014 Blood and Lymph System': show a close-up flat vector sequence in three steps. Step 1: cancer cells breaking away from the primary breast tumor \u2014 label 'Cancer cells break away from primary tumor.' Step 2: cancer cells traveling inside a flat blood vessel and a flat lymph vessel side by side \u2014 label 'Travel through bloodstream' and 'Travel through lymphatic system.' Step 3: cancer cells arriving at a distant site and forming a new tumor cluster \u2014 label 'Metastatic tumor forms \u2014 same cell type as primary breast cancer.' Add a note: 'Metastatic cancer cells retain the identity of the original breast cancer.' Connect main diagram and inset with a bracket. Label: 'Primary breast cancer,' 'Bloodstream,' 'Lymphatic system,' 'Brain,' 'Lung,' 'Liver,' 'Bone,' 'Metastatic tumor.' Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/506054"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 1296806,
+        "sha256": "af35b4ed1266c240bf0da8f6b7f5a762afce5385d0ef4c7432ee2305a34e4ccf",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0245-two-part-educational-diagram-illustrating-metastatic-breast-cancer-main-diagram-.json",
+        "source_image_rel": "images/0245-two-part-educational-diagram-illustrating-metastatic-breast-cancer-main-diagram-.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "protein-localization archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "a-simple-cell-outline-a-large-circle-with-a-smaller-circle-inside-repres-601017",
+        "reference_filename": "references/a-simple-cell-outline-a-large-circle-with-a-smaller-circle-inside-repres-601017-reference.png",
+        "review_status": "approved",
+        "source_element_id": 601017,
+        "source_sha256": "d32a2b3caf689f1f3f70895b1ed5180c1c8f706daf796bb652e4d0bd77dd442c",
+        "svg_filename": "a-simple-cell-outline-a-large-circle-with-a-smaller-circle-inside-repres-601017-rough.svg",
+        "transparent_png_filename": "a-simple-cell-outline-a-large-circle-with-a-smaller-circle-inside-repres-601017-rough-transparent.png",
+        "conversion_archetype": "protein-localization",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1659016,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-28T04:53:59.491Z",
+        "downloadedAt": "2026-07-25T15:36:50.502Z",
+        "filename": "0246-a-simple-cell-outline-a-large-circle-with-a-smaller-circle-inside-representing-t.png",
+        "id": 601017,
+        "index": 246,
+        "name": "A simple cell outline \u2014 a large circle with a smaller circle inside representing the nucleus. Three protein forms are positioned at three distinct locations: one on the cell membrane at the surface, one in the cytoplasm, one inside the nucleus. Each form is unlabeled for now \u2014 they are introduced here only as distinct shapes at distinct locations. A bracket or annotation alongside the cell: \"three protein families \u2014 three locations.\" Clean white background.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/601017"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 1659016,
+        "sha256": "d32a2b3caf689f1f3f70895b1ed5180c1c8f706daf796bb652e4d0bd77dd442c",
+        "width": 1536
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0246-a-simple-cell-outline-a-large-circle-with-a-smaller-circle-inside-representing-t.json",
+        "source_image_rel": "images/0246-a-simple-cell-outline-a-large-circle-with-a-smaller-circle-inside-representing-t.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "membrane-receptor archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "a-cell-outline-with-the-cell-membrane-visible-on-the-outer-surface-of-th-601022",
+        "reference_filename": "references/a-cell-outline-with-the-cell-membrane-visible-on-the-outer-surface-of-th-601022-reference.png",
+        "review_status": "approved",
+        "source_element_id": 601022,
+        "source_sha256": "be5986ddd9ec008202e75629d651592cccced628dbdf5b80fd53113af4a1f658",
+        "svg_filename": "a-cell-outline-with-the-cell-membrane-visible-on-the-outer-surface-of-th-601022-rough.svg",
+        "transparent_png_filename": "a-cell-outline-with-the-cell-membrane-visible-on-the-outer-surface-of-th-601022-rough-transparent.png",
+        "conversion_archetype": "membrane-receptor",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1884287,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-28T04:55:27.808Z",
+        "downloadedAt": "2026-07-25T15:36:51.499Z",
+        "filename": "0247-a-cell-outline-with-the-cell-membrane-visible-on-the-outer-surface-of-the-membra.png",
+        "id": 601022,
+        "index": 247,
+        "name": "A cell outline with the cell membrane visible. On the outer surface of the membrane: a receptor protein form labeled \"growth factor receptor,\" shaped to suggest it spans the membrane. Outside the cell: a small signal molecule or growth factor form with an arrow pointing toward the receptor, labeled \"external signal.\" An arrow from the receptor pointing inward into the cytoplasm, labeled \"signal received \u2014 passed inward.\" The nucleus is visible in the background but unlit. Clean white background.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/601022"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 1884287,
+        "sha256": "be5986ddd9ec008202e75629d651592cccced628dbdf5b80fd53113af4a1f658",
+        "width": 1536
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0247-a-cell-outline-with-the-cell-membrane-visible-on-the-outer-surface-of-the-membra.json",
+        "source_image_rel": "images/0247-a-cell-outline-with-the-cell-membrane-visible-on-the-outer-surface-of-the-membra.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "gene-regulation archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "two-panels-within-the-illustration-reading-left-to-right-left-panel-the--601030",
+        "reference_filename": "references/two-panels-within-the-illustration-reading-left-to-right-left-panel-the--601030-reference.png",
+        "review_status": "approved",
+        "source_element_id": 601030,
+        "source_sha256": "ec023226f5576bf8a77e7333de17eafcfd325c8c4c03ae6ade27f6364a054bcf",
+        "svg_filename": "two-panels-within-the-illustration-reading-left-to-right-left-panel-the--601030-rough.svg",
+        "transparent_png_filename": "two-panels-within-the-illustration-reading-left-to-right-left-panel-the--601030-rough-transparent.png",
+        "conversion_archetype": "gene-regulation",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1814090,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-28T04:59:09.811Z",
+        "downloadedAt": "2026-07-25T15:36:53.426Z",
+        "filename": "0249-two-panels-within-the-illustration-reading-left-to-right-left-panel-the-nucleus-.png",
+        "id": 601030,
+        "index": 249,
+        "name": "Two panels within the illustration, reading left to right. Left panel: the nucleus interior with a protein form labeled \"transcriptional regulator\" bound to a DNA strand \u2014 an arrow from it labeled \"gene expression controlled.\" Right panel: the same cell outline but now multiplying \u2014 a parent cell dividing into two, then four, with bold arrows indicating rapid division. A mutation symbol (a small starburst or disruption mark) on one of the three protein forms from prior illustrations, labeled \"oncogene mutation.\" Label beneath the dividing cells: \"uncontrolled cell proliferation.\" Clean white background.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/601030"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 1814090,
+        "sha256": "ec023226f5576bf8a77e7333de17eafcfd325c8c4c03ae6ade27f6364a054bcf",
+        "width": 1536
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0249-two-panels-within-the-illustration-reading-left-to-right-left-panel-the-nucleus-.json",
+        "source_image_rel": "images/0249-two-panels-within-the-illustration-reading-left-to-right-left-panel-the-nucleus-.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "gene-regulation archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "a-cell-outline-a-large-circle-with-a-smaller-circle-inside-representing--601061",
+        "reference_filename": "references/a-cell-outline-a-large-circle-with-a-smaller-circle-inside-representing--601061-reference.png",
+        "review_status": "approved",
+        "source_element_id": 601061,
+        "source_sha256": "0e2718278ccb565e25fbd377f5f622d062eb6650370c43408ef5fe11ce257ea3",
+        "svg_filename": "a-cell-outline-a-large-circle-with-a-smaller-circle-inside-representing--601061-rough.svg",
+        "transparent_png_filename": "a-cell-outline-a-large-circle-with-a-smaller-circle-inside-representing--601061-rough-transparent.png",
+        "conversion_archetype": "gene-regulation",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1705334,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-28T05:33:17.221Z",
+        "downloadedAt": "2026-07-25T15:36:55.406Z",
+        "filename": "0251-a-cell-outline-a-large-circle-with-a-smaller-circle-inside-representing-the-nucl.png",
+        "id": 601061,
+        "index": 251,
+        "name": "A cell outline \u2014 a large circle with a smaller circle inside representing the nucleus. Three distinct protein forms are positioned and labeled at their fixed locations: one on the cell membrane labeled \"growth factor receptor,\" one in the cytoplasm labeled \"signal transduction molecule,\" one inside the nucleus labeled \"transcriptional regulator.\" A growth signal form sits just outside the cell membrane \u2014 small, unlabeled, waiting. No arrows yet. This is the establishing frame \u2014 all three actors introduced in position before the signal moves. Clean white background.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/601061"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 1705334,
+        "sha256": "0e2718278ccb565e25fbd377f5f622d062eb6650370c43408ef5fe11ce257ea3",
+        "width": 1536
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0251-a-cell-outline-a-large-circle-with-a-smaller-circle-inside-representing-the-nucl.json",
+        "source_image_rel": "images/0251-a-cell-outline-a-large-circle-with-a-smaller-circle-inside-representing-the-nucl.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "checklist archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "the-three-moves-as-a-portable-checklist-cartesian-doubt-what-would-make--535862",
+        "reference_filename": "references/the-three-moves-as-a-portable-checklist-cartesian-doubt-what-would-make--535862-reference.png",
+        "review_status": "approved",
+        "source_element_id": 535862,
+        "source_sha256": "dccfe276ed75be3ce6eef0ce7b107e2e0f49f2ae7ae5c61dcbac3002554e0e79",
+        "svg_filename": "the-three-moves-as-a-portable-checklist-cartesian-doubt-what-would-make--535862-rough.svg",
+        "transparent_png_filename": "the-three-moves-as-a-portable-checklist-cartesian-doubt-what-would-make--535862-rough-transparent.png",
+        "conversion_archetype": "checklist",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 461893,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-01T01:19:51.140Z",
+        "downloadedAt": "2026-07-25T15:37:02.204Z",
+        "filename": "0258-the-three-moves-as-a-portable-checklist-cartesian-doubt-what-would-make-this-wro.png",
+        "id": 535862,
+        "index": 258,
+        "name": "    \"The three moves as a portable checklist \u2014 Cartesian doubt (what would make this wrong?), Humean induction limit (what if the distribution shifted?), Popperian falsifiability (what would failure look like, specified). Designed for margin reference or pull-quote treatment \u2014 the kind of thing students photograph and tape to monitors.\",\n",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/535862"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 461893,
+        "sha256": "dccfe276ed75be3ce6eef0ce7b107e2e0f49f2ae7ae5c61dcbac3002554e0e79",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": "prompt-similarity:004b2e29d39e",
+        "exact_duplicate_element_ids": [],
+        "heuristic_similarity_threshold": 0.92,
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": 535856,
+        "root_id": 535856
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0258-the-three-moves-as-a-portable-checklist-cartesian-doubt-what-would-make-this-wro.json",
+        "source_image_rel": "images/0258-the-three-moves-as-a-portable-checklist-cartesian-doubt-what-would-make-this-wro.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "dna-repair archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "educational-diagram-showing-the-mismatch-repair-mechanism-show-a-four-st-445988",
+        "reference_filename": "references/educational-diagram-showing-the-mismatch-repair-mechanism-show-a-four-st-445988-reference.png",
+        "review_status": "approved",
+        "source_element_id": 445988,
+        "source_sha256": "0f3babc106e38a313f2b0d74040a6c256dc51ecfbb48373f97b57240a5381fd1",
+        "svg_filename": "educational-diagram-showing-the-mismatch-repair-mechanism-show-a-four-st-445988-rough.svg",
+        "transparent_png_filename": "educational-diagram-showing-the-mismatch-repair-mechanism-show-a-four-st-445988-rough-transparent.png",
+        "conversion_archetype": "dna-repair",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1766477,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-03-31T03:18:55.435Z",
+        "downloadedAt": "2026-07-25T15:37:04.114Z",
+        "filename": "0260-educational-diagram-showing-the-mismatch-repair-mechanism-show-a-four-step-seque.png",
+        "id": 445988,
+        "index": 260,
+        "name": "Educational diagram showing the Mismatch Repair mechanism. Show a four-step sequential process on a DNA double helix strand. Step 1 labeled 'Replication Error \u2014 Mismatch Created': show a DNA double helix after replication with one mismatched base pair highlighted in red \u2014 show G incorrectly paired with T labeled 'Mismatch \u2014 noncomplementary base pair \u2014 distorts helix.' Step 2 labeled 'Mismatch Detected': show mismatch repair proteins binding to the distortion labeled 'MMR proteins detect helix distortion.' Show the new strand identified labeled 'Newly synthesized strand identified.' Step 3 labeled 'Incorrect Base Removed': show the incorrect base and surrounding region excised from the new strand labeled 'Incorrect bases excised from new strand.' Step 4 labeled 'Gap Filled and Sealed': show DNA polymerase inserting correct bases labeled 'Correct bases inserted \u2014 G pairs with C.' Show ligase sealing labeled 'Ligase seals \u2014 mismatch corrected.' Add a red warning box: 'Inherited defective MMR gene \u2014 marked predisposition to certain cancers.' Connect all steps with right-pointing arrows. No title above image. No summary box below. Flat vector diagram. White background. Clean leader lines. Scientific oncology textbook style",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/445988"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 1766477,
+        "sha256": "0f3babc106e38a313f2b0d74040a6c256dc51ecfbb48373f97b57240a5381fd1",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0260-educational-diagram-showing-the-mismatch-repair-mechanism-show-a-four-step-seque.json",
+        "source_image_rel": "images/0260-educational-diagram-showing-the-mismatch-repair-mechanism-show-a-four-step-seque.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "dna-repair archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "educational-diagram-showing-the-double-strand-break-repair-mechanism-sho-445993",
+        "reference_filename": "references/educational-diagram-showing-the-double-strand-break-repair-mechanism-sho-445993-reference.png",
+        "review_status": "approved",
+        "source_element_id": 445993,
+        "source_sha256": "329c46c4e071a192c08b2b6555204bc99c9b948f8dc7eb3b4f8223eeedbe4d08",
+        "svg_filename": "educational-diagram-showing-the-double-strand-break-repair-mechanism-sho-445993-rough.svg",
+        "transparent_png_filename": "educational-diagram-showing-the-double-strand-break-repair-mechanism-sho-445993-rough-transparent.png",
+        "conversion_archetype": "dna-repair",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 2055940,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-03-31T03:20:56.352Z",
+        "downloadedAt": "2026-07-25T15:37:05.154Z",
+        "filename": "0261-educational-diagram-showing-the-double-strand-break-repair-mechanism-show-a-thre.png",
+        "id": 445993,
+        "index": 261,
+        "name": "Educational diagram showing the Double-Strand Break Repair mechanism. Show a three-part layout. Part 1 labeled 'Double-Strand Break Caused': show a DNA double helix with both strands completely broken labeled 'DSB \u2014 both strands broken \u2014 no intact template.' Show three causes as small icons pointing to the break: ionizing radiation labeled 'Ionizing radiation,' oxidizing agent labeled 'Oxidizing agents,' replication error labeled 'Replication errors.' Part 2 labeled 'ATM Kinase Detection and Signaling': show ATM kinase protein arriving at the DSB labeled 'ATM kinase \u2014 detects DSB \u2014 early pivotal role.' Show ATM activating downstream proteins labeled 'Signals to transducer and effector proteins \u2014 triggers repair response.' Part 3 labeled 'Repair Outcome': show two branches \u2014 left labeled 'Homologous Recombination \u2014 accurate repair using sister chromatid as template,' right labeled 'Non-Homologous End Joining \u2014 direct rejoining \u2014 faster but error-prone.' Show repaired DNA at bottom of both branches. Add warning box: 'Unrepaired DSBs \u2014 chromosome breakdown \u2014 cancer development.' No title above image. No summary box below. Flat vector diagram. White background. Clean leader lines. Scientific oncology textbook style.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/445993"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 2055940,
+        "sha256": "329c46c4e071a192c08b2b6555204bc99c9b948f8dc7eb3b4f8223eeedbe4d08",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0261-educational-diagram-showing-the-double-strand-break-repair-mechanism-show-a-thre.json",
+        "source_image_rel": "images/0261-educational-diagram-showing-the-double-strand-break-repair-mechanism-show-a-thre.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "iv-chemotherapy archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "i-want-an-educational-diagram-to-explain-intravenous-chemotherapy-clearl-542889",
+        "reference_filename": "references/i-want-an-educational-diagram-to-explain-intravenous-chemotherapy-clearl-542889-reference.png",
+        "review_status": "approved",
+        "source_element_id": 542889,
+        "source_sha256": "a5bdc98c5bf4f0585e8fe4c2e1a256f21176925b60868cd5398b6e489ac3e480",
+        "svg_filename": "i-want-an-educational-diagram-to-explain-intravenous-chemotherapy-clearl-542889-rough.svg",
+        "transparent_png_filename": "i-want-an-educational-diagram-to-explain-intravenous-chemotherapy-clearl-542889-rough-transparent.png",
+        "conversion_archetype": "iv-chemotherapy",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1440204,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-04T16:52:10.856Z",
+        "downloadedAt": "2026-07-25T15:37:06.105Z",
+        "filename": "0262-i-want-an-educational-diagram-to-explain-intravenous-chemotherapy-clearly-in-my-.png",
+        "id": 542889,
+        "index": 262,
+        "name": "I want an educational diagram to explain intravenous chemotherapy clearly in my cancer treatment chapter. Here is the description: 'Intravenous (IV) chemotherapy. A patient is given an anti-cancer drug through a vein in the arm. The anti-cancer drug travels through the blood to kill cancer cells in the body.' I need a realistic anatomical color medical illustration close to NCI quality. Show a patient lying or seated in a clinical chair with arm extended. A healthcare provider stands beside the patient administering the IV. Show an IV pole with a drip bag hanging from it \u2014 label 'Anti-cancer drug.' Show a clear IV line running from the bag down to a needle inserted into a vein in the patient's arm. Label the IV line connection point at the arm. Use warm, realistic skin tones for both figures, clinical white/light blue clothing for the healthcare provider, and a clean clinical background. Realistic anatomical color illustration. White background. Clean sans-serif labels. Scientific oncology textbook style.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/542889"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 1440204,
+        "sha256": "a5bdc98c5bf4f0585e8fe4c2e1a256f21176925b60868cd5398b6e489ac3e480",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0262-i-want-an-educational-diagram-to-explain-intravenous-chemotherapy-clearly-in-my-.json",
+        "source_image_rel": "images/0262-i-want-an-educational-diagram-to-explain-intravenous-chemotherapy-clearly-in-my-.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "p53-response archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "hand-drawn-napkin-style-a-single-human-cell-outline-rough-ballpoint-on-c-533506",
+        "reference_filename": "references/hand-drawn-napkin-style-a-single-human-cell-outline-rough-ballpoint-on-c-533506-reference.png",
+        "review_status": "approved",
+        "source_element_id": 533506,
+        "source_sha256": "a02a3847cd8f8d955afb0e39f0ff745bfec20a6ae9222e4b2660134107d23900",
+        "svg_filename": "hand-drawn-napkin-style-a-single-human-cell-outline-rough-ballpoint-on-c-533506-rough.svg",
+        "transparent_png_filename": "hand-drawn-napkin-style-a-single-human-cell-outline-rough-ballpoint-on-c-533506-rough-transparent.png",
+        "conversion_archetype": "p53-response",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 441138,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-04-30T00:10:24.154Z",
+        "downloadedAt": "2026-07-25T15:37:07.897Z",
+        "filename": "0264-hand-drawn-napkin-style-a-single-human-cell-outline-rough-ballpoint-on-cream-pap.png",
+        "id": 533506,
+        "index": 264,
+        "name": "Hand-drawn napkin style. A single human cell outline, rough ballpoint on cream paper. Inside: a large nucleus drawn as an imperfect circle. A small protein shape labeled \"p53\" sits in the corner, dormant, with a hand-lettered annotation: \"waiting.\" Loose crosshatch shading on the nucleus interior. No color except a single red squiggle on the DNA strand inside the nucleus labeled \"damage?\" \u2014 ballpoint pen aesthetic, white background, slight paper texture, slightly tilted as if sketched on a napkin.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/533506"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 441138,
+        "sha256": "a02a3847cd8f8d955afb0e39f0ff745bfec20a6ae9222e4b2660134107d23900",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0264-hand-drawn-napkin-style-a-single-human-cell-outline-rough-ballpoint-on-cream-pap.json",
+        "source_image_rel": "images/0264-hand-drawn-napkin-style-a-single-human-cell-outline-rough-ballpoint-on-cream-pap.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "p53-response archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "sequence-image-1-hand-drawn-napkin-style-two-protein-shapes-side-by-side-533511",
+        "reference_filename": "references/sequence-image-1-hand-drawn-napkin-style-two-protein-shapes-side-by-side-533511-reference.png",
+        "review_status": "approved",
+        "source_element_id": 533511,
+        "source_sha256": "da4bd15a8b435fb706f2b28319e4a791b37f2e06685c9d6786536d38fef89ba2",
+        "svg_filename": "sequence-image-1-hand-drawn-napkin-style-two-protein-shapes-side-by-side-533511-rough.svg",
+        "transparent_png_filename": "sequence-image-1-hand-drawn-napkin-style-two-protein-shapes-side-by-side-533511-rough-transparent.png",
+        "conversion_archetype": "p53-response",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 205101,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-04-30T00:17:53.931Z",
+        "downloadedAt": "2026-07-25T15:37:08.880Z",
+        "filename": "0265-sequence-image-1-hand-drawn-napkin-style-two-protein-shapes-side-by-side-labeled.png",
+        "id": 533511,
+        "index": 265,
+        "name": "sequence :\nimage 1 - Hand-drawn napkin style. Two protein shapes side by side, labeled \"p53\" and \"MDM2\" in rough hand lettering. MDM2 is drawn wrapping around p53 like a clamp or handcuff \u2014 scrawled oval encircling the smaller shape. A downward arrow from p53 leads to a trash can icon (rough sketch) labeled \"proteasome \u2014 destroyed.\" Small annotation in margin: \"default = OFF.\" Ballpoint pen on cream paper, loose and sketch-like, slight paper texture. Image 2 - Hand-drawn napkin style. A DNA double helix drawn as a rough ladder, hand-sketched. A jagged break splits it in the middle \u2014 drawn as a lightning bolt crack with the word \"BREAK\" scrawled next to it. Two boxy protein shapes rush toward the break, labeled \"ATM\" and \"ATR\" with small arrows indicating motion (speed lines, hand-drawn). The surrounding cell interior is lightly crosshatched. Annotation in corner: \"sensors arrive fast.\" Ballpoint pen, cream paper, loose napkin aesthetic. Image 3 - Hand-drawn napkin style. Left side: ATM protein (rough shape) with an arrow pointing to p53 labeled \"phosphorylation \u2014 P added here\" with a small circled \"P\" drawn next to the p53 shape. Right side: MDM2 shown separating from p53 \u2014 drawn as two shapes pulling apart with a jagged break line between them and a hand-lettered annotation \"MDM2 releases.\" p53 now shown standing alone, slightly larger, with a small star burst around it labeled \"active.\" Ballpoint on cream, sketch style. image 4 - Hand-drawn napkin style. A nucleus outline (rough oval). Inside: multiple copies of the \"p53\" protein shape clustered together \u2014 four or five of the same rough shape, drawn accumulating near a section of DNA strand. One p53 is shown latching onto the DNA, with a hand-drawn bracket and annotation: \"transcription factor \u2014 reads DNA and activates genes.\" Small arrow pointing to the DNA strand labeled \"target genes.\" Loose, energetic sketch quality, ballpoint pen, cream paper. image 5 - Hand-drawn napkin style. Center: a p53 protein shape with two arrows branching left and right \u2014 drawn as a Y-fork, rough and bold. Left branch labeled \"damage repairable\" with a small clock icon (hand-drawn). Right branch labeled \"damage irreparable\" with a small X or skull sketch. Each branch leads to a rough box: left box reads \"ARREST \u2192 repair,\" right box reads \"APOPTOSIS \u2192 death.\" The fork is the visual center of the frame. Annotation at top: \"p53 decides.\" Ballpoint pen, loose napkin style. image 6 - Hand-drawn napkin style. A circular cell cycle diagram drawn as a rough hand-sketched wheel, labeled with \"G1,\" \"S,\" \"G2,\" \"M\" at rough positions. A bold STOP symbol (hand-drawn, slightly wonky) is placed at the G1/S boundary. An arrow from \"p53\" leads to a box labeled \"p21\" which then points to the stop sign with annotation \"CDK2 inhibited \u2014 cycle halts.\" Small repair wrench icon next to the arrested cell. Ballpoint, cream paper, energetic and rough.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/533511"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 205101,
+        "sha256": "da4bd15a8b435fb706f2b28319e4a791b37f2e06685c9d6786536d38fef89ba2",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0265-sequence-image-1-hand-drawn-napkin-style-two-protein-shapes-side-by-side-labeled.json",
+        "source_image_rel": "images/0265-sequence-image-1-hand-drawn-napkin-style-two-protein-shapes-side-by-side-labeled.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "p53-response archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "another-sequence-image-1-hand-drawn-napkin-style-two-p53-protein-shapes--533513",
+        "reference_filename": "references/another-sequence-image-1-hand-drawn-napkin-style-two-p53-protein-shapes--533513-reference.png",
+        "review_status": "approved",
+        "source_element_id": 533513,
+        "source_sha256": "4f912ba605cb1a521d539361b429a7608db76f46b0a96de30a06e22ae6316c71",
+        "svg_filename": "another-sequence-image-1-hand-drawn-napkin-style-two-p53-protein-shapes--533513-rough.svg",
+        "transparent_png_filename": "another-sequence-image-1-hand-drawn-napkin-style-two-p53-protein-shapes--533513-rough-transparent.png",
+        "conversion_archetype": "p53-response",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 285862,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-04-30T00:22:33.976Z",
+        "downloadedAt": "2026-07-25T15:37:09.869Z",
+        "filename": "0266-another-sequence-image-1-hand-drawn-napkin-style-two-p53-protein-shapes-side-by-.png",
+        "id": 533513,
+        "index": 266,
+        "name": "another sequence - image 1 - Hand-drawn napkin style. Two p53 protein shapes side by side. Left: labeled \"normal p53\" \u2014 clean rough shape with a small DNA strand drawn attached to it, annotated \"binds DNA.\" Right: labeled \"mutant p53\" \u2014 same shape but with a large X scrawled through the DNA-binding region, annotated \"can't bind DNA.\" A small callout bubble next to the mutant shape: \"looks fine \u2014 broken inside.\" Arrow pointing to the mutation site labeled \"missense mutation \u2014 DNA-binding domain.\" Ballpoint pen, cream paper, sketch aesthetic. image 2 - Hand-drawn napkin style. Same cell cycle wheel as Scene 07, but this time the STOP sign at G1/S is crossed out with a rough X. A damaged cell (shown with the broken DNA squiggle from Scene 03) moves straight through the checkpoint with a bold arrow and hand-lettered annotation: \"no arrest \u2014 cycles through.\" Below: two daughter cells drawn, each containing their own smaller broken DNA squiggle. Annotation: \"damage copied.\" Loose, urgent sketch energy. Ballpoint, cream paper. image 3 - Hand-drawn napkin style. A damaged cell with the broken DNA squiggle, now shown with a thought bubble containing the apoptosis genes: \"BAX, PUMA, NOXA\" \u2014 all crossed out with rough X marks. The cell is drawn with a small smug expression (very rough, minimal face). Annotation: \"should be dead \u2014 isn't.\" An arrow from the cell leads to more copies of itself multiplying to the right. Ballpoint pen, slightly chaotic sketch energy, cream paper. image 4 -Hand-drawn napkin style. Page split down the middle with a rough vertical line. LEFT side header: \"Normal TP53\" with a simple checkmark. RIGHT side: \"Loss-of-function TP53\" with an X. Each side shows a minimal four-step flow: DNA damage \u2192 ATM/ATR \u2192 p53 response \u2192 outcome. Left outcome box: \"arrest / apoptosis \u2014 genome safe.\" Right outcome box: \"replication continues \u2014 mutations accumulate.\" Drawn as two parallel mini-flowcharts, rough arrows, hand-lettered labels. Ballpoint, cream paper, side-by-side napkin diagram.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/533513"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 285862,
+        "sha256": "4f912ba605cb1a521d539361b429a7608db76f46b0a96de30a06e22ae6316c71",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0266-another-sequence-image-1-hand-drawn-napkin-style-two-p53-protein-shapes-side-by-.json",
+        "source_image_rel": "images/0266-another-sequence-image-1-hand-drawn-napkin-style-two-p53-protein-shapes-side-by-.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "p53-response archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "another-sequence-image-1-hand-drawn-napkin-style-a-timeline-drawn-as-a-r-533514",
+        "reference_filename": "references/another-sequence-image-1-hand-drawn-napkin-style-a-timeline-drawn-as-a-r-533514-reference.png",
+        "review_status": "approved",
+        "source_element_id": 533514,
+        "source_sha256": "ebe29abb26ed10e8ca75e0f884289c5bcb48d0ba36f0a1d4d07dea78546ba96b",
+        "svg_filename": "another-sequence-image-1-hand-drawn-napkin-style-a-timeline-drawn-as-a-r-533514-rough.svg",
+        "transparent_png_filename": "another-sequence-image-1-hand-drawn-napkin-style-a-timeline-drawn-as-a-r-533514-rough-transparent.png",
+        "conversion_archetype": "p53-response",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 205096,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-04-30T00:24:51.187Z",
+        "downloadedAt": "2026-07-25T15:37:10.725Z",
+        "filename": "0267-another-sequence-image-1-hand-drawn-napkin-style-a-timeline-drawn-as-a-rough-hor.png",
+        "id": 533514,
+        "index": 267,
+        "name": "another sequence image 1 - Hand-drawn napkin style. A timeline drawn as a rough horizontal arrow. At the left: a single cell with broken DNA squiggle and a crossed-out p53 (from before). Along the arrow: each subsequent cell division shown as a rough circle getting slightly larger and more chaotic \u2014 more squiggles, more X marks inside. Labels above each step: \"division 1 \u2014 new mutation,\" \"division 2 \u2014 oncogene hit,\" \"division 3 \u2014 another suppressor lost.\" At the far right: a densely scrawled chaotic cell labeled \"malignant.\" Annotation at top: \"TP53 loss = permissive, not causative.\" Ballpoint, cream paper, progressive sketch. image 2 - Hand-drawn napkin style. A large hand-drawn circle taking up most of the frame, roughly split in half with a jagged line \u2014 left half lightly shaded, right half blank. Left half labeled \"~50% \u2014 TP53 mutated\" with rough crosshatch fill. Right half: \"~50% \u2014 TP53 intact.\" Large hand-lettered annotation in the center of the shaded half: \"50%.\" Below the circle, a rough underline and annotation: \"most commonly mutated gene in human cancer.\" Bold, simple, editorial. Ballpoint, cream paper. Image 3 - Hand-drawn napkin style. A rough outline of a human body (front view, minimal \u2014 just a torso and head silhouette, sketched quickly). Small labeled arrows pointing to anatomical regions: brain, chest (lung), breast, abdomen (colon), blood/bone marrow (labeled \"leukemia/lymphoma\"), and soft tissue (labeled \"sarcoma\"). Each arrow has a rough percentage annotation in handwriting: \"~96% ovarian,\" \"~90% SCLC,\" \"~60% CRC,\" \"~30% breast,\" \"variable \u2014 blood.\" Sketch is loose and annotated like a study diagram. Ballpoint pen, cream paper. image 4 - Hand-drawn napkin style. A rough family tree \u2014 three generations sketched as simple circles and squares, connected by lines. Some shapes are filled with rough crosshatch and labeled \"TP53 mutation.\" An annotation reads: \"germline \u2014 every cell affected.\" Below the family tree: a single cell with the crossed-out p53 shape, annotated: \"no guardian from birth.\" Small bracket annotation: \"Li-Fraumeni syndrome.\" Hand-lettered, ballpoint pen, cream paper. image 5 - Hand-drawn napkin style. Three numbered boxes arranged vertically, rough rectangles, hand-lettered numbers 1, 2, 3 on the left. Box 1: a small p53 shape breaking free from MDM2, labeled \"released by phosphorylation.\" Box 2: the Y-fork from Scene 06 \u2014 arrest left, apoptosis right, labeled \"binary decision.\" Box 3: the multiplying damaged cells from Scene 10, labeled \"no guardian = mutations accumulate.\" At the bottom: rough hand-lettered text: \"TP53 loss doesn't start cancer \u2014 it removes what would have stopped it.\" Ballpoint pen, cream paper, composed and clear.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/533514"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 205096,
+        "sha256": "ebe29abb26ed10e8ca75e0f884289c5bcb48d0ba36f0a1d4d07dea78546ba96b",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0267-another-sequence-image-1-hand-drawn-napkin-style-a-timeline-drawn-as-a-rough-hor.json",
+        "source_image_rel": "images/0267-another-sequence-image-1-hand-drawn-napkin-style-a-timeline-drawn-as-a-rough-hor.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "p53-response archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "sequence-image-1-soft-gouache-editorial-science-illustration-muted-warm--535105",
+        "reference_filename": "references/sequence-image-1-soft-gouache-editorial-science-illustration-muted-warm--535105-reference.png",
+        "review_status": "approved",
+        "source_element_id": 535105,
+        "source_sha256": "2c8c66b26b98cdcb6fa24293fcc37e6dc51f739b0be7aef62178ae48431f7195",
+        "svg_filename": "sequence-image-1-soft-gouache-editorial-science-illustration-muted-warm--535105-rough.svg",
+        "transparent_png_filename": "sequence-image-1-soft-gouache-editorial-science-illustration-muted-warm--535105-rough-transparent.png",
+        "conversion_archetype": "p53-response",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 142490,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-04-30T18:15:44.770Z",
+        "downloadedAt": "2026-07-25T15:37:11.578Z",
+        "filename": "0268-sequence-image-1-soft-gouache-editorial-science-illustration-muted-warm-palette-.png",
+        "id": 535105,
+        "index": 268,
+        "name": "sequence - \nimage 1 - Soft gouache editorial science illustration, muted warm palette, painterly texture, precise molecular forms, urso style. Center frame: a rounded protein form labeled \"p53\" in clean sans-serif \u2014 rendered in soft dusty blue, three-dimensional but not photorealistic. Wrapped around it: a second protein form labeled \"MDM2\" in warm ochre, clasping the p53 shape like a clamp. A thin downward arrow leads to a faint degradation symbol \u2014 a dissolving shape \u2014 labeled \"degraded.\" Background: warm off-white. Small label in lower margin: \"default state \u2014 p53 inactive.\" Soft gouache texture throughout, editorial science illustration, urso style.\nimage 2 - Soft gouache editorial science illustration, muted warm palette, painterly texture, urso style. Left third of frame: a DNA double helix rendered in soft teal and cream \u2014 a clean ladder form with a visible break or gap, a subtle warm red glow at the fracture point. Center: two compact protein forms in sage green labeled \"ATM\" and \"ATR,\" positioned near the break with directed arrows. Right third: the MDM2-p53 complex from Illustration 01 \u2014 now separating. MDM2 pulling back in ochre, p53 in dusty blue now standing clear, a small phosphate group (circled \"P\") illustrated attaching to its surface. Thin directional arrows connecting the three zones. Warm off-white background. Soft gouache texture, editorial science illustration, urso style.\nimage 3 - Soft gouache editorial science illustration, muted warm palette, painterly texture, urso style. Left: the freed p53 protein in dusty blue with a directed arrow to a gene activation symbol \u2014 a soft glow around a DNA strand segment labeled \"p21.\" From p21, an arrow leads right to a circular cell cycle diagram rendered as a clean segmented ring \u2014 four arcs labeled G1, S, G2, M in soft type. A pause marker \u2014 a warm amber vertical bar \u2014 sits at the G1/S boundary. Small repair icon (a subtle wrench or helix restoration symbol) positioned at the arrest point. Warm off-white background, soft depth, no harsh outlines. Soft gouache texture, editorial science illustration, urso style.\nimage 4 - Soft gouache editorial science illustration, muted warm palette, painterly texture, urso style. Left: p53 protein in dusty blue \u2014 same form as prior illustrations. Two arrows branch right. Upper arrow, lighter and receding: leads to p21 label, desaturated and small \u2014 subordinate, not the active path. Lower arrow, bold and warm coral-red: leads to three stacked protein labels \u2014 \"BAX,\" \"PUMA,\" \"NOXA\" \u2014 rendered as compact forms in deep rose. From this cluster, a final arrow leads to a fragmenting cell form \u2014 a soft circular shape dissolving at its edges into smaller fragments, painted with transparency and warmth. Label: \"apoptosis.\" Warm off-white background. Soft gouache texture, editorial science illustration, urso style.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/535105"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 142490,
+        "sha256": "2c8c66b26b98cdcb6fa24293fcc37e6dc51f739b0be7aef62178ae48431f7195",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0268-sequence-image-1-soft-gouache-editorial-science-illustration-muted-warm-palette-.json",
+        "source_image_rel": "images/0268-sequence-image-1-soft-gouache-editorial-science-illustration-muted-warm-palette-.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "p53-response archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "sequence-image-1-two-protein-forms-one-labeled-p53-a-second-labeled-mdm2-535127",
+        "reference_filename": "references/sequence-image-1-two-protein-forms-one-labeled-p53-a-second-labeled-mdm2-535127-reference.png",
+        "review_status": "approved",
+        "source_element_id": 535127,
+        "source_sha256": "6bc7f12d214f82cb69d78caeca44366428df208f7a667941f6c7b51b8ce08a9d",
+        "svg_filename": "sequence-image-1-two-protein-forms-one-labeled-p53-a-second-labeled-mdm2-535127-rough.svg",
+        "transparent_png_filename": "sequence-image-1-two-protein-forms-one-labeled-p53-a-second-labeled-mdm2-535127-rough-transparent.png",
+        "conversion_archetype": "p53-response",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 193555,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-04-30T18:27:43.834Z",
+        "downloadedAt": "2026-07-25T15:37:12.446Z",
+        "filename": "0269-sequence-image-1-two-protein-forms-one-labeled-p53-a-second-labeled-mdm2-bound-t.png",
+        "id": 535127,
+        "index": 269,
+        "name": "sequence \nimage 1 - Two protein forms. One labeled \"p53.\" A second labeled \"MDM2\" bound to the first, clasping it. A downward arrow from the complex leads to a degradation symbol \u2014 a dissolving or fragmenting shape \u2014 labeled \"degraded.\" Small annotation: \"default state \u2014 p53 inactive.\" Clean white background.\nimage 2 - Three zones read left to right. Left: a DNA double helix with a visible break or fracture at its center, labeled \"DNA damage.\" Center: two protein forms labeled \"ATM\" and \"ATR\" positioned near the break. Right: the MDM2-p53 complex separating \u2014 MDM2 pulling away, p53 standing free. A small phosphate group symbol (circled P) shown attaching to p53. Directional arrows connecting all three zones. Clean white background.\nimage 3 - Left: p53 protein form with an arrow pointing to a DNA segment labeled \"p21 \u2014 gene activated.\" From p21, an arrow leads to a circular cell cycle diagram \u2014 a ring divided into four labeled segments: G1, S, G2, M. A pause or stop marker sits at the G1/S boundary. A small repair symbol positioned at the arrest point. Clean white background.\nimage 4 - Left: p53 protein form. Two arrows branch from it. Upper arrow leads to \"p21\" \u2014 small and receding, not the active path. Lower arrow, prominent, leads to three protein labels stacked: \"BAX,\" \"PUMA,\" \"NOXA.\" From this cluster, a final arrow leads to a cell form fragmenting or dissolving at its edges. Label: \"apoptosis \u2014 cell eliminated.\" Clean white background.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/535127"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 193555,
+        "sha256": "6bc7f12d214f82cb69d78caeca44366428df208f7a667941f6c7b51b8ce08a9d",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0269-sequence-image-1-two-protein-forms-one-labeled-p53-a-second-labeled-mdm2-bound-t.json",
+        "source_image_rel": "images/0269-sequence-image-1-two-protein-forms-one-labeled-p53-a-second-labeled-mdm2-bound-t.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "gene-amplification archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "image-01-landscape-1920-1080-clean-white-background-flat-professional-sc-633864",
+        "reference_filename": "references/image-01-landscape-1920-1080-clean-white-background-flat-professional-sc-633864-reference.png",
+        "review_status": "approved",
+        "source_element_id": 633864,
+        "source_sha256": "db1c5ad6e95a761bef4ab44539b7292594cc729a4e5c021d5e3b6c546ce3cb5f",
+        "svg_filename": "image-01-landscape-1920-1080-clean-white-background-flat-professional-sc-633864-rough.svg",
+        "transparent_png_filename": "image-01-landscape-1920-1080-clean-white-background-flat-professional-sc-633864-rough-transparent.png",
+        "conversion_archetype": "gene-amplification",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1871184,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-06-11T20:47:27.600Z",
+        "downloadedAt": "2026-07-25T15:37:13.411Z",
+        "filename": "0270-image-01-landscape-1920-1080-clean-white-background-flat-professional-scientific.png",
+        "id": 633864,
+        "index": 270,
+        "name": "IMAGE 01 - Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. A horizontal lipid-bilayer cell membrane band runs left-to-right across the middle; extracellular space above, cytoplasm below. A single receptor tyrosine kinase crosses the membrane, drawn in three labeled parts: a teal extracellular ligand-binding domain (a cup/pocket shape) above the membrane, labeled \"ligand-binding domain\"; a grey transmembrane segment crossing the membrane, labeled \"transmembrane\"; an orange intracellular kinase domain (a lobe) below the membrane, labeled \"kinase domain.\" A small purple growth-factor shape sits docked into the teal extracellular cup, labeled \"growth factor.\" Because the ligand is bound, the orange kinase lobe is firing: yellow burst/spark marks radiate from it and a downward arrow into the cytoplasm is labeled \"normal growth signal.\" Calm, single receptor. No molecular structures. Fill the wide frame with the membrane spanning full width and the receptor centered.\nIMAGE 02 - Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. Same horizontal lipid-bilayer membrane band, extracellular above, cytoplasm below. TWO identical receptor tyrosine kinases sit side by side, each with the same fixed anatomy (teal extracellular ligand-binding cup, grey transmembrane segment, orange intracellular kinase lobe). At the bottom, in the cytoplasm, a distinct red fusion-partner segment joins the two kinase domains together, clamping them into a pair, labeled \"fusion protein \u2014 forces dimerization.\" IMPORTANT: there is NO purple growth factor anywhere \u2014 the extracellular cups are empty. Despite no ligand, both orange kinase lobes are firing: yellow burst/spark marks radiate from both and a downward arrow into the cytoplasm is labeled \"constitutive signal \u2014 no growth factor.\" Small optional label near the fusion: \"(e.g. Tel/PDGFR)\". No molecular structures. Fill the wide frame.\nIMAGE 03 - \nLandscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. Same horizontal lipid-bilayer membrane band, extracellular above, cytoplasm below. MANY identical receptor tyrosine kinases \u2014 six to eight of them \u2014 crowded densely along the membrane, all with the same fixed anatomy (teal extracellular cup, grey transmembrane segment, orange kinase lobe). Below the membrane, a small DNA/gene icon with multiple copies and an upward arrow, labeled \"gene amplification \u2192 overexpression.\" IMPORTANT: NO purple growth factor anywhere \u2014 all extracellular cups empty. Because the receptors are so crowded, their orange kinase lobes are firing: yellow burst/spark marks radiate from the cluster and a downward arrow into the cytoplasm is labeled \"constitutive signal \u2014 no growth factor.\" Small optional label: \"(e.g. erbB-2)\". No molecular structures. Fill the wide frame with a dense row of receptors.\nIMAGE 04 - \nLandscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. Same horizontal lipid-bilayer membrane band, extracellular above, cytoplasm below. A single receptor tyrosine kinase crosses the membrane \u2014 BUT its teal extracellular ligand-binding domain is MISSING: the top of the receptor is cut off, shown as a dashed empty outline where the teal cup used to be, labeled \"ligand-binding domain deleted.\" The grey transmembrane segment and the orange intracellular kinase lobe remain. IMPORTANT: NO purple growth factor \u2014 and nowhere for one to bind. Despite this, the orange kinase lobe is firing: yellow burst/spark marks radiate from it and a downward arrow into the cytoplasm is labeled \"constitutive signal \u2014 no growth factor.\" Small optional label: \"(e.g. v-onc)\". A short note near the missing domain: \"no ligand needed.\" No molecular structures. Fill the wide frame.\nIMAGE 5 - Landscape 1920\u00d71080, clean white background, flat professional scientific-illustration style. Three small labeled icons across the top, left to right, each a compact version of the three routes: (1) two receptors clamped by a red fusion segment, labeled \"fusion / dimerization\"; (2) a dense crowd of receptors, labeled \"amplification / overexpression\"; (3) a receptor with its top domain missing (dashed outline), labeled \"domain deletion.\" Three arrows lead DOWN and INWARD from the three icons, converging on a single central node labeled \"constitutive signaling \u2014 no growth factor needed,\" shown with strong yellow burst/spark marks. From that node, one bold downward arrow leads to a cluster of dividing cells \u2014 one cell splitting into many \u2014 labeled \"uncontrolled cell proliferation.\" No purple growth factor anywhere. No molecular structures. Fill the wide frame: three sources across the top, convergence in the middle, proliferation outcome at the bottom.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/633864"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1200,
+        "local_bytes": 1871184,
+        "sha256": "db1c5ad6e95a761bef4ab44539b7292594cc729a4e5c021d5e3b6c546ce3cb5f",
+        "width": 1696
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0270-image-01-landscape-1920-1080-clean-white-background-flat-professional-scientific.json",
+        "source_image_rel": "images/0270-image-01-landscape-1920-1080-clean-white-background-flat-professional-scientific.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "distribution-shift archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "conceptual-diagram-showing-two-distributions-training-distribution-blue--535913",
+        "reference_filename": "references/conceptual-diagram-showing-two-distributions-training-distribution-blue--535913-reference.png",
+        "review_status": "approved",
+        "source_element_id": 535913,
+        "source_sha256": "9c3bb7c1cbe0f59e660a4d641b9be45fdc1102335f62fc0a65c65a1fe948f6c6",
+        "svg_filename": "conceptual-diagram-showing-two-distributions-training-distribution-blue--535913-rough.svg",
+        "transparent_png_filename": "conceptual-diagram-showing-two-distributions-training-distribution-blue--535913-rough-transparent.png",
+        "conversion_archetype": "distribution-shift",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 197395,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-01T02:42:08.907Z",
+        "downloadedAt": "2026-07-25T15:37:14.373Z",
+        "filename": "0271-conceptual-diagram-showing-two-distributions-training-distribution-blue-labeled-.png",
+        "id": 535913,
+        "index": 271,
+        "name": "    \"Conceptual diagram showing two distributions \u2014 training distribution (blue, labeled \\\"World the model learned\\\") and deployment distribution (orange, shifted right, labeled \\\"World the model operates in\\\"). The overlap is partial; the gap is labeled \\\"distribution shift.\\\" A confidence curve sits atop both, staying identical \u2014 showing the model does not know it has drifted.\",\n",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/535913"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 197395,
+        "sha256": "9c3bb7c1cbe0f59e660a4d641b9be45fdc1102335f62fc0a65c65a1fe948f6c6",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0271-conceptual-diagram-showing-two-distributions-training-distribution-blue-labeled-.json",
+        "source_image_rel": "images/0271-conceptual-diagram-showing-two-distributions-training-distribution-blue-labeled-.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "calibration archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "calibration-curve-x-axis-model-s-stated-probability-0-to-1-0-y-axis-obse-535914",
+        "reference_filename": "references/calibration-curve-x-axis-model-s-stated-probability-0-to-1-0-y-axis-obse-535914-reference.png",
+        "review_status": "approved",
+        "source_element_id": 535914,
+        "source_sha256": "81d735d4f02f9d1bd4e53c848eec29ccf5bf75a92740bd7048c820a4be3c0d2e",
+        "svg_filename": "calibration-curve-x-axis-model-s-stated-probability-0-to-1-0-y-axis-obse-535914-rough.svg",
+        "transparent_png_filename": "calibration-curve-x-axis-model-s-stated-probability-0-to-1-0-y-axis-obse-535914-rough-transparent.png",
+        "conversion_archetype": "calibration",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 78067,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-01T02:44:19.270Z",
+        "downloadedAt": "2026-07-25T15:37:15.264Z",
+        "filename": "0272-calibration-curve-x-axis-model-s-stated-probability-0-to-1-0-y-axis-observed-fre.png",
+        "id": 535914,
+        "index": 272,
+        "name": "   \"Calibration curve \u2014 x-axis \\\"Model's stated probability (0 to 1.0),\\\" y-axis \\\"Observed frequency of positive outcomes (0 to 1.0).\\\" Diagonal reference line labeled \\\"Perfect calibration.\\\" A second curve shown bowing above the diagonal at high confidence values, labeled \\\"Typical deep learning overconfidence.\\\" Student should notice: the model is close to calibrated in the 0.3\u20130.7 range, then peels off badly toward 0.9\u20131.0.\",\n",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/535914"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 78067,
+        "sha256": "81d735d4f02f9d1bd4e53c848eec29ccf5bf75a92740bd7048c820a4be3c0d2e",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0272-calibration-curve-x-axis-model-s-stated-probability-0-to-1-0-y-axis-observed-fre.json",
+        "source_image_rel": "images/0272-calibration-curve-x-axis-model-s-stated-probability-0-to-1-0-y-axis-observed-fre.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "heavy-tail archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "two-distributions-overlaid-a-gaussian-thin-tails-labeled-clt-applies-and-535916",
+        "reference_filename": "references/two-distributions-overlaid-a-gaussian-thin-tails-labeled-clt-applies-and-535916-reference.png",
+        "review_status": "approved",
+        "source_element_id": 535916,
+        "source_sha256": "e4b97da88d2c2a51749e3ed5007706b9ddb0086176a2a5fa5c289e6429279609",
+        "svg_filename": "two-distributions-overlaid-a-gaussian-thin-tails-labeled-clt-applies-and-535916-rough.svg",
+        "transparent_png_filename": "two-distributions-overlaid-a-gaussian-thin-tails-labeled-clt-applies-and-535916-rough-transparent.png",
+        "conversion_archetype": "heavy-tail",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 134594,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-01T02:46:20.737Z",
+        "downloadedAt": "2026-07-25T15:37:16.138Z",
+        "filename": "0273-two-distributions-overlaid-a-gaussian-thin-tails-labeled-clt-applies-and-a-power.png",
+        "id": 535916,
+        "index": 273,
+        "name": "   \"Two distributions overlaid \u2014 a Gaussian (thin tails, labeled \\\"CLT applies\\\") and a power-law distribution (fat tail extending right, labeled \\\"Heavy-tailed \u2014 CLT does not apply\\\"). Vertical line at some large x-value shows: the Gaussian probability is near zero; the power-law probability is still non-trivial. Annotation: \\\"This is where your confidence intervals lie to you.\\\"\",sketch this image, architectural drawing style, very accurate match\n\narchitectural section sketch, Loose hand-drawn architectural concept section, annotated process sketching, gestural ink linework, light wash, hatching, and selective color accents.\n\n\n ",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/535916"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 134594,
+        "sha256": "e4b97da88d2c2a51749e3ed5007706b9ddb0086176a2a5fa5c289e6429279609",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0273-two-distributions-overlaid-a-gaussian-thin-tails-labeled-clt-applies-and-a-power.json",
+        "source_image_rel": "images/0273-two-distributions-overlaid-a-gaussian-thin-tails-labeled-clt-applies-and-a-power.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "checklist archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "the-three-moves-as-a-portable-checklist-cartesian-doubt-what-would-make--535919",
+        "reference_filename": "references/the-three-moves-as-a-portable-checklist-cartesian-doubt-what-would-make--535919-reference.png",
+        "review_status": "approved",
+        "source_element_id": 535919,
+        "source_sha256": "13b769571d85dadb1d3b9e3f42f0acdb9d7207164e888069468ca9e484516e58",
+        "svg_filename": "the-three-moves-as-a-portable-checklist-cartesian-doubt-what-would-make--535919-rough.svg",
+        "transparent_png_filename": "the-three-moves-as-a-portable-checklist-cartesian-doubt-what-would-make--535919-rough-transparent.png",
+        "conversion_archetype": "checklist",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 342804,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-01T02:53:51.574Z",
+        "downloadedAt": "2026-07-25T15:37:17.061Z",
+        "filename": "0274-the-three-moves-as-a-portable-checklist-cartesian-doubt-what-would-make-this-wro.png",
+        "id": 535919,
+        "index": 274,
+        "name": "The three moves as a portable checklist \u2014 Cartesian doubt (what would make this wrong?), Humean induction limit (what if the distribution shifted?), Popperian falsifiability (what would failure look like, specified). Designed for margin reference or pull-quote treatment \u2014 the kind of thing students photograph and tape to monitors.sketch this image, architectural drawing style, very accurate match\n",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/535919"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 342804,
+        "sha256": "13b769571d85dadb1d3b9e3f42f0acdb9d7207164e888069468ca9e484516e58",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0274-the-three-moves-as-a-portable-checklist-cartesian-doubt-what-would-make-this-wro.json",
+        "source_image_rel": "images/0274-the-three-moves-as-a-portable-checklist-cartesian-doubt-what-would-make-this-wro.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "checklist archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "the-three-moves-as-a-portable-checklist-cartesian-doubt-what-would-make--535922",
+        "reference_filename": "references/the-three-moves-as-a-portable-checklist-cartesian-doubt-what-would-make--535922-reference.png",
+        "review_status": "approved",
+        "source_element_id": 535922,
+        "source_sha256": "adde25eb646dd3d010b33a4b734327fa21245c523f6067682f6df1261ec581ce",
+        "svg_filename": "the-three-moves-as-a-portable-checklist-cartesian-doubt-what-would-make--535922-rough.svg",
+        "transparent_png_filename": "the-three-moves-as-a-portable-checklist-cartesian-doubt-what-would-make--535922-rough-transparent.png",
+        "conversion_archetype": "checklist",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 402517,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-01T03:03:23.267Z",
+        "downloadedAt": "2026-07-25T15:37:18.053Z",
+        "filename": "0275-the-three-moves-as-a-portable-checklist-cartesian-doubt-what-would-make-this-wro.png",
+        "id": 535922,
+        "index": 275,
+        "name": "The three moves as a portable checklist \u2014 Cartesian doubt (what would make this wrong?), Humean induction limit (what if the distribution shifted?), Popperian falsifiability (what would failure look like, specified). Designed for margin reference or pull-quote treatment \u2014 the kind of thing students photograph and tape to monitors., architectural section sketch, Loose hand-drawn architectural concept section, annotated process sketching, gestural ink linework, light wash, hatching, and selective color accents.\n",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/535922"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 402517,
+        "sha256": "adde25eb646dd3d010b33a4b734327fa21245c523f6067682f6df1261ec581ce",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0275-the-three-moves-as-a-portable-checklist-cartesian-doubt-what-would-make-this-wro.json",
+        "source_image_rel": "images/0275-the-three-moves-as-a-portable-checklist-cartesian-doubt-what-would-make-this-wro.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "epigenetics archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "i-want-an-educational-diagram-to-explain-histone-modifications-concept-c-537839",
+        "reference_filename": "references/i-want-an-educational-diagram-to-explain-histone-modifications-concept-c-537839-reference.png",
+        "review_status": "approved",
+        "source_element_id": 537839,
+        "source_sha256": "052ff985731aee49493dcd22d4ae6558e166f32da30f2cee64324657da97619b",
+        "svg_filename": "i-want-an-educational-diagram-to-explain-histone-modifications-concept-c-537839-rough.svg",
+        "transparent_png_filename": "i-want-an-educational-diagram-to-explain-histone-modifications-concept-c-537839-rough-transparent.png",
+        "conversion_archetype": "epigenetics",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1191750,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-02T02:41:44.988Z",
+        "downloadedAt": "2026-07-25T15:37:20.877Z",
+        "filename": "0278-i-want-an-educational-diagram-to-explain-histone-modifications-concept-clearly-i.png",
+        "id": 537839,
+        "index": 278,
+        "name": "I want an educational diagram to explain histone modifications concept clearly in my cancer book in the tumor suppressor genes chapter. Here is the subsection text: 'There are a number of universal aberrations common to all cancers, one of these being the epigenetic silencing of tumor suppressor genes. The silencing of TSGs is thought to be an early, driving event in the oncogenic process. The molecular mechanisms driving epigenetic silencing include ablation of transcription factor binding, overexpression of DNA methyltransferases, disruption of CTCF binding, and elevation of EZH2 histone methyltransferase. N-terminal tails of core histone proteins are largely targeted for post-translational modifications such as methylation, acetylation, and phosphorylation. Modifications in histone tails affect chromatin structure which is critical for gene regulation.' Can you create a prompt for Illustrae please? I need a three-panel diagram: Panel 1 showing normal open chromatin with acetylated histones and active transcription labeled 'Acetylation (Active),' Panel 2 showing repressive histone modifications with HDAC removing acetyl groups, EZH2 adding methyl marks labeled 'EZH2 \u2192 H3K27me3,' DNMT overexpression, and CTCF disruption with blocked transcription labeled 'Methylation (Repressive),' and Panel 3 showing TSG silenced with OFF indicator and a chromatin remodeling inset labeled 'ATP-dependent remodeling complex \u2014 restricts transcriptional access.' Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/537839"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 1191750,
+        "sha256": "052ff985731aee49493dcd22d4ae6558e166f32da30f2cee64324657da97619b",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0278-i-want-an-educational-diagram-to-explain-histone-modifications-concept-clearly-i.json",
+        "source_image_rel": "images/0278-i-want-an-educational-diagram-to-explain-histone-modifications-concept-clearly-i.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "p53-response archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "two-protein-forms-one-labeled-p53-a-second-labeled-mdm2-bound-to-the-fir-540766",
+        "reference_filename": "references/two-protein-forms-one-labeled-p53-a-second-labeled-mdm2-bound-to-the-fir-540766-reference.png",
+        "review_status": "approved",
+        "source_element_id": 540766,
+        "source_sha256": "9e7d80db3f2176f46ed951d460a0cad637f620a48cf3020fcaad24ba0d66e363",
+        "svg_filename": "two-protein-forms-one-labeled-p53-a-second-labeled-mdm2-bound-to-the-fir-540766-rough.svg",
+        "transparent_png_filename": "two-protein-forms-one-labeled-p53-a-second-labeled-mdm2-bound-to-the-fir-540766-rough-transparent.png",
+        "conversion_archetype": "p53-response",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 157698,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-03T19:09:03.437Z",
+        "downloadedAt": "2026-07-25T15:37:21.763Z",
+        "filename": "0279-two-protein-forms-one-labeled-p53-a-second-labeled-mdm2-bound-to-the-first-clasp.png",
+        "id": 540766,
+        "index": 279,
+        "name": "Two protein forms. One labeled \"p53.\" A second labeled \"MDM2\" bound to the first, clasping it. A downward arrow from the complex leads to a degradation symbol \u2014 a dissolving or fragmenting shape \u2014 labeled \"degraded.\" Small annotation: \"default state \u2014 p53 inactive.\" Clean white background.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/540766"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 157698,
+        "sha256": "9e7d80db3f2176f46ed951d460a0cad637f620a48cf3020fcaad24ba0d66e363",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0279-two-protein-forms-one-labeled-p53-a-second-labeled-mdm2-bound-to-the-first-clasp.json",
+        "source_image_rel": "images/0279-two-protein-forms-one-labeled-p53-a-second-labeled-mdm2-bound-to-the-first-clasp.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "p53-response archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "left-p53-protein-form-two-arrows-branch-from-it-upper-arrow-leads-to-p21-540782",
+        "reference_filename": "references/left-p53-protein-form-two-arrows-branch-from-it-upper-arrow-leads-to-p21-540782-reference.png",
+        "review_status": "approved",
+        "source_element_id": 540782,
+        "source_sha256": "7254aa8fa7abdbba0f5e55ea34128edfb58500ef424bebbb4afbb7f813c2a914",
+        "svg_filename": "left-p53-protein-form-two-arrows-branch-from-it-upper-arrow-leads-to-p21-540782-rough.svg",
+        "transparent_png_filename": "left-p53-protein-form-two-arrows-branch-from-it-upper-arrow-leads-to-p21-540782-rough-transparent.png",
+        "conversion_archetype": "p53-response",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 143546,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-03T19:18:11.230Z",
+        "downloadedAt": "2026-07-25T15:37:24.347Z",
+        "filename": "0282-left-p53-protein-form-two-arrows-branch-from-it-upper-arrow-leads-to-p21-small-a.png",
+        "id": 540782,
+        "index": 282,
+        "name": "Left: p53 protein form. Two arrows branch from it. Upper arrow leads to \"p21\" \u2014 small and receding, not the active path. Lower arrow, prominent, leads to three protein labels stacked: \"BAX,\" \"PUMA,\" \"NOXA.\" From this cluster, a final arrow leads to a cell form fragmenting or dissolving at its edges. Label: \"apoptosis \u2014 cell eliminated.\" Clean white background.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/540782"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 143546,
+        "sha256": "7254aa8fa7abdbba0f5e55ea34128edfb58500ef424bebbb4afbb7f813c2a914",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0282-left-p53-protein-form-two-arrows-branch-from-it-upper-arrow-leads-to-p21-small-a.json",
+        "source_image_rel": "images/0282-left-p53-protein-form-two-arrows-branch-from-it-upper-arrow-leads-to-p21-small-a.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "p53-response archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "image-2-three-zones-read-left-to-right-left-a-dna-double-helix-with-a-vi-540789",
+        "reference_filename": "references/image-2-three-zones-read-left-to-right-left-a-dna-double-helix-with-a-vi-540789-reference.png",
+        "review_status": "approved",
+        "source_element_id": 540789,
+        "source_sha256": "8e40a299717b555997d1c742b3dab819529462e4e35be573ffe04c01e5deab05",
+        "svg_filename": "image-2-three-zones-read-left-to-right-left-a-dna-double-helix-with-a-vi-540789-rough.svg",
+        "transparent_png_filename": "image-2-three-zones-read-left-to-right-left-a-dna-double-helix-with-a-vi-540789-rough-transparent.png",
+        "conversion_archetype": "p53-response",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 152815,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-03T19:21:49.711Z",
+        "downloadedAt": "2026-07-25T15:37:25.388Z",
+        "filename": "0283-image-2-three-zones-read-left-to-right-left-a-dna-double-helix-with-a-visible-br.png",
+        "id": 540789,
+        "index": 283,
+        "name": "image 2 - Three zones read left to right. Left: a DNA double helix with a visible break or fracture at its center, labeled \"DNA damage.\" Center: two protein forms labeled \"ATM\" and \"ATR\" positioned near the break. Right: the MDM2-p53 complex separating \u2014 MDM2 pulling away, p53 standing free. A small phosphate group symbol (circled P) shown attaching to p53. Directional arrows connecting all three zones. Clean white background.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/540789"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 152815,
+        "sha256": "8e40a299717b555997d1c742b3dab819529462e4e35be573ffe04c01e5deab05",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0283-image-2-three-zones-read-left-to-right-left-a-dna-double-helix-with-a-visible-br.json",
+        "source_image_rel": "images/0283-image-2-three-zones-read-left-to-right-left-a-dna-double-helix-with-a-visible-br.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "p53-response archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "three-zones-read-left-to-right-left-a-dna-double-helix-with-a-visible-br-540793",
+        "reference_filename": "references/three-zones-read-left-to-right-left-a-dna-double-helix-with-a-visible-br-540793-reference.png",
+        "review_status": "approved",
+        "source_element_id": 540793,
+        "source_sha256": "b92c780cc2f6f1837f7f9000712dc55bc3f6c4d07502e8cdf3d949297e5098e8",
+        "svg_filename": "three-zones-read-left-to-right-left-a-dna-double-helix-with-a-visible-br-540793-rough.svg",
+        "transparent_png_filename": "three-zones-read-left-to-right-left-a-dna-double-helix-with-a-visible-br-540793-rough-transparent.png",
+        "conversion_archetype": "p53-response",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 154065,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-03T19:23:25.235Z",
+        "downloadedAt": "2026-07-25T15:37:26.287Z",
+        "filename": "0284-three-zones-read-left-to-right-left-a-dna-double-helix-with-a-visible-break-or-f.png",
+        "id": 540793,
+        "index": 284,
+        "name": "Three zones read left to right. Left: a DNA double helix with a visible break or fracture at its center, labeled \"DNA damage.\" Center: two protein forms labeled \"ATM\" and \"ATR\" positioned near the break. Right: the MDM2-p53 complex separating \u2014 MDM2 pulling away, p53 standing free. A small phosphate group symbol (circled P) shown attaching to p53. Directional arrows connecting all three zones. Clean white background.  Ensure correct labels ",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/540793"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 154065,
+        "sha256": "b92c780cc2f6f1837f7f9000712dc55bc3f6c4d07502e8cdf3d949297e5098e8",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": "prompt-similarity:c7df6a8e3551",
+        "exact_duplicate_element_ids": [],
+        "heuristic_similarity_threshold": 0.92,
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": 540769,
+        "root_id": 540769
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0284-three-zones-read-left-to-right-left-a-dna-double-helix-with-a-visible-break-or-f.json",
+        "source_image_rel": "images/0284-three-zones-read-left-to-right-left-a-dna-double-helix-with-a-visible-break-or-f.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "p53-response archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "left-p53-protein-form-with-an-arrow-pointing-to-a-dna-segment-labeled-p2-540808",
+        "reference_filename": "references/left-p53-protein-form-with-an-arrow-pointing-to-a-dna-segment-labeled-p2-540808-reference.png",
+        "review_status": "approved",
+        "source_element_id": 540808,
+        "source_sha256": "9b3fd21117c92073e732c6cdfac4b7b8c58e297fca05f5e5795527457b8f9fc9",
+        "svg_filename": "left-p53-protein-form-with-an-arrow-pointing-to-a-dna-segment-labeled-p2-540808-rough.svg",
+        "transparent_png_filename": "left-p53-protein-form-with-an-arrow-pointing-to-a-dna-segment-labeled-p2-540808-rough-transparent.png",
+        "conversion_archetype": "p53-response",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 104642,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-03T19:30:28.462Z",
+        "downloadedAt": "2026-07-25T15:37:27.191Z",
+        "filename": "0285-left-p53-protein-form-with-an-arrow-pointing-to-a-dna-segment-labeled-p21-gene-a.png",
+        "id": 540808,
+        "index": 285,
+        "name": "Left: p53 protein form with an arrow pointing to a DNA segment labeled \"p21 \u2014 gene activated.\" From p21, an arrow leads to a circular cell cycle diagram \u2014 a ring divided into four labeled segments: G1, S, G2, M. A pause or stop marker sits at the G1/S boundary. A small repair symbol positioned at the arrest point. Clean white background. Ensure labels",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/540808"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 104642,
+        "sha256": "9b3fd21117c92073e732c6cdfac4b7b8c58e297fca05f5e5795527457b8f9fc9",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": "prompt-similarity:9fa6e3c3f0be",
+        "exact_duplicate_element_ids": [],
+        "heuristic_similarity_threshold": 0.92,
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": 540778,
+        "root_id": 540778
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0285-left-p53-protein-form-with-an-arrow-pointing-to-a-dna-segment-labeled-p21-gene-a.json",
+        "source_image_rel": "images/0285-left-p53-protein-form-with-an-arrow-pointing-to-a-dna-segment-labeled-p21-gene-a.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "p53-response archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "two-zones-left-zone-a-protein-form-labeled-p53-bound-by-a-second-form-la-540884",
+        "reference_filename": "references/two-zones-left-zone-a-protein-form-labeled-p53-bound-by-a-second-form-la-540884-reference.png",
+        "review_status": "approved",
+        "source_element_id": 540884,
+        "source_sha256": "02543615a181aaea3a0ed46e4d09e38c724dc58fc7343c7b8dbdd3b82b919e45",
+        "svg_filename": "two-zones-left-zone-a-protein-form-labeled-p53-bound-by-a-second-form-la-540884-rough.svg",
+        "transparent_png_filename": "two-zones-left-zone-a-protein-form-labeled-p53-bound-by-a-second-form-la-540884-rough-transparent.png",
+        "conversion_archetype": "p53-response",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 163704,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-03T20:22:20.846Z",
+        "downloadedAt": "2026-07-25T15:37:28.048Z",
+        "filename": "0286-two-zones-left-zone-a-protein-form-labeled-p53-bound-by-a-second-form-labeled-md.png",
+        "id": 540884,
+        "index": 286,
+        "name": "Two zones. Left zone: a protein form labeled \"p53\" bound by a second form labeled \"MDM2\" \u2014 MDM2 clasping p53, with a downward arrow to a degradation symbol labeled \"inactive.\" Right zone: a DNA double helix with a visible break at its center, labeled \"DNA damage.\" Two protein forms labeled \"ATM\" and \"ATR\" positioned at the break. A directional arrow connecting the two zones: \"damage detected.\" Clean white background.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/540884"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 163704,
+        "sha256": "02543615a181aaea3a0ed46e4d09e38c724dc58fc7343c7b8dbdd3b82b919e45",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0286-two-zones-left-zone-a-protein-form-labeled-p53-bound-by-a-second-form-labeled-md.json",
+        "source_image_rel": "images/0286-two-zones-left-zone-a-protein-form-labeled-p53-bound-by-a-second-form-labeled-md.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "p53-response archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "center-frame-the-p53-protein-form-with-a-phosphate-group-symbol-circled--540893",
+        "reference_filename": "references/center-frame-the-p53-protein-form-with-a-phosphate-group-symbol-circled--540893-reference.png",
+        "review_status": "approved",
+        "source_element_id": 540893,
+        "source_sha256": "15d38a2d8e6e1252e830765911fab5e44312840250e8001862eda91724e44fcf",
+        "svg_filename": "center-frame-the-p53-protein-form-with-a-phosphate-group-symbol-circled--540893-rough.svg",
+        "transparent_png_filename": "center-frame-the-p53-protein-form-with-a-phosphate-group-symbol-circled--540893-rough-transparent.png",
+        "conversion_archetype": "p53-response",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 138516,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-03T20:27:44.574Z",
+        "downloadedAt": "2026-07-25T15:37:30.624Z",
+        "filename": "0289-center-frame-the-p53-protein-form-with-a-phosphate-group-symbol-circled-p-attach.png",
+        "id": 540893,
+        "index": 289,
+        "name": "Center frame: the p53 protein form with a phosphate group symbol (circled P) attaching to it \u2014 an arrow from ATM/ATR pointing to the phosphate site, labeled \"phosphorylation.\" MDM2 shown separating from p53 \u2014 two forms pulling apart with a gap between them, labeled \"MDM2 releases.\" p53 now stands alone, labeled \"activated p53.\" Clean white background. Ensure labels",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/540893"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 138516,
+        "sha256": "15d38a2d8e6e1252e830765911fab5e44312840250e8001862eda91724e44fcf",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": "prompt-similarity:374b9fd1014e",
+        "exact_duplicate_element_ids": [],
+        "heuristic_similarity_threshold": 0.92,
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": 540890,
+        "root_id": 540890
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0289-center-frame-the-p53-protein-form-with-a-phosphate-group-symbol-circled-p-attach.json",
+        "source_image_rel": "images/0289-center-frame-the-p53-protein-form-with-a-phosphate-group-symbol-circled-p-attach.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "p53-response archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "left-activated-p53-form-with-an-arrow-pointing-to-a-box-labeled-p21-indu-540902",
+        "reference_filename": "references/left-activated-p53-form-with-an-arrow-pointing-to-a-box-labeled-p21-indu-540902-reference.png",
+        "review_status": "approved",
+        "source_element_id": 540902,
+        "source_sha256": "6394dd0ff2fadcfdfb3ddee6bfcd516a84bf239b2b6db8f505d06266ad6a60f6",
+        "svg_filename": "left-activated-p53-form-with-an-arrow-pointing-to-a-box-labeled-p21-indu-540902-rough.svg",
+        "transparent_png_filename": "left-activated-p53-form-with-an-arrow-pointing-to-a-box-labeled-p21-indu-540902-rough-transparent.png",
+        "conversion_archetype": "p53-response",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 83535,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-03T20:30:46.085Z",
+        "downloadedAt": "2026-07-25T15:37:31.545Z",
+        "filename": "0290-left-activated-p53-form-with-an-arrow-pointing-to-a-box-labeled-p21-induced-from.png",
+        "id": 540902,
+        "index": 290,
+        "name": "Left: activated p53 form with an arrow pointing to a box labeled \"p21 \u2014 induced.\" From p21, an arrow leads to a circular cell cycle diagram \u2014 a ring with four segments labeled G1, S, G2, M. A stop or pause marker at the G1/S boundary. Label at the arrest point: \"checkpoint arrest.\" Clean white background. ensure labels.",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/540902"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 83535,
+        "sha256": "6394dd0ff2fadcfdfb3ddee6bfcd516a84bf239b2b6db8f505d06266ad6a60f6",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0290-left-activated-p53-form-with-an-arrow-pointing-to-a-box-labeled-p21-induced-from.json",
+        "source_image_rel": "images/0290-left-activated-p53-form-with-an-arrow-pointing-to-a-box-labeled-p21-induced-from.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "p53-response archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "left-activated-p53-form-two-arrows-branch-from-it-upper-arrow-smaller-le-540908",
+        "reference_filename": "references/left-activated-p53-form-two-arrows-branch-from-it-upper-arrow-smaller-le-540908-reference.png",
+        "review_status": "approved",
+        "source_element_id": 540908,
+        "source_sha256": "a59004955bea49a09a210577150a66ed4ff703e0d583329663080f47a262150c",
+        "svg_filename": "left-activated-p53-form-two-arrows-branch-from-it-upper-arrow-smaller-le-540908-rough.svg",
+        "transparent_png_filename": "left-activated-p53-form-two-arrows-branch-from-it-upper-arrow-smaller-le-540908-rough-transparent.png",
+        "conversion_archetype": "p53-response",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 175072,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-03T20:34:14.031Z",
+        "downloadedAt": "2026-07-25T15:37:32.455Z",
+        "filename": "0291-left-activated-p53-form-two-arrows-branch-from-it-upper-arrow-smaller-leads-to-p.png",
+        "id": 540908,
+        "index": 291,
+        "name": "Left: activated p53 form. Two arrows branch from it. Upper arrow, smaller: leads to \"p21 \u2014 arrest\" label, subordinate. Lower arrow, prominent: leads to a cell form fragmenting or dissolving at its edges, labeled \"apoptosis \u2014 cell eliminated.\" Clean white background. ensure labels",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/540908"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 175072,
+        "sha256": "a59004955bea49a09a210577150a66ed4ff703e0d583329663080f47a262150c",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0291-left-activated-p53-form-two-arrows-branch-from-it-upper-arrow-smaller-leads-to-p.json",
+        "source_image_rel": "images/0291-left-activated-p53-form-two-arrows-branch-from-it-upper-arrow-smaller-leads-to-p.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "p53-response archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "left-mutant-p53-form-with-a-crossed-out-or-blocked-arrow-where-p21-activ-541155",
+        "reference_filename": "references/left-mutant-p53-form-with-a-crossed-out-or-blocked-arrow-where-p21-activ-541155-reference.png",
+        "review_status": "approved",
+        "source_element_id": 541155,
+        "source_sha256": "de764ae343800d968f7b1f7a337c3a97b1cc9a10da7b4924394814abba127baa",
+        "svg_filename": "left-mutant-p53-form-with-a-crossed-out-or-blocked-arrow-where-p21-activ-541155-rough.svg",
+        "transparent_png_filename": "left-mutant-p53-form-with-a-crossed-out-or-blocked-arrow-where-p21-activ-541155-rough-transparent.png",
+        "conversion_archetype": "p53-response",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 149932,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-03T22:52:18.600Z",
+        "downloadedAt": "2026-07-25T15:37:33.369Z",
+        "filename": "0292-left-mutant-p53-form-with-a-crossed-out-or-blocked-arrow-where-p21-activation-wo.png",
+        "id": 541155,
+        "index": 292,
+        "name": "Left: mutant p53 form with a crossed-out or blocked arrow where p21 activation would occur \u2014 labeled \"p21 \u2014 not induced.\" Right: the cell cycle ring from Video 1, but the G1/S boundary is open \u2014 no pause marker. A cell form carrying a broken DNA strand passes straight through the open boundary with a bold arrow, labeled \"no arrest \u2014 enters S phase.\" Clean white background. Ensure labels",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/541155"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 149932,
+        "sha256": "de764ae343800d968f7b1f7a337c3a97b1cc9a10da7b4924394814abba127baa",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0292-left-mutant-p53-form-with-a-crossed-out-or-blocked-arrow-where-p21-activation-wo.json",
+        "source_image_rel": "images/0292-left-mutant-p53-form-with-a-crossed-out-or-blocked-arrow-where-p21-activation-wo.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "timeline archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "a-sequence-of-cell-forms-reading-left-to-right-one-parent-cell-with-a-br-541163",
+        "reference_filename": "references/a-sequence-of-cell-forms-reading-left-to-right-one-parent-cell-with-a-br-541163-reference.png",
+        "review_status": "approved",
+        "source_element_id": 541163,
+        "source_sha256": "752104ff07f598b3054d2afbb7404e9b312a83a3a0fb0612777fcc5a6ec51b3e",
+        "svg_filename": "a-sequence-of-cell-forms-reading-left-to-right-one-parent-cell-with-a-br-541163-rough.svg",
+        "transparent_png_filename": "a-sequence-of-cell-forms-reading-left-to-right-one-parent-cell-with-a-br-541163-rough-transparent.png",
+        "conversion_archetype": "timeline",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 141144,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-03T22:56:14.567Z",
+        "downloadedAt": "2026-07-25T15:37:34.346Z",
+        "filename": "0293-a-sequence-of-cell-forms-reading-left-to-right-one-parent-cell-with-a-broken-dna.png",
+        "id": 541163,
+        "index": 293,
+        "name": "A sequence of cell forms reading left to right \u2014 one parent cell with a broken DNA strand dividing into two daughter cells, each also carrying a broken DNA strand. The sequence continues: those daughters dividing again into four cells, all with broken DNA. A label beneath the sequence: \"unchecked replication.\" A final label at the far right: \"tumorigenesis.\" Clean white background. Ensure labels",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/541163"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 141144,
+        "sha256": "752104ff07f598b3054d2afbb7404e9b312a83a3a0fb0612777fcc5a6ec51b3e",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0293-a-sequence-of-cell-forms-reading-left-to-right-one-parent-cell-with-a-broken-dna.json",
+        "source_image_rel": "images/0293-a-sequence-of-cell-forms-reading-left-to-right-one-parent-cell-with-a-broken-dna.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "p53-response archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "two-zones-left-zone-a-p53-protein-form-with-a-visible-disruption-or-brea-541171",
+        "reference_filename": "references/two-zones-left-zone-a-p53-protein-form-with-a-visible-disruption-or-brea-541171-reference.png",
+        "review_status": "approved",
+        "source_element_id": 541171,
+        "source_sha256": "e176dca47a03f9d0d3636618ea08c071fb0625965fa308609d763a76f04f845a",
+        "svg_filename": "two-zones-left-zone-a-p53-protein-form-with-a-visible-disruption-or-brea-541171-rough.svg",
+        "transparent_png_filename": "two-zones-left-zone-a-p53-protein-form-with-a-visible-disruption-or-brea-541171-rough-transparent.png",
+        "conversion_archetype": "p53-response",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 178650,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-03T23:00:22.644Z",
+        "downloadedAt": "2026-07-25T15:37:35.249Z",
+        "filename": "0294-two-zones-left-zone-a-p53-protein-form-with-a-visible-disruption-or-break-in-its.png",
+        "id": 541171,
+        "index": 294,
+        "name": "two zones. Left zone: a p53 protein form with a visible disruption or break in its structure, labeled \"mutant p53 \u2014 loss of function.\" MDM2 shown nearby but not the focus. Right zone: a DNA double helix with a break, labeled \"DNA damage.\" ATM and ATR forms at the break as before. A directional arrow from ATM/ATR toward the mutant p53 \u2014 but the arrow terminates at a blocked or crossed symbol before reaching p53. Label: \"no response.\" Clean white background. ensure labels ",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/541171"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 178650,
+        "sha256": "e176dca47a03f9d0d3636618ea08c071fb0625965fa308609d763a76f04f845a",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0294-two-zones-left-zone-a-p53-protein-form-with-a-visible-disruption-or-break-in-its.json",
+        "source_image_rel": "images/0294-two-zones-left-zone-a-p53-protein-form-with-a-visible-disruption-or-break-in-its.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "pie archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "a-large-circle-split-in-half-left-half-shaded-or-filled-labeled-50-of-hu-541243",
+        "reference_filename": "references/a-large-circle-split-in-half-left-half-shaded-or-filled-labeled-50-of-hu-541243-reference.png",
+        "review_status": "approved",
+        "source_element_id": 541243,
+        "source_sha256": "5ed8a62684b3fb337547e9ddd6885a04a44fd0727651bb374f2494b45dc792b4",
+        "svg_filename": "a-large-circle-split-in-half-left-half-shaded-or-filled-labeled-50-of-hu-541243-rough.svg",
+        "transparent_png_filename": "a-large-circle-split-in-half-left-half-shaded-or-filled-labeled-50-of-hu-541243-rough-transparent.png",
+        "conversion_archetype": "pie",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 155194,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-03T23:38:30.077Z",
+        "downloadedAt": "2026-07-25T15:37:36.144Z",
+        "filename": "0295-a-large-circle-split-in-half-left-half-shaded-or-filled-labeled-50-of-human-canc.png",
+        "id": 541243,
+        "index": 295,
+        "name": "\nA large circle split in half. Left half shaded or filled, labeled \"~50% of human cancers \u2014 TP53 mutated.\" Right half empty. Below the circle: a single row of cancer type labels \u2014 \"leukemia \u00b7 lymphoma \u00b7 sarcoma \u00b7 brain \u00b7 breast \u00b7 colon \u00b7 lung.\" No other elements. Clean white background. ensure labels",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/541243"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 155194,
+        "sha256": "5ed8a62684b3fb337547e9ddd6885a04a44fd0727651bb374f2494b45dc792b4",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0295-a-large-circle-split-in-half-left-half-shaded-or-filled-labeled-50-of-human-canc.json",
+        "source_image_rel": "images/0295-a-large-circle-split-in-half-left-half-shaded-or-filled-labeled-50-of-human-canc.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "mastectomy archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "i-want-an-educational-diagram-to-explain-radical-mastectomy-clearly-in-m-542875",
+        "reference_filename": "references/i-want-an-educational-diagram-to-explain-radical-mastectomy-clearly-in-m-542875-reference.png",
+        "review_status": "approved",
+        "source_element_id": 542875,
+        "source_sha256": "043fb7aa34d8fa6a15fbf9f81f558b375391c8156063d1648ad0001167d3528c",
+        "svg_filename": "i-want-an-educational-diagram-to-explain-radical-mastectomy-clearly-in-m-542875-rough.svg",
+        "transparent_png_filename": "i-want-an-educational-diagram-to-explain-radical-mastectomy-clearly-in-m-542875-rough-transparent.png",
+        "conversion_archetype": "mastectomy",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1570995,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-04T16:46:27.711Z",
+        "downloadedAt": "2026-07-25T15:37:37.989Z",
+        "filename": "0297-i-want-an-educational-diagram-to-explain-radical-mastectomy-clearly-in-my-cancer.png",
+        "id": 542875,
+        "index": 297,
+        "name": "I want an educational diagram to explain radical mastectomy clearly in my cancer surgery chapter. Here is the description: 'Radical mastectomy. The drawing on the left shows the removal of the whole breast and the lymph nodes under the arm. The drawing on the right shows a cross-section of the breast, including the fatty tissue and chest wall (ribs and muscle). A tumor in the breast is also shown. The whole breast, all of the lymph nodes under the arm, and the chest wall muscles under the breast are removed.' I need a two-panel medical illustration in realistic anatomical style \u2014 color, detailed, close to NCI medical illustration quality. Left panel: show a front-facing view of the female chest with dashed outlines indicating the entire breast removed, axillary lymph nodes under the arm removed \u2014 label 'Whole breast removed,' 'Lymph nodes removed,' 'Chest wall muscles removed.' Right panel: show a realistic sagittal cross-section of the breast in warm anatomical tones showing the following layers labeled clearly: 'Fatty tissue,' 'Chest wall (ribs and muscle),' 'Tumor' inside the breast tissue, 'Muscle' layer beneath the breast. Use warm anatomical skin tones, pink-peach breast tissue, yellow fatty tissue, red muscle layer, white rib outlines. Realistic anatomical color illustration. White background. Clean sans-serif labels. Scientific oncology textbook style",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/542875"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 1570995,
+        "sha256": "043fb7aa34d8fa6a15fbf9f81f558b375391c8156063d1648ad0001167d3528c",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0297-i-want-an-educational-diagram-to-explain-radical-mastectomy-clearly-in-my-cancer.json",
+        "source_image_rel": "images/0297-i-want-an-educational-diagram-to-explain-radical-mastectomy-clearly-in-my-cancer.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "lung-resection archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "i-want-an-educational-diagram-to-explain-wedge-resection-of-the-lung-cle-542832",
+        "reference_filename": "references/i-want-an-educational-diagram-to-explain-wedge-resection-of-the-lung-cle-542832-reference.png",
+        "review_status": "approved",
+        "source_element_id": 542832,
+        "source_sha256": "8ed7e86b64e9562e3ed7ac2307cd2b783b70326b38c462cef1abf037167240fb",
+        "svg_filename": "i-want-an-educational-diagram-to-explain-wedge-resection-of-the-lung-cle-542832-rough.svg",
+        "transparent_png_filename": "i-want-an-educational-diagram-to-explain-wedge-resection-of-the-lung-cle-542832-rough-transparent.png",
+        "conversion_archetype": "lung-resection",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 267994,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-05-04T16:30:59.523Z",
+        "downloadedAt": "2026-07-25T15:37:38.848Z",
+        "filename": "0298-i-want-an-educational-diagram-to-explain-wedge-resection-of-the-lung-clearly-in-.png",
+        "id": 542832,
+        "index": 298,
+        "name": "I want an educational diagram to explain wedge resection of the lung clearly in my cancer surgery chapter. Here is the description: 'Wedge resection of the lung. Part of the lung lobe containing the cancer and a small amount of healthy tissue around it is removed. The removed lung tissue with the cancer is shown next to the lung lobe it was removed from.' I need a single-panel flat vector diagram showing the trachea and both lungs from the front. On the lower left lung lobe show a dashed wedge-shaped resection site \u2014 label 'Resection site.' Beside the left lung show the removed wedge-shaped tissue piece as a separate flat icon with a tumor mass inside \u2014 label 'Lung tissue removed' and 'Cancer (tumor).' Label the lymph nodes along the trachea/bronchi \u2014 label 'Lymph nodes.' Label 'Trachea' at the top. No before/after split. No summary boxes. No footer text. Flat vector style. White background. Clean sans-serif font. Scientific oncology textbook",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/542832"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 1024,
+        "local_bytes": 267994,
+        "sha256": "8ed7e86b64e9562e3ed7ac2307cd2b783b70326b38c462cef1abf037167240fb",
+        "width": 1024
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0298-i-want-an-educational-diagram-to-explain-wedge-resection-of-the-lung-clearly-in-.json",
+        "source_image_rel": "images/0298-i-want-an-educational-diagram-to-explain-wedge-resection-of-the-lung-clearly-in-.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "epigenetics archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "two-panel-educational-diagram-illustrating-nucleosome-structure-and-hist-452818",
+        "reference_filename": "references/two-panel-educational-diagram-illustrating-nucleosome-structure-and-hist-452818-reference.png",
+        "review_status": "approved",
+        "source_element_id": 452818,
+        "source_sha256": "b4f640631888f9682b09f215b8521a293d9b74d5b8a45b210596785e1fba038f",
+        "svg_filename": "two-panel-educational-diagram-illustrating-nucleosome-structure-and-hist-452818-rough.svg",
+        "transparent_png_filename": "two-panel-educational-diagram-illustrating-nucleosome-structure-and-hist-452818-rough-transparent.png",
+        "conversion_archetype": "epigenetics",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1797688,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-04-02T03:15:09.442Z",
+        "downloadedAt": "2026-07-25T15:37:41.892Z",
+        "filename": "0301-two-panel-educational-diagram-illustrating-nucleosome-structure-and-histone-tail.png",
+        "id": 452818,
+        "index": 301,
+        "name": "Two-panel educational diagram illustrating nucleosome structure and histone tail modifications. Panel 1 labeled 'Nucleosome Structure': show a DNA double helix wrapping around a histone octamer \u2014 label the octamer 'Histone Octamer: 2\u00d7 H2A, 2\u00d7 H2B, 2\u00d7 H3, 2\u00d7 H4.' Label the DNA strand 'Negatively charged DNA' and the octamer 'Positively charged histones.' Show linker DNA connecting two adjacent nucleosomes \u2014 label 'Linker DNA.' Show histone H1 at the linker region \u2014 label 'H1 \u2014 stabilizes complex.' Label the full unit 'Nucleosome \u2014 basic unit of chromatin.' Panel 2 labeled 'Histone Tail Modifications': show a single nucleosome with N-terminal histone tails extending outward from H2A, H2B, H3, and H4. On the tails show three types of modification icons: a methyl group (CH\u2083) labeled 'Methylation,' an acetyl group (Ac) labeled 'Acetylation,' and a phosphate group (P) labeled 'Phosphorylation.' Add a downstream split arrow from the modified tails to two outcomes: 'Open Chromatin \u2192 Active Transcription' and 'Compact Chromatin \u2192 Gene Silencing.' Label: 'H2A,' 'H2B,' 'H3,' 'H4,' 'H1,' 'N-terminal tail,' 'Methylation,' 'Acetylation,' 'Phosphorylation,' 'Linker DNA.' Flat vector style. White background. Scientific oncology textbook",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/452818"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 1797688,
+        "sha256": "b4f640631888f9682b09f215b8521a293d9b74d5b8a45b210596785e1fba038f",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0301-two-panel-educational-diagram-illustrating-nucleosome-structure-and-histone-tail.json",
+        "source_image_rel": "images/0301-two-panel-educational-diagram-illustrating-nucleosome-structure-and-histone-tail.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "epigenetics archetype derived from the complete Illustrae prompt; text and labels omitted.",
+        "icon_id": "three-panel-educational-diagram-illustrating-the-mechanism-of-dna-methyl-452824",
+        "reference_filename": "references/three-panel-educational-diagram-illustrating-the-mechanism-of-dna-methyl-452824-reference.png",
+        "review_status": "approved",
+        "source_element_id": 452824,
+        "source_sha256": "50c3e94082bbc4583e6ad5642c403531b47704ae45699cba375481a1116efca6",
+        "svg_filename": "three-panel-educational-diagram-illustrating-the-mechanism-of-dna-methyl-452824-rough.svg",
+        "transparent_png_filename": "three-panel-educational-diagram-illustrating-the-mechanism-of-dna-methyl-452824-rough-transparent.png",
+        "conversion_archetype": "epigenetics",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 1655274,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-04-02T03:17:46.847Z",
+        "downloadedAt": "2026-07-25T15:37:42.942Z",
+        "filename": "0302-three-panel-educational-diagram-illustrating-the-mechanism-of-dna-methyltransfer.png",
+        "id": 452824,
+        "index": 302,
+        "name": "Three-panel educational diagram illustrating the mechanism of DNA methyltransferase inhibitors (DNMTi). Panel 1 labeled 'Normal DNA Methylation': show a DNA double helix with a cytosine base at a CpG site. A DNMT enzyme icon sits on the cytosine \u2014 label 'DNMT.' Arrow shows methyl group (CH\u2083) being added to C-5 of cytosine \u2014 label 'C-5 methylated \u2192 gene silencing.' Panel 2 labeled 'Cytosine Analogue Incorporation (Azacitidine / Decitabine)': show the same DNA strand with a cytosine analogue (labeled 'Azacitidine / Decitabine') incorporated in place of cytosine \u2014 label 'N-5 replaces C-5.' Show DNMT attempting to bind the analogue \u2014 label 'DNMT trapped on analogue.' Arrow indicates two outcomes: 'Methylation disrupted' and 'DNMT degraded' (show DNMT icon with a degradation symbol). Panel 3 labeled 'Result \u2014 Hypomethylation': show the same DNA strand with open/unmethylated CpG sites. A previously silenced gene is now shown active \u2014 label 'Tumor suppressor gene reactivated.' Connect panels with left-to-right arrows. Label: 'DNMT,' 'Cytosine,' 'Azacitidine,' 'Decitabine,' 'C-5,' 'N-5,' 'CpG site,' 'Methylation disrupted,' 'DNMT degraded.' Flat vector style. White background. Scientific oncology textbook",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/452824"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 1655274,
+        "sha256": "50c3e94082bbc4583e6ad5642c403531b47704ae45699cba375481a1116efca6",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0302-three-panel-educational-diagram-illustrating-the-mechanism-of-dna-methyltransfer.json",
+        "source_image_rel": "images/0302-three-panel-educational-diagram-illustrating-the-mechanism-of-dna-methyltransfer.png"
+      }
+    }
+  ]
+}

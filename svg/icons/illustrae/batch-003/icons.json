@@ -1,0 +1,169 @@
+{
+  "collection": "illustrae-icons-batch-003",
+  "style": "medium-rough monochrome vector",
+  "generated_at": "2026-07-25T18:37:50.453Z",
+  "icons": [
+    {
+      "derivative": {
+        "geometry_description": "Two-panel quantitative icon with paired market bars and three horizontal outcome bars.",
+        "icon_id": "recruitment-metrics",
+        "reference_filename": "references/recruitment-metrics-reference.png",
+        "review_status": "approved",
+        "source_element_id": 325732,
+        "source_sha256": "2fdf49baeb8535db074de9a9632191644bb689e843778adf0317283050744411",
+        "svg_filename": "recruitment-metrics-rough.svg",
+        "transparent_png_filename": "recruitment-metrics-rough-transparent.png",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 342635,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-02-20T04:57:27.299Z",
+        "downloadedAt": "2026-07-25T15:33:24.210Z",
+        "filename": "0044-generate-a-two-panel-data-figure-left-panel-a-vertical-bar-chart-showing-ai-recr.png",
+        "id": 325732,
+        "index": 44,
+        "name": "\"Generate a two-panel data figure. Left panel: a vertical bar chart showing AI recruitment market value in two years \u2014 2023 ($661M) and 2030 ($1.12B projected) \u2014 with a dashed trend arrow between bars. Right panel: a horizontal bar chart showing three employer-reported outcomes \u2014 time-to-hire reduction (50%), cost savings (66%), and a third benchmark if available. Both charts use zero-based Y-axes. Label each bar with its value. Include a small note distinguishing 'reported' from 'verified' outcomes. Layout: side-by-side horizontal. Style: clean academic line diagram, white background, no decorative elements, Arial 12pt labels.\"",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/325732"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": 2048,
+        "local_bytes": 342635,
+        "sha256": "2fdf49baeb8535db074de9a9632191644bb689e843778adf0317283050744411",
+        "width": 2048
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0044-generate-a-two-panel-data-figure-left-panel-a-vertical-bar-chart-showing-ai-recr.json",
+        "source_image_rel": "images/0044-generate-a-two-panel-data-figure-left-panel-a-vertical-bar-chart-showing-ai-recr.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "Four-tier risk pyramid with progressively narrower strata and adjacent variable markers.",
+        "icon_id": "inrg-risk-stratification",
+        "reference_filename": "references/inrg-risk-stratification-reference.png",
+        "review_status": "approved",
+        "source_element_id": 332714,
+        "source_sha256": "2c59f023425140fc1a1c5fa91f54a7111b573dbd86e8dc0e1527ebdc5c91358c",
+        "svg_filename": "inrg-risk-stratification-rough.svg",
+        "transparent_png_filename": "inrg-risk-stratification-rough-transparent.png",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 2591914,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-02-23T02:59:40.066Z",
+        "downloadedAt": "2026-07-25T15:33:32.305Z",
+        "filename": "0052-figure-2-neuroblastoma-section-34-1-target-inrg-risk-stratification-diagram-figu.png",
+        "id": 332714,
+        "index": 52,
+        "name": "FIGURE 2 \u2014 Neuroblastoma (Section 34.1) Target: INRG Risk Stratification Diagram Figure Architect Prompt:  \"Medical infographic showing the International Neuroblastoma Risk Group (INRG) stratification system. Four-tier pyramid or horizontal bar chart showing: Very Low Risk (>85% 5-year EFS), Low Risk (75\u201385%), Intermediate Risk (50\u201375%), High Risk (<50%). Include key variables listed alongside each tier: patient age, MYCN amplification status, chromosome 11q deletion, DNA ploidy. Color-coded gradient from green (very low) to red (high risk). Flat vector diagram. Scientific oncology textbook style. Clean, labeled, no decorative elements.\"",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/332714"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 2591914,
+        "sha256": "2c59f023425140fc1a1c5fa91f54a7111b573dbd86e8dc0e1527ebdc5c91358c",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0052-figure-2-neuroblastoma-section-34-1-target-inrg-risk-stratification-diagram-figu.json",
+        "source_image_rel": "images/0052-figure-2-neuroblastoma-section-34-1-target-inrg-risk-stratification-diagram-figu.png"
+      }
+    },
+    {
+      "derivative": {
+        "geometry_description": "Three tissue compartments representing blastema, epithelial tubules, and loose stroma with an anaplasia inset.",
+        "icon_id": "wilms-triphasic-histology",
+        "reference_filename": "references/wilms-triphasic-histology-reference.png",
+        "review_status": "approved",
+        "source_element_id": 332749,
+        "source_sha256": "422bab589fb3be536f2c79fce11746ae048e3436101af4baccb910c8cbcdd468",
+        "svg_filename": "wilms-triphasic-histology-rough.svg",
+        "transparent_png_filename": "wilms-triphasic-histology-rough-transparent.png",
+        "reviewed_at": "2026-07-25T19:56:44.991489+00:00",
+        "review_method": "paired reference/icon contact-sheet review, concept-specific template refinement, transparent render inspection, and manifest integrity audit"
+      },
+      "destination": {
+        "book": null,
+        "chapter": null,
+        "destinations": [],
+        "figure_slug": null
+      },
+      "illustrae": {
+        "bytes": 2846725,
+        "canvasId": null,
+        "contentType": "image/png",
+        "createdAt": "2026-02-23T03:16:15.309Z",
+        "downloadedAt": "2026-07-25T15:33:33.405Z",
+        "filename": "0053-figure-3-wilms-tumor-section-34-2-target-diagnostic-marker-triphasic-histology-p.png",
+        "id": 332749,
+        "index": 53,
+        "name": "FIGURE 3 \u2014 Wilms Tumor (Section 34.2) Target Diagnostic Marker: Triphasic Histology Pattern Figure Architect Prompt:  \"Histopathology diagram of Wilms tumor (nephroblastoma) showing the classic triphasic pattern. Three clearly labeled compartments within one panel: (1) Blastema \u2014 small round blue cells with active mitotic figures; (2) Epithelium \u2014 early tubular formations and differentiating glomeruli-like structures; (3) Stroma \u2014 loose mesenchymal tissue, may include muscle or cartilage. Arrange as a schematic pie-section or side-by-side panel. Include a second small diagram showing anaplasia: hyperchromatic pleomorphic nuclei three times larger than adjacent cells with abnormal mitotic figures. Label all structures. Scientific medical diagram style. High-contrast histopathology illustration. White background. Flat vector. Educational textbook quality.\"",
+        "thumbUrl": null,
+        "url": "https://illustrae.co/api/images/elements/332749"
+      },
+      "integrity": {
+        "bytes_match": true,
+        "height": null,
+        "local_bytes": 2846725,
+        "sha256": "422bab589fb3be536f2c79fce11746ae048e3436101af4baccb910c8cbcdd468",
+        "width": null
+      },
+      "kind": "figure",
+      "lineage": {
+        "dedup_cluster": null,
+        "exact_duplicate_element_ids": [],
+        "is_final": true,
+        "needs_human_dedup": false,
+        "parent_id": null,
+        "root_id": null
+      },
+      "paths": {
+        "root": "illustrae-pipeline/illustrae-export",
+        "sidecar_rel": "images/0053-figure-3-wilms-tumor-section-34-2-target-diagnostic-marker-triphasic-histology-p.json",
+        "source_image_rel": "images/0053-figure-3-wilms-tumor-section-34-2-target-diagnostic-marker-triphasic-histology-p.png"
+      }
+    }
+  ]
+}
